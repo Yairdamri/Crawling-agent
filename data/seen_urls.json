@@ -1,5 +1,562 @@
-{
-  "schemaVersion": 1,
-  "generatedAt": null,
-  "articles": []
-}
+[
+  {
+    "url": "https://kubernetes.io/blog/2026/04/28/kubernetes-v1-36-staleness-mitigation-for-controllers/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://kubernetes.io/blog/2026/04/27/kubernetes-v1-36-mutable-pod-resources-for-suspended-jobs/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://kubernetes.io/blog/2026/04/24/kubernetes-v1-36-fine-grained-kubelet-authorization-ga/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://kubernetes.io/blog/2026/04/23/kubernetes-v1-36-userns-ga/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://kubernetes.io/blog/2026/04/22/breaking-changes-in-selinux-volume-labeling/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://kubernetes.io/blog/2026/04/22/kubernetes-v1-36-release/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://kubernetes.io/blog/2026/04/21/gateway-api-v1-5/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://kubernetes.io/blog/2026/03/30/kubernetes-v1-36-sneak-peek/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://kubernetes.io/blog/2026/03/20/ingress2gateway-1-0-release/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://kubernetes.io/blog/2026/03/20/running-agents-on-kubernetes-with-agent-sandbox/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://kubernetes.io/blog/2026/03/18/securing-production-debugging-in-kubernetes/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://kubernetes.io/blog/2026/03/17/image-promoter-rewrite/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://kubernetes.io/blog/2026/03/09/announcing-ai-gateway-wg/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://kubernetes.io/blog/2026/02/27/ingress-nginx-before-you-migrate/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://kubernetes.io/blog/2026/02/26/ccm-new-metric-route-sync-total/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://kubernetes.io/blog/2026/02/12/sig-architecture-api-spotlight/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://kubernetes.io/blog/2026/02/03/introducing-node-readiness-controller/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://kubernetes.io/blog/2026/01/30/new-cgroup-v1-to-v2-cpu-conversion-formula/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://kubernetes.io/blog/2026/01/29/ingress-nginx-statement/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://kubernetes.io/blog/2026/01/28/experimenting-gateway-api-with-kind/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/aws/top-announcements-of-the-whats-next-with-aws-2026/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-anthropic-meta-partnership-aws-lambda-s3-files-amazon-bedrock-agentcore-cli-and-more-april-27-2026/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-claude-opus-4-7-in-amazon-bedrock-aws-interconnect-ga-and-more-april-20-2026/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/aws/introducing-anthropics-claude-opus-4-7-model-in-amazon-bedrock/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/aws/aws-interconnect-is-now-generally-available-with-a-new-option-to-simplify-last-mile-connectivity/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-claude-mythos-preview-in-amazon-bedrock-aws-agent-registry-and-more-april-13-2026/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/aws/launching-s3-files-making-s3-buckets-accessible-as-file-systems/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-devops-agent-security-agent-ga-product-lifecycle-updates-and-more-april-6-2026/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/aws/amazon-bedrock-guardrails-supports-cross-account-safeguards-with-centralized-control-and-management/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/aws/announcing-managed-daemon-support-for-amazon-ecs-managed-instances/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/aws/announcing-the-aws-sustainability-console-programmatic-access-configurable-csv-reports-and-scope-1-3-reporting-in-one-place/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-ai-ml-scholars-program-agent-plugin-for-aws-serverless-and-more-march-30-2026/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/aws/customize-your-aws-management-console-experience-with-visual-settings-including-account-color-region-and-service-visibility/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/aws/announcing-amazon-aurora-postgresql-serverless-database-creation-in-seconds/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-nvidia-nemotron-3-super-on-amazon-bedrock-nova-forge-sdk-amazon-corretto-26-and-more-march-23-2026/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/aws/20-years-in-the-aws-cloud-how-time-flies/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/aws/our-first-2026-heroes-cohort-is-here/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-amazon-s3-turns-20-amazon-route-53-global-resolver-general-availability-and-more-march-16-2026/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/aws/twenty-years-of-amazon-s3-and-building-whats-next/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/aws/introducing-account-regional-namespaces-for-amazon-s3-general-purpose-buckets/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://openai.com/index/cybersecurity-in-the-intelligence-age",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://openai.com/index/our-commitment-to-community-safety",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://openai.com/index/openai-on-aws",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://openai.com/index/openai-available-at-fedramp-moderate",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://openai.com/index/next-phase-of-microsoft-partnership",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://openai.com/index/open-source-codex-orchestration-symphony",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://openai.com/index/choco",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://openai.com/index/our-principles",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://openai.com/index/gpt-5-5-system-card",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://openai.com/index/introducing-gpt-5-5",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://openai.com/academy/top-10-use-cases-codex-for-work",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://openai.com/academy/codex-how-to-start",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://openai.com/academy/what-is-codex",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://openai.com/academy/codex-plugins-and-skills",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://openai.com/academy/working-with-codex",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://openai.com/academy/codex-settings",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://openai.com/academy/codex-automations",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://openai.com/index/gpt-5-5-bio-bug-bounty",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://openai.com/index/making-chatgpt-better-for-clinicians",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://openai.com/index/speeding-up-agentic-workflows-with-websockets",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://thenewstack.io/platform-engineering-ai-agents/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://thenewstack.io/hpe-agentic-ops-copilot/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://thenewstack.io/google-doesnt-care/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://thenewstack.io/broadcom-vcf-kubernetes-platform/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://thenewstack.io/sas-viya-mcp-governance/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://thenewstack.io/json-schema-ai-reliability/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://thenewstack.io/sentrys-seer-agent-debug/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://thenewstack.io/netbox-labs-network-intent/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://thenewstack.io/terraform-state-infrastructure-drift/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://thenewstack.io/lovelace-ai-context-engine-elemental-andrew-moore/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://thenewstack.io/openai-microsoft-partnership-restructured/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://thenewstack.io/github-copilot-usage-billing/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://thenewstack.io/thoughtworks-radar-agentic-ai/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://thenewstack.io/vibe-coding-ceos-executives-ai-agents/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://thenewstack.io/open-source-digital-autonomy/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://thenewstack.io/postgres-ai-ground-truth/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://thenewstack.io/security-operational-maturity-scaling/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://thenewstack.io/paper-compute-agent-infrastructure/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://thenewstack.io/disappearing-ai-middle-class/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://thenewstack.io/ai-codebase-maturity-model/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://www.diabettech.com/i-asked-ai-to-count-my-carbs-27000-times-it-couldnt-give-me-the-same-answer-twice/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://physicsworld.com/a/coffee-with-a-splash-of-physics-how-to-make-the-most-out-of-your-brew/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://beehiiv-reader.vercel.app/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://www.ycombinator.com/companies/stardex/jobs/6GCK1HC-founding-customer-success-lead",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://www.theregister.com/2026/04/29/mitchell_hashimoto_ghostty_quitting_github/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://rip.so",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://www.nldigitalgovernment.nl/news/soft-launch-for-government-open-source-code-platform/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://lawvm.org/why-law-is-law-shaped/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://dl.acm.org/doi/abs/10.1145/3767295.3803591",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://hardenedbsd.org/article/shawn-webb/2026-04-26/hardenedbsd-officially-radicle",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://corrode.dev/blog/bugs-rust-wont-catch/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://www.frontporchrepublic.com/2025/09/when-the-internet-was-a-place/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://www.buchodi.com/how-chatgpt-serves-ads-heres-the-full-attribution-loop/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://lucumr.pocoo.org/2026/4/28/before-github/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://ron.stoner.com/How_I_Won_a_Championship_That_Doesnt_Exist/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://mitchellh.com/writing/ghostty-leaving-github",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://stratechery.com/2026/an-interview-with-openai-ceo-sam-altman-and-aws-ceo-matt-garman-about-bedrock-managed-agents/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://github.com/FeSens/auto-arch-tournament/blob/main/docs/auto-arch-tournament-blog-post.md",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://jobs.ashbyhq.com/infisical/782b9da8-20e1-48b2-919e-6c5430c58628",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://www.wiz.io/blog/github-rce-vulnerability-cve-2026-3854",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://www.cncf.io/blog/2026/04/29/the-state-of-ai-in-cncf-projects-a-first-look-at-the-data/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://www.cncf.io/blog/2026/04/27/kubernetes-for-platform-teams-leveraging-k0s-and-k0rdent/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://www.cncf.io/blog/2026/04/23/from-ingress-nginx-to-higress-migrating-60-resources-in-30-minutes-with-ai/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://www.cncf.io/blog/2026/04/21/auto-diagnosing-kubernetes-alerts-with-holmesgpt-and-cncf-tools/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://www.cncf.io/blog/2026/04/20/from-public-static-void-main-to-golden-kubestronaut-the-art-of-unlearning/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://www.cncf.io/blog/2026/04/17/k3s-on-on-prem-infrastructures-the-gitops-way-writing-a-custom-k0rdent-template-from-scratch/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://www.cncf.io/blog/2026/04/16/the-ai-driven-shift-in-vulnerability-discovery-what-maintainers-and-bug-finders-need-to-know/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://www.cncf.io/blog/2026/04/15/how-to-measure-the-roi-of-developer-tools/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://www.cncf.io/blog/2026/04/13/ingress-nginx-to-envoy-gateway-migration-on-cncf-internal-services-cluster/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://www.cncf.io/blog/2026/04/11/what-i-learned-at-my-first-kubecon-cloudnativecon-as-a-high-school-speaker/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://www.hashicorp.com/blog/turning-secret-detection-into-measurable-risk-reduction",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://www.hashicorp.com/blog/bridging-the-trust-gap-unified-public-ca-orchestration-with-ibm-vault",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://www.hashicorp.com/blog/faster-threat-detection-with-boundary-session-recording-auditbeat",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://www.hashicorp.com/blog/terraform-adds-pre-written-sentinel-policies-for-iso-27001",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://www.hashicorp.com/blog/from-zero-trust-to-continuous-trust-securing-autonomous-ai-systems",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://www.hashicorp.com/blog/from-80-days-to-5-how-banco-bradesco-accelerated-digital-product-delivery-with-hc",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://www.hashicorp.com/blog/advancing-secret-sync-with-workload-identity-federation",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://www.hashicorp.com/blog/agentic-ai-changes-the-shape-of-trust",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://www.hashicorp.com/blog/vault-enterprise-20-modernizes-identity-security-at-scale",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://www.hashicorp.com/blog/simplifying-terraform-dynamic-credentials-on-aws-with-native-oidc-integration",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://www.hashicorp.com/blog/aws-permission-delegation-now-generally-available-in-hcp-terraform",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://www.hashicorp.com/blog/hcp-terraform-adds-ip-allow-lists",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://www.hashicorp.com/blog/modernizing-governance-on-hcp-with-multi-owner-and-global-automation",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://www.hashicorp.com/blog/lab3-accelerates-cloud-modernization-with-hashicorp-powered-unified-workflows",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://www.hashicorp.com/blog/agentic-runtime-security-solving-agentic-ai-identity-and-access-gaps",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://www.hashicorp.com/blog/hcp-vault-dedicated-now-available-in-additional-aws-and-azure-regions",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://www.hashicorp.com/blog/adopting-hashicorp-vaults-transit-engine-high-performance-envelope-encryption-ariso-ai",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://www.hashicorp.com/blog/everything-as-code-for-your-security-lifecycle",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://www.hashicorp.com/blog/building-day-2-ops-guardrails-with-terraform-and-packer",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://www.hashicorp.com/blog/secure-remote-access-without-the-portal-tax-boundary-vs-other-vendors",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://www.docker.com/blog/trivy-kics-and-the-shape-of-supply-chain-attacks-so-far-in-2026/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://www.docker.com/blog/why-microvms-the-architecture-behind-docker-sandboxes/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://www.docker.com/blog/why-we-chose-the-harder-path-docker-hardened-images-one-year-later/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://www.docker.com/blog/how-to-analyze-hugging-face-for-arm64-readiness/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://www.docker.com/blog/reclaim-developer-hours-through-smarter-vulnerability-prioritization-with-docker-and-mend-io/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://www.docker.com/blog/defending-your-software-supply-chain-what-every-engineering-team-should-do-now/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://www.docker.com/blog/gemma4-dockerhub/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://www.docker.com/blog/docker-offload-now-generally-available-the-full-power-of-docker-for-every-developer-everywhere/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://www.docker.com/blog/blog-docker-model-runner-new-nvidia-dgx-station/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  },
+  {
+    "url": "https://www.docker.com/blog/docker-sandboxes-run-agents-in-yolo-mode-safely/",
+    "seenAt": "2026-04-29T13:18:51.644Z"
+  }
+]
