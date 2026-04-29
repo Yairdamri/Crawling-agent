@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "Automated AI/DevOps/cloud news pipeline: RSS -> OpenAI -> news.json -> WordPress",
+  "description": "Automated AI/DevOps/cloud news pipeline: RSS -> Bedrock (Claude Haiku) -> news.json -> WordPress",
   "scripts": {
     "fetch": "node scripts/fetch.mjs"
   },
@@ -11,7 +11,7 @@
     "node": ">=20"
   },
   "dependencies": {
-    "openai": "^4.77.0",
+    "@aws-sdk/client-bedrock-runtime": "^3.700.0",
     "rss-parser": "^3.13.0"
   }
 }
