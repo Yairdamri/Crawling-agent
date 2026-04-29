@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-04-29T15:30:10.371Z",
+  "generatedAt": "2026-04-29T19:20:41.097Z",
   "articles": [
     {
       "url": "https://thenewstack.io/openai-bedrock-trainium-silicon/",
@@ -17,6 +17,22 @@
       "score": 9,
       "category": "Cloud",
       "publishedAt": "2026-04-29T14:54:40.000Z"
+    },
+    {
+      "url": "https://thehackernews.com/2026/04/new-wave-of-dprk-attacks-uses-ai.html",
+      "title": "New Wave of DPRK Attacks Uses AI-Inserted npm Malware, Fake Firms, and RATs",
+      "summary": "DPRK-attributed campaign distributing malicious npm packages including @validate-sdk/v2, which was inserted as a dependency via Claude Opus LLM. Attack combines credential theft, fake company fronts, and remote access trojans targeting npm ecosystem.",
+      "source": "The Hacker News",
+      "tags": [
+        "supply-chain",
+        "npm",
+        "malware",
+        "LLM",
+        "security"
+      ],
+      "score": 9,
+      "category": "Security",
+      "publishedAt": "2026-04-29T14:43:00.000Z"
     },
     {
       "url": "https://thehackernews.com/2026/04/litellm-cve-2026-42208-sql-injection.html",
@@ -110,6 +126,51 @@
       "publishedAt": "2026-04-23T11:00:00.000Z"
     },
     {
+      "url": "https://thenewstack.io/strands-agents-tool-design/",
+      "title": "Cut AI token usage by 96%? Here's how AWS Strands Agents does it.",
+      "summary": "AWS Strands Agents reduces token consumption from 52,000 to 2,000 tokens on the same task by using intent-based tools instead of endpoint-mapped tools. The framework groups multiple API operations into outcome-aligned tools, improving agent reasoning and reducing tool-selection errors.",
+      "source": "The New Stack",
+      "tags": [
+        "agents",
+        "tool-use",
+        "token efficiency"
+      ],
+      "score": 8,
+      "category": "AI",
+      "publishedAt": "2026-04-29T18:52:32.000Z"
+    },
+    {
+      "url": "https://thenewstack.io/anaconda-ai-outerbounds-python-metaflow/",
+      "title": "Anaconda acquires Outerbounds to rein in the buggy code AI agents keep shipping",
+      "summary": "Anaconda is acquiring Outerbounds, the company behind Metaflow, to integrate ML orchestration into its AI-native dev platform and address the quality gap in agent-generated code. The deal targets enterprise governance from experimentation to production, addressing findings that AI-generated code produces 1.7x more defects than human-written code and that 80% of AI-recommended dependencies carry known security risks.",
+      "source": "The New Stack",
+      "tags": [
+        "agents",
+        "MLOps",
+        "orchestration",
+        "code quality"
+      ],
+      "score": 8,
+      "category": "AI",
+      "publishedAt": "2026-04-29T16:43:08.000Z"
+    },
+    {
+      "url": "https://thehackernews.com/2026/04/sap-npm-packages-compromised-by-mini.html",
+      "title": "SAP-Related npm Packages Compromised in Credential-Stealing Supply Chain Attack",
+      "summary": "Supply chain attack targeting SAP-related npm packages with credential-stealing malware. Campaign tracked by multiple security firms including Aikido Security, SafeDep, Socket, StepSecurity, and Wiz.",
+      "source": "The Hacker News",
+      "tags": [
+        "supply-chain",
+        "npm",
+        "malware",
+        "security",
+        "SAP"
+      ],
+      "score": 8,
+      "category": "Security",
+      "publishedAt": "2026-04-29T16:26:00.000Z"
+    },
+    {
       "url": "https://thenewstack.io/anthropic-agents-managed-aws-claude/",
       "title": "Anthropic wants to be the AWS of agentic AI",
       "summary": "Anthropic's Claude Managed Agents (in public beta) provides production-ready agent infrastructure including secure sandboxing, long-running sessions, checkpointing, credential management, and tracing, priced at $0.08 per session hour on top of token costs. The offering targets engineering teams building production agents rather than solo developers.",
@@ -168,6 +229,22 @@
       "score": 8,
       "category": "Security",
       "publishedAt": "2026-04-29T08:46:00.000Z"
+    },
+    {
+      "url": "https://snyk.io/blog/bun-based-stealer-hits-sap-cap-js-mbt-npm-packages/",
+      "title": "\"A Mini Shai-Hulud Has Appeared\": Bun-Based Stealer Hits SAP @cap-js and mbt npm Packages",
+      "summary": "Supply chain attack on SAP npm packages using credential-stealing malware. Four SAP-ecosystem packages compromised on April 29, 2026, with Snyk providing live advisories and technical breakdown.",
+      "source": "Snyk Blog",
+      "tags": [
+        "supply-chain",
+        "npm",
+        "malware",
+        "security",
+        "SAP"
+      ],
+      "score": 8,
+      "category": "Security",
+      "publishedAt": "2026-04-29T00:00:00.000Z"
     },
     {
       "url": "https://stratechery.com/2026/an-interview-with-openai-ceo-sam-altman-and-aws-ceo-matt-garman-about-bedrock-managed-agents/",
@@ -783,6 +860,124 @@
       "score": 8,
       "category": "AI",
       "publishedAt": "2026-03-31T08:23:44.000Z"
+    },
+    {
+      "url": "https://www.hashicorp.com/blog/managing-ssh-access-at-scale-with-hashicorp-vault-update",
+      "title": "Managing SSH access at scale with HashiCorp Vault",
+      "summary": "Updated guide on SSH access management using HashiCorp Vault 1.13+, replacing dynamic SSH keys with signed SSH certificates and introducing Vault-Boundary integration for just-in-time credential injection. Covers passwordless SSH access patterns for hybrid and multi-cloud environments.",
+      "source": "HashiCorp Blog",
+      "tags": [
+        "Vault",
+        "SSH",
+        "secrets-management",
+        "DevOps",
+        "authentication"
+      ],
+      "score": 7,
+      "category": "DevOps",
+      "publishedAt": "2026-04-29T19:00:00.000Z"
+    },
+    {
+      "url": "https://huggingface.co/blog/evaleval/eval-costs-bottleneck",
+      "title": "AI evals are becoming the new compute bottleneck",
+      "summary": "Evaluation of AI models is emerging as a significant infrastructure constraint, rivaling raw compute as a limiting factor in model development. The article examines how eval costs scale with model capability and deployment demands.",
+      "source": "Hugging Face Blog",
+      "tags": [
+        "evals",
+        "infrastructure",
+        "MLOps"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-04-29T16:45:09.000Z"
+    },
+    {
+      "url": "https://developer.nvidia.com/blog/powering-ai-factories-with-nvidia-enterprise-reference-architectures/",
+      "title": "Powering AI Factories with NVIDIA Enterprise Reference Architectures",
+      "summary": "NVIDIA provides enterprise reference architectures for deploying agentic AI systems at scale, addressing orchestration, reasoning, and real-time decision-making infrastructure beyond raw compute. The architectures target organizations building AI factories with autonomous reasoning capabilities.",
+      "source": "NVIDIA Developer Blog",
+      "tags": [
+        "agents",
+        "infrastructure",
+        "enterprise"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-04-29T16:41:57.000Z"
+    },
+    {
+      "url": "https://interfaze.ai/blog/introducing-structured-output-benchmark",
+      "title": "Show HN: A new benchmark for testing LLMs for deterministic outputs",
+      "summary": "Interfaze released the Structured Output Benchmark (SOB), which measures both JSON schema compliance and value accuracy for LLM outputs across text, image, and audio modalities. Unlike existing benchmarks like JSONSchemaBench that only validate schema and types, SOB detects hallucinated values like incorrect invoice dates or misordered arrays, with ground-truth answers verified by human and LLM cross-checks.",
+      "source": "HN Front Page",
+      "tags": [
+        "LLM",
+        "evals",
+        "structured-output",
+        "benchmark"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-04-29T16:01:51.000Z"
+    },
+    {
+      "url": "https://www.databricks.com/blog/databricks-and-stripe-projects-infrastructure-built-agents",
+      "title": "Databricks and Stripe Projects: Infrastructure Built for Agents",
+      "summary": "Databricks and Stripe Projects provide infrastructure for AI coding agents to scaffold and deploy full-stack applications. The platform addresses the operational requirements agents need to move from code generation to production deployment.",
+      "source": "Databricks Blog",
+      "tags": [
+        "agents",
+        "infrastructure",
+        "deployment"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-04-29T15:20:00.000Z"
+    },
+    {
+      "url": "https://mistral.ai/news/vibe-remote-agents-mistral-medium-3-5",
+      "title": "Mistral Medium 3.5",
+      "summary": "Mistral released Medium 3.5, an updated model in their lineup, alongside announcements about Vibe remote agents capabilities. The release likely includes performance improvements and new agent-based features for building autonomous workflows.",
+      "source": "HN Front Page",
+      "tags": [
+        "LLM",
+        "agents",
+        "Mistral",
+        "model-release"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-04-29T15:17:46.000Z"
+    },
+    {
+      "url": "https://read.thecoder.cafe/p/linux-broke-postgresql",
+      "title": "Linux 7.0 Broke PostgreSQL: The Preemption Regression Explained",
+      "summary": "Linux 7.0 introduced a preemption regression that broke PostgreSQL performance. The article explains the kernel-level scheduling change and its impact on database workloads.",
+      "source": "HN Front Page",
+      "tags": [
+        "PostgreSQL",
+        "Linux",
+        "kernel",
+        "performance",
+        "regression"
+      ],
+      "score": 7,
+      "category": "Engineering",
+      "publishedAt": "2026-04-29T15:13:44.000Z"
+    },
+    {
+      "url": "https://www.databricks.com/blog/agents-are-ready-your-architecture-probably-isnt",
+      "title": "Agents are ready but your architecture probably isn't",
+      "summary": "Enterprise architectures lag behind agent capabilities, creating a gap between what agentic systems can do and what infrastructure supports. The article addresses architectural patterns needed to deploy agents effectively at scale.",
+      "source": "Databricks Blog",
+      "tags": [
+        "agents",
+        "architecture",
+        "enterprise"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-04-29T15:00:00.000Z"
     },
     {
       "url": "https://thenewstack.io/platform-engineering-ai-agents/",
@@ -2069,6 +2264,49 @@
       "publishedAt": "2026-03-31T15:10:41.000Z"
     },
     {
+      "url": "https://www.databricks.com/blog/companies-winning-ai-built-data-layer-first",
+      "title": "Companies Winning with AI Built the Data Layer First",
+      "summary": "Successful AI deployments prioritize foundational data infrastructure and governance before building ML models or agents. The article emphasizes that competitive advantage in AI comes from data quality and accessibility, not just model capability.",
+      "source": "Databricks Blog",
+      "tags": [
+        "data",
+        "MLOps",
+        "architecture"
+      ],
+      "score": 6,
+      "category": "AI",
+      "publishedAt": "2026-04-29T19:00:00.000Z"
+    },
+    {
+      "url": "https://www.promptarmor.com/resources/ramps-sheets-ai-exfiltrates-financials",
+      "title": "Ramp's Sheets AI Exfiltrates Financials",
+      "summary": "A security research article documenting how Ramp's Sheets AI feature can exfiltrate financial data through prompt injection or similar attack vectors. The article appears to be a case study in AI security vulnerabilities in enterprise tools.",
+      "source": "HN Front Page",
+      "tags": [
+        "AI security",
+        "prompt injection",
+        "data exfiltration"
+      ],
+      "score": 6,
+      "category": "Security",
+      "publishedAt": "2026-04-29T17:44:21.000Z"
+    },
+    {
+      "url": "https://www.agwa.name/blog/post/fastcgi_is_the_better_protocol_for_reverse_proxies",
+      "title": "FastCGI: 30 years old and still the better protocol for reverse proxies",
+      "summary": "This post argues that FastCGI remains superior to HTTP for reverse proxy communication due to its binary protocol efficiency, connection pooling, and lower overhead compared to HTTP-based alternatives. The author contends that despite its age, FastCGI's design choices make it better suited for high-performance proxy scenarios than modern protocols.",
+      "source": "HN Front Page",
+      "tags": [
+        "FastCGI",
+        "reverse-proxy",
+        "protocol",
+        "performance"
+      ],
+      "score": 6,
+      "category": "Engineering",
+      "publishedAt": "2026-04-29T16:16:39.000Z"
+    },
+    {
       "url": "https://huggingface.co/blog/ibm-granite/granite-4-1",
       "title": "Granite 4.1 LLMs: How They're Built",
       "summary": "IBM details the architecture and training methodology behind Granite 4.1, a family of foundation models. The post covers model design choices, training infrastructure, and performance characteristics relevant to practitioners building on these models.",
@@ -2874,6 +3112,35 @@
       "publishedAt": "2026-03-31T02:03:00.000Z"
     },
     {
+      "url": "https://www.databricks.com/blog/rethinking-sql-etl-modern-data-platforms",
+      "title": "Rethinking SQL ETL for modern data platforms",
+      "summary": "SQL remains central to data transformation workflows on modern platforms, with evolving patterns for ETL pipelines. The article discusses how SQL-based approaches adapt to contemporary data platform architectures.",
+      "source": "Databricks Blog",
+      "tags": [
+        "SQL",
+        "ETL",
+        "data engineering"
+      ],
+      "score": 5,
+      "category": "Engineering",
+      "publishedAt": "2026-04-29T16:45:00.000Z"
+    },
+    {
+      "url": "https://atproto.com/",
+      "title": "At Protocol: Building the Social Internet",
+      "summary": "AT Protocol is a decentralized social networking protocol designed to enable interoperable social platforms without centralized control. The protocol allows users to own their data and move between applications while maintaining their identity and social graph.",
+      "source": "HN Front Page",
+      "tags": [
+        "protocol",
+        "decentralized",
+        "social",
+        "open-source"
+      ],
+      "score": 5,
+      "category": "Other",
+      "publishedAt": "2026-04-29T16:20:56.000Z"
+    },
+    {
       "url": "https://www.databricks.com/blog/stripe-data-now-available-databricks-databricks-marketplace",
       "title": "Stripe data now available on Databricks via Databricks Marketplace",
       "summary": "Databricks Marketplace now offers Stripe payment data connectors, enabling users to ingest transaction and customer data directly into their Databricks workspace. This reduces integration effort for analytics on payment flows.",
@@ -2981,6 +3248,20 @@
         "security",
         "Jira",
         "remediation"
+      ],
+      "score": 5,
+      "category": "AI",
+      "publishedAt": "2026-04-29T00:00:00.000Z"
+    },
+    {
+      "url": "https://huggingface.co/blog/inference-providers-deepinfra",
+      "title": "DeepInfra on Hugging Face Inference Providers 🔥",
+      "summary": "DeepInfra is now integrated into Hugging Face's inference provider ecosystem, offering managed inference endpoints for model deployment. This expands the inference options available through the Hugging Face platform.",
+      "source": "Hugging Face Blog",
+      "tags": [
+        "inference",
+        "deployment",
+        "managed services"
       ],
       "score": 5,
       "category": "AI",
@@ -3429,21 +3710,6 @@
       "score": 5,
       "category": "Cloud",
       "publishedAt": "2026-03-31T19:04:00.000Z"
-    },
-    {
-      "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-ai-ml-scholars-program-agent-plugin-for-aws-serverless-and-more-march-30-2026/",
-      "title": "AWS Weekly Roundup: AWS AI/ML Scholars program, Agent Plugin for AWS Serverless, and more (March 30, 2026)",
-      "summary": "AWS launched the 2026 AI & ML Scholars program offering free generative AI education to up to 100,000 learners, with a Challenge phase followed by fully funded three-month Udacity Nanodegree for the top 4,500 performers (applications close June 24, 2026). The roundup also covers Amazon Aurora PostgreSQL serverless express configuration enabling database creation in seconds and Aurora PostgreSQL Free Tier availability.",
-      "source": "AWS News",
-      "tags": [
-        "education",
-        "generative-AI",
-        "Aurora",
-        "serverless"
-      ],
-      "score": 5,
-      "category": "AI",
-      "publishedAt": "2026-03-30T16:11:28.000Z"
     }
   ]
 }

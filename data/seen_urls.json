@@ -1258,5 +1258,129 @@
   {
     "url": "https://thehackernews.com/2026/04/fake-captcha-irsf-scam-and-120-keitaro.html",
     "seenAt": "2026-04-29T15:30:10.373Z"
+  },
+  {
+    "url": "https://huggingface.co/blog/evaleval/eval-costs-bottleneck",
+    "seenAt": "2026-04-29T19:20:41.100Z"
+  },
+  {
+    "url": "https://huggingface.co/blog/inference-providers-deepinfra",
+    "seenAt": "2026-04-29T19:20:41.100Z"
+  },
+  {
+    "url": "https://developer.nvidia.com/blog/powering-ai-factories-with-nvidia-enterprise-reference-architectures/",
+    "seenAt": "2026-04-29T19:20:41.100Z"
+  },
+  {
+    "url": "https://www.databricks.com/blog/companies-winning-ai-built-data-layer-first",
+    "seenAt": "2026-04-29T19:20:41.100Z"
+  },
+  {
+    "url": "https://www.databricks.com/blog/rethinking-sql-etl-modern-data-platforms",
+    "seenAt": "2026-04-29T19:20:41.100Z"
+  },
+  {
+    "url": "https://www.databricks.com/blog/databricks-and-stripe-projects-infrastructure-built-agents",
+    "seenAt": "2026-04-29T19:20:41.100Z"
+  },
+  {
+    "url": "https://www.databricks.com/blog/agents-are-ready-your-architecture-probably-isnt",
+    "seenAt": "2026-04-29T19:20:41.100Z"
+  },
+  {
+    "url": "https://thenewstack.io/strands-agents-tool-design/",
+    "seenAt": "2026-04-29T19:20:41.100Z"
+  },
+  {
+    "url": "https://thenewstack.io/anaconda-ai-outerbounds-python-metaflow/",
+    "seenAt": "2026-04-29T19:20:41.100Z"
+  },
+  {
+    "url": "https://github.com/anthropics/claude-code/issues/53262",
+    "seenAt": "2026-04-29T19:20:41.100Z"
+  },
+  {
+    "url": "https://copy.fail/",
+    "seenAt": "2026-04-29T19:20:41.100Z"
+  },
+  {
+    "url": "https://www.promptarmor.com/resources/ramps-sheets-ai-exfiltrates-financials",
+    "seenAt": "2026-04-29T19:20:41.100Z"
+  },
+  {
+    "url": "https://lawsofux.com/",
+    "seenAt": "2026-04-29T19:20:41.100Z"
+  },
+  {
+    "url": "https://www.heavybit.com/library/podcasts/third-loop/ep-3-give-it-a-name-why-software-needs-a-third-loop",
+    "seenAt": "2026-04-29T19:20:41.100Z"
+  },
+  {
+    "url": "https://www.hfsresearch.com/research/fde-optional-ai-flywheel-spin/",
+    "seenAt": "2026-04-29T19:20:41.100Z"
+  },
+  {
+    "url": "https://eclecticlight.co/2026/04/29/virtualisation-on-apple-silicon-macs-is-different/",
+    "seenAt": "2026-04-29T19:20:41.100Z"
+  },
+  {
+    "url": "https://www.theguardian.com/technology/2026/apr/29/maryland-grocery-stores-ban-surveillance-pricing",
+    "seenAt": "2026-04-29T19:20:41.100Z"
+  },
+  {
+    "url": "https://atproto.com/",
+    "seenAt": "2026-04-29T19:20:41.100Z"
+  },
+  {
+    "url": "https://www.agwa.name/blog/post/fastcgi_is_the_better_protocol_for_reverse_proxies",
+    "seenAt": "2026-04-29T19:20:41.100Z"
+  },
+  {
+    "url": "https://interfaze.ai/blog/introducing-structured-output-benchmark",
+    "seenAt": "2026-04-29T19:20:41.100Z"
+  },
+  {
+    "url": "https://x.com/GlennMeder/status/2049088498163216560",
+    "seenAt": "2026-04-29T19:20:41.100Z"
+  },
+  {
+    "url": "https://www.chrisbrunet.com/p/third-editor-fired-in-elseviers-citation",
+    "seenAt": "2026-04-29T19:20:41.100Z"
+  },
+  {
+    "url": "https://neal.fun/cursor-camp/",
+    "seenAt": "2026-04-29T19:20:41.100Z"
+  },
+  {
+    "url": "https://mistral.ai/news/vibe-remote-agents-mistral-medium-3-5",
+    "seenAt": "2026-04-29T19:20:41.100Z"
+  },
+  {
+    "url": "https://read.thecoder.cafe/p/linux-broke-postgresql",
+    "seenAt": "2026-04-29T19:20:41.100Z"
+  },
+  {
+    "url": "https://github.com/GliaX/Stethoscope",
+    "seenAt": "2026-04-29T19:20:41.100Z"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=JNyuX1zoOgU",
+    "seenAt": "2026-04-29T19:20:41.100Z"
+  },
+  {
+    "url": "https://www.hashicorp.com/blog/managing-ssh-access-at-scale-with-hashicorp-vault-update",
+    "seenAt": "2026-04-29T19:20:41.100Z"
+  },
+  {
+    "url": "https://snyk.io/blog/bun-based-stealer-hits-sap-cap-js-mbt-npm-packages/",
+    "seenAt": "2026-04-29T19:20:41.100Z"
+  },
+  {
+    "url": "https://thehackernews.com/2026/04/sap-npm-packages-compromised-by-mini.html",
+    "seenAt": "2026-04-29T19:20:41.100Z"
+  },
+  {
+    "url": "https://thehackernews.com/2026/04/new-wave-of-dprk-attacks-uses-ai.html",
+    "seenAt": "2026-04-29T19:20:41.100Z"
   }
 ]
