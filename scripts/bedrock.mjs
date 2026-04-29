@@ -11,6 +11,22 @@ AI is your primary beat: LLMs, agents, foundation models, retrieval, evals, tool
 
 When an item has both an AI angle and a generic-engineering angle, lead with the AI angle and pick category "AI". When an item is purely engineering with no AI relevance, that is fine, it can still appear, but only at score 5+ if genuinely useful.
 
+Categories. Pick the single best fit using these definitions:
+- AI: LLMs, agents, foundation models, retrieval, evals, tool use, prompt engineering, training/inference infrastructure, MLOps, fine-tuning, AI safety. AI overrides all other categories: if the article has a real AI angle, it is AI even when adjacent topics also apply.
+- DevOps: Kubernetes, Docker, container orchestration, CI/CD, GitOps, Terraform, Pulumi, Helm, Argo, service mesh, observability tooling (Prometheus, Grafana, OpenTelemetry), platform engineering. Anything about how software is built, shipped, and run.
+- Cloud: Cloud-provider product news and deep-dives (AWS Lambda/S3/RDS/EC2, Azure Functions, GCP Cloud Run/BigQuery), serverless platforms, managed databases on a cloud, cloud cost and architecture topics that are not tied to a specific DevOps tool.
+- Engineering: Programming languages, frameworks, libraries, software architecture, testing, debugging, performance, application-layer concerns, web frameworks, databases when not tied to a cloud provider.
+- Security: CVEs, vulnerability research, breach reports, threat intelligence, ransomware, supply-chain attacks, security tooling (SAST/DAST/SBOM), container and cluster security advisories. Use Security when the article is primarily about a security incident, advisory, or research finding. If a release happens to include a security fix among many features, that is still its primary category (DevOps/Cloud/etc.) with tag "security".
+- Other: Hardware, business and industry news, broad tech that does not fit the above.
+
+Disambiguation:
+- Kubernetes anything (without a primary AI angle) -> DevOps, not Cloud.
+- A specific AWS/Azure/GCP service news -> Cloud.
+- Terraform/Pulumi/Helm/Argo/CI tools -> DevOps.
+- A programming-language release or framework feature -> Engineering.
+- AI angle anywhere -> AI overrides everything except a primary security incident.
+- A primary security incident or CVE -> Security overrides everything except a primary AI angle.
+
 Voice:
 - Technical depth. Readers know what an embedding, a CRD, a token, a sidecar is. Do not define basics.
 - Concrete over abstract. Every summary must mention at least one specific detail: a feature name, a benchmark number, an architecture choice, a version, an API. Generic "this article discusses X" is failure.
@@ -24,9 +40,7 @@ Scoring rubric (1-10):
 - 5-6: Mildly interesting; worth scanning if relevant to your stack.
 - 1-4: Marketing fluff, vendor announcement with no substance, off-topic, or already widely known.
 
-Categories: AI, DevOps, Cloud, Engineering, Other. Pick the single best fit. For dual-angle items, prefer AI.
-
-Tags: 1-5 short technical tags (e.g. "LLM", "agents", "RAG", "evals", "Kubernetes", "Terraform", "observability"). Lowercase except proper nouns. Tags should help a reader filter by topic, not describe sentiment.
+Tags: 1-5 short technical tags (e.g. "LLM", "agents", "RAG", "evals", "Kubernetes", "Terraform", "observability", "security", "CVE"). Lowercase except proper nouns. Tags should help a reader filter by topic, not describe sentiment.
 
 You MUST call the record_articles tool exactly once with one entry per input article. Echo url, source, and publishedAt back exactly as provided.`;
 
@@ -48,7 +62,7 @@ const TOOL_SCHEMA = {
           score: { type: 'integer', minimum: 1, maximum: 10 },
           category: {
             type: 'string',
-            enum: ['AI', 'DevOps', 'Cloud', 'Engineering', 'Other'],
+            enum: ['AI', 'DevOps', 'Cloud', 'Engineering', 'Security', 'Other'],
           },
           publishedAt: { type: 'string' },
         },

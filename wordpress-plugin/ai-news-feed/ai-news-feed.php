@@ -252,7 +252,7 @@ function ainf_render_settings_page() {
         <p>Add the shortcode to any page or post:</p>
         <pre><code>[ai_news_feed]                              Full feed
 [ai_news_feed limit="10"]                   First 10 articles
-[ai_news_feed category="DevOps"]            Filter by category (AI, DevOps, Cloud, Engineering, Other)
+[ai_news_feed category="DevOps"]            Filter by category (AI, DevOps, Cloud, Engineering, Security, Other)
 [ai_news_feed limit="5" category="AI"]      Combined</code></pre>
     </div>
     <?php
