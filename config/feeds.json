@@ -1,0 +1,12 @@
+[
+  { "name": "Kubernetes Blog",   "url": "https://kubernetes.io/feed.xml" },
+  { "name": "AWS News",          "url": "https://aws.amazon.com/blogs/aws/feed/" },
+  { "name": "Anthropic News",    "url": "https://www.anthropic.com/news/rss.xml" },
+  { "name": "OpenAI Blog",       "url": "https://openai.com/blog/rss.xml" },
+  { "name": "The New Stack",     "url": "https://thenewstack.io/feed/" },
+  { "name": "HN Front Page",     "url": "https://hnrss.org/frontpage" },
+  { "name": "CNCF Blog",         "url": "https://www.cncf.io/feed/" },
+  { "name": "HashiCorp Blog",    "url": "https://www.hashicorp.com/blog/feed.xml" },
+  { "name": "Google Cloud Blog", "url": "https://cloud.google.com/blog/rss/" },
+  { "name": "Docker Blog",       "url": "https://www.docker.com/blog/feed/" }
+]

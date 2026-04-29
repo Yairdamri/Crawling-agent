@@ -1,0 +1,17 @@
+{
+  "name": "ai-news-feed-mvp",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Automated AI/DevOps/cloud news pipeline: RSS -> OpenAI -> news.json -> WordPress",
+  "scripts": {
+    "fetch": "node scripts/fetch.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "openai": "^4.77.0",
+    "rss-parser": "^3.13.0"
+  }
+}
