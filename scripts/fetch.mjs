@@ -4,7 +4,7 @@ import { dirname, join } from 'node:path';
 
 import { fetchAllFeeds } from './feeds.mjs';
 import { loadSeenUrls, filterUnseen } from './dedupe.mjs';
-import { processArticles } from './openai.mjs';
+import { processArticles } from './bedrock.mjs';
 import { mergeAndWrite } from './store.mjs';
 
 const here = dirname(fileURLToPath(import.meta.url));
