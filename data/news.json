@@ -1,7 +1,39 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-04-29T14:12:55.765Z",
+  "generatedAt": "2026-04-29T15:06:05.402Z",
   "articles": [
+    {
+      "url": "https://thehackernews.com/2026/04/litellm-cve-2026-42208-sql-injection.html",
+      "title": "LiteLLM CVE-2026-42208 SQL Injection Exploited within 36 Hours of Disclosure",
+      "summary": "CVE-2026-42208 (CVSS 9.3), a critical SQL injection flaw in BerriAI's LiteLLM Python package, came under active exploitation within 36 hours of disclosure. The vulnerability allows attackers to modify underlying data in LiteLLM deployments used for LLM proxy and token management.",
+      "source": "The Hacker News",
+      "tags": [
+        "CVE",
+        "SQL injection",
+        "LiteLLM",
+        "LLM",
+        "Python"
+      ],
+      "score": 9,
+      "category": "AI",
+      "publishedAt": "2026-04-29T05:34:00.000Z"
+    },
+    {
+      "url": "https://thehackernews.com/2026/04/researchers-discover-critical-github.html",
+      "title": "Researchers Discover Critical GitHub CVE-2026-3854 RCE Flaw Exploitable via Single Git Push",
+      "summary": "CVE-2026-3854 (CVSS 8.7), a command injection vulnerability in GitHub.com and GitHub Enterprise Server, allows authenticated users with push access to achieve remote code execution via a single git push command. The flaw requires only repository push access to exploit.",
+      "source": "The Hacker News",
+      "tags": [
+        "CVE",
+        "GitHub",
+        "RCE",
+        "command injection",
+        "DevOps"
+      ],
+      "score": 9,
+      "category": "Security",
+      "publishedAt": "2026-04-28T18:19:00.000Z"
+    },
     {
       "url": "https://www.wiz.io/blog/github-rce-vulnerability-cve-2026-3854",
       "title": "GitHub RCE Vulnerability: CVE-2026-3854 Breakdown",
@@ -17,6 +49,37 @@
       "score": 9,
       "category": "Engineering",
       "publishedAt": "2026-04-28T16:15:43.000Z"
+    },
+    {
+      "url": "https://github.blog/security/securing-the-git-push-pipeline-responding-to-a-critical-remote-code-execution-vulnerability/",
+      "title": "Securing the git push pipeline: Responding to a critical remote code execution vulnerability",
+      "summary": "GitHub patched a critical RCE vulnerability in the git push pipeline that allowed arbitrary command execution via crafted push options with unsanitized characters. The vulnerability was reported through the bug bounty program, validated and fixed within two hours with no evidence of exploitation.",
+      "source": "GitHub Blog",
+      "tags": [
+        "security",
+        "CVE",
+        "RCE",
+        "git"
+      ],
+      "score": 9,
+      "category": "Security",
+      "publishedAt": "2026-04-28T15:30:00.000Z"
+    },
+    {
+      "url": "https://thehackernews.com/2026/04/critical-cve-2026-25874-leaves-hugging.html",
+      "title": "Critical Unpatched Flaw Leaves Hugging Face LeRobot Open to Unauthenticated RCE",
+      "summary": "CVE-2026-25874 (CVSS 9.3), an untrusted data deserialization flaw in Hugging Face's LeRobot robotics platform (24k GitHub stars), allows unauthenticated remote code execution. The vulnerability remains unpatched and is exploitable without authentication.",
+      "source": "The Hacker News",
+      "tags": [
+        "CVE",
+        "RCE",
+        "deserialization",
+        "Hugging Face",
+        "robotics"
+      ],
+      "score": 9,
+      "category": "Security",
+      "publishedAt": "2026-04-28T11:18:00.000Z"
     },
     {
       "url": "https://kubernetes.io/blog/2026/04/24/kubernetes-v1-36-fine-grained-kubelet-authorization-ga/",
@@ -83,6 +146,22 @@
       "publishedAt": "2026-04-02T18:14:40.000Z"
     },
     {
+      "url": "https://thenewstack.io/openai-bedrock-trainium-silicon/",
+      "title": "AWS lands OpenAI on Bedrock, but Trainium is the real story",
+      "summary": "AWS added GPT-5.4 and GPT-5.5 to Bedrock along with OpenAI's Codex agent and Managed Agents, but the substantive news is Anthropic's $100 billion, 10-year commitment to AWS for 5 gigawatts of capacity using Graviton and Trainium2-4 chips for Claude training and inference. This signals a major shift in AI infrastructure economics and AWS's competitive positioning against other cloud providers.",
+      "source": "The New Stack",
+      "tags": [
+        "LLM",
+        "inference",
+        "AWS",
+        "Bedrock",
+        "Trainium"
+      ],
+      "score": 8,
+      "category": "AI",
+      "publishedAt": "2026-04-29T14:54:40.000Z"
+    },
+    {
       "url": "https://thenewstack.io/platform-engineering-ai-agents/",
       "title": "How AI transforms your role as a platform engineer",
       "summary": "As developers build agentic workflows to automate their jobs, platform engineers face new governance and visibility challenges—termed 'agent sprawl'—requiring updated strategies to balance developer velocity with operational control and cost management. Platform teams must evolve from self-service infrastructure to agent governance frameworks.",
@@ -96,6 +175,37 @@
       "score": 8,
       "category": "DevOps",
       "publishedAt": "2026-04-29T13:05:00.000Z"
+    },
+    {
+      "url": "https://thehackernews.com/2026/04/critical-cpanel-authentication.html",
+      "title": "Critical cPanel Authentication Vulnerability Identified — Update Your Server Immediately",
+      "summary": "cPanel released patches for a critical authentication bypass affecting all supported versions (11.110.0.97, 11.118.0.63, 11.126.0.54, 11.132.0.29). The vulnerability impacts multiple authentication paths and requires immediate updates.",
+      "source": "The Hacker News",
+      "tags": [
+        "CVE",
+        "authentication-bypass",
+        "cPanel",
+        "critical"
+      ],
+      "score": 8,
+      "category": "Security",
+      "publishedAt": "2026-04-29T09:37:00.000Z"
+    },
+    {
+      "url": "https://thehackernews.com/2026/04/cisa-adds-actively-exploited.html",
+      "title": "CISA Adds Actively Exploited ConnectWise and Windows Flaws to KEV",
+      "summary": "CISA added CVE-2024-1708 (CVSS 8.4), a path traversal vulnerability in ConnectWise ScreenConnect, and a Windows flaw to its Known Exploited Vulnerabilities catalog based on active exploitation evidence. Both flaws are being actively exploited in the wild.",
+      "source": "The Hacker News",
+      "tags": [
+        "CVE",
+        "ConnectWise",
+        "Windows",
+        "vulnerability",
+        "CISA"
+      ],
+      "score": 8,
+      "category": "Security",
+      "publishedAt": "2026-04-29T08:46:00.000Z"
     },
     {
       "url": "https://corrode.dev/blog/bugs-rust-wont-catch/",
@@ -145,6 +255,22 @@
       "publishedAt": "2026-04-28T17:00:00.000Z"
     },
     {
+      "url": "https://developer.nvidia.com/blog/nvidia-nemotron-3-nano-omni-powers-multimodal-agent-reasoning-in-a-single-efficient-open-model/",
+      "title": "NVIDIA Nemotron 3 Nano Omni Powers Multimodal Agent Reasoning in a Single Efficient Open Model",
+      "summary": "Nemotron 3 Nano Omni consolidates vision, audio, and text reasoning into a single model, eliminating fragmented model chains that increase inference hops and orchestration overhead. The unified architecture maintains cross-modal context consistency while reducing inference costs for agentic systems.",
+      "source": "NVIDIA Developer Blog",
+      "tags": [
+        "agents",
+        "multimodal",
+        "LLM",
+        "inference",
+        "tool-use"
+      ],
+      "score": 8,
+      "category": "AI",
+      "publishedAt": "2026-04-28T16:01:12.000Z"
+    },
+    {
       "url": "https://thenewstack.io/terraform-state-infrastructure-drift/",
       "title": "Why Terraform is green when your cloud is broken",
       "summary": "Terraform state files are snapshots, not live records—manual infrastructure changes made outside Terraform (e.g., in the AWS console) create drift that Terraform cannot detect, leading to silent failures. The article illustrates how state divergence causes production incidents and discusses drift detection strategies.",
@@ -159,6 +285,22 @@
       "score": 8,
       "category": "DevOps",
       "publishedAt": "2026-04-28T13:00:00.000Z"
+    },
+    {
+      "url": "https://snyk.io/blog/malicious-release-of-elementary-data-pypi-package-steals-cloud-credentials-from-data-engineers/",
+      "title": "Malicious Release of elementary-data PyPI Package Steals Cloud Credentials from Data Engineers",
+      "summary": "Attackers exploited a GitHub Actions script injection flaw to publish elementary-data v0.23.3 with a credential-stealing backdoor targeting dbt profiles, cloud keys, and SSH secrets. This supply-chain attack demonstrates the risk of compromised CI/CD pipelines in open-source projects.",
+      "source": "Snyk Blog",
+      "tags": [
+        "supply-chain",
+        "CVE",
+        "PyPI",
+        "credential-theft",
+        "GitHub-Actions"
+      ],
+      "score": 8,
+      "category": "Security",
+      "publishedAt": "2026-04-27T23:00:00.000Z"
     },
     {
       "url": "https://thenewstack.io/thoughtworks-radar-agentic-ai/",
@@ -176,6 +318,35 @@
       "publishedAt": "2026-04-27T18:53:33.000Z"
     },
     {
+      "url": "https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/",
+      "title": "GitHub Copilot is moving to usage-based billing",
+      "summary": "GitHub Copilot transitions to token-based usage billing on June 1, 2026, replacing the premium request model. All plans include monthly AI Credits with rates based on input, output, and cached tokens; a preview bill experience launches in May to show projected costs.",
+      "source": "GitHub Blog",
+      "tags": [
+        "Copilot",
+        "LLM",
+        "billing",
+        "agents"
+      ],
+      "score": 8,
+      "category": "AI",
+      "publishedAt": "2026-04-27T15:58:22.000Z"
+    },
+    {
+      "url": "https://thehackernews.com/2026/04/mythos-changed-math-on-vulnerability.html",
+      "title": "Mythos Changed the Math on Vulnerability Discovery. Most Teams Aren't Ready for the Remediation Side",
+      "summary": "Anthropic's Claude Mythos Preview, announced April 7, is a cybersecurity-focused AI system capable of identifying vulnerabilities at scale, raising concerns about organizations' ability to validate, prioritize, and remediate findings quickly. The article examines the gap between vulnerability discovery speed and remediation capacity.",
+      "source": "The Hacker News",
+      "tags": [
+        "LLM",
+        "vulnerability-discovery",
+        "evals"
+      ],
+      "score": 8,
+      "category": "AI",
+      "publishedAt": "2026-04-27T11:58:00.000Z"
+    },
+    {
       "url": "https://www.cncf.io/blog/2026/04/27/kubernetes-for-platform-teams-leveraging-k0s-and-k0rdent/",
       "title": "Kubernetes for platform teams: Leveraging k0s and k0rdent",
       "summary": "Practical guide to managing multi-cluster Kubernetes at scale on OpenStack using k0s, k0rdent, and hosted control planes. Addresses the cost and complexity problem of running dozens/hundreds of clusters by reducing per-cluster control plane overhead.",
@@ -190,6 +361,21 @@
       "score": 8,
       "category": "DevOps",
       "publishedAt": "2026-04-27T11:00:00.000Z"
+    },
+    {
+      "url": "https://snyk.io/blog/qinglong-task-scheduler-rce-vulnerabilities/",
+      "title": "Qinglong task scheduler RCE vulnerabilities exploited in the wild for cryptomining",
+      "summary": "Two authentication bypass vulnerabilities (CVE-2026-3965, CVE-2026-4047) in Qinglong task scheduler were actively exploited to deploy cryptomining malware. Self-hosted operators should patch immediately and review access logs for signs of compromise.",
+      "source": "Snyk Blog",
+      "tags": [
+        "CVE",
+        "RCE",
+        "authentication-bypass",
+        "cryptomining"
+      ],
+      "score": 8,
+      "category": "Security",
+      "publishedAt": "2026-04-27T00:00:00.000Z"
     },
     {
       "url": "https://thenewstack.io/disappearing-ai-middle-class/",
@@ -268,6 +454,36 @@
       "publishedAt": "2026-04-23T07:09:00.000Z"
     },
     {
+      "url": "https://aws.amazon.com/blogs/machine-learning/cost-effective-multilingual-audio-transcription-at-scale-with-parakeet-tdt-and-aws-batch/",
+      "title": "Cost-effective multilingual audio transcription at scale with Parakeet-TDT and AWS Batch",
+      "summary": "NVIDIA Parakeet-TDT-0.6B-v3 deployed on AWS Batch with GPU instances achieves inference speeds orders of magnitude faster than real-time by using Token-and-Duration Transducer architecture to skip silence. The open-source model supports 25 European languages with automatic language detection and costs fractions of a cent per audio hour using Spot Instances and buffered streaming inference.",
+      "source": "AWS ML Blog",
+      "tags": [
+        "ASR",
+        "inference optimization",
+        "multilingual",
+        "cost optimization"
+      ],
+      "score": 8,
+      "category": "AI",
+      "publishedAt": "2026-04-22T21:05:01.000Z"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/get-to-your-first-working-agent-in-minutes-announcing-new-features-in-amazon-bedrock-agentcore/",
+      "title": "Get to your first working agent in minutes: Announcing new features in Amazon Bedrock AgentCore",
+      "summary": "Amazon Bedrock AgentCore removes infrastructure barriers by handling agent harness setup (compute, sandboxing, tool connections, storage, error recovery) out of the box, supporting LangGraph, LlamaIndex, CrewAI, and Strands Agents. Developers can now focus on agent logic instead of backend plumbing and move from prototype to production deployment faster.",
+      "source": "AWS ML Blog",
+      "tags": [
+        "agents",
+        "orchestration",
+        "Bedrock",
+        "framework integration"
+      ],
+      "score": 8,
+      "category": "AI",
+      "publishedAt": "2026-04-22T19:13:56.000Z"
+    },
+    {
       "url": "https://kubernetes.io/blog/2026/04/22/breaking-changes-in-selinux-volume-labeling/",
       "title": "SELinux Volume Label Changes goes GA (and likely implications in v1.37)",
       "summary": "Kubernetes v1.36 makes SELinux volume labeling changes GA; a future release (likely v1.37) will enable SELinuxMount by default, improving volume setup performance but potentially breaking applications that depend on recursive relabeling. Operators running SELinux in enforcing mode should audit their clusters in v1.36 to identify and fix affected workloads.",
@@ -282,6 +498,21 @@
       "score": 8,
       "category": "Cloud",
       "publishedAt": "2026-04-22T18:35:00.000Z"
+    },
+    {
+      "url": "https://deepmind.google/blog/decoupled-diloco/",
+      "title": "Decoupled DiLoCo: A new frontier for resilient, distributed AI training",
+      "summary": "DeepMind introduced Decoupled DiLoCo, a distributed training approach designed to improve resilience and efficiency in large-scale AI model training. The method decouples local and global optimization steps to enable more robust training across distributed systems.",
+      "source": "DeepMind",
+      "tags": [
+        "training",
+        "distributed",
+        "infrastructure",
+        "resilience"
+      ],
+      "score": 8,
+      "category": "AI",
+      "publishedAt": "2026-04-22T10:20:03.000Z"
     },
     {
       "url": "https://openai.com/index/speeding-up-agentic-workflows-with-websockets",
@@ -330,6 +561,53 @@
       "score": 8,
       "category": "DevOps",
       "publishedAt": "2026-04-21T15:06:09.000Z"
+    },
+    {
+      "url": "https://developer.nvidia.com/blog/run-high-throughput-reinforcement-learning-training-with-end-to-end-fp8-precision/",
+      "title": "Run High-Throughput Reinforcement Learning Training with End-to-End FP8 Precision",
+      "summary": "Demonstrates end-to-end FP8 precision for RL training workflows, enabling reasoning-grade LLMs via algorithms like GRPO. Addresses the bifurcated training phases of RL loops for complex reasoning tasks.",
+      "source": "NVIDIA Developer Blog",
+      "tags": [
+        "reinforcement learning",
+        "LLM",
+        "training",
+        "FP8",
+        "GRPO"
+      ],
+      "score": 8,
+      "category": "AI",
+      "publishedAt": "2026-04-20T22:52:15.000Z"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/toolsimulator-scalable-tool-testing-for-ai-agents/",
+      "title": "ToolSimulator: scalable tool testing for AI agents",
+      "summary": "Introduces ToolSimulator, an LLM-powered tool simulation framework in Strands Evals SDK, enabling safe testing of AI agents with external tools using stateful simulations instead of live API calls or static mocks. Supports multi-turn workflows, Pydantic schema enforcement, and integration into evaluation pipelines to catch integration bugs and edge cases before production.",
+      "source": "AWS ML Blog",
+      "tags": [
+        "agents",
+        "tool-use",
+        "evals",
+        "testing",
+        "LLM"
+      ],
+      "score": 8,
+      "category": "AI",
+      "publishedAt": "2026-04-20T17:06:26.000Z"
+    },
+    {
+      "url": "https://developer.nvidia.com/blog/full-stack-optimizations-for-agentic-inference-with-nvidia-dynamo/",
+      "title": "Full-Stack Optimizations for Agentic Inference with NVIDIA Dynamo",
+      "summary": "Covers inference stack optimizations for coding agents at scale: Stripe generates 1,300+ PRs/week, Ramp attributes 30% of merged PRs to agents, Spotify generates 650+ PRs/month. NVIDIA Dynamo provides full-stack optimizations for agents making hundreds of API calls per session.",
+      "source": "NVIDIA Developer Blog",
+      "tags": [
+        "agents",
+        "inference",
+        "optimization",
+        "code generation"
+      ],
+      "score": 8,
+      "category": "AI",
+      "publishedAt": "2026-04-17T22:52:47.000Z"
     },
     {
       "url": "https://www.hashicorp.com/blog/advancing-secret-sync-with-workload-identity-federation",
@@ -395,6 +673,21 @@
       "publishedAt": "2026-04-16T14:49:33.000Z"
     },
     {
+      "url": "https://huggingface.co/blog/ibm-research/vakra-benchmark-analysis",
+      "title": "Inside VAKRA: Reasoning, Tool Use, and Failure Modes of Agents",
+      "summary": "Analysis of the VAKRA benchmark for evaluating agent reasoning, tool use, and failure modes. Provides insights into how agents handle complex multi-step tasks and where current approaches break down.",
+      "source": "Hugging Face Blog",
+      "tags": [
+        "agents",
+        "evals",
+        "tool-use",
+        "reasoning"
+      ],
+      "score": 8,
+      "category": "AI",
+      "publishedAt": "2026-04-15T12:07:25.000Z"
+    },
+    {
       "url": "https://www.docker.com/blog/why-we-chose-the-harder-path-docker-hardened-images-one-year-later/",
       "title": "Why We Chose the Harder Path: Docker Hardened Images, One Year Later",
       "summary": "Docker Hardened Images (DHI) has reached 500k daily pulls and 2,000+ artifacts with continuous patching across CVEs and distros, using SLSA Build Level 3 attestations and multi-distro support to avoid vendor lock-in. The approach prioritizes ecosystem security and independent verifiability over proprietary shortcuts.",
@@ -409,6 +702,21 @@
       "score": 8,
       "category": "Cloud",
       "publishedAt": "2026-04-14T21:48:03.000Z"
+    },
+    {
+      "url": "https://krebsonsecurity.com/2026/04/patch-tuesday-april-2026-edition/",
+      "title": "Patch Tuesday, April 2026 Edition",
+      "summary": "Microsoft released 167 security patches including CVE-2026-32201, a SharePoint Server zero-day enabling content spoofing and phishing, and CVE-2026-33825 (BlueHammer), a Windows Defender privilege escalation flaw with public exploit code. Google Chrome fixed its fourth zero-day of 2026, and Adobe Reader patched an actively exploited remote code execution vulnerability.",
+      "source": "Krebs on Security",
+      "tags": [
+        "CVE",
+        "zero-day",
+        "Windows",
+        "SharePoint"
+      ],
+      "score": 8,
+      "category": "Security",
+      "publishedAt": "2026-04-14T21:47:59.000Z"
     },
     {
       "url": "https://www.hashicorp.com/blog/vault-enterprise-20-modernizes-identity-security-at-scale",
@@ -443,6 +751,50 @@
       "publishedAt": "2026-04-07T19:18:32.000Z"
     },
     {
+      "url": "https://krebsonsecurity.com/2026/04/russia-hacked-routers-to-steal-microsoft-office-tokens/",
+      "title": "Russia Hacked Routers to Steal Microsoft Office Tokens",
+      "summary": "Russian military intelligence (Forest Blizzard/APT28) exploited known vulnerabilities in end-of-life routers to harvest Microsoft Office authentication tokens from over 18,000 networks without deploying malware, affecting 200+ organizations and 5,000 consumer devices. The campaign redirected DNS requests at the router level to intercept credentials at scale.",
+      "source": "Krebs on Security",
+      "tags": [
+        "APT",
+        "threat-intelligence",
+        "authentication",
+        "router"
+      ],
+      "score": 8,
+      "category": "Security",
+      "publishedAt": "2026-04-07T17:02:44.000Z"
+    },
+    {
+      "url": "https://research.google/blog/evaluating-alignment-of-behavioral-dispositions-in-llms/",
+      "title": "Evaluating alignment of behavioral dispositions in LLMs",
+      "summary": "This work presents methods for evaluating how well LLM behavioral dispositions align with intended values and safety goals. The research contributes to LLM evaluation and alignment methodology.",
+      "source": "Google Research Blog",
+      "tags": [
+        "LLM",
+        "evals",
+        "alignment"
+      ],
+      "score": 8,
+      "category": "AI",
+      "publishedAt": "2026-04-03T08:00:00.000Z"
+    },
+    {
+      "url": "https://deepmind.google/blog/gemma-4-byte-for-byte-the-most-capable-open-models/",
+      "title": "Gemma 4: Byte for byte, the most capable open models",
+      "summary": "Gemma 4 represents DeepMind's most capable open-source models to date, purpose-built for advanced reasoning and agentic workflows. The release emphasizes efficiency and capability density for agent-based applications.",
+      "source": "DeepMind",
+      "tags": [
+        "open-source",
+        "LLM",
+        "agents",
+        "reasoning"
+      ],
+      "score": 8,
+      "category": "AI",
+      "publishedAt": "2026-04-02T16:00:49.000Z"
+    },
+    {
       "url": "https://www.docker.com/blog/docker-offload-now-generally-available-the-full-power-of-docker-for-every-developer-everywhere/",
       "title": "Docker Offload now Generally Available: The Full Power of Docker, for Every Developer, Everywhere.",
       "summary": "Docker Offload moves the container engine to Docker's cloud, enabling Docker Desktop to run in restricted environments like VDI and managed desktops without local resource constraints. Developers retain familiar workflows and CLI commands while the engine executes remotely, unblocking enterprise teams previously unable to use Docker Desktop.",
@@ -459,6 +811,20 @@
       "publishedAt": "2026-04-02T13:00:00.000Z"
     },
     {
+      "url": "https://huggingface.co/blog/gemma4",
+      "title": "Welcome Gemma 4: Frontier multimodal intelligence on device",
+      "summary": "Gemma 4 brings multimodal capabilities to Google's on-device model family, enabling vision and language tasks on consumer hardware. The model targets edge deployment with frontier-class reasoning.",
+      "source": "Hugging Face Blog",
+      "tags": [
+        "foundation models",
+        "multimodal",
+        "on-device inference"
+      ],
+      "score": 8,
+      "category": "AI",
+      "publishedAt": "2026-04-02T00:00:00.000Z"
+    },
+    {
       "url": "https://www.docker.com/blog/docker-sandboxes-run-agents-in-yolo-mode-safely/",
       "title": "Docker Sandboxes: Run Agents in YOLO Mode, Safely",
       "summary": "Docker Sandboxes provide isolated execution environments for autonomous AI agents with predefined resource and file access boundaries, enabling safe YOLO-mode operation without per-step permission checks. The sandboxes work standalone without Docker Desktop and integrate with coding agents like Claude Code, GitHub Copilot CLI, and Gemini CLI.",
@@ -473,6 +839,20 @@
       "score": 8,
       "category": "AI",
       "publishedAt": "2026-03-31T16:39:16.000Z"
+    },
+    {
+      "url": "https://huggingface.co/blog/OpenMed/training-mrna-models-25-species",
+      "title": "Training mRNA Language Models Across 25 Species for $165",
+      "summary": "Researchers trained language models on mRNA sequences across 25 species using efficient techniques, achieving results for under $200 in compute cost. The work demonstrates cost-effective foundation model training for genomics applications.",
+      "source": "Hugging Face Blog",
+      "tags": [
+        "foundation models",
+        "genomics",
+        "training efficiency"
+      ],
+      "score": 8,
+      "category": "AI",
+      "publishedAt": "2026-03-31T08:23:44.000Z"
     },
     {
       "url": "https://thenewstack.io/warp-open-source-client/",
@@ -522,6 +902,37 @@
       "publishedAt": "2026-04-29T12:38:50.000Z"
     },
     {
+      "url": "https://thehackernews.com/2026/04/webinar-how-to-automate-exposure.html",
+      "title": "Webinar: How to Automate Exposure Validation to Match the Speed of AI Attacks",
+      "summary": "Threat actors are now deploying custom AI agents to automate attack chains, including Active Directory mapping and credential harvesting, completing full compromise in minutes. Defensive teams need exposure validation automation to match this attack velocity.",
+      "source": "The Hacker News",
+      "tags": [
+        "AI",
+        "threat-intelligence",
+        "agents",
+        "Active-Directory",
+        "automation"
+      ],
+      "score": 7,
+      "category": "Security",
+      "publishedAt": "2026-04-29T12:02:00.000Z"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/run-custom-mcp-proxies-serverless-on-amazon-bedrock-agentcore-runtime/",
+      "title": "Run custom MCP proxies serverless on Amazon Bedrock AgentCore Runtime",
+      "summary": "Amazon Bedrock AgentCore Runtime now supports serverless MCP proxies via Lambda interceptors, enabling custom governance and control logic for agent-tool interactions. Organizations can implement input sanitization, audit trails, and data redaction at the protocol layer while maintaining compliance with internal policies and regulations.",
+      "source": "AWS ML Blog",
+      "tags": [
+        "agents",
+        "tool-use",
+        "MCP",
+        "governance"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-04-29T11:52:16.000Z"
+    },
+    {
       "url": "https://www.cncf.io/blog/2026/04/29/the-state-of-ai-in-cncf-projects-a-first-look-at-the-data/",
       "title": "The state of AI in CNCF projects: A first look at the data",
       "summary": "Survey of 133 CNCF project contributors reveals AI tool adoption patterns: ~50% use AI in IDEs/CLI, with Claude Code and GitHub Copilot as leaders. Highlights emerging need for shared guidelines on AI-assisted development in cloud-native ecosystems.",
@@ -552,6 +963,21 @@
       "score": 7,
       "category": "DevOps",
       "publishedAt": "2026-04-29T09:14:37.000Z"
+    },
+    {
+      "url": "https://snyk.io/blog/thymeleaf-injection/",
+      "title": "Don't Panic: The Thymeleaf Template Injection That Only Hurts If You Let It (CVE-2026-40478)",
+      "summary": "CVE-2026-40478 is a Thymeleaf template injection vulnerability (CVSS 9.1) that requires dynamic view or template expression misuse to exploit. Patch to version 3.1.4+ and audit code for unsafe template handling patterns.",
+      "source": "Snyk Blog",
+      "tags": [
+        "CVE",
+        "template-injection",
+        "Thymeleaf",
+        "security"
+      ],
+      "score": 7,
+      "category": "Security",
+      "publishedAt": "2026-04-29T00:00:00.000Z"
     },
     {
       "url": "https://mitchellh.com/writing/ghostty-leaving-github",
@@ -585,6 +1011,37 @@
       "publishedAt": "2026-04-28T19:24:43.000Z"
     },
     {
+      "url": "https://www.databricks.com/blog/months-minutes-building-real-time-clinical-data-pipelines-natural-language",
+      "title": "From months to minutes: Building real-time clinical data pipelines with natural language",
+      "summary": "Databricks and Redox demonstrate using natural language interfaces to accelerate clinical data pipeline construction from months to minutes. The approach leverages LLMs to translate business requirements into production data workflows for healthcare systems.",
+      "source": "Databricks Blog",
+      "tags": [
+        "LLM",
+        "data pipelines",
+        "healthcare",
+        "natural language"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-04-28T19:06:00.000Z"
+    },
+    {
+      "url": "https://developer.nvidia.com/blog/scaling-biomolecular-modeling-using-context-parallelism-in-nvidia-bionemo/",
+      "title": "Scaling Biomolecular Modeling Using Context Parallelism in NVIDIA BioNeMo",
+      "summary": "NVIDIA BioNeMo uses context parallelism to overcome GPU memory constraints that previously forced researchers to model proteins in isolated fragments. The approach enables zero-shot folding of larger protein complexes by distributing context across multiple GPUs rather than deconstructing biological systems.",
+      "source": "NVIDIA Developer Blog",
+      "tags": [
+        "LLM",
+        "inference",
+        "GPU",
+        "parallelism",
+        "biomolecular"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-04-28T19:00:00.000Z"
+    },
+    {
       "url": "https://thenewstack.io/broadcom-vcf-kubernetes-platform/",
       "title": "Why Broadcom is betting on a private cloud comeback",
       "summary": "Broadcom's VMware Cloud Foundation (VCF) is evolving toward a modern Kubernetes-native app substrate for private cloud, balancing ease-of-use with flexibility and open-source alignment. The strategy addresses enterprise demand for data sovereignty and native open-source stacks while supporting platform engineering at scale.",
@@ -598,6 +1055,21 @@
       "score": 7,
       "category": "Cloud",
       "publishedAt": "2026-04-28T18:09:41.000Z"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/migrating-a-text-agent-to-a-voice-assistant-with-amazon-nova-2-sonic/",
+      "title": "Migrating a text agent to a voice assistant with Amazon Nova 2 Sonic",
+      "summary": "Amazon Nova 2 Sonic enables real-time voice agent capabilities with barge-in support and latency-optimized responses, requiring different design patterns than text agents. The post covers architecture changes, system prompt adaptation, and tool integration for voice, plus a Skill in the Nova sample repo for automatic text-to-voice agent conversion.",
+      "source": "AWS ML Blog",
+      "tags": [
+        "LLM",
+        "agents",
+        "voice",
+        "Nova"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-04-28T17:46:55.000Z"
     },
     {
       "url": "https://thenewstack.io/sas-viya-mcp-governance/",
@@ -614,6 +1086,21 @@
       "score": 7,
       "category": "AI",
       "publishedAt": "2026-04-28T17:29:49.000Z"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/nvidia-nemotron-3-nano-omni-model-now-available-on-amazon-sagemaker-jumpstart/",
+      "title": "NVIDIA Nemotron 3 Nano Omni model now available on Amazon SageMaker JumpStart",
+      "summary": "NVIDIA Nemotron 3 Nano Omni, a 30B parameter multimodal model with 3B active parameters, is now available on SageMaker JumpStart in FP8 precision. The model combines Mamba2 MoE architecture with vision and speech encoders, supports 131K token context, tool calling, and word-level transcription timestamps for video, audio, image, and text inputs.",
+      "source": "AWS ML Blog",
+      "tags": [
+        "LLM",
+        "multimodal",
+        "foundation models",
+        "inference"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-04-28T16:40:34.000Z"
     },
     {
       "url": "https://thenewstack.io/sentrys-seer-agent-debug/",
@@ -647,6 +1134,52 @@
       "publishedAt": "2026-04-28T16:00:00.000Z"
     },
     {
+      "url": "https://developer.nvidia.com/blog/24-7-simulation-loops-how-agentic-ai-keeps-subsurface-engineering-moving/",
+      "title": "24/7 Simulation Loops: How Agentic AI Keeps Subsurface Engineering Moving",
+      "summary": "Agentic AI automates subsurface engineering workflows that were previously bottlenecked by manual data handling and human bandwidth constraints. The approach enables continuous simulation loops to unlock reservoir potential without requiring expert intervention for each iteration.",
+      "source": "NVIDIA Developer Blog",
+      "tags": [
+        "agents",
+        "automation",
+        "simulation",
+        "domain-specific"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-04-28T15:00:00.000Z"
+    },
+    {
+      "url": "https://www.databricks.com/blog/agentic-data-engineering-genie-code-and-lakeflow",
+      "title": "Agentic Data Engineering with Genie Code and Lakeflow",
+      "summary": "Databricks introduces Genie Code, enabling data engineers to write production-ready SQL and data transformations using natural language prompts. The feature integrates with Lakeflow for autonomous data pipeline generation and optimization.",
+      "source": "Databricks Blog",
+      "tags": [
+        "agents",
+        "LLM",
+        "data engineering",
+        "SQL generation"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-04-28T15:00:00.000Z"
+    },
+    {
+      "url": "https://thehackernews.com/2026/04/vect-20-ransomware-irreversibly.html",
+      "title": "VECT 2.0 Ransomware Irreversibly Destroys Files Over 131KB on Windows, Linux, ESXi",
+      "summary": "VECT 2.0 functions as a wiper rather than ransomware due to a critical encryption flaw that permanently destroys files larger than 131KB across Windows, Linux, and ESXi systems, making recovery impossible even for the threat actors. The broken encryption implementation renders the malware unable to decrypt files.",
+      "source": "The Hacker News",
+      "tags": [
+        "ransomware",
+        "wiper",
+        "malware",
+        "Windows",
+        "Linux"
+      ],
+      "score": 7,
+      "category": "Security",
+      "publishedAt": "2026-04-28T14:01:00.000Z"
+    },
+    {
       "url": "https://thenewstack.io/lovelace-ai-context-engine-elemental-andrew-moore/",
       "title": "Lovelace emerges from stealth with context engine that claims 1000x AI investigative power",
       "summary": "Lovelace AI, led by former Google Cloud AI head Andrew Moore, launched Elemental, an enterprise context engine designed for high-stakes investigative AI tasks. The platform addresses LLM limitations in complex reasoning over large datasets where accuracy is critical, targeting finance, legal, and government sectors.",
@@ -661,6 +1194,50 @@
       "score": 7,
       "category": "AI",
       "publishedAt": "2026-04-28T12:30:00.000Z"
+    },
+    {
+      "url": "https://github.blog/news-insights/company-news/an-update-on-github-availability/",
+      "title": "An update on GitHub availability",
+      "summary": "GitHub is scaling infrastructure from 10X to 30X capacity to handle exponential growth in agentic development workflows since December 2025. Repository creation, pull requests, API usage, and automation are growing rapidly, requiring redesign of interconnected systems (Git storage, Actions, search, webhooks, databases) to prevent cascading failures.",
+      "source": "GitHub Blog",
+      "tags": [
+        "infrastructure",
+        "reliability",
+        "agents",
+        "scaling"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-04-28T10:01:37.000Z"
+    },
+    {
+      "url": "https://thehackernews.com/2026/04/microsoft-patches-entra-id-role-flaw.html",
+      "title": "Microsoft Patches Entra ID Role Flaw That Enabled Service Principal Takeover",
+      "summary": "Microsoft patched a privilege escalation vulnerability in Entra ID's Agent ID Administrator role, a built-in role for AI agents that could enable identity takeover attacks. Silverfort researchers discovered the flaw allowed attackers to escalate privileges within the AI agent identity lifecycle management system.",
+      "source": "The Hacker News",
+      "tags": [
+        "CVE",
+        "privilege-escalation",
+        "identity",
+        "AI"
+      ],
+      "score": 7,
+      "category": "Security",
+      "publishedAt": "2026-04-28T06:37:00.000Z"
+    },
+    {
+      "url": "https://thehackernews.com/2026/04/microsoft-confirms-active-exploitation.html",
+      "title": "Microsoft Confirms Active Exploitation of Windows Shell CVE-2026-32202",
+      "summary": "Microsoft revised its advisory for CVE-2026-32202 (CVSS 4.3), a Windows Shell spoofing vulnerability, to confirm active exploitation in the wild. The flaw allows attackers to access sensitive information and was patched in the April Patch Tuesday update.",
+      "source": "The Hacker News",
+      "tags": [
+        "CVE",
+        "Windows",
+        "active-exploitation"
+      ],
+      "score": 7,
+      "category": "Security",
+      "publishedAt": "2026-04-28T05:50:00.000Z"
     },
     {
       "url": "https://openai.com/index/openai-on-aws",
@@ -691,6 +1268,21 @@
       "score": 7,
       "category": "Cloud",
       "publishedAt": "2026-04-27T18:35:00.000Z"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-strands-agents-with-sagemaker-ai-models-and-mlflow/",
+      "title": "Build Strands Agents with SageMaker AI models and MLflow",
+      "summary": "This post demonstrates building AI agents using Strands Agents SDK with models deployed on SageMaker AI endpoints, providing architectural control over compute, scaling, and placement. It covers SageMaker JumpStart model deployment, MLflow observability for agent tracing, A/B testing across model variants, and performance evaluation metrics.",
+      "source": "AWS ML Blog",
+      "tags": [
+        "agents",
+        "SageMaker",
+        "MLflow",
+        "observability"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-04-27T16:50:41.000Z"
     },
     {
       "url": "https://thenewstack.io/vibe-coding-ceos-executives-ai-agents/",
@@ -739,6 +1331,20 @@
       "publishedAt": "2026-04-27T15:00:00.000Z"
     },
     {
+      "url": "https://thehackernews.com/2026/04/checkmarx-confirms-github-repository.html",
+      "title": "Checkmarx Confirms GitHub Repository Data Posted on Dark Web After March 23 Attack",
+      "summary": "Checkmarx disclosed that data from its GitHub repository was posted on the dark web following a March 23 supply chain attack. The attackers gained repository access through the initial supply chain compromise and exfiltrated sensitive data.",
+      "source": "The Hacker News",
+      "tags": [
+        "supply-chain",
+        "breach",
+        "GitHub"
+      ],
+      "score": 7,
+      "category": "Security",
+      "publishedAt": "2026-04-27T14:19:00.000Z"
+    },
+    {
       "url": "https://openai.com/index/openai-available-at-fedramp-moderate",
       "title": "OpenAI available at FedRAMP Moderate",
       "summary": "OpenAI achieves FedRAMP Moderate authorization for ChatGPT Enterprise and the OpenAI API, enabling U.S. federal agencies to adopt AI services with compliance assurance. This removes a key barrier for government adoption of OpenAI's models.",
@@ -783,6 +1389,35 @@
       "publishedAt": "2026-04-27T12:00:00.000Z"
     },
     {
+      "url": "https://thehackernews.com/2026/04/researchers-uncover-73-fake-vs-code.html",
+      "title": "Researchers Uncover 73 Fake VS Code Extensions Delivering GlassWorm v2 Malware",
+      "summary": "Researchers identified 73 malicious VS Code extensions on the Open VSX repository cloned from legitimate counterparts as part of the GlassWorm information-stealing campaign. Six extensions confirmed malicious, with the remainder acting as decoys to build trust before payload delivery.",
+      "source": "The Hacker News",
+      "tags": [
+        "malware",
+        "supply-chain",
+        "VS-Code"
+      ],
+      "score": 7,
+      "category": "Security",
+      "publishedAt": "2026-04-27T11:23:00.000Z"
+    },
+    {
+      "url": "https://www.databricks.com/blog/inside-one-first-production-deployments-lakebase-langguards-agentic-workflow-governance-engine",
+      "title": "Inside one of the first production deployments of Lakebase: LangGuard's agentic workflow governance engine",
+      "summary": "LangGuard deployed an agentic workflow governance engine on Lakebase to monitor and control autonomous AI agent behavior in production. The system addresses observability and safety challenges in multi-step agent workflows.",
+      "source": "Databricks Blog",
+      "tags": [
+        "agents",
+        "governance",
+        "safety",
+        "observability"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-04-27T10:55:51.000Z"
+    },
+    {
       "url": "https://openai.com/index/open-source-codex-orchestration-symphony",
       "title": "An open-source spec for orchestration: Symphony",
       "summary": "Symphony is an open-source specification for orchestrating Codex agents that integrates with issue trackers to create always-on agent systems. It reduces context switching and automates engineering workflows by treating issue trackers as persistent agent interfaces.",
@@ -795,6 +1430,67 @@
       "score": 7,
       "category": "Engineering",
       "publishedAt": "2026-04-27T00:00:00.000Z"
+    },
+    {
+      "url": "https://developer.nvidia.com/blog/build-with-deepseek-v4-using-nvidia-blackwell-and-gpu-accelerated-endpoints/",
+      "title": "Build with DeepSeek V4 Using NVIDIA Blackwell and GPU-Accelerated Endpoints",
+      "summary": "DeepSeek-V4-Pro (1.6T parameters, 49B active) and DeepSeek-V4-Flash (284B parameters, 13B active) enable million-token context inference on NVIDIA Blackwell GPUs. Both models prioritize efficient inference for high-throughput applications.",
+      "source": "NVIDIA Developer Blog",
+      "tags": [
+        "LLM",
+        "inference",
+        "context-window",
+        "Blackwell"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-04-24T23:29:56.000Z"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/building-workforce-ai-agents-with-visier-and-amazon-quick/",
+      "title": "Building Workforce AI Agents with Visier and Amazon Quick",
+      "summary": "Amazon Quick integrates with Visier's workforce intelligence platform via Model Context Protocol (MCP) to create an agentic workspace for knowledge workers. Intelligent agents retrieve and reason across enterprise knowledge, business intelligence, and workflow automation to answer questions grounded in live workforce data without context switching.",
+      "source": "AWS ML Blog",
+      "tags": [
+        "agents",
+        "MCP",
+        "enterprise AI",
+        "tool-use",
+        "workflow automation"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-04-24T18:04:20.000Z"
+    },
+    {
+      "url": "https://developer.nvidia.com/blog/federated-learning-without-the-refactoring-overhead-using-nvidia-flare/",
+      "title": "Federated Learning Without the Refactoring Overhead Using NVIDIA FLARE",
+      "summary": "NVIDIA FLARE enables federated learning without requiring model refactoring, addressing data sovereignty and regulatory constraints that prevent centralized aggregation. The framework handles data gravity and organizational risk tolerance by keeping sensitive data local while training collaboratively.",
+      "source": "NVIDIA Developer Blog",
+      "tags": [
+        "federated-learning",
+        "MLOps",
+        "privacy",
+        "training"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-04-24T15:00:00.000Z"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/applying-multimodal-biological-foundation-models-across-therapeutics-and-patient-care/",
+      "title": "Applying multimodal biological foundation models across therapeutics and patient care",
+      "summary": "AWS provides a unified environment for multimodal biological foundation models (BioFMs) that integrate fragmented healthcare data (omics, medical images, clinical trials, EHRs) to support drug discovery and personalized medicine. BioFMs pre-trained on large biological datasets enable more confident decision-making by revealing relationships hidden across data types.",
+      "source": "AWS ML Blog",
+      "tags": [
+        "foundation models",
+        "multimodal",
+        "healthcare AI",
+        "drug discovery"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-04-23T16:17:29.000Z"
     },
     {
       "url": "https://openai.com/index/gpt-5-5-system-card",
@@ -825,6 +1521,37 @@
       "score": 7,
       "category": "AI",
       "publishedAt": "2026-04-23T00:00:00.000Z"
+    },
+    {
+      "url": "https://developer.nvidia.com/blog/advancing-emerging-optimizers-for-accelerated-llm-training-with-nvidia-megatron/",
+      "title": "Advancing Emerging Optimizers for Accelerated LLM Training with NVIDIA Megatron",
+      "summary": "NVIDIA explores higher-order optimization algorithms like Shampoo and Muon for accelerating LLM training on Megatron. Muon was used to train Kimi K2 and GLM-5, demonstrating practical gains in open-source model development.",
+      "source": "NVIDIA Developer Blog",
+      "tags": [
+        "LLM",
+        "training",
+        "optimization",
+        "Megatron",
+        "MLOps"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-04-22T20:01:03.000Z"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-ai-now-supports-optimized-generative-ai-inference-recommendations/",
+      "title": "Amazon SageMaker AI now supports optimized generative AI inference recommendations",
+      "summary": "Amazon SageMaker AI now provides validated, optimal deployment configurations with performance metrics using NVIDIA AIPerf benchmarking, eliminating weeks of manual GPU configuration and optimization testing. The integration with NVIDIA Dynamo's modular components enables consistent metrics across diverse workloads with minimal setup.",
+      "source": "AWS ML Blog",
+      "tags": [
+        "inference optimization",
+        "benchmarking",
+        "generative AI",
+        "deployment"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-04-22T19:15:08.000Z"
     },
     {
       "url": "https://www.hashicorp.com/blog/faster-threat-detection-with-boundary-session-recording-auditbeat",
@@ -859,6 +1586,21 @@
       "publishedAt": "2026-04-22T16:00:00.000Z"
     },
     {
+      "url": "https://aws.amazon.com/blogs/machine-learning/company-wise-memory-in-amazon-bedrock-with-amazon-neptune-and-mem0/",
+      "title": "Company-wise memory in Amazon Bedrock with Amazon Neptune and Mem0",
+      "summary": "Amazon Bedrock now supports company-wise memory powered by Amazon Neptune and Mem0, enabling AI agents to retain persistent, company-specific context across multiple interactions. TrendMicro's Companion chatbot demonstrates the approach by combining long-term organizational knowledge with short-term conversation history using Neptune, OpenSearch, and Bedrock.",
+      "source": "AWS ML Blog",
+      "tags": [
+        "agents",
+        "memory",
+        "knowledge graph",
+        "enterprise AI"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-04-22T15:56:24.000Z"
+    },
+    {
       "url": "https://kubernetes.io/blog/2026/04/22/kubernetes-v1-36-release/",
       "title": "Kubernetes v1.36: ハル (Haru)",
       "summary": "Kubernetes v1.36 release announcement covering 70 enhancements: 18 graduating to stable, 25 entering beta, and 25 entering alpha. The release includes deprecations and removals; refer to detailed feature posts for specifics on staleness mitigation, mutable job resources, fine-grained kubelet auth, user namespaces, and SELinux changes.",
@@ -873,6 +1615,52 @@
       "score": 7,
       "category": "Cloud",
       "publishedAt": "2026-04-22T00:00:00.000Z"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/from-developer-desks-to-the-whole-organization-running-claude-cowork-in-amazon-bedrock/",
+      "title": "From developer desks to the whole organization: Running Claude Cowork in Amazon Bedrock",
+      "summary": "Claude Cowork is now available in Amazon Bedrock, enabling organizations to run the desktop application for document analysis, multi-step research, file processing, and report generation while maintaining enterprise security and data residency. Bedrock does not store prompts, files, or model responses, keeping data under customer control.",
+      "source": "AWS ML Blog",
+      "tags": [
+        "Claude",
+        "Bedrock",
+        "LLM",
+        "enterprise security"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-04-21T19:13:49.000Z"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/end-to-end-lineage-with-dvc-and-amazon-sagemaker-ai-mlflow-apps/",
+      "title": "End-to-end lineage with DVC and Amazon SageMaker AI MLflow apps",
+      "summary": "Demonstrates integrating DVC, SageMaker AI, and SageMaker MLflow Apps to trace model lineage from training data through deployment, supporting both dataset-level and record-level lineage patterns. Addresses audit requirements in regulated industries (healthcare, financial services, autonomous vehicles) by linking deployed models to precise training data and enabling record exclusion on request.",
+      "source": "AWS ML Blog",
+      "tags": [
+        "MLOps",
+        "lineage",
+        "DVC",
+        "SageMaker",
+        "model registry"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-04-21T16:43:03.000Z"
+    },
+    {
+      "url": "https://research.google/blog/reasoningbank-enabling-agents-to-learn-from-experience/",
+      "title": "ReasoningBank: Enabling agents to learn from experience",
+      "source": "Google Research Blog",
+      "summary": "ReasoningBank is a framework enabling AI agents to learn and improve from past experiences through structured reasoning traces. The approach allows agents to build and leverage experience banks for better decision-making in complex tasks.",
+      "tags": [
+        "agents",
+        "reasoning",
+        "learning",
+        "LLM"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-04-21T16:42:22.000Z"
     },
     {
       "url": "https://kubernetes.io/blog/2026/04/21/gateway-api-v1-5/",
@@ -891,6 +1679,83 @@
       "publishedAt": "2026-04-21T16:30:00.000Z"
     },
     {
+      "url": "https://huggingface.co/blog/tiiuae/qimma-arabic-leaderboard",
+      "title": "QIMMA قِمّة ⛰: A Quality-First Arabic LLM Leaderboard",
+      "summary": "Introduces QIMMA, a leaderboard for evaluating Arabic language models with focus on quality metrics rather than scale. Provides standardized benchmarks for assessing Arabic LLM capabilities across multiple tasks and datasets.",
+      "source": "Hugging Face Blog",
+      "tags": [
+        "LLM",
+        "evals",
+        "Arabic",
+        "leaderboard"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-04-21T10:09:58.000Z"
+    },
+    {
+      "url": "https://developer.nvidia.com/blog/maximizing-memory-efficiency-to-run-bigger-models-on-nvidia-jetson/",
+      "title": "Maximizing Memory Efficiency to Run Bigger Models on NVIDIA Jetson",
+      "summary": "Guide to deploying multi-billion-parameter models on NVIDIA Jetson edge devices with constrained memory. Addresses practical challenges for running generative AI models on edge hardware for physical AI agents and autonomous systems.",
+      "source": "NVIDIA Developer Blog",
+      "tags": [
+        "edge",
+        "inference",
+        "memory",
+        "Jetson",
+        "agents"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-04-20T23:01:04.000Z"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/accelerate-generative-ai-inference-on-amazon-sagemaker-ai-with-g7e-instances/",
+      "title": "Accelerate Generative AI Inference on Amazon SageMaker AI with G7e Instances",
+      "summary": "Announces G7e instances with NVIDIA RTX PRO 6000 Blackwell GPUs on SageMaker, offering 96 GB GDDR7 memory per GPU and 2.3x inference performance over G6e. Enables single-node deployment of 35B models (G7e.2xlarge) and up to 300B models on 8-GPU nodes (G7e.48xlarge) in FP16 precision.",
+      "source": "AWS ML Blog",
+      "tags": [
+        "inference",
+        "GPU",
+        "LLM",
+        "SageMaker",
+        "Blackwell"
+      ],
+      "score": 7,
+      "category": "Cloud",
+      "publishedAt": "2026-04-20T19:38:10.000Z"
+    },
+    {
+      "url": "https://github.blog/news-insights/company-news/changes-to-github-copilot-individual-plans/",
+      "title": "Changes to GitHub Copilot Individual plans",
+      "summary": "GitHub paused new sign-ups for Copilot Pro, Pro+, and Student plans and tightened usage limits to manage resource demands from agentic workflows. Pro+ now offers 5X higher limits than Pro; Opus models removed from Pro tier; usage limits now visible in VS Code and Copilot CLI.",
+      "source": "GitHub Blog",
+      "tags": [
+        "Copilot",
+        "LLM",
+        "agents",
+        "usage limits"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-04-20T18:15:28.000Z"
+    },
+    {
+      "url": "https://developer.nvidia.com/blog/mitigating-indirect-agents-md-injection-attacks-in-agentic-environments/",
+      "title": "Mitigating Indirect AGENTS.md Injection Attacks in Agentic Environments",
+      "summary": "Addresses injection attack vectors in coding agents like OpenAI Codex that execute tasks and generate code. Covers security mitigations for agentic systems operating in production environments.",
+      "source": "NVIDIA Developer Blog",
+      "tags": [
+        "agents",
+        "security",
+        "injection attacks",
+        "code generation"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-04-20T17:00:00.000Z"
+    },
+    {
       "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-claude-opus-4-7-in-amazon-bedrock-aws-interconnect-ga-and-more-april-20-2026/",
       "title": "AWS Weekly Roundup: Claude Opus 4.7 in Amazon Bedrock, AWS Interconnect GA, and more (April 20, 2026)",
       "summary": "Claude Opus 4.7 now available in Amazon Bedrock with improved agentic coding (64.3% SWE-bench Pro), knowledge work, and visual understanding. Bedrock's next-gen inference engine adds dynamic capacity allocation and adaptive thinking for production workloads with zero operator access.",
@@ -905,6 +1770,22 @@
       "score": 7,
       "category": "AI",
       "publishedAt": "2026-04-20T15:53:21.000Z"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/omnichannel-ordering-with-amazon-bedrock-agentcore-and-amazon-nova-2-sonic/",
+      "title": "Omnichannel ordering with Amazon Bedrock AgentCore and Amazon Nova 2 Sonic",
+      "summary": "Demonstrates building a voice-enabled omnichannel ordering system using Bedrock AgentCore and Nova 2 Sonic, handling bidirectional audio streams, multi-turn context, and backend service integration across mobile, web, and voice interfaces. Provides modular AWS CDK infrastructure for authentication, order processing, and location-based recommendations.",
+      "source": "AWS ML Blog",
+      "tags": [
+        "agents",
+        "voice",
+        "Bedrock",
+        "Nova",
+        "multimodal"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-04-20T15:03:28.000Z"
     },
     {
       "url": "https://www.cncf.io/blog/2026/04/17/k3s-on-on-prem-infrastructures-the-gitops-way-writing-a-custom-k0rdent-template-from-scratch/",
@@ -923,6 +1804,66 @@
       "publishedAt": "2026-04-17T11:59:00.000Z"
     },
     {
+      "url": "https://github.blog/engineering/infrastructure/how-github-uses-ebpf-to-improve-deployment-safety/",
+      "title": "How GitHub uses eBPF to improve deployment safety",
+      "summary": "GitHub uses eBPF to prevent circular dependencies in their host-based deployment system by selectively monitoring and blocking calls from deployment code to internal services and GitHub binaries. The approach mitigates the risk of deployment scripts creating outages that prevent further deployments to fix the initial incident.",
+      "source": "GitHub Blog",
+      "tags": [
+        "eBPF",
+        "deployment",
+        "infrastructure",
+        "observability"
+      ],
+      "score": 7,
+      "category": "DevOps",
+      "publishedAt": "2026-04-16T16:00:00.000Z"
+    },
+    {
+      "url": "https://developer.nvidia.com/blog/how-to-build-vision-ai-pipelines-using-deepstream-coding-agents/",
+      "title": "How to Build Vision AI Pipelines Using NVIDIA DeepStream Coding Agents",
+      "summary": "Uses coding agents (Claude Code, Cursor) with NVIDIA DeepStream 9 to auto-generate optimized vision AI pipelines. Reduces development friction for real-time vision applications by automating data pipeline and code generation.",
+      "source": "NVIDIA Developer Blog",
+      "tags": [
+        "agents",
+        "code generation",
+        "vision",
+        "DeepStream"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-04-16T15:00:00.000Z"
+    },
+    {
+      "url": "https://huggingface.co/blog/ecom-rlve",
+      "title": "Ecom-RLVE: Adaptive Verifiable Environments for E-Commerce Conversational Agents",
+      "summary": "Presents Ecom-RLVE, a reinforcement learning environment for training and evaluating e-commerce conversational agents with verifiable outcomes. Enables agents to learn from simulated customer interactions with measurable success metrics.",
+      "source": "Hugging Face Blog",
+      "tags": [
+        "agents",
+        "reinforcement-learning",
+        "evals",
+        "tool-use"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-04-16T00:00:00.000Z"
+    },
+    {
+      "url": "https://huggingface.co/blog/train-multimodal-sentence-transformers",
+      "title": "Training and Finetuning Multimodal Embedding & Reranker Models with Sentence Transformers",
+      "summary": "Guide to fine-tuning multimodal embedding and reranking models using Sentence Transformers library. Covers training pipelines for models that handle both text and image inputs for retrieval and ranking tasks.",
+      "source": "Hugging Face Blog",
+      "tags": [
+        "fine-tuning",
+        "embeddings",
+        "multimodal",
+        "RAG"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-04-16T00:00:00.000Z"
+    },
+    {
       "url": "https://aws.amazon.com/blogs/aws/aws-interconnect-is-now-generally-available-with-a-new-option-to-simplify-last-mile-connectivity/",
       "title": "AWS Interconnect is now generally available, with a new option to simplify last-mile connectivity",
       "summary": "AWS Interconnect GA brings managed private connectivity for multicloud and hybrid environments, eliminating manual VPN and colocation coordination. Two new capabilities: Interconnect-multicloud connects VPCs across cloud providers, and Interconnect-last-mile simplifies branch/data center connections through existing network providers.",
@@ -937,6 +1878,37 @@
       "score": 7,
       "category": "Cloud",
       "publishedAt": "2026-04-14T23:54:47.000Z"
+    },
+    {
+      "url": "https://developer.nvidia.com/blog/nvidia-ising-introduces-ai-powered-workflows-to-build-fault-tolerant-quantum-systems/",
+      "title": "NVIDIA Ising Introduces AI-Powered Workflows to Build Fault-Tolerant Quantum Systems",
+      "summary": "NVIDIA Ising is an open family of AI models for quantum processor design, launching with Ising Calibration and Ising Decoding models to address qubit noise. These models target the fundamental quantum computing challenge of error rates (roughly one error per thousand operations) and enable fault-tolerant quantum system construction.",
+      "source": "NVIDIA Developer Blog",
+      "tags": [
+        "LLM",
+        "quantum",
+        "fault-tolerance",
+        "AI-infrastructure",
+        "open-models"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-04-14T14:15:56.000Z"
+    },
+    {
+      "url": "https://deepmind.google/blog/gemini-robotics-er-1-6/",
+      "title": "Gemini Robotics-ER 1.6: Powering real-world robotics tasks through enhanced embodied reasoning",
+      "summary": "Gemini Robotics-ER 1.6 enhances spatial reasoning and multi-view understanding for autonomous robotics applications. The update improves the model's ability to reason about physical environments and execute real-world robotic tasks.",
+      "source": "DeepMind",
+      "tags": [
+        "robotics",
+        "embodied-reasoning",
+        "Gemini",
+        "vision"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-04-13T15:52:13.000Z"
     },
     {
       "url": "https://www.cncf.io/blog/2026/04/13/ingress-nginx-to-envoy-gateway-migration-on-cncf-internal-services-cluster/",
@@ -955,6 +1927,36 @@
       "publishedAt": "2026-04-13T14:01:35.000Z"
     },
     {
+      "url": "https://developer.nvidia.com/blog/minimax-m2-7-advances-scalable-agentic-workflows-on-nvidia-platforms-for-complex-ai-applications/",
+      "title": "MiniMax M2.7 Advances Scalable Agentic Workflows on NVIDIA Platforms for Complex AI Applications",
+      "summary": "MiniMax M2.7 is a sparse mixture-of-experts model released as open weights, building on M2.5 with improvements for agentic workflows, reasoning, ML research, software engineering, and office automation. The model is available through NVIDIA and the open-source inference ecosystem.",
+      "source": "NVIDIA Developer Blog",
+      "tags": [
+        "LLM",
+        "agents",
+        "MoE",
+        "open-weights",
+        "inference"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-04-12T01:02:44.000Z"
+    },
+    {
+      "url": "https://research.google/blog/convapparel-measuring-and-bridging-the-realism-gap-in-user-simulators/",
+      "title": "ConvApparel: Measuring and bridging the realism gap in user simulators",
+      "summary": "ConvApparel addresses the realism gap in user simulators by measuring and improving how well simulated users behave in conversational settings. This work is relevant for training and evaluating conversational AI systems.",
+      "source": "Google Research Blog",
+      "tags": [
+        "user simulators",
+        "evals",
+        "conversational AI"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-04-09T11:22:00.000Z"
+    },
+    {
       "url": "https://www.hashicorp.com/blog/simplifying-terraform-dynamic-credentials-on-aws-with-native-oidc-integration",
       "title": "Simplifying Terraform dynamic credentials on AWS with native OIDC integration",
       "summary": "AWS Account Factory for Terraform (AFT) now supports native OIDC integration with HCP Terraform, automatically establishing trust relationships and eliminating manual configuration of OIDC providers, IAM roles, and workspace environment variables. This reduces operational overhead and misconfiguration risk while maintaining short-lived, dynamically generated credentials.",
@@ -971,6 +1973,35 @@
       "publishedAt": "2026-04-09T07:00:00.000Z"
     },
     {
+      "url": "https://huggingface.co/blog/multimodal-sentence-transformers",
+      "title": "Multimodal Embedding & Reranker Models with Sentence Transformers",
+      "summary": "Sentence Transformers now supports multimodal embeddings and reranking across text and image inputs. This extends the library's retrieval capabilities to cross-modal search and ranking tasks.",
+      "source": "Hugging Face Blog",
+      "tags": [
+        "embeddings",
+        "retrieval",
+        "multimodal",
+        "RAG"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-04-09T00:00:00.000Z"
+    },
+    {
+      "url": "https://research.google/blog/improving-the-academic-workflow-introducing-two-ai-agents-for-better-figures-and-peer-review/",
+      "title": "Improving the academic workflow: Introducing two AI agents for better figures and peer review",
+      "summary": "Google introduces two specialized AI agents to streamline academic workflows: one for generating publication-quality figures and another for assisting with peer review. These agents demonstrate practical tool-use for domain-specific tasks.",
+      "source": "Google Research Blog",
+      "tags": [
+        "agents",
+        "tool-use",
+        "LLM"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-04-08T20:01:33.000Z"
+    },
+    {
       "url": "https://www.docker.com/blog/reclaim-developer-hours-through-smarter-vulnerability-prioritization-with-docker-and-mend-io/",
       "title": "Reclaim Developer Hours through Smarter Vulnerability Prioritization with Docker and Mend.io",
       "summary": "The Mend.io and Docker Hardened Images integration uses VEX statements and reachability analysis to distinguish exploitable from non-exploitable vulnerabilities, reducing noise and allowing teams to prioritize actionable security findings. Automatic detection and visual layer transparency eliminate manual configuration overhead.",
@@ -985,6 +2016,20 @@
       "score": 7,
       "category": "DevOps",
       "publishedAt": "2026-04-08T18:23:51.000Z"
+    },
+    {
+      "url": "https://huggingface.co/blog/safetensors-joins-pytorch-foundation",
+      "title": "Safetensors is Joining the PyTorch Foundation",
+      "summary": "Safetensors, the efficient model serialization format, is now part of the PyTorch Foundation governance structure. This move signals broader adoption and standardization of the format across the ML ecosystem.",
+      "source": "Hugging Face Blog",
+      "tags": [
+        "safetensors",
+        "model serialization",
+        "MLOps"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-04-08T00:00:00.000Z"
     },
     {
       "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-devops-agent-security-agent-ga-product-lifecycle-updates-and-more-april-6-2026/",
@@ -1083,6 +2128,20 @@
       "publishedAt": "2026-04-01T16:00:00.000Z"
     },
     {
+      "url": "https://huggingface.co/blog/tiiuae/falcon-perception",
+      "title": "Falcon Perception",
+      "summary": "Falcon Perception extends the Falcon model family with vision capabilities for multimodal understanding tasks. The release targets enterprise and research applications requiring integrated text-image reasoning.",
+      "source": "Hugging Face Blog",
+      "tags": [
+        "foundation models",
+        "multimodal",
+        "vision"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-04-01T07:13:20.000Z"
+    },
+    {
       "url": "https://www.docker.com/blog/blog-docker-model-runner-new-nvidia-dgx-station/",
       "title": "Run and Iterate on LLMs Faster with Docker Model Runner on DGX Station",
       "summary": "Docker Model Runner now supports NVIDIA DGX Station, enabling developers to run large AI models locally with data-center-class performance in a desktop form factor. The DGX Station combines 72-core Grace CPU and Blackwell Ultra GPU via NVLink, providing unified memory and high-bandwidth architecture for frontier AI workloads.",
@@ -1097,6 +2156,48 @@
       "score": 7,
       "category": "AI",
       "publishedAt": "2026-03-31T17:57:17.000Z"
+    },
+    {
+      "url": "https://research.google/blog/building-better-ai-benchmarks-how-many-raters-are-enough/",
+      "title": "Building better AI benchmarks: How many raters are enough?",
+      "summary": "Research on optimal rater count for AI benchmark construction, addressing a practical challenge in evaluation methodology. The work provides guidance on statistical sufficiency for human-rated AI benchmarks.",
+      "source": "Google Research Blog",
+      "tags": [
+        "evals",
+        "benchmarks",
+        "methodology"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-03-31T16:16:00.000Z"
+    },
+    {
+      "url": "https://huggingface.co/blog/ibm-granite/granite-4-vision",
+      "title": "Granite 4.0 3B Vision: Compact Multimodal Intelligence for Enterprise Documents",
+      "summary": "Granite 4.0 3B Vision is a 3-billion-parameter multimodal model optimized for document understanding in enterprise settings. The compact size enables on-premises deployment while maintaining vision-language reasoning.",
+      "source": "Hugging Face Blog",
+      "tags": [
+        "foundation models",
+        "multimodal",
+        "document understanding"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-03-31T15:10:41.000Z"
+    },
+    {
+      "url": "https://research.google/blog/safeguarding-cryptocurrency-by-disclosing-quantum-vulnerabilities-responsibly/",
+      "title": "Safeguarding cryptocurrency by disclosing quantum vulnerabilities responsibly",
+      "summary": "Google Research discloses quantum computing vulnerabilities in cryptocurrency systems and proposes responsible disclosure practices. The work addresses post-quantum cryptography concerns for blockchain infrastructure.",
+      "source": "Google Research Blog",
+      "tags": [
+        "quantum",
+        "cryptography",
+        "security"
+      ],
+      "score": 7,
+      "category": "Security",
+      "publishedAt": "2026-03-31T02:03:00.000Z"
     },
     {
       "url": "https://blog.jeffschomay.com/letting-ai-play-my-game",
@@ -1114,6 +2215,21 @@
       "publishedAt": "2026-04-29T12:43:12.000Z"
     },
     {
+      "url": "https://aws.amazon.com/blogs/machine-learning/building-ai-ready-data-vanguards-virtual-analyst-journey/",
+      "title": "Building AI-ready data: Vanguard's Virtual Analyst journey",
+      "summary": "Vanguard built a conversational AI system to replace SQL-based data queries, reducing analyst wait times from days to minutes. The solution focuses on eight guiding principles for AI-ready data infrastructure, including semantic context and metadata management, deployed via AWS services to enable natural language access to complex financial datasets.",
+      "source": "AWS ML Blog",
+      "tags": [
+        "LLM",
+        "RAG",
+        "conversational AI",
+        "data infrastructure"
+      ],
+      "score": 6,
+      "category": "AI",
+      "publishedAt": "2026-04-29T11:56:33.000Z"
+    },
+    {
       "url": "https://dl.acm.org/doi/abs/10.1145/3767295.3803591",
       "title": "Low-Compilation-Cost Register Allocation in LLVM-Based Binary Translation",
       "summary": "Research paper on optimizing register allocation in LLVM-based binary translation to reduce compilation overhead. Addresses a key performance bottleneck in dynamic binary translation systems where register allocation can dominate compilation time.",
@@ -1127,6 +2243,22 @@
       "score": 6,
       "category": "Engineering",
       "publishedAt": "2026-04-29T06:47:53.000Z"
+    },
+    {
+      "url": "https://snyk.io/blog/atlassian-integration-intelligent-remediation-jira/",
+      "title": "Bridging the Gap to Autonomous Fixes: Snyk and Atlassian Unveil Intelligent Remediation for Jira",
+      "summary": "Snyk and Atlassian integrate Snyk Studio AI with Jira to automatically generate and apply security fixes directly from vulnerability tickets, reducing context switching and remediation time to minutes.",
+      "source": "Snyk Blog",
+      "tags": [
+        "agents",
+        "AI",
+        "security",
+        "Jira",
+        "remediation"
+      ],
+      "score": 6,
+      "category": "AI",
+      "publishedAt": "2026-04-29T00:00:00.000Z"
     },
     {
       "url": "https://lucumr.pocoo.org/2026/4/28/before-github/",
@@ -1159,6 +2291,22 @@
       "publishedAt": "2026-04-28T20:29:49.000Z"
     },
     {
+      "url": "https://thehackernews.com/2026/04/brazilian-lofygang-resurfaces-after.html",
+      "title": "Brazilian LofyGang Resurfaces After Three Years With Minecraft LofyStealer Campaign",
+      "summary": "Brazilian cybercrime group LofyGang returned after three years with LofyStealer (GrabBot), a malware disguised as a Minecraft hack called 'Slinky' that uses the official game icon to trick users into execution. The campaign targets Minecraft players with credential and data theft.",
+      "source": "The Hacker News",
+      "tags": [
+        "malware",
+        "stealer",
+        "Minecraft",
+        "threat intelligence",
+        "Brazil"
+      ],
+      "score": 6,
+      "category": "Security",
+      "publishedAt": "2026-04-28T17:39:00.000Z"
+    },
+    {
       "url": "https://github.com/FeSens/auto-arch-tournament/blob/main/docs/auto-arch-tournament-blog-post.md",
       "title": "Show HN: Auto-Architecture: Karpathy's Loop, pointed at a CPU",
       "summary": "A project implementing automated CPU architecture design using Karpathy's loop methodology. This demonstrates practical application of AI-driven optimization for hardware architecture exploration.",
@@ -1173,6 +2321,22 @@
       "score": 6,
       "category": "AI",
       "publishedAt": "2026-04-28T17:12:30.000Z"
+    },
+    {
+      "url": "https://huggingface.co/blog/nvidia/nemotron-3-nano-omni-multimodal-intelligence",
+      "title": "Introducing NVIDIA Nemotron 3 Nano Omni: Long-Context Multimodal Intelligence for Documents, Audio and Video Agents",
+      "summary": "<UNKNOWN>",
+      "source": "Hugging Face Blog",
+      "tags": [
+        "multimodal",
+        "agents",
+        "long-context",
+        "Nemotron",
+        "foundation models"
+      ],
+      "score": 6,
+      "category": "AI",
+      "publishedAt": "2026-04-28T15:58:57.000Z"
     },
     {
       "url": "https://thenewstack.io/netbox-labs-network-intent/",
@@ -1191,6 +2355,36 @@
       "publishedAt": "2026-04-28T15:00:00.000Z"
     },
     {
+      "url": "https://thehackernews.com/2026/04/after-mythos-new-playbooks-for-zero.html",
+      "title": "After Mythos: New Playbooks For a Zero-Window Era",
+      "summary": "The article discusses how AI advances like Anthropic's Claude Mythos and Project Glasswing are closing the exploit window, making traditional patch-based defense insufficient. NDR (Network Detection and Response) is positioned as essential for containing threats in an era where vulnerability-to-exploit time collapses.",
+      "source": "The Hacker News",
+      "tags": [
+        "AI",
+        "vulnerability",
+        "exploit",
+        "NDR",
+        "threat detection"
+      ],
+      "score": 6,
+      "category": "Security",
+      "publishedAt": "2026-04-28T10:30:00.000Z"
+    },
+    {
+      "url": "https://thehackernews.com/2026/04/chinese-silk-typhoon-hacker-extradited.html",
+      "title": "Chinese Silk Typhoon Hacker Extradited to U.S. Over COVID Research Cyberattacks",
+      "summary": "Xu Zewei, a 34-year-old member of the state-sponsored Silk Typhoon group, was extradited from Italy to the U.S. to face charges for orchestrating cyberattacks against American organizations and government agencies between February 2020 and June 2021, including targeting COVID research.",
+      "source": "The Hacker News",
+      "tags": [
+        "threat-intelligence",
+        "state-sponsored",
+        "breach"
+      ],
+      "score": 6,
+      "category": "Security",
+      "publishedAt": "2026-04-28T07:57:00.000Z"
+    },
+    {
       "url": "https://thenewstack.io/github-copilot-usage-billing/",
       "title": "GitHub moves Copilot to usage-based billing as AI coding costs climb",
       "summary": "GitHub is shifting Copilot pricing from fixed monthly fees to usage-based billing tied to token consumption, effective June 1. The change reflects rising AI inference costs and aims to create a more sustainable pricing model while managing demand.",
@@ -1207,6 +2401,36 @@
       "publishedAt": "2026-04-27T19:02:17.000Z"
     },
     {
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-and-deploy-an-automatic-sync-solution-for-amazon-bedrock-knowledge-bases/",
+      "title": "Build and deploy an automatic sync solution for Amazon Bedrock Knowledge Bases",
+      "summary": "This post describes an event-driven, serverless architecture for automatically syncing S3 documents to Amazon Bedrock Knowledge Bases while respecting service quotas and rate limits. The solution detects S3 events, triggers ingestion jobs, and provides comprehensive monitoring to keep knowledge bases current for RAG applications without manual intervention.",
+      "source": "AWS ML Blog",
+      "tags": [
+        "RAG",
+        "knowledge bases",
+        "automation",
+        "S3"
+      ],
+      "score": 6,
+      "category": "AI",
+      "publishedAt": "2026-04-27T17:51:41.000Z"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-popsa-used-amazon-nova-to-inspire-customers-with-personalised-title-suggestions/",
+      "title": "How Popsa used Amazon Nova to inspire customers with personalised title suggestions",
+      "summary": "Popsa integrated Amazon Nova Lite and Pro with Claude 3 Haiku via Amazon Bedrock to auto-generate creative photo book titles and subtitles across 12 languages using metadata and computer vision. The unified Bedrock API improved quality, reduced latency, and cut costs compared to their previous approach.",
+      "source": "AWS ML Blog",
+      "tags": [
+        "LLM",
+        "multimodal",
+        "RAG",
+        "Nova"
+      ],
+      "score": 6,
+      "category": "AI",
+      "publishedAt": "2026-04-27T16:45:37.000Z"
+    },
+    {
       "url": "https://thenewstack.io/security-operational-maturity-scaling/",
       "title": "Can your operations handle your security ambitions?",
       "summary": "Security tools often fail to deliver value when operational maturity doesn't match security ambitions, creating bottlenecks instead of enablers. The article warns that adding sophisticated security tooling to immature, fragmented engineering operations introduces complexity and manual work rather than efficiency gains.",
@@ -1220,6 +2444,112 @@
       "score": 6,
       "category": "DevOps",
       "publishedAt": "2026-04-27T13:00:00.000Z"
+    },
+    {
+      "url": "https://thehackernews.com/2026/04/phantomcore-exploits-trueconf.html",
+      "title": "PhantomCore Exploits TrueConf Vulnerabilities to Breach Russian Networks",
+      "summary": "Pro-Ukrainian hacktivist group PhantomCore has been targeting TrueConf video conferencing servers in Russia since September 2025 using an exploit chain of three vulnerabilities for remote code execution. Positive Technologies documented the campaign and the specific vulnerability chain.",
+      "source": "The Hacker News",
+      "tags": [
+        "CVE",
+        "RCE",
+        "threat-intelligence"
+      ],
+      "score": 6,
+      "category": "Security",
+      "publishedAt": "2026-04-27T11:54:00.000Z"
+    },
+    {
+      "url": "https://thehackernews.com/2026/04/fake-captcha-irsf-scam-and-120-keitaro.html",
+      "title": "Fake CAPTCHA IRSF Scam and 120 Keitaro Campaigns Drive Global SMS, Crypto Fraud",
+      "summary": "Infoblox researchers uncovered a telecommunications fraud campaign using fake CAPTCHA verification to trick users into sending international SMS messages that generate charges on mobile bills. The operation leverages 120 Keitaro campaigns and leased phone numbers to monetize the fraudulent traffic, targeting users globally with SMS and crypto-related scams.",
+      "source": "The Hacker News",
+      "tags": [
+        "fraud",
+        "IRSF",
+        "CAPTCHA",
+        "SMS",
+        "threat-intelligence"
+      ],
+      "score": 6,
+      "category": "Security",
+      "publishedAt": "2026-04-27T06:33:00.000Z"
+    },
+    {
+      "url": "https://snyk.io/blog/snyk-agent-fix-agentic-architecture/",
+      "title": "Introducing the New Agentic Architecture for Snyk Agent Fix: Faster, Smarter, and More Secure",
+      "summary": "Snyk Agent Fix now uses an agentic architecture for automated code remediation with full Snyk Code language coverage and verified fixes. The upgrade improves speed and accuracy of AI-generated security patches.",
+      "source": "Snyk Blog",
+      "tags": [
+        "agents",
+        "AI",
+        "code-remediation",
+        "security"
+      ],
+      "score": 6,
+      "category": "AI",
+      "publishedAt": "2026-04-27T00:00:00.000Z"
+    },
+    {
+      "url": "https://www.databricks.com/blog/next-generation-databricks-genie",
+      "title": "The next generation of Databricks Genie",
+      "summary": "Databricks announces an updated Genie product with improved natural language-to-SQL capabilities, faster query generation, and enhanced reasoning over complex schemas. The new version targets both analysts and data engineers for self-service analytics.",
+      "source": "Databricks Blog",
+      "tags": [
+        "LLM",
+        "SQL generation",
+        "analytics",
+        "natural language"
+      ],
+      "score": 6,
+      "category": "AI",
+      "publishedAt": "2026-04-26T20:39:36.000Z"
+    },
+    {
+      "url": "https://huggingface.co/blog/deepseekv4",
+      "title": "DeepSeek-V4: a million-token context that agents can actually use",
+      "summary": "<UNKNOWN>",
+      "source": "Hugging Face Blog",
+      "tags": [
+        "LLM",
+        "long-context",
+        "agents",
+        "DeepSeek",
+        "foundation models"
+      ],
+      "score": 6,
+      "category": "AI",
+      "publishedAt": "2026-04-24T00:00:00.000Z"
+    },
+    {
+      "url": "https://developer.nvidia.com/blog/winning-a-kaggle-competition-with-generative-ai-assisted-coding/",
+      "title": "Winning a Kaggle Competition with Generative AI-Assisted Coding",
+      "summary": "Three LLM agents generated 600,000+ lines of code and ran 850 experiments to win a Kaggle competition, demonstrating how agents combined with GPU acceleration compress the experiment-iteration loop. The approach shows LLM agents can outpace traditional ML workflows in competitive settings.",
+      "source": "NVIDIA Developer Blog",
+      "tags": [
+        "agents",
+        "LLM",
+        "code-generation",
+        "tool-use"
+      ],
+      "score": 6,
+      "category": "AI",
+      "publishedAt": "2026-04-23T20:15:02.000Z"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/amazon-quick-for-marketing-from-scattered-data-to-strategic-action/",
+      "title": "Amazon Quick for marketing: From scattered data to strategic action",
+      "summary": "Amazon Quick connects marketing systems and tools into a personal knowledge graph that answers questions grounded in real business data and executes tasks without manual data assembly. The platform reduces campaign intelligence assembly from hours to minutes by unifying scattered marketing data sources and enabling conversational interaction.",
+      "source": "AWS ML Blog",
+      "tags": [
+        "agents",
+        "knowledge graph",
+        "marketing automation",
+        "enterprise AI"
+      ],
+      "score": 6,
+      "category": "AI",
+      "publishedAt": "2026-04-23T17:05:17.000Z"
     },
     {
       "url": "https://openai.com/academy/top-10-use-cases-codex-for-work",
@@ -1297,6 +2627,36 @@
       "publishedAt": "2026-04-23T10:00:00.000Z"
     },
     {
+      "url": "https://huggingface.co/blog/transformersjs-chrome-extension",
+      "title": "How to Use Transformers.js in a Chrome Extension",
+      "summary": "Tutorial on deploying Transformers.js models directly in Chrome extensions for client-side inference without backend dependencies. Covers practical setup, model loading, and browser API integration for running transformer models in extension contexts.",
+      "source": "Hugging Face Blog",
+      "tags": [
+        "Transformers.js",
+        "inference",
+        "browser",
+        "tool-use"
+      ],
+      "score": 6,
+      "category": "AI",
+      "publishedAt": "2026-04-23T00:00:00.000Z"
+    },
+    {
+      "url": "https://developer.nvidia.com/blog/simplify-sparse-deep-learning-with-universal-sparse-tensor-in-nvmath-python/",
+      "title": "Simplify Sparse Deep Learning with Universal Sparse Tensor in nvmath-python",
+      "summary": "nvmath-python v0.9.0 integrates Universal Sparse Tensor (UST) to decouple tensor sparsity from memory layout, improving flexibility and performance for sparse deep learning workloads. UST abstracts sparsity patterns, simplifying optimization for scientific and ML applications.",
+      "source": "NVIDIA Developer Blog",
+      "tags": [
+        "sparse-tensors",
+        "inference",
+        "performance",
+        "nvmath"
+      ],
+      "score": 6,
+      "category": "AI",
+      "publishedAt": "2026-04-22T23:50:10.000Z"
+    },
+    {
       "url": "https://www.hashicorp.com/blog/from-zero-trust-to-continuous-trust-securing-autonomous-ai-systems",
       "title": "From zero trust to continuous trust: Securing autonomous AI systems",
       "summary": "Traditional zero-trust models assume discrete authentication checkpoints, but agentic AI systems operate continuously, making decisions and requesting access in real time without fitting predictable patterns. HashiCorp proposes evolving zero-trust into a 'continuous trust' model that handles the dynamic, autonomous nature of AI agents making ongoing access decisions.",
@@ -1311,6 +2671,34 @@
       "score": 6,
       "category": "AI",
       "publishedAt": "2026-04-22T05:00:00.000Z"
+    },
+    {
+      "url": "https://krebsonsecurity.com/2026/04/scattered-spider-member-tylerb-pleads-guilty/",
+      "title": "'Scattered Spider' Member 'Tylerb' Pleads Guilty",
+      "summary": "Tyler Robert Buchanan, a 24-year-old British member of the Scattered Spider cybercrime group, pleaded guilty to wire fraud conspiracy and aggravated identity theft for his role in SMS phishing attacks that compromised at least a dozen major tech companies in summer 2022. Buchanan faces over 20 years in prison for stealing tens of millions in cryptocurrency.",
+      "source": "Krebs on Security",
+      "tags": [
+        "threat-intelligence",
+        "social-engineering",
+        "phishing"
+      ],
+      "score": 6,
+      "category": "Security",
+      "publishedAt": "2026-04-21T14:53:59.000Z"
+    },
+    {
+      "url": "https://github.blog/open-source/git/highlights-from-git-2-54/",
+      "title": "Highlights from Git 2.54",
+      "summary": "Git 2.54 introduces the experimental 'git history' command for simpler history rewrites, supporting 'reword' and 'split' operations without the complexity of interactive rebase. Release includes contributions from 137 developers, 66 new contributors.",
+      "source": "GitHub Blog",
+      "tags": [
+        "git",
+        "version release",
+        "tooling"
+      ],
+      "score": 6,
+      "category": "Engineering",
+      "publishedAt": "2026-04-20T16:43:57.000Z"
     },
     {
       "url": "https://www.cncf.io/blog/2026/04/20/from-public-static-void-main-to-golden-kubestronaut-the-art-of-unlearning/",
@@ -1328,6 +2716,50 @@
       "publishedAt": "2026-04-20T10:50:00.000Z"
     },
     {
+      "url": "https://developer.nvidia.com/blog/build-a-secure-always-on-local-ai-agent-with-nvidia-nemoclaw-and-openclaw/",
+      "title": "Build a More Secure, Always-On Local AI Agent with OpenClaw and NVIDIA NemoClaw",
+      "summary": "Describes building long-running autonomous agents using NVIDIA NemoClaw and OpenClaw that read files, call APIs, and execute multi-step workflows locally. Emphasizes security and always-on operation for local deployment.",
+      "source": "NVIDIA Developer Blog",
+      "tags": [
+        "agents",
+        "security",
+        "local deployment",
+        "NemoClaw"
+      ],
+      "score": 6,
+      "category": "AI",
+      "publishedAt": "2026-04-17T18:59:12.000Z"
+    },
+    {
+      "url": "https://developer.nvidia.com/blog/accelerate-clean-modular-nuclear-reactor-design-with-ai-physics/",
+      "title": "Accelerate Clean, Modular, Nuclear Reactor Design with AI Physics",
+      "summary": "Applies AI and physics-informed models to Small Modular Reactor (SMR) and Generation IV nuclear design. Addresses safety, efficiency, and economic constraints in reactor development through AI-accelerated design workflows.",
+      "source": "NVIDIA Developer Blog",
+      "tags": [
+        "physics-informed AI",
+        "simulation",
+        "design optimization"
+      ],
+      "score": 6,
+      "category": "AI",
+      "publishedAt": "2026-04-17T15:00:00.000Z"
+    },
+    {
+      "url": "https://research.google/blog/designing-synthetic-datasets-for-the-real-world-mechanism-design-and-reasoning-from-first-principles/",
+      "title": "Designing synthetic datasets for the real world: Mechanism design and reasoning from first principles",
+      "source": "Google Research Blog",
+      "summary": "Google Research explores synthetic dataset generation using mechanism design principles to create realistic training data that generalizes to real-world scenarios. The approach emphasizes reasoning from first principles to ensure synthetic data captures essential problem structure.",
+      "tags": [
+        "synthetic-data",
+        "evals",
+        "reasoning",
+        "dataset-design"
+      ],
+      "score": 6,
+      "category": "AI",
+      "publishedAt": "2026-04-16T14:41:00.000Z"
+    },
+    {
       "url": "https://www.cncf.io/blog/2026/04/15/how-to-measure-the-roi-of-developer-tools/",
       "title": "How To Measure the ROI of Developer Tools",
       "summary": "Framework for quantifying the business value of developer tools and platform engineering investments, covering measurement approaches like internal surveys, productivity metrics, and cost-benefit analysis tailored to team size and growth stage. Addresses the challenge of justifying tool adoption beyond vague claims of improved developer experience.",
@@ -1341,6 +2773,50 @@
       "score": 6,
       "category": "Engineering",
       "publishedAt": "2026-04-16T05:28:45.000Z"
+    },
+    {
+      "url": "https://huggingface.co/blog/transformers-to-mlx",
+      "title": "The PR you would have opened yourself",
+      "summary": "Describes tooling or workflow improvements for converting or optimizing Transformers models to MLX format, likely for Apple Silicon deployment. Focuses on practical developer experience for model optimization.",
+      "source": "Hugging Face Blog",
+      "tags": [
+        "Transformers",
+        "MLX",
+        "optimization",
+        "inference"
+      ],
+      "score": 6,
+      "category": "AI",
+      "publishedAt": "2026-04-16T00:00:00.000Z"
+    },
+    {
+      "url": "https://github.blog/ai-and-ml/github-copilot/build-a-personal-organization-command-center-with-github-copilot-cli/",
+      "title": "Build a personal organization command center with GitHub Copilot CLI",
+      "summary": "A GitHub staff engineer built a unified dashboard using GitHub Copilot CLI to consolidate scattered productivity tools into one interface, moving from concept to working v1 in a single day using AI-assisted planning and code generation. The project demonstrates practical tool-use of Copilot for rapid prototyping of internal productivity systems.",
+      "source": "GitHub Blog",
+      "tags": [
+        "Copilot",
+        "CLI",
+        "tool-use",
+        "productivity"
+      ],
+      "score": 6,
+      "category": "AI",
+      "publishedAt": "2026-04-15T17:00:00.000Z"
+    },
+    {
+      "url": "https://deepmind.google/blog/gemini-3-1-flash-tts-the-next-generation-of-expressive-ai-speech/",
+      "title": "Gemini 3.1 Flash TTS: the next generation of expressive AI speech",
+      "summary": "Gemini 3.1 Flash TTS introduces granular audio tags for precise control over expressive speech generation. The model enables fine-grained direction of AI-generated audio output through structured tagging mechanisms.",
+      "source": "DeepMind",
+      "tags": [
+        "multimodal",
+        "audio",
+        "Gemini"
+      ],
+      "score": 6,
+      "category": "AI",
+      "publishedAt": "2026-04-15T16:03:19.000Z"
     },
     {
       "url": "https://www.hashicorp.com/blog/agentic-ai-changes-the-shape-of-trust",
@@ -1357,6 +2833,22 @@
       "score": 6,
       "category": "AI",
       "publishedAt": "2026-04-15T15:45:00.000Z"
+    },
+    {
+      "url": "https://developer.nvidia.com/blog/nvidia-nvbandwidth-your-essential-tool-for-measuring-gpu-interconnect-and-memory-performance/",
+      "title": "NVIDIA NVbandwidth: Your Essential Tool for Measuring GPU Interconnect and Memory Performance",
+      "summary": "NVbandwidth is a profiling tool for measuring memory transfer performance in CUDA applications across single-GPU and multi-GPU systems. The post covers how to use NVbandwidth to characterize GPU memory and interconnect bandwidth, critical for optimizing data-intensive workloads.",
+      "source": "NVIDIA Developer Blog",
+      "tags": [
+        "CUDA",
+        "GPU",
+        "profiling",
+        "performance",
+        "memory"
+      ],
+      "score": 6,
+      "category": "Engineering",
+      "publishedAt": "2026-04-14T16:00:00.000Z"
     },
     {
       "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-claude-mythos-preview-in-amazon-bedrock-aws-agent-registry-and-more-april-13-2026/",
@@ -1391,6 +2883,88 @@
       "publishedAt": "2026-04-13T15:59:37.000Z"
     },
     {
+      "url": "https://huggingface.co/blog/waypoint-1-5",
+      "title": "Waypoint-1.5: Higher-Fidelity Interactive Worlds for Everyday GPUs",
+      "summary": "Waypoint-1.5 improves interactive 3D world generation to run efficiently on consumer GPUs. The update focuses on fidelity gains while maintaining accessibility for developers without enterprise hardware.",
+      "source": "Hugging Face Blog",
+      "tags": [
+        "foundation models",
+        "inference",
+        "3D generation"
+      ],
+      "score": 6,
+      "category": "AI",
+      "publishedAt": "2026-04-09T00:00:00.000Z"
+    },
+    {
+      "url": "https://krebsonsecurity.com/2026/04/germany-doxes-unkn-head-of-ru-ransomware-gangs-revil-gandcrab/",
+      "title": "Germany Doxes \"UNKN,\" Head of RU Ransomware Gangs REvil, GandCrab",
+      "summary": "German authorities identified Daniil Maksimovich Shchukin, 31, as UNKN, the operator behind ransomware groups GandCrab and REvil, which pioneered double-extortion tactics. Shchukin and associate Anatoly Sergeevitsch Kravchuk extorted nearly 2 million euros across 130+ cyberattacks causing 35 million euros in total damage between 2019 and 2021.",
+      "source": "Krebs on Security",
+      "tags": [
+        "ransomware",
+        "threat-intelligence",
+        "double-extortion"
+      ],
+      "score": 6,
+      "category": "Security",
+      "publishedAt": "2026-04-06T02:07:17.000Z"
+    },
+    {
+      "url": "https://huggingface.co/blog/introducing-gradio-server",
+      "title": "Any Custom Frontend with Gradio's Backend",
+      "summary": "Gradio now decouples its backend server from the frontend, allowing developers to build custom interfaces while reusing Gradio's inference and API layer. This enables more flexible deployment patterns for ML applications.",
+      "source": "Hugging Face Blog",
+      "tags": [
+        "Gradio",
+        "MLOps",
+        "deployment"
+      ],
+      "score": 6,
+      "category": "AI",
+      "publishedAt": "2026-04-01T00:00:00.000Z"
+    },
+    {
+      "url": "https://www.databricks.com/blog/stripe-data-now-available-databricks-databricks-marketplace",
+      "title": "Stripe data now available on Databricks via Databricks Marketplace",
+      "summary": "Databricks Marketplace now offers Stripe payment data as a pre-built connector, allowing users to directly query transaction and customer data without custom integration work. This reduces time-to-insight for analytics on payment flows.",
+      "source": "Databricks Blog",
+      "tags": [
+        "data integration",
+        "marketplace",
+        "Stripe"
+      ],
+      "score": 5,
+      "category": "Cloud",
+      "publishedAt": "2026-04-29T15:20:08.000Z"
+    },
+    {
+      "url": "https://huggingface.co/blog/ibm-granite/granite-4-1",
+      "title": "Granite 4.1 LLMs: How They're Built",
+      "summary": "<UNKNOWN>",
+      "source": "Hugging Face Blog",
+      "tags": [
+        "LLM",
+        "Granite",
+        "foundation models"
+      ],
+      "score": 5,
+      "category": "AI",
+      "publishedAt": "2026-04-29T15:01:48.000Z"
+    },
+    {
+      "url": "https://zed.dev/blog/zed-1-0",
+      "title": "Zed is 1.0",
+      "summary": "<UNKNOWN>",
+      "source": "HN Front Page",
+      "tags": [
+        "editor"
+      ],
+      "score": 5,
+      "category": "Engineering",
+      "publishedAt": "2026-04-29T14:34:19.000Z"
+    },
+    {
       "url": "https://github.com/electricant/adblock-rust-manager",
       "title": "Show HN: Adblock-rust Manager – Firefox extension to enable the Brave ad blocker",
       "summary": "Firefox extension that provides UI and management for adblock-rust (Brave's Rust-based ad filtering engine) which Firefox 149 ships disabled by default. Adds filter list management, clipboard helpers, and preset configurations since the underlying engine lacks WebExtension API access.",
@@ -1419,6 +2993,20 @@
       "score": 5,
       "category": "Engineering",
       "publishedAt": "2026-04-29T11:42:46.000Z"
+    },
+    {
+      "url": "https://thehackernews.com/2026/04/what-to-look-for-in-exposure-management.html",
+      "title": "What to Look for in an Exposure Management Platform (And What Most of Them Get Wrong)",
+      "summary": "Patch counts and CVSS scores alone do not indicate actual security posture; exposure management platforms must provide contextual risk assessment beyond vulnerability metrics to answer whether remediation efforts actually reduce risk.",
+      "source": "The Hacker News",
+      "tags": [
+        "vulnerability-management",
+        "risk-assessment",
+        "security"
+      ],
+      "score": 5,
+      "category": "Security",
+      "publishedAt": "2026-04-29T11:30:00.000Z"
     },
     {
       "url": "https://hardenedbsd.org/article/shawn-webb/2026-04-26/hardenedbsd-officially-radicle",
@@ -1465,6 +3053,35 @@
       "publishedAt": "2026-04-28T23:54:14.000Z"
     },
     {
+      "url": "https://www.databricks.com/blog/built-not-bolted-what-ai-native-actually-means-cybersecurity",
+      "title": "Built In, Not Bolted On: What AI-Native Actually Means in Cybersecurity",
+      "summary": "Databricks discusses how cybersecurity platforms should integrate AI natively rather than as an afterthought, using conversational analytics to reduce BI bottlenecks. The article examines how AI-native architecture enables faster threat detection and response workflows.",
+      "source": "Databricks Blog",
+      "tags": [
+        "AI-native",
+        "cybersecurity",
+        "analytics"
+      ],
+      "score": 5,
+      "category": "AI",
+      "publishedAt": "2026-04-28T21:45:00.000Z"
+    },
+    {
+      "url": "https://www.databricks.com/blog/operationalizing-ai-public-sector-fraud-prevention",
+      "title": "Operationalizing AI for public sector fraud prevention",
+      "summary": "Databricks outlines patterns for deploying machine learning models in government agencies to detect and prevent fraud. The post covers data governance, model governance, and operational challenges specific to public sector compliance requirements.",
+      "source": "Databricks Blog",
+      "tags": [
+        "MLOps",
+        "fraud detection",
+        "governance",
+        "public sector"
+      ],
+      "score": 5,
+      "category": "AI",
+      "publishedAt": "2026-04-28T20:00:00.000Z"
+    },
+    {
       "url": "https://aws.amazon.com/blogs/aws/top-announcements-of-the-whats-next-with-aws-2026/",
       "title": "Top announcements of the What's Next with AWS, 2026",
       "summary": "AWS announces Amazon Quick, an AI assistant for work with desktop app, free/plus pricing, visual asset generation, and expanded integrations (Google Workspace, Zoom, Airtable, Dropbox, Teams). Also expands Amazon Connect into a four-product suite. Focuses on agentic AI capabilities for enterprise workflows.",
@@ -1481,6 +3098,21 @@
       "publishedAt": "2026-04-28T18:11:39.000Z"
     },
     {
+      "url": "https://thehackernews.com/2026/04/why-secure-data-movement-is-zero-trust.html",
+      "title": "Why Secure Data Movement Is the Zero Trust Bottleneck Nobody Talks About",
+      "summary": "Research from Cyber360 survey of 500 security leaders identifies secure data movement as a critical gap in Zero Trust implementations, showing that many programs stall after initial system connectivity and gateway deployment. The report quantifies how data movement security is overlooked in Zero Trust strategies.",
+      "source": "The Hacker News",
+      "tags": [
+        "zero trust",
+        "security",
+        "data movement",
+        "threat intelligence"
+      ],
+      "score": 5,
+      "category": "Security",
+      "publishedAt": "2026-04-28T11:58:00.000Z"
+    },
+    {
       "url": "https://openai.com/index/our-commitment-to-community-safety",
       "title": "Our commitment to community safety",
       "summary": "OpenAI describes its safety mechanisms for ChatGPT including model safeguards, misuse detection, and policy enforcement. The approach combines technical controls with collaboration with external safety experts.",
@@ -1493,6 +3125,21 @@
       "score": 5,
       "category": "AI",
       "publishedAt": "2026-04-28T00:00:00.000Z"
+    },
+    {
+      "url": "https://www.databricks.com/blog/how-leading-tech-companies-are-killing-builders-tax-lakebase",
+      "title": "How leading tech companies are killing the builder's tax with Lakebase",
+      "summary": "Databricks argues that infrastructure overhead (the 'builder's tax') slows AI application development and introduces Lakebase as a unified platform reducing this friction. The post covers how companies like Anthropic and others use Lakebase to accelerate AI-native app development.",
+      "source": "Databricks Blog",
+      "tags": [
+        "MLOps",
+        "infrastructure",
+        "AI applications",
+        "Lakebase"
+      ],
+      "score": 5,
+      "category": "AI",
+      "publishedAt": "2026-04-27T23:23:08.000Z"
     },
     {
       "url": "https://thenewstack.io/openai-microsoft-partnership-restructured/",
@@ -1509,6 +3156,34 @@
       "score": 5,
       "category": "Other",
       "publishedAt": "2026-04-27T22:25:40.000Z"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/automate-repetitive-tasks-with-amazon-quick-flows/",
+      "title": "Automate repetitive tasks with Amazon Quick Flows",
+      "summary": "Amazon Quick Flows automates business workflows using natural language descriptions without requiring coding or ML expertise. The service builds intelligent workflows from plain-language specifications, enabling teams to automate data copying, report generation, and employee onboarding tasks as part of the broader Amazon Quick suite.",
+      "source": "AWS ML Blog",
+      "tags": [
+        "LLM",
+        "workflow automation",
+        "agents"
+      ],
+      "score": 5,
+      "category": "AI",
+      "publishedAt": "2026-04-27T17:52:05.000Z"
+    },
+    {
+      "url": "https://thehackernews.com/2026/04/weekly-recap-fast16-malware-xchat.html",
+      "title": "⚡ Weekly Recap: Fast16 Malware, XChat Launch, Federal Backdoor, AI Employee Tracking & More",
+      "summary": "Weekly roundup covering Fast16 malware, supply chain incidents, fake help desk attacks, malicious browser extensions, credential theft, and abuse of remote tools. The recap highlights recurring attack patterns and legacy vulnerabilities still being exploited.",
+      "source": "The Hacker News",
+      "tags": [
+        "malware",
+        "supply-chain",
+        "threat-intelligence"
+      ],
+      "score": 5,
+      "category": "Security",
+      "publishedAt": "2026-04-27T13:30:00.000Z"
     },
     {
       "url": "https://openai.com/index/next-phase-of-microsoft-partnership",
@@ -1537,6 +3212,36 @@
       "score": 5,
       "category": "AI",
       "publishedAt": "2026-04-27T00:00:00.000Z"
+    },
+    {
+      "url": "https://huggingface.co/blog/openai-privacy-filter-web-apps",
+      "title": "How to build scalable web apps with OpenAI's Privacy Filter",
+      "summary": "<UNKNOWN>",
+      "source": "Hugging Face Blog",
+      "tags": [
+        "privacy",
+        "web apps",
+        "OpenAI",
+        "security"
+      ],
+      "score": 5,
+      "category": "AI",
+      "publishedAt": "2026-04-27T00:00:00.000Z"
+    },
+    {
+      "url": "https://www.databricks.com/blog/model-risk-management-2026-bankers-guide-revised-interagency-guidance",
+      "title": "Model Risk Management in 2026: A Banker's Guide to the Revised Interagency Guidance",
+      "summary": "Databricks summarizes the April 2026 Federal Reserve update to model risk management guidance, covering new requirements for AI/ML model validation, governance, and monitoring in financial institutions. The post maps regulatory changes to practical implementation patterns.",
+      "source": "Databricks Blog",
+      "tags": [
+        "governance",
+        "compliance",
+        "financial services",
+        "regulation"
+      ],
+      "score": 5,
+      "category": "AI",
+      "publishedAt": "2026-04-25T00:44:08.000Z"
     },
     {
       "url": "https://openai.com/academy/what-is-codex",
@@ -1569,6 +3274,21 @@
       "publishedAt": "2026-04-23T10:00:00.000Z"
     },
     {
+      "url": "https://developer.nvidia.com/blog/scaling-the-ai-ready-data-center-with-nvidia-rtx-pro-4500-blackwell-server-edition-and-nvidia-vgpu-20/",
+      "title": "Scaling the AI-Ready Data Center with NVIDIA RTX PRO 4500 Blackwell Server Edition and NVIDIA vGPU 20",
+      "summary": "NVIDIA RTX PRO 4500 Blackwell and vGPU 20 enable shared GPU access across virtual machines, reducing compute bottlenecks for enterprise applications integrating AI. The approach allows multiple workloads to access dedicated GPU resources without single-purpose silos.",
+      "source": "NVIDIA Developer Blog",
+      "tags": [
+        "GPU",
+        "virtualization",
+        "infrastructure",
+        "Blackwell"
+      ],
+      "score": 5,
+      "category": "Cloud",
+      "publishedAt": "2026-04-22T20:30:00.000Z"
+    },
+    {
       "url": "https://openai.com/index/making-chatgpt-better-for-clinicians",
       "title": "Making ChatGPT better for clinicians",
       "summary": "OpenAI made ChatGPT for Clinicians free for verified U.S. physicians, nurse practitioners, and pharmacists to support clinical documentation, care decisions, and research workflows. This removes cost barriers for healthcare professionals adopting AI assistance.",
@@ -1582,6 +3302,80 @@
       "score": 5,
       "category": "AI",
       "publishedAt": "2026-04-22T15:00:00.000Z"
+    },
+    {
+      "url": "https://huggingface.co/blog/cybersecurity-openness",
+      "title": "AI and the Future of Cybersecurity: Why Openness Matters",
+      "summary": "Discusses the role of open-source AI models and transparency in advancing cybersecurity defenses and threat detection. Argues for open collaboration in AI security research over proprietary approaches.",
+      "source": "Hugging Face Blog",
+      "tags": [
+        "AI",
+        "security",
+        "open-source"
+      ],
+      "score": 5,
+      "category": "AI",
+      "publishedAt": "2026-04-21T00:00:00.000Z"
+    },
+    {
+      "url": "https://github.blog/ai-and-ml/github-copilot/building-an-emoji-list-generator-with-the-github-copilot-cli/",
+      "title": "Building an emoji list generator with the GitHub Copilot CLI",
+      "summary": "Tutorial demonstrating the GitHub Copilot CLI SDK to build a terminal-based emoji generator that converts bullet-point lists to relevant emoji. Uses @opentui/core for UI, @github/copilot-sdk for AI, and clipboardy for clipboard integration.",
+      "source": "GitHub Blog",
+      "tags": [
+        "Copilot",
+        "CLI",
+        "SDK",
+        "tool-use"
+      ],
+      "score": 5,
+      "category": "AI",
+      "publishedAt": "2026-04-17T18:00:00.000Z"
+    },
+    {
+      "url": "https://github.blog/news-insights/company-news/bringing-more-transparency-to-githubs-status-page/",
+      "title": "Bringing more transparency to GitHub's status page",
+      "summary": "GitHub adds a 'Degraded Performance' incident state between Partial and Major Outage, publishes per-service uptime metrics, and introduces a dedicated 'Copilot AI Model Providers' component for clearer visibility into model provider availability.",
+      "source": "GitHub Blog",
+      "tags": [
+        "observability",
+        "status page",
+        "reliability"
+      ],
+      "score": 5,
+      "category": "DevOps",
+      "publishedAt": "2026-04-17T16:00:00.000Z"
+    },
+    {
+      "url": "https://research.google/blog/ai-generated-synthetic-neurons-speed-up-brain-mapping/",
+      "title": "AI-generated synthetic neurons speed up brain mapping",
+      "source": "Google Research Blog",
+      "summary": "Google Research uses AI-generated synthetic neurons to accelerate brain mapping workflows, reducing manual annotation overhead. The synthetic neuron generation approach enables faster reconstruction and analysis of neural circuits from microscopy data.",
+      "tags": [
+        "generative-AI",
+        "neuroscience",
+        "synthetic-data",
+        "computer-vision"
+      ],
+      "score": 5,
+      "category": "Other",
+      "publishedAt": "2026-04-16T12:18:00.000Z"
+    },
+    {
+      "url": "https://developer.nvidia.com/blog/building-custom-atomistic-simulation-workflows-for-chemistry-and-materials-science-with-nvidia-alchemi-toolkit/",
+      "title": "Building Custom Atomistic Simulation Workflows for Chemistry and Materials Science with NVIDIA ALCHEMI Toolkit",
+      "summary": "NVIDIA ALCHEMI Toolkit bridges the accuracy-speed tradeoff in computational chemistry by combining DFT methods with classical force fields for atomistic simulations. The toolkit enables researchers to build custom workflows that scale beyond the few-hundred-atom limit of traditional ab initio approaches while maintaining chemical fidelity for bond-breaking and transition-state analysis.",
+      "source": "NVIDIA Developer Blog",
+      "tags": [
+        "simulation",
+        "chemistry",
+        "CUDA",
+        "GPU",
+        "computational-science"
+      ],
+      "score": 5,
+      "category": "Engineering",
+      "publishedAt": "2026-04-14T16:30:00.000Z"
     },
     {
       "url": "https://aws.amazon.com/blogs/aws/announcing-the-aws-sustainability-console-programmatic-access-configurable-csv-reports-and-scope-1-3-reporting-in-one-place/",
