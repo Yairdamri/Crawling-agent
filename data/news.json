@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-04-29T13:18:51.642Z",
+  "generatedAt": "2026-04-29T14:12:55.765Z",
   "articles": [
     {
       "url": "https://www.wiz.io/blog/github-rce-vulnerability-cve-2026-3854",
@@ -473,6 +473,22 @@
       "score": 8,
       "category": "AI",
       "publishedAt": "2026-03-31T16:39:16.000Z"
+    },
+    {
+      "url": "https://thenewstack.io/warp-open-source-client/",
+      "title": "Warp's gamble: Going open source to take on closed-source rivals",
+      "summary": "Warp, a Rust-based agentic development environment, has open-sourced its client under AGPL with OpenAI as founding sponsor. The platform uses GPT-backed agent workflows orchestrated via Oz to enable human-supervised development where agents handle implementation while humans focus on design and verification.",
+      "source": "The New Stack",
+      "tags": [
+        "agents",
+        "LLM",
+        "development-tools",
+        "open-source",
+        "Rust"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-04-29T13:57:41.000Z"
     },
     {
       "url": "https://thenewstack.io/hpe-agentic-ops-copilot/",
@@ -1083,6 +1099,21 @@
       "publishedAt": "2026-03-31T17:57:17.000Z"
     },
     {
+      "url": "https://blog.jeffschomay.com/letting-ai-play-my-game",
+      "title": "Letting AI play my game – building an agentic test harness to help play-testing",
+      "summary": "Practical walkthrough of using AI agents as automated test players for game development. The author built an agentic test harness to replace manual play-testing, demonstrating concrete application of agent-based automation in QA workflows.",
+      "source": "HN Front Page",
+      "tags": [
+        "agents",
+        "testing",
+        "game-development",
+        "automation"
+      ],
+      "score": 6,
+      "category": "AI",
+      "publishedAt": "2026-04-29T12:43:12.000Z"
+    },
+    {
       "url": "https://dl.acm.org/doi/abs/10.1145/3767295.3803591",
       "title": "Low-Compilation-Cost Register Allocation in LLVM-Based Binary Translation",
       "summary": "Research paper on optimizing register allocation in LLVM-based binary translation to reduce compilation overhead. Addresses a key performance bottleneck in dynamic binary translation systems where register allocation can dominate compilation time.",
@@ -1358,6 +1389,21 @@
       "score": 6,
       "category": "Engineering",
       "publishedAt": "2026-04-13T15:59:37.000Z"
+    },
+    {
+      "url": "https://github.com/electricant/adblock-rust-manager",
+      "title": "Show HN: Adblock-rust Manager – Firefox extension to enable the Brave ad blocker",
+      "summary": "Firefox extension that provides UI and management for adblock-rust (Brave's Rust-based ad filtering engine) which Firefox 149 ships disabled by default. Adds filter list management, clipboard helpers, and preset configurations since the underlying engine lacks WebExtension API access.",
+      "source": "HN Front Page",
+      "tags": [
+        "Firefox",
+        "Rust",
+        "browser-extension",
+        "ad-blocking"
+      ],
+      "score": 5,
+      "category": "Engineering",
+      "publishedAt": "2026-04-29T12:24:53.000Z"
     },
     {
       "url": "https://www.theregister.com/2026/04/29/mitchell_hashimoto_ghostty_quitting_github/",
