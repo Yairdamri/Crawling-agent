@@ -1,5 +1,1573 @@
 {
   "schemaVersion": 1,
-  "generatedAt": null,
-  "articles": []
+  "generatedAt": "2026-04-29T13:18:51.642Z",
+  "articles": [
+    {
+      "url": "https://www.wiz.io/blog/github-rce-vulnerability-cve-2026-3854",
+      "title": "GitHub RCE Vulnerability: CVE-2026-3854 Breakdown",
+      "summary": "Technical breakdown of a critical GitHub RCE vulnerability (CVE-2026-3854). Engineers need to understand the attack vector and apply patches immediately to prevent remote code execution.",
+      "source": "HN Front Page",
+      "tags": [
+        "security",
+        "RCE",
+        "GitHub",
+        "CVE",
+        "vulnerability"
+      ],
+      "score": 9,
+      "category": "Engineering",
+      "publishedAt": "2026-04-28T16:15:43.000Z"
+    },
+    {
+      "url": "https://kubernetes.io/blog/2026/04/24/kubernetes-v1-36-fine-grained-kubelet-authorization-ga/",
+      "title": "Kubernetes v1.36: Fine-Grained Kubelet API Authorization Graduates to GA",
+      "summary": "Fine-grained kubelet API authorization reaches GA in v1.36, replacing the overly broad nodes/proxy permission with precise, least-privilege access controls for monitoring, logging, and observability workloads. This prevents monitoring agents from inadvertently gaining the ability to execute arbitrary commands in containers.",
+      "source": "Kubernetes Blog",
+      "tags": [
+        "Kubernetes",
+        "RBAC",
+        "security",
+        "kubelet",
+        "authorization"
+      ],
+      "score": 9,
+      "category": "Cloud",
+      "publishedAt": "2026-04-24T18:35:00.000Z"
+    },
+    {
+      "url": "https://kubernetes.io/blog/2026/04/23/kubernetes-v1-36-userns-ga/",
+      "title": "Kubernetes v1.36: User Namespaces in Kubernetes are finally GA",
+      "summary": "User namespace support reaches GA in Kubernetes v1.36, enabling rootless container isolation where processes running as UID 0 inside containers are mapped to non-root UIDs on the host. This allows workloads to use capabilities like CAP_NET_ADMIN in a namespaced context without granting actual host privileges.",
+      "source": "Kubernetes Blog",
+      "tags": [
+        "Kubernetes",
+        "security",
+        "user-namespaces",
+        "rootless",
+        "Linux"
+      ],
+      "score": 9,
+      "category": "Cloud",
+      "publishedAt": "2026-04-23T18:35:00.000Z"
+    },
+    {
+      "url": "https://www.docker.com/blog/trivy-kics-and-the-shape-of-supply-chain-attacks-so-far-in-2026/",
+      "title": "Trivy, KICS, and the shape of supply chain attacks so far in 2026",
+      "summary": "Checkmarx KICS images on Docker Hub were compromised via stolen publisher credentials, with attackers overwriting legitimate tags and injecting a silent exfiltration mechanism that collected scan output to attacker infrastructure. The incident mirrors the earlier Trivy compromise and highlights a pattern where legitimate publishing flows are weaponized to poison supply chains.",
+      "source": "Docker Blog",
+      "tags": [
+        "supply-chain-security",
+        "container-security",
+        "Docker-Hub",
+        "credential-compromise",
+        "malware"
+      ],
+      "score": 9,
+      "category": "Cloud",
+      "publishedAt": "2026-04-23T15:32:00.000Z"
+    },
+    {
+      "url": "https://www.docker.com/blog/defending-your-software-supply-chain-what-every-engineering-team-should-do-now/",
+      "title": "Defending Your Software Supply Chain: What Every Engineering Team Should Do Now",
+      "summary": "Recent supply chain attacks (axios, Trivy, KICS, TeamPCP) exploit stolen developer credentials to poison trusted packages in a self-reinforcing cycle; the pattern shows attackers weaponize implicit trust in legitimate publishing flows. Engineering teams must implement credential isolation, package verification, and runtime integrity checks to break the attack chain.",
+      "source": "Docker Blog",
+      "tags": [
+        "supply-chain-security",
+        "credential-compromise",
+        "package-verification",
+        "software-security",
+        "threat-analysis"
+      ],
+      "score": 9,
+      "category": "Engineering",
+      "publishedAt": "2026-04-02T18:14:40.000Z"
+    },
+    {
+      "url": "https://thenewstack.io/platform-engineering-ai-agents/",
+      "title": "How AI transforms your role as a platform engineer",
+      "summary": "As developers build agentic workflows to automate their jobs, platform engineers face new governance and visibility challenges—termed 'agent sprawl'—requiring updated strategies to balance developer velocity with operational control and cost management. Platform teams must evolve from self-service infrastructure to agent governance frameworks.",
+      "source": "The New Stack",
+      "tags": [
+        "platform-engineering",
+        "agents",
+        "governance",
+        "DevOps"
+      ],
+      "score": 8,
+      "category": "DevOps",
+      "publishedAt": "2026-04-29T13:05:00.000Z"
+    },
+    {
+      "url": "https://corrode.dev/blog/bugs-rust-wont-catch/",
+      "title": "Bugs Rust won't catch",
+      "summary": "Technical analysis of categories of bugs that Rust's type system and borrow checker cannot prevent, including logic errors, concurrency issues beyond data races, and resource exhaustion. Provides practical perspective on Rust's guarantees and limitations for working engineers.",
+      "source": "HN Front Page",
+      "tags": [
+        "Rust",
+        "type-safety",
+        "memory-safety",
+        "language-design"
+      ],
+      "score": 8,
+      "category": "Engineering",
+      "publishedAt": "2026-04-29T02:19:11.000Z"
+    },
+    {
+      "url": "https://kubernetes.io/blog/2026/04/28/kubernetes-v1-36-staleness-mitigation-for-controllers/",
+      "title": "Kubernetes v1.36: Staleness Mitigation and Observability for Controllers",
+      "summary": "Kubernetes v1.36 introduces features to mitigate staleness in controllers—a problem where controllers operate on outdated cached state, leading to incorrect or delayed actions. The release adds new observability tools and mechanisms to help controller authors detect and prevent cache staleness issues before they cause production incidents.",
+      "source": "Kubernetes Blog",
+      "tags": [
+        "Kubernetes",
+        "controllers",
+        "observability",
+        "cache",
+        "staleness"
+      ],
+      "score": 8,
+      "category": "Cloud",
+      "publishedAt": "2026-04-28T18:35:00.000Z"
+    },
+    {
+      "url": "https://thenewstack.io/json-schema-ai-reliability/",
+      "title": "Why JSON Schema matters more than ever in the age of generative AI",
+      "summary": "JSON Schema is becoming critical infrastructure for constraining LLM outputs into reliable, structured data. The standard enforces contracts between systems and turns probabilistic AI outputs into deterministic, validated results—essential for production AI deployments.",
+      "source": "The New Stack",
+      "tags": [
+        "JSON Schema",
+        "LLM",
+        "validation",
+        "structured data",
+        "reliability"
+      ],
+      "score": 8,
+      "category": "Engineering",
+      "publishedAt": "2026-04-28T17:00:00.000Z"
+    },
+    {
+      "url": "https://thenewstack.io/terraform-state-infrastructure-drift/",
+      "title": "Why Terraform is green when your cloud is broken",
+      "summary": "Terraform state files are snapshots, not live records—manual infrastructure changes made outside Terraform (e.g., in the AWS console) create drift that Terraform cannot detect, leading to silent failures. The article illustrates how state divergence causes production incidents and discusses drift detection strategies.",
+      "source": "The New Stack",
+      "tags": [
+        "Terraform",
+        "infrastructure drift",
+        "state management",
+        "IaC",
+        "AWS"
+      ],
+      "score": 8,
+      "category": "DevOps",
+      "publishedAt": "2026-04-28T13:00:00.000Z"
+    },
+    {
+      "url": "https://thenewstack.io/thoughtworks-radar-agentic-ai/",
+      "title": "Why AI engineering needs old-school discipline",
+      "summary": "Thoughtworks data shows 40% of agentic AI projects may be canceled by 2027 due to the PoC-to-production gap. The report emphasizes that engineering fundamentals like test-driven development and mutation testing are critical for moving AI from experiments to reliable systems, and questions whether much AI-generated code should exist at all.",
+      "source": "The New Stack",
+      "tags": [
+        "agentic AI",
+        "PoC-to-production",
+        "TDD",
+        "engineering discipline"
+      ],
+      "score": 8,
+      "category": "AI",
+      "publishedAt": "2026-04-27T18:53:33.000Z"
+    },
+    {
+      "url": "https://www.cncf.io/blog/2026/04/27/kubernetes-for-platform-teams-leveraging-k0s-and-k0rdent/",
+      "title": "Kubernetes for platform teams: Leveraging k0s and k0rdent",
+      "summary": "Practical guide to managing multi-cluster Kubernetes at scale on OpenStack using k0s, k0rdent, and hosted control planes. Addresses the cost and complexity problem of running dozens/hundreds of clusters by reducing per-cluster control plane overhead.",
+      "source": "CNCF Blog",
+      "tags": [
+        "Kubernetes",
+        "k0s",
+        "multi-cluster",
+        "platform-engineering",
+        "OpenStack"
+      ],
+      "score": 8,
+      "category": "DevOps",
+      "publishedAt": "2026-04-27T11:00:00.000Z"
+    },
+    {
+      "url": "https://thenewstack.io/disappearing-ai-middle-class/",
+      "title": "The disappearing AI middle class",
+      "summary": "The LLM market is bifurcating into expensive frontier models (OpenAI's GPT-5.5 doubled pricing) and cheap open alternatives (DeepSeek), eliminating the comfortable middle tier. Developers building agents and inference pipelines must now choose between premium closed models or budget open infrastructure, complicating cost-performance optimization.",
+      "source": "The New Stack",
+      "tags": [
+        "LLM pricing",
+        "model economics",
+        "frontier AI",
+        "open models"
+      ],
+      "score": 8,
+      "category": "AI",
+      "publishedAt": "2026-04-26T17:16:16.000Z"
+    },
+    {
+      "url": "https://thenewstack.io/ai-codebase-maturity-model/",
+      "title": "Beyond prompting: How KubeStellar reached 81% PR acceptance with AI agents",
+      "summary": "Building KubeStellar Console with AI agents revealed that codebase maturity, not model capability, is the limiting factor for sustained productivity. Initial rapid gains gave way to cascading failures and architectural drift; success required strong test coverage, clear patterns, and disciplined code organization to keep agents productive.",
+      "source": "The New Stack",
+      "tags": [
+        "AI agents",
+        "codebase maturity",
+        "code quality",
+        "Kubernetes"
+      ],
+      "score": 8,
+      "category": "Engineering",
+      "publishedAt": "2026-04-26T16:00:00.000Z"
+    },
+    {
+      "url": "https://www.cncf.io/blog/2026/04/23/from-ingress-nginx-to-higress-migrating-60-resources-in-30-minutes-with-ai/",
+      "title": "From Ingress NGINX to Higress: migrating 60+ resources in 30 minutes with AI",
+      "summary": "Real-world migration from retired Ingress NGINX to Higress (CNCF Sandbox) using AI agents, completed in 30 minutes. Higress is an AI-native gateway with LLM-specific features like token-based rate limiting and unified LLM protocol governance.",
+      "source": "CNCF Blog",
+      "tags": [
+        "Kubernetes",
+        "Higress",
+        "API-gateway",
+        "Envoy",
+        "AI-native"
+      ],
+      "score": 8,
+      "category": "Cloud",
+      "publishedAt": "2026-04-23T13:37:18.000Z"
+    },
+    {
+      "url": "https://openai.com/index/introducing-gpt-5-5",
+      "title": "Introducing GPT-5.5",
+      "summary": "GPT-5.5 is OpenAI's latest model offering improved speed and capability for complex tasks including coding, research, and data analysis. Targets developers and researchers needing higher performance for tool-integrated workflows.",
+      "source": "OpenAI Blog",
+      "tags": [
+        "GPT-5.5",
+        "LLM",
+        "coding",
+        "release"
+      ],
+      "score": 8,
+      "category": "AI",
+      "publishedAt": "2026-04-23T11:00:00.000Z"
+    },
+    {
+      "url": "https://www.hashicorp.com/blog/bridging-the-trust-gap-unified-public-ca-orchestration-with-ibm-vault",
+      "title": "Bridging the trust gap: Unified public CA orchestration with IBM Vault",
+      "summary": "IBM Vault now integrates public certificate authorities (CAs) into its PKI orchestration, eliminating the manual, fragmented process of managing external certificates alongside internal PKI. This unified workflow automates certificate lifecycle management for both internal microservices and customer-facing services, reducing operational overhead and certificate expiration outages.",
+      "source": "HashiCorp Blog",
+      "tags": [
+        "Vault",
+        "PKI",
+        "certificate-management",
+        "automation"
+      ],
+      "score": 8,
+      "category": "DevOps",
+      "publishedAt": "2026-04-23T07:09:00.000Z"
+    },
+    {
+      "url": "https://kubernetes.io/blog/2026/04/22/breaking-changes-in-selinux-volume-labeling/",
+      "title": "SELinux Volume Label Changes goes GA (and likely implications in v1.37)",
+      "summary": "Kubernetes v1.36 makes SELinux volume labeling changes GA; a future release (likely v1.37) will enable SELinuxMount by default, improving volume setup performance but potentially breaking applications that depend on recursive relabeling. Operators running SELinux in enforcing mode should audit their clusters in v1.36 to identify and fix affected workloads.",
+      "source": "Kubernetes Blog",
+      "tags": [
+        "Kubernetes",
+        "SELinux",
+        "security",
+        "volumes",
+        "breaking-change"
+      ],
+      "score": 8,
+      "category": "Cloud",
+      "publishedAt": "2026-04-22T18:35:00.000Z"
+    },
+    {
+      "url": "https://openai.com/index/speeding-up-agentic-workflows-with-websockets",
+      "title": "Speeding up agentic workflows with WebSockets in the Responses API",
+      "summary": "OpenAI's Responses API now uses WebSockets and connection-scoped caching to reduce API overhead and latency in agent loops. This technical optimization improves performance for agentic workflows by maintaining persistent connections and caching model responses.",
+      "source": "OpenAI Blog",
+      "tags": [
+        "WebSockets",
+        "API",
+        "agents",
+        "latency",
+        "caching"
+      ],
+      "score": 8,
+      "category": "AI",
+      "publishedAt": "2026-04-22T10:00:00.000Z"
+    },
+    {
+      "url": "https://www.hashicorp.com/blog/from-80-days-to-5-how-banco-bradesco-accelerated-digital-product-delivery-with-hc",
+      "title": "From 80 days to 5: How Banco Bradesco accelerated digital product delivery with HCP Terraform",
+      "summary": "Banco Bradesco reduced infrastructure provisioning time from 80 days to 5 days by positioning Terraform as a governance control plane for platform engineering, replacing fragmented automation with orchestrated, policy-driven self-service infrastructure delivery across 20+ internal teams and 500+ modules. This shift enabled faster time-to-market for digital products while maintaining strict compliance controls.",
+      "source": "HashiCorp Blog",
+      "tags": [
+        "Terraform",
+        "platform-engineering",
+        "infrastructure-automation",
+        "governance",
+        "self-service"
+      ],
+      "score": 8,
+      "category": "DevOps",
+      "publishedAt": "2026-04-21T16:00:00.000Z"
+    },
+    {
+      "url": "https://www.cncf.io/blog/2026/04/21/auto-diagnosing-kubernetes-alerts-with-holmesgpt-and-cncf-tools/",
+      "title": "Auto-diagnosing Kubernetes alerts with HolmesGPT and CNCF tools",
+      "summary": "STCLab's SRE team built an AI investigation pipeline using HolmesGPT (CNCF Sandbox) with ReAct pattern to auto-diagnose Kubernetes alerts. Reduces manual triage from 15-20 minutes to automatic first-pass analysis in Slack, integrating Prometheus, Loki, and traces.",
+      "source": "CNCF Blog",
+      "tags": [
+        "Kubernetes",
+        "observability",
+        "AI",
+        "alerting",
+        "HolmesGPT"
+      ],
+      "score": 8,
+      "category": "DevOps",
+      "publishedAt": "2026-04-21T15:06:09.000Z"
+    },
+    {
+      "url": "https://www.hashicorp.com/blog/advancing-secret-sync-with-workload-identity-federation",
+      "title": "Advancing secret sync with workload identity federation",
+      "summary": "Vault Enterprise 2.0 adds workload identity federation support to secret sync, replacing long-lived static cloud credentials (AWS IAM keys, Azure service principals, GCP service accounts) with short-lived federated identity tokens. This modernizes secret distribution across AWS Secrets Manager, Azure Key Vault, and Google Secret Manager while reducing operational risk.",
+      "source": "HashiCorp Blog",
+      "tags": [
+        "Vault",
+        "secret-management",
+        "workload-identity",
+        "federation",
+        "multi-cloud"
+      ],
+      "score": 8,
+      "category": "DevOps",
+      "publishedAt": "2026-04-17T14:45:00.000Z"
+    },
+    {
+      "url": "https://www.cncf.io/blog/2026/04/16/the-ai-driven-shift-in-vulnerability-discovery-what-maintainers-and-bug-finders-need-to-know/",
+      "title": "The AI-driven shift in vulnerability discovery: What maintainers and bug finders need to know",
+      "summary": "AI models have dramatically accelerated vulnerability discovery in open-source software, making it trivial for non-experts to find real flaws—but also to generate false positives. This flood of reports is overwhelming OSS maintainers and will strain downstream release and compliance systems; the post calls for proactive vulnerability hunting before attackers exploit these newly-discoverable gaps.",
+      "source": "CNCF Blog",
+      "tags": [
+        "AI",
+        "vulnerability-discovery",
+        "security",
+        "OSS-maintenance"
+      ],
+      "score": 8,
+      "category": "AI",
+      "publishedAt": "2026-04-16T22:29:24.000Z"
+    },
+    {
+      "url": "https://www.docker.com/blog/why-microvms-the-architecture-behind-docker-sandboxes/",
+      "title": "Why MicroVMs: The Architecture Behind Docker Sandboxes",
+      "summary": "Docker Sandboxes use microVMs to provide strong agent isolation without the cold-start overhead of full VMs or the privilege escalation risks of Docker-in-Docker. MicroVMs balance fast startup times, real OS environments, and security hardening better than containers, WASM isolates, or traditional VMs for autonomous agent workloads.",
+      "source": "Docker Blog",
+      "tags": [
+        "microVMs",
+        "container-security",
+        "agent-isolation",
+        "sandboxing",
+        "Docker-Sandboxes"
+      ],
+      "score": 8,
+      "category": "Cloud",
+      "publishedAt": "2026-04-16T17:14:19.000Z"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/aws/introducing-anthropics-claude-opus-4-7-model-in-amazon-bedrock/",
+      "title": "Introducing Anthropic's Claude Opus 4.7 model in Amazon Bedrock",
+      "summary": "Anthropic's Claude Opus 4.7 launches in Amazon Bedrock with strong performance on agentic coding (64.3% SWE-bench Pro, 87.6% SWE-bench Verified), knowledge work, and long-running tasks. Bedrock's new inference engine provides dynamic capacity allocation and zero operator access for sensitive data.",
+      "source": "AWS News",
+      "tags": [
+        "Claude",
+        "Amazon-Bedrock",
+        "agentic-coding",
+        "LLM",
+        "inference-engine"
+      ],
+      "score": 8,
+      "category": "AI",
+      "publishedAt": "2026-04-16T14:49:33.000Z"
+    },
+    {
+      "url": "https://www.docker.com/blog/why-we-chose-the-harder-path-docker-hardened-images-one-year-later/",
+      "title": "Why We Chose the Harder Path: Docker Hardened Images, One Year Later",
+      "summary": "Docker Hardened Images (DHI) has reached 500k daily pulls and 2,000+ artifacts with continuous patching across CVEs and distros, using SLSA Build Level 3 attestations and multi-distro support to avoid vendor lock-in. The approach prioritizes ecosystem security and independent verifiability over proprietary shortcuts.",
+      "source": "Docker Blog",
+      "tags": [
+        "container-security",
+        "hardened-images",
+        "SLSA",
+        "supply-chain",
+        "CVE-patching"
+      ],
+      "score": 8,
+      "category": "Cloud",
+      "publishedAt": "2026-04-14T21:48:03.000Z"
+    },
+    {
+      "url": "https://www.hashicorp.com/blog/vault-enterprise-20-modernizes-identity-security-at-scale",
+      "title": "Vault Enterprise 2.0 modernizes identity security at scale",
+      "summary": "Vault Enterprise 2.0 introduces workload identity federation for secret distribution, expanded credential rotation for Linux, envelope encryption for streaming workloads, and enhanced Terraform/Kubernetes integrations. The release also includes a redesigned UI and shifts to a new versioning model (1.21 → 2.0.0) aligned with IBM lifecycle practices.",
+      "source": "HashiCorp Blog",
+      "tags": [
+        "Vault",
+        "secrets-management",
+        "credential-rotation",
+        "encryption",
+        "identity-federation"
+      ],
+      "score": 8,
+      "category": "DevOps",
+      "publishedAt": "2026-04-14T05:09:00.000Z"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/aws/launching-s3-files-making-s3-buckets-accessible-as-file-systems/",
+      "title": "Launching S3 Files, making S3 buckets accessible as file systems",
+      "summary": "S3 Files provides POSIX-compatible file system access to S3 buckets, enabling in-place file edits and multi-compute sharing without duplication. Eliminates the traditional tradeoff between S3's durability/cost and file system interactivity.",
+      "source": "AWS News",
+      "tags": [
+        "S3",
+        "storage",
+        "file-system",
+        "compute",
+        "data-access"
+      ],
+      "score": 8,
+      "category": "Cloud",
+      "publishedAt": "2026-04-07T19:18:32.000Z"
+    },
+    {
+      "url": "https://www.docker.com/blog/docker-offload-now-generally-available-the-full-power-of-docker-for-every-developer-everywhere/",
+      "title": "Docker Offload now Generally Available: The Full Power of Docker, for Every Developer, Everywhere.",
+      "summary": "Docker Offload moves the container engine to Docker's cloud, enabling Docker Desktop to run in restricted environments like VDI and managed desktops without local resource constraints. Developers retain familiar workflows and CLI commands while the engine executes remotely, unblocking enterprise teams previously unable to use Docker Desktop.",
+      "source": "Docker Blog",
+      "tags": [
+        "Docker Desktop",
+        "cloud offload",
+        "VDI",
+        "enterprise",
+        "developer experience"
+      ],
+      "score": 8,
+      "category": "DevOps",
+      "publishedAt": "2026-04-02T13:00:00.000Z"
+    },
+    {
+      "url": "https://www.docker.com/blog/docker-sandboxes-run-agents-in-yolo-mode-safely/",
+      "title": "Docker Sandboxes: Run Agents in YOLO Mode, Safely",
+      "summary": "Docker Sandboxes provide isolated execution environments for autonomous AI agents with predefined resource and file access boundaries, enabling safe YOLO-mode operation without per-step permission checks. The sandboxes work standalone without Docker Desktop and integrate with coding agents like Claude Code, GitHub Copilot CLI, and Gemini CLI.",
+      "source": "Docker Blog",
+      "tags": [
+        "Docker Sandboxes",
+        "AI agents",
+        "security",
+        "autonomous execution",
+        "isolation"
+      ],
+      "score": 8,
+      "category": "AI",
+      "publishedAt": "2026-03-31T16:39:16.000Z"
+    },
+    {
+      "url": "https://thenewstack.io/hpe-agentic-ops-copilot/",
+      "title": "How HPE is closing the loop on cloud and AI sprawl with agentic AI",
+      "summary": "HPE advocates a closed-loop operations model using AI agents to treat orchestration, observability, and remediation as continuous feedback cycles, addressing hybrid cloud complexity and understaffed ops teams. This approach moves enterprises from reactive dashboards to autonomous remediation with AI-driven signal extraction.",
+      "source": "The New Stack",
+      "tags": [
+        "AIOps",
+        "observability",
+        "hybrid-cloud",
+        "remediation"
+      ],
+      "score": 7,
+      "category": "DevOps",
+      "publishedAt": "2026-04-29T13:00:00.000Z"
+    },
+    {
+      "url": "https://www.diabettech.com/i-asked-ai-to-count-my-carbs-27000-times-it-couldnt-give-me-the-same-answer-twice/",
+      "title": "He asked AI to count carbs 27000 times. It couldn't give the same answer twice",
+      "summary": "A user tested an AI model's consistency on a practical medical task—carbohydrate counting from food images—and found it produced different results on identical inputs across 27,000 trials. This highlights a critical reliability gap in deploying vision-based AI for health-critical applications where deterministic output is essential.",
+      "source": "HN Front Page",
+      "tags": [
+        "AI",
+        "reliability",
+        "vision-models",
+        "medical-AI",
+        "consistency"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-04-29T12:38:50.000Z"
+    },
+    {
+      "url": "https://www.cncf.io/blog/2026/04/29/the-state-of-ai-in-cncf-projects-a-first-look-at-the-data/",
+      "title": "The state of AI in CNCF projects: A first look at the data",
+      "summary": "Survey of 133 CNCF project contributors reveals AI tool adoption patterns: ~50% use AI in IDEs/CLI, with Claude Code and GitHub Copilot as leaders. Highlights emerging need for shared guidelines on AI-assisted development in cloud-native ecosystems.",
+      "source": "CNCF Blog",
+      "tags": [
+        "AI",
+        "CNCF",
+        "developer-experience",
+        "survey",
+        "tooling"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-04-29T11:00:00.000Z"
+    },
+    {
+      "url": "https://www.nldigitalgovernment.nl/news/soft-launch-for-government-open-source-code-platform/",
+      "title": "Soft launch of open-source code platform for government",
+      "summary": "The Dutch government launched a centralized open-source code platform for public sector development. This represents a significant infrastructure initiative for code sharing and transparency across government agencies, with implications for DevOps practices in public sector tech.",
+      "source": "HN Front Page",
+      "tags": [
+        "open-source",
+        "government",
+        "DevOps",
+        "code-platform",
+        "infrastructure"
+      ],
+      "score": 7,
+      "category": "DevOps",
+      "publishedAt": "2026-04-29T09:14:37.000Z"
+    },
+    {
+      "url": "https://mitchellh.com/writing/ghostty-leaving-github",
+      "title": "Ghostty is leaving GitHub",
+      "summary": "Mitchell Hashimoto announces Ghostty terminal emulator is migrating away from GitHub to self-hosted infrastructure. Discusses rationale for moving off centralized platform and implications for open-source project hosting.",
+      "source": "HN Front Page",
+      "tags": [
+        "GitHub",
+        "self-hosted",
+        "open-source",
+        "infrastructure"
+      ],
+      "score": 7,
+      "category": "DevOps",
+      "publishedAt": "2026-04-28T19:44:52.000Z"
+    },
+    {
+      "url": "https://stratechery.com/2026/an-interview-with-openai-ceo-sam-altman-and-aws-ceo-matt-garman-about-bedrock-managed-agents/",
+      "title": "OpenAI models coming to Amazon Bedrock: Interview with OpenAI and AWS CEOs",
+      "summary": "OpenAI's models are now available on AWS Bedrock, expanding model choice for enterprises using managed agents. This partnership integrates OpenAI's capabilities into AWS's managed service, reducing friction for teams already invested in the AWS ecosystem.",
+      "source": "HN Front Page",
+      "tags": [
+        "AWS",
+        "LLM",
+        "Bedrock",
+        "OpenAI",
+        "managed-services"
+      ],
+      "score": 7,
+      "category": "Cloud",
+      "publishedAt": "2026-04-28T19:24:43.000Z"
+    },
+    {
+      "url": "https://thenewstack.io/broadcom-vcf-kubernetes-platform/",
+      "title": "Why Broadcom is betting on a private cloud comeback",
+      "summary": "Broadcom's VMware Cloud Foundation (VCF) is evolving toward a modern Kubernetes-native app substrate for private cloud, balancing ease-of-use with flexibility and open-source alignment. The strategy addresses enterprise demand for data sovereignty and native open-source stacks while supporting platform engineering at scale.",
+      "source": "The New Stack",
+      "tags": [
+        "Kubernetes",
+        "private-cloud",
+        "VMware",
+        "platform-engineering"
+      ],
+      "score": 7,
+      "category": "Cloud",
+      "publishedAt": "2026-04-28T18:09:41.000Z"
+    },
+    {
+      "url": "https://thenewstack.io/sas-viya-mcp-governance/",
+      "title": "SAS opens its analytics engine to Claude, Copilot and any AI agent with Viya MCP Server",
+      "summary": "SAS has released Viya MCP Server, enabling its analytics platform to integrate with AI agents like Claude and Copilot through the Model Context Protocol. The company positions governance and deterministic validation as its competitive advantage in the agent era, ensuring regulated industries can trust AI-driven insights.",
+      "source": "The New Stack",
+      "tags": [
+        "AI agents",
+        "MCP",
+        "governance",
+        "analytics",
+        "enterprise"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-04-28T17:29:49.000Z"
+    },
+    {
+      "url": "https://thenewstack.io/sentrys-seer-agent-debug/",
+      "title": "Sentry's Seer Agent lets developers debug production issues in natural language",
+      "summary": "Sentry launched Seer Agent, an AI-powered debugging tool that lets developers query production issues in natural language across their full observability stack. The tool addresses gaps in existing error tracking by handling open-ended investigation scenarios beyond traditional bug detection.",
+      "source": "The New Stack",
+      "tags": [
+        "observability",
+        "debugging",
+        "AI agents",
+        "error tracking",
+        "production"
+      ],
+      "score": 7,
+      "category": "DevOps",
+      "publishedAt": "2026-04-28T16:01:00.000Z"
+    },
+    {
+      "url": "https://www.hashicorp.com/blog/turning-secret-detection-into-measurable-risk-reduction",
+      "title": "Turning secret detection into measurable risk reduction",
+      "summary": "HashiCorp's Vault Radar correlates detected secrets with centralized secret management systems (Vault, AWS Secrets Manager) to provide actionable context and reduce false positives, enabling teams to distinguish between unmanaged exposures and already-controlled secrets. Emphasizes that detection alone is insufficient; effective remediation requires workflow alignment and accountability across security, dev, and ops teams.",
+      "source": "HashiCorp Blog",
+      "tags": [
+        "secrets-management",
+        "Vault",
+        "security",
+        "DevSecOps"
+      ],
+      "score": 7,
+      "category": "DevOps",
+      "publishedAt": "2026-04-28T16:00:00.000Z"
+    },
+    {
+      "url": "https://thenewstack.io/lovelace-ai-context-engine-elemental-andrew-moore/",
+      "title": "Lovelace emerges from stealth with context engine that claims 1000x AI investigative power",
+      "summary": "Lovelace AI, led by former Google Cloud AI head Andrew Moore, launched Elemental, an enterprise context engine designed for high-stakes investigative AI tasks. The platform addresses LLM limitations in complex reasoning over large datasets where accuracy is critical, targeting finance, legal, and government sectors.",
+      "source": "The New Stack",
+      "tags": [
+        "LLM",
+        "context engine",
+        "enterprise AI",
+        "investigative",
+        "reasoning"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-04-28T12:30:00.000Z"
+    },
+    {
+      "url": "https://openai.com/index/openai-on-aws",
+      "title": "OpenAI models, Codex, and Managed Agents come to AWS",
+      "summary": "OpenAI GPT models, Codex, and Managed Agents are now available on AWS, allowing enterprises to deploy AI workloads within their AWS environments. This integration enables secure, managed AI deployment for organizations already invested in AWS infrastructure.",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AWS",
+        "API",
+        "deployment"
+      ],
+      "score": 7,
+      "category": "Cloud",
+      "publishedAt": "2026-04-28T00:00:00.000Z"
+    },
+    {
+      "url": "https://kubernetes.io/blog/2026/04/27/kubernetes-v1-36-mutable-pod-resources-for-suspended-jobs/",
+      "title": "Kubernetes v1.36: Mutable Pod Resources for Suspended Jobs (beta)",
+      "summary": "Kubernetes v1.36 promotes to beta the ability to modify container resource requests and limits in suspended Job pod templates, allowing queue controllers and admins to adjust CPU, memory, GPU, and extended resources without deleting and recreating the Job. This enables batch and ML workloads to adapt resource allocation based on current cluster capacity and hardware availability.",
+      "source": "Kubernetes Blog",
+      "tags": [
+        "Kubernetes",
+        "Jobs",
+        "batch",
+        "resource-management",
+        "scheduling"
+      ],
+      "score": 7,
+      "category": "Cloud",
+      "publishedAt": "2026-04-27T18:35:00.000Z"
+    },
+    {
+      "url": "https://thenewstack.io/vibe-coding-ceos-executives-ai-agents/",
+      "title": "\"I was tired of explaining it to somebody who was supposed to build it for me\": Meet the executives vibe-coding their own tools.",
+      "summary": "Non-technical executives are using Claude and Cursor to build production AI agents and automation tools, bypassing IT queues. One CEO built a 140,000-line BBS system with 500 active users by specifying database structure and letting Claude generate the rest, demonstrating rapid capability but raising questions about code quality and maintainability.",
+      "source": "The New Stack",
+      "tags": [
+        "AI coding assistants",
+        "Claude",
+        "low-code",
+        "citizen development"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-04-27T16:08:38.000Z"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-anthropic-meta-partnership-aws-lambda-s3-files-amazon-bedrock-agentcore-cli-and-more-april-27-2026/",
+      "title": "AWS Weekly Roundup: Anthropic & Meta partnership, AWS Lambda S3 Files, Amazon Bedrock AgentCore CLI, and more (April 27, 2026)",
+      "summary": "AWS deepens collaboration with Anthropic: Claude models now train on AWS Trainium/Graviton silicon, and Claude Cowork (collaborative AI) is available in Amazon Bedrock. Highlights include Lambda S3 Files integration and AgentCore CLI tooling for building agentic applications.",
+      "source": "AWS News",
+      "tags": [
+        "Claude",
+        "Amazon-Bedrock",
+        "AWS-Trainium",
+        "agents",
+        "LLM"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-04-27T15:01:28.000Z"
+    },
+    {
+      "url": "https://thenewstack.io/open-source-digital-autonomy/",
+      "title": "What the 2026 State of Open Source report reveals about digital autonomy",
+      "summary": "The 2026 State of Open Source Report shows vendor lock-in avoidance jumped 68% as a primary adoption driver, with 55% of respondents citing it (63% in Europe). Open source is now viewed as critical infrastructure for operational control and regulatory compliance, shifting from architectural choice to business strategy.",
+      "source": "The New Stack",
+      "tags": [
+        "open source",
+        "vendor lock-in",
+        "digital autonomy",
+        "compliance"
+      ],
+      "score": 7,
+      "category": "Engineering",
+      "publishedAt": "2026-04-27T15:00:00.000Z"
+    },
+    {
+      "url": "https://openai.com/index/openai-available-at-fedramp-moderate",
+      "title": "OpenAI available at FedRAMP Moderate",
+      "summary": "OpenAI achieves FedRAMP Moderate authorization for ChatGPT Enterprise and the OpenAI API, enabling U.S. federal agencies to adopt AI services with compliance assurance. This removes a key barrier for government adoption of OpenAI's models.",
+      "source": "OpenAI Blog",
+      "tags": [
+        "compliance",
+        "FedRAMP",
+        "government"
+      ],
+      "score": 7,
+      "category": "Cloud",
+      "publishedAt": "2026-04-27T14:00:00.000Z"
+    },
+    {
+      "url": "https://thenewstack.io/postgres-ai-ground-truth/",
+      "title": "Why developers are betting on Postgres for AI",
+      "summary": "PostgreSQL is becoming the preferred database for AI applications because structured data serves as the ground truth to prevent LLM hallucinations. 66% of Stack Overflow survey respondents use or want to use Postgres, making it the leading choice for AI workloads that require reliable enterprise data access.",
+      "source": "The New Stack",
+      "tags": [
+        "PostgreSQL",
+        "AI applications",
+        "structured data",
+        "LLM grounding"
+      ],
+      "score": 7,
+      "category": "Cloud",
+      "publishedAt": "2026-04-27T14:00:00.000Z"
+    },
+    {
+      "url": "https://thenewstack.io/paper-compute-agent-infrastructure/",
+      "title": "GitHub veteran Brian Douglas launches Paper Compute to fix AI agent infrastructure",
+      "summary": "Paper Compute is building open-source cloud-native infrastructure for deploying and managing AI agents in production. The startup addresses the gap between agent development and production operations, providing tooling for confidence and control across diverse deployment scenarios.",
+      "source": "The New Stack",
+      "tags": [
+        "AI agents",
+        "cloud-native",
+        "open source",
+        "infrastructure"
+      ],
+      "score": 7,
+      "category": "Cloud",
+      "publishedAt": "2026-04-27T12:00:00.000Z"
+    },
+    {
+      "url": "https://openai.com/index/open-source-codex-orchestration-symphony",
+      "title": "An open-source spec for orchestration: Symphony",
+      "summary": "Symphony is an open-source specification for orchestrating Codex agents that integrates with issue trackers to create always-on agent systems. It reduces context switching and automates engineering workflows by treating issue trackers as persistent agent interfaces.",
+      "source": "OpenAI Blog",
+      "tags": [
+        "orchestration",
+        "agents",
+        "open-source"
+      ],
+      "score": 7,
+      "category": "Engineering",
+      "publishedAt": "2026-04-27T00:00:00.000Z"
+    },
+    {
+      "url": "https://openai.com/index/gpt-5-5-system-card",
+      "title": "GPT-5.5 System Card",
+      "summary": "Technical documentation for GPT-5.5 covering model capabilities, limitations, and safety considerations. Provides engineers with detailed specifications needed for integration and deployment decisions.",
+      "source": "OpenAI Blog",
+      "tags": [
+        "GPT-5.5",
+        "LLM",
+        "model-card",
+        "safety"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-04-23T11:00:00.000Z"
+    },
+    {
+      "url": "https://openai.com/index/gpt-5-5-bio-bug-bounty",
+      "title": "GPT-5.5 Bio Bug Bounty",
+      "summary": "OpenAI launched a red-teaming bug bounty program for GPT-5.5 focused on discovering universal jailbreaks and biosafety risks, offering rewards up to $25,000. This structured approach to adversarial testing helps identify model vulnerabilities before production deployment.",
+      "source": "OpenAI Blog",
+      "tags": [
+        "GPT-5.5",
+        "security",
+        "red-teaming",
+        "biosafety"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-04-23T00:00:00.000Z"
+    },
+    {
+      "url": "https://www.hashicorp.com/blog/faster-threat-detection-with-boundary-session-recording-auditbeat",
+      "title": "Faster threat detection with Boundary session recording + Auditbeat",
+      "summary": "HashiCorp Boundary now integrates with Elastic's Auditbeat to combine session recordings with kernel-level audit events, enabling SOCs to ingest structured event data into SIEM platforms for detection rules and automated alerts. This approach bridges the gap between forensic video recordings and the structured telemetry needed for real-time threat detection in regulated environments (SOX, DORA, PCI DSS, HIPAA).",
+      "source": "HashiCorp Blog",
+      "tags": [
+        "Boundary",
+        "audit",
+        "SIEM",
+        "privileged-access",
+        "threat-detection"
+      ],
+      "score": 7,
+      "category": "DevOps",
+      "publishedAt": "2026-04-22T19:00:00.000Z"
+    },
+    {
+      "url": "https://www.hashicorp.com/blog/terraform-adds-pre-written-sentinel-policies-for-iso-27001",
+      "title": "Terraform adds pre-written Sentinel policies for ISO 27001",
+      "summary": "HashiCorp and AWS have co-created pre-written Sentinel policies for AWS that map to ISO/IEC 27001 Annex A controls, covering access control, cryptography, logging, and secure configuration. These policies are now available in the Terraform Registry, reducing the barrier to adopting policy-as-code for compliance without requiring organizations to translate frameworks from scratch.",
+      "source": "HashiCorp Blog",
+      "tags": [
+        "Terraform",
+        "Sentinel",
+        "ISO-27001",
+        "compliance",
+        "policy-as-code"
+      ],
+      "score": 7,
+      "category": "DevOps",
+      "publishedAt": "2026-04-22T16:00:00.000Z"
+    },
+    {
+      "url": "https://kubernetes.io/blog/2026/04/22/kubernetes-v1-36-release/",
+      "title": "Kubernetes v1.36: ハル (Haru)",
+      "summary": "Kubernetes v1.36 release announcement covering 70 enhancements: 18 graduating to stable, 25 entering beta, and 25 entering alpha. The release includes deprecations and removals; refer to detailed feature posts for specifics on staleness mitigation, mutable job resources, fine-grained kubelet auth, user namespaces, and SELinux changes.",
+      "source": "Kubernetes Blog",
+      "tags": [
+        "Kubernetes",
+        "release",
+        "v1.36",
+        "features",
+        "deprecations"
+      ],
+      "score": 7,
+      "category": "Cloud",
+      "publishedAt": "2026-04-22T00:00:00.000Z"
+    },
+    {
+      "url": "https://kubernetes.io/blog/2026/04/21/gateway-api-v1-5/",
+      "title": "Gateway API v1.5: Moving features to Stable",
+      "summary": "Gateway API v1.5 promotes six experimental features to stable: ListenerSet, TLSRoute, HTTPRoute CORS Filter, Client Certificate Validation, Certificate Selection for Gateway TLS, and Origination ReferenceGrant. The project also adopts a release train model for more predictable release cadence.",
+      "source": "Kubernetes Blog",
+      "tags": [
+        "Gateway-API",
+        "networking",
+        "ingress",
+        "TLS",
+        "stable"
+      ],
+      "score": 7,
+      "category": "Cloud",
+      "publishedAt": "2026-04-21T16:30:00.000Z"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-claude-opus-4-7-in-amazon-bedrock-aws-interconnect-ga-and-more-april-20-2026/",
+      "title": "AWS Weekly Roundup: Claude Opus 4.7 in Amazon Bedrock, AWS Interconnect GA, and more (April 20, 2026)",
+      "summary": "Claude Opus 4.7 now available in Amazon Bedrock with improved agentic coding (64.3% SWE-bench Pro), knowledge work, and visual understanding. Bedrock's next-gen inference engine adds dynamic capacity allocation and adaptive thinking for production workloads with zero operator access.",
+      "source": "AWS News",
+      "tags": [
+        "Claude",
+        "Amazon-Bedrock",
+        "agentic-coding",
+        "LLM",
+        "inference"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-04-20T15:53:21.000Z"
+    },
+    {
+      "url": "https://www.cncf.io/blog/2026/04/17/k3s-on-on-prem-infrastructures-the-gitops-way-writing-a-custom-k0rdent-template-from-scratch/",
+      "title": "K3s on On-Prem Infrastructures the GitOps Way: Writing a Custom k0rdent Template from Scratch",
+      "summary": "Practical walkthrough of provisioning K3s clusters on on-premise Proxmox infrastructure using k0rdent's declarative, GitOps-based approach with custom Helm charts and BYOT templates. Addresses the pain of manual VM creation and untouchable clusters by enabling repeatable, infrastructure-as-code cluster lifecycle management on on-prem hardware.",
+      "source": "CNCF Blog",
+      "tags": [
+        "K3s",
+        "k0rdent",
+        "GitOps",
+        "on-prem",
+        "Proxmox"
+      ],
+      "score": 7,
+      "category": "DevOps",
+      "publishedAt": "2026-04-17T11:59:00.000Z"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/aws/aws-interconnect-is-now-generally-available-with-a-new-option-to-simplify-last-mile-connectivity/",
+      "title": "AWS Interconnect is now generally available, with a new option to simplify last-mile connectivity",
+      "summary": "AWS Interconnect GA brings managed private connectivity for multicloud and hybrid environments, eliminating manual VPN and colocation coordination. Two new capabilities: Interconnect-multicloud connects VPCs across cloud providers, and Interconnect-last-mile simplifies branch/data center connections through existing network providers.",
+      "source": "AWS News",
+      "tags": [
+        "networking",
+        "multicloud",
+        "hybrid-cloud",
+        "connectivity",
+        "VPC"
+      ],
+      "score": 7,
+      "category": "Cloud",
+      "publishedAt": "2026-04-14T23:54:47.000Z"
+    },
+    {
+      "url": "https://www.cncf.io/blog/2026/04/13/ingress-nginx-to-envoy-gateway-migration-on-cncf-internal-services-cluster/",
+      "title": "ingress-nginx to Envoy Gateway migration on CNCF internal services cluster",
+      "summary": "CNCF migrated its internal services cluster from deprecated ingress-nginx to Envoy Gateway, leveraging the Gateway API for multi-layer traffic management. The new architecture enables per-route Gateway objects or shared Gateways with cost and resource efficiency gains through consolidated load balancer services.",
+      "source": "CNCF Blog",
+      "tags": [
+        "Envoy",
+        "Gateway-API",
+        "ingress",
+        "Kubernetes",
+        "migration"
+      ],
+      "score": 7,
+      "category": "Cloud",
+      "publishedAt": "2026-04-13T14:01:35.000Z"
+    },
+    {
+      "url": "https://www.hashicorp.com/blog/simplifying-terraform-dynamic-credentials-on-aws-with-native-oidc-integration",
+      "title": "Simplifying Terraform dynamic credentials on AWS with native OIDC integration",
+      "summary": "AWS Account Factory for Terraform (AFT) now supports native OIDC integration with HCP Terraform, automatically establishing trust relationships and eliminating manual configuration of OIDC providers, IAM roles, and workspace environment variables. This reduces operational overhead and misconfiguration risk while maintaining short-lived, dynamically generated credentials.",
+      "source": "HashiCorp Blog",
+      "tags": [
+        "Terraform",
+        "AWS",
+        "OIDC",
+        "dynamic-credentials",
+        "account-factory"
+      ],
+      "score": 7,
+      "category": "Cloud",
+      "publishedAt": "2026-04-09T07:00:00.000Z"
+    },
+    {
+      "url": "https://www.docker.com/blog/reclaim-developer-hours-through-smarter-vulnerability-prioritization-with-docker-and-mend-io/",
+      "title": "Reclaim Developer Hours through Smarter Vulnerability Prioritization with Docker and Mend.io",
+      "summary": "The Mend.io and Docker Hardened Images integration uses VEX statements and reachability analysis to distinguish exploitable from non-exploitable vulnerabilities, reducing noise and allowing teams to prioritize actionable security findings. Automatic detection and visual layer transparency eliminate manual configuration overhead.",
+      "source": "Docker Blog",
+      "tags": [
+        "vulnerability-management",
+        "VEX",
+        "container-security",
+        "Mend.io",
+        "risk-prioritization"
+      ],
+      "score": 7,
+      "category": "DevOps",
+      "publishedAt": "2026-04-08T18:23:51.000Z"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-devops-agent-security-agent-ga-product-lifecycle-updates-and-more-april-6-2026/",
+      "title": "AWS Weekly Roundup: AWS DevOps Agent & Security Agent GA, Product Lifecycle updates, and more (April 6, 2026)",
+      "summary": "AWS DevOps Agent and Security Agent reach GA after preview, offering autonomous incident response and continuous penetration testing. Production customers report 75% MTTR reduction and 3-5x faster resolution with DevOps Agent.",
+      "source": "AWS News",
+      "tags": [
+        "agents",
+        "DevOps",
+        "security",
+        "incident-response",
+        "automation"
+      ],
+      "score": 7,
+      "category": "DevOps",
+      "publishedAt": "2026-04-06T16:51:00.000Z"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/aws/amazon-bedrock-guardrails-supports-cross-account-safeguards-with-centralized-control-and-management/",
+      "title": "Amazon Bedrock Guardrails supports cross-account safeguards with centralized control and management",
+      "summary": "Bedrock Guardrails GA adds cross-account enforcement via organization-level policies, enabling centralized safety control across all member accounts and model invocations. Supports organization-wide, OU-level, and account-specific guardrail policies.",
+      "source": "AWS News",
+      "tags": [
+        "Bedrock",
+        "guardrails",
+        "security",
+        "governance",
+        "multi-account"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-04-03T20:36:40.000Z"
+    },
+    {
+      "url": "https://www.docker.com/blog/gemma4-dockerhub/",
+      "title": "Gemma 4 is Here: Now Available on Docker Hub",
+      "summary": "Gemma 4 models are now available on Docker Hub as OCI artifacts, enabling versioned, shareable deployment alongside other AI models like Llama and Mistral. Docker Hub packages models as containers with built-in versioning and CI/CD integration, eliminating custom toolchains. Docker Model Runner support is coming to enable direct model management and deployment from Docker Desktop.",
+      "source": "Docker Blog",
+      "tags": [
+        "Docker Hub",
+        "OCI",
+        "LLM",
+        "model distribution",
+        "CI/CD"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-04-02T16:16:56.000Z"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/aws/announcing-managed-daemon-support-for-amazon-ecs-managed-instances/",
+      "title": "Announcing managed daemon support for Amazon ECS Managed Instances",
+      "summary": "ECS Managed Instances now support decoupled daemon lifecycle management, allowing platform teams to independently deploy monitoring, logging, and tracing agents without coordinating with app teams or redeploying tasks. Ensures consistent tooling across all instances.",
+      "source": "AWS News",
+      "tags": [
+        "ECS",
+        "containers",
+        "observability",
+        "platform-engineering",
+        "lifecycle-management"
+      ],
+      "score": 7,
+      "category": "DevOps",
+      "publishedAt": "2026-04-01T23:31:24.000Z"
+    },
+    {
+      "url": "https://www.hashicorp.com/blog/aws-permission-delegation-now-generally-available-in-hcp-terraform",
+      "title": "AWS permission delegation now generally available in HCP Terraform",
+      "summary": "HCP Terraform now integrates AWS IAM temporary permission delegation, enabling just-in-time (JIT) access for trusted partners to automate onboarding and infrastructure setup. This reduces configuration burden and accelerates deployment while maintaining security controls through short-lived, customer-approved permissions instead of permanent credentials.",
+      "source": "HashiCorp Blog",
+      "tags": [
+        "Terraform",
+        "AWS",
+        "IAM",
+        "access-control",
+        "automation"
+      ],
+      "score": 7,
+      "category": "DevOps",
+      "publishedAt": "2026-04-01T17:00:00.000Z"
+    },
+    {
+      "url": "https://www.hashicorp.com/blog/hcp-terraform-adds-ip-allow-lists",
+      "title": "HCP Terraform adds IP allow lists",
+      "summary": "HCP Terraform now supports IP allow lists for organization and agent access, enabling enterprises to restrict authentication token usage to approved IP addresses. This addresses a critical security gap for regulated industries by enforcing network-based access controls across web UI, APIs, VCS integrations, and Terraform agents.",
+      "source": "HashiCorp Blog",
+      "tags": [
+        "Terraform",
+        "security",
+        "network-controls",
+        "compliance",
+        "access-management"
+      ],
+      "score": 7,
+      "category": "DevOps",
+      "publishedAt": "2026-04-01T16:00:00.000Z"
+    },
+    {
+      "url": "https://www.docker.com/blog/blog-docker-model-runner-new-nvidia-dgx-station/",
+      "title": "Run and Iterate on LLMs Faster with Docker Model Runner on DGX Station",
+      "summary": "Docker Model Runner now supports NVIDIA DGX Station, enabling developers to run large AI models locally with data-center-class performance in a desktop form factor. The DGX Station combines 72-core Grace CPU and Blackwell Ultra GPU via NVLink, providing unified memory and high-bandwidth architecture for frontier AI workloads.",
+      "source": "Docker Blog",
+      "tags": [
+        "Docker Model Runner",
+        "NVIDIA DGX",
+        "GPU",
+        "LLM inference",
+        "local development"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-03-31T17:57:17.000Z"
+    },
+    {
+      "url": "https://dl.acm.org/doi/abs/10.1145/3767295.3803591",
+      "title": "Low-Compilation-Cost Register Allocation in LLVM-Based Binary Translation",
+      "summary": "Research paper on optimizing register allocation in LLVM-based binary translation to reduce compilation overhead. Addresses a key performance bottleneck in dynamic binary translation systems where register allocation can dominate compilation time.",
+      "source": "HN Front Page",
+      "tags": [
+        "LLVM",
+        "binary-translation",
+        "compiler-optimization",
+        "register-allocation"
+      ],
+      "score": 6,
+      "category": "Engineering",
+      "publishedAt": "2026-04-29T06:47:53.000Z"
+    },
+    {
+      "url": "https://lucumr.pocoo.org/2026/4/28/before-github/",
+      "title": "Before GitHub",
+      "summary": "Historical retrospective on version control and code hosting practices before GitHub's dominance, covering Subversion, Mercurial, and early distributed VCS adoption. Useful context for understanding how development infrastructure evolved.",
+      "source": "HN Front Page",
+      "tags": [
+        "git",
+        "version-control",
+        "history",
+        "infrastructure"
+      ],
+      "score": 6,
+      "category": "DevOps",
+      "publishedAt": "2026-04-28T21:17:40.000Z"
+    },
+    {
+      "url": "https://thenewstack.io/google-doesnt-care/",
+      "title": "\"Developer loyalty is at zero right now\": Google doesn't care which AI coding tool you use",
+      "summary": "Google Cloud's strategy is to win on platform performance rather than tool lock-in, positioning Vertex AI as the best runtime for any model (including competitors like Claude). Google acknowledges low developer loyalty and focuses on being the superior execution platform regardless of which AI tools developers choose.",
+      "source": "The New Stack",
+      "tags": [
+        "Google-Cloud",
+        "Vertex-AI",
+        "developer-tools",
+        "cloud-strategy"
+      ],
+      "score": 6,
+      "category": "Cloud",
+      "publishedAt": "2026-04-28T20:29:49.000Z"
+    },
+    {
+      "url": "https://github.com/FeSens/auto-arch-tournament/blob/main/docs/auto-arch-tournament-blog-post.md",
+      "title": "Show HN: Auto-Architecture: Karpathy's Loop, pointed at a CPU",
+      "summary": "A project implementing automated CPU architecture design using Karpathy's loop methodology. This demonstrates practical application of AI-driven optimization for hardware architecture exploration.",
+      "source": "HN Front Page",
+      "tags": [
+        "AI",
+        "architecture-search",
+        "CPU",
+        "automation",
+        "ML"
+      ],
+      "score": 6,
+      "category": "AI",
+      "publishedAt": "2026-04-28T17:12:30.000Z"
+    },
+    {
+      "url": "https://thenewstack.io/netbox-labs-network-intent/",
+      "title": "From system of record to system of control: How NetBox Labs is making network engineers \"masters of intent.\"",
+      "summary": "NetBox Labs is positioning its platform as a system of control for modern network infrastructure, moving beyond spreadsheets and dashboards to provide a reliable source of truth for network state and intent. This addresses the challenge of managing complex, multi-cloud networks where configuration errors are business-critical.",
+      "source": "The New Stack",
+      "tags": [
+        "network infrastructure",
+        "NetBox",
+        "intent-based",
+        "IaC",
+        "cloud"
+      ],
+      "score": 6,
+      "category": "Cloud",
+      "publishedAt": "2026-04-28T15:00:00.000Z"
+    },
+    {
+      "url": "https://thenewstack.io/github-copilot-usage-billing/",
+      "title": "GitHub moves Copilot to usage-based billing as AI coding costs climb",
+      "summary": "GitHub is shifting Copilot pricing from fixed monthly fees to usage-based billing tied to token consumption, effective June 1. The change reflects rising AI inference costs and aims to create a more sustainable pricing model while managing demand.",
+      "source": "The New Stack",
+      "tags": [
+        "GitHub Copilot",
+        "pricing",
+        "usage-based billing",
+        "AI coding",
+        "cost management"
+      ],
+      "score": 6,
+      "category": "AI",
+      "publishedAt": "2026-04-27T19:02:17.000Z"
+    },
+    {
+      "url": "https://thenewstack.io/security-operational-maturity-scaling/",
+      "title": "Can your operations handle your security ambitions?",
+      "summary": "Security tools often fail to deliver value when operational maturity doesn't match security ambitions, creating bottlenecks instead of enablers. The article warns that adding sophisticated security tooling to immature, fragmented engineering operations introduces complexity and manual work rather than efficiency gains.",
+      "source": "The New Stack",
+      "tags": [
+        "security",
+        "operational maturity",
+        "CI/CD",
+        "platform engineering"
+      ],
+      "score": 6,
+      "category": "DevOps",
+      "publishedAt": "2026-04-27T13:00:00.000Z"
+    },
+    {
+      "url": "https://openai.com/academy/top-10-use-cases-codex-for-work",
+      "title": "Top 10 uses for Codex at work",
+      "summary": "Practical guide covering 10 real-world Codex use cases for task automation, document generation, and workflow integration. Helps teams identify where agentic automation can reduce manual work.",
+      "source": "OpenAI Blog",
+      "tags": [
+        "Codex",
+        "automation",
+        "workflow",
+        "use-cases"
+      ],
+      "score": 6,
+      "category": "Engineering",
+      "publishedAt": "2026-04-23T10:00:00.000Z"
+    },
+    {
+      "url": "https://openai.com/academy/codex-how-to-start",
+      "title": "How to get started with Codex",
+      "summary": "Step-by-step onboarding guide for Codex covering project setup, thread creation, and initial task execution. Essential reference for teams beginning agentic automation implementation.",
+      "source": "OpenAI Blog",
+      "tags": [
+        "Codex",
+        "getting-started",
+        "tutorial",
+        "setup"
+      ],
+      "score": 6,
+      "category": "Engineering",
+      "publishedAt": "2026-04-23T10:00:00.000Z"
+    },
+    {
+      "url": "https://openai.com/academy/codex-plugins-and-skills",
+      "title": "Plugins and skills",
+      "summary": "Documentation on extending Codex with plugins and skills to connect external tools, access data sources, and define repeatable workflows. Key for building custom automation capabilities.",
+      "source": "OpenAI Blog",
+      "tags": [
+        "Codex",
+        "plugins",
+        "integration",
+        "extensibility"
+      ],
+      "score": 6,
+      "category": "Engineering",
+      "publishedAt": "2026-04-23T10:00:00.000Z"
+    },
+    {
+      "url": "https://openai.com/academy/working-with-codex",
+      "title": "Working with Codex",
+      "summary": "Comprehensive guide to Codex workspace configuration, thread management, project organization, and task execution workflows. Covers operational mechanics for day-to-day usage.",
+      "source": "OpenAI Blog",
+      "tags": [
+        "Codex",
+        "workspace",
+        "workflow",
+        "operations"
+      ],
+      "score": 6,
+      "category": "Engineering",
+      "publishedAt": "2026-04-23T10:00:00.000Z"
+    },
+    {
+      "url": "https://openai.com/academy/codex-automations",
+      "title": "Automations",
+      "summary": "OpenAI Codex now supports task automation via schedules and triggers for creating reports, summaries, and recurring workflows. This reduces manual effort for repetitive operations without requiring custom code.",
+      "source": "OpenAI Blog",
+      "tags": [
+        "Codex",
+        "automation",
+        "workflows",
+        "API"
+      ],
+      "score": 6,
+      "category": "AI",
+      "publishedAt": "2026-04-23T10:00:00.000Z"
+    },
+    {
+      "url": "https://www.hashicorp.com/blog/from-zero-trust-to-continuous-trust-securing-autonomous-ai-systems",
+      "title": "From zero trust to continuous trust: Securing autonomous AI systems",
+      "summary": "Traditional zero-trust models assume discrete authentication checkpoints, but agentic AI systems operate continuously, making decisions and requesting access in real time without fitting predictable patterns. HashiCorp proposes evolving zero-trust into a 'continuous trust' model that handles the dynamic, autonomous nature of AI agents making ongoing access decisions.",
+      "source": "HashiCorp Blog",
+      "tags": [
+        "zero-trust",
+        "agentic-AI",
+        "identity",
+        "security-architecture",
+        "continuous-trust"
+      ],
+      "score": 6,
+      "category": "AI",
+      "publishedAt": "2026-04-22T05:00:00.000Z"
+    },
+    {
+      "url": "https://www.cncf.io/blog/2026/04/20/from-public-static-void-main-to-golden-kubestronaut-the-art-of-unlearning/",
+      "title": "From public static void main to Golden Kubestronaut: The Art of unlearning",
+      "summary": "A developer's personal account of transitioning from traditional Java development to cloud-native architecture, holding all five Kubernetes certifications and achieving CNCF Golden Kubestronaut status. The piece emphasizes that the core challenge isn't learning new tools but unlearning traditional infrastructure assumptions—moving from siloed development to owning operational concerns like pod failures and YAML configuration.",
+      "source": "CNCF Blog",
+      "tags": [
+        "Kubernetes",
+        "cloud-native",
+        "career-development",
+        "mindset-shift"
+      ],
+      "score": 6,
+      "category": "Engineering",
+      "publishedAt": "2026-04-20T10:50:00.000Z"
+    },
+    {
+      "url": "https://www.cncf.io/blog/2026/04/15/how-to-measure-the-roi-of-developer-tools/",
+      "title": "How To Measure the ROI of Developer Tools",
+      "summary": "Framework for quantifying the business value of developer tools and platform engineering investments, covering measurement approaches like internal surveys, productivity metrics, and cost-benefit analysis tailored to team size and growth stage. Addresses the challenge of justifying tool adoption beyond vague claims of improved developer experience.",
+      "source": "CNCF Blog",
+      "tags": [
+        "platform-engineering",
+        "developer-experience",
+        "ROI",
+        "metrics"
+      ],
+      "score": 6,
+      "category": "Engineering",
+      "publishedAt": "2026-04-16T05:28:45.000Z"
+    },
+    {
+      "url": "https://www.hashicorp.com/blog/agentic-ai-changes-the-shape-of-trust",
+      "title": "Agentic AI changes the shape of trust",
+      "summary": "Agentic AI systems create identity and access management blind spots: agents assume roles, cache credentials, and leave access paths open without explicit revocation, making it difficult to audit which agent performed actions and under whose authority. Traditional IAM models built around human login patterns fail to capture this quiet accumulation of unrevoked access.",
+      "source": "HashiCorp Blog",
+      "tags": [
+        "agentic-AI",
+        "identity-management",
+        "access-control",
+        "audit",
+        "security-gaps"
+      ],
+      "score": 6,
+      "category": "AI",
+      "publishedAt": "2026-04-15T15:45:00.000Z"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-claude-mythos-preview-in-amazon-bedrock-aws-agent-registry-and-more-april-13-2026/",
+      "title": "AWS Weekly Roundup: Claude Mythos Preview in Amazon Bedrock, AWS Agent Registry, and more (April 13, 2026)",
+      "summary": "Amazon Bedrock adds IAM principal cost allocation for tracking AI spending by user/role/team, critical for production AI cost visibility. Claude Mythos preview available on Bedrock as a gated research model focused on cybersecurity.",
+      "source": "AWS News",
+      "tags": [
+        "Bedrock",
+        "LLM",
+        "cost-allocation",
+        "AI",
+        "Claude"
+      ],
+      "score": 6,
+      "category": "AI",
+      "publishedAt": "2026-04-13T16:16:20.000Z"
+    },
+    {
+      "url": "https://www.docker.com/blog/how-to-analyze-hugging-face-for-arm64-readiness/",
+      "title": "How to Analyze Hugging Face for Arm64 Readiness",
+      "summary": "Docker and Arm provide an MCP toolkit chain to systematically diagnose Arm64 compatibility issues in Hugging Face Spaces, identifying that ~80% fail due to hardcoded x86_64 dependency URLs rather than code incompatibility. The diagnostic approach surfaces blockers automatically and enables developers to fix portability issues.",
+      "source": "Docker Blog",
+      "tags": [
+        "Arm64",
+        "Hugging-Face",
+        "container-portability",
+        "MCP-toolkit",
+        "architecture-compatibility"
+      ],
+      "score": 6,
+      "category": "Engineering",
+      "publishedAt": "2026-04-13T15:59:37.000Z"
+    },
+    {
+      "url": "https://www.theregister.com/2026/04/29/mitchell_hashimoto_ghostty_quitting_github/",
+      "title": "HashiCorp co-founder says GitHub 'no longer a place for serious work'",
+      "summary": "Mitchell Hashimoto announced moving Ghostty (his terminal emulator project) off GitHub, citing platform concerns. While primarily commentary, this reflects real developer friction with GitHub's direction and signals potential shifts in where open-source projects host infrastructure.",
+      "source": "HN Front Page",
+      "tags": [
+        "GitHub",
+        "open-source",
+        "developer-experience",
+        "infrastructure"
+      ],
+      "score": 5,
+      "category": "Engineering",
+      "publishedAt": "2026-04-29T11:42:46.000Z"
+    },
+    {
+      "url": "https://hardenedbsd.org/article/shawn-webb/2026-04-26/hardenedbsd-officially-radicle",
+      "title": "HardenedBSD Is Now Officially on Radicle",
+      "summary": "HardenedBSD project has migrated to Radicle, a decentralized version control platform. This represents a shift away from centralized Git hosting toward peer-to-peer code collaboration infrastructure.",
+      "source": "HN Front Page",
+      "tags": [
+        "HardenedBSD",
+        "Radicle",
+        "decentralized-vcs",
+        "infrastructure"
+      ],
+      "score": 5,
+      "category": "DevOps",
+      "publishedAt": "2026-04-29T06:38:44.000Z"
+    },
+    {
+      "url": "https://openai.com/index/cybersecurity-in-the-intelligence-age",
+      "title": "Cybersecurity in the Intelligence Age",
+      "summary": "OpenAI outlines a five-part action plan for strengthening cybersecurity in the Intelligence Age, focused on democratizing AI-powered cyber defense. The plan addresses protecting critical systems through broader adoption of AI-driven security tools and practices.",
+      "source": "OpenAI Blog",
+      "tags": [
+        "AI",
+        "cybersecurity",
+        "defense"
+      ],
+      "score": 5,
+      "category": "AI",
+      "publishedAt": "2026-04-29T04:00:00.000Z"
+    },
+    {
+      "url": "https://www.buchodi.com/how-chatgpt-serves-ads-heres-the-full-attribution-loop/",
+      "title": "How ChatGPT serves ads",
+      "summary": "Analysis of OpenAI's ad attribution and serving mechanisms in ChatGPT. Explains the technical infrastructure behind ad delivery and tracking in the platform.",
+      "source": "HN Front Page",
+      "tags": [
+        "ChatGPT",
+        "advertising",
+        "attribution",
+        "tracking"
+      ],
+      "score": 5,
+      "category": "AI",
+      "publishedAt": "2026-04-28T23:54:14.000Z"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/aws/top-announcements-of-the-whats-next-with-aws-2026/",
+      "title": "Top announcements of the What's Next with AWS, 2026",
+      "summary": "AWS announces Amazon Quick, an AI assistant for work with desktop app, free/plus pricing, visual asset generation, and expanded integrations (Google Workspace, Zoom, Airtable, Dropbox, Teams). Also expands Amazon Connect into a four-product suite. Focuses on agentic AI capabilities for enterprise workflows.",
+      "source": "AWS News",
+      "tags": [
+        "AI-agents",
+        "Amazon-Quick",
+        "AWS-Connect",
+        "enterprise-AI",
+        "productivity"
+      ],
+      "score": 5,
+      "category": "AI",
+      "publishedAt": "2026-04-28T18:11:39.000Z"
+    },
+    {
+      "url": "https://openai.com/index/our-commitment-to-community-safety",
+      "title": "Our commitment to community safety",
+      "summary": "OpenAI describes its safety mechanisms for ChatGPT including model safeguards, misuse detection, and policy enforcement. The approach combines technical controls with collaboration with external safety experts.",
+      "source": "OpenAI Blog",
+      "tags": [
+        "safety",
+        "ChatGPT",
+        "content-moderation"
+      ],
+      "score": 5,
+      "category": "AI",
+      "publishedAt": "2026-04-28T00:00:00.000Z"
+    },
+    {
+      "url": "https://thenewstack.io/openai-microsoft-partnership-restructured/",
+      "title": "Microsoft-OpenAI rewrite opens the door for Anthropic and Google",
+      "source": "The New Stack",
+      "summary": "OpenAI and Microsoft restructured their partnership, allowing OpenAI to offer services on cloud platforms beyond Azure while maintaining revenue-share payments through 2030. The move signals OpenAI's push for independence and Microsoft's shift toward developing its own AI models.",
+      "tags": [
+        "OpenAI",
+        "Microsoft",
+        "partnership",
+        "cloud",
+        "business"
+      ],
+      "score": 5,
+      "category": "Other",
+      "publishedAt": "2026-04-27T22:25:40.000Z"
+    },
+    {
+      "url": "https://openai.com/index/next-phase-of-microsoft-partnership",
+      "title": "The next phase of the Microsoft OpenAI partnership",
+      "summary": "OpenAI and Microsoft announce an amended partnership agreement that simplifies terms and provides long-term clarity for continued AI innovation. The restructured deal supports scaled deployment of AI capabilities across Microsoft's platforms.",
+      "source": "OpenAI Blog",
+      "tags": [
+        "partnership",
+        "Microsoft",
+        "strategy"
+      ],
+      "score": 5,
+      "category": "Other",
+      "publishedAt": "2026-04-27T06:00:00.000Z"
+    },
+    {
+      "url": "https://openai.com/index/choco",
+      "title": "Choco automates food distribution with AI agents",
+      "summary": "Choco used OpenAI APIs to build AI agents that streamline food distribution operations and improve productivity. The case study demonstrates practical ROI from deploying AI agents in supply chain and logistics workflows.",
+      "source": "OpenAI Blog",
+      "tags": [
+        "agents",
+        "API",
+        "case-study"
+      ],
+      "score": 5,
+      "category": "AI",
+      "publishedAt": "2026-04-27T00:00:00.000Z"
+    },
+    {
+      "url": "https://openai.com/academy/what-is-codex",
+      "title": "What is Codex?",
+      "summary": "Overview of Codex as an agentic automation platform that extends beyond conversational AI to execute tasks, integrate tools, and produce tangible outputs. Clarifies positioning relative to standard LLM chat interfaces.",
+      "source": "OpenAI Blog",
+      "tags": [
+        "Codex",
+        "agents",
+        "automation",
+        "overview"
+      ],
+      "score": 5,
+      "category": "AI",
+      "publishedAt": "2026-04-23T10:00:00.000Z"
+    },
+    {
+      "url": "https://openai.com/academy/codex-settings",
+      "title": "Codex settings",
+      "summary": "Configuration reference for Codex personalization, output detail levels, and permission controls. Enables teams to tailor behavior and security posture for their specific workflows.",
+      "source": "OpenAI Blog",
+      "tags": [
+        "Codex",
+        "configuration",
+        "settings",
+        "security"
+      ],
+      "score": 5,
+      "category": "Engineering",
+      "publishedAt": "2026-04-23T10:00:00.000Z"
+    },
+    {
+      "url": "https://openai.com/index/making-chatgpt-better-for-clinicians",
+      "title": "Making ChatGPT better for clinicians",
+      "summary": "OpenAI made ChatGPT for Clinicians free for verified U.S. physicians, nurse practitioners, and pharmacists to support clinical documentation, care decisions, and research workflows. This removes cost barriers for healthcare professionals adopting AI assistance.",
+      "source": "OpenAI Blog",
+      "tags": [
+        "ChatGPT",
+        "healthcare",
+        "clinical",
+        "access"
+      ],
+      "score": 5,
+      "category": "AI",
+      "publishedAt": "2026-04-22T15:00:00.000Z"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/aws/announcing-the-aws-sustainability-console-programmatic-access-configurable-csv-reports-and-scope-1-3-reporting-in-one-place/",
+      "title": "Announcing the AWS Sustainability console: Programmatic access, configurable CSV reports, and Scope 1–3 reporting in one place",
+      "summary": "AWS Sustainability console GA consolidates carbon footprint reporting with independent permissions model, enabling sustainability teams to access emissions data without billing access. Includes programmatic APIs and configurable CSV exports.",
+      "source": "AWS News",
+      "tags": [
+        "sustainability",
+        "reporting",
+        "emissions",
+        "governance",
+        "compliance"
+      ],
+      "score": 5,
+      "category": "Cloud",
+      "publishedAt": "2026-03-31T19:04:00.000Z"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-ai-ml-scholars-program-agent-plugin-for-aws-serverless-and-more-march-30-2026/",
+      "title": "AWS Weekly Roundup: AWS AI/ML Scholars program, Agent Plugin for AWS Serverless, and more (March 30, 2026)",
+      "summary": "AWS launches 2026 AI/ML Scholars program offering free generative AI education to 100K learners with top 4,500 receiving funded Udacity Nanodegrees. Also highlights Aurora PostgreSQL express configuration for serverless database creation in seconds.",
+      "source": "AWS News",
+      "tags": [
+        "education",
+        "AI",
+        "Aurora",
+        "serverless",
+        "database"
+      ],
+      "score": 5,
+      "category": "AI",
+      "publishedAt": "2026-03-30T16:11:28.000Z"
+    }
+  ]
 }
