@@ -4,12 +4,14 @@ Automated news pipeline. GitHub Actions runs every 6 hours, fetches RSS feeds, h
 
 ## Architecture
 
+Visual: [docs/architecture.excalidraw](docs/architecture.excalidraw) — open in [Excalidraw](https://excalidraw.com/) (drag-and-drop the file, or use **Open** > pick file).
+
 ```
 GitHub Actions (cron 6h)
     -> scripts/fetch.mjs
         -> rss-parser (config/feeds.json)
         -> dedupe via data/seen_urls.json
-        -> OpenAI gpt-4o-mini (batched, structured outputs)
+        -> Bedrock Claude Haiku 4.5 (batched, tool-use structured output)
         -> data/news.json (committed back to repo)
 
 WordPress (managed host)
@@ -18,6 +20,8 @@ WordPress (managed host)
         -> wp_remote_get(<raw GitHub URL>) with 1h transient cache
         -> renders article cards
 ```
+
+Auth from Actions to AWS uses GitHub OIDC, no static keys.
 
 ## Local development
 
