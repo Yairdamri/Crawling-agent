@@ -1,7 +1,22 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-04-30T13:47:22.804Z",
+  "generatedAt": "2026-04-30T19:16:01.524Z",
   "articles": [
+    {
+      "url": "https://thehackernews.com/2026/04/pytorch-lightning-compromised-in-pypi.html",
+      "title": "PyTorch Lightning and Intercom-client Hit in Supply Chain Attacks to Steal Credentials",
+      "summary": "PyTorch Lightning versions 2.6.2 and 2.6.3 were compromised on PyPI to conduct credential theft, coordinated with attacks on Intercom-client. Multiple security firms (Aikido, OX Security, Socket, StepSecurity) detected the malicious versions published on April 30, 2026.",
+      "source": "The Hacker News",
+      "tags": [
+        "supply-chain",
+        "PyPI",
+        "PyTorch",
+        "credential-theft"
+      ],
+      "score": 9,
+      "category": "Security",
+      "publishedAt": "2026-04-30T16:31:00.000Z"
+    },
     {
       "url": "https://thehackernews.com/2026/04/google-fixes-cvss-10-gemini-cli-ci-rce.html",
       "title": "Google Fixes CVSS 10 Gemini CLI CI RCE and Cursor Flaws Enable Code Execution",
@@ -157,6 +172,99 @@
       "publishedAt": "2026-04-23T11:00:00.000Z"
     },
     {
+      "url": "https://thenewstack.io/production-ready-ai-platforms/",
+      "title": "A nine-point checklist for shipping production-ready AI",
+      "summary": "Guide for moving AI from prototype to production by treating agents as a platform engineering problem. Covers retrieval (vector search + BM25 reranking), tool-use, guardrails, observability, and service mesh integration for zero-trust communication and traffic shaping.",
+      "source": "The New Stack",
+      "tags": [
+        "agents",
+        "RAG",
+        "observability",
+        "platform engineering"
+      ],
+      "score": 8,
+      "category": "AI",
+      "publishedAt": "2026-04-30T18:00:00.000Z"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/sun-finance-automates-id-extraction-and-fraud-detection-with-generative-ai-on-aws/",
+      "title": "Sun Finance automates ID extraction and fraud detection with generative AI on AWS",
+      "summary": "Sun Finance deployed a generative AI pipeline to replace traditional OCR for identity document extraction and fraud detection, reducing manual review from 60% to a lower rate across 80,000 monthly microloan applications. The AWS Generative AI Innovation Center delivered the solution in 35 business days post-handover, processing 4 million evaluations monthly.",
+      "source": "AWS ML Blog",
+      "tags": [
+        "generative AI",
+        "document extraction",
+        "fraud detection",
+        "production"
+      ],
+      "score": 8,
+      "category": "AI",
+      "publishedAt": "2026-04-30T17:00:45.000Z"
+    },
+    {
+      "url": "https://www.openwall.com/lists/oss-security/2026/04/30/10",
+      "title": "CopyFail Was Not Disclosed to Distros",
+      "summary": "Security disclosure regarding CopyFail vulnerability that was not properly reported to Linux distributions through standard coordinated disclosure channels, raising concerns about supply-chain security practices.",
+      "source": "HN Front Page",
+      "tags": [
+        "security",
+        "CVE",
+        "disclosure",
+        "supply-chain"
+      ],
+      "score": 8,
+      "category": "Security",
+      "publishedAt": "2026-04-30T16:43:47.000Z"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/configuring-amazon-bedrock-agentcore-gateway-for-secure-access-to-private-resources/",
+      "title": "Configuring Amazon Bedrock AgentCore Gateway for secure access to private resources",
+      "summary": "AWS Bedrock AgentCore Gateway now supports managed VPC egress via Resource Gateway, allowing AI agents and Model Context Protocol servers to securely access private APIs, databases, and resources without internet exposure. The post covers managed and self-managed implementation modes with three scenarios: private API Gateway endpoints, MCP servers on EKS, and private REST APIs.",
+      "source": "AWS ML Blog",
+      "tags": [
+        "agents",
+        "tool use",
+        "security",
+        "VPC",
+        "MCP"
+      ],
+      "score": 8,
+      "category": "AI",
+      "publishedAt": "2026-04-30T16:32:43.000Z"
+    },
+    {
+      "url": "https://semgrep.dev/blog/2026/malicious-dependency-in-pytorch-lightning-used-for-ai-training/",
+      "title": "Shai-Hulud Themed Malware Found in the PyTorch Lightning AI Training Library",
+      "summary": "A malicious dependency was discovered in PyTorch Lightning, a popular AI training library, injecting Shai-Hulud themed malware into the supply chain. This highlights the vulnerability of ML infrastructure to compromised packages and the need for stricter dependency vetting in AI tooling.",
+      "source": "HN Front Page",
+      "tags": [
+        "security",
+        "supply-chain",
+        "PyTorch",
+        "malware",
+        "AI infrastructure"
+      ],
+      "score": 8,
+      "category": "Security",
+      "publishedAt": "2026-04-30T16:09:26.000Z"
+    },
+    {
+      "url": "https://developer.nvidia.com/blog/automating-gpu-kernel-translation-with-ai-agents-cutile-python-to-cutile-jl/",
+      "title": "Automating GPU Kernel Translation with AI Agents: cuTile Python to cuTile.jl",
+      "summary": "NVIDIA demonstrates using AI agents to automate translation of GPU kernels from cuTile Python to cuTile.jl, leveraging the tile-based programming model that abstracts thread and warp coordination. This enables Julia developers to write custom GPU kernels at the tile level without manual memory management, reducing boilerplate and lowering the barrier to GPU programming.",
+      "source": "NVIDIA Developer Blog",
+      "tags": [
+        "agents",
+        "GPU",
+        "CUDA",
+        "code-generation",
+        "Julia"
+      ],
+      "score": 8,
+      "category": "AI",
+      "publishedAt": "2026-04-30T15:54:38.000Z"
+    },
+    {
       "url": "https://thehackernews.com/2026/04/etherrat-distribution-spoofing.html",
       "title": "EtherRAT Distribution Spoofing Administrative Tools via GitHub Facades",
       "summary": "Atos TRC identified a sophisticated malware campaign distributing EtherRAT by impersonating legitimate administrative utilities on GitHub, targeting high-privilege accounts of enterprise administrators, DevOps engineers, and security analysts. The operation uses SEO manipulation to increase discoverability of malicious repositories.",
@@ -215,6 +323,21 @@
       "score": 8,
       "category": "AI",
       "publishedAt": "2026-04-30T03:11:51.000Z"
+    },
+    {
+      "url": "https://snyk.io/blog/lightning-pypi-compromise-bun-based-credential-stealer/",
+      "title": "lightning PyPI Compromise: A Bun-Based Credential Stealer in Python",
+      "summary": "A malicious release of the lightning PyPI package (unrelated to PyTorch Lightning) ships a Bun-based credential-stealing payload that executes on import. Snyk documents the payload mechanics and connects the attack pattern to the Mini Shai-Hulud npm campaign.",
+      "source": "Snyk Blog",
+      "tags": [
+        "supply-chain",
+        "PyPI",
+        "credential-theft",
+        "malware"
+      ],
+      "score": 8,
+      "category": "Security",
+      "publishedAt": "2026-04-30T00:00:00.000Z"
     },
     {
       "url": "https://openai.com/index/where-the-goblins-came-from",
@@ -954,19 +1077,142 @@
       "publishedAt": "2026-04-02T00:00:00.000Z"
     },
     {
-      "url": "https://www.docker.com/blog/docker-sandboxes-run-agents-in-yolo-mode-safely/",
-      "title": "Docker Sandboxes: Run Agents in YOLO Mode, Safely",
-      "summary": "Docker Sandboxes provide isolated execution environments for autonomous AI agents with pre-defined resource and filesystem boundaries, enabling YOLO-mode operation without permission gates. The standalone service integrates with Claude Code, GitHub Copilot CLI, Gemini CLI, and other coding agents, allowing safe autonomous execution from day one.",
-      "source": "Docker Blog",
+      "url": "https://thenewstack.io/openai-aws-bedrock-integration/",
+      "title": "The OpenAI-Microsoft reset, decoded: Why AWS may come out ahead",
+      "summary": "OpenAI models and agentic capabilities now available on AWS Bedrock alongside Anthropic models, ending Microsoft's exclusive partnership. Provides AWS customers native access to OpenAI tools within their cloud environments rather than external APIs.",
+      "source": "The New Stack",
+      "tags": [
+        "LLM",
+        "agents",
+        "AWS",
+        "Bedrock"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-04-30T17:17:41.000Z"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/aws-generative-ai-model-agility-solution-a-comprehensive-guide-to-migrating-llms-for-generative-ai-production/",
+      "title": "AWS Generative AI Model Agility Solution: A comprehensive guide to migrating LLMs for generative AI production",
+      "summary": "AWS introduces a systematic framework for LLM migration and version upgrades in production, covering prompt conversion, multi-dimensional evaluation, and comparative analysis between source and destination models. The approach provides end-to-end guidance from data preparation through success criteria, enabling organizations to transition between different LLM families with minimal operational disruption.",
+      "source": "AWS ML Blog",
+      "tags": [
+        "LLM",
+        "migration",
+        "prompt engineering",
+        "evals",
+        "production"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-04-30T17:04:41.000Z"
+    },
+    {
+      "url": "https://thenewstack.io/anthropics-claude-security-beta/",
+      "title": "Anthropic's Claude Security emerges from closed preview to scan your codebases for vulnerabilities",
+      "summary": "Claude Security exits closed preview to beta for Claude Enterprise customers, with Team and Max plan support coming soon. Uses Claude Opus 4.7 to scan codebases for vulnerabilities and suggest fixes, with hundreds of organizations reportedly finding issues missed by existing tools.",
+      "source": "The New Stack",
+      "tags": [
+        "Claude",
+        "security",
+        "SAST",
+        "code analysis"
+      ],
+      "score": 7,
+      "category": "Security",
+      "publishedAt": "2026-04-30T17:00:00.000Z"
+    },
+    {
+      "url": "https://github.com/kubereboot/kured",
+      "title": "Kubereboot/Kured: Kubernetes Reboot Daemon",
+      "summary": "Kured is a Kubernetes daemon that safely orchestrates node reboots by respecting pod disruption budgets and draining nodes before reboot, enabling automated OS patching in production clusters.",
+      "source": "HN Front Page",
+      "tags": [
+        "Kubernetes",
+        "DevOps",
+        "node-management",
+        "automation"
+      ],
+      "score": 7,
+      "category": "DevOps",
+      "publishedAt": "2026-04-30T16:53:44.000Z"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/unleashing-agentic-ai-analytics-on-amazon-sagemaker-with-amazon-athena-and-amazon-quick/",
+      "title": "Unleashing Agentic AI Analytics on Amazon SageMaker with Amazon Athena and Amazon Quick",
+      "summary": "AWS demonstrates an agentic AI architecture combining SageMaker, Athena, and Quick to enable natural language querying of petabyte-scale data lakes across multiple formats (S3 Table, Iceberg, Parquet). The system democratizes lakehouse access for business users while maintaining enterprise security and governance through integrated knowledge bases.",
+      "source": "AWS ML Blog",
       "tags": [
         "agents",
-        "sandboxing",
-        "autonomous execution",
-        "safety"
+        "analytics",
+        "RAG",
+        "data lakes",
+        "natural language"
       ],
-      "score": 8,
+      "score": 7,
       "category": "AI",
-      "publishedAt": "2026-03-31T16:39:16.000Z"
+      "publishedAt": "2026-04-30T16:52:40.000Z"
+    },
+    {
+      "url": "https://www.docker.com/blog/from-security-blocked-to-prod-ready-clickhouse-on-docker-hardened-images/",
+      "title": "From Security Blocked to Prod Ready: ClickHouse on Docker Hardened Images",
+      "summary": "Docker Hardened Images (DHI) removes unnecessary packages from container base images to eliminate CVEs that don't affect application workloads. The post walks through a real case where a Langfuse deployment on Kubernetes was blocked by security scanners due to vulnerabilities in the ClickHouse base image, then resolved using DHI to strip down the image.",
+      "source": "Docker Blog",
+      "tags": [
+        "Docker",
+        "container-security",
+        "ClickHouse",
+        "Kubernetes"
+      ],
+      "score": 7,
+      "category": "DevOps",
+      "publishedAt": "2026-04-30T15:55:07.000Z"
+    },
+    {
+      "url": "https://thenewstack.io/quickbase-pave-vibe-coding/",
+      "title": "Quickbase's Pave targets vibe coding's notorious 80% problem",
+      "summary": "Quickbase's Pave tool addresses the well-documented 80% problem in vibe coding, where agentic AI systems rapidly generate working prototypes but struggle with the remaining 20% of implementation, edge cases, and stability. The approach proposes running QA agents in parallel within vibe tools to validate workflows and rules after each iteration, catching regressions early rather than accumulating technical debt.",
+      "source": "The New Stack",
+      "tags": [
+        "agents",
+        "vibe-coding",
+        "QA",
+        "code-generation",
+        "agentic-AI"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-04-30T15:00:00.000Z"
+    },
+    {
+      "url": "https://honker.dev/",
+      "title": "Durable queues, streams, pub/sub, and a cron scheduler – inside your SQLite file",
+      "summary": "Honker embeds durable queues, streams, pub/sub messaging, and cron scheduling directly into SQLite, eliminating the need for separate infrastructure for these patterns. This is a practical approach for applications that want reliable async primitives without external dependencies.",
+      "source": "HN Front Page",
+      "tags": [
+        "SQLite",
+        "queues",
+        "messaging",
+        "infrastructure"
+      ],
+      "score": 7,
+      "category": "Engineering",
+      "publishedAt": "2026-04-30T14:43:02.000Z"
+    },
+    {
+      "url": "https://krebsonsecurity.com/2026/04/anti-ddos-firm-heaped-attacks-on-brazilian-isps/",
+      "title": "Anti-DDoS Firm Heaped Attacks on Brazilian ISPs",
+      "summary": "A Brazilian DDoS mitigation firm (Huge Networks) was found to be enabling a botnet conducting massive DDoS attacks against other ISPs, with exposed SSH keys and malicious Python programs discovered in an open directory. The CEO claims the breach was from a competitor attempting to damage the company's reputation.",
+      "source": "Krebs on Security",
+      "tags": [
+        "DDoS",
+        "breach",
+        "threat-intelligence",
+        "botnet"
+      ],
+      "score": 7,
+      "category": "Security",
+      "publishedAt": "2026-04-30T14:04:26.000Z"
     },
     {
       "url": "https://thehackernews.com/2026/04/new-python-backdoor-uses-tunneling.html",
@@ -2417,48 +2663,92 @@
       "publishedAt": "2026-04-01T17:00:00.000Z"
     },
     {
-      "url": "https://www.docker.com/blog/blog-docker-model-runner-new-nvidia-dgx-station/",
-      "title": "Run and Iterate on LLMs Faster with Docker Model Runner on DGX Station",
-      "summary": "Docker Model Runner now supports NVIDIA's DGX Station, which pairs a 72-core Grace CPU with Blackwell Ultra GPU via NVLink-C2C for frontier AI workloads in a deskside form factor. Developers can run and iterate on larger models locally using the same Docker experience, replacing complex GPU setups and cloud API calls.",
-      "source": "Docker Blog",
+      "url": "https://nickkossolapov.github.io/fame-boy/building-a-game-boy-emulator-in-fsharp/",
+      "title": "I built a Game Boy emulator in F#",
+      "summary": "Technical writeup on implementing a Game Boy emulator in F#, covering CPU emulation, memory management, and graphics rendering.",
+      "source": "HN Front Page",
       "tags": [
-        "LLM",
-        "GPU",
-        "NVIDIA",
-        "local inference"
+        "F#",
+        "emulation",
+        "systems-programming"
       ],
-      "score": 7,
-      "category": "AI",
-      "publishedAt": "2026-03-31T17:57:17.000Z"
+      "score": 6,
+      "category": "Engineering",
+      "publishedAt": "2026-04-30T17:14:21.000Z"
     },
     {
-      "url": "https://research.google/blog/building-better-ai-benchmarks-how-many-raters-are-enough/",
-      "title": "Building better AI benchmarks: How many raters are enough?",
-      "summary": "Google Research examines optimal rater sample sizes for constructing reliable AI evaluation benchmarks. The work addresses a practical bottleneck in benchmark design: determining when inter-rater agreement stabilizes and additional annotation effort yields diminishing returns.",
-      "source": "Google Research Blog",
+      "url": "https://developer.nvidia.com/blog/speed-up-unreal-engine-nne-inference-with-nvidia-tensorrt-for-rtx-runtime/",
+      "title": "Speed Up Unreal Engine NNE Inference with NVIDIA TensorRT for RTX Runtime",
+      "summary": "NVIDIA demonstrates TensorRT optimization for Unreal Engine 5's Neural Network Engine, accelerating inference for graphics tasks like super resolution, denoising, and neural rendering on RTX GPUs.",
+      "source": "NVIDIA Developer Blog",
       "tags": [
-        "evals",
-        "benchmarks",
+        "inference",
+        "TensorRT",
+        "RTX",
+        "graphics"
+      ],
+      "score": 6,
+      "category": "AI",
+      "publishedAt": "2026-04-30T17:00:00.000Z"
+    },
+    {
+      "url": "https://developer.nvidia.com/blog/build-ai-powered-games-with-nvidia-dlss-4-5-rtx-and-unreal-engine-5/",
+      "title": "Build AI-Powered Games with NVIDIA DLSS 4.5, RTX, and Unreal Engine 5",
+      "summary": "NVIDIA released DLSS 4.5 with Dynamic Multi Frame Generation, Multi Frame Generation 6X, and a second-generation transformer model for Super Resolution, enabling game developers to integrate AI-driven upscaling and frame generation in Unreal Engine 5.",
+      "source": "NVIDIA Developer Blog",
+      "tags": [
+        "DLSS",
+        "inference",
+        "graphics",
+        "transformer"
+      ],
+      "score": 6,
+      "category": "AI",
+      "publishedAt": "2026-04-30T17:00:00.000Z"
+    },
+    {
+      "url": "https://github.com/carlovalenti/TRiP",
+      "title": "Show HN: TRiP – a complete transformer engine in C built from scratch just by me",
+      "summary": "TRiP is a transformer inference engine implemented in C from scratch, providing a minimal but complete implementation of transformer architecture for educational and practical use.",
+      "source": "HN Front Page",
+      "tags": [
+        "transformers",
+        "inference",
+        "C",
         "LLM"
       ],
-      "score": 7,
+      "score": 6,
       "category": "AI",
-      "publishedAt": "2026-03-31T16:16:00.000Z"
+      "publishedAt": "2026-04-30T16:48:17.000Z"
     },
     {
-      "url": "https://huggingface.co/blog/ibm-granite/granite-4-vision",
-      "title": "Granite 4.0 3B Vision: Compact Multimodal Intelligence for Enterprise Documents",
-      "summary": "IBM releases Granite 4.0 3B Vision, a compact 3B-parameter multimodal model optimized for document understanding and enterprise workflows. The model targets resource-constrained deployments while maintaining performance on document-centric tasks.",
-      "source": "Hugging Face Blog",
+      "url": "https://developer.nvidia.com/blog/how-to-build-run-and-scale-high-quality-creator-workflows-in-comfyui/",
+      "title": "How to Build, Run, and Scale High-Quality Creator Workflows in ComfyUI",
+      "summary": "NVIDIA provides guidance on building and scaling generative AI workflows in ComfyUI, an open-source node-based tool that runs on RTX GPUs and integrates image generation, video synthesis, and language models into repeatable pipelines for creative teams.",
+      "source": "NVIDIA Developer Blog",
+      "tags": [
+        "generative AI",
+        "ComfyUI",
+        "workflows",
+        "RTX"
+      ],
+      "score": 6,
+      "category": "AI",
+      "publishedAt": "2026-04-30T16:16:04.000Z"
+    },
+    {
+      "url": "https://thenewstack.io/meta-abandons-llama-spark/",
+      "title": "Meta abandons open-source Llama for proprietary Muse Spark",
+      "summary": "Meta has deprioritized Llama development in favor of proprietary Muse Spark, built by Meta Superintelligence Labs with new infrastructure and architecture. Zuckerberg reportedly wanted a model competitive with ChatGPT and Claude, leading to a complete rebuild rather than Llama iteration.",
+      "source": "The New Stack",
       "tags": [
         "LLM",
-        "multimodal",
-        "vision",
-        "document understanding"
+        "Meta",
+        "Muse Spark"
       ],
-      "score": 7,
+      "score": 6,
       "category": "AI",
-      "publishedAt": "2026-03-31T15:10:41.000Z"
+      "publishedAt": "2026-04-30T15:05:45.000Z"
     },
     {
       "url": "https://www.maxtaylor.me/articles/i-benchmarked-caveman-against-two-words",
@@ -3340,6 +3630,64 @@
       "publishedAt": "2026-04-01T00:00:00.000Z"
     },
     {
+      "url": "https://www.databricks.com/blog/unlocking-sap-business-context-databricks-semantic-metadata-delta-sharing",
+      "title": "Unlocking SAP Business Context in Databricks with Semantic Metadata Delta Sharing",
+      "summary": "Databricks integrates semantic metadata capabilities with Delta Sharing to help organizations correlate and contextualize SAP data across systems. This enables better data discovery and lineage tracking for enterprise data platforms.",
+      "source": "Databricks Blog",
+      "tags": [
+        "Delta-Sharing",
+        "metadata",
+        "data-governance",
+        "SAP"
+      ],
+      "score": 5,
+      "category": "Cloud",
+      "publishedAt": "2026-04-30T18:40:00.000Z"
+    },
+    {
+      "url": "https://peterdohertys.website/blog-posts/full-text-search-w-duckdb.html",
+      "title": "Full-Text Search with DuckDB",
+      "summary": "Tutorial on implementing full-text search capabilities using DuckDB, an in-process SQL database engine.",
+      "source": "HN Front Page",
+      "tags": [
+        "DuckDB",
+        "full-text-search",
+        "database"
+      ],
+      "score": 5,
+      "category": "Engineering",
+      "publishedAt": "2026-04-30T18:14:18.000Z"
+    },
+    {
+      "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-for-beginners-interactive-v-non-interactive-mode/",
+      "title": "GitHub Copilot CLI for Beginners: Interactive v. non-interactive mode",
+      "summary": "Tutorial on GitHub Copilot CLI modes: interactive mode for iterative chat-like sessions and non-interactive mode for one-off queries. Covers how to launch each mode and typical use cases for command-line assistance.",
+      "source": "GitHub Blog",
+      "tags": [
+        "Copilot",
+        "CLI",
+        "tool-use"
+      ],
+      "score": 5,
+      "category": "AI",
+      "publishedAt": "2026-04-30T16:09:02.000Z"
+    },
+    {
+      "url": "https://www.databricks.com/blog/alert-fatigue-business-risk",
+      "title": "Alert Fatigue Is a Business Risk",
+      "summary": "Databricks examines alert fatigue in security operations centers as a material business risk and explores how data infrastructure can reduce noise through better threat intelligence and security analytics at scale.",
+      "source": "Databricks Blog",
+      "tags": [
+        "security",
+        "observability",
+        "SOC",
+        "threat-intelligence"
+      ],
+      "score": 5,
+      "category": "Security",
+      "publishedAt": "2026-04-30T12:58:45.000Z"
+    },
+    {
       "url": "https://bidprowl.com",
       "title": "I aggregated 28 US Government auction sites into one search",
       "summary": "A developer built a search aggregator across US government auction sites. Practical web scraping and search indexing project with modest engineering interest.",
@@ -3351,6 +3699,21 @@
       "score": 5,
       "category": "Engineering",
       "publishedAt": "2026-04-30T12:24:53.000Z"
+    },
+    {
+      "url": "https://deepmind.google/blog/ai-co-clinician/",
+      "title": "Enabling a new model for healthcare with AI co-clinician",
+      "summary": "DeepMind outlines research into AI co-clinician systems designed to augment clinical decision-making. The work explores how AI models can be integrated into healthcare workflows to support rather than replace clinicians.",
+      "source": "DeepMind",
+      "tags": [
+        "healthcare",
+        "LLM",
+        "clinical-AI",
+        "human-AI-collaboration"
+      ],
+      "score": 5,
+      "category": "AI",
+      "publishedAt": "2026-04-30T12:14:15.000Z"
     },
     {
       "url": "https://www.databricks.com/blog/backstage-lakebase",
@@ -4048,22 +4411,6 @@
       "score": 5,
       "category": "AI",
       "publishedAt": "2026-04-01T07:13:20.000Z"
-    },
-    {
-      "url": "https://aws.amazon.com/blogs/aws/announcing-the-aws-sustainability-console-programmatic-access-configurable-csv-reports-and-scope-1-3-reporting-in-one-place/",
-      "title": "Announcing the AWS Sustainability console: Programmatic access, configurable CSV reports, and Scope 1–3 reporting in one place",
-      "summary": "AWS Sustainability console GA consolidates carbon footprint reporting with independent permissions model, enabling sustainability teams to access emissions data without billing access. Includes programmatic APIs and configurable CSV exports.",
-      "source": "AWS News",
-      "tags": [
-        "sustainability",
-        "reporting",
-        "emissions",
-        "governance",
-        "compliance"
-      ],
-      "score": 5,
-      "category": "Cloud",
-      "publishedAt": "2026-03-31T19:04:00.000Z"
     }
   ]
 }

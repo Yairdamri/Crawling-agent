@@ -1550,5 +1550,165 @@
   {
     "url": "https://thehackernews.com/2026/04/new-linux-copy-fail-vulnerability.html",
     "seenAt": "2026-04-30T13:47:22.806Z"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/aws-generative-ai-model-agility-solution-a-comprehensive-guide-to-migrating-llms-for-generative-ai-production/",
+    "seenAt": "2026-04-30T19:16:01.527Z"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/sun-finance-automates-id-extraction-and-fraud-detection-with-generative-ai-on-aws/",
+    "seenAt": "2026-04-30T19:16:01.527Z"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/unleashing-agentic-ai-analytics-on-amazon-sagemaker-with-amazon-athena-and-amazon-quick/",
+    "seenAt": "2026-04-30T19:16:01.527Z"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/configuring-amazon-bedrock-agentcore-gateway-for-secure-access-to-private-resources/",
+    "seenAt": "2026-04-30T19:16:01.527Z"
+  },
+  {
+    "url": "https://openai.com/index/advanced-account-security",
+    "seenAt": "2026-04-30T19:16:01.527Z"
+  },
+  {
+    "url": "https://developer.nvidia.com/blog/speed-up-unreal-engine-nne-inference-with-nvidia-tensorrt-for-rtx-runtime/",
+    "seenAt": "2026-04-30T19:16:01.527Z"
+  },
+  {
+    "url": "https://developer.nvidia.com/blog/build-ai-powered-games-with-nvidia-dlss-4-5-rtx-and-unreal-engine-5/",
+    "seenAt": "2026-04-30T19:16:01.527Z"
+  },
+  {
+    "url": "https://developer.nvidia.com/blog/how-to-build-run-and-scale-high-quality-creator-workflows-in-comfyui/",
+    "seenAt": "2026-04-30T19:16:01.527Z"
+  },
+  {
+    "url": "https://developer.nvidia.com/blog/automating-gpu-kernel-translation-with-ai-agents-cutile-python-to-cutile-jl/",
+    "seenAt": "2026-04-30T19:16:01.527Z"
+  },
+  {
+    "url": "https://deepmind.google/blog/ai-co-clinician/",
+    "seenAt": "2026-04-30T19:16:01.527Z"
+  },
+  {
+    "url": "https://www.databricks.com/blog/unlocking-sap-business-context-databricks-semantic-metadata-delta-sharing",
+    "seenAt": "2026-04-30T19:16:01.527Z"
+  },
+  {
+    "url": "https://www.databricks.com/blog/databricks-and-stitch-marketing-activation",
+    "seenAt": "2026-04-30T19:16:01.527Z"
+  },
+  {
+    "url": "https://www.databricks.com/blog/alert-fatigue-business-risk",
+    "seenAt": "2026-04-30T19:16:01.527Z"
+  },
+  {
+    "url": "https://www.databricks.com/blog/shipping-faster-isnt-learning-faster",
+    "seenAt": "2026-04-30T19:16:01.527Z"
+  },
+  {
+    "url": "https://www.databricks.com/blog/why-your-oee-dashboard-lying-you",
+    "seenAt": "2026-04-30T19:16:01.527Z"
+  },
+  {
+    "url": "https://www.databricks.com/blog/turbine-tried-tell-you-it-was-failing",
+    "seenAt": "2026-04-30T19:16:01.527Z"
+  },
+  {
+    "url": "https://www.databricks.com/blog/predicting-readmissions-isnt-enough-acting-time",
+    "seenAt": "2026-04-30T19:16:01.527Z"
+  },
+  {
+    "url": "https://www.databricks.com/blog/clinical-trials-run-longer-they-have-thats-patient-problem",
+    "seenAt": "2026-04-30T19:16:01.527Z"
+  },
+  {
+    "url": "https://www.databricks.com/blog/network-quality-revenue-problem-not-technical-one",
+    "seenAt": "2026-04-30T19:16:01.527Z"
+  },
+  {
+    "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-for-beginners-interactive-v-non-interactive-mode/",
+    "seenAt": "2026-04-30T19:16:01.527Z"
+  },
+  {
+    "url": "https://thenewstack.io/production-ready-ai-platforms/",
+    "seenAt": "2026-04-30T19:16:01.527Z"
+  },
+  {
+    "url": "https://thenewstack.io/openai-aws-bedrock-integration/",
+    "seenAt": "2026-04-30T19:16:01.527Z"
+  },
+  {
+    "url": "https://thenewstack.io/anthropics-claude-security-beta/",
+    "seenAt": "2026-04-30T19:16:01.527Z"
+  },
+  {
+    "url": "https://thenewstack.io/meta-abandons-llama-spark/",
+    "seenAt": "2026-04-30T19:16:01.527Z"
+  },
+  {
+    "url": "https://thenewstack.io/quickbase-pave-vibe-coding/",
+    "seenAt": "2026-04-30T19:16:01.527Z"
+  },
+  {
+    "url": "https://www.techadvisor.com/article/3128472/if-apple-makes-an-ipad-neo-its-all-over.html",
+    "seenAt": "2026-04-30T19:16:01.527Z"
+  },
+  {
+    "url": "https://peterdohertys.website/blog-posts/full-text-search-w-duckdb.html",
+    "seenAt": "2026-04-30T19:16:01.527Z"
+  },
+  {
+    "url": "https://lost-number.bearblog.dev/recovering-files-from-beyond-the-grave-using-photorec/",
+    "seenAt": "2026-04-30T19:16:01.527Z"
+  },
+  {
+    "url": "https://nickkossolapov.github.io/fame-boy/building-a-game-boy-emulator-in-fsharp/",
+    "seenAt": "2026-04-30T19:16:01.527Z"
+  },
+  {
+    "url": "https://github.com/kubereboot/kured",
+    "seenAt": "2026-04-30T19:16:01.527Z"
+  },
+  {
+    "url": "https://github.com/carlovalenti/TRiP",
+    "seenAt": "2026-04-30T19:16:01.527Z"
+  },
+  {
+    "url": "https://www.openwall.com/lists/oss-security/2026/04/30/10",
+    "seenAt": "2026-04-30T19:16:01.527Z"
+  },
+  {
+    "url": "https://semgrep.dev/blog/2026/malicious-dependency-in-pytorch-lightning-used-for-ai-training/",
+    "seenAt": "2026-04-30T19:16:01.527Z"
+  },
+  {
+    "url": "https://honker.dev/",
+    "seenAt": "2026-04-30T19:16:01.527Z"
+  },
+  {
+    "url": "https://www.smithsonianmag.com/science-nature/the-science-behind-honeys-eternal-shelf-life-1218690/",
+    "seenAt": "2026-04-30T19:16:01.527Z"
+  },
+  {
+    "url": "https://www.docker.com/blog/from-security-blocked-to-prod-ready-clickhouse-on-docker-hardened-images/",
+    "seenAt": "2026-04-30T19:16:01.527Z"
+  },
+  {
+    "url": "https://krebsonsecurity.com/2026/04/anti-ddos-firm-heaped-attacks-on-brazilian-isps/",
+    "seenAt": "2026-04-30T19:16:01.527Z"
+  },
+  {
+    "url": "https://snyk.io/blog/lightning-pypi-compromise-bun-based-credential-stealer/",
+    "seenAt": "2026-04-30T19:16:01.527Z"
+  },
+  {
+    "url": "https://thehackernews.com/2026/04/pytorch-lightning-compromised-in-pypi.html",
+    "seenAt": "2026-04-30T19:16:01.527Z"
+  },
+  {
+    "url": "https://thehackernews.com/2026/04/threatsday-bulletin-sms-blaster-busts.html",
+    "seenAt": "2026-04-30T19:16:01.527Z"
   }
 ]
