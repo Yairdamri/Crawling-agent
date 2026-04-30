@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-04-29T19:20:41.097Z",
+  "generatedAt": "2026-04-30T02:38:06.223Z",
   "articles": [
     {
       "url": "https://thenewstack.io/openai-bedrock-trainium-silicon/",
@@ -138,6 +138,22 @@
       "score": 8,
       "category": "AI",
       "publishedAt": "2026-04-29T18:52:32.000Z"
+    },
+    {
+      "url": "https://kubernetes.io/blog/2026/04/29/kubernetes-v1-36-memory-qos-tiered-protection/",
+      "title": "Kubernetes v1.36: Tiered Memory Protection with Memory QoS",
+      "summary": "Kubernetes v1.36 advances Memory QoS (alpha) with opt-in memory reservation via memoryReservationPolicy, tiered protection by QoS class (memory.min for Guaranteed pods, memory.low for Burstable), and new observability metrics. The feature gate enables memory.high throttling based on memoryThrottlingFactor (default 0.9) while separating reservation control into a distinct kubelet configuration field.",
+      "source": "Kubernetes Blog",
+      "tags": [
+        "Kubernetes",
+        "memory management",
+        "QoS",
+        "cgroup v2",
+        "kubelet"
+      ],
+      "score": 8,
+      "category": "DevOps",
+      "publishedAt": "2026-04-29T18:35:00.000Z"
     },
     {
       "url": "https://thenewstack.io/anaconda-ai-outerbounds-python-metaflow/",
@@ -860,6 +876,52 @@
       "score": 8,
       "category": "AI",
       "publishedAt": "2026-03-31T08:23:44.000Z"
+    },
+    {
+      "url": "https://github.com/aallan/vera",
+      "title": "Vera: a programming language designed for machines to write",
+      "summary": "Vera is a programming language specifically designed for LLMs and code-generation systems to produce as output. The language prioritizes machine-readability and structured output over human ergonomics, enabling more reliable code generation from AI models.",
+      "source": "HN Front Page",
+      "tags": [
+        "LLM",
+        "code-generation",
+        "language-design"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-04-29T21:41:32.000Z"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/extracting-contract-insights-with-pwcs-ai-driven-annotation-on-aws/",
+      "title": "Extracting contract insights with PwC's AI-driven annotation on AWS",
+      "summary": "PwC's AIDA solution combines LLMs with rule-based extraction and natural language queries to extract structured insights from contracts at scale. In customer implementations, AIDA reduced manual contract review time by up to 90% by enabling context-specific answers with linked citations across single or multiple documents.",
+      "source": "AWS ML Blog",
+      "tags": [
+        "LLM",
+        "document extraction",
+        "RAG",
+        "AWS",
+        "legal automation"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-04-29T21:19:39.000Z"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/organizing-agents-memory-at-scale-namespace-design-patterns-in-agentcore-memory/",
+      "title": "Organizing Agents' memory at scale: Namespace design patterns in AgentCore Memory",
+      "summary": "Amazon Bedrock AgentCore Memory uses hierarchical namespaces (e.g., /actor/customer-123/preferences/) to organize long-term memory records across sessions with scoped retrieval and IAM-based access control. The post covers namespace design patterns, retrieval strategies, and security considerations for building context-aware agents.",
+      "source": "AWS ML Blog",
+      "tags": [
+        "agents",
+        "memory",
+        "retrieval",
+        "AWS Bedrock",
+        "security"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-04-29T19:31:54.000Z"
     },
     {
       "url": "https://www.hashicorp.com/blog/managing-ssh-access-at-scale-with-hashicorp-vault-update",
@@ -2264,6 +2326,36 @@
       "publishedAt": "2026-03-31T15:10:41.000Z"
     },
     {
+      "url": "https://www.maxtaylor.me/articles/i-benchmarked-caveman-against-two-words",
+      "title": "I benchmarked Claude Code's caveman plugin against \"be brief.\"",
+      "summary": "A benchmark comparing Anthropic's Claude Code caveman plugin (a tool-use feature for concise output) against a simple prompt instruction to be brief. The analysis evaluates whether specialized tool-use mechanisms outperform basic prompt engineering for controlling LLM verbosity.",
+      "source": "HN Front Page",
+      "tags": [
+        "LLM",
+        "prompt-engineering",
+        "tool-use",
+        "evals"
+      ],
+      "score": 6,
+      "category": "AI",
+      "publishedAt": "2026-04-29T21:11:57.000Z"
+    },
+    {
+      "url": "https://www.databricks.com/blog/approximate-answers-exact-decisions-new-sketch-functions-analytics",
+      "title": "Approximate Answers, Exact Decisions: New Sketch Functions for Analytics",
+      "summary": "Databricks introduces sketch functions for analytics that provide approximate answers for decision-support queries, enabling faster analysis when exact precision is not required for business decisions.",
+      "source": "Databricks Blog",
+      "tags": [
+        "analytics",
+        "sketching",
+        "performance",
+        "Databricks"
+      ],
+      "score": 6,
+      "category": "Engineering",
+      "publishedAt": "2026-04-29T20:01:22.000Z"
+    },
+    {
       "url": "https://www.databricks.com/blog/companies-winning-ai-built-data-layer-first",
       "title": "Companies Winning with AI Built the Data Layer First",
       "summary": "Successful AI deployments prioritize foundational data infrastructure and governance before building ML models or agents. The article emphasizes that competitive advantage in AI comes from data quality and accessibility, not just model capability.",
@@ -2319,6 +2411,21 @@
       "score": 6,
       "category": "AI",
       "publishedAt": "2026-04-29T15:01:48.000Z"
+    },
+    {
+      "url": "https://www.databricks.com/blog/interoperability-between-unity-catalog-and-google-bigquery-catalog-federation",
+      "title": "Interoperability Between Unity Catalog and Google BigQuery via Catalog Federation",
+      "summary": "Databricks enables catalog federation between Unity Catalog and Google BigQuery, allowing customers to access the same data copy across both platforms for unified data governance.",
+      "source": "Databricks Blog",
+      "tags": [
+        "Unity Catalog",
+        "BigQuery",
+        "data governance",
+        "interoperability"
+      ],
+      "score": 6,
+      "category": "Cloud",
+      "publishedAt": "2026-04-29T13:33:25.000Z"
     },
     {
       "url": "https://blog.jeffschomay.com/letting-ai-play-my-game",
@@ -3098,18 +3205,62 @@
       "publishedAt": "2026-04-01T00:00:00.000Z"
     },
     {
-      "url": "https://research.google/blog/safeguarding-cryptocurrency-by-disclosing-quantum-vulnerabilities-responsibly/",
-      "title": "Safeguarding cryptocurrency by disclosing quantum vulnerabilities responsibly",
-      "summary": "Google Research presents a responsible disclosure framework for quantum computing vulnerabilities in cryptocurrency systems. The work balances security transparency with ecosystem protection, offering guidance on coordinated vulnerability disclosure timelines.",
+      "url": "https://cacm.acm.org/research-highlights/a-grounded-conceptual-model-for-ownership-types-in-rust/",
+      "title": "A Grounded Conceptual Model for Ownership Types in Rust",
+      "summary": "ACM research highlights a grounded conceptual model for Rust's ownership type system, providing formal foundations for understanding memory safety guarantees in the language.",
+      "source": "HN Front Page",
+      "tags": [
+        "Rust",
+        "type system",
+        "ownership",
+        "memory safety"
+      ],
+      "score": 5,
+      "category": "Engineering",
+      "publishedAt": "2026-04-30T01:47:19.000Z"
+    },
+    {
+      "url": "https://mikeoss.com/",
+      "title": "Mike: open-source legal AI",
+      "summary": "Mike is an open-source AI system designed for legal document analysis and reasoning. The project applies LLM capabilities to the legal domain with an emphasis on transparency and accessibility.",
+      "source": "HN Front Page",
+      "tags": [
+        "LLM",
+        "legal",
+        "open-source"
+      ],
+      "score": 5,
+      "category": "AI",
+      "publishedAt": "2026-04-30T00:56:23.000Z"
+    },
+    {
+      "url": "https://research.google/blog/four-ways-google-research-scientists-have-been-using-empirical-research-assistance/",
+      "title": "Four ways Google Research scientists have been using Empirical Research Assistance",
+      "summary": "Google Research scientists apply Empirical Research Assistance to data mining and modeling tasks, demonstrating practical use cases for AI-assisted research workflows.",
       "source": "Google Research Blog",
       "tags": [
-        "security",
-        "quantum",
-        "cryptography"
+        "research assistance",
+        "AI tools",
+        "data mining"
       ],
-      "score": 6,
+      "score": 5,
+      "category": "AI",
+      "publishedAt": "2026-04-29T21:07:00.000Z"
+    },
+    {
+      "url": "https://lina.sh/blog/ddos-honeypot",
+      "title": "I accidentally made law enforcement shut down their fake honeypot",
+      "summary": "A security researcher describes triggering an unintended shutdown of a law enforcement honeypot through DDoS activity. The post explores the technical and legal implications of disrupting a fake infrastructure meant to catch attackers.",
+      "source": "HN Front Page",
+      "tags": [
+        "security",
+        "DDoS",
+        "honeypot",
+        "law-enforcement"
+      ],
+      "score": 5,
       "category": "Security",
-      "publishedAt": "2026-03-31T02:03:00.000Z"
+      "publishedAt": "2026-04-29T21:04:38.000Z"
     },
     {
       "url": "https://www.databricks.com/blog/rethinking-sql-etl-modern-data-platforms",
