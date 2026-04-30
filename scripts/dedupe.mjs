@@ -8,9 +8,12 @@ export async function loadSeenUrls(path) {
     const map = new Map();
     for (const entry of parsed) {
       if (typeof entry === 'string') {
-        map.set(entry, new Date().toISOString());
+        map.set(entry, { seenAt: new Date().toISOString() });
       } else if (entry && typeof entry.url === 'string') {
-        map.set(entry.url, entry.seenAt || new Date().toISOString());
+        map.set(entry.url, {
+          seenAt: entry.seenAt || new Date().toISOString(),
+          contentHash: entry.contentHash,
+        });
       }
     }
     return map;
@@ -25,7 +28,8 @@ export function filterUnseen(items, seen) {
   const fresh = [];
   const dedupedThisRun = new Set();
   for (const item of items) {
-    if (seen.has(item.url)) continue;
+    const prior = seen.get(item.url);
+    if (prior && prior.contentHash && prior.contentHash === item.contentHash) continue;
     if (dedupedThisRun.has(item.url)) continue;
     dedupedThisRun.add(item.url);
     fresh.push(item);

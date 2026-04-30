@@ -1,9 +1,14 @@
 import Parser from 'rss-parser';
+import { createHash } from 'node:crypto';
 
 const parser = new Parser({ timeout: 15000 });
 
 const MAX_ITEMS_PER_FEED = 20;
 const MAX_TEXT_LENGTH = 1500;
+
+function hashContent(title, rawText) {
+  return createHash('sha256').update(`${title}\n${rawText}`).digest('hex').slice(0, 16);
+}
 
 function stripHtml(html) {
   if (!html) return '';
@@ -41,6 +46,7 @@ function normalizeItem(item, feedName) {
     source: feedName,
     publishedAt: pickPublishedAt(item),
     rawText,
+    contentHash: hashContent(title, rawText),
   };
 }
 
