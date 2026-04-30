@@ -1,7 +1,38 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-04-30T02:38:06.223Z",
+  "generatedAt": "2026-04-30T08:15:02.733Z",
   "articles": [
+    {
+      "url": "https://thehackernews.com/2026/04/google-fixes-cvss-10-gemini-cli-ci-rce.html",
+      "title": "Google Fixes CVSS 10 Gemini CLI CI RCE and Cursor Flaws Enable Code Execution",
+      "summary": "Google patched a CVSS 10 remote code execution vulnerability in the Gemini CLI npm package and google-github-actions/run-gemini-cli GitHub Actions workflow. The flaw allowed unprivileged attackers to inject malicious Gemini configuration and execute arbitrary commands on host systems during CI/CD pipelines.",
+      "source": "The Hacker News",
+      "tags": [
+        "CVE",
+        "RCE",
+        "CI/CD",
+        "npm",
+        "security"
+      ],
+      "score": 9,
+      "category": "Security",
+      "publishedAt": "2026-04-30T07:07:00.000Z"
+    },
+    {
+      "url": "https://openai.com/index/where-the-goblins-came-from/",
+      "title": "Where the goblins came from",
+      "summary": "OpenAI documents how spurious personality-driven outputs emerged in GPT-5 during training and the root causes behind these 'goblin' behaviors. The post traces the timeline of when these quirks appeared and details the fixes applied to suppress them.",
+      "source": "HN Front Page",
+      "tags": [
+        "LLM",
+        "GPT-5",
+        "training",
+        "alignment"
+      ],
+      "score": 9,
+      "category": "AI",
+      "publishedAt": "2026-04-30T03:21:04.000Z"
+    },
     {
       "url": "https://thenewstack.io/openai-bedrock-trainium-silicon/",
       "title": "AWS lands OpenAI on Bedrock, but Trainium is the real story",
@@ -124,6 +155,36 @@
       "score": 9,
       "category": "AI",
       "publishedAt": "2026-04-23T11:00:00.000Z"
+    },
+    {
+      "url": "https://github.com/cauchy221/Alignment-Whack-a-Mole-Code",
+      "title": "Alignment whack-a-mole: Finetuning activates recall of copyrighted books in LLMs",
+      "summary": "Research demonstrating that finetuning LLMs can inadvertently reactivate memorized copyrighted content despite alignment training. The work highlights a fundamental tension between model adaptation and content control.",
+      "source": "HN Front Page",
+      "tags": [
+        "LLM",
+        "alignment",
+        "fine-tuning",
+        "copyright"
+      ],
+      "score": 8,
+      "category": "AI",
+      "publishedAt": "2026-04-30T03:11:51.000Z"
+    },
+    {
+      "url": "https://openai.com/index/where-the-goblins-came-from",
+      "title": "Where the goblins came from",
+      "summary": "OpenAI documents how spurious personality-driven outputs emerged in GPT-5 during training and the root causes behind these 'goblin' behaviors. The post traces the timeline of when these quirks appeared and details the fixes applied to suppress them.",
+      "source": "OpenAI Blog",
+      "tags": [
+        "LLM",
+        "GPT-5",
+        "training",
+        "alignment"
+      ],
+      "score": 8,
+      "category": "AI",
+      "publishedAt": "2026-04-29T20:00:00.000Z"
     },
     {
       "url": "https://thenewstack.io/strands-agents-tool-design/",
@@ -876,6 +937,21 @@
       "score": 8,
       "category": "AI",
       "publishedAt": "2026-03-31T08:23:44.000Z"
+    },
+    {
+      "url": "https://www.groundcover.com/blog/otel-normalizer-genai-part-1",
+      "title": "Lessons from Building an OTel Normalizer for GenAI",
+      "summary": "Groundcover shares engineering lessons from building an OpenTelemetry normalizer for generative AI workloads. The post covers observability patterns specific to GenAI applications.",
+      "source": "HN Front Page",
+      "tags": [
+        "observability",
+        "OpenTelemetry",
+        "GenAI",
+        "MLOps"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-04-30T04:23:40.000Z"
     },
     {
       "url": "https://github.com/aallan/vera",
@@ -3203,6 +3279,34 @@
       "score": 6,
       "category": "AI",
       "publishedAt": "2026-04-01T00:00:00.000Z"
+    },
+    {
+      "url": "https://pure-systems.org/posts/2026-04-29-functional-programmers-need-to-take-a-look-at-zig.html",
+      "title": "Functional programmers need to take a look at Zig",
+      "summary": "An argument for why functional programmers should explore Zig as a systems language. The post likely covers Zig's memory safety guarantees and how they align with functional programming principles.",
+      "source": "HN Front Page",
+      "tags": [
+        "Zig",
+        "functional-programming",
+        "systems-programming"
+      ],
+      "score": 5,
+      "category": "Engineering",
+      "publishedAt": "2026-04-30T03:11:33.000Z"
+    },
+    {
+      "url": "https://simonwillison.net/2026/Apr/30/zig-anti-ai/",
+      "title": "The Zig project's rationale for their firm anti-AI contribution policy",
+      "summary": "The Zig programming language project has adopted a strict policy against AI-generated contributions. The post outlines the project's reasoning for this stance and its implications for open-source governance.",
+      "source": "HN Front Page",
+      "tags": [
+        "Zig",
+        "open-source",
+        "policy"
+      ],
+      "score": 5,
+      "category": "Other",
+      "publishedAt": "2026-04-30T02:15:47.000Z"
     },
     {
       "url": "https://cacm.acm.org/research-highlights/a-grounded-conceptual-model-for-ownership-types-in-rust/",
