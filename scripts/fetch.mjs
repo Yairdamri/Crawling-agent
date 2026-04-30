@@ -49,11 +49,14 @@ async function main() {
   const processed = await processArticles(fresh);
   console.log(`[pipeline] ${processed.length} articles returned by OpenAI`);
 
+  const hashByUrl = new Map(fresh.map((f) => [f.url, f.contentHash]));
+
   const stats = await mergeAndWrite({
     newsPath: NEWS_PATH,
     seenPath: SEEN_PATH,
     processed,
     seenMap,
+    hashByUrl,
   });
   console.log(
     `[pipeline] done in ${Math.round((Date.now() - startedAt) / 1000)}s ` +
