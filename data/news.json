@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-04-30T08:15:02.733Z",
+  "generatedAt": "2026-04-30T13:47:22.804Z",
   "articles": [
     {
       "url": "https://thehackernews.com/2026/04/google-fixes-cvss-10-gemini-cli-ci-rce.html",
@@ -155,6 +155,51 @@
       "score": 9,
       "category": "AI",
       "publishedAt": "2026-04-23T11:00:00.000Z"
+    },
+    {
+      "url": "https://thehackernews.com/2026/04/etherrat-distribution-spoofing.html",
+      "title": "EtherRAT Distribution Spoofing Administrative Tools via GitHub Facades",
+      "summary": "Atos TRC identified a sophisticated malware campaign distributing EtherRAT by impersonating legitimate administrative utilities on GitHub, targeting high-privilege accounts of enterprise administrators, DevOps engineers, and security analysts. The operation uses SEO manipulation to increase discoverability of malicious repositories.",
+      "source": "The Hacker News",
+      "tags": [
+        "malware",
+        "supply-chain",
+        "GitHub",
+        "social-engineering"
+      ],
+      "score": 8,
+      "category": "Security",
+      "publishedAt": "2026-04-30T11:30:00.000Z"
+    },
+    {
+      "url": "https://firethering.com/granite-4-1-ibm-open-source-model-family/",
+      "title": "Granite 4.1: IBM's 8B Model Matching 32B MoE",
+      "summary": "IBM released Granite 4.1, an 8B parameter open-source model achieving performance parity with 32B mixture-of-experts models. Significant efficiency gain for inference and fine-tuning workloads.",
+      "source": "HN Front Page",
+      "tags": [
+        "LLM",
+        "open-source",
+        "model-efficiency",
+        "inference"
+      ],
+      "score": 8,
+      "category": "AI",
+      "publishedAt": "2026-04-30T10:31:17.000Z"
+    },
+    {
+      "url": "https://thehackernews.com/2026/04/new-linux-copy-fail-vulnerability.html",
+      "title": "New Linux 'Copy Fail' Vulnerability Enables Root Access on Major Distributions",
+      "summary": "CVE-2026-31431 (CVSS 7.8), dubbed Copy Fail, is a local privilege escalation flaw allowing unprivileged users to write four controlled bytes into the page cache of any readable file and obtain root access on major Linux distributions. The vulnerability affects the kernel's copy mechanism.",
+      "source": "The Hacker News",
+      "tags": [
+        "CVE",
+        "Linux",
+        "privilege-escalation",
+        "kernel"
+      ],
+      "score": 8,
+      "category": "Security",
+      "publishedAt": "2026-04-30T09:24:00.000Z"
     },
     {
       "url": "https://github.com/cauchy221/Alignment-Whack-a-Mole-Code",
@@ -924,19 +969,33 @@
       "publishedAt": "2026-03-31T16:39:16.000Z"
     },
     {
-      "url": "https://huggingface.co/blog/OpenMed/training-mrna-models-25-species",
-      "title": "Training mRNA Language Models Across 25 Species for $165",
-      "summary": "OpenMed demonstrates cost-effective training of mRNA language models across 25 species for just $165, showcasing efficient fine-tuning and multi-species transfer learning. The approach enables accessible genomics AI research without prohibitive compute costs.",
-      "source": "Hugging Face Blog",
+      "url": "https://thehackernews.com/2026/04/new-python-backdoor-uses-tunneling.html",
+      "title": "New Python Backdoor Uses Tunneling Service to Steal Browser and Cloud Credentials",
+      "summary": "Researchers disclosed DEEP#DOOR, a Python-based backdoor framework that disables Windows security controls and harvests sensitive data from compromised hosts via tunneling services. The attack chain begins with execution of an obfuscated batch script (install_obf.bat) that establishes persistent access.",
+      "source": "The Hacker News",
       "tags": [
-        "LLM",
-        "genomics",
-        "fine-tuning",
-        "cost-efficient"
+        "malware",
+        "backdoor",
+        "credential-theft",
+        "CVE"
       ],
-      "score": 8,
-      "category": "AI",
-      "publishedAt": "2026-03-31T08:23:44.000Z"
+      "score": 7,
+      "category": "Security",
+      "publishedAt": "2026-04-30T12:36:00.000Z"
+    },
+    {
+      "url": "https://gcc.gnu.org/gcc-16/changes.html",
+      "title": "GCC 16 has been released",
+      "summary": "GCC 16 release with compiler improvements and new features. Major compiler release relevant to systems programming and toolchain engineers.",
+      "source": "HN Front Page",
+      "tags": [
+        "compiler",
+        "gcc",
+        "toolchain"
+      ],
+      "score": 7,
+      "category": "Engineering",
+      "publishedAt": "2026-04-30T11:40:13.000Z"
     },
     {
       "url": "https://www.groundcover.com/blog/otel-normalizer-genai-part-1",
@@ -3279,6 +3338,46 @@
       "score": 6,
       "category": "AI",
       "publishedAt": "2026-04-01T00:00:00.000Z"
+    },
+    {
+      "url": "https://bidprowl.com",
+      "title": "I aggregated 28 US Government auction sites into one search",
+      "summary": "A developer built a search aggregator across US government auction sites. Practical web scraping and search indexing project with modest engineering interest.",
+      "source": "HN Front Page",
+      "tags": [
+        "web-scraping",
+        "search"
+      ],
+      "score": 5,
+      "category": "Engineering",
+      "publishedAt": "2026-04-30T12:24:53.000Z"
+    },
+    {
+      "url": "https://www.databricks.com/blog/backstage-lakebase",
+      "title": "Backstage with Lakebase",
+      "summary": "Databricks explores the convergence of operational and analytical databases through Lakebase. The post discusses architectural patterns for unifying transactional and analytical workloads in a lakehouse context.",
+      "source": "Databricks Blog",
+      "tags": [
+        "lakehouse",
+        "data-architecture",
+        "analytics"
+      ],
+      "score": 5,
+      "category": "Cloud",
+      "publishedAt": "2026-04-30T12:00:00.000Z"
+    },
+    {
+      "url": "https://github.com/mozilla/standards-positions/issues/1213",
+      "title": "Mozilla's Opposition to Chrome's Prompt API",
+      "summary": "Mozilla filed a standards position opposing Chrome's proposed Prompt API, likely citing concerns around user privacy, security, or web platform fragmentation. The GitHub issue generated significant discussion (103 comments, 275 points) but the excerpt does not detail Mozilla's specific objections or the API's technical scope.",
+      "source": "HN Front Page",
+      "tags": [
+        "web-standards",
+        "browser"
+      ],
+      "score": 5,
+      "category": "Other",
+      "publishedAt": "2026-04-30T07:43:55.000Z"
     },
     {
       "url": "https://pure-systems.org/posts/2026-04-29-functional-programmers-need-to-take-a-look-at-zig.html",
