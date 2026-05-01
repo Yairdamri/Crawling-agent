@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-01T13:12:46.663Z",
+  "generatedAt": "2026-05-01T19:07:34.862Z",
   "articles": [
     {
       "url": "https://thehackernews.com/2026/04/pytorch-lightning-compromised-in-pypi.html",
@@ -170,6 +170,21 @@
       "score": 9,
       "category": "AI",
       "publishedAt": "2026-04-23T11:00:00.000Z"
+    },
+    {
+      "url": "https://fusion.adam.new/install",
+      "title": "Show HN: AI CAD Harness",
+      "summary": "Adam is a CAD agent harness integrating with Onshape and Autodesk Fusion that reads feature trees and edits them agenically, enabling tasks like feature cleanup, renaming, and parametrization. The tool leverages FeatureScript and Python APIs and shows significant spatial reasoning improvements in recent frontier models like GPT-5.5 and Opus 4.7.",
+      "source": "HN Front Page",
+      "tags": [
+        "agents",
+        "CAD",
+        "spatial-reasoning",
+        "tool-use"
+      ],
+      "score": 8,
+      "category": "AI",
+      "publishedAt": "2026-05-01T17:43:53.000Z"
     },
     {
       "url": "https://www.docker.com/blog/a-virtual-agent-team-at-docker-how-the-coding-agent-sandboxes-team-uses-a-fleet-of-agents-to-ship-faster/",
@@ -1154,6 +1169,82 @@
       "score": 8,
       "category": "AI",
       "publishedAt": "2026-04-02T00:00:00.000Z"
+    },
+    {
+      "url": "https://arstechnica.com/gadgets/2026/05/amazon-stuck-with-months-of-repairs-after-drone-strikes-on-data-centers/",
+      "title": "AWS stops billing Middle East cloud customers as repairs to war damage drag on",
+      "summary": "AWS suspended billing for Middle East region customers following drone strikes that damaged data center infrastructure, with repairs expected to take months. Highlights cloud infrastructure resilience challenges and AWS's customer accommodation during extended outages.",
+      "source": "HN Front Page",
+      "tags": [
+        "aws",
+        "infrastructure",
+        "availability"
+      ],
+      "score": 7,
+      "category": "Cloud",
+      "publishedAt": "2026-05-01T17:28:45.000Z"
+    },
+    {
+      "url": "https://www.briefs.co/news/uber-torches-entire-2026-ai-budget-on-claude-code-in-four-months/",
+      "title": "Uber Torches 2026 AI Budget on Claude Code in Four Months",
+      "summary": "Uber exhausted its entire 2026 AI budget within four months by using Claude Code (Anthropic's code generation tool) for internal development. The article highlights the rapid cost escalation of using frontier LLMs for production engineering workflows at scale.",
+      "source": "HN Front Page",
+      "tags": [
+        "LLM",
+        "Claude",
+        "cost",
+        "tool-use"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-05-01T16:08:53.000Z"
+    },
+    {
+      "url": "https://thenewstack.io/mistral-vibe-cloud-agents/",
+      "title": "Mistral, Europe's answer to OpenAI and Anthropic, pushes its coding agents to the cloud",
+      "summary": "Mistral AI released Mistral Medium 3.5 and cloud deployment capabilities for Vibe, its coding agent, enabling background task execution and parallel tool calling. The company added a work mode to Le Chat that moves beyond chat-based interaction toward autonomous task completion.",
+      "source": "The New Stack",
+      "tags": [
+        "agents",
+        "LLM",
+        "coding",
+        "Mistral"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-05-01T14:46:14.000Z"
+    },
+    {
+      "url": "https://thehackernews.com/2026/05/cybercrime-groups-using-vishing-and-sso.html",
+      "title": "Cybercrime Groups Using Vishing and SSO Abuse in Rapid SaaS Extortion Attacks",
+      "summary": "Two cybercrime groups, Cordial Spider and Snarky Spider, are conducting rapid, high-impact extortion attacks within SaaS environments using vishing and SSO abuse while leaving minimal forensic traces. The threat actors are targeting SaaS infrastructure to enable quick data theft and extortion operations.",
+      "source": "The Hacker News",
+      "tags": [
+        "threat-intelligence",
+        "SaaS",
+        "extortion",
+        "vishing",
+        "SSO"
+      ],
+      "score": 7,
+      "category": "Security",
+      "publishedAt": "2026-05-01T14:26:00.000Z"
+    },
+    {
+      "url": "https://thehackernews.com/2026/05/china-linked-hackers-target-asian.html",
+      "title": "China-Linked Hackers Target Asian Governments, NATO State, Journalists, and Activists",
+      "summary": "Trend Micro has disclosed a China-aligned espionage campaign tracked as SHADOW-EARTH-053 targeting government, defense, and media sectors across South, East, and Southeast Asia plus a NATO member state. The campaign demonstrates persistent state-sponsored targeting of critical infrastructure and civil society.",
+      "source": "The Hacker News",
+      "tags": [
+        "threat-intelligence",
+        "APT",
+        "espionage",
+        "government",
+        "NATO"
+      ],
+      "score": 7,
+      "category": "Security",
+      "publishedAt": "2026-05-01T14:02:00.000Z"
     },
     {
       "url": "https://thenewstack.io/cursor-sdk-harness/",
@@ -2847,19 +2938,47 @@
       "publishedAt": "2026-04-02T13:00:00.000Z"
     },
     {
-      "url": "https://www.hashicorp.com/blog/aws-permission-delegation-now-generally-available-in-hcp-terraform",
-      "title": "AWS permission delegation now generally available in HCP Terraform",
-      "summary": "HCP Terraform now integrates AWS IAM temporary permission delegation (JIT model introduced at re:Invent 2025), allowing customers to grant HashiCorp short-lived, customer-approved access for automated onboarding and configuration. This replaces permanent permissions with just-in-time delegation, reducing configuration burden and accelerating first deployment.",
-      "source": "HashiCorp Blog",
+      "url": "https://aws.amazon.com/blogs/machine-learning/aws-transform-now-automates-bi-migration-to-amazon-quick-in-days/",
+      "title": "AWS Transform now automates BI migration to Amazon Quick in days",
+      "summary": "AWS Transform automates migration of legacy BI dashboards to Amazon QuickSight, reducing timelines from months to days by preserving calculated fields, layouts, and security rules while enabling serverless scale and native AI capabilities. The service integrates partner agents through AWS Marketplace to handle dashboard transformation at scale.",
+      "source": "AWS ML Blog",
       "tags": [
-        "Terraform",
-        "AWS",
-        "IAM",
-        "delegation"
+        "cloud",
+        "migration",
+        "QuickSight",
+        "serverless"
       ],
-      "score": 7,
-      "category": "DevOps",
-      "publishedAt": "2026-04-01T17:00:00.000Z"
+      "score": 6,
+      "category": "Cloud",
+      "publishedAt": "2026-05-01T18:29:06.000Z"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=nHwxV0Sd9V8",
+      "title": "Flock cameras keep telling police a man who doesn't have a warrant has a warrant",
+      "summary": "Investigation into Flock Security camera system providing false warrant information to law enforcement. Raises concerns about accuracy and reliability of automated surveillance systems used in policing.",
+      "source": "HN Front Page",
+      "tags": [
+        "security",
+        "surveillance",
+        "data-quality"
+      ],
+      "score": 6,
+      "category": "Security",
+      "publishedAt": "2026-05-01T17:25:36.000Z"
+    },
+    {
+      "url": "https://californiawaterblog.com/2026/04/26/ai-water-use-distractions-and-lessons-for-california/",
+      "title": "AI Uses Less Water Than the Public Thinks",
+      "summary": "Analysis of AI infrastructure water consumption in California, arguing public perception overestimates actual usage. Provides context for data center sustainability and operational costs of LLM inference at scale.",
+      "source": "HN Front Page",
+      "tags": [
+        "ai",
+        "infrastructure",
+        "sustainability"
+      ],
+      "score": 6,
+      "category": "AI",
+      "publishedAt": "2026-05-01T17:18:58.000Z"
     },
     {
       "url": "https://sitemogging.com",
@@ -3877,18 +3996,60 @@
       "publishedAt": "2026-04-01T23:31:24.000Z"
     },
     {
-      "url": "https://www.hashicorp.com/blog/hcp-terraform-adds-ip-allow-lists",
-      "title": "HCP Terraform adds IP allow lists",
-      "summary": "HCP Terraform now supports IP allow lists for organization and agent access, restricting authentication tokens to approved IP addresses across web UI, APIs, VCS integrations, and Terraform agents. This addresses compliance gaps by preventing token usage from arbitrary locations until expiration.",
-      "source": "HashiCorp Blog",
+      "url": "https://github.com/calebwin/gitgres",
+      "title": "Show HN: My Private GitHub on Postgres",
+      "summary": "A self-hosted Git repository implementation backed by PostgreSQL instead of traditional file-based storage. Trades off some Git compatibility for a queryable, relational backend suitable for private deployments.",
+      "source": "HN Front Page",
       "tags": [
-        "Terraform",
-        "network security",
-        "access control"
+        "git",
+        "postgres",
+        "self-hosted"
       ],
-      "score": 6,
-      "category": "DevOps",
-      "publishedAt": "2026-04-01T16:00:00.000Z"
+      "score": 5,
+      "category": "Engineering",
+      "publishedAt": "2026-05-01T17:40:15.000Z"
+    },
+    {
+      "url": "https://github.com/Exocija/ZetaLib/blob/main/The%20Gay%20Jailbreak/The%20Gay%20Jailbreak.md",
+      "title": "The Gay Jailbreak Technique",
+      "summary": "Prompt injection technique targeting LLM safety guardrails. Demonstrates a jailbreak method that exploits model behavior around sensitive topics to bypass content policies.",
+      "source": "HN Front Page",
+      "tags": [
+        "llm",
+        "prompt-injection",
+        "safety"
+      ],
+      "score": 5,
+      "category": "AI",
+      "publishedAt": "2026-05-01T16:59:35.000Z"
+    },
+    {
+      "url": "https://www.bbc.com/news/articles/c5yerr4m1yno",
+      "title": "Spotify adds 'Verified' badges to distinguish human artists from AI",
+      "summary": "Spotify is introducing verified badges to help listeners identify human artists versus AI-generated content on the platform. This addresses growing concerns about AI-generated music flooding streaming services and helps maintain artist authenticity and discoverability.",
+      "source": "HN Front Page",
+      "tags": [
+        "AI",
+        "music",
+        "content moderation"
+      ],
+      "score": 5,
+      "category": "Other",
+      "publishedAt": "2026-05-01T16:42:41.000Z"
+    },
+    {
+      "url": "https://github.com/whohas/whohas",
+      "title": "whohas – Command-line utility for cross-distro, cross-repository package search",
+      "summary": "whohas is a CLI tool that searches for packages across multiple Linux distributions and package repositories in a single query. It simplifies finding which distro carries a specific package version without checking each repository individually.",
+      "source": "HN Front Page",
+      "tags": [
+        "CLI",
+        "package management",
+        "Linux"
+      ],
+      "score": 5,
+      "category": "Engineering",
+      "publishedAt": "2026-05-01T15:01:08.000Z"
     },
     {
       "url": "https://www.pagetable.com/?p=1854",
