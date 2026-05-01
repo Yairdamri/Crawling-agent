@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-04-30T19:16:01.524Z",
+  "generatedAt": "2026-05-01T02:43:55.514Z",
   "articles": [
     {
       "url": "https://thehackernews.com/2026/04/pytorch-lightning-compromised-in-pypi.html",
@@ -170,6 +170,53 @@
       "score": 9,
       "category": "AI",
       "publishedAt": "2026-04-23T11:00:00.000Z"
+    },
+    {
+      "url": "https://labs.watchtowr.com/the-internet-is-falling-down-falling-down-falling-down-cpanel-whm-authentication-bypass-cve-2026-41940/",
+      "title": "CPanel and WHM Authentication Bypass – CVE-2026-41940",
+      "summary": "Watchtowr Labs discloses CVE-2026-41940, an authentication bypass vulnerability in cPanel and WHM. The advisory details the flaw and its impact on web hosting control panel security.",
+      "source": "HN Front Page",
+      "tags": [
+        "CVE",
+        "authentication",
+        "security",
+        "cPanel"
+      ],
+      "score": 8,
+      "category": "Security",
+      "publishedAt": "2026-04-30T22:48:51.000Z"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/reinforcement-fine-tuning-with-llm-as-a-judge/",
+      "title": "Reinforcement fine-tuning with LLM-as-a-judge",
+      "summary": "AWS ML Blog covers Reinforcement Fine-Tuning (RFT) using LLM-as-a-judge (RLAIF) to align models with automated reward signals instead of manual labeling. The post compares RLVR (verifiable reward functions via code) and RLAIF approaches, demonstrating how LLM judges can evaluate candidate responses to guide alignment on Amazon Nova models.",
+      "source": "AWS ML Blog",
+      "tags": [
+        "LLM",
+        "fine-tuning",
+        "RLHF",
+        "reward models",
+        "alignment"
+      ],
+      "score": 8,
+      "category": "AI",
+      "publishedAt": "2026-04-30T20:07:25.000Z"
+    },
+    {
+      "url": "https://www.cncf.io/blog/2026/04/30/ai-sandboxing-is-having-its-kubernetes-moment/",
+      "title": "AI sandboxing is having its Kubernetes moment",
+      "summary": "CNCF analysis of AI model security in Kubernetes environments, prompted by Anthropic's Mythos model autonomously discovering zero-day vulnerabilities across operating systems and browsers. Argues that traditional detection-based security (scanners, admission controllers) fails to contain AI-driven threats and that Kubernetes' shared-kernel architecture requires structural isolation similar to how Kubernetes handles pod scheduling.",
+      "source": "CNCF Blog",
+      "tags": [
+        "AI",
+        "security",
+        "Kubernetes",
+        "sandboxing",
+        "vulnerability"
+      ],
+      "score": 8,
+      "category": "AI",
+      "publishedAt": "2026-04-30T19:37:27.000Z"
     },
     {
       "url": "https://thenewstack.io/production-ready-ai-platforms/",
@@ -1077,6 +1124,20 @@
       "publishedAt": "2026-04-02T00:00:00.000Z"
     },
     {
+      "url": "https://kubernetes.io/blog/2026/04/30/kubernetes-v1-36-inplace-pod-level-resources-beta/",
+      "title": "Kubernetes v1.36: In-Place Vertical Scaling for Pod-Level Resources Graduates to Beta",
+      "summary": "Kubernetes v1.36 graduates In-Place Pod-Level Resources Vertical Scaling to beta, enabled by default via the InPlacePodLevelResourcesVerticalScaling feature gate. The feature allows updating aggregate Pod resource budgets (.spec.resources) for running Pods without requiring container restarts, using resizePolicy to determine whether restarts are needed per container.",
+      "source": "Kubernetes Blog",
+      "tags": [
+        "Kubernetes",
+        "resource management",
+        "vertical scaling"
+      ],
+      "score": 7,
+      "category": "DevOps",
+      "publishedAt": "2026-04-30T18:35:00.000Z"
+    },
+    {
       "url": "https://thenewstack.io/openai-aws-bedrock-integration/",
       "title": "The OpenAI-Microsoft reset, decoded: Why AWS may come out ahead",
       "summary": "OpenAI models and agentic capabilities now available on AWS Bedrock alongside Anthropic models, ending Microsoft's exclusive partnership. Provides AWS customers native access to OpenAI tools within their cloud environments rather than external APIs.",
@@ -1152,6 +1213,37 @@
       "score": 7,
       "category": "AI",
       "publishedAt": "2026-04-30T16:52:40.000Z"
+    },
+    {
+      "url": "https://thereader.mitpress.mit.edu/the-whistleblower-who-uncovered-the-nsas-big-brother-machine/",
+      "title": "How Mark Klein told the EFF about Room 641A [book excerpt]",
+      "summary": "Book excerpt on Mark Klein's NSA whistleblowing regarding Room 641A and mass surveillance infrastructure. Historical account of how the disclosure was made to the EFF.",
+      "source": "HN Front Page",
+      "tags": [
+        "surveillance",
+        "NSA",
+        "whistleblowing",
+        "history"
+      ],
+      "score": 7,
+      "category": "Other",
+      "publishedAt": "2026-04-30T16:41:00.000Z"
+    },
+    {
+      "url": "https://www.hashicorp.com/blog/spiffe-securing-the-identity-of-agentic-ai-and-non-human-actors",
+      "title": "SPIFFE: Securing the identity of agentic AI and non-human actors",
+      "summary": "SPIFFE, an open standard for workload identity, is being positioned as a framework for securing autonomous AI agents and non-human actors in production. The framework provides cryptographically verifiable identities, federated trust across organizations, and dynamic credential rotation without relying on long-lived secrets, addressing the challenge of identity verification for autonomous systems that operate independently and interact with other services.",
+      "source": "HashiCorp Blog",
+      "tags": [
+        "agents",
+        "identity",
+        "security",
+        "SPIFFE",
+        "workload-identity"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-04-30T16:00:00.000Z"
     },
     {
       "url": "https://www.docker.com/blog/from-security-blocked-to-prod-ready-clickhouse-on-docker-hardened-images/",
@@ -1315,6 +1407,22 @@
         "secrets-management",
         "DevOps",
         "authentication"
+      ],
+      "score": 7,
+      "category": "DevOps",
+      "publishedAt": "2026-04-29T19:00:00.000Z"
+    },
+    {
+      "url": "https://www.hashicorp.com/blog/secure-ssh-access-at-scale-with-hashicorp-vault-and-boundary",
+      "title": "Secure SSH access at scale with HashiCorp Vault and Boundary",
+      "summary": "HashiCorp updated its SSH access architecture guidance to use signed SSH certificates instead of the deprecated dynamic SSH keys feature in Vault 1.13+, and introduced Vault-Boundary integration for just-in-time credential injection enabling passwordless SSH access. The approach simplifies SSH key management at scale across hybrid and multi-cloud environments.",
+      "source": "HashiCorp Blog",
+      "tags": [
+        "Vault",
+        "Boundary",
+        "SSH",
+        "secrets-management",
+        "credentials"
       ],
       "score": 7,
       "category": "DevOps",
@@ -2663,6 +2771,21 @@
       "publishedAt": "2026-04-01T17:00:00.000Z"
     },
     {
+      "url": "https://www.dbos.dev/blog/benchmarking-workflow-execution-scalability-on-postgres",
+      "title": "Does Postgres Scale?",
+      "summary": "Benchmarking study on PostgreSQL's scalability for workflow execution. Evaluates whether Postgres can handle distributed workflow orchestration at scale.",
+      "source": "HN Front Page",
+      "tags": [
+        "PostgreSQL",
+        "performance",
+        "benchmarking",
+        "workflows"
+      ],
+      "score": 6,
+      "category": "Engineering",
+      "publishedAt": "2026-04-30T18:45:22.000Z"
+    },
+    {
       "url": "https://nickkossolapov.github.io/fame-boy/building-a-game-boy-emulator-in-fsharp/",
       "title": "I built a Game Boy emulator in F#",
       "summary": "Technical writeup on implementing a Game Boy emulator in F#, covering CPU emulation, memory management, and graphics rendering.",
@@ -2749,6 +2872,22 @@
       "score": 6,
       "category": "AI",
       "publishedAt": "2026-04-30T15:05:45.000Z"
+    },
+    {
+      "url": "https://www.hashicorp.com/blog/securing-the-last-mile-with-local-account-password-rotation",
+      "title": "Securing the last mile with local account password rotation",
+      "summary": "IBM Vault Enterprise 2.0 introduced a plugin for automated rotation of local OS account passwords on RHEL, Ubuntu, and other systems. This addresses the security gap of unmanaged local accounts that fall outside centralized identity providers, bringing them under centralized control, rotation, and audit standards.",
+      "source": "HashiCorp Blog",
+      "tags": [
+        "Vault",
+        "secrets-management",
+        "password-rotation",
+        "security",
+        "RHEL"
+      ],
+      "score": 6,
+      "category": "Security",
+      "publishedAt": "2026-04-30T07:09:00.000Z"
     },
     {
       "url": "https://www.maxtaylor.me/articles/i-benchmarked-caveman-against-two-words",
@@ -3616,18 +3755,18 @@
       "publishedAt": "2026-04-01T16:00:00.000Z"
     },
     {
-      "url": "https://huggingface.co/blog/introducing-gradio-server",
-      "title": "Any Custom Frontend with Gradio's Backend",
-      "summary": "Gradio introduces a backend-only server mode, allowing developers to decouple the UI layer from the inference backend and build custom frontends. This enables more flexible deployment and integration patterns for model serving.",
-      "source": "Hugging Face Blog",
+      "url": "https://simplex.chat/blog/20260430-simplex-channels-v6-5-consortium-crowdfunding-freedom-of-speech.html",
+      "title": "SimpleX Channels, SimpleX Network Consortium and Community Crowdfunding",
+      "summary": "SimpleX releases v6.5 with channels feature and announces network consortium and community crowdfunding initiative. Focus on decentralized messaging infrastructure and governance model.",
+      "source": "HN Front Page",
       "tags": [
-        "Gradio",
-        "model serving",
-        "deployment"
+        "messaging",
+        "decentralized",
+        "open-source"
       ],
-      "score": 6,
-      "category": "AI",
-      "publishedAt": "2026-04-01T00:00:00.000Z"
+      "score": 5,
+      "category": "Engineering",
+      "publishedAt": "2026-04-30T20:49:21.000Z"
     },
     {
       "url": "https://www.databricks.com/blog/unlocking-sap-business-context-databricks-semantic-metadata-delta-sharing",
@@ -3671,6 +3810,21 @@
       "score": 5,
       "category": "AI",
       "publishedAt": "2026-04-30T16:09:02.000Z"
+    },
+    {
+      "url": "https://twitter.com/theo/status/2049645973350363168",
+      "title": "Claude Code refuses requests or charges extra if your commits mention \"OpenClaw\"",
+      "summary": "Report that Anthropic's Claude Code tool appears to refuse requests or apply additional charges when commit messages reference 'OpenClaw'. Raises questions about conditional behavior in AI coding assistants.",
+      "source": "HN Front Page",
+      "tags": [
+        "Claude",
+        "AI",
+        "tool-use",
+        "behavior"
+      ],
+      "score": 5,
+      "category": "AI",
+      "publishedAt": "2026-04-30T14:36:58.000Z"
     },
     {
       "url": "https://www.databricks.com/blog/alert-fatigue-business-risk",
