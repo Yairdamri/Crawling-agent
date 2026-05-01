@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-01T08:08:06.794Z",
+  "generatedAt": "2026-05-01T13:12:46.663Z",
   "articles": [
     {
       "url": "https://thehackernews.com/2026/04/pytorch-lightning-compromised-in-pypi.html",
@@ -170,6 +170,38 @@
       "score": 9,
       "category": "AI",
       "publishedAt": "2026-04-23T11:00:00.000Z"
+    },
+    {
+      "url": "https://www.docker.com/blog/a-virtual-agent-team-at-docker-how-the-coding-agent-sandboxes-team-uses-a-fleet-of-agents-to-ship-faster/",
+      "title": "A Virtual Agent team at Docker: How the Coding Agent Sandboxes team uses a fleet of agents to ship faster",
+      "summary": "Docker's Coding Agent Sandboxes team built a fleet of seven autonomous AI agents using Claude Code skills to test, triage, and fix bugs in CI. Each agent has a defined role (build engineer, release manager, etc.) and operates in isolated microVMs with full autonomy, demonstrating multi-agent orchestration for software delivery.",
+      "source": "Docker Blog",
+      "tags": [
+        "agents",
+        "multi-agent",
+        "CI/CD",
+        "Claude",
+        "automation"
+      ],
+      "score": 8,
+      "category": "AI",
+      "publishedAt": "2026-05-01T13:00:00.000Z"
+    },
+    {
+      "url": "https://thehackernews.com/2026/05/poisoned-ruby-gems-and-go-modules.html",
+      "title": "Poisoned Ruby Gems and Go Modules Exploit CI Pipelines for Credential Theft",
+      "summary": "A supply chain attack campaign used sleeper packages in Ruby gems and Go modules to deliver malicious payloads targeting CI pipelines. The attack enabled credential theft, GitHub Actions tampering, and SSH persistence through repositories attributed to the GitHub account 'BufferZoneCorp'.",
+      "source": "The Hacker News",
+      "tags": [
+        "supply-chain",
+        "security",
+        "Ruby",
+        "Go",
+        "CI/CD"
+      ],
+      "score": 8,
+      "category": "Security",
+      "publishedAt": "2026-05-01T09:43:00.000Z"
     },
     {
       "url": "https://labs.watchtowr.com/the-internet-is-falling-down-falling-down-falling-down-cpanel-whm-authentication-bypass-cve-2026-41940/",
@@ -1122,6 +1154,65 @@
       "score": 8,
       "category": "AI",
       "publishedAt": "2026-04-02T00:00:00.000Z"
+    },
+    {
+      "url": "https://thenewstack.io/cursor-sdk-harness/",
+      "title": "Cursor's $60 billion bet is on the harness, not the model",
+      "summary": "Cursor shipped the Cursor SDK and published work on agent orchestration, positioning the harness around AI models as the differentiator rather than the model itself. The company is training proprietary Composer models on xAI's Colossus supercomputer via a SpaceX partnership, betting that as models commoditize, the orchestration layer wins the next decade.",
+      "source": "The New Stack",
+      "tags": [
+        "agents",
+        "orchestration",
+        "IDE",
+        "LLM"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-05-01T12:00:00.000Z"
+    },
+    {
+      "url": "https://github.com/intel/auto-round",
+      "title": "Advanced Quantization Algorithm for LLMs",
+      "summary": "Intel's auto-round is a quantization algorithm for LLMs that reduces model size and inference latency. The GitHub repository provides implementation details for post-training quantization of large language models.",
+      "source": "HN Front Page",
+      "tags": [
+        "LLM",
+        "quantization",
+        "inference",
+        "model-compression"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-05-01T09:10:02.000Z"
+    },
+    {
+      "url": "https://docs.x.ai/developers/models/grok-4.3",
+      "title": "Grok 4.3",
+      "summary": "x.ai released Grok 4.3, an updated version of their LLM available via API. The release includes model improvements and is documented in the x.ai developer portal.",
+      "source": "HN Front Page",
+      "tags": [
+        "LLM",
+        "grok",
+        "API"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-05-01T08:29:31.000Z"
+    },
+    {
+      "url": "https://lovable.dev/blog/hunting-networking-bugs-in-kubernetes",
+      "title": "Our agent found a bug with WireGuard in Google Kubernetes Engine",
+      "summary": "An AI agent discovered a networking bug involving WireGuard in GKE, demonstrating autonomous debugging capabilities in Kubernetes environments. The post details how the agent identified and characterized the issue.",
+      "source": "HN Front Page",
+      "tags": [
+        "agents",
+        "Kubernetes",
+        "debugging",
+        "GKE"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-05-01T08:14:07.000Z"
     },
     {
       "url": "https://kubernetes.io/blog/2026/04/30/kubernetes-v1-36-inplace-pod-level-resources-beta/",
@@ -2771,6 +2862,51 @@
       "publishedAt": "2026-04-01T17:00:00.000Z"
     },
     {
+      "url": "https://sitemogging.com",
+      "title": "Show HN: Site Mogging",
+      "summary": "A demo project combining Cloudflare Workers AI and Browser Run to compare websites using Google's Gemma 4b vision model. Shows practical application of edge-deployed vision models for automated web analysis.",
+      "source": "HN Front Page",
+      "tags": [
+        "vision",
+        "Cloudflare",
+        "Workers",
+        "Gemma"
+      ],
+      "score": 6,
+      "category": "AI",
+      "publishedAt": "2026-05-01T11:32:48.000Z"
+    },
+    {
+      "url": "https://thehackernews.com/2026/05/two-cybersecurity-professionals-get-4.html",
+      "title": "Two Cybersecurity Professionals Get 4-Year Sentences in BlackCat Ransomware Attacks",
+      "summary": "The U.S. Department of Justice sentenced Ryan Goldberg and Kevin Martin to four years in prison for deploying BlackCat ransomware against multiple U.S. victims between April and December 2023. The case highlights criminal prosecution of insiders facilitating ransomware operations.",
+      "source": "The Hacker News",
+      "tags": [
+        "ransomware",
+        "BlackCat",
+        "threat-intelligence",
+        "criminal-prosecution"
+      ],
+      "score": 6,
+      "category": "Security",
+      "publishedAt": "2026-05-01T09:56:00.000Z"
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=47972888",
+      "title": "Show HN: Perfect Bluetooth MIDI for Windows",
+      "summary": "Open-source utility bridging Bluetooth LE MIDI keyboards into Windows MIDI Services, solving three stacked bugs: WinRT API exposure, loopback endpoint routing, and bidirectional note transmission. Uses Windows MIDI Services loopback endpoints to provide DAW compatibility.",
+      "source": "HN Front Page",
+      "tags": [
+        "Windows",
+        "MIDI",
+        "Bluetooth",
+        "audio"
+      ],
+      "score": 6,
+      "category": "Engineering",
+      "publishedAt": "2026-05-01T09:52:15.000Z"
+    },
+    {
       "url": "https://www.dbos.dev/blog/benchmarking-workflow-execution-scalability-on-postgres",
       "title": "Does Postgres Scale?",
       "summary": "Benchmarking study on PostgreSQL's scalability for workflow execution. Evaluates whether Postgres can handle distributed workflow orchestration at scale.",
@@ -3753,6 +3889,51 @@
       "score": 6,
       "category": "DevOps",
       "publishedAt": "2026-04-01T16:00:00.000Z"
+    },
+    {
+      "url": "https://www.pagetable.com/?p=1854",
+      "title": "Running Adobe's 1991 PostScript Interpreter in the Browser",
+      "summary": "A technical deep-dive on porting a 35-year-old PostScript interpreter to run in the browser, likely using WebAssembly or JavaScript transpilation. Demonstrates feasibility of running legacy binary code in modern web environments.",
+      "source": "HN Front Page",
+      "tags": [
+        "WebAssembly",
+        "PostScript",
+        "browser",
+        "legacy"
+      ],
+      "score": 5,
+      "category": "Engineering",
+      "publishedAt": "2026-05-01T11:58:11.000Z"
+    },
+    {
+      "url": "https://techcrunch.com/2026/04/30/after-dissing-anthropic-for-limiting-mythos-openai-restricts-access-to-cyber-too/",
+      "title": "After dissing Anthropic for limiting Mythos, OpenAI restricts access to Cyber",
+      "summary": "OpenAI is restricting access to its Cyber model after previously criticizing Anthropic for limiting access to Mythos. Both companies are now gating advanced capabilities, signaling a shift toward restricted deployment of frontier models.",
+      "source": "HN Front Page",
+      "tags": [
+        "LLM",
+        "policy",
+        "OpenAI",
+        "Anthropic"
+      ],
+      "score": 5,
+      "category": "AI",
+      "publishedAt": "2026-05-01T10:28:12.000Z"
+    },
+    {
+      "url": "https://btxx.org/posts/beginners-guide-sourcehut/",
+      "title": "A beginner's guide to Sourcehut (2025)",
+      "summary": "Introductory guide to Sourcehut, a Git-centric forge and CI/CD platform emphasizing simplicity and email-based workflows. Covers basic setup and usage for developers new to the platform.",
+      "source": "HN Front Page",
+      "tags": [
+        "Sourcehut",
+        "Git",
+        "CI/CD",
+        "DevOps"
+      ],
+      "score": 5,
+      "category": "DevOps",
+      "publishedAt": "2026-05-01T10:23:52.000Z"
     },
     {
       "url": "https://github.com/kernalix7/winpodx",
