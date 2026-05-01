@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-01T02:43:55.514Z",
+  "generatedAt": "2026-05-01T08:08:06.794Z",
   "articles": [
     {
       "url": "https://thehackernews.com/2026/04/pytorch-lightning-compromised-in-pypi.html",
@@ -3755,6 +3755,20 @@
       "publishedAt": "2026-04-01T16:00:00.000Z"
     },
     {
+      "url": "https://github.com/kernalix7/winpodx",
+      "title": "Show HN: Winpodx – run Windows apps on Linux as native windows",
+      "summary": "Winpodx is a tool enabling Windows applications to run on Linux as native windows, likely leveraging container or virtualization techniques. The project demonstrates cross-platform application compatibility but lacks sufficient detail on architecture or implementation approach from the excerpt alone.",
+      "source": "HN Front Page",
+      "tags": [
+        "containers",
+        "virtualization",
+        "cross-platform"
+      ],
+      "score": 5,
+      "category": "Engineering",
+      "publishedAt": "2026-05-01T02:23:43.000Z"
+    },
+    {
       "url": "https://simplex.chat/blog/20260430-simplex-channels-v6-5-consortium-crowdfunding-freedom-of-speech.html",
       "title": "SimpleX Channels, SimpleX Network Consortium and Community Crowdfunding",
       "summary": "SimpleX releases v6.5 with channels feature and announces network consortium and community crowdfunding initiative. Focus on decentralized messaging infrastructure and governance model.",
@@ -4551,20 +4565,6 @@
       "score": 5,
       "category": "AI",
       "publishedAt": "2026-04-15T17:00:00.000Z"
-    },
-    {
-      "url": "https://huggingface.co/blog/tiiuae/falcon-perception",
-      "title": "Falcon Perception",
-      "summary": "TIIUAE releases Falcon Perception, a multimodal model extending the Falcon family with vision capabilities. Details on architecture, performance benchmarks, and deployment guidance are not available from the provided excerpt.",
-      "source": "Hugging Face Blog",
-      "tags": [
-        "LLM",
-        "multimodal",
-        "vision"
-      ],
-      "score": 5,
-      "category": "AI",
-      "publishedAt": "2026-04-01T07:13:20.000Z"
     }
   ]
 }
