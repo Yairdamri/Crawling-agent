@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-02T02:26:43.657Z",
+  "generatedAt": "2026-05-02T07:28:09.844Z",
   "articles": [
     {
       "url": "https://thehackernews.com/2026/04/pytorch-lightning-compromised-in-pypi.html",
@@ -1168,6 +1168,50 @@
       "score": 8,
       "category": "AI",
       "publishedAt": "2026-04-02T16:00:49.000Z"
+    },
+    {
+      "url": "https://thehackernews.com/2026/05/trellix-confirms-source-code-breach.html",
+      "title": "Trellix Confirms Source Code Breach With Unauthorized Repository Access",
+      "summary": "Trellix disclosed unauthorized access to a portion of its source code repository. The company engaged forensic experts and notified law enforcement, but has not yet disclosed the scope or impact of the compromise.",
+      "source": "The Hacker News",
+      "tags": [
+        "breach",
+        "source-code",
+        "supply-chain"
+      ],
+      "score": 7,
+      "category": "Security",
+      "publishedAt": "2026-05-02T06:41:00.000Z"
+    },
+    {
+      "url": "https://github.com/rancher/k3k",
+      "title": "K3k: Kubernetes in Kubernetes",
+      "summary": "K3k enables running Kubernetes clusters nested within Kubernetes, using k3s as the inner distribution. This is useful for multi-tenancy, testing, and CI/CD scenarios where isolated Kubernetes environments are needed without full VM overhead.",
+      "source": "HN Front Page",
+      "tags": [
+        "Kubernetes",
+        "k3s",
+        "multi-tenancy",
+        "nested-clusters"
+      ],
+      "score": 7,
+      "category": "DevOps",
+      "publishedAt": "2026-05-02T04:00:42.000Z"
+    },
+    {
+      "url": "https://github.com/lahfir/agent-desktop",
+      "title": "I built the Playwright for desktop apps. 80% token savings",
+      "summary": "Agent-desktop is a tool for automating desktop application interactions using LLMs, positioning itself as a Playwright equivalent for GUI automation. The project claims 80% token reduction compared to naive approaches, likely through optimized prompting or state representation for desktop agents.",
+      "source": "HN Front Page",
+      "tags": [
+        "agents",
+        "LLM",
+        "automation",
+        "tool-use"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-05-02T02:18:24.000Z"
     },
     {
       "url": "https://thenewstack.io/does-ai-demand-kubernetes/",
