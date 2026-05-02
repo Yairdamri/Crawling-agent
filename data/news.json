@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-01T19:07:34.862Z",
+  "generatedAt": "2026-05-02T02:26:43.657Z",
   "articles": [
     {
       "url": "https://thehackernews.com/2026/04/pytorch-lightning-compromised-in-pypi.html",
@@ -170,6 +170,21 @@
       "score": 9,
       "category": "AI",
       "publishedAt": "2026-04-23T11:00:00.000Z"
+    },
+    {
+      "url": "https://thenewstack.io/incredibuild-ai-agents-sandbox-coding/",
+      "title": "AI agents are running wild on developer machines. Incredibuild has a fix.",
+      "summary": "Incredibuild announced Islo, a sandbox platform that provides each AI coding agent with a dedicated, persistent cloud environment with scoped credentials and explicit governance policies. The solution addresses the current limitation where agents run on developer laptops and die when the lid closes, enabling continuous agent execution without security and governance headaches.",
+      "source": "The New Stack",
+      "tags": [
+        "agents",
+        "tool-use",
+        "infrastructure",
+        "security"
+      ],
+      "score": 8,
+      "category": "AI",
+      "publishedAt": "2026-05-01T20:21:31.000Z"
     },
     {
       "url": "https://fusion.adam.new/install",
@@ -1155,20 +1170,62 @@
       "publishedAt": "2026-04-02T16:00:49.000Z"
     },
     {
-      "url": "https://huggingface.co/blog/gemma4",
-      "title": "Welcome Gemma 4: Frontier multimodal intelligence on device",
-      "summary": "Google releases Gemma 4, a multimodal foundation model optimized for on-device deployment with improved reasoning and vision capabilities. The model targets consumer hardware while maintaining competitive performance on multimodal benchmarks.",
-      "source": "Hugging Face Blog",
+      "url": "https://thenewstack.io/does-ai-demand-kubernetes/",
+      "title": "Fresh data has us asking, does AI demand Kubernetes?",
+      "summary": "CNCF and SlashData research shows two-thirds of organizations running generative AI models use Kubernetes for inference, with 82% production Kubernetes adoption overall. The analysis argues that engineering best practices and internal developer platforms are the real bottleneck, not code generation, and that AI-generated code is exacerbating DevOps and reliability challenges.",
+      "source": "The New Stack",
       "tags": [
-        "Gemma",
-        "multimodal",
-        "LLM",
-        "on-device",
-        "foundation-model"
+        "Kubernetes",
+        "inference",
+        "DevOps",
+        "platform-engineering"
       ],
-      "score": 8,
+      "score": 7,
       "category": "AI",
-      "publishedAt": "2026-04-02T00:00:00.000Z"
+      "publishedAt": "2026-05-01T20:18:11.000Z"
+    },
+    {
+      "url": "https://github.com/microsoft/lib0xc",
+      "title": "Lib0xc: A set of C standard library-adjacent APIs for safer systems programming",
+      "summary": "Microsoft released lib0xc, a C library providing safer standard library-adjacent APIs for systems programming. The project aims to reduce memory safety issues in C code through improved abstractions.",
+      "source": "HN Front Page",
+      "tags": [
+        "C",
+        "memory-safety",
+        "systems-programming"
+      ],
+      "score": 7,
+      "category": "Engineering",
+      "publishedAt": "2026-05-01T19:10:56.000Z"
+    },
+    {
+      "url": "https://thenewstack.io/ibm-bob-agentic-development/",
+      "title": "IBM Bob hits 80,000 developers with 45% productivity gains",
+      "summary": "IBM released Bob, an agentic development platform that has scaled from 100 to 80,000 internal users since June 2025, with reported 45% average productivity gains and up to 70% time savings on specific tasks like code generation and refactoring. The platform emphasizes governance, auditability, and enterprise compliance (FedRAMP, COBOL maintenance, Java modernization) over raw code-generation speed.",
+      "source": "The New Stack",
+      "tags": [
+        "agents",
+        "code-generation",
+        "governance",
+        "enterprise"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-05-01T19:06:02.000Z"
+    },
+    {
+      "url": "https://thehackernews.com/2026/05/30000-facebook-accounts-hacked-via.html",
+      "title": "30,000 Facebook Accounts Hacked via Google AppSheet Phishing Campaign",
+      "summary": "A Vietnamese-linked threat group dubbed AccountDumpling exploited Google AppSheet as a phishing relay to compromise approximately 30,000 Facebook accounts, then resold them through an illicit storefront. The campaign demonstrates abuse of legitimate cloud services for credential harvesting at scale.",
+      "source": "The Hacker News",
+      "tags": [
+        "phishing",
+        "breach",
+        "threat-intelligence"
+      ],
+      "score": 7,
+      "category": "Security",
+      "publishedAt": "2026-05-01T18:09:00.000Z"
     },
     {
       "url": "https://arstechnica.com/gadgets/2026/05/amazon-stuck-with-months-of-repairs-after-drone-strikes-on-data-centers/",
@@ -2938,6 +2995,20 @@
       "publishedAt": "2026-04-02T13:00:00.000Z"
     },
     {
+      "url": "https://metin.nextc.org/posts/Credit_Cards_Are_Vulnerable_To_Brute_Force_Kind_Attacks.html",
+      "title": "Credit cards are vulnerable to brute force kind attacks",
+      "summary": "Research demonstrates that credit card payment systems remain susceptible to brute-force attacks despite existing security measures. The article explores the attack vectors and implications for payment infrastructure security.",
+      "source": "HN Front Page",
+      "tags": [
+        "security",
+        "CVE",
+        "payment-systems"
+      ],
+      "score": 6,
+      "category": "Security",
+      "publishedAt": "2026-05-01T20:26:24.000Z"
+    },
+    {
       "url": "https://aws.amazon.com/blogs/machine-learning/aws-transform-now-automates-bi-migration-to-amazon-quick-in-days/",
       "title": "AWS Transform now automates BI migration to Amazon Quick in days",
       "summary": "AWS Transform automates migration of legacy BI dashboards to Amazon QuickSight, reducing timelines from months to days by preserving calculated fields, layouts, and security rules while enabling serverless scale and native AI capabilities. The service integrates partner agents through AWS Marketplace to handle dashboard transformation at scale.",
@@ -3981,19 +4052,17 @@
       "publishedAt": "2026-04-08T18:23:51.000Z"
     },
     {
-      "url": "https://aws.amazon.com/blogs/aws/announcing-managed-daemon-support-for-amazon-ecs-managed-instances/",
-      "title": "Announcing managed daemon support for Amazon ECS Managed Instances",
-      "summary": "Amazon ECS Managed Instances now support decoupled lifecycle management for operational daemons like monitoring, logging, and tracing agents. Platform engineers can independently deploy and update these tools across infrastructure without coordinating with application teams or redeploying task definitions, ensuring consistent tooling across all instances.",
-      "source": "AWS News",
+      "url": "https://mirandaheath.website/static/oss_burnout_report_mh_25.pdf",
+      "title": "A Report on Burnout in Open Source Software Communities (2025) [pdf]",
+      "summary": "A research report examining burnout patterns and contributing factors within open source software communities, based on 2025 data.",
+      "source": "HN Front Page",
       "tags": [
-        "ECS",
-        "containers",
-        "observability",
-        "platform-engineering"
+        "open-source",
+        "community"
       ],
-      "score": 6,
-      "category": "DevOps",
-      "publishedAt": "2026-04-01T23:31:24.000Z"
+      "score": 5,
+      "category": "Other",
+      "publishedAt": "2026-05-01T23:24:10.000Z"
     },
     {
       "url": "https://github.com/calebwin/gitgres",
