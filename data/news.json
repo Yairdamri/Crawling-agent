@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-02T13:03:10.342Z",
+  "generatedAt": "2026-05-02T18:54:32.143Z",
   "articles": [
     {
       "url": "https://thehackernews.com/2026/04/pytorch-lightning-compromised-in-pypi.html",
@@ -170,6 +170,36 @@
       "score": 9,
       "category": "AI",
       "publishedAt": "2026-04-23T11:00:00.000Z"
+    },
+    {
+      "url": "https://arxiv.org/abs/2509.00462",
+      "title": "AI Self-preferencing in Algorithmic Hiring: Empirical Evidence and Insights",
+      "summary": "Research paper examining how AI systems exhibit self-preferencing bias in hiring algorithms, with empirical evidence of the phenomenon. Addresses a critical failure mode in deployed AI systems where models favor outcomes that benefit themselves over fair candidate evaluation.",
+      "source": "HN Front Page",
+      "tags": [
+        "AI safety",
+        "bias",
+        "hiring",
+        "evals"
+      ],
+      "score": 8,
+      "category": "AI",
+      "publishedAt": "2026-05-02T15:28:13.000Z"
+    },
+    {
+      "url": "https://arxiv.org/abs/2406.11717",
+      "title": "Refusal in Language Models Is Mediated by a Single Direction",
+      "summary": "Research paper demonstrating that LLM refusal behavior is controlled by a single direction in the model's representation space, enabling targeted manipulation of safety mechanisms. Significant finding for understanding and potentially circumventing alignment techniques in language models.",
+      "source": "HN Front Page",
+      "tags": [
+        "LLM",
+        "AI safety",
+        "interpretability",
+        "alignment"
+      ],
+      "score": 8,
+      "category": "AI",
+      "publishedAt": "2026-05-02T13:15:23.000Z"
     },
     {
       "url": "https://snewpapers.com/",
@@ -1201,19 +1231,20 @@
       "publishedAt": "2026-04-06T16:51:00.000Z"
     },
     {
-      "url": "https://deepmind.google/blog/gemma-4-byte-for-byte-the-most-capable-open-models/",
-      "title": "Gemma 4: Byte for byte, the most capable open models",
-      "summary": "Gemma 4 delivers improved reasoning and agentic workflow capabilities as DeepMind's most capable open-source model to date. The release emphasizes efficiency and performance for advanced reasoning tasks.",
-      "source": "DeepMind",
+      "url": "https://thenewstack.io/opensearch-ai-data-layer/",
+      "title": "Inside OpenSearch's bid to become the default AI data layer",
+      "summary": "OpenSearch 3.5 and 3.6 add vector search capabilities for semantic retrieval and agent memory workloads. OpenSearch 3.6 introduces Better Binary Quantization (BBQ) from Lucene, compressing high-dimensional vectors into binary representations with 32x memory reduction and 0.95+ recall on production datasets versus 0.30 for prior Faiss binary quantization.",
+      "source": "The New Stack",
       "tags": [
-        "LLM",
-        "open-source",
+        "RAG",
+        "vector search",
+        "embeddings",
         "agents",
-        "reasoning"
+        "OpenSearch"
       ],
-      "score": 8,
+      "score": 7,
       "category": "AI",
-      "publishedAt": "2026-04-02T16:00:49.000Z"
+      "publishedAt": "2026-05-02T16:00:00.000Z"
     },
     {
       "url": "https://thenewstack.io/ibm-bob-agentic-coding/",
@@ -3088,36 +3119,6 @@
       "publishedAt": "2026-04-03T08:00:00.000Z"
     },
     {
-      "url": "https://www.docker.com/blog/defending-your-software-supply-chain-what-every-engineering-team-should-do-now/",
-      "title": "Defending Your Software Supply Chain: What Every Engineering Team Should Do Now",
-      "summary": "Docker outlines the escalating supply-chain attack ecosystem, citing recent compromises of axios (83M weekly downloads), Trivy, Checkmarx KICS, and 141+ npm packages via credential theft and self-propagating worms. The article emphasizes that implicit trust in package ecosystems is the core failure point enabling ransomware monetization pipelines.",
-      "source": "Docker Blog",
-      "tags": [
-        "supply chain security",
-        "npm",
-        "malware",
-        "credential theft"
-      ],
-      "score": 7,
-      "category": "Security",
-      "publishedAt": "2026-04-02T18:14:40.000Z"
-    },
-    {
-      "url": "https://www.docker.com/blog/gemma4-dockerhub/",
-      "title": "Gemma 4 is Here: Now Available on Docker Hub",
-      "summary": "Google's Gemma 4 LLM is now available on Docker Hub as OCI artifacts, packaged in three architectures scaling from edge to high-performance servers. Models become versioned, shareable, and deployable directly into CI/CD pipelines; Docker Model Runner support is coming to enable discovery, management, and deployment from Docker Desktop.",
-      "source": "Docker Blog",
-      "tags": [
-        "LLM",
-        "Gemma",
-        "OCI",
-        "model distribution"
-      ],
-      "score": 7,
-      "category": "AI",
-      "publishedAt": "2026-04-02T16:16:56.000Z"
-    },
-    {
       "url": "https://iesna.eu/?wasm=skyglow_demo",
       "title": "Show HN: Browser-based light pollution simulator using real photometric data",
       "summary": "A browser-based photometric design tool written in Rust and deployed to WASM via Bevy, parsing standard luminaire files (LDT/EULUMDAT, IES LM-63) and rendering real urban scenes with physically-driven streetlight behavior. The Skyglow Analysis demo shows live sky-glow grading (A-F scale per EN 13201/ANSI IES RP-8) as you adjust fixture uplight percentage, with all computation running client-side.",
@@ -4188,6 +4189,20 @@
       "score": 6,
       "category": "DevOps",
       "publishedAt": "2026-04-08T18:23:51.000Z"
+    },
+    {
+      "url": "https://flueframework.com/",
+      "title": "Flue is a TypeScript framework for building the next generation of agents",
+      "summary": "Flue is a TypeScript framework for agent development. Provides tooling for building agentic applications in TypeScript.",
+      "source": "HN Front Page",
+      "tags": [
+        "agents",
+        "TypeScript",
+        "framework"
+      ],
+      "score": 5,
+      "category": "AI",
+      "publishedAt": "2026-05-02T17:32:07.000Z"
     },
     {
       "url": "https://piruet.app",
