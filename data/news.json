@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-02T07:28:09.844Z",
+  "generatedAt": "2026-05-02T13:03:10.342Z",
   "articles": [
     {
       "url": "https://thehackernews.com/2026/04/pytorch-lightning-compromised-in-pypi.html",
@@ -172,6 +172,22 @@
       "publishedAt": "2026-04-23T11:00:00.000Z"
     },
     {
+      "url": "https://snewpapers.com/",
+      "title": "Show HN: Large Scale Article Extract of Newspapers 1730s-1960s",
+      "summary": "SNEWPAPERS extracts full-text content from 600k+ newspaper pages (5TB) spanning 1730s-1960s using a multi-model pipeline (layout detection, OCR, LLM, vLLM) to handle variable layouts and scan quality, then indexes results in OpenSearch/Postgres with semantic search and agentic query assistance. The builder spent 3,000 hours addressing OCR accuracy and layout segmentation challenges across the Chronicling America collection.",
+      "source": "HN Front Page",
+      "tags": [
+        "LLM",
+        "agents",
+        "OCR",
+        "semantic-search",
+        "AWS"
+      ],
+      "score": 8,
+      "category": "AI",
+      "publishedAt": "2026-05-02T08:42:45.000Z"
+    },
+    {
       "url": "https://thenewstack.io/incredibuild-ai-agents-sandbox-coding/",
       "title": "AI agents are running wild on developer machines. Incredibuild has a fix.",
       "summary": "Incredibuild announced Islo, a sandbox platform that provides each AI coding agent with a dedicated, persistent cloud environment with scoped credentials and explicit governance policies. The solution addresses the current limitation where agents run on developer laptops and die when the lid closes, enabling continuous agent execution without security and governance headaches.",
@@ -187,6 +203,22 @@
       "publishedAt": "2026-05-01T20:21:31.000Z"
     },
     {
+      "url": "https://kubernetes.io/blog/2026/05/01/kubernetes-v1-36-feature-pod-level-resource-managers-alpha/",
+      "title": "Kubernetes v1.36: Pod-Level Resource Managers (Alpha)",
+      "summary": "Kubernetes v1.36 introduces pod-level resource managers as an alpha feature, extending kubelet's Topology, CPU, and Memory Managers from per-container to pod-centric allocation via .spec.resources. This enables performance-critical workloads like ML training and low-latency databases to assign exclusive NUMA-aligned resources to primary containers while allowing lightweight sidecars to share resources, eliminating the previous trade-off between QoS guarantees and resource efficiency.",
+      "source": "Kubernetes Blog",
+      "tags": [
+        "Kubernetes",
+        "resource-management",
+        "NUMA",
+        "QoS",
+        "performance"
+      ],
+      "score": 8,
+      "category": "DevOps",
+      "publishedAt": "2026-05-01T18:35:00.000Z"
+    },
+    {
       "url": "https://fusion.adam.new/install",
       "title": "Show HN: AI CAD Harness",
       "summary": "Adam is a CAD agent harness integrating with Onshape and Autodesk Fusion that reads feature trees and edits them agenically, enabling tasks like feature cleanup, renaming, and parametrization. The tool leverages FeatureScript and Python APIs and shows significant spatial reasoning improvements in recent frontier models like GPT-5.5 and Opus 4.7.",
@@ -200,6 +232,20 @@
       "score": 8,
       "category": "AI",
       "publishedAt": "2026-05-01T17:43:53.000Z"
+    },
+    {
+      "url": "https://simonwillison.net/2026/Apr/24/deepseek-v4/",
+      "title": "DeepSeek V4–almost on the frontier, a fraction of the price",
+      "summary": "Simon Willison analyzes DeepSeek V4, a new frontier model that approaches state-of-the-art performance on standard benchmarks while maintaining significantly lower inference costs than comparable closed-source alternatives. The model demonstrates competitive capability-to-cost tradeoffs that challenge the pricing assumptions of larger labs.",
+      "source": "HN Front Page",
+      "tags": [
+        "LLM",
+        "frontier models",
+        "inference cost"
+      ],
+      "score": 8,
+      "category": "AI",
+      "publishedAt": "2026-05-01T16:52:43.000Z"
     },
     {
       "url": "https://www.docker.com/blog/a-virtual-agent-team-at-docker-how-the-coding-agent-sandboxes-team-uses-a-fleet-of-agents-to-ship-faster/",
@@ -1168,6 +1214,53 @@
       "score": 8,
       "category": "AI",
       "publishedAt": "2026-04-02T16:00:49.000Z"
+    },
+    {
+      "url": "https://thenewstack.io/ibm-bob-agentic-coding/",
+      "title": "Like taking your Ferrari to buy milk: IBM's Neel Sundaresan on the case for Bob",
+      "summary": "IBM Bob, an agentic coding assistant already deployed to 80,000 internal users, represents the evolution of developer productivity tooling from API recommender systems to LLM-based agents. Neel Sundaresan, founding engineer of GitHub Copilot, discusses how Bob addresses friction points in developer workflows by automating multi-step coding tasks beyond simple completions.",
+      "source": "The New Stack",
+      "tags": [
+        "agents",
+        "coding",
+        "LLM",
+        "developer-tools",
+        "productivity"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-05-02T12:25:35.000Z"
+    },
+    {
+      "url": "https://mljar.com/",
+      "title": "Show HN: Mljar Studio – local AI data analyst that saves analysis as notebooks",
+      "summary": "MLJAR Studio is a desktop application that enables natural-language data analysis by generating and executing Python code locally, preserving the full conversation as reproducible Jupyter notebooks. It integrates AutoML for tabular data, supports multiple data sources (CSV, Excel, PostgreSQL, Snowflake, etc.), and offers local LLM execution via Ollama or cloud LLM integration.",
+      "source": "HN Front Page",
+      "tags": [
+        "LLM",
+        "AutoML",
+        "data-analysis",
+        "notebooks",
+        "code-generation"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-05-02T10:21:31.000Z"
+    },
+    {
+      "url": "https://copilot.simplepdf.com/?share=a7d00ad073c75a75d493228e6ff7b11eb3f2d945b6175913e87898ec96ca8076&form=w9&lang=en",
+      "title": "Show HN: Filling PDF forms with AI using client-side tool calling",
+      "summary": "SimplePDF Copilot uses client-side tool calling to let an LLM interact with a PDF editor: filling fields, adding fields (via CommonForms detection), deleting pages, and focusing on specific regions. The PDF never leaves the browser; parsing and rendering run client-side, and you can point the LLM at DeepSeek V4 Flash (default demo proxy), any cloud provider, or a local model like LM Studio.",
+      "source": "HN Front Page",
+      "tags": [
+        "LLM",
+        "tool-use",
+        "agents",
+        "privacy"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-05-02T08:54:27.000Z"
     },
     {
       "url": "https://thehackernews.com/2026/05/trellix-confirms-source-code-breach.html",
@@ -3025,18 +3118,19 @@
       "publishedAt": "2026-04-02T16:16:56.000Z"
     },
     {
-      "url": "https://www.docker.com/blog/docker-offload-now-generally-available-the-full-power-of-docker-for-every-developer-everywhere/",
-      "title": "Docker Offload now Generally Available: The Full Power of Docker, for Every Developer, Everywhere.",
-      "summary": "Docker Offload, a managed cloud service that runs the container engine in Docker's cloud, is now generally available. Developers retain familiar CLI and Docker Desktop UI while the engine moves to the cloud, enabling Docker Desktop to work in restricted environments like VDI and managed desktops that previously blocked it.",
-      "source": "Docker Blog",
+      "url": "https://iesna.eu/?wasm=skyglow_demo",
+      "title": "Show HN: Browser-based light pollution simulator using real photometric data",
+      "summary": "A browser-based photometric design tool written in Rust and deployed to WASM via Bevy, parsing standard luminaire files (LDT/EULUMDAT, IES LM-63) and rendering real urban scenes with physically-driven streetlight behavior. The Skyglow Analysis demo shows live sky-glow grading (A-F scale per EN 13201/ANSI IES RP-8) as you adjust fixture uplight percentage, with all computation running client-side.",
+      "source": "HN Front Page",
       "tags": [
-        "Docker Desktop",
-        "cloud",
-        "remote development"
+        "Rust",
+        "WASM",
+        "Bevy",
+        "graphics"
       ],
-      "score": 7,
-      "category": "DevOps",
-      "publishedAt": "2026-04-02T13:00:00.000Z"
+      "score": 6,
+      "category": "Engineering",
+      "publishedAt": "2026-05-02T09:08:18.000Z"
     },
     {
       "url": "https://metin.nextc.org/posts/Credit_Cards_Are_Vulnerable_To_Brute_Force_Kind_Attacks.html",
@@ -4094,6 +4188,34 @@
       "score": 6,
       "category": "DevOps",
       "publishedAt": "2026-04-08T18:23:51.000Z"
+    },
+    {
+      "url": "https://piruet.app",
+      "title": "Show HN: Piruetas – A self-hosted diary app I built for my girlfriend",
+      "summary": "Piruetas is a self-hosted diary application featuring day-per-page rich text editing, drag-and-drop image uploads, auto-save, and public share links. Deployable via Docker Compose for single-user or multi-user setups with a clean mobile UI.",
+      "source": "HN Front Page",
+      "tags": [
+        "self-hosted",
+        "docker",
+        "web-app"
+      ],
+      "score": 5,
+      "category": "Engineering",
+      "publishedAt": "2026-05-02T10:42:55.000Z"
+    },
+    {
+      "url": "https://eclecticlight.co/2026/05/02/how-fast-is-a-macos-vm-and-how-small-could-it-be/",
+      "title": "How fast is a macOS VM, and how small could it be?",
+      "summary": "Technical analysis of macOS virtual machine performance characteristics and minimal resource requirements.",
+      "source": "HN Front Page",
+      "tags": [
+        "virtualization",
+        "macOS",
+        "performance"
+      ],
+      "score": 5,
+      "category": "Engineering",
+      "publishedAt": "2026-05-02T09:30:49.000Z"
     },
     {
       "url": "https://mirandaheath.website/static/oss_burnout_report_mh_25.pdf",
