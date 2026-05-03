@@ -9,7 +9,7 @@ const NEWS_PATH = join(root, 'data', 'news.json');
 const OUT_DIR = join(root, 'data', 'images-test');
 
 const MODEL = process.env.GEMINI_IMAGE_MODEL || 'gemini-2.5-flash-image';
-const SAMPLE_SIZE = 5;
+const PER_CATEGORY = Number(process.env.SAMPLES_PER_CATEGORY) || 2;
 const API_KEY = process.env.GEMINI_API_KEY;
 
 if (!API_KEY) {
@@ -81,19 +81,15 @@ function hashUrl(url) {
   return createHash('sha256').update(url).digest('hex').slice(0, 16);
 }
 
-function pickSample(articles, n) {
-  const seen = new Set();
-  const out = [];
+function pickSample(articles, perCategory) {
+  const grouped = new Map();
   for (const a of articles) {
-    if (seen.has(a.category)) continue;
-    seen.add(a.category);
-    out.push(a);
-    if (out.length === n) return out;
+    if (!grouped.has(a.category)) grouped.set(a.category, []);
+    grouped.get(a.category).push(a);
   }
-  for (const a of articles) {
-    if (out.includes(a)) continue;
-    out.push(a);
-    if (out.length === n) return out;
+  const out = [];
+  for (const [, items] of grouped) {
+    out.push(...items.slice(0, perCategory));
   }
   return out;
 }
@@ -136,10 +132,10 @@ function extFromMime(m) {
 
 async function main() {
   const news = JSON.parse(await readFile(NEWS_PATH, 'utf8'));
-  const sample = pickSample(news.articles || [], SAMPLE_SIZE);
+  const sample = pickSample(news.articles || [], PER_CATEGORY);
   await mkdir(OUT_DIR, { recursive: true });
 
-  console.log(`[poc] generating ${sample.length} images via ${MODEL}\n`);
+  console.log(`[poc] generating ${sample.length} images (${PER_CATEGORY} per category) via ${MODEL}\n`);
 
   for (const article of sample) {
     const prompt = buildPrompt(article);
