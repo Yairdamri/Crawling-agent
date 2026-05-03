@@ -1,242 +1,291 @@
 [
   {
-    "url": "https://kubernetes.io/blog/2026/04/28/kubernetes-v1-36-staleness-mitigation-for-controllers/",
+    "url": "https://kubernetes.io/blog/2026/04/28/kubernetes-v1-36-staleness-mitigation-for-controllers",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "ceaaa762966f48d5"
+  },
+  {
+    "url": "https://kubernetes.io/blog/2026/04/27/kubernetes-v1-36-mutable-pod-resources-for-suspended-jobs",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "b218c81fee7165da"
+  },
+  {
+    "url": "https://kubernetes.io/blog/2026/04/24/kubernetes-v1-36-fine-grained-kubelet-authorization-ga",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "ac69544c3cc1b061"
+  },
+  {
+    "url": "https://kubernetes.io/blog/2026/04/23/kubernetes-v1-36-userns-ga",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "2ffdcaa57dee2ac9"
+  },
+  {
+    "url": "https://kubernetes.io/blog/2026/04/22/breaking-changes-in-selinux-volume-labeling",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "11a5e008d0a3b6d2"
+  },
+  {
+    "url": "https://kubernetes.io/blog/2026/04/22/kubernetes-v1-36-release",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "134109a0bf1dd3dd"
+  },
+  {
+    "url": "https://kubernetes.io/blog/2026/04/21/gateway-api-v1-5",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "82f85196940ae6ca"
+  },
+  {
+    "url": "https://kubernetes.io/blog/2026/03/30/kubernetes-v1-36-sneak-peek",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "dbf4a5947f394e44"
+  },
+  {
+    "url": "https://kubernetes.io/blog/2026/03/20/ingress2gateway-1-0-release",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "f3622d22e5205eda"
+  },
+  {
+    "url": "https://kubernetes.io/blog/2026/03/20/running-agents-on-kubernetes-with-agent-sandbox",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "80b925ea9d561cfe"
+  },
+  {
+    "url": "https://kubernetes.io/blog/2026/03/18/securing-production-debugging-in-kubernetes",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "7c2caa7738b5a5f6"
+  },
+  {
+    "url": "https://kubernetes.io/blog/2026/03/17/image-promoter-rewrite",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "d8f586718a925fcb"
+  },
+  {
+    "url": "https://kubernetes.io/blog/2026/03/09/announcing-ai-gateway-wg",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "7121590d96611eaf"
+  },
+  {
+    "url": "https://kubernetes.io/blog/2026/02/27/ingress-nginx-before-you-migrate",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "495d722eddbcd87d"
+  },
+  {
+    "url": "https://kubernetes.io/blog/2026/02/26/ccm-new-metric-route-sync-total",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "66203c1b76705697"
+  },
+  {
+    "url": "https://kubernetes.io/blog/2026/02/12/sig-architecture-api-spotlight",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "6eb3d233607efbfd"
+  },
+  {
+    "url": "https://kubernetes.io/blog/2026/02/03/introducing-node-readiness-controller",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "89f11b706e164e2b"
+  },
+  {
+    "url": "https://kubernetes.io/blog/2026/01/30/new-cgroup-v1-to-v2-cpu-conversion-formula",
     "seenAt": "2026-04-29T15:30:10.373Z"
   },
   {
-    "url": "https://kubernetes.io/blog/2026/04/27/kubernetes-v1-36-mutable-pod-resources-for-suspended-jobs/",
+    "url": "https://kubernetes.io/blog/2026/01/29/ingress-nginx-statement",
     "seenAt": "2026-04-29T15:30:10.373Z"
   },
   {
-    "url": "https://kubernetes.io/blog/2026/04/24/kubernetes-v1-36-fine-grained-kubelet-authorization-ga/",
+    "url": "https://kubernetes.io/blog/2026/01/28/experimenting-gateway-api-with-kind",
     "seenAt": "2026-04-29T15:30:10.373Z"
   },
   {
-    "url": "https://kubernetes.io/blog/2026/04/23/kubernetes-v1-36-userns-ga/",
+    "url": "https://aws.amazon.com/blogs/aws/top-announcements-of-the-whats-next-with-aws-2026",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "feacd7b356496c63"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-anthropic-meta-partnership-aws-lambda-s3-files-amazon-bedrock-agentcore-cli-and-more-april-27-2026",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "09393027ee8722ad"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-claude-opus-4-7-in-amazon-bedrock-aws-interconnect-ga-and-more-april-20-2026",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "336f6e0d974f73c8"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/aws/introducing-anthropics-claude-opus-4-7-model-in-amazon-bedrock",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "b475f59dd75ca1ce"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/aws/aws-interconnect-is-now-generally-available-with-a-new-option-to-simplify-last-mile-connectivity",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "5a7d2ad51f62383d"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-claude-mythos-preview-in-amazon-bedrock-aws-agent-registry-and-more-april-13-2026",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "c7ab566b79132072"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/aws/launching-s3-files-making-s3-buckets-accessible-as-file-systems",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "821e3231183cb9a4"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-devops-agent-security-agent-ga-product-lifecycle-updates-and-more-april-6-2026",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "7c25d5d39e623937"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/aws/amazon-bedrock-guardrails-supports-cross-account-safeguards-with-centralized-control-and-management",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "62aabee8d3d41f8c"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/aws/announcing-managed-daemon-support-for-amazon-ecs-managed-instances",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "b37b1e62dbf24853"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/aws/announcing-the-aws-sustainability-console-programmatic-access-configurable-csv-reports-and-scope-1-3-reporting-in-one-place",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "fff7f523639f391a"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-ai-ml-scholars-program-agent-plugin-for-aws-serverless-and-more-march-30-2026",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "5e516ee40a9ba3c6"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/aws/customize-your-aws-management-console-experience-with-visual-settings-including-account-color-region-and-service-visibility",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "3892d092be4a935b"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/aws/announcing-amazon-aurora-postgresql-serverless-database-creation-in-seconds",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "3291490a13b0c1d7"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-nvidia-nemotron-3-super-on-amazon-bedrock-nova-forge-sdk-amazon-corretto-26-and-more-march-23-2026",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "a96a3a66c359aca8"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/aws/20-years-in-the-aws-cloud-how-time-flies",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "08a430d1563804cc"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/aws/our-first-2026-heroes-cohort-is-here",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "523fc47080f8aac7"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-amazon-s3-turns-20-amazon-route-53-global-resolver-general-availability-and-more-march-16-2026",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "7571c448a470659a"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/aws/twenty-years-of-amazon-s3-and-building-whats-next",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "c5acf273cbd3662e"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/aws/introducing-account-regional-namespaces-for-amazon-s3-general-purpose-buckets",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "f853833da2d3362d"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/building-ai-ready-data-vanguards-virtual-analyst-journey",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "130d942c74417975"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/run-custom-mcp-proxies-serverless-on-amazon-bedrock-agentcore-runtime",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "0c6b59c1ced742e0"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/migrating-a-text-agent-to-a-voice-assistant-with-amazon-nova-2-sonic",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "91aac57661aebe0b"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/nvidia-nemotron-3-nano-omni-model-now-available-on-amazon-sagemaker-jumpstart",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "c5505762a2b8b350"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/automate-repetitive-tasks-with-amazon-quick-flows",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "2ee2e45afeba8ea2"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/build-and-deploy-an-automatic-sync-solution-for-amazon-bedrock-knowledge-bases",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "016eb130a127e631"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/build-strands-agents-with-sagemaker-ai-models-and-mlflow",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "90fc75c3419715ae"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/how-popsa-used-amazon-nova-to-inspire-customers-with-personalised-title-suggestions",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "d6f18daf971688ac"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/building-workforce-ai-agents-with-visier-and-amazon-quick",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "95892cf611ce3879"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/amazon-quick-for-marketing-from-scattered-data-to-strategic-action",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "fcca3f2033d50e64"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/applying-multimodal-biological-foundation-models-across-therapeutics-and-patient-care",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "11269f0bcefb4ed3"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/cost-effective-multilingual-audio-transcription-at-scale-with-parakeet-tdt-and-aws-batch",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "9c63011744e67bcb"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-ai-now-supports-optimized-generative-ai-inference-recommendations",
     "seenAt": "2026-04-29T15:30:10.373Z"
   },
   {
-    "url": "https://kubernetes.io/blog/2026/04/22/breaking-changes-in-selinux-volume-labeling/",
+    "url": "https://aws.amazon.com/blogs/machine-learning/get-to-your-first-working-agent-in-minutes-announcing-new-features-in-amazon-bedrock-agentcore",
     "seenAt": "2026-04-29T15:30:10.373Z"
   },
   {
-    "url": "https://kubernetes.io/blog/2026/04/22/kubernetes-v1-36-release/",
+    "url": "https://aws.amazon.com/blogs/machine-learning/company-wise-memory-in-amazon-bedrock-with-amazon-neptune-and-mem0",
     "seenAt": "2026-04-29T15:30:10.373Z"
   },
   {
-    "url": "https://kubernetes.io/blog/2026/04/21/gateway-api-v1-5/",
+    "url": "https://aws.amazon.com/blogs/machine-learning/from-developer-desks-to-the-whole-organization-running-claude-cowork-in-amazon-bedrock",
     "seenAt": "2026-04-29T15:30:10.373Z"
   },
   {
-    "url": "https://kubernetes.io/blog/2026/03/30/kubernetes-v1-36-sneak-peek/",
+    "url": "https://aws.amazon.com/blogs/machine-learning/end-to-end-lineage-with-dvc-and-amazon-sagemaker-ai-mlflow-apps",
     "seenAt": "2026-04-29T15:30:10.373Z"
   },
   {
-    "url": "https://kubernetes.io/blog/2026/03/20/ingress2gateway-1-0-release/",
+    "url": "https://aws.amazon.com/blogs/machine-learning/accelerate-generative-ai-inference-on-amazon-sagemaker-ai-with-g7e-instances",
     "seenAt": "2026-04-29T15:30:10.373Z"
   },
   {
-    "url": "https://kubernetes.io/blog/2026/03/20/running-agents-on-kubernetes-with-agent-sandbox/",
+    "url": "https://aws.amazon.com/blogs/machine-learning/toolsimulator-scalable-tool-testing-for-ai-agents",
     "seenAt": "2026-04-29T15:30:10.373Z"
   },
   {
-    "url": "https://kubernetes.io/blog/2026/03/18/securing-production-debugging-in-kubernetes/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://kubernetes.io/blog/2026/03/17/image-promoter-rewrite/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://kubernetes.io/blog/2026/03/09/announcing-ai-gateway-wg/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://kubernetes.io/blog/2026/02/27/ingress-nginx-before-you-migrate/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://kubernetes.io/blog/2026/02/26/ccm-new-metric-route-sync-total/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://kubernetes.io/blog/2026/02/12/sig-architecture-api-spotlight/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://kubernetes.io/blog/2026/02/03/introducing-node-readiness-controller/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://kubernetes.io/blog/2026/01/30/new-cgroup-v1-to-v2-cpu-conversion-formula/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://kubernetes.io/blog/2026/01/29/ingress-nginx-statement/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://kubernetes.io/blog/2026/01/28/experimenting-gateway-api-with-kind/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/aws/top-announcements-of-the-whats-next-with-aws-2026/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-anthropic-meta-partnership-aws-lambda-s3-files-amazon-bedrock-agentcore-cli-and-more-april-27-2026/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-claude-opus-4-7-in-amazon-bedrock-aws-interconnect-ga-and-more-april-20-2026/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/aws/introducing-anthropics-claude-opus-4-7-model-in-amazon-bedrock/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/aws/aws-interconnect-is-now-generally-available-with-a-new-option-to-simplify-last-mile-connectivity/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-claude-mythos-preview-in-amazon-bedrock-aws-agent-registry-and-more-april-13-2026/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/aws/launching-s3-files-making-s3-buckets-accessible-as-file-systems/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-devops-agent-security-agent-ga-product-lifecycle-updates-and-more-april-6-2026/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/aws/amazon-bedrock-guardrails-supports-cross-account-safeguards-with-centralized-control-and-management/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/aws/announcing-managed-daemon-support-for-amazon-ecs-managed-instances/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/aws/announcing-the-aws-sustainability-console-programmatic-access-configurable-csv-reports-and-scope-1-3-reporting-in-one-place/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-ai-ml-scholars-program-agent-plugin-for-aws-serverless-and-more-march-30-2026/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/aws/customize-your-aws-management-console-experience-with-visual-settings-including-account-color-region-and-service-visibility/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/aws/announcing-amazon-aurora-postgresql-serverless-database-creation-in-seconds/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-nvidia-nemotron-3-super-on-amazon-bedrock-nova-forge-sdk-amazon-corretto-26-and-more-march-23-2026/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/aws/20-years-in-the-aws-cloud-how-time-flies/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/aws/our-first-2026-heroes-cohort-is-here/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-amazon-s3-turns-20-amazon-route-53-global-resolver-general-availability-and-more-march-16-2026/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/aws/twenty-years-of-amazon-s3-and-building-whats-next/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/aws/introducing-account-regional-namespaces-for-amazon-s3-general-purpose-buckets/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/machine-learning/building-ai-ready-data-vanguards-virtual-analyst-journey/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/machine-learning/run-custom-mcp-proxies-serverless-on-amazon-bedrock-agentcore-runtime/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/machine-learning/migrating-a-text-agent-to-a-voice-assistant-with-amazon-nova-2-sonic/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/machine-learning/nvidia-nemotron-3-nano-omni-model-now-available-on-amazon-sagemaker-jumpstart/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/machine-learning/automate-repetitive-tasks-with-amazon-quick-flows/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/machine-learning/build-and-deploy-an-automatic-sync-solution-for-amazon-bedrock-knowledge-bases/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/machine-learning/build-strands-agents-with-sagemaker-ai-models-and-mlflow/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/machine-learning/how-popsa-used-amazon-nova-to-inspire-customers-with-personalised-title-suggestions/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/machine-learning/building-workforce-ai-agents-with-visier-and-amazon-quick/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/machine-learning/amazon-quick-for-marketing-from-scattered-data-to-strategic-action/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/machine-learning/applying-multimodal-biological-foundation-models-across-therapeutics-and-patient-care/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/machine-learning/cost-effective-multilingual-audio-transcription-at-scale-with-parakeet-tdt-and-aws-batch/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-ai-now-supports-optimized-generative-ai-inference-recommendations/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/machine-learning/get-to-your-first-working-agent-in-minutes-announcing-new-features-in-amazon-bedrock-agentcore/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/machine-learning/company-wise-memory-in-amazon-bedrock-with-amazon-neptune-and-mem0/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/machine-learning/from-developer-desks-to-the-whole-organization-running-claude-cowork-in-amazon-bedrock/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/machine-learning/end-to-end-lineage-with-dvc-and-amazon-sagemaker-ai-mlflow-apps/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/machine-learning/accelerate-generative-ai-inference-on-amazon-sagemaker-ai-with-g7e-instances/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/machine-learning/toolsimulator-scalable-tool-testing-for-ai-agents/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/machine-learning/omnichannel-ordering-with-amazon-bedrock-agentcore-and-amazon-nova-2-sonic/",
+    "url": "https://aws.amazon.com/blogs/machine-learning/omnichannel-ordering-with-amazon-bedrock-agentcore-and-amazon-nova-2-sonic",
     "seenAt": "2026-04-29T15:30:10.373Z"
   },
   {
@@ -435,2190 +484,6 @@
     "seenAt": "2026-04-29T15:30:10.373Z"
   },
   {
-    "url": "https://developer.nvidia.com/blog/scaling-biomolecular-modeling-using-context-parallelism-in-nvidia-bionemo/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://developer.nvidia.com/blog/nvidia-nemotron-3-nano-omni-powers-multimodal-agent-reasoning-in-a-single-efficient-open-model/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://developer.nvidia.com/blog/24-7-simulation-loops-how-agentic-ai-keeps-subsurface-engineering-moving/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://developer.nvidia.com/blog/build-with-deepseek-v4-using-nvidia-blackwell-and-gpu-accelerated-endpoints/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://developer.nvidia.com/blog/federated-learning-without-the-refactoring-overhead-using-nvidia-flare/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://developer.nvidia.com/blog/winning-a-kaggle-competition-with-generative-ai-assisted-coding/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://developer.nvidia.com/blog/simplify-sparse-deep-learning-with-universal-sparse-tensor-in-nvmath-python/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://developer.nvidia.com/blog/scaling-the-ai-ready-data-center-with-nvidia-rtx-pro-4500-blackwell-server-edition-and-nvidia-vgpu-20/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://developer.nvidia.com/blog/advancing-emerging-optimizers-for-accelerated-llm-training-with-nvidia-megatron/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://developer.nvidia.com/blog/maximizing-memory-efficiency-to-run-bigger-models-on-nvidia-jetson/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://developer.nvidia.com/blog/run-high-throughput-reinforcement-learning-training-with-end-to-end-fp8-precision/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://developer.nvidia.com/blog/mitigating-indirect-agents-md-injection-attacks-in-agentic-environments/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://developer.nvidia.com/blog/full-stack-optimizations-for-agentic-inference-with-nvidia-dynamo/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://developer.nvidia.com/blog/build-a-secure-always-on-local-ai-agent-with-nvidia-nemoclaw-and-openclaw/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://developer.nvidia.com/blog/accelerate-clean-modular-nuclear-reactor-design-with-ai-physics/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://developer.nvidia.com/blog/how-to-build-vision-ai-pipelines-using-deepstream-coding-agents/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://developer.nvidia.com/blog/building-custom-atomistic-simulation-workflows-for-chemistry-and-materials-science-with-nvidia-alchemi-toolkit/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://developer.nvidia.com/blog/nvidia-nvbandwidth-your-essential-tool-for-measuring-gpu-interconnect-and-memory-performance/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://developer.nvidia.com/blog/nvidia-ising-introduces-ai-powered-workflows-to-build-fault-tolerant-quantum-systems/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://developer.nvidia.com/blog/minimax-m2-7-advances-scalable-agentic-workflows-on-nvidia-platforms-for-complex-ai-applications/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://research.google/blog/its-all-about-the-angle-your-photos-re-composed/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://research.google/blog/reasoningbank-enabling-agents-to-learn-from-experience/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://research.google/blog/designing-synthetic-datasets-for-the-real-world-mechanism-design-and-reasoning-from-first-principles/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://research.google/blog/ai-generated-synthetic-neurons-speed-up-brain-mapping/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://research.google/blog/towards-developing-future-ready-skills-with-generative-ai/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://research.google/blog/convapparel-measuring-and-bridging-the-realism-gap-in-user-simulators/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://research.google/blog/improving-the-academic-workflow-introducing-two-ai-agents-for-better-figures-and-peer-review/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://research.google/blog/evaluating-alignment-of-behavioral-dispositions-in-llms/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://research.google/blog/building-better-ai-benchmarks-how-many-raters-are-enough/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://research.google/blog/safeguarding-cryptocurrency-by-disclosing-quantum-vulnerabilities-responsibly/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://research.google/blog/vibe-coding-xr-accelerating-ai-xr-prototyping-with-xr-blocks-and-gemini/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://research.google/blog/turboquant-redefining-ai-efficiency-with-extreme-compression/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://research.google/blog/mapping-the-modern-world-how-s2vec-learns-the-language-of-our-cities/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://research.google/blog/google-research-at-the-check-up-from-healthcare-innovation-to-real-world-care-settings/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://research.google/blog/improving-breast-cancer-screening-workflows-with-machine-learning/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://research.google/blog/testing-llms-on-superconductivity-research-questions/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://research.google/blog/protecting-cities-with-ai-driven-flash-flood-forecasting/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://research.google/blog/introducing-groundsource-turning-news-reports-into-data-with-gemini/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://research.google/blog/exploring-the-feasibility-of-conversational-diagnostic-ai-in-a-real-world-clinical-study/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://research.google/blog/waxal-a-large-scale-open-resource-for-african-language-speech-technology/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://deepmind.google/blog/announcing-our-partnership-with-the-republic-of-korea/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://deepmind.google/blog/decoupled-diloco/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://deepmind.google/blog/partnering-with-industry-leaders-to-accelerate-ai-transformation/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://deepmind.google/blog/gemini-3-1-flash-tts-the-next-generation-of-expressive-ai-speech/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://deepmind.google/blog/gemini-robotics-er-1-6/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://deepmind.google/blog/gemma-4-byte-for-byte-the-most-capable-open-models/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://deepmind.google/blog/gemini-3-1-flash-live-making-audio-ai-more-natural-and-reliable/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://deepmind.google/blog/protecting-people-from-harmful-manipulation/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://deepmind.google/blog/lyria-3-pro-create-longer-tracks-in-more/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://deepmind.google/blog/measuring-progress-toward-agi-a-cognitive-framework/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://deepmind.google/blog/10-years-of-alphago/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://deepmind.google/blog/gemini-3-1-flash-lite-built-for-intelligence-at-scale/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://deepmind.google/blog/nano-banana-2-combining-pro-capabilities-with-lightning-fast-speed/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://deepmind.google/blog/gemini-3-1-pro-a-smarter-model-for-your-most-complex-tasks/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://deepmind.google/blog/a-new-way-to-express-yourself-gemini-can-now-create-music/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://deepmind.google/blog/accelerating-discovery-in-india-through-ai-powered-science-and-education/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://deepmind.google/blog/gemini-3-deep-think-advancing-science-research-and-engineering/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://deepmind.google/blog/accelerating-mathematical-and-scientific-discovery-with-gemini-deep-think/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://deepmind.google/blog/project-genie-experimenting-with-infinite-interactive-worlds/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://deepmind.google/blog/d4rt-teaching-ai-to-see-the-world-in-four-dimensions/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://blogs.microsoft.com/ai/a-conversation-with-kevin-scott-whats-next-in-ai/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://blogs.microsoft.com/ai/from-hot-wheels-to-handling-content-how-brands-are-using-microsoft-ai-to-be-more-productive-and-imaginative/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://blogs.microsoft.com/ai/microsoft-open-sources-its-farm-of-the-future-toolkit/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://cloudblogs.microsoft.com/industry-blog/en-gb/financial-services/2022/07/25/how-data-and-ai-will-transform-contact-centres-for-financial-services/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://news.microsoft.com/apac/features/ai-drones-dolphins-maui63/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://blogs.microsoft.com/ai/eedi-online-math-quiz/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://blogs.microsoft.com/accessibility/ai-mimi-is-building-inclusive-tv-experiences-for-deaf-and-hard-of-hearing-user-in-japan/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://blogs.microsoft.com/on-the-issues/2022/06/21/microsofts-framework-for-building-ai-systems-responsibly/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://news.microsoft.com/en-sg/2022/06/08/singapore-develops-asias-first-ai-based-mobile-app-for-shark-and-ray-fin-identification-to-combat-illegal-wildlife-trade/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://blogs.microsoft.com/accessibility/the-opportunity-at-home-can-ai-drive-innovation-in-personal-assistant-devices-and-sign-language/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://www.databricks.com/blog/stripe-data-now-available-databricks-databricks-marketplace",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://www.databricks.com/blog/built-not-bolted-what-ai-native-actually-means-cybersecurity",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://www.databricks.com/blog/operationalizing-ai-public-sector-fraud-prevention",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://www.databricks.com/blog/months-minutes-building-real-time-clinical-data-pipelines-natural-language",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://www.databricks.com/blog/agentic-data-engineering-genie-code-and-lakeflow",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://www.databricks.com/blog/snapchat-conversions-api-databricks-marketplace",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://www.databricks.com/blog/how-leading-tech-companies-are-killing-builders-tax-lakebase",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://www.databricks.com/blog/inside-one-first-production-deployments-lakebase-langguards-agentic-workflow-governance-engine",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://www.databricks.com/blog/next-generation-databricks-genie",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://www.databricks.com/blog/model-risk-management-2026-bankers-guide-revised-interagency-guidance",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://github.blog/developer-skills/github/github-for-beginners-getting-started-with-markdown/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://github.blog/security/securing-the-git-push-pipeline-responding-to-a-critical-remote-code-execution-vulnerability/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://github.blog/news-insights/company-news/an-update-on-github-availability/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://github.blog/news-insights/company-news/changes-to-github-copilot-individual-plans/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://github.blog/open-source/git/highlights-from-git-2-54/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://github.blog/ai-and-ml/github-copilot/building-an-emoji-list-generator-with-the-github-copilot-cli/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://github.blog/news-insights/company-news/bringing-more-transparency-to-githubs-status-page/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://github.blog/engineering/infrastructure/how-github-uses-ebpf-to-improve-deployment-safety/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://github.blog/ai-and-ml/github-copilot/build-a-personal-organization-command-center-with-github-copilot-cli/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://thenewstack.io/anthropic-agents-managed-aws-claude/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://thenewstack.io/openai-bedrock-trainium-silicon/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://thenewstack.io/warp-open-source-client/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://thenewstack.io/platform-engineering-ai-agents/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://thenewstack.io/hpe-agentic-ops-copilot/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://thenewstack.io/google-doesnt-care/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://thenewstack.io/broadcom-vcf-kubernetes-platform/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://thenewstack.io/sas-viya-mcp-governance/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://thenewstack.io/json-schema-ai-reliability/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://thenewstack.io/sentrys-seer-agent-debug/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://thenewstack.io/netbox-labs-network-intent/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://thenewstack.io/terraform-state-infrastructure-drift/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://thenewstack.io/lovelace-ai-context-engine-elemental-andrew-moore/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://thenewstack.io/openai-microsoft-partnership-restructured/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://thenewstack.io/github-copilot-usage-billing/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://thenewstack.io/thoughtworks-radar-agentic-ai/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://thenewstack.io/vibe-coding-ceos-executives-ai-agents/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://thenewstack.io/open-source-digital-autonomy/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://thenewstack.io/postgres-ai-ground-truth/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://thenewstack.io/security-operational-maturity-scaling/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://zed.dev/blog/zed-1-0",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://blog.tangled.org/federation/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://healthmanagement.org/c/icu/IssueArticle/improving-handovers-by-learning-from-scuderia-ferrari",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://blog.jeffschomay.com/letting-ai-play-my-game",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://www.diabettech.com/i-asked-ai-to-count-my-carbs-27000-times-it-couldnt-give-the-same-answer-twice/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://github.com/electricant/adblock-rust-manager",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://physicsworld.com/a/coffee-with-a-splash-of-physics-how-to-make-the-most-out-of-your-brew/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://www.ycombinator.com/companies/stardex/jobs/6GCK1HC-founding-customer-success-lead",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://www.theregister.com/2026/04/29/mitchell_hashimoto_ghostty_quitting_github/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://github.com/DOS-History/Paterson-Listings",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://rip.so",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://www.nldigitalgovernment.nl/news/soft-launch-for-government-open-source-code-platform/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://dl.acm.org/doi/abs/10.1145/3767295.3803591",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://hardenedbsd.org/article/shawn-webb/2026-04-26/hardenedbsd-officially-radicle",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://corrode.dev/blog/bugs-rust-wont-catch/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://www.buchodi.com/how-chatgpt-serves-ads-heres-the-full-attribution-loop/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://lucumr.pocoo.org/2026/4/28/before-github/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://ron.stoner.com/How_I_Won_a_Championship_That_Doesnt_Exist/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://mitchellh.com/writing/ghostty-leaving-github",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://stratechery.com/2026/an-interview-with-openai-ceo-sam-altman-and-aws-ceo-matt-garman-about-bedrock-managed-agents/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://www.cncf.io/blog/2026/04/29/the-state-of-ai-in-cncf-projects-a-first-look-at-the-data/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://www.cncf.io/blog/2026/04/27/kubernetes-for-platform-teams-leveraging-k0s-and-k0rdent/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://www.cncf.io/blog/2026/04/23/from-ingress-nginx-to-higress-migrating-60-resources-in-30-minutes-with-ai/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://www.cncf.io/blog/2026/04/21/auto-diagnosing-kubernetes-alerts-with-holmesgpt-and-cncf-tools/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://www.cncf.io/blog/2026/04/20/from-public-static-void-main-to-golden-kubestronaut-the-art-of-unlearning/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://www.cncf.io/blog/2026/04/17/k3s-on-on-prem-infrastructures-the-gitops-way-writing-a-custom-k0rdent-template-from-scratch/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://www.cncf.io/blog/2026/04/16/the-ai-driven-shift-in-vulnerability-discovery-what-maintainers-and-bug-finders-need-to-know/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://www.cncf.io/blog/2026/04/15/how-to-measure-the-roi-of-developer-tools/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://www.cncf.io/blog/2026/04/13/ingress-nginx-to-envoy-gateway-migration-on-cncf-internal-services-cluster/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://www.cncf.io/blog/2026/04/11/what-i-learned-at-my-first-kubecon-cloudnativecon-as-a-high-school-speaker/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://www.hashicorp.com/blog/turning-secret-detection-into-measurable-risk-reduction",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://www.hashicorp.com/blog/bridging-the-trust-gap-unified-public-ca-orchestration-with-ibm-vault",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://www.hashicorp.com/blog/faster-threat-detection-with-boundary-session-recording-auditbeat",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://www.hashicorp.com/blog/terraform-adds-pre-written-sentinel-policies-for-iso-27001",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://www.hashicorp.com/blog/from-zero-trust-to-continuous-trust-securing-autonomous-ai-systems",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://www.hashicorp.com/blog/from-80-days-to-5-how-banco-bradesco-accelerated-digital-product-delivery-with-hc",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://www.hashicorp.com/blog/advancing-secret-sync-with-workload-identity-federation",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://www.hashicorp.com/blog/agentic-ai-changes-the-shape-of-trust",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://www.hashicorp.com/blog/vault-enterprise-20-modernizes-identity-security-at-scale",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://www.hashicorp.com/blog/simplifying-terraform-dynamic-credentials-on-aws-with-native-oidc-integration",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://www.hashicorp.com/blog/aws-permission-delegation-now-generally-available-in-hcp-terraform",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://www.hashicorp.com/blog/hcp-terraform-adds-ip-allow-lists",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://www.hashicorp.com/blog/modernizing-governance-on-hcp-with-multi-owner-and-global-automation",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://www.hashicorp.com/blog/lab3-accelerates-cloud-modernization-with-hashicorp-powered-unified-workflows",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://www.hashicorp.com/blog/agentic-runtime-security-solving-agentic-ai-identity-and-access-gaps",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://www.hashicorp.com/blog/hcp-vault-dedicated-now-available-in-additional-aws-and-azure-regions",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://www.hashicorp.com/blog/adopting-hashicorp-vaults-transit-engine-high-performance-envelope-encryption-ariso-ai",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://www.hashicorp.com/blog/everything-as-code-for-your-security-lifecycle",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://www.hashicorp.com/blog/building-day-2-ops-guardrails-with-terraform-and-packer",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://www.hashicorp.com/blog/secure-remote-access-without-the-portal-tax-boundary-vs-other-vendors",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://www.docker.com/blog/trivy-kics-and-the-shape-of-supply-chain-attacks-so-far-in-2026/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://www.docker.com/blog/why-microvms-the-architecture-behind-docker-sandboxes/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://www.docker.com/blog/why-we-chose-the-harder-path-docker-hardened-images-one-year-later/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://www.docker.com/blog/how-to-analyze-hugging-face-for-arm64-readiness/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://www.docker.com/blog/reclaim-developer-hours-through-smarter-vulnerability-prioritization-with-docker-and-mend-io/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://www.docker.com/blog/defending-your-software-supply-chain-what-every-engineering-team-should-do-now/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://www.docker.com/blog/gemma4-dockerhub/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://www.docker.com/blog/docker-offload-now-generally-available-the-full-power-of-docker-for-every-developer-everywhere/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://www.docker.com/blog/blog-docker-model-runner-new-nvidia-dgx-station/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://www.docker.com/blog/docker-sandboxes-run-agents-in-yolo-mode-safely/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://krebsonsecurity.com/2026/04/scattered-spider-member-tylerb-pleads-guilty/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://krebsonsecurity.com/2026/04/patch-tuesday-april-2026-edition/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://krebsonsecurity.com/2026/04/russia-hacked-routers-to-steal-microsoft-office-tokens/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://krebsonsecurity.com/2026/04/germany-doxes-unkn-head-of-ru-ransomware-gangs-revil-gandcrab/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://krebsonsecurity.com/2026/03/canisterworm-springs-wiper-attack-targeting-iran/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://krebsonsecurity.com/2026/03/feds-disrupt-iot-botnets-behind-huge-ddos-attacks/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://krebsonsecurity.com/2026/03/iran-backed-hackers-claim-wiper-attack-on-medtech-firm-stryker/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://krebsonsecurity.com/2026/03/microsoft-patch-tuesday-march-2026-edition/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://krebsonsecurity.com/2026/03/how-ai-assistants-are-moving-the-security-goalposts/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://krebsonsecurity.com/2026/02/who-is-the-kimwolf-botmaster-dort/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://projectzero.google/2026/03/mutational-grammar-fuzzing.html",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "c650dfa951647436"
-  },
-  {
-    "url": "https://projectzero.google/2026/02/gphfh-deep-dive.html",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "05447092eee73c23"
-  },
-  {
-    "url": "https://projectzero.google/2026/02/windows-administrator-protection.html",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "ee061e1a8495e30e"
-  },
-  {
-    "url": "https://projectzero.google/2026/01/sound-barrier-2.html",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "94c377b473b4835d"
-  },
-  {
-    "url": "https://projectzero.google/2026/26/windows-administrator-protection.html",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "9352b26e5de2e441"
-  },
-  {
-    "url": "https://projectzero.google/2026/01/pixel-0-click-part-3.html",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "a384a3569c1b4cee"
-  },
-  {
-    "url": "https://projectzero.google/2026/01/pixel-0-click-part-2.html",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "055ff4ad120ff0f0"
-  },
-  {
-    "url": "https://projectzero.google/2026/01/pixel-0-click-part-1.html",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "a6bd32cb9a150113"
-  },
-  {
-    "url": "https://projectzero.google/2025/12/welcome.html",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "cce4a92ccec862a2"
-  },
-  {
-    "url": "https://projectzero.google/2025/12/thinking-outside-the-box.html",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "d4c997145a9fe89e"
-  },
-  {
-    "url": "https://snyk.io/blog/thymeleaf-injection/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://snyk.io/blog/atlassian-integration-intelligent-remediation-jira/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://snyk.io/blog/malicious-release-of-elementary-data-pypi-package-steals-cloud-credentials-from-data-engineers/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://snyk.io/blog/snyk-agent-fix-agentic-architecture/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://snyk.io/blog/qinglong-task-scheduler-rce-vulnerabilities/",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://thehackernews.com/2026/04/webinar-how-to-automate-exposure.html",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "11452b00923f9793"
-  },
-  {
-    "url": "https://thehackernews.com/2026/04/what-to-look-for-in-exposure-management.html",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "e13088123dee09e3"
-  },
-  {
-    "url": "https://thehackernews.com/2026/04/critical-cpanel-authentication.html",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "433fb870fc0a1282"
-  },
-  {
-    "url": "https://thehackernews.com/2026/04/cisa-adds-actively-exploited.html",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "9fa30c8a550ee03f"
-  },
-  {
-    "url": "https://thehackernews.com/2026/04/litellm-cve-2026-42208-sql-injection.html",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://thehackernews.com/2026/04/researchers-discover-critical-github.html",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://thehackernews.com/2026/04/brazilian-lofygang-resurfaces-after.html",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://thehackernews.com/2026/04/vect-20-ransomware-irreversibly.html",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://thehackernews.com/2026/04/why-secure-data-movement-is-zero-trust.html",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://thehackernews.com/2026/04/critical-cve-2026-25874-leaves-hugging.html",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://thehackernews.com/2026/04/after-mythos-new-playbooks-for-zero.html",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://thehackernews.com/2026/04/chinese-silk-typhoon-hacker-extradited.html",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://thehackernews.com/2026/04/microsoft-patches-entra-id-role-flaw.html",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://thehackernews.com/2026/04/microsoft-confirms-active-exploitation.html",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://thehackernews.com/2026/04/checkmarx-confirms-github-repository.html",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://thehackernews.com/2026/04/weekly-recap-fast16-malware-xchat.html",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://thehackernews.com/2026/04/mythos-changed-math-on-vulnerability.html",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://thehackernews.com/2026/04/phantomcore-exploits-trueconf.html",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://thehackernews.com/2026/04/researchers-uncover-73-fake-vs-code.html",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://thehackernews.com/2026/04/fake-captcha-irsf-scam-and-120-keitaro.html",
-    "seenAt": "2026-04-29T15:30:10.373Z"
-  },
-  {
-    "url": "https://huggingface.co/blog/evaleval/eval-costs-bottleneck",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "1dd70afaf5743e9d"
-  },
-  {
-    "url": "https://huggingface.co/blog/inference-providers-deepinfra",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "98ed7b4a690293db"
-  },
-  {
-    "url": "https://developer.nvidia.com/blog/powering-ai-factories-with-nvidia-enterprise-reference-architectures/",
-    "seenAt": "2026-04-29T19:20:41.100Z"
-  },
-  {
-    "url": "https://www.databricks.com/blog/companies-winning-ai-built-data-layer-first",
-    "seenAt": "2026-04-29T19:20:41.100Z"
-  },
-  {
-    "url": "https://www.databricks.com/blog/rethinking-sql-etl-modern-data-platforms",
-    "seenAt": "2026-04-29T19:20:41.100Z"
-  },
-  {
-    "url": "https://www.databricks.com/blog/databricks-and-stripe-projects-infrastructure-built-agents",
-    "seenAt": "2026-04-29T19:20:41.100Z"
-  },
-  {
-    "url": "https://www.databricks.com/blog/agents-are-ready-your-architecture-probably-isnt",
-    "seenAt": "2026-04-29T19:20:41.100Z"
-  },
-  {
-    "url": "https://thenewstack.io/strands-agents-tool-design/",
-    "seenAt": "2026-04-29T19:20:41.100Z"
-  },
-  {
-    "url": "https://thenewstack.io/anaconda-ai-outerbounds-python-metaflow/",
-    "seenAt": "2026-04-29T19:20:41.100Z"
-  },
-  {
-    "url": "https://github.com/anthropics/claude-code/issues/53262",
-    "seenAt": "2026-04-29T19:20:41.100Z"
-  },
-  {
-    "url": "https://copy.fail/",
-    "seenAt": "2026-04-29T19:20:41.100Z"
-  },
-  {
-    "url": "https://www.promptarmor.com/resources/ramps-sheets-ai-exfiltrates-financials",
-    "seenAt": "2026-04-29T19:20:41.100Z"
-  },
-  {
-    "url": "https://lawsofux.com/",
-    "seenAt": "2026-04-29T19:20:41.100Z"
-  },
-  {
-    "url": "https://www.heavybit.com/library/podcasts/third-loop/ep-3-give-it-a-name-why-software-needs-a-third-loop",
-    "seenAt": "2026-04-29T19:20:41.100Z"
-  },
-  {
-    "url": "https://www.hfsresearch.com/research/fde-optional-ai-flywheel-spin/",
-    "seenAt": "2026-04-29T19:20:41.100Z"
-  },
-  {
-    "url": "https://eclecticlight.co/2026/04/29/virtualisation-on-apple-silicon-macs-is-different/",
-    "seenAt": "2026-04-29T19:20:41.100Z"
-  },
-  {
-    "url": "https://www.theguardian.com/technology/2026/apr/29/maryland-grocery-stores-ban-surveillance-pricing",
-    "seenAt": "2026-04-29T19:20:41.100Z"
-  },
-  {
-    "url": "https://atproto.com/",
-    "seenAt": "2026-04-29T19:20:41.100Z"
-  },
-  {
-    "url": "https://www.agwa.name/blog/post/fastcgi_is_the_better_protocol_for_reverse_proxies",
-    "seenAt": "2026-04-29T19:20:41.100Z"
-  },
-  {
-    "url": "https://interfaze.ai/blog/introducing-structured-output-benchmark",
-    "seenAt": "2026-04-29T19:20:41.100Z"
-  },
-  {
-    "url": "https://x.com/GlennMeder/status/2049088498163216560",
-    "seenAt": "2026-04-29T19:20:41.100Z"
-  },
-  {
-    "url": "https://www.chrisbrunet.com/p/third-editor-fired-in-elseviers-citation",
-    "seenAt": "2026-04-29T19:20:41.100Z"
-  },
-  {
-    "url": "https://neal.fun/cursor-camp/",
-    "seenAt": "2026-04-29T19:20:41.100Z"
-  },
-  {
-    "url": "https://mistral.ai/news/vibe-remote-agents-mistral-medium-3-5",
-    "seenAt": "2026-04-29T19:20:41.100Z"
-  },
-  {
-    "url": "https://read.thecoder.cafe/p/linux-broke-postgresql",
-    "seenAt": "2026-04-29T19:20:41.100Z"
-  },
-  {
-    "url": "https://github.com/GliaX/Stethoscope",
-    "seenAt": "2026-04-29T19:20:41.100Z"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=JNyuX1zoOgU",
-    "seenAt": "2026-04-29T19:20:41.100Z"
-  },
-  {
-    "url": "https://www.hashicorp.com/blog/managing-ssh-access-at-scale-with-hashicorp-vault-update",
-    "seenAt": "2026-04-29T19:20:41.100Z"
-  },
-  {
-    "url": "https://snyk.io/blog/bun-based-stealer-hits-sap-cap-js-mbt-npm-packages/",
-    "seenAt": "2026-04-29T19:20:41.100Z"
-  },
-  {
-    "url": "https://thehackernews.com/2026/04/sap-npm-packages-compromised-by-mini.html",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "828b37bb09e75022"
-  },
-  {
-    "url": "https://thehackernews.com/2026/04/new-wave-of-dprk-attacks-uses-ai.html",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "a1018bf293cb7d0b"
-  },
-  {
-    "url": "https://kubernetes.io/blog/2026/04/29/kubernetes-v1-36-memory-qos-tiered-protection/",
-    "seenAt": "2026-04-30T02:38:06.225Z"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/machine-learning/extracting-contract-insights-with-pwcs-ai-driven-annotation-on-aws/",
-    "seenAt": "2026-04-30T02:38:06.225Z"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/machine-learning/organizing-agents-memory-at-scale-namespace-design-patterns-in-agentcore-memory/",
-    "seenAt": "2026-04-30T02:38:06.225Z"
-  },
-  {
-    "url": "https://openai.com/index/building-the-compute-infrastructure-for-the-intelligence-age",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "444b8698ea2bd6f9"
-  },
-  {
-    "url": "https://research.google/blog/four-ways-google-research-scientists-have-been-using-empirical-research-assistance/",
-    "seenAt": "2026-04-30T02:38:06.225Z"
-  },
-  {
-    "url": "https://www.databricks.com/blog/approximate-answers-exact-decisions-new-sketch-functions-analytics",
-    "seenAt": "2026-04-30T02:38:06.225Z"
-  },
-  {
-    "url": "https://www.databricks.com/blog/interoperability-between-unity-catalog-and-google-bigquery-catalog-federation",
-    "seenAt": "2026-04-30T02:38:06.225Z"
-  },
-  {
-    "url": "https://cacm.acm.org/research-highlights/a-grounded-conceptual-model-for-ownership-types-in-rust/",
-    "seenAt": "2026-04-30T02:38:06.225Z"
-  },
-  {
-    "url": "https://www.jcvi.org/media-center/j-craig-venter-genomics-pioneer-and-founder-jcvi-and-diploid-genomics-inc-dies-79",
-    "seenAt": "2026-04-30T02:38:06.225Z"
-  },
-  {
-    "url": "https://status.claude.com/incidents/2gf1jpyty350",
-    "seenAt": "2026-04-30T02:38:06.225Z"
-  },
-  {
-    "url": "https://news.ycombinator.com/item?id=47956890",
-    "seenAt": "2026-04-30T02:38:06.225Z"
-  },
-  {
-    "url": "https://www.flyingmag.com/joby-nyc-electric-air-taxi-jfk-airport/",
-    "seenAt": "2026-04-30T02:38:06.225Z"
-  },
-  {
-    "url": "https://mikeoss.com/",
-    "seenAt": "2026-04-30T02:38:06.225Z"
-  },
-  {
-    "url": "https://www.ycombinator.com/companies/gooseworks/jobs/ztgY6bD-founding-growth-engineer",
-    "seenAt": "2026-04-30T02:38:06.225Z"
-  },
-  {
-    "url": "https://github.com/aallan/vera",
-    "seenAt": "2026-04-30T02:38:06.225Z"
-  },
-  {
-    "url": "https://www.maxtaylor.me/articles/i-benchmarked-caveman-against-two-words",
-    "seenAt": "2026-04-30T02:38:06.225Z"
-  },
-  {
-    "url": "https://lina.sh/blog/ddos-honeypot",
-    "seenAt": "2026-04-30T02:38:06.225Z"
-  },
-  {
-    "url": "https://opentrafficmap.org/",
-    "seenAt": "2026-04-30T02:38:06.225Z"
-  },
-  {
-    "url": "https://jivx.com/kyoto-bloom",
-    "seenAt": "2026-04-30T02:38:06.225Z"
-  },
-  {
-    "url": "https://openai.com/index/where-the-goblins-came-from",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "2aeb9ffdcbecfe14"
-  },
-  {
-    "url": "https://scottaaronson.blog/?p=9718",
-    "seenAt": "2026-04-30T08:15:02.736Z"
-  },
-  {
-    "url": "https://wiki.haskell.org/Monad_tutorials_timeline",
-    "seenAt": "2026-04-30T08:15:02.736Z"
-  },
-  {
-    "url": "https://www.groundcover.com/blog/otel-normalizer-genai-part-1",
-    "seenAt": "2026-04-30T08:15:02.736Z"
-  },
-  {
-    "url": "https://burrito.bio/essays/biology-is-a-burrito",
-    "seenAt": "2026-04-30T08:15:02.736Z"
-  },
-  {
-    "url": "https://openai.com/index/where-the-goblins-came-from/",
-    "seenAt": "2026-04-30T08:15:02.736Z"
-  },
-  {
-    "url": "https://github.com/cauchy221/Alignment-Whack-a-Mole-Code",
-    "seenAt": "2026-04-30T08:15:02.736Z"
-  },
-  {
-    "url": "https://pure-systems.org/posts/2026-04-29-functional-programmers-need-to-take-a-look-at-zig.html",
-    "seenAt": "2026-04-30T08:15:02.736Z"
-  },
-  {
-    "url": "https://simonwillison.net/2026/Apr/30/zig-anti-ai/",
-    "seenAt": "2026-04-30T08:15:02.736Z"
-  },
-  {
-    "url": "https://thehackernews.com/2026/04/google-fixes-cvss-10-gemini-cli-ci-rce.html",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "3f331b8fad016b67"
-  },
-  {
-    "url": "https://www.databricks.com/blog/backstage-lakebase",
-    "seenAt": "2026-04-30T13:47:22.806Z"
-  },
-  {
-    "url": "https://www.bbc.com/news/articles/c5y7yvgy0w6o",
-    "seenAt": "2026-04-30T13:47:22.806Z"
-  },
-  {
-    "url": "https://www.wsj.com/economy/u-s-debt-tops-100-of-gdp-81c013d7",
-    "seenAt": "2026-04-30T13:47:22.806Z"
-  },
-  {
-    "url": "https://bidprowl.com",
-    "seenAt": "2026-04-30T13:47:22.806Z"
-  },
-  {
-    "url": "https://dpa-international.com/general-news/urn:newsml:dpa.com:20090101:260430-930-14717/",
-    "seenAt": "2026-04-30T13:47:22.806Z"
-  },
-  {
-    "url": "https://gcc.gnu.org/gcc-16/changes.html",
-    "seenAt": "2026-04-30T13:47:22.806Z"
-  },
-  {
-    "url": "https://twitter.com/benbawan/status/2049303326999609846",
-    "seenAt": "2026-04-30T13:47:22.806Z"
-  },
-  {
-    "url": "https://firethering.com/granite-4-1-ibm-open-source-model-family/",
-    "seenAt": "2026-04-30T13:47:22.806Z"
-  },
-  {
-    "url": "https://datacenter.fm/",
-    "seenAt": "2026-04-30T13:47:22.806Z"
-  },
-  {
-    "url": "https://github.com/mozilla/standards-positions/issues/1213",
-    "seenAt": "2026-04-30T13:47:22.806Z"
-  },
-  {
-    "url": "https://thehackernews.com/2026/04/new-python-backdoor-uses-tunneling.html",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "fcc9be90ada2ad8e"
-  },
-  {
-    "url": "https://thehackernews.com/2026/04/etherrat-distribution-spoofing.html",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "7c3f6d796068c374"
-  },
-  {
-    "url": "https://thehackernews.com/2026/04/new-linux-copy-fail-vulnerability.html",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "2835c771f8b27107"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/machine-learning/aws-generative-ai-model-agility-solution-a-comprehensive-guide-to-migrating-llms-for-generative-ai-production/",
-    "seenAt": "2026-04-30T19:16:01.527Z"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/machine-learning/sun-finance-automates-id-extraction-and-fraud-detection-with-generative-ai-on-aws/",
-    "seenAt": "2026-04-30T19:16:01.527Z"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/machine-learning/unleashing-agentic-ai-analytics-on-amazon-sagemaker-with-amazon-athena-and-amazon-quick/",
-    "seenAt": "2026-04-30T19:16:01.527Z"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/machine-learning/configuring-amazon-bedrock-agentcore-gateway-for-secure-access-to-private-resources/",
-    "seenAt": "2026-04-30T19:16:01.527Z"
-  },
-  {
-    "url": "https://openai.com/index/advanced-account-security",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "09f872b87a3f9988"
-  },
-  {
-    "url": "https://developer.nvidia.com/blog/speed-up-unreal-engine-nne-inference-with-nvidia-tensorrt-for-rtx-runtime/",
-    "seenAt": "2026-04-30T19:16:01.527Z"
-  },
-  {
-    "url": "https://developer.nvidia.com/blog/build-ai-powered-games-with-nvidia-dlss-4-5-rtx-and-unreal-engine-5/",
-    "seenAt": "2026-04-30T19:16:01.527Z"
-  },
-  {
-    "url": "https://developer.nvidia.com/blog/how-to-build-run-and-scale-high-quality-creator-workflows-in-comfyui/",
-    "seenAt": "2026-04-30T19:16:01.527Z"
-  },
-  {
-    "url": "https://developer.nvidia.com/blog/automating-gpu-kernel-translation-with-ai-agents-cutile-python-to-cutile-jl/",
-    "seenAt": "2026-04-30T19:16:01.527Z"
-  },
-  {
-    "url": "https://deepmind.google/blog/ai-co-clinician/",
-    "seenAt": "2026-04-30T19:16:01.527Z"
-  },
-  {
-    "url": "https://www.databricks.com/blog/unlocking-sap-business-context-databricks-semantic-metadata-delta-sharing",
-    "seenAt": "2026-04-30T19:16:01.527Z"
-  },
-  {
-    "url": "https://www.databricks.com/blog/databricks-and-stitch-marketing-activation",
-    "seenAt": "2026-04-30T19:16:01.527Z"
-  },
-  {
-    "url": "https://www.databricks.com/blog/alert-fatigue-business-risk",
-    "seenAt": "2026-04-30T19:16:01.527Z"
-  },
-  {
-    "url": "https://www.databricks.com/blog/shipping-faster-isnt-learning-faster",
-    "seenAt": "2026-04-30T19:16:01.527Z"
-  },
-  {
-    "url": "https://www.databricks.com/blog/why-your-oee-dashboard-lying-you",
-    "seenAt": "2026-04-30T19:16:01.527Z"
-  },
-  {
-    "url": "https://www.databricks.com/blog/turbine-tried-tell-you-it-was-failing",
-    "seenAt": "2026-04-30T19:16:01.527Z"
-  },
-  {
-    "url": "https://www.databricks.com/blog/predicting-readmissions-isnt-enough-acting-time",
-    "seenAt": "2026-04-30T19:16:01.527Z"
-  },
-  {
-    "url": "https://www.databricks.com/blog/clinical-trials-run-longer-they-have-thats-patient-problem",
-    "seenAt": "2026-04-30T19:16:01.527Z"
-  },
-  {
-    "url": "https://www.databricks.com/blog/network-quality-revenue-problem-not-technical-one",
-    "seenAt": "2026-04-30T19:16:01.527Z"
-  },
-  {
-    "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-for-beginners-interactive-v-non-interactive-mode/",
-    "seenAt": "2026-04-30T19:16:01.527Z"
-  },
-  {
-    "url": "https://thenewstack.io/production-ready-ai-platforms/",
-    "seenAt": "2026-04-30T19:16:01.527Z"
-  },
-  {
-    "url": "https://thenewstack.io/openai-aws-bedrock-integration/",
-    "seenAt": "2026-04-30T19:16:01.527Z"
-  },
-  {
-    "url": "https://thenewstack.io/anthropics-claude-security-beta/",
-    "seenAt": "2026-04-30T19:16:01.527Z"
-  },
-  {
-    "url": "https://thenewstack.io/meta-abandons-llama-spark/",
-    "seenAt": "2026-04-30T19:16:01.527Z"
-  },
-  {
-    "url": "https://thenewstack.io/quickbase-pave-vibe-coding/",
-    "seenAt": "2026-04-30T19:16:01.527Z"
-  },
-  {
-    "url": "https://www.techadvisor.com/article/3128472/if-apple-makes-an-ipad-neo-its-all-over.html",
-    "seenAt": "2026-04-30T19:16:01.527Z"
-  },
-  {
-    "url": "https://peterdohertys.website/blog-posts/full-text-search-w-duckdb.html",
-    "seenAt": "2026-04-30T19:16:01.527Z"
-  },
-  {
-    "url": "https://lost-number.bearblog.dev/recovering-files-from-beyond-the-grave-using-photorec/",
-    "seenAt": "2026-04-30T19:16:01.527Z"
-  },
-  {
-    "url": "https://nickkossolapov.github.io/fame-boy/building-a-game-boy-emulator-in-fsharp/",
-    "seenAt": "2026-04-30T19:16:01.527Z"
-  },
-  {
-    "url": "https://github.com/kubereboot/kured",
-    "seenAt": "2026-04-30T19:16:01.527Z"
-  },
-  {
-    "url": "https://github.com/carlovalenti/TRiP",
-    "seenAt": "2026-04-30T19:16:01.527Z"
-  },
-  {
-    "url": "https://www.openwall.com/lists/oss-security/2026/04/30/10",
-    "seenAt": "2026-04-30T19:16:01.527Z"
-  },
-  {
-    "url": "https://semgrep.dev/blog/2026/malicious-dependency-in-pytorch-lightning-used-for-ai-training/",
-    "seenAt": "2026-04-30T19:16:01.527Z"
-  },
-  {
-    "url": "https://honker.dev/",
-    "seenAt": "2026-04-30T19:16:01.527Z"
-  },
-  {
-    "url": "https://www.smithsonianmag.com/science-nature/the-science-behind-honeys-eternal-shelf-life-1218690/",
-    "seenAt": "2026-04-30T19:16:01.527Z"
-  },
-  {
-    "url": "https://www.docker.com/blog/from-security-blocked-to-prod-ready-clickhouse-on-docker-hardened-images/",
-    "seenAt": "2026-04-30T19:16:01.527Z"
-  },
-  {
-    "url": "https://krebsonsecurity.com/2026/04/anti-ddos-firm-heaped-attacks-on-brazilian-isps/",
-    "seenAt": "2026-04-30T19:16:01.527Z"
-  },
-  {
-    "url": "https://snyk.io/blog/lightning-pypi-compromise-bun-based-credential-stealer/",
-    "seenAt": "2026-04-30T19:16:01.527Z"
-  },
-  {
-    "url": "https://thehackernews.com/2026/04/pytorch-lightning-compromised-in-pypi.html",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "04be5dcff5ca45f4"
-  },
-  {
-    "url": "https://thehackernews.com/2026/04/threatsday-bulletin-sms-blaster-busts.html",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "3eb8f734d3a60ed4"
-  },
-  {
-    "url": "https://kubernetes.io/blog/2026/04/30/kubernetes-v1-36-inplace-pod-level-resources-beta/",
-    "seenAt": "2026-05-01T02:43:55.517Z"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/machine-learning/reinforcement-fine-tuning-with-llm-as-a-judge/",
-    "seenAt": "2026-05-01T02:43:55.517Z"
-  },
-  {
-    "url": "https://openwarp.zerx.dev",
-    "seenAt": "2026-05-01T02:43:55.517Z"
-  },
-  {
-    "url": "https://clawirc.com/",
-    "seenAt": "2026-05-01T02:43:55.517Z"
-  },
-  {
-    "url": "https://labs.watchtowr.com/the-internet-is-falling-down-falling-down-falling-down-cpanel-whm-authentication-bypass-cve-2026-41940/",
-    "seenAt": "2026-05-01T02:43:55.517Z"
-  },
-  {
-    "url": "https://sciencex.com/news/2026-04-snowball-earth-stranger-climate.html",
-    "seenAt": "2026-05-01T02:43:55.517Z"
-  },
-  {
-    "url": "https://simplex.chat/blog/20260430-simplex-channels-v6-5-consortium-crowdfunding-freedom-of-speech.html",
-    "seenAt": "2026-05-01T02:43:55.517Z"
-  },
-  {
-    "url": "https://rivian.com/support/article/can-i-disable-all-data-collection-from-my-vehicle",
-    "seenAt": "2026-05-01T02:43:55.517Z"
-  },
-  {
-    "url": "https://theupsellgame.com/",
-    "seenAt": "2026-05-01T02:43:55.517Z"
-  },
-  {
-    "url": "https://dustri.org/b/follow-up-to-carrot-disclosure-forgejo.html",
-    "seenAt": "2026-05-01T02:43:55.517Z"
-  },
-  {
-    "url": "https://www.dbos.dev/blog/benchmarking-workflow-execution-scalability-on-postgres",
-    "seenAt": "2026-05-01T02:43:55.517Z"
-  },
-  {
-    "url": "https://thereader.mitpress.mit.edu/the-whistleblower-who-uncovered-the-nsas-big-brother-machine/",
-    "seenAt": "2026-05-01T02:43:55.517Z"
-  },
-  {
-    "url": "https://www.democrata.es/en/politics/congress-and-senate/congress-will-act-against-massive-ip-blockages-by-laliga/",
-    "seenAt": "2026-05-01T02:43:55.517Z"
-  },
-  {
-    "url": "https://twitter.com/theo/status/2049645973350363168",
-    "seenAt": "2026-05-01T02:43:55.517Z"
-  },
-  {
-    "url": "https://www.construction-physics.com/p/how-an-oil-refinery-works",
-    "seenAt": "2026-05-01T02:43:55.517Z"
-  },
-  {
-    "url": "https://www.cncf.io/blog/2026/04/30/ai-sandboxing-is-having-its-kubernetes-moment/",
-    "seenAt": "2026-05-01T02:43:55.517Z"
-  },
-  {
-    "url": "https://www.hashicorp.com/blog/spiffe-securing-the-identity-of-agentic-ai-and-non-human-actors",
-    "seenAt": "2026-05-01T02:43:55.517Z"
-  },
-  {
-    "url": "https://www.hashicorp.com/blog/announcing-the-new-partner-premier-tier-for-the-terraform-registry",
-    "seenAt": "2026-05-01T02:43:55.517Z"
-  },
-  {
-    "url": "https://www.hashicorp.com/blog/securing-the-last-mile-with-local-account-password-rotation",
-    "seenAt": "2026-05-01T02:43:55.517Z"
-  },
-  {
-    "url": "https://www.hashicorp.com/blog/secure-ssh-access-at-scale-with-hashicorp-vault-and-boundary",
-    "seenAt": "2026-05-01T02:43:55.517Z"
-  },
-  {
-    "url": "https://yadin.com/notes/toasted/",
-    "seenAt": "2026-05-01T08:08:06.795Z"
-  },
-  {
-    "url": "https://www.macrumors.com/2026/04/30/mac-studio-mac-mini-constrained-months/",
-    "seenAt": "2026-05-01T08:08:06.795Z"
-  },
-  {
-    "url": "https://github.com/kernalix7/winpodx",
-    "seenAt": "2026-05-01T08:08:06.795Z"
-  },
-  {
-    "url": "https://thenewstack.io/cursor-sdk-harness/",
-    "seenAt": "2026-05-01T13:12:46.667Z"
-  },
-  {
-    "url": "https://www.pagetable.com/?p=1854",
-    "seenAt": "2026-05-01T13:12:46.667Z"
-  },
-  {
-    "url": "https://sitemogging.com",
-    "seenAt": "2026-05-01T13:12:46.667Z"
-  },
-  {
-    "url": "https://xcancel.com/aaronp613/status/2049986504617820551",
-    "seenAt": "2026-05-01T13:12:46.667Z"
-  },
-  {
-    "url": "https://websmith.studio/blog/your-website-is-not-for-you/",
-    "seenAt": "2026-05-01T13:12:46.667Z"
-  },
-  {
-    "url": "https://techcrunch.com/2026/04/30/after-dissing-anthropic-for-limiting-mythos-openai-restricts-access-to-cyber-too/",
-    "seenAt": "2026-05-01T13:12:46.667Z"
-  },
-  {
-    "url": "https://btxx.org/posts/beginners-guide-sourcehut/",
-    "seenAt": "2026-05-01T13:12:46.667Z"
-  },
-  {
-    "url": "https://news.ycombinator.com/item?id=47972888",
-    "seenAt": "2026-05-01T13:12:46.667Z"
-  },
-  {
-    "url": "https://github.com/intel/auto-round",
-    "seenAt": "2026-05-01T13:12:46.667Z"
-  },
-  {
-    "url": "https://docs.x.ai/developers/models/grok-4.3",
-    "seenAt": "2026-05-01T13:12:46.667Z"
-  },
-  {
-    "url": "https://lovable.dev/blog/hunting-networking-bugs-in-kubernetes",
-    "seenAt": "2026-05-01T13:12:46.667Z"
-  },
-  {
-    "url": "https://www.docker.com/blog/a-virtual-agent-team-at-docker-how-the-coding-agent-sandboxes-team-uses-a-fleet-of-agents-to-ship-faster/",
-    "seenAt": "2026-05-01T13:12:46.667Z"
-  },
-  {
-    "url": "https://thehackernews.com/2026/05/two-cybersecurity-professionals-get-4.html",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "e72ae3b02a2986ce"
-  },
-  {
-    "url": "https://thehackernews.com/2026/05/poisoned-ruby-gems-and-go-modules.html",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "2f47072d0ab985bd"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/machine-learning/aws-transform-now-automates-bi-migration-to-amazon-quick-in-days/",
-    "seenAt": "2026-05-01T19:07:34.865Z"
-  },
-  {
-    "url": "https://research.google/blog/catalyzing-scientific-impact-through-global-partnerships-and-open-resources/",
-    "seenAt": "2026-05-01T19:07:34.865Z"
-  },
-  {
-    "url": "https://www.databricks.com/blog/model-risk-governance-not-same-risk-intelligence",
-    "seenAt": "2026-05-01T19:07:34.865Z"
-  },
-  {
-    "url": "https://thenewstack.io/mistral-vibe-cloud-agents/",
-    "seenAt": "2026-05-01T19:07:34.865Z"
-  },
-  {
-    "url": "https://www.rightscon.org/rc26-statement/",
-    "seenAt": "2026-05-01T19:07:34.865Z"
-  },
-  {
-    "url": "https://www.404media.co/city-learns-flock-accessed-cameras-in-childrens-gymnastics-room-as-a-sales-pitch-demo-renews-contract-anyway/",
-    "seenAt": "2026-05-01T19:07:34.865Z"
-  },
-  {
-    "url": "https://www.newyorker.com/culture/annals-of-inquiry/its-possible-to-learn-in-our-sleep-should-we",
-    "seenAt": "2026-05-01T19:07:34.865Z"
-  },
-  {
-    "url": "https://fusion.adam.new/install",
-    "seenAt": "2026-05-01T19:07:34.865Z"
-  },
-  {
-    "url": "https://github.com/calebwin/gitgres",
-    "seenAt": "2026-05-01T19:07:34.865Z"
-  },
-  {
-    "url": "https://alearningaday.blog/2026/05/01/artemis-ii-fault-tolerance/",
-    "seenAt": "2026-05-01T19:07:34.865Z"
-  },
-  {
-    "url": "https://midnightmurmurations.substack.com/p/the-x-files-has-made-me-nostalgic",
-    "seenAt": "2026-05-01T19:07:34.865Z"
-  },
-  {
-    "url": "https://arstechnica.com/gadgets/2026/05/amazon-stuck-with-months-of-repairs-after-drone-strikes-on-data-centers/",
-    "seenAt": "2026-05-01T19:07:34.865Z"
-  },
-  {
-    "url": "https://github.com/Lum1104/Understand-Anything",
-    "seenAt": "2026-05-01T19:07:34.865Z"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=nHwxV0Sd9V8",
-    "seenAt": "2026-05-01T19:07:34.865Z"
-  },
-  {
-    "url": "https://californiawaterblog.com/2026/04/26/ai-water-use-distractions-and-lessons-for-california/",
-    "seenAt": "2026-05-01T19:07:34.865Z"
-  },
-  {
-    "url": "https://github.com/Exocija/ZetaLib/blob/main/The%20Gay%20Jailbreak/The%20Gay%20Jailbreak.md",
-    "seenAt": "2026-05-01T19:07:34.865Z"
-  },
-  {
-    "url": "https://www.bbc.com/news/articles/c5yerr4m1yno",
-    "seenAt": "2026-05-01T19:07:34.865Z"
-  },
-  {
-    "url": "https://www.briefs.co/news/uber-torches-entire-2026-ai-budget-on-claude-code-in-four-months/",
-    "seenAt": "2026-05-01T19:07:34.865Z"
-  },
-  {
-    "url": "https://keepthingsopen.com",
-    "seenAt": "2026-05-01T19:07:34.865Z"
-  },
-  {
-    "url": "https://news.ycombinator.com/item?id=47975676",
-    "seenAt": "2026-05-01T19:07:34.865Z"
-  },
-  {
-    "url": "https://github.com/whohas/whohas",
-    "seenAt": "2026-05-01T19:07:34.865Z"
-  },
-  {
-    "url": "https://news.ycombinator.com/item?id=47975571",
-    "seenAt": "2026-05-01T19:07:34.865Z"
-  },
-  {
-    "url": "https://news.ycombinator.com/item?id=47975570",
-    "seenAt": "2026-05-01T19:07:34.865Z"
-  },
-  {
-    "url": "https://www.online-tribute.com/SallyMcKee",
-    "seenAt": "2026-05-01T19:07:34.865Z"
-  },
-  {
-    "url": "https://thehackernews.com/2026/05/cybercrime-groups-using-vishing-and-sso.html",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "5be1cf7eebb161c4"
-  },
-  {
-    "url": "https://thehackernews.com/2026/05/china-linked-hackers-target-asian.html",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "e27ca35eb6fa4742"
-  },
-  {
-    "url": "https://thehackernews.com/2026/05/top-five-sales-challenges-costing-msps.html",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "9f556463374bc67f"
-  },
-  {
-    "url": "https://www.databricks.com/blog/federal-data-paradox-rich-data-poor-access",
-    "seenAt": "2026-05-02T02:26:43.660Z"
-  },
-  {
-    "url": "https://thenewstack.io/incredibuild-ai-agents-sandbox-coding/",
-    "seenAt": "2026-05-02T02:26:43.660Z"
-  },
-  {
-    "url": "https://thenewstack.io/does-ai-demand-kubernetes/",
-    "seenAt": "2026-05-02T02:26:43.660Z"
-  },
-  {
-    "url": "https://thenewstack.io/suse-ai-infrastructure-kubernetes/",
-    "seenAt": "2026-05-02T02:26:43.660Z"
-  },
-  {
-    "url": "https://thenewstack.io/ibm-bob-agentic-development/",
-    "seenAt": "2026-05-02T02:26:43.660Z"
-  },
-  {
-    "url": "https://evilgeniuslabs.ca/blog/good-developers-learn-to-program-not-a-language",
-    "seenAt": "2026-05-02T02:26:43.660Z"
-  },
-  {
-    "url": "https://evilgeniuslabs.ca/blog/winforms-still-ships-in-visual-studio-2026",
-    "seenAt": "2026-05-02T02:26:43.660Z"
-  },
-  {
-    "url": "https://mirandaheath.website/static/oss_burnout_report_mh_25.pdf",
-    "seenAt": "2026-05-02T02:26:43.660Z"
-  },
-  {
-    "url": "https://metin.nextc.org/posts/Credit_Cards_Are_Vulnerable_To_Brute_Force_Kind_Attacks.html",
-    "seenAt": "2026-05-02T02:26:43.660Z"
-  },
-  {
-    "url": "https://education.ti.com/en/products/calculators/graphing-calculators/ti-84-evo",
-    "seenAt": "2026-05-02T02:26:43.660Z"
-  },
-  {
-    "url": "https://courses.joshwcomeau.com/wham/open-house/00-introduction",
-    "seenAt": "2026-05-02T02:26:43.660Z"
-  },
-  {
-    "url": "https://github.com/microsoft/lib0xc",
-    "seenAt": "2026-05-02T02:26:43.660Z"
-  },
-  {
-    "url": "https://ews.kylemcdonald.net/",
-    "seenAt": "2026-05-02T02:26:43.660Z"
-  },
-  {
-    "url": "https://thehackernews.com/2026/05/30000-facebook-accounts-hacked-via.html",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "ab33d47868556aa3"
-  },
-  {
-    "url": "https://github.com/lahfir/agent-desktop",
-    "seenAt": "2026-05-02T07:28:09.846Z"
-  },
-  {
-    "url": "https://github.com/rancher/k3k",
-    "seenAt": "2026-05-02T07:28:09.846Z"
-  },
-  {
-    "url": "https://www.citadelsecurities.com/news-and-insights/2026-global-intelligence-crisis/",
-    "seenAt": "2026-05-02T07:28:09.846Z"
-  },
-  {
-    "url": "https://thehackernews.com/2026/05/trellix-confirms-source-code-breach.html",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "9620bb08ae187360"
-  },
-  {
-    "url": "https://kubernetes.io/blog/2026/05/01/kubernetes-v1-36-feature-pod-level-resource-managers-alpha/",
-    "seenAt": "2026-05-02T13:03:10.345Z"
-  },
-  {
-    "url": "https://thenewstack.io/ibm-bob-agentic-coding/",
-    "seenAt": "2026-05-02T13:03:10.345Z"
-  },
-  {
-    "url": "https://github.com/nexu-io/open-design",
-    "seenAt": "2026-05-02T13:03:10.345Z"
-  },
-  {
-    "url": "https://danieltan.weblog.lol/2026/05/the-century-long-pause-in-fundamental-physics",
-    "seenAt": "2026-05-02T13:03:10.345Z"
-  },
-  {
-    "url": "https://www.wsj.com/business/deals/gamestop-preparing-offer-for-ebay-1678e6de",
-    "seenAt": "2026-05-02T13:03:10.345Z"
-  },
-  {
-    "url": "https://piruet.app",
-    "seenAt": "2026-05-02T13:03:10.345Z"
-  },
-  {
-    "url": "https://mljar.com/",
-    "seenAt": "2026-05-02T13:03:10.345Z"
-  },
-  {
-    "url": "https://eclecticlight.co/2026/05/02/how-fast-is-a-macos-vm-and-how-small-could-it-be/",
-    "seenAt": "2026-05-02T13:03:10.345Z"
-  },
-  {
-    "url": "https://iesna.eu/?wasm=skyglow_demo",
-    "seenAt": "2026-05-02T13:03:10.345Z"
-  },
-  {
-    "url": "https://copilot.simplepdf.com/?share=a7d00ad073c75a75d493228e6ff7b11eb3f2d945b6175913e87898ec96ca8076&form=w9&lang=en",
-    "seenAt": "2026-05-02T13:03:10.345Z"
-  },
-  {
-    "url": "https://snewpapers.com/",
-    "seenAt": "2026-05-02T13:03:10.345Z"
-  },
-  {
-    "url": "https://devblogs.microsoft.com/oldnewthing/20150417-00/?p=44213",
-    "seenAt": "2026-05-02T13:03:10.345Z"
-  },
-  {
-    "url": "https://mathstick.github.io",
-    "seenAt": "2026-05-02T13:03:10.345Z"
-  },
-  {
-    "url": "https://www.ycombinator.com/companies/collectwise/jobs/rEWfZ6R-senior-forward-deployed-engineer",
-    "seenAt": "2026-05-02T13:03:10.345Z"
-  },
-  {
-    "url": "https://www.noctua.at/en/expertise/blog/how-can-it-take-so-long-to-release-black-fan-versions",
-    "seenAt": "2026-05-02T13:03:10.345Z"
-  },
-  {
-    "url": "https://www.ask.com/",
-    "seenAt": "2026-05-02T13:03:10.345Z"
-  },
-  {
-    "url": "https://simonwillison.net/2026/Apr/24/deepseek-v4/",
-    "seenAt": "2026-05-02T13:03:10.345Z"
-  },
-  {
-    "url": "https://thenewstack.io/opensearch-ai-data-layer/",
-    "seenAt": "2026-05-02T18:54:32.147Z"
-  },
-  {
-    "url": "https://c3-lang.org/blog/unsigned-sizes-a-five-year-mistake/",
-    "seenAt": "2026-05-02T18:54:32.147Z"
-  },
-  {
-    "url": "https://nethack.org/v500/release.html",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "b2544e967d3f449e"
-  },
-  {
-    "url": "https://www.bbc.com/news/articles/clypjx3rg2go",
-    "seenAt": "2026-05-02T18:54:32.147Z"
-  },
-  {
-    "url": "https://code.videolan.org/videolan/dav2d",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "2617f1750f7eddc3"
-  },
-  {
-    "url": "https://flueframework.com/",
-    "seenAt": "2026-05-02T18:54:32.147Z"
-  },
-  {
-    "url": "https://www.cnbc.com/2026/05/01/roblox-rblx-stock-child-safety-earnings.html",
-    "seenAt": "2026-05-02T18:54:32.147Z"
-  },
-  {
-    "url": "https://techcrunch.com/2026/05/01/uber-wants-to-turn-its-millions-of-drivers-into-a-sensor-grid-for-self-driving-companies/",
-    "seenAt": "2026-05-02T18:54:32.147Z"
-  },
-  {
-    "url": "https://en.wikipedia.org/wiki/Zugzwang",
-    "seenAt": "2026-05-02T18:54:32.147Z"
-  },
-  {
-    "url": "https://arxiv.org/abs/2509.00462",
-    "seenAt": "2026-05-02T18:54:32.147Z"
-  },
-  {
-    "url": "https://www.wsj.com/articles/americas-expanding-domestic-surveillance-08b73187",
-    "seenAt": "2026-05-02T18:54:32.147Z"
-  },
-  {
-    "url": "https://arxiv.org/abs/2406.11717",
-    "seenAt": "2026-05-02T18:54:32.147Z"
-  },
-  {
-    "url": "https://www.academia.edu/166172334/A_Common_Proof_of_the_Riemann_Hypothesis_and_the_Collatz_Conjecture_Echo_Interference_in_Number_Theoretic_Acoustic_Spacetime",
-    "seenAt": "2026-05-03T02:35:39.913Z"
-  },
-  {
-    "url": "https://www.nytimes.com/2026/05/01/business/surveillance-pricing-groceries-maryland.html",
-    "seenAt": "2026-05-03T02:35:39.913Z"
-  },
-  {
-    "url": "https://www.bbc.com/news/articles/cvgzk91leweo",
-    "seenAt": "2026-05-03T02:35:39.913Z"
-  },
-  {
-    "url": "https://www.latimes.com/entertainment-arts/story/2026-04-14/delivery-robots-creating-problems-glendale-ban",
-    "seenAt": "2026-05-03T02:35:39.913Z"
-  },
-  {
-    "url": "https://blog.haskell.org/a-couple-million-lines-of-haskell/",
-    "seenAt": "2026-05-03T02:35:39.913Z"
-  },
-  {
-    "url": "https://sfist.com/2026/05/01/waymo-drives-off-with-south-bay-mans-luggage-after-trunk-fails-to-open/",
-    "seenAt": "2026-05-03T02:35:39.913Z"
-  },
-  {
-    "url": "https://electrek.co/2026/05/02/this-tesla-owner-won-10k-in-court-for-teslas-fsd-lies-tesla-is-still-fighting-him/",
-    "seenAt": "2026-05-03T02:35:39.913Z"
-  },
-  {
-    "url": "https://github.com/mahimairaja/voiceai",
-    "seenAt": "2026-05-03T02:35:39.913Z"
-  },
-  {
-    "url": "https://www.clojuriststogether.org/news/q2-2026-funding-announcement/",
-    "seenAt": "2026-05-03T02:35:39.913Z"
-  },
-  {
-    "url": "https://hnup.date/hn-sota",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "be3dd5cfae22773c"
-  },
-  {
-    "url": "https://www.mendral.com/blog/agent-harness-belongs-outside-sandbox",
-    "seenAt": "2026-05-03T02:35:39.913Z"
-  },
-  {
-    "url": "https://www.david-smith.org/blog/2026/04/29/maps-on-watchos/",
-    "seenAt": "2026-05-03T02:35:39.913Z"
-  },
-  {
-    "url": "https://ladybird.org/newsletter/2026-04-30/",
-    "seenAt": "2026-05-03T02:35:39.913Z"
-  },
-  {
-    "url": "https://www.universiteitleiden.nl/en/news/2025/07/neanderthals-ran-fat-factories-125000-years-ago",
-    "seenAt": "2026-05-03T02:35:39.913Z"
-  },
-  {
-    "url": "https://github.com/microsoft/vscode/pull/310226",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "7d67124353632a91"
-  },
-  {
-    "url": "https://donottrack.sh/",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "7feb8bc6dd29fea6"
-  },
-  {
-    "url": "https://kubernetes.io/blog/2026/05/01/kubernetes-v1-36-feature-pod-level-resource-managers-alpha",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "b271b0f81a7298c1"
-  },
-  {
-    "url": "https://kubernetes.io/blog/2026/04/30/kubernetes-v1-36-inplace-pod-level-resources-beta",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "5021e346fd3dcdb6"
-  },
-  {
-    "url": "https://kubernetes.io/blog/2026/04/29/kubernetes-v1-36-memory-qos-tiered-protection",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "dff5c549e838b3c2"
-  },
-  {
-    "url": "https://kubernetes.io/blog/2026/04/28/kubernetes-v1-36-staleness-mitigation-for-controllers",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "ceaaa762966f48d5"
-  },
-  {
-    "url": "https://kubernetes.io/blog/2026/04/27/kubernetes-v1-36-mutable-pod-resources-for-suspended-jobs",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "b218c81fee7165da"
-  },
-  {
-    "url": "https://kubernetes.io/blog/2026/04/24/kubernetes-v1-36-fine-grained-kubelet-authorization-ga",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "ac69544c3cc1b061"
-  },
-  {
-    "url": "https://kubernetes.io/blog/2026/04/23/kubernetes-v1-36-userns-ga",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "2ffdcaa57dee2ac9"
-  },
-  {
-    "url": "https://kubernetes.io/blog/2026/04/22/breaking-changes-in-selinux-volume-labeling",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "11a5e008d0a3b6d2"
-  },
-  {
-    "url": "https://kubernetes.io/blog/2026/04/22/kubernetes-v1-36-release",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "134109a0bf1dd3dd"
-  },
-  {
-    "url": "https://kubernetes.io/blog/2026/04/21/gateway-api-v1-5",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "82f85196940ae6ca"
-  },
-  {
-    "url": "https://kubernetes.io/blog/2026/03/30/kubernetes-v1-36-sneak-peek",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "dbf4a5947f394e44"
-  },
-  {
-    "url": "https://kubernetes.io/blog/2026/03/20/ingress2gateway-1-0-release",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "f3622d22e5205eda"
-  },
-  {
-    "url": "https://kubernetes.io/blog/2026/03/20/running-agents-on-kubernetes-with-agent-sandbox",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "80b925ea9d561cfe"
-  },
-  {
-    "url": "https://kubernetes.io/blog/2026/03/18/securing-production-debugging-in-kubernetes",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "7c2caa7738b5a5f6"
-  },
-  {
-    "url": "https://kubernetes.io/blog/2026/03/17/image-promoter-rewrite",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "d8f586718a925fcb"
-  },
-  {
-    "url": "https://kubernetes.io/blog/2026/03/09/announcing-ai-gateway-wg",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "7121590d96611eaf"
-  },
-  {
-    "url": "https://kubernetes.io/blog/2026/02/27/ingress-nginx-before-you-migrate",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "495d722eddbcd87d"
-  },
-  {
-    "url": "https://kubernetes.io/blog/2026/02/26/ccm-new-metric-route-sync-total",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "66203c1b76705697"
-  },
-  {
-    "url": "https://kubernetes.io/blog/2026/02/12/sig-architecture-api-spotlight",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "6eb3d233607efbfd"
-  },
-  {
-    "url": "https://kubernetes.io/blog/2026/02/03/introducing-node-readiness-controller",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "89f11b706e164e2b"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/aws/top-announcements-of-the-whats-next-with-aws-2026",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "feacd7b356496c63"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-anthropic-meta-partnership-aws-lambda-s3-files-amazon-bedrock-agentcore-cli-and-more-april-27-2026",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "09393027ee8722ad"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-claude-opus-4-7-in-amazon-bedrock-aws-interconnect-ga-and-more-april-20-2026",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "336f6e0d974f73c8"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/aws/introducing-anthropics-claude-opus-4-7-model-in-amazon-bedrock",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "b475f59dd75ca1ce"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/aws/aws-interconnect-is-now-generally-available-with-a-new-option-to-simplify-last-mile-connectivity",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "5a7d2ad51f62383d"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-claude-mythos-preview-in-amazon-bedrock-aws-agent-registry-and-more-april-13-2026",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "c7ab566b79132072"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/aws/launching-s3-files-making-s3-buckets-accessible-as-file-systems",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "821e3231183cb9a4"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-devops-agent-security-agent-ga-product-lifecycle-updates-and-more-april-6-2026",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "7c25d5d39e623937"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/aws/amazon-bedrock-guardrails-supports-cross-account-safeguards-with-centralized-control-and-management",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "62aabee8d3d41f8c"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/aws/announcing-managed-daemon-support-for-amazon-ecs-managed-instances",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "b37b1e62dbf24853"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/aws/announcing-the-aws-sustainability-console-programmatic-access-configurable-csv-reports-and-scope-1-3-reporting-in-one-place",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "fff7f523639f391a"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-ai-ml-scholars-program-agent-plugin-for-aws-serverless-and-more-march-30-2026",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "5e516ee40a9ba3c6"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/aws/customize-your-aws-management-console-experience-with-visual-settings-including-account-color-region-and-service-visibility",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "3892d092be4a935b"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/aws/announcing-amazon-aurora-postgresql-serverless-database-creation-in-seconds",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "3291490a13b0c1d7"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-nvidia-nemotron-3-super-on-amazon-bedrock-nova-forge-sdk-amazon-corretto-26-and-more-march-23-2026",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "a96a3a66c359aca8"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/aws/20-years-in-the-aws-cloud-how-time-flies",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "08a430d1563804cc"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/aws/our-first-2026-heroes-cohort-is-here",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "523fc47080f8aac7"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-amazon-s3-turns-20-amazon-route-53-global-resolver-general-availability-and-more-march-16-2026",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "7571c448a470659a"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/aws/twenty-years-of-amazon-s3-and-building-whats-next",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "c5acf273cbd3662e"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/aws/introducing-account-regional-namespaces-for-amazon-s3-general-purpose-buckets",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "f853833da2d3362d"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/machine-learning/aws-transform-now-automates-bi-migration-to-amazon-quick-in-days",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "8275d27fb05591f7"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/machine-learning/reinforcement-fine-tuning-with-llm-as-a-judge",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "9bbeaf1ed692ef8c"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/machine-learning/aws-generative-ai-model-agility-solution-a-comprehensive-guide-to-migrating-llms-for-generative-ai-production",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "f679a1c15d14c212"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/machine-learning/sun-finance-automates-id-extraction-and-fraud-detection-with-generative-ai-on-aws",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "184bd033f8c3a2b7"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/machine-learning/unleashing-agentic-ai-analytics-on-amazon-sagemaker-with-amazon-athena-and-amazon-quick",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "57ce6de73e01936d"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/machine-learning/configuring-amazon-bedrock-agentcore-gateway-for-secure-access-to-private-resources",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "26c336ef4eaf5824"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/machine-learning/extracting-contract-insights-with-pwcs-ai-driven-annotation-on-aws",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "2e289de5b73aec4b"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/machine-learning/organizing-agents-memory-at-scale-namespace-design-patterns-in-agentcore-memory",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "22be6640da0872b4"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/machine-learning/building-ai-ready-data-vanguards-virtual-analyst-journey",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "130d942c74417975"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/machine-learning/run-custom-mcp-proxies-serverless-on-amazon-bedrock-agentcore-runtime",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "0c6b59c1ced742e0"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/machine-learning/migrating-a-text-agent-to-a-voice-assistant-with-amazon-nova-2-sonic",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "91aac57661aebe0b"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/machine-learning/nvidia-nemotron-3-nano-omni-model-now-available-on-amazon-sagemaker-jumpstart",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "c5505762a2b8b350"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/machine-learning/automate-repetitive-tasks-with-amazon-quick-flows",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "2ee2e45afeba8ea2"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/machine-learning/build-and-deploy-an-automatic-sync-solution-for-amazon-bedrock-knowledge-bases",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "016eb130a127e631"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/machine-learning/build-strands-agents-with-sagemaker-ai-models-and-mlflow",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "90fc75c3419715ae"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/machine-learning/how-popsa-used-amazon-nova-to-inspire-customers-with-personalised-title-suggestions",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "d6f18daf971688ac"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/machine-learning/building-workforce-ai-agents-with-visier-and-amazon-quick",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "95892cf611ce3879"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/machine-learning/amazon-quick-for-marketing-from-scattered-data-to-strategic-action",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "fcca3f2033d50e64"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/machine-learning/applying-multimodal-biological-foundation-models-across-therapeutics-and-patient-care",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "11269f0bcefb4ed3"
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/machine-learning/cost-effective-multilingual-audio-transcription-at-scale-with-parakeet-tdt-and-aws-batch",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "9c63011744e67bcb"
-  },
-  {
-    "url": "https://developer.nvidia.com/blog/speed-up-unreal-engine-nne-inference-with-nvidia-tensorrt-for-rtx-runtime",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "2d466387a1087f56"
-  },
-  {
-    "url": "https://developer.nvidia.com/blog/build-ai-powered-games-with-nvidia-dlss-4-5-rtx-and-unreal-engine-5",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "aa062a76cdae9198"
-  },
-  {
-    "url": "https://developer.nvidia.com/blog/how-to-build-run-and-scale-high-quality-creator-workflows-in-comfyui",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "48bad67ac5782682"
-  },
-  {
-    "url": "https://developer.nvidia.com/blog/automating-gpu-kernel-translation-with-ai-agents-cutile-python-to-cutile-jl",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "2f93b61c42b66a20"
-  },
-  {
-    "url": "https://developer.nvidia.com/blog/powering-ai-factories-with-nvidia-enterprise-reference-architectures",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "edb9aaf92a53f996"
-  },
-  {
     "url": "https://developer.nvidia.com/blog/scaling-biomolecular-modeling-using-context-parallelism-in-nvidia-bionemo",
     "seenAt": "2026-05-03T07:57:08.336Z",
     "contentHash": "878f48753a24df29"
@@ -2694,14 +559,24 @@
     "contentHash": "842343c4c12ce2ea"
   },
   {
-    "url": "https://research.google/blog/catalyzing-scientific-impact-through-global-partnerships-and-open-resources",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "3f4bf565d55fc071"
+    "url": "https://developer.nvidia.com/blog/how-to-build-vision-ai-pipelines-using-deepstream-coding-agents",
+    "seenAt": "2026-04-29T15:30:10.373Z"
   },
   {
-    "url": "https://research.google/blog/four-ways-google-research-scientists-have-been-using-empirical-research-assistance",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "5907d91b50463174"
+    "url": "https://developer.nvidia.com/blog/building-custom-atomistic-simulation-workflows-for-chemistry-and-materials-science-with-nvidia-alchemi-toolkit",
+    "seenAt": "2026-04-29T15:30:10.373Z"
+  },
+  {
+    "url": "https://developer.nvidia.com/blog/nvidia-nvbandwidth-your-essential-tool-for-measuring-gpu-interconnect-and-memory-performance",
+    "seenAt": "2026-04-29T15:30:10.373Z"
+  },
+  {
+    "url": "https://developer.nvidia.com/blog/nvidia-ising-introduces-ai-powered-workflows-to-build-fault-tolerant-quantum-systems",
+    "seenAt": "2026-04-29T15:30:10.373Z"
+  },
+  {
+    "url": "https://developer.nvidia.com/blog/minimax-m2-7-advances-scalable-agentic-workflows-on-nvidia-platforms-for-complex-ai-applications",
+    "seenAt": "2026-04-29T15:30:10.373Z"
   },
   {
     "url": "https://research.google/blog/its-all-about-the-angle-your-photos-re-composed",
@@ -2794,9 +669,12 @@
     "contentHash": "8bbb87c0a779be0f"
   },
   {
-    "url": "https://deepmind.google/blog/ai-co-clinician",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "98465c00c0834edf"
+    "url": "https://research.google/blog/exploring-the-feasibility-of-conversational-diagnostic-ai-in-a-real-world-clinical-study",
+    "seenAt": "2026-04-29T15:30:10.373Z"
+  },
+  {
+    "url": "https://research.google/blog/waxal-a-large-scale-open-resource-for-african-language-speech-technology",
+    "seenAt": "2026-04-29T15:30:10.373Z"
   },
   {
     "url": "https://deepmind.google/blog/announcing-our-partnership-with-the-republic-of-korea",
@@ -2894,6 +772,10 @@
     "contentHash": "a73edb0d6a8a5b83"
   },
   {
+    "url": "https://deepmind.google/blog/d4rt-teaching-ai-to-see-the-world-in-four-dimensions",
+    "seenAt": "2026-04-29T15:30:10.373Z"
+  },
+  {
     "url": "https://blogs.microsoft.com/ai/a-conversation-with-kevin-scott-whats-next-in-ai",
     "seenAt": "2026-05-03T07:57:08.336Z",
     "contentHash": "669c69ebb1105c65"
@@ -2944,59 +826,44 @@
     "contentHash": "606af8497dc989e8"
   },
   {
-    "url": "https://databricks.com/blog/federal-data-paradox-rich-data-poor-access",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "9435bd5cf21a43e6"
+    "url": "https://databricks.com/blog/stripe-data-now-available-databricks-databricks-marketplace",
+    "seenAt": "2026-04-29T15:30:10.373Z"
   },
   {
-    "url": "https://databricks.com/blog/model-risk-governance-not-same-risk-intelligence",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "33d495bc957ae80a"
+    "url": "https://databricks.com/blog/built-not-bolted-what-ai-native-actually-means-cybersecurity",
+    "seenAt": "2026-04-29T15:30:10.373Z"
   },
   {
-    "url": "https://databricks.com/blog/unlocking-sap-business-context-databricks-semantic-metadata-delta-sharing",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "46b25a945d052c30"
+    "url": "https://databricks.com/blog/operationalizing-ai-public-sector-fraud-prevention",
+    "seenAt": "2026-04-29T15:30:10.373Z"
   },
   {
-    "url": "https://databricks.com/blog/databricks-and-stitch-marketing-activation",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "b44e37ddef507fc1"
+    "url": "https://databricks.com/blog/months-minutes-building-real-time-clinical-data-pipelines-natural-language",
+    "seenAt": "2026-04-29T15:30:10.373Z"
   },
   {
-    "url": "https://databricks.com/blog/alert-fatigue-business-risk",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "643c3d88ec0d581a"
+    "url": "https://databricks.com/blog/agentic-data-engineering-genie-code-and-lakeflow",
+    "seenAt": "2026-04-29T15:30:10.373Z"
   },
   {
-    "url": "https://databricks.com/blog/backstage-lakebase",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "1cb711e1a1fca193"
+    "url": "https://databricks.com/blog/snapchat-conversions-api-databricks-marketplace",
+    "seenAt": "2026-04-29T15:30:10.373Z"
   },
   {
-    "url": "https://databricks.com/blog/shipping-faster-isnt-learning-faster",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "c831d531e78d5e76"
+    "url": "https://databricks.com/blog/how-leading-tech-companies-are-killing-builders-tax-lakebase",
+    "seenAt": "2026-04-29T15:30:10.373Z"
   },
   {
-    "url": "https://databricks.com/blog/why-your-oee-dashboard-lying-you",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "7b6a1546209b2eb1"
+    "url": "https://databricks.com/blog/inside-one-first-production-deployments-lakebase-langguards-agentic-workflow-governance-engine",
+    "seenAt": "2026-04-29T15:30:10.373Z"
   },
   {
-    "url": "https://databricks.com/blog/turbine-tried-tell-you-it-was-failing",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "00f2266f657e06fe"
+    "url": "https://databricks.com/blog/next-generation-databricks-genie",
+    "seenAt": "2026-04-29T15:30:10.373Z"
   },
   {
-    "url": "https://databricks.com/blog/predicting-readmissions-isnt-enough-acting-time",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "e24a69d8f872406d"
-  },
-  {
-    "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-for-beginners-interactive-v-non-interactive-mode",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "a2c05605d89c9cf3"
+    "url": "https://databricks.com/blog/model-risk-management-2026-bankers-guide-revised-interagency-guidance",
+    "seenAt": "2026-04-29T15:30:10.373Z"
   },
   {
     "url": "https://github.blog/developer-skills/github/github-for-beginners-getting-started-with-markdown",
@@ -3044,79 +911,8 @@
     "contentHash": "e7233294d5e79406"
   },
   {
-    "url": "https://thenewstack.io/opensearch-ai-data-layer",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "1754017011349d88"
-  },
-  {
-    "url": "https://thenewstack.io/ibm-bob-agentic-coding",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "ee20f28944c107ac"
-  },
-  {
-    "url": "https://thenewstack.io/incredibuild-ai-agents-sandbox-coding",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "abc4e055138da367"
-  },
-  {
-    "url": "https://thenewstack.io/does-ai-demand-kubernetes",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "a49728573b6711e5"
-  },
-  {
-    "url": "https://thenewstack.io/suse-ai-infrastructure-kubernetes",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "080dd456522b04d0"
-  },
-  {
-    "url": "https://thenewstack.io/ibm-bob-agentic-development",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "1de5748a933035b4"
-  },
-  {
-    "url": "https://thenewstack.io/mistral-vibe-cloud-agents",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "6e453ffc33bd7a42"
-  },
-  {
-    "url": "https://thenewstack.io/cursor-sdk-harness",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "e3cd8e5495d4eb28"
-  },
-  {
-    "url": "https://thenewstack.io/production-ready-ai-platforms",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "8817d0fa69480525"
-  },
-  {
-    "url": "https://thenewstack.io/openai-aws-bedrock-integration",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "a5c1cfaa6e558832"
-  },
-  {
-    "url": "https://thenewstack.io/anthropics-claude-security-beta",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "e5dc5dd7ee3f5073"
-  },
-  {
-    "url": "https://thenewstack.io/meta-abandons-llama-spark",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "984902e33414d323"
-  },
-  {
-    "url": "https://thenewstack.io/quickbase-pave-vibe-coding",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "7ec973c0c95f32f4"
-  },
-  {
-    "url": "https://thenewstack.io/strands-agents-tool-design",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "ff8785fb831d3d0a"
-  },
-  {
-    "url": "https://thenewstack.io/anaconda-ai-outerbounds-python-metaflow",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "ba3abdd3ef5ee9b6"
+    "url": "https://github.blog/ai-and-ml/github-copilot/build-a-personal-organization-command-center-with-github-copilot-cli",
+    "seenAt": "2026-04-29T15:30:10.373Z"
   },
   {
     "url": "https://thenewstack.io/anthropic-agents-managed-aws-claude",
@@ -3144,84 +940,144 @@
     "contentHash": "8ba714be87179898"
   },
   {
-    "url": "https://acai.sh/blog/specsmaxxing",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "6c721943adacd0f5"
+    "url": "https://thenewstack.io/google-doesnt-care",
+    "seenAt": "2026-04-29T15:30:10.373Z"
   },
   {
-    "url": "https://thinkpol.ca/2026/04/30/an-open-weights-chinese-model-just-beat-claude-gpt-5-5-and-gemini-in-a-programming-challenge",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "060ddbd2a635f21a"
+    "url": "https://thenewstack.io/broadcom-vcf-kubernetes-platform",
+    "seenAt": "2026-04-29T15:30:10.373Z"
   },
   {
-    "url": "https://retrocoding.net/windows-api-is-successful-cross-platform-api",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "802cb4661381245a"
+    "url": "https://thenewstack.io/sas-viya-mcp-governance",
+    "seenAt": "2026-04-29T15:30:10.373Z"
   },
   {
-    "url": "https://blog.feld.me/posts/2026/04/open-source-does-not-imply-open-community",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "4b87a2ab3d80a5b7"
+    "url": "https://thenewstack.io/json-schema-ai-reliability",
+    "seenAt": "2026-04-29T15:30:10.373Z"
   },
   {
-    "url": "https://newsonjapan.com/article/149075.php",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "8b90bfbedce0730a"
+    "url": "https://thenewstack.io/sentrys-seer-agent-debug",
+    "seenAt": "2026-04-29T15:30:10.373Z"
   },
   {
-    "url": "https://nytimes.com/2026/05/01/business/surveillance-pricing-groceries-maryland.html",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "0f60f1f4f51540c5"
+    "url": "https://thenewstack.io/netbox-labs-network-intent",
+    "seenAt": "2026-04-29T15:30:10.373Z"
   },
   {
-    "url": "https://bbc.com/news/articles/cvgzk91leweo",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "d2275765d8bf74e4"
+    "url": "https://thenewstack.io/terraform-state-infrastructure-drift",
+    "seenAt": "2026-04-29T15:30:10.373Z"
   },
   {
-    "url": "https://blog.haskell.org/a-couple-million-lines-of-haskell",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "718c5f3e89023cde"
+    "url": "https://thenewstack.io/lovelace-ai-context-engine-elemental-andrew-moore",
+    "seenAt": "2026-04-29T15:30:10.373Z"
   },
   {
-    "url": "https://clojuriststogether.org/news/q2-2026-funding-announcement",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "06f4032f61f3181f"
+    "url": "https://thenewstack.io/openai-microsoft-partnership-restructured",
+    "seenAt": "2026-04-29T15:30:10.373Z"
   },
   {
-    "url": "https://mendral.com/blog/agent-harness-belongs-outside-sandbox",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "7a1808ec840dd547"
+    "url": "https://thenewstack.io/github-copilot-usage-billing",
+    "seenAt": "2026-04-29T15:30:10.373Z"
   },
   {
-    "url": "https://david-smith.org/blog/2026/04/29/maps-on-watchos",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "853bb23c295cd539"
+    "url": "https://thenewstack.io/thoughtworks-radar-agentic-ai",
+    "seenAt": "2026-04-29T15:30:10.373Z"
   },
   {
-    "url": "https://ladybird.org/newsletter/2026-04-30",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "c090b225a419d574"
+    "url": "https://thenewstack.io/vibe-coding-ceos-executives-ai-agents",
+    "seenAt": "2026-04-29T15:30:10.373Z"
   },
   {
-    "url": "https://universiteitleiden.nl/en/news/2025/07/neanderthals-ran-fat-factories-125000-years-ago",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "523691c96bb426a1"
+    "url": "https://thenewstack.io/open-source-digital-autonomy",
+    "seenAt": "2026-04-29T15:30:10.373Z"
   },
   {
-    "url": "https://eclecticlight.co/2026/05/02/how-fast-is-a-macos-vm-and-how-small-could-it-be",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "b6fbc9236a9a61c6"
+    "url": "https://thenewstack.io/postgres-ai-ground-truth",
+    "seenAt": "2026-04-29T15:30:10.373Z"
   },
   {
-    "url": "https://agis.io/post/dabbling-in-erlang-a-minimal-introduction",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "5a46dc69a4b3eacf"
+    "url": "https://thenewstack.io/security-operational-maturity-scaling",
+    "seenAt": "2026-04-29T15:30:10.373Z"
   },
   {
-    "url": "https://cncf.io/blog/2026/04/30/ai-sandboxing-is-having-its-kubernetes-moment",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "fb4eb994058ffcbd"
+    "url": "https://zed.dev/blog/zed-1-0",
+    "seenAt": "2026-04-29T15:30:10.373Z"
+  },
+  {
+    "url": "https://blog.tangled.org/federation",
+    "seenAt": "2026-04-29T15:30:10.373Z"
+  },
+  {
+    "url": "https://healthmanagement.org/c/icu/IssueArticle/improving-handovers-by-learning-from-scuderia-ferrari",
+    "seenAt": "2026-04-29T15:30:10.373Z"
+  },
+  {
+    "url": "https://blog.jeffschomay.com/letting-ai-play-my-game",
+    "seenAt": "2026-04-29T15:30:10.373Z"
+  },
+  {
+    "url": "https://diabettech.com/i-asked-ai-to-count-my-carbs-27000-times-it-couldnt-give-the-same-answer-twice",
+    "seenAt": "2026-04-29T15:30:10.373Z"
+  },
+  {
+    "url": "https://github.com/electricant/adblock-rust-manager",
+    "seenAt": "2026-04-29T15:30:10.373Z"
+  },
+  {
+    "url": "https://physicsworld.com/a/coffee-with-a-splash-of-physics-how-to-make-the-most-out-of-your-brew",
+    "seenAt": "2026-04-29T15:30:10.373Z"
+  },
+  {
+    "url": "https://ycombinator.com/companies/stardex/jobs/6GCK1HC-founding-customer-success-lead",
+    "seenAt": "2026-04-29T15:30:10.373Z"
+  },
+  {
+    "url": "https://theregister.com/2026/04/29/mitchell_hashimoto_ghostty_quitting_github",
+    "seenAt": "2026-04-29T15:30:10.373Z"
+  },
+  {
+    "url": "https://github.com/DOS-History/Paterson-Listings",
+    "seenAt": "2026-04-29T15:30:10.373Z"
+  },
+  {
+    "url": "https://rip.so/",
+    "seenAt": "2026-04-29T15:30:10.373Z"
+  },
+  {
+    "url": "https://nldigitalgovernment.nl/news/soft-launch-for-government-open-source-code-platform",
+    "seenAt": "2026-04-29T15:30:10.373Z"
+  },
+  {
+    "url": "https://dl.acm.org/doi/abs/10.1145/3767295.3803591",
+    "seenAt": "2026-04-29T15:30:10.373Z"
+  },
+  {
+    "url": "https://hardenedbsd.org/article/shawn-webb/2026-04-26/hardenedbsd-officially-radicle",
+    "seenAt": "2026-04-29T15:30:10.373Z"
+  },
+  {
+    "url": "https://corrode.dev/blog/bugs-rust-wont-catch",
+    "seenAt": "2026-04-29T15:30:10.373Z"
+  },
+  {
+    "url": "https://buchodi.com/how-chatgpt-serves-ads-heres-the-full-attribution-loop",
+    "seenAt": "2026-04-29T15:30:10.373Z"
+  },
+  {
+    "url": "https://lucumr.pocoo.org/2026/4/28/before-github",
+    "seenAt": "2026-04-29T15:30:10.373Z"
+  },
+  {
+    "url": "https://ron.stoner.com/How_I_Won_a_Championship_That_Doesnt_Exist",
+    "seenAt": "2026-04-29T15:30:10.373Z"
+  },
+  {
+    "url": "https://mitchellh.com/writing/ghostty-leaving-github",
+    "seenAt": "2026-04-29T15:30:10.373Z"
+  },
+  {
+    "url": "https://stratechery.com/2026/an-interview-with-openai-ceo-sam-altman-and-aws-ceo-matt-garman-about-bedrock-managed-agents",
+    "seenAt": "2026-04-29T15:30:10.373Z"
   },
   {
     "url": "https://cncf.io/blog/2026/04/29/the-state-of-ai-in-cncf-projects-a-first-look-at-the-data",
@@ -3269,24 +1125,8 @@
     "contentHash": "b146dc9ddf804744"
   },
   {
-    "url": "https://hashicorp.com/blog/spiffe-securing-the-identity-of-agentic-ai-and-non-human-actors",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "f9aa51ddfeedb4df"
-  },
-  {
-    "url": "https://hashicorp.com/blog/announcing-the-new-partner-premier-tier-for-the-terraform-registry",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "4722812fe0427fc9"
-  },
-  {
-    "url": "https://hashicorp.com/blog/securing-the-last-mile-with-local-account-password-rotation",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "e8c133c096c0b6a6"
-  },
-  {
-    "url": "https://hashicorp.com/blog/secure-ssh-access-at-scale-with-hashicorp-vault-and-boundary",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "614d99739f7654b5"
+    "url": "https://cncf.io/blog/2026/04/11/what-i-learned-at-my-first-kubecon-cloudnativecon-as-a-high-school-speaker",
+    "seenAt": "2026-04-29T15:30:10.373Z"
   },
   {
     "url": "https://hashicorp.com/blog/turning-secret-detection-into-measurable-risk-reduction",
@@ -3369,14 +1209,20 @@
     "contentHash": "9213ac500bc49575"
   },
   {
-    "url": "https://docker.com/blog/a-virtual-agent-team-at-docker-how-the-coding-agent-sandboxes-team-uses-a-fleet-of-agents-to-ship-faster",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "136b2911a1a4eeda"
+    "url": "https://hashicorp.com/blog/adopting-hashicorp-vaults-transit-engine-high-performance-envelope-encryption-ariso-ai",
+    "seenAt": "2026-04-29T15:30:10.373Z"
   },
   {
-    "url": "https://docker.com/blog/from-security-blocked-to-prod-ready-clickhouse-on-docker-hardened-images",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "e56f18f7b488acce"
+    "url": "https://hashicorp.com/blog/everything-as-code-for-your-security-lifecycle",
+    "seenAt": "2026-04-29T15:30:10.373Z"
+  },
+  {
+    "url": "https://hashicorp.com/blog/building-day-2-ops-guardrails-with-terraform-and-packer",
+    "seenAt": "2026-04-29T15:30:10.373Z"
+  },
+  {
+    "url": "https://hashicorp.com/blog/secure-remote-access-without-the-portal-tax-boundary-vs-other-vendors",
+    "seenAt": "2026-04-29T15:30:10.373Z"
   },
   {
     "url": "https://docker.com/blog/trivy-kics-and-the-shape-of-supply-chain-attacks-so-far-in-2026",
@@ -3419,9 +1265,12 @@
     "contentHash": "db86653979594f9c"
   },
   {
-    "url": "https://krebsonsecurity.com/2026/04/anti-ddos-firm-heaped-attacks-on-brazilian-isps",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "51ead2348e979473"
+    "url": "https://docker.com/blog/blog-docker-model-runner-new-nvidia-dgx-station",
+    "seenAt": "2026-04-29T15:30:10.373Z"
+  },
+  {
+    "url": "https://docker.com/blog/docker-sandboxes-run-agents-in-yolo-mode-safely",
+    "seenAt": "2026-04-29T15:30:10.373Z"
   },
   {
     "url": "https://krebsonsecurity.com/2026/04/scattered-spider-member-tylerb-pleads-guilty",
@@ -3469,19 +1318,63 @@
     "contentHash": "e110cb33986ae2dc"
   },
   {
-    "url": "https://snyk.io/blog/lightning-pypi-compromise-bun-based-credential-stealer",
+    "url": "https://krebsonsecurity.com/2026/02/who-is-the-kimwolf-botmaster-dort",
+    "seenAt": "2026-04-29T15:30:10.373Z"
+  },
+  {
+    "url": "https://projectzero.google/2026/03/mutational-grammar-fuzzing.html",
     "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "98a25918e1a18fa5"
+    "contentHash": "c650dfa951647436"
+  },
+  {
+    "url": "https://projectzero.google/2026/02/gphfh-deep-dive.html",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "05447092eee73c23"
+  },
+  {
+    "url": "https://projectzero.google/2026/02/windows-administrator-protection.html",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "ee061e1a8495e30e"
+  },
+  {
+    "url": "https://projectzero.google/2026/01/sound-barrier-2.html",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "94c377b473b4835d"
+  },
+  {
+    "url": "https://projectzero.google/2026/26/windows-administrator-protection.html",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "9352b26e5de2e441"
+  },
+  {
+    "url": "https://projectzero.google/2026/01/pixel-0-click-part-3.html",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "a384a3569c1b4cee"
+  },
+  {
+    "url": "https://projectzero.google/2026/01/pixel-0-click-part-2.html",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "055ff4ad120ff0f0"
+  },
+  {
+    "url": "https://projectzero.google/2026/01/pixel-0-click-part-1.html",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "a6bd32cb9a150113"
+  },
+  {
+    "url": "https://projectzero.google/2025/12/welcome.html",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "cce4a92ccec862a2"
+  },
+  {
+    "url": "https://projectzero.google/2025/12/thinking-outside-the-box.html",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "d4c997145a9fe89e"
   },
   {
     "url": "https://snyk.io/blog/thymeleaf-injection",
     "seenAt": "2026-05-03T07:57:08.336Z",
     "contentHash": "9f9286e1b1c8ce27"
-  },
-  {
-    "url": "https://snyk.io/blog/bun-based-stealer-hits-sap-cap-js-mbt-npm-packages",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "dbede9695eeb7710"
   },
   {
     "url": "https://snyk.io/blog/atlassian-integration-intelligent-remediation-jira",
@@ -3492,6 +1385,1173 @@
     "url": "https://snyk.io/blog/malicious-release-of-elementary-data-pypi-package-steals-cloud-credentials-from-data-engineers",
     "seenAt": "2026-05-03T07:57:08.336Z",
     "contentHash": "3383107b74e808f4"
+  },
+  {
+    "url": "https://snyk.io/blog/snyk-agent-fix-agentic-architecture",
+    "seenAt": "2026-04-29T15:30:10.373Z"
+  },
+  {
+    "url": "https://snyk.io/blog/qinglong-task-scheduler-rce-vulnerabilities",
+    "seenAt": "2026-04-29T15:30:10.373Z"
+  },
+  {
+    "url": "https://thehackernews.com/2026/04/webinar-how-to-automate-exposure.html",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "11452b00923f9793"
+  },
+  {
+    "url": "https://thehackernews.com/2026/04/what-to-look-for-in-exposure-management.html",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "e13088123dee09e3"
+  },
+  {
+    "url": "https://thehackernews.com/2026/04/critical-cpanel-authentication.html",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "433fb870fc0a1282"
+  },
+  {
+    "url": "https://thehackernews.com/2026/04/cisa-adds-actively-exploited.html",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "9fa30c8a550ee03f"
+  },
+  {
+    "url": "https://thehackernews.com/2026/04/litellm-cve-2026-42208-sql-injection.html",
+    "seenAt": "2026-04-29T15:30:10.373Z"
+  },
+  {
+    "url": "https://thehackernews.com/2026/04/researchers-discover-critical-github.html",
+    "seenAt": "2026-04-29T15:30:10.373Z"
+  },
+  {
+    "url": "https://thehackernews.com/2026/04/brazilian-lofygang-resurfaces-after.html",
+    "seenAt": "2026-04-29T15:30:10.373Z"
+  },
+  {
+    "url": "https://thehackernews.com/2026/04/vect-20-ransomware-irreversibly.html",
+    "seenAt": "2026-04-29T15:30:10.373Z"
+  },
+  {
+    "url": "https://thehackernews.com/2026/04/why-secure-data-movement-is-zero-trust.html",
+    "seenAt": "2026-04-29T15:30:10.373Z"
+  },
+  {
+    "url": "https://thehackernews.com/2026/04/critical-cve-2026-25874-leaves-hugging.html",
+    "seenAt": "2026-04-29T15:30:10.373Z"
+  },
+  {
+    "url": "https://thehackernews.com/2026/04/after-mythos-new-playbooks-for-zero.html",
+    "seenAt": "2026-04-29T15:30:10.373Z"
+  },
+  {
+    "url": "https://thehackernews.com/2026/04/chinese-silk-typhoon-hacker-extradited.html",
+    "seenAt": "2026-04-29T15:30:10.373Z"
+  },
+  {
+    "url": "https://thehackernews.com/2026/04/microsoft-patches-entra-id-role-flaw.html",
+    "seenAt": "2026-04-29T15:30:10.373Z"
+  },
+  {
+    "url": "https://thehackernews.com/2026/04/microsoft-confirms-active-exploitation.html",
+    "seenAt": "2026-04-29T15:30:10.373Z"
+  },
+  {
+    "url": "https://thehackernews.com/2026/04/checkmarx-confirms-github-repository.html",
+    "seenAt": "2026-04-29T15:30:10.373Z"
+  },
+  {
+    "url": "https://thehackernews.com/2026/04/weekly-recap-fast16-malware-xchat.html",
+    "seenAt": "2026-04-29T15:30:10.373Z"
+  },
+  {
+    "url": "https://thehackernews.com/2026/04/mythos-changed-math-on-vulnerability.html",
+    "seenAt": "2026-04-29T15:30:10.373Z"
+  },
+  {
+    "url": "https://thehackernews.com/2026/04/phantomcore-exploits-trueconf.html",
+    "seenAt": "2026-04-29T15:30:10.373Z"
+  },
+  {
+    "url": "https://thehackernews.com/2026/04/researchers-uncover-73-fake-vs-code.html",
+    "seenAt": "2026-04-29T15:30:10.373Z"
+  },
+  {
+    "url": "https://thehackernews.com/2026/04/fake-captcha-irsf-scam-and-120-keitaro.html",
+    "seenAt": "2026-04-29T15:30:10.373Z"
+  },
+  {
+    "url": "https://huggingface.co/blog/evaleval/eval-costs-bottleneck",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "1dd70afaf5743e9d"
+  },
+  {
+    "url": "https://huggingface.co/blog/inference-providers-deepinfra",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "98ed7b4a690293db"
+  },
+  {
+    "url": "https://developer.nvidia.com/blog/powering-ai-factories-with-nvidia-enterprise-reference-architectures",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "edb9aaf92a53f996"
+  },
+  {
+    "url": "https://databricks.com/blog/companies-winning-ai-built-data-layer-first",
+    "seenAt": "2026-04-29T19:20:41.100Z"
+  },
+  {
+    "url": "https://databricks.com/blog/rethinking-sql-etl-modern-data-platforms",
+    "seenAt": "2026-04-29T19:20:41.100Z"
+  },
+  {
+    "url": "https://databricks.com/blog/databricks-and-stripe-projects-infrastructure-built-agents",
+    "seenAt": "2026-04-29T19:20:41.100Z"
+  },
+  {
+    "url": "https://databricks.com/blog/agents-are-ready-your-architecture-probably-isnt",
+    "seenAt": "2026-04-29T19:20:41.100Z"
+  },
+  {
+    "url": "https://thenewstack.io/strands-agents-tool-design",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "ff8785fb831d3d0a"
+  },
+  {
+    "url": "https://thenewstack.io/anaconda-ai-outerbounds-python-metaflow",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "ba3abdd3ef5ee9b6"
+  },
+  {
+    "url": "https://github.com/anthropics/claude-code/issues/53262",
+    "seenAt": "2026-04-29T19:20:41.100Z"
+  },
+  {
+    "url": "https://copy.fail/",
+    "seenAt": "2026-04-29T19:20:41.100Z"
+  },
+  {
+    "url": "https://promptarmor.com/resources/ramps-sheets-ai-exfiltrates-financials",
+    "seenAt": "2026-04-29T19:20:41.100Z"
+  },
+  {
+    "url": "https://lawsofux.com/",
+    "seenAt": "2026-04-29T19:20:41.100Z"
+  },
+  {
+    "url": "https://heavybit.com/library/podcasts/third-loop/ep-3-give-it-a-name-why-software-needs-a-third-loop",
+    "seenAt": "2026-04-29T19:20:41.100Z"
+  },
+  {
+    "url": "https://hfsresearch.com/research/fde-optional-ai-flywheel-spin",
+    "seenAt": "2026-04-29T19:20:41.100Z"
+  },
+  {
+    "url": "https://eclecticlight.co/2026/04/29/virtualisation-on-apple-silicon-macs-is-different",
+    "seenAt": "2026-04-29T19:20:41.100Z"
+  },
+  {
+    "url": "https://theguardian.com/technology/2026/apr/29/maryland-grocery-stores-ban-surveillance-pricing",
+    "seenAt": "2026-04-29T19:20:41.100Z"
+  },
+  {
+    "url": "https://atproto.com/",
+    "seenAt": "2026-04-29T19:20:41.100Z"
+  },
+  {
+    "url": "https://agwa.name/blog/post/fastcgi_is_the_better_protocol_for_reverse_proxies",
+    "seenAt": "2026-04-29T19:20:41.100Z"
+  },
+  {
+    "url": "https://interfaze.ai/blog/introducing-structured-output-benchmark",
+    "seenAt": "2026-04-29T19:20:41.100Z"
+  },
+  {
+    "url": "https://x.com/GlennMeder/status/2049088498163216560",
+    "seenAt": "2026-04-29T19:20:41.100Z"
+  },
+  {
+    "url": "https://chrisbrunet.com/p/third-editor-fired-in-elseviers-citation",
+    "seenAt": "2026-04-29T19:20:41.100Z"
+  },
+  {
+    "url": "https://neal.fun/cursor-camp",
+    "seenAt": "2026-04-29T19:20:41.100Z"
+  },
+  {
+    "url": "https://mistral.ai/news/vibe-remote-agents-mistral-medium-3-5",
+    "seenAt": "2026-04-29T19:20:41.100Z"
+  },
+  {
+    "url": "https://read.thecoder.cafe/p/linux-broke-postgresql",
+    "seenAt": "2026-04-29T19:20:41.100Z"
+  },
+  {
+    "url": "https://github.com/GliaX/Stethoscope",
+    "seenAt": "2026-04-29T19:20:41.100Z"
+  },
+  {
+    "url": "https://youtube.com/watch?v=JNyuX1zoOgU",
+    "seenAt": "2026-04-29T19:20:41.100Z"
+  },
+  {
+    "url": "https://hashicorp.com/blog/managing-ssh-access-at-scale-with-hashicorp-vault-update",
+    "seenAt": "2026-04-29T19:20:41.100Z"
+  },
+  {
+    "url": "https://snyk.io/blog/bun-based-stealer-hits-sap-cap-js-mbt-npm-packages",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "dbede9695eeb7710"
+  },
+  {
+    "url": "https://thehackernews.com/2026/04/sap-npm-packages-compromised-by-mini.html",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "828b37bb09e75022"
+  },
+  {
+    "url": "https://thehackernews.com/2026/04/new-wave-of-dprk-attacks-uses-ai.html",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "a1018bf293cb7d0b"
+  },
+  {
+    "url": "https://kubernetes.io/blog/2026/04/29/kubernetes-v1-36-memory-qos-tiered-protection",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "dff5c549e838b3c2"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/extracting-contract-insights-with-pwcs-ai-driven-annotation-on-aws",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "2e289de5b73aec4b"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/organizing-agents-memory-at-scale-namespace-design-patterns-in-agentcore-memory",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "22be6640da0872b4"
+  },
+  {
+    "url": "https://openai.com/index/building-the-compute-infrastructure-for-the-intelligence-age",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "444b8698ea2bd6f9"
+  },
+  {
+    "url": "https://research.google/blog/four-ways-google-research-scientists-have-been-using-empirical-research-assistance",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "5907d91b50463174"
+  },
+  {
+    "url": "https://databricks.com/blog/approximate-answers-exact-decisions-new-sketch-functions-analytics",
+    "seenAt": "2026-04-30T02:38:06.225Z"
+  },
+  {
+    "url": "https://databricks.com/blog/interoperability-between-unity-catalog-and-google-bigquery-catalog-federation",
+    "seenAt": "2026-04-30T02:38:06.225Z"
+  },
+  {
+    "url": "https://cacm.acm.org/research-highlights/a-grounded-conceptual-model-for-ownership-types-in-rust",
+    "seenAt": "2026-04-30T02:38:06.225Z"
+  },
+  {
+    "url": "https://jcvi.org/media-center/j-craig-venter-genomics-pioneer-and-founder-jcvi-and-diploid-genomics-inc-dies-79",
+    "seenAt": "2026-04-30T02:38:06.225Z"
+  },
+  {
+    "url": "https://status.claude.com/incidents/2gf1jpyty350",
+    "seenAt": "2026-04-30T02:38:06.225Z"
+  },
+  {
+    "url": "https://news.ycombinator.com/item?id=47956890",
+    "seenAt": "2026-04-30T02:38:06.225Z"
+  },
+  {
+    "url": "https://flyingmag.com/joby-nyc-electric-air-taxi-jfk-airport",
+    "seenAt": "2026-04-30T02:38:06.225Z"
+  },
+  {
+    "url": "https://mikeoss.com/",
+    "seenAt": "2026-04-30T02:38:06.225Z"
+  },
+  {
+    "url": "https://ycombinator.com/companies/gooseworks/jobs/ztgY6bD-founding-growth-engineer",
+    "seenAt": "2026-04-30T02:38:06.225Z"
+  },
+  {
+    "url": "https://github.com/aallan/vera",
+    "seenAt": "2026-04-30T02:38:06.225Z"
+  },
+  {
+    "url": "https://maxtaylor.me/articles/i-benchmarked-caveman-against-two-words",
+    "seenAt": "2026-04-30T02:38:06.225Z"
+  },
+  {
+    "url": "https://lina.sh/blog/ddos-honeypot",
+    "seenAt": "2026-04-30T02:38:06.225Z"
+  },
+  {
+    "url": "https://opentrafficmap.org/",
+    "seenAt": "2026-04-30T02:38:06.225Z"
+  },
+  {
+    "url": "https://jivx.com/kyoto-bloom",
+    "seenAt": "2026-04-30T02:38:06.225Z"
+  },
+  {
+    "url": "https://openai.com/index/where-the-goblins-came-from",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "2aeb9ffdcbecfe14"
+  },
+  {
+    "url": "https://scottaaronson.blog/?p=9718",
+    "seenAt": "2026-04-30T08:15:02.736Z"
+  },
+  {
+    "url": "https://wiki.haskell.org/Monad_tutorials_timeline",
+    "seenAt": "2026-04-30T08:15:02.736Z"
+  },
+  {
+    "url": "https://groundcover.com/blog/otel-normalizer-genai-part-1",
+    "seenAt": "2026-04-30T08:15:02.736Z"
+  },
+  {
+    "url": "https://burrito.bio/essays/biology-is-a-burrito",
+    "seenAt": "2026-04-30T08:15:02.736Z"
+  },
+  {
+    "url": "https://github.com/cauchy221/Alignment-Whack-a-Mole-Code",
+    "seenAt": "2026-04-30T08:15:02.736Z"
+  },
+  {
+    "url": "https://pure-systems.org/posts/2026-04-29-functional-programmers-need-to-take-a-look-at-zig.html",
+    "seenAt": "2026-04-30T08:15:02.736Z"
+  },
+  {
+    "url": "https://simonwillison.net/2026/Apr/30/zig-anti-ai",
+    "seenAt": "2026-04-30T08:15:02.736Z"
+  },
+  {
+    "url": "https://thehackernews.com/2026/04/google-fixes-cvss-10-gemini-cli-ci-rce.html",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "3f331b8fad016b67"
+  },
+  {
+    "url": "https://databricks.com/blog/backstage-lakebase",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "1cb711e1a1fca193"
+  },
+  {
+    "url": "https://bbc.com/news/articles/c5y7yvgy0w6o",
+    "seenAt": "2026-04-30T13:47:22.806Z"
+  },
+  {
+    "url": "https://wsj.com/economy/u-s-debt-tops-100-of-gdp-81c013d7",
+    "seenAt": "2026-04-30T13:47:22.806Z"
+  },
+  {
+    "url": "https://bidprowl.com/",
+    "seenAt": "2026-04-30T13:47:22.806Z"
+  },
+  {
+    "url": "https://dpa-international.com/general-news/urn:newsml:dpa.com:20090101:260430-930-14717",
+    "seenAt": "2026-04-30T13:47:22.806Z"
+  },
+  {
+    "url": "https://gcc.gnu.org/gcc-16/changes.html",
+    "seenAt": "2026-04-30T13:47:22.806Z"
+  },
+  {
+    "url": "https://twitter.com/benbawan/status/2049303326999609846",
+    "seenAt": "2026-04-30T13:47:22.806Z"
+  },
+  {
+    "url": "https://firethering.com/granite-4-1-ibm-open-source-model-family",
+    "seenAt": "2026-04-30T13:47:22.806Z"
+  },
+  {
+    "url": "https://datacenter.fm/",
+    "seenAt": "2026-04-30T13:47:22.806Z"
+  },
+  {
+    "url": "https://github.com/mozilla/standards-positions/issues/1213",
+    "seenAt": "2026-04-30T13:47:22.806Z"
+  },
+  {
+    "url": "https://thehackernews.com/2026/04/new-python-backdoor-uses-tunneling.html",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "fcc9be90ada2ad8e"
+  },
+  {
+    "url": "https://thehackernews.com/2026/04/etherrat-distribution-spoofing.html",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "7c3f6d796068c374"
+  },
+  {
+    "url": "https://thehackernews.com/2026/04/new-linux-copy-fail-vulnerability.html",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "2835c771f8b27107"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/aws-generative-ai-model-agility-solution-a-comprehensive-guide-to-migrating-llms-for-generative-ai-production",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "f679a1c15d14c212"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/sun-finance-automates-id-extraction-and-fraud-detection-with-generative-ai-on-aws",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "184bd033f8c3a2b7"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/unleashing-agentic-ai-analytics-on-amazon-sagemaker-with-amazon-athena-and-amazon-quick",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "57ce6de73e01936d"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/configuring-amazon-bedrock-agentcore-gateway-for-secure-access-to-private-resources",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "26c336ef4eaf5824"
+  },
+  {
+    "url": "https://openai.com/index/advanced-account-security",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "09f872b87a3f9988"
+  },
+  {
+    "url": "https://developer.nvidia.com/blog/speed-up-unreal-engine-nne-inference-with-nvidia-tensorrt-for-rtx-runtime",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "2d466387a1087f56"
+  },
+  {
+    "url": "https://developer.nvidia.com/blog/build-ai-powered-games-with-nvidia-dlss-4-5-rtx-and-unreal-engine-5",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "aa062a76cdae9198"
+  },
+  {
+    "url": "https://developer.nvidia.com/blog/how-to-build-run-and-scale-high-quality-creator-workflows-in-comfyui",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "48bad67ac5782682"
+  },
+  {
+    "url": "https://developer.nvidia.com/blog/automating-gpu-kernel-translation-with-ai-agents-cutile-python-to-cutile-jl",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "2f93b61c42b66a20"
+  },
+  {
+    "url": "https://deepmind.google/blog/ai-co-clinician",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "98465c00c0834edf"
+  },
+  {
+    "url": "https://databricks.com/blog/unlocking-sap-business-context-databricks-semantic-metadata-delta-sharing",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "46b25a945d052c30"
+  },
+  {
+    "url": "https://databricks.com/blog/databricks-and-stitch-marketing-activation",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "b44e37ddef507fc1"
+  },
+  {
+    "url": "https://databricks.com/blog/alert-fatigue-business-risk",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "643c3d88ec0d581a"
+  },
+  {
+    "url": "https://databricks.com/blog/shipping-faster-isnt-learning-faster",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "c831d531e78d5e76"
+  },
+  {
+    "url": "https://databricks.com/blog/why-your-oee-dashboard-lying-you",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "7b6a1546209b2eb1"
+  },
+  {
+    "url": "https://databricks.com/blog/turbine-tried-tell-you-it-was-failing",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "00f2266f657e06fe"
+  },
+  {
+    "url": "https://databricks.com/blog/predicting-readmissions-isnt-enough-acting-time",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "e24a69d8f872406d"
+  },
+  {
+    "url": "https://databricks.com/blog/clinical-trials-run-longer-they-have-thats-patient-problem",
+    "seenAt": "2026-04-30T19:16:01.527Z"
+  },
+  {
+    "url": "https://databricks.com/blog/network-quality-revenue-problem-not-technical-one",
+    "seenAt": "2026-04-30T19:16:01.527Z"
+  },
+  {
+    "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-for-beginners-interactive-v-non-interactive-mode",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "a2c05605d89c9cf3"
+  },
+  {
+    "url": "https://thenewstack.io/production-ready-ai-platforms",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "8817d0fa69480525"
+  },
+  {
+    "url": "https://thenewstack.io/openai-aws-bedrock-integration",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "a5c1cfaa6e558832"
+  },
+  {
+    "url": "https://thenewstack.io/anthropics-claude-security-beta",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "e5dc5dd7ee3f5073"
+  },
+  {
+    "url": "https://thenewstack.io/meta-abandons-llama-spark",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "984902e33414d323"
+  },
+  {
+    "url": "https://thenewstack.io/quickbase-pave-vibe-coding",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "7ec973c0c95f32f4"
+  },
+  {
+    "url": "https://techadvisor.com/article/3128472/if-apple-makes-an-ipad-neo-its-all-over.html",
+    "seenAt": "2026-04-30T19:16:01.527Z"
+  },
+  {
+    "url": "https://peterdohertys.website/blog-posts/full-text-search-w-duckdb.html",
+    "seenAt": "2026-04-30T19:16:01.527Z"
+  },
+  {
+    "url": "https://lost-number.bearblog.dev/recovering-files-from-beyond-the-grave-using-photorec",
+    "seenAt": "2026-04-30T19:16:01.527Z"
+  },
+  {
+    "url": "https://nickkossolapov.github.io/fame-boy/building-a-game-boy-emulator-in-fsharp",
+    "seenAt": "2026-04-30T19:16:01.527Z"
+  },
+  {
+    "url": "https://github.com/kubereboot/kured",
+    "seenAt": "2026-04-30T19:16:01.527Z"
+  },
+  {
+    "url": "https://github.com/carlovalenti/TRiP",
+    "seenAt": "2026-04-30T19:16:01.527Z"
+  },
+  {
+    "url": "https://openwall.com/lists/oss-security/2026/04/30/10",
+    "seenAt": "2026-04-30T19:16:01.527Z"
+  },
+  {
+    "url": "https://semgrep.dev/blog/2026/malicious-dependency-in-pytorch-lightning-used-for-ai-training",
+    "seenAt": "2026-04-30T19:16:01.527Z"
+  },
+  {
+    "url": "https://honker.dev/",
+    "seenAt": "2026-04-30T19:16:01.527Z"
+  },
+  {
+    "url": "https://smithsonianmag.com/science-nature/the-science-behind-honeys-eternal-shelf-life-1218690",
+    "seenAt": "2026-04-30T19:16:01.527Z"
+  },
+  {
+    "url": "https://docker.com/blog/from-security-blocked-to-prod-ready-clickhouse-on-docker-hardened-images",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "e56f18f7b488acce"
+  },
+  {
+    "url": "https://krebsonsecurity.com/2026/04/anti-ddos-firm-heaped-attacks-on-brazilian-isps",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "51ead2348e979473"
+  },
+  {
+    "url": "https://snyk.io/blog/lightning-pypi-compromise-bun-based-credential-stealer",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "98a25918e1a18fa5"
+  },
+  {
+    "url": "https://thehackernews.com/2026/04/pytorch-lightning-compromised-in-pypi.html",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "04be5dcff5ca45f4"
+  },
+  {
+    "url": "https://thehackernews.com/2026/04/threatsday-bulletin-sms-blaster-busts.html",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "3eb8f734d3a60ed4"
+  },
+  {
+    "url": "https://kubernetes.io/blog/2026/04/30/kubernetes-v1-36-inplace-pod-level-resources-beta",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "5021e346fd3dcdb6"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/reinforcement-fine-tuning-with-llm-as-a-judge",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "9bbeaf1ed692ef8c"
+  },
+  {
+    "url": "https://openwarp.zerx.dev/",
+    "seenAt": "2026-05-01T02:43:55.517Z"
+  },
+  {
+    "url": "https://clawirc.com/",
+    "seenAt": "2026-05-01T02:43:55.517Z"
+  },
+  {
+    "url": "https://labs.watchtowr.com/the-internet-is-falling-down-falling-down-falling-down-cpanel-whm-authentication-bypass-cve-2026-41940",
+    "seenAt": "2026-05-01T02:43:55.517Z"
+  },
+  {
+    "url": "https://sciencex.com/news/2026-04-snowball-earth-stranger-climate.html",
+    "seenAt": "2026-05-01T02:43:55.517Z"
+  },
+  {
+    "url": "https://simplex.chat/blog/20260430-simplex-channels-v6-5-consortium-crowdfunding-freedom-of-speech.html",
+    "seenAt": "2026-05-01T02:43:55.517Z"
+  },
+  {
+    "url": "https://rivian.com/support/article/can-i-disable-all-data-collection-from-my-vehicle",
+    "seenAt": "2026-05-01T02:43:55.517Z"
+  },
+  {
+    "url": "https://theupsellgame.com/",
+    "seenAt": "2026-05-01T02:43:55.517Z"
+  },
+  {
+    "url": "https://dustri.org/b/follow-up-to-carrot-disclosure-forgejo.html",
+    "seenAt": "2026-05-01T02:43:55.517Z"
+  },
+  {
+    "url": "https://dbos.dev/blog/benchmarking-workflow-execution-scalability-on-postgres",
+    "seenAt": "2026-05-01T02:43:55.517Z"
+  },
+  {
+    "url": "https://thereader.mitpress.mit.edu/the-whistleblower-who-uncovered-the-nsas-big-brother-machine",
+    "seenAt": "2026-05-01T02:43:55.517Z"
+  },
+  {
+    "url": "https://democrata.es/en/politics/congress-and-senate/congress-will-act-against-massive-ip-blockages-by-laliga",
+    "seenAt": "2026-05-01T02:43:55.517Z"
+  },
+  {
+    "url": "https://twitter.com/theo/status/2049645973350363168",
+    "seenAt": "2026-05-01T02:43:55.517Z"
+  },
+  {
+    "url": "https://construction-physics.com/p/how-an-oil-refinery-works",
+    "seenAt": "2026-05-01T02:43:55.517Z"
+  },
+  {
+    "url": "https://cncf.io/blog/2026/04/30/ai-sandboxing-is-having-its-kubernetes-moment",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "fb4eb994058ffcbd"
+  },
+  {
+    "url": "https://hashicorp.com/blog/spiffe-securing-the-identity-of-agentic-ai-and-non-human-actors",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "f9aa51ddfeedb4df"
+  },
+  {
+    "url": "https://hashicorp.com/blog/announcing-the-new-partner-premier-tier-for-the-terraform-registry",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "4722812fe0427fc9"
+  },
+  {
+    "url": "https://hashicorp.com/blog/securing-the-last-mile-with-local-account-password-rotation",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "e8c133c096c0b6a6"
+  },
+  {
+    "url": "https://hashicorp.com/blog/secure-ssh-access-at-scale-with-hashicorp-vault-and-boundary",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "614d99739f7654b5"
+  },
+  {
+    "url": "https://yadin.com/notes/toasted",
+    "seenAt": "2026-05-01T08:08:06.795Z"
+  },
+  {
+    "url": "https://macrumors.com/2026/04/30/mac-studio-mac-mini-constrained-months",
+    "seenAt": "2026-05-01T08:08:06.795Z"
+  },
+  {
+    "url": "https://github.com/kernalix7/winpodx",
+    "seenAt": "2026-05-01T08:08:06.795Z"
+  },
+  {
+    "url": "https://thenewstack.io/cursor-sdk-harness",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "e3cd8e5495d4eb28"
+  },
+  {
+    "url": "https://pagetable.com/?p=1854",
+    "seenAt": "2026-05-01T13:12:46.667Z"
+  },
+  {
+    "url": "https://sitemogging.com/",
+    "seenAt": "2026-05-01T13:12:46.667Z"
+  },
+  {
+    "url": "https://xcancel.com/aaronp613/status/2049986504617820551",
+    "seenAt": "2026-05-01T13:12:46.667Z"
+  },
+  {
+    "url": "https://websmith.studio/blog/your-website-is-not-for-you",
+    "seenAt": "2026-05-01T13:12:46.667Z"
+  },
+  {
+    "url": "https://techcrunch.com/2026/04/30/after-dissing-anthropic-for-limiting-mythos-openai-restricts-access-to-cyber-too",
+    "seenAt": "2026-05-01T13:12:46.667Z"
+  },
+  {
+    "url": "https://btxx.org/posts/beginners-guide-sourcehut",
+    "seenAt": "2026-05-01T13:12:46.667Z"
+  },
+  {
+    "url": "https://news.ycombinator.com/item?id=47972888",
+    "seenAt": "2026-05-01T13:12:46.667Z"
+  },
+  {
+    "url": "https://github.com/intel/auto-round",
+    "seenAt": "2026-05-01T13:12:46.667Z"
+  },
+  {
+    "url": "https://docs.x.ai/developers/models/grok-4.3",
+    "seenAt": "2026-05-01T13:12:46.667Z"
+  },
+  {
+    "url": "https://lovable.dev/blog/hunting-networking-bugs-in-kubernetes",
+    "seenAt": "2026-05-01T13:12:46.667Z"
+  },
+  {
+    "url": "https://docker.com/blog/a-virtual-agent-team-at-docker-how-the-coding-agent-sandboxes-team-uses-a-fleet-of-agents-to-ship-faster",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "136b2911a1a4eeda"
+  },
+  {
+    "url": "https://thehackernews.com/2026/05/two-cybersecurity-professionals-get-4.html",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "e72ae3b02a2986ce"
+  },
+  {
+    "url": "https://thehackernews.com/2026/05/poisoned-ruby-gems-and-go-modules.html",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "2f47072d0ab985bd"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/aws-transform-now-automates-bi-migration-to-amazon-quick-in-days",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "8275d27fb05591f7"
+  },
+  {
+    "url": "https://research.google/blog/catalyzing-scientific-impact-through-global-partnerships-and-open-resources",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "3f4bf565d55fc071"
+  },
+  {
+    "url": "https://databricks.com/blog/model-risk-governance-not-same-risk-intelligence",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "33d495bc957ae80a"
+  },
+  {
+    "url": "https://thenewstack.io/mistral-vibe-cloud-agents",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "6e453ffc33bd7a42"
+  },
+  {
+    "url": "https://rightscon.org/rc26-statement",
+    "seenAt": "2026-05-01T19:07:34.865Z"
+  },
+  {
+    "url": "https://404media.co/city-learns-flock-accessed-cameras-in-childrens-gymnastics-room-as-a-sales-pitch-demo-renews-contract-anyway",
+    "seenAt": "2026-05-01T19:07:34.865Z"
+  },
+  {
+    "url": "https://newyorker.com/culture/annals-of-inquiry/its-possible-to-learn-in-our-sleep-should-we",
+    "seenAt": "2026-05-01T19:07:34.865Z"
+  },
+  {
+    "url": "https://fusion.adam.new/install",
+    "seenAt": "2026-05-01T19:07:34.865Z"
+  },
+  {
+    "url": "https://github.com/calebwin/gitgres",
+    "seenAt": "2026-05-01T19:07:34.865Z"
+  },
+  {
+    "url": "https://alearningaday.blog/2026/05/01/artemis-ii-fault-tolerance",
+    "seenAt": "2026-05-01T19:07:34.865Z"
+  },
+  {
+    "url": "https://midnightmurmurations.substack.com/p/the-x-files-has-made-me-nostalgic",
+    "seenAt": "2026-05-01T19:07:34.865Z"
+  },
+  {
+    "url": "https://arstechnica.com/gadgets/2026/05/amazon-stuck-with-months-of-repairs-after-drone-strikes-on-data-centers",
+    "seenAt": "2026-05-01T19:07:34.865Z"
+  },
+  {
+    "url": "https://github.com/Lum1104/Understand-Anything",
+    "seenAt": "2026-05-01T19:07:34.865Z"
+  },
+  {
+    "url": "https://youtube.com/watch?v=nHwxV0Sd9V8",
+    "seenAt": "2026-05-01T19:07:34.865Z"
+  },
+  {
+    "url": "https://californiawaterblog.com/2026/04/26/ai-water-use-distractions-and-lessons-for-california",
+    "seenAt": "2026-05-01T19:07:34.865Z"
+  },
+  {
+    "url": "https://github.com/Exocija/ZetaLib/blob/main/The%20Gay%20Jailbreak/The%20Gay%20Jailbreak.md",
+    "seenAt": "2026-05-01T19:07:34.865Z"
+  },
+  {
+    "url": "https://bbc.com/news/articles/c5yerr4m1yno",
+    "seenAt": "2026-05-01T19:07:34.865Z"
+  },
+  {
+    "url": "https://briefs.co/news/uber-torches-entire-2026-ai-budget-on-claude-code-in-four-months",
+    "seenAt": "2026-05-01T19:07:34.865Z"
+  },
+  {
+    "url": "https://keepthingsopen.com/",
+    "seenAt": "2026-05-01T19:07:34.865Z"
+  },
+  {
+    "url": "https://news.ycombinator.com/item?id=47975676",
+    "seenAt": "2026-05-01T19:07:34.865Z"
+  },
+  {
+    "url": "https://github.com/whohas/whohas",
+    "seenAt": "2026-05-01T19:07:34.865Z"
+  },
+  {
+    "url": "https://news.ycombinator.com/item?id=47975571",
+    "seenAt": "2026-05-01T19:07:34.865Z"
+  },
+  {
+    "url": "https://news.ycombinator.com/item?id=47975570",
+    "seenAt": "2026-05-01T19:07:34.865Z"
+  },
+  {
+    "url": "https://online-tribute.com/SallyMcKee",
+    "seenAt": "2026-05-01T19:07:34.865Z"
+  },
+  {
+    "url": "https://thehackernews.com/2026/05/cybercrime-groups-using-vishing-and-sso.html",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "5be1cf7eebb161c4"
+  },
+  {
+    "url": "https://thehackernews.com/2026/05/china-linked-hackers-target-asian.html",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "e27ca35eb6fa4742"
+  },
+  {
+    "url": "https://thehackernews.com/2026/05/top-five-sales-challenges-costing-msps.html",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "9f556463374bc67f"
+  },
+  {
+    "url": "https://databricks.com/blog/federal-data-paradox-rich-data-poor-access",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "9435bd5cf21a43e6"
+  },
+  {
+    "url": "https://thenewstack.io/incredibuild-ai-agents-sandbox-coding",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "abc4e055138da367"
+  },
+  {
+    "url": "https://thenewstack.io/does-ai-demand-kubernetes",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "a49728573b6711e5"
+  },
+  {
+    "url": "https://thenewstack.io/suse-ai-infrastructure-kubernetes",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "080dd456522b04d0"
+  },
+  {
+    "url": "https://thenewstack.io/ibm-bob-agentic-development",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "1de5748a933035b4"
+  },
+  {
+    "url": "https://evilgeniuslabs.ca/blog/good-developers-learn-to-program-not-a-language",
+    "seenAt": "2026-05-02T02:26:43.660Z"
+  },
+  {
+    "url": "https://evilgeniuslabs.ca/blog/winforms-still-ships-in-visual-studio-2026",
+    "seenAt": "2026-05-02T02:26:43.660Z"
+  },
+  {
+    "url": "https://mirandaheath.website/static/oss_burnout_report_mh_25.pdf",
+    "seenAt": "2026-05-02T02:26:43.660Z"
+  },
+  {
+    "url": "https://metin.nextc.org/posts/Credit_Cards_Are_Vulnerable_To_Brute_Force_Kind_Attacks.html",
+    "seenAt": "2026-05-02T02:26:43.660Z"
+  },
+  {
+    "url": "https://education.ti.com/en/products/calculators/graphing-calculators/ti-84-evo",
+    "seenAt": "2026-05-02T02:26:43.660Z"
+  },
+  {
+    "url": "https://courses.joshwcomeau.com/wham/open-house/00-introduction",
+    "seenAt": "2026-05-02T02:26:43.660Z"
+  },
+  {
+    "url": "https://github.com/microsoft/lib0xc",
+    "seenAt": "2026-05-02T02:26:43.660Z"
+  },
+  {
+    "url": "https://ews.kylemcdonald.net/",
+    "seenAt": "2026-05-02T02:26:43.660Z"
+  },
+  {
+    "url": "https://thehackernews.com/2026/05/30000-facebook-accounts-hacked-via.html",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "ab33d47868556aa3"
+  },
+  {
+    "url": "https://github.com/lahfir/agent-desktop",
+    "seenAt": "2026-05-02T07:28:09.846Z"
+  },
+  {
+    "url": "https://github.com/rancher/k3k",
+    "seenAt": "2026-05-02T07:28:09.846Z"
+  },
+  {
+    "url": "https://citadelsecurities.com/news-and-insights/2026-global-intelligence-crisis",
+    "seenAt": "2026-05-02T07:28:09.846Z"
+  },
+  {
+    "url": "https://thehackernews.com/2026/05/trellix-confirms-source-code-breach.html",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "9620bb08ae187360"
+  },
+  {
+    "url": "https://kubernetes.io/blog/2026/05/01/kubernetes-v1-36-feature-pod-level-resource-managers-alpha",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "b271b0f81a7298c1"
+  },
+  {
+    "url": "https://thenewstack.io/ibm-bob-agentic-coding",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "ee20f28944c107ac"
+  },
+  {
+    "url": "https://github.com/nexu-io/open-design",
+    "seenAt": "2026-05-02T13:03:10.345Z"
+  },
+  {
+    "url": "https://danieltan.weblog.lol/2026/05/the-century-long-pause-in-fundamental-physics",
+    "seenAt": "2026-05-02T13:03:10.345Z"
+  },
+  {
+    "url": "https://wsj.com/business/deals/gamestop-preparing-offer-for-ebay-1678e6de",
+    "seenAt": "2026-05-02T13:03:10.345Z"
+  },
+  {
+    "url": "https://piruet.app/",
+    "seenAt": "2026-05-02T13:03:10.345Z"
+  },
+  {
+    "url": "https://mljar.com/",
+    "seenAt": "2026-05-02T13:03:10.345Z"
+  },
+  {
+    "url": "https://eclecticlight.co/2026/05/02/how-fast-is-a-macos-vm-and-how-small-could-it-be",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "b6fbc9236a9a61c6"
+  },
+  {
+    "url": "https://iesna.eu/?wasm=skyglow_demo",
+    "seenAt": "2026-05-02T13:03:10.345Z"
+  },
+  {
+    "url": "https://copilot.simplepdf.com/?form=w9&lang=en&share=a7d00ad073c75a75d493228e6ff7b11eb3f2d945b6175913e87898ec96ca8076",
+    "seenAt": "2026-05-02T13:03:10.345Z"
+  },
+  {
+    "url": "https://snewpapers.com/",
+    "seenAt": "2026-05-02T13:03:10.345Z"
+  },
+  {
+    "url": "https://devblogs.microsoft.com/oldnewthing/20150417-00?p=44213",
+    "seenAt": "2026-05-02T13:03:10.345Z"
+  },
+  {
+    "url": "https://mathstick.github.io/",
+    "seenAt": "2026-05-02T13:03:10.345Z"
+  },
+  {
+    "url": "https://ycombinator.com/companies/collectwise/jobs/rEWfZ6R-senior-forward-deployed-engineer",
+    "seenAt": "2026-05-02T13:03:10.345Z"
+  },
+  {
+    "url": "https://noctua.at/en/expertise/blog/how-can-it-take-so-long-to-release-black-fan-versions",
+    "seenAt": "2026-05-02T13:03:10.345Z"
+  },
+  {
+    "url": "https://ask.com/",
+    "seenAt": "2026-05-02T13:03:10.345Z"
+  },
+  {
+    "url": "https://simonwillison.net/2026/Apr/24/deepseek-v4",
+    "seenAt": "2026-05-02T13:03:10.345Z"
+  },
+  {
+    "url": "https://thenewstack.io/opensearch-ai-data-layer",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "1754017011349d88"
+  },
+  {
+    "url": "https://c3-lang.org/blog/unsigned-sizes-a-five-year-mistake",
+    "seenAt": "2026-05-02T18:54:32.147Z"
+  },
+  {
+    "url": "https://nethack.org/v500/release.html",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "b2544e967d3f449e"
+  },
+  {
+    "url": "https://bbc.com/news/articles/clypjx3rg2go",
+    "seenAt": "2026-05-02T18:54:32.147Z"
+  },
+  {
+    "url": "https://code.videolan.org/videolan/dav2d",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "2617f1750f7eddc3"
+  },
+  {
+    "url": "https://flueframework.com/",
+    "seenAt": "2026-05-02T18:54:32.147Z"
+  },
+  {
+    "url": "https://cnbc.com/2026/05/01/roblox-rblx-stock-child-safety-earnings.html",
+    "seenAt": "2026-05-02T18:54:32.147Z"
+  },
+  {
+    "url": "https://techcrunch.com/2026/05/01/uber-wants-to-turn-its-millions-of-drivers-into-a-sensor-grid-for-self-driving-companies",
+    "seenAt": "2026-05-02T18:54:32.147Z"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Zugzwang",
+    "seenAt": "2026-05-02T18:54:32.147Z"
+  },
+  {
+    "url": "https://arxiv.org/abs/2509.00462",
+    "seenAt": "2026-05-02T18:54:32.147Z"
+  },
+  {
+    "url": "https://wsj.com/articles/americas-expanding-domestic-surveillance-08b73187",
+    "seenAt": "2026-05-02T18:54:32.147Z"
+  },
+  {
+    "url": "https://arxiv.org/abs/2406.11717",
+    "seenAt": "2026-05-02T18:54:32.147Z"
+  },
+  {
+    "url": "https://academia.edu/166172334/A_Common_Proof_of_the_Riemann_Hypothesis_and_the_Collatz_Conjecture_Echo_Interference_in_Number_Theoretic_Acoustic_Spacetime",
+    "seenAt": "2026-05-03T02:35:39.913Z"
+  },
+  {
+    "url": "https://nytimes.com/2026/05/01/business/surveillance-pricing-groceries-maryland.html",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "0f60f1f4f51540c5"
+  },
+  {
+    "url": "https://bbc.com/news/articles/cvgzk91leweo",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "d2275765d8bf74e4"
+  },
+  {
+    "url": "https://latimes.com/entertainment-arts/story/2026-04-14/delivery-robots-creating-problems-glendale-ban",
+    "seenAt": "2026-05-03T02:35:39.913Z"
+  },
+  {
+    "url": "https://blog.haskell.org/a-couple-million-lines-of-haskell",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "718c5f3e89023cde"
+  },
+  {
+    "url": "https://sfist.com/2026/05/01/waymo-drives-off-with-south-bay-mans-luggage-after-trunk-fails-to-open",
+    "seenAt": "2026-05-03T02:35:39.913Z"
+  },
+  {
+    "url": "https://electrek.co/2026/05/02/this-tesla-owner-won-10k-in-court-for-teslas-fsd-lies-tesla-is-still-fighting-him",
+    "seenAt": "2026-05-03T02:35:39.913Z"
+  },
+  {
+    "url": "https://github.com/mahimairaja/voiceai",
+    "seenAt": "2026-05-03T02:35:39.913Z"
+  },
+  {
+    "url": "https://clojuriststogether.org/news/q2-2026-funding-announcement",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "06f4032f61f3181f"
+  },
+  {
+    "url": "https://hnup.date/hn-sota",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "be3dd5cfae22773c"
+  },
+  {
+    "url": "https://mendral.com/blog/agent-harness-belongs-outside-sandbox",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "7a1808ec840dd547"
+  },
+  {
+    "url": "https://david-smith.org/blog/2026/04/29/maps-on-watchos",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "853bb23c295cd539"
+  },
+  {
+    "url": "https://ladybird.org/newsletter/2026-04-30",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "c090b225a419d574"
+  },
+  {
+    "url": "https://universiteitleiden.nl/en/news/2025/07/neanderthals-ran-fat-factories-125000-years-ago",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "523691c96bb426a1"
+  },
+  {
+    "url": "https://github.com/microsoft/vscode/pull/310226",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "7d67124353632a91"
+  },
+  {
+    "url": "https://donottrack.sh/",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "7feb8bc6dd29fea6"
+  },
+  {
+    "url": "https://acai.sh/blog/specsmaxxing",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "6c721943adacd0f5"
+  },
+  {
+    "url": "https://thinkpol.ca/2026/04/30/an-open-weights-chinese-model-just-beat-claude-gpt-5-5-and-gemini-in-a-programming-challenge",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "060ddbd2a635f21a"
+  },
+  {
+    "url": "https://retrocoding.net/windows-api-is-successful-cross-platform-api",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "802cb4661381245a"
+  },
+  {
+    "url": "https://blog.feld.me/posts/2026/04/open-source-does-not-imply-open-community",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "4b87a2ab3d80a5b7"
+  },
+  {
+    "url": "https://newsonjapan.com/article/149075.php",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "8b90bfbedce0730a"
+  },
+  {
+    "url": "https://agis.io/post/dabbling-in-erlang-a-minimal-introduction",
+    "seenAt": "2026-05-03T07:57:08.336Z",
+    "contentHash": "5a46dc69a4b3eacf"
   },
   {
     "url": "https://thehackernews.com/2026/05/cisa-adds-actively-exploited-linux-root.html",
