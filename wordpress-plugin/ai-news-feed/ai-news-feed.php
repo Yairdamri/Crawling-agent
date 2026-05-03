@@ -2,7 +2,7 @@
 /**
  * Plugin Name: AI News Feed
  * Description: Renders an automated AI/DevOps/cloud news feed from a JSON URL produced by a GitHub Actions pipeline. Use the [ai_news_feed] shortcode on any page.
- * Version:     0.1.0
+ * Version:     0.2.0
  * Author:      AI News Feed
  * License:     MIT
  */
@@ -132,7 +132,7 @@ function ainf_shortcode($atts) {
     }
     $articles = array_slice($articles, 0, $limit);
 
-    wp_enqueue_style('ainf-style', plugin_dir_url(__FILE__) . 'style.css', array(), '0.1.0');
+    wp_enqueue_style('ainf-style', plugin_dir_url(__FILE__) . 'style.css', array(), '0.2.0');
 
     if (empty($articles)) {
         $msg = isset($data['error']) && $data['error']

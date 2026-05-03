@@ -24,7 +24,7 @@ function isWithinDays(isoDate, days) {
   return Date.now() - t <= days * DAY_MS;
 }
 
-export async function mergeAndWrite({ newsPath, seenPath, processed, seenMap }) {
+export async function mergeAndWrite({ newsPath, seenPath, processed, seenMap, hashByUrl }) {
   const existing = await readJson(newsPath, { schemaVersion: SCHEMA_VERSION, articles: [] });
   const existingArticles = Array.isArray(existing.articles) ? existing.articles : [];
 
@@ -50,11 +50,12 @@ export async function mergeAndWrite({ newsPath, seenPath, processed, seenMap }) 
 
   const now = new Date().toISOString();
   for (const a of processed) {
-    if (!seenMap.has(a.url)) seenMap.set(a.url, now);
+    const contentHash = hashByUrl?.get(a.url);
+    seenMap.set(a.url, { seenAt: now, contentHash });
   }
   const prunedSeen = Array.from(seenMap.entries())
-    .filter(([, seenAt]) => isWithinDays(seenAt, SEEN_RETENTION_DAYS))
-    .map(([url, seenAt]) => ({ url, seenAt }));
+    .filter(([, entry]) => isWithinDays(entry.seenAt, SEEN_RETENTION_DAYS))
+    .map(([url, entry]) => ({ url, seenAt: entry.seenAt, contentHash: entry.contentHash }));
   await writeFile(seenPath, JSON.stringify(prunedSeen, null, 2) + '\n', 'utf8');
 
   return {
