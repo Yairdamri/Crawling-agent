@@ -5,7 +5,8 @@
   "type": "module",
   "description": "Automated AI/DevOps/cloud news pipeline: RSS -> Bedrock (Claude Haiku) -> news.json -> WordPress",
   "scripts": {
-    "fetch": "node scripts/fetch.mjs"
+    "fetch": "node scripts/fetch.mjs",
+    "test:images": "node --env-file-if-exists=.env scripts/test-image-gen.mjs"
   },
   "engines": {
     "node": ">=20"
