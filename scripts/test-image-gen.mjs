@@ -10,7 +10,7 @@ const NEWS_PATH = join(root, 'data', 'news.json');
 const OUT_DIR = join(root, 'data', 'images-test');
 
 const REGION = process.env.AWS_REGION || 'us-east-1';
-const MODEL = process.env.BEDROCK_IMAGE_MODEL || 'amazon.titan-image-generator-v2:0';
+const MODEL = process.env.BEDROCK_IMAGE_MODEL || 'stability.sd3-5-large-v1:0';
 const PER_CATEGORY = Number(process.env.SAMPLES_PER_CATEGORY) || 2;
 const NEGATIVE_PROMPT = 'text, letters, words, logos, UI elements, readable symbols, labels, signage, typography, watermark';
 
@@ -94,18 +94,11 @@ function pickSample(articles, perCategory) {
 
 async function generateImage(prompt) {
   const body = {
-    taskType: 'TEXT_IMAGE',
-    textToImageParams: {
-      text: prompt,
-      negativeText: NEGATIVE_PROMPT,
-    },
-    imageGenerationConfig: {
-      numberOfImages: 1,
-      quality: 'standard',
-      width: 1024,
-      height: 1024,
-      cfgScale: 8.0,
-    },
+    prompt,
+    negative_prompt: NEGATIVE_PROMPT,
+    mode: 'text-to-image',
+    aspect_ratio: '16:9',
+    output_format: 'png',
   };
   const res = await bedrock.send(new InvokeModelCommand({
     modelId: MODEL,
@@ -117,6 +110,9 @@ async function generateImage(prompt) {
   const b64 = parsed.images?.[0];
   if (!b64) {
     throw new Error(`no image in response: ${JSON.stringify(parsed).slice(0, 500)}`);
+  }
+  if (parsed.finish_reasons?.[0] && parsed.finish_reasons[0] !== null) {
+    throw new Error(`generation flagged: ${parsed.finish_reasons[0]}`);
   }
   return { bytes: Buffer.from(b64, 'base64'), mimeType: 'image/png' };
 }
