@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-03T08:22:17.654Z",
+  "generatedAt": "2026-05-03T08:32:25.364Z",
   "articles": [
     {
       "url": "https://thehackernews.com/2026/04/google-fixes-cvss-10-gemini-cli-ci-rce.html",
@@ -204,6 +204,36 @@
       "score": 8,
       "category": "Security",
       "publishedAt": "2026-05-03T06:26:00.000Z"
+    },
+    {
+      "url": "https://thinkpol.ca/2026/04/30/an-open-weights-chinese-model-just-beat-claude-gpt-5-5-and-gemini-in-a-programming-challenge",
+      "title": "Kimi K2.6 just beat Claude, GPT-5.5, and Gemini in a coding challenge",
+      "summary": "Open-weights Chinese LLM Kimi K2.6 outperformed Claude, GPT-5.5, and Gemini on a programming benchmark. The result signals competitive progress in open-source models and challenges the performance gap between frontier closed-source systems.",
+      "source": "HN Front Page",
+      "tags": [
+        "LLM",
+        "open-source",
+        "evals",
+        "coding"
+      ],
+      "score": 8,
+      "category": "AI",
+      "publishedAt": "2026-05-03T04:05:28.000Z"
+    },
+    {
+      "url": "https://github.com/microsoft/vscode/pull/310226",
+      "title": "VS Code inserting 'Co-Authored-by Copilot' into commits regardless of usage",
+      "summary": "A GitHub PR documenting that VS Code was automatically injecting Copilot co-authorship metadata into commits even when Copilot was not actively used. This raises concerns about attribution and consent in AI-assisted development tooling.",
+      "source": "HN Front Page",
+      "tags": [
+        "Copilot",
+        "VS Code",
+        "AI tooling",
+        "attribution"
+      ],
+      "score": 8,
+      "category": "AI",
+      "publishedAt": "2026-05-02T19:57:26.000Z"
     },
     {
       "url": "https://thenewstack.io/opensearch-ai-data-layer",
@@ -1370,29 +1400,14 @@
       "publishedAt": "2026-04-06T16:51:00.000Z"
     },
     {
-      "url": "https://thinkpol.ca/2026/04/30/an-open-weights-chinese-model-just-beat-claude-gpt-5-5-and-gemini-in-a-programming-challenge",
-      "title": "Kimi K2.6 just beat Claude, GPT-5.5, and Gemini in a coding challenge",
-      "summary": "Open-weights Chinese model Kimi K2.6 outperformed Claude, GPT-5.5, and Gemini on a programming benchmark, demonstrating competitive capability from non-frontier labs. The result highlights the rapid advancement of open-source models in code generation tasks.",
-      "source": "HN Front Page",
-      "tags": [
-        "LLM",
-        "open-weights",
-        "benchmarks",
-        "code-generation"
-      ],
-      "score": 7,
-      "category": "AI",
-      "publishedAt": "2026-05-03T04:05:28.000Z"
-    },
-    {
       "url": "https://blog.haskell.org/a-couple-million-lines-of-haskell",
       "title": "A Couple Million Lines of Haskell: Production Engineering at Mercury",
-      "summary": "Mercury shares production experience maintaining millions of lines of Haskell code, covering architecture decisions, tooling, and lessons learned at scale. The post provides practical insights into functional programming in large production systems.",
+      "summary": "Case study on scaling Haskell in production at Mercury, covering architecture decisions, tooling, and lessons learned managing millions of lines of functional code. Provides concrete insights into type safety, testing, and deployment practices.",
       "source": "HN Front Page",
       "tags": [
         "Haskell",
         "production",
-        "architecture"
+        "engineering"
       ],
       "score": 7,
       "category": "Engineering",
@@ -1401,12 +1416,12 @@
     {
       "url": "https://mendral.com/blog/agent-harness-belongs-outside-sandbox",
       "title": "The agent harness belongs outside the sandbox",
-      "summary": "Mendral argues for architectural separation between agent execution harnesses and sandboxing boundaries, advocating for harnesses to run outside restricted environments. The post makes a case for improved agent reliability and control flow.",
+      "summary": "Mendral argues for architectural separation of agent harnesses from sandboxed execution environments. The piece addresses deployment and operational concerns in agentic systems design.",
       "source": "HN Front Page",
       "tags": [
         "agents",
         "architecture",
-        "safety"
+        "tool-use"
       ],
       "score": 7,
       "category": "AI",
@@ -1487,6 +1502,22 @@
       "score": 7,
       "category": "AI",
       "publishedAt": "2026-05-02T02:18:24.000Z"
+    },
+    {
+      "url": "https://easel.games/blog/2026-rollback-physics",
+      "title": "A physics engine with incremental rollback for multiplayer games",
+      "summary": "Technical deep-dive on implementing incremental rollback in a physics engine for low-latency multiplayer games, addressing determinism and state synchronization challenges in networked game simulation.",
+      "source": "HN Front Page",
+      "tags": [
+        "physics",
+        "multiplayer",
+        "networking",
+        "game-dev",
+        "rollback"
+      ],
+      "score": 7,
+      "category": "Engineering",
+      "publishedAt": "2026-05-02T00:12:00.000Z"
     },
     {
       "url": "https://thenewstack.io/does-ai-demand-kubernetes",
@@ -3282,30 +3313,14 @@
       "publishedAt": "2026-04-03T20:36:40.000Z"
     },
     {
-      "url": "https://research.google/blog/evaluating-alignment-of-behavioral-dispositions-in-llms",
-      "title": "Evaluating alignment of behavioral dispositions in LLMs",
-      "summary": "Google Research presents methods for evaluating how well LLM behavioral dispositions align with intended values and safety properties. The work addresses a key challenge in AI safety: measuring whether models exhibit consistent, aligned behavior across diverse contexts.",
-      "source": "Google Research Blog",
-      "tags": [
-        "LLM",
-        "alignment",
-        "evals",
-        "safety"
-      ],
-      "score": 7,
-      "category": "AI",
-      "publishedAt": "2026-04-03T08:00:00.000Z"
-    },
-    {
       "url": "https://nytimes.com/2026/05/01/business/surveillance-pricing-groceries-maryland.html",
-      "title": "Maryland Is First to Ban A.I.-Driven Price Increases in Grocery Stores",
-      "summary": "Maryland has enacted legislation prohibiting AI-driven dynamic pricing in grocery retail, targeting algorithmic price discrimination. The move reflects regulatory concern over surveillance-based pricing mechanisms affecting consumer costs.",
+      "title": "Maryland to ban A.I.-driven price increases in grocery stores",
+      "summary": "Maryland legislation banning dynamic pricing algorithms in grocery retail. Represents regulatory response to AI-driven pricing strategies and consumer protection concerns.",
       "source": "HN Front Page",
       "tags": [
         "AI",
-        "pricing",
         "regulation",
-        "surveillance"
+        "pricing"
       ],
       "score": 6,
       "category": "Other",
@@ -3314,45 +3329,32 @@
     {
       "url": "https://hnup.date/hn-sota",
       "title": "Show HN: State of the Art of Coding Models, According to Hacker News Commenters",
-      "summary": "A tool that scrapes and analyzes Hacker News discussions to surface which coding models and harnesses are most discussed and recommended by the community. The project includes a pipeline for collecting model mentions and a Google Sheet tracking popular tools.",
+      "summary": "A tool that scrapes and analyzes HN discussions to identify which coding models and assistants are popular in the community. The pipeline extracts mentions from comments and surfaces trends, with plans to expand to harness tooling and self-hosting setups.",
       "source": "HN Front Page",
       "tags": [
         "LLM",
         "coding models",
-        "analysis"
+        "agents"
       ],
       "score": 6,
       "category": "AI",
       "publishedAt": "2026-05-02T21:25:05.000Z"
     },
     {
-      "url": "https://ladybird.org/newsletter/2026-04-30",
-      "title": "This Month in Ladybird - April 2026",
-      "summary": "Ladybird browser project's monthly update covering development progress, new features, and bug fixes in April 2026. The newsletter highlights recent commits and architectural improvements to the browser engine.",
+      "url": "https://code.videolan.org/videolan/dav2d",
+      "title": "Dav2d",
+      "summary": "Dav2d is a fast, open-source AV1 decoder written in Rust and assembly, designed for high-performance video decoding across platforms. The project focuses on correctness and speed, with optimizations for x86-64 and ARM architectures.",
       "source": "HN Front Page",
       "tags": [
-        "browser",
-        "open-source",
-        "rendering"
+        "video",
+        "codec",
+        "Rust",
+        "performance",
+        "open-source"
       ],
       "score": 6,
       "category": "Engineering",
-      "publishedAt": "2026-05-02T20:46:30.000Z"
-    },
-    {
-      "url": "https://github.com/microsoft/vscode/pull/310226",
-      "title": "VS Code inserting 'Co-Authored-by Copilot' into commits regardless of usage",
-      "summary": "VS Code was automatically injecting 'Co-Authored-by: Copilot' footers into git commits even when Copilot was not used, creating misleading attribution. This behavior has been flagged as a bug in the PR discussion, raising concerns about commit metadata integrity and user consent.",
-      "source": "HN Front Page",
-      "tags": [
-        "Copilot",
-        "git",
-        "VS Code",
-        "tooling"
-      ],
-      "score": 6,
-      "category": "Engineering",
-      "publishedAt": "2026-05-02T19:57:26.000Z"
+      "publishedAt": "2026-05-02T17:32:29.000Z"
     },
     {
       "url": "https://iesna.eu/?wasm=skyglow_demo",
@@ -4433,14 +4435,27 @@
       "publishedAt": "2026-04-08T18:23:51.000Z"
     },
     {
+      "url": "https://acai.sh/blog/specsmaxxing",
+      "title": "Specsmaxxing – On overcoming AI psychosis, and why I write specs in YAML",
+      "summary": "Essay on using YAML-based specifications as a tool for managing complexity in AI system design and avoiding over-optimization. The author argues that formal specs help clarify thinking and reduce decision paralysis when building AI applications.",
+      "source": "HN Front Page",
+      "tags": [
+        "prompt engineering",
+        "AI infrastructure",
+        "specifications"
+      ],
+      "score": 5,
+      "category": "AI",
+      "publishedAt": "2026-05-03T06:33:38.000Z"
+    },
+    {
       "url": "https://blog.feld.me/posts/2026/04/open-source-does-not-imply-open-community",
       "title": "Open source does not imply open community",
-      "summary": "Essay examining the distinction between open-source licensing and inclusive community practices, arguing that code availability does not guarantee welcoming governance or contributor pathways. Relevant to maintainers navigating community dynamics.",
+      "summary": "Essay on the distinction between open-source licensing and inclusive community governance. Argues that technical openness does not guarantee welcoming or accessible project cultures.",
       "source": "HN Front Page",
       "tags": [
         "open-source",
-        "community",
-        "governance"
+        "community"
       ],
       "score": 5,
       "category": "Other",
@@ -4463,16 +4478,30 @@
     {
       "url": "https://david-smith.org/blog/2026/04/29/maps-on-watchos",
       "title": "Six Years Perfecting Maps on WatchOS",
-      "summary": "A developer reflects on six years of iterative work building and refining a Maps application for watchOS, covering UI constraints, performance optimization, and user feedback integration. The post details the challenges of building functional applications on wearable platforms.",
+      "summary": "A retrospective on building and iterating Maps for watchOS over six years. Likely covers platform constraints, UI/UX decisions, and lessons from long-term platform development.",
       "source": "HN Front Page",
       "tags": [
         "watchOS",
-        "performance",
-        "UI"
+        "maps",
+        "platform development"
       ],
       "score": 5,
       "category": "Engineering",
       "publishedAt": "2026-05-02T21:14:29.000Z"
+    },
+    {
+      "url": "https://ladybird.org/newsletter/2026-04-30",
+      "title": "This Month in Ladybird - April 2026",
+      "summary": "Monthly progress update for the Ladybird browser project. Covers incremental development work on the open-source browser engine.",
+      "source": "HN Front Page",
+      "tags": [
+        "browser",
+        "open-source",
+        "rendering"
+      ],
+      "score": 5,
+      "category": "Engineering",
+      "publishedAt": "2026-05-02T20:46:30.000Z"
     },
     {
       "url": "https://donottrack.sh/",
@@ -4519,12 +4548,13 @@
     {
       "url": "https://eclecticlight.co/2026/05/02/how-fast-is-a-macos-vm-and-how-small-could-it-be",
       "title": "How fast is a macOS VM, and how small could it be?",
-      "summary": "A performance and sizing analysis of macOS virtual machines, exploring trade-offs between VM footprint and runtime performance. The article likely benchmarks various configurations and hypervisor options.",
+      "summary": "Technical analysis of macOS virtual machine performance and minimal resource requirements, exploring virtualization overhead and optimization strategies for running macOS in constrained environments.",
       "source": "HN Front Page",
       "tags": [
         "virtualization",
         "macOS",
-        "performance"
+        "performance",
+        "infrastructure"
       ],
       "score": 5,
       "category": "Engineering",
