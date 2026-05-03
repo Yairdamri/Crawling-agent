@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-03T13:37:00.039Z",
+  "generatedAt": "2026-05-03T15:02:26.799Z",
   "articles": [
     {
       "url": "https://github.com/Matheus-git/systemd-manager-tui",
@@ -63,7 +63,8 @@
       ],
       "score": 8,
       "category": "Security",
-      "publishedAt": "2026-05-03T06:26:00.000Z"
+      "publishedAt": "2026-05-03T06:26:00.000Z",
+      "imageFilename": "69328ea2eb163575.png"
     },
     {
       "url": "https://thinkpol.ca/2026/04/30/an-open-weights-chinese-model-just-beat-claude-gpt-5-5-and-gemini-in-a-programming-challenge",
@@ -78,7 +79,8 @@
       ],
       "score": 8,
       "category": "AI",
-      "publishedAt": "2026-05-03T04:05:28.000Z"
+      "publishedAt": "2026-05-03T04:05:28.000Z",
+      "imageFilename": "05be820ae3174d50.png"
     },
     {
       "url": "https://fshot.org/techzone/the-algorithm-knows.php",
@@ -287,7 +289,8 @@
       ],
       "score": 8,
       "category": "AI",
-      "publishedAt": "2026-05-02T16:00:00.000Z"
+      "publishedAt": "2026-05-02T16:00:00.000Z",
+      "imageFilename": "1754017011349d88.png"
     },
     {
       "url": "https://arxiv.org/abs/2509.00462",
@@ -526,7 +529,8 @@
       ],
       "score": 8,
       "category": "AI",
-      "publishedAt": "2026-05-01T20:21:31.000Z"
+      "publishedAt": "2026-05-01T20:21:31.000Z",
+      "imageFilename": "abc4e055138da367.png"
     },
     {
       "url": "https://thenewstack.io/does-ai-demand-kubernetes",
@@ -614,7 +618,8 @@
       ],
       "score": 8,
       "category": "DevOps",
-      "publishedAt": "2026-05-01T18:35:00.000Z"
+      "publishedAt": "2026-05-01T18:35:00.000Z",
+      "imageFilename": "b271b0f81a7298c1.png"
     },
     {
       "url": "https://aws.amazon.com/blogs/machine-learning/aws-transform-now-automates-bi-migration-to-amazon-quick-in-days",
@@ -845,7 +850,8 @@
       ],
       "score": 8,
       "category": "AI",
-      "publishedAt": "2026-05-01T13:00:00.000Z"
+      "publishedAt": "2026-05-01T13:00:00.000Z",
+      "imageFilename": "136b2911a1a4eeda.png"
     },
     {
       "url": "https://databricks.com/blog/model-risk-governance-not-same-risk-intelligence",
@@ -875,7 +881,8 @@
       ],
       "score": 8,
       "category": "AI",
-      "publishedAt": "2026-05-01T12:00:00.000Z"
+      "publishedAt": "2026-05-01T12:00:00.000Z",
+      "imageFilename": "e3cd8e5495d4eb28.png"
     },
     {
       "url": "https://pagetable.com/?p=1854",
@@ -979,7 +986,8 @@
       ],
       "score": 8,
       "category": "Security",
-      "publishedAt": "2026-05-01T09:43:00.000Z"
+      "publishedAt": "2026-05-01T09:43:00.000Z",
+      "imageFilename": "2f47072d0ab985bd.png"
     },
     {
       "url": "https://github.com/intel/auto-round",
@@ -1082,7 +1090,8 @@
       ],
       "score": 8,
       "category": "AI",
-      "publishedAt": "2026-04-30T20:07:25.000Z"
+      "publishedAt": "2026-04-30T20:07:25.000Z",
+      "imageFilename": "9bbeaf1ed692ef8c.png"
     },
     {
       "url": "https://cncf.io/blog/2026/04/30/ai-sandboxing-is-having-its-kubernetes-moment",
@@ -1098,7 +1107,8 @@
       ],
       "score": 8,
       "category": "AI",
-      "publishedAt": "2026-04-30T19:37:27.000Z"
+      "publishedAt": "2026-04-30T19:37:27.000Z",
+      "imageFilename": "fb4eb994058ffcbd.png"
     },
     {
       "url": "https://dbos.dev/blog/benchmarking-workflow-execution-scalability-on-postgres",
@@ -1173,7 +1183,8 @@
       ],
       "score": 8,
       "category": "AI",
-      "publishedAt": "2026-04-30T18:00:00.000Z"
+      "publishedAt": "2026-04-30T18:00:00.000Z",
+      "imageFilename": "8817d0fa69480525.png"
     },
     {
       "url": "https://thenewstack.io/openai-aws-bedrock-integration",
@@ -1188,7 +1199,8 @@
       ],
       "score": 8,
       "category": "Cloud",
-      "publishedAt": "2026-04-30T17:17:41.000Z"
+      "publishedAt": "2026-04-30T17:17:41.000Z",
+      "imageFilename": "a5c1cfaa6e558832.png"
     },
     {
       "url": "https://nickkossolapov.github.io/fame-boy/building-a-game-boy-emulator-in-fsharp",
@@ -1232,7 +1244,8 @@
       ],
       "score": 8,
       "category": "AI",
-      "publishedAt": "2026-04-30T17:00:45.000Z"
+      "publishedAt": "2026-04-30T17:00:45.000Z",
+      "imageFilename": "184bd033f8c3a2b7.png"
     },
     {
       "url": "https://thenewstack.io/anthropics-claude-security-beta",
@@ -1371,7 +1384,8 @@
       ],
       "score": 8,
       "category": "AI",
-      "publishedAt": "2026-04-30T16:32:43.000Z"
+      "publishedAt": "2026-04-30T16:32:43.000Z",
+      "imageFilename": "26c336ef4eaf5824.png"
     },
     {
       "url": "https://thehackernews.com/2026/04/pytorch-lightning-compromised-in-pypi.html",
@@ -1386,7 +1400,8 @@
       ],
       "score": 8,
       "category": "Security",
-      "publishedAt": "2026-04-30T16:31:00.000Z"
+      "publishedAt": "2026-04-30T16:31:00.000Z",
+      "imageFilename": "04be5dcff5ca45f4.png"
     },
     {
       "url": "https://developer.nvidia.com/blog/how-to-build-run-and-scale-high-quality-creator-workflows-in-comfyui",
@@ -1480,7 +1495,8 @@
       ],
       "score": 8,
       "category": "AI",
-      "publishedAt": "2026-04-30T15:54:38.000Z"
+      "publishedAt": "2026-04-30T15:54:38.000Z",
+      "imageFilename": "2f93b61c42b66a20.png"
     },
     {
       "url": "https://thenewstack.io/meta-abandons-llama-spark",
@@ -1658,7 +1674,8 @@
       ],
       "score": 8,
       "category": "Security",
-      "publishedAt": "2026-04-30T11:30:00.000Z"
+      "publishedAt": "2026-04-30T11:30:00.000Z",
+      "imageFilename": "7c3f6d796068c374.png"
     },
     {
       "url": "https://firethering.com/granite-4-1-ibm-open-source-model-family",
@@ -1688,7 +1705,8 @@
       ],
       "score": 8,
       "category": "Security",
-      "publishedAt": "2026-04-30T09:24:00.000Z"
+      "publishedAt": "2026-04-30T09:24:00.000Z",
+      "imageFilename": "2835c771f8b27107.png"
     },
     {
       "url": "https://github.com/mozilla/standards-positions/issues/1213",
@@ -1733,7 +1751,8 @@
       ],
       "score": 9,
       "category": "Security",
-      "publishedAt": "2026-04-30T07:07:00.000Z"
+      "publishedAt": "2026-04-30T07:07:00.000Z",
+      "imageFilename": "3f331b8fad016b67.png"
     },
     {
       "url": "https://groundcover.com/blog/otel-normalizer-genai-part-1",
@@ -1763,7 +1782,8 @@
       ],
       "score": 9,
       "category": "AI",
-      "publishedAt": "2026-04-30T03:21:04.000Z"
+      "publishedAt": "2026-04-30T03:21:04.000Z",
+      "imageFilename": "2aeb9ffdcbecfe14.png"
     },
     {
       "url": "https://github.com/cauchy221/Alignment-Whack-a-Mole-Code",
@@ -1850,7 +1870,8 @@
       ],
       "score": 8,
       "category": "Security",
-      "publishedAt": "2026-04-30T00:00:00.000Z"
+      "publishedAt": "2026-04-30T00:00:00.000Z",
+      "imageFilename": "98a25918e1a18fa5.png"
     },
     {
       "url": "https://openai.com/index/advanced-account-security",
@@ -2028,7 +2049,8 @@
       ],
       "score": 8,
       "category": "AI",
-      "publishedAt": "2026-04-29T18:52:32.000Z"
+      "publishedAt": "2026-04-29T18:52:32.000Z",
+      "imageFilename": "ff8785fb831d3d0a.png"
     },
     {
       "url": "https://kubernetes.io/blog/2026/04/29/kubernetes-v1-36-memory-qos-tiered-protection",
@@ -2044,7 +2066,8 @@
       ],
       "score": 8,
       "category": "DevOps",
-      "publishedAt": "2026-04-29T18:35:00.000Z"
+      "publishedAt": "2026-04-29T18:35:00.000Z",
+      "imageFilename": "dff5c549e838b3c2.png"
     },
     {
       "url": "https://promptarmor.com/resources/ramps-sheets-ai-exfiltrates-financials",
@@ -2310,7 +2333,8 @@
       ],
       "score": 9,
       "category": "Cloud",
-      "publishedAt": "2026-04-29T14:54:40.000Z"
+      "publishedAt": "2026-04-29T14:54:40.000Z",
+      "imageFilename": "61ecc66df1d73227.png"
     },
     {
       "url": "https://thehackernews.com/2026/04/new-wave-of-dprk-attacks-uses-ai.html",
@@ -2326,7 +2350,8 @@
       ],
       "score": 9,
       "category": "Security",
-      "publishedAt": "2026-04-29T14:43:00.000Z"
+      "publishedAt": "2026-04-29T14:43:00.000Z",
+      "imageFilename": "a1018bf293cb7d0b.png"
     },
     {
       "url": "https://zed.dev/blog/zed-1-0",
@@ -2611,7 +2636,8 @@
       ],
       "score": 9,
       "category": "Security",
-      "publishedAt": "2026-04-29T08:46:00.000Z"
+      "publishedAt": "2026-04-29T08:46:00.000Z",
+      "imageFilename": "9fa30c8a550ee03f.png"
     },
     {
       "url": "https://dl.acm.org/doi/abs/10.1145/3767295.3803591",
@@ -3127,7 +3153,8 @@
       ],
       "score": 9,
       "category": "Security",
-      "publishedAt": "2026-04-28T15:30:00.000Z"
+      "publishedAt": "2026-04-28T15:30:00.000Z",
+      "imageFilename": "d0cb987e64c9effc.png"
     },
     {
       "url": "https://databricks.com/blog/agentic-data-engineering-genie-code-and-lakeflow",
@@ -4014,7 +4041,8 @@
       ],
       "score": 9,
       "category": "DevOps",
-      "publishedAt": "2026-04-23T18:35:00.000Z"
+      "publishedAt": "2026-04-23T18:35:00.000Z",
+      "imageFilename": "2ffdcaa57dee2ac9.png"
     },
     {
       "url": "https://aws.amazon.com/blogs/machine-learning/amazon-quick-for-marketing-from-scattered-data-to-strategic-action",
@@ -4060,7 +4088,8 @@
       ],
       "score": 9,
       "category": "Security",
-      "publishedAt": "2026-04-23T15:32:00.000Z"
+      "publishedAt": "2026-04-23T15:32:00.000Z",
+      "imageFilename": "45b7c45851d74baa.png"
     },
     {
       "url": "https://cncf.io/blog/2026/04/23/from-ingress-nginx-to-higress-migrating-60-resources-in-30-minutes-with-ai",
@@ -5411,7 +5440,8 @@
       ],
       "score": 9,
       "category": "Security",
-      "publishedAt": "2026-04-07T17:02:44.000Z"
+      "publishedAt": "2026-04-07T17:02:44.000Z",
+      "imageFilename": "0c26aad79391bb72.png"
     },
     {
       "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-devops-agent-security-agent-ga-product-lifecycle-updates-and-more-april-6-2026",
