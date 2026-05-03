@@ -74,6 +74,12 @@ Inspect `data/news.json` afterwards. A second run should be near-instant — `se
 
 ## Shortcode options
 
+The plugin ships two shortcodes.
+
+### `[ai_news_feed]` — simple grid
+
+The original layout: a single responsive grid of cards. Use this when you want to drop the feed into an existing page that already has its own surrounding chrome.
+
 ```
 [ai_news_feed]                              full feed
 [ai_news_feed limit="10"]                   first 10
@@ -81,7 +87,25 @@ Inspect `data/news.json` afterwards. A second run should be near-instant — `se
 [ai_news_feed limit="5" category="Security"] both
 ```
 
+### `[ai_news_feed_page]` — full magazine layout
+
+The Develeap-styled news page: site header (logo + nav + "Get Your Expert" CTA), hero, 2×2 featured grid, "Top Stories" rail, search + sort + category-filter pills, and the main 3-column card grid with image thumbnails, IMPACT score badges, source-brand-tinted placeholders, and `#tag` chips. Includes a small client-side script for filter / search / sort with no page reloads.
+
+```
+[ai_news_feed_page]                         everything: header + hero + featured + top + grid
+[ai_news_feed_page limit="30"]              cap the main grid at 30 cards
+[ai_news_feed_page featured="6" top="8"]    larger spotlight section
+[ai_news_feed_page limit="60" featured="4" top="5"]  defaults shown explicitly
+```
+
+Attributes:
+- `limit` — max number of cards in the main grid. Default `60`.
+- `featured` — articles in the 2×2 spotlight (top by score, ties broken by date desc). Default `4`.
+- `top` — articles in the right-rail "Top Stories" list (next-best by score after featured). Default `5`.
+
 Categories: `AI`, `DevOps`, `Cloud`, `Engineering`, `Security`, `Other`.
+
+Source-brand tints (used for image placeholders before / when the AI-generated thumbnail isn't present): AWS, Kubernetes/CNCF, OpenAI, Anthropic, GitHub, HashiCorp, Docker, NVIDIA, Hugging Face, Microsoft/Azure, Google/DeepMind, Databricks, Snyk, CISA, Stripe, Cloudflare, Meta, plus a `security` fallback for Krebs / Hacker News / Project Zero. Defined in [wordpress-plugin/ai-news-feed/style.css](wordpress-plugin/ai-news-feed/style.css), keyed off the source name via `ainfp_source_slug()` in [ai-news-feed.php](wordpress-plugin/ai-news-feed/ai-news-feed.php). Colors come from the [develeap-news-imagery skill](.claude/skills/develeap-news-imagery/references/brand-colors.md).
 
 ## Costs
 
