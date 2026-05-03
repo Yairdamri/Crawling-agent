@@ -8,7 +8,7 @@ const root = join(here, '..');
 const NEWS_PATH = join(root, 'data', 'news.json');
 const OUT_DIR = join(root, 'data', 'images-test');
 
-const MODEL = 'gemini-2.5-flash-image-preview';
+const MODEL = process.env.GEMINI_IMAGE_MODEL || 'gemini-2.5-flash-image';
 const SAMPLE_SIZE = 5;
 const API_KEY = process.env.GEMINI_API_KEY;
 
