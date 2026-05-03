@@ -37,8 +37,9 @@ export async function mergeAndWrite({ newsPath, seenPath, processed, seenMap, ha
   const merged = Array.from(byUrl.values())
     .filter((a) => isWithinDays(a.publishedAt, RETENTION_DAYS))
     .sort((a, b) => {
-      if (b.score !== a.score) return b.score - a.score;
-      return new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime();
+      const dateDiff = new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime();
+      if (dateDiff !== 0) return dateDiff;
+      return b.score - a.score;
     });
 
   const output = {
