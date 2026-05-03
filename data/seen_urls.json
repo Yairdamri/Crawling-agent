@@ -2358,8 +2358,8 @@
   },
   {
     "url": "https://eclecticlight.co/2026/05/02/how-fast-is-a-macos-vm-and-how-small-could-it-be",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "b6fbc9236a9a61c6"
+    "seenAt": "2026-05-03T08:32:25.367Z",
+    "contentHash": "cc46b0c8b40a2836"
   },
   {
     "url": "https://iesna.eu/?wasm=skyglow_demo",
@@ -2383,7 +2383,8 @@
   },
   {
     "url": "https://ycombinator.com/companies/collectwise/jobs/rEWfZ6R-senior-forward-deployed-engineer",
-    "seenAt": "2026-05-02T13:03:10.345Z"
+    "seenAt": "2026-05-03T08:32:25.367Z",
+    "contentHash": "875daae4c131d30d"
   },
   {
     "url": "https://noctua.at/en/expertise/blog/how-can-it-take-so-long-to-release-black-fan-versions",
@@ -2408,8 +2409,8 @@
   },
   {
     "url": "https://nethack.org/v500/release.html",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "b2544e967d3f449e"
+    "seenAt": "2026-05-03T08:32:25.367Z",
+    "contentHash": "27d5018f9dcf3448"
   },
   {
     "url": "https://bbc.com/news/articles/clypjx3rg2go",
@@ -2417,8 +2418,8 @@
   },
   {
     "url": "https://code.videolan.org/videolan/dav2d",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "2617f1750f7eddc3"
+    "seenAt": "2026-05-03T08:32:25.367Z",
+    "contentHash": "666fec287e1135dc"
   },
   {
     "url": "https://flueframework.com/",
@@ -2454,8 +2455,8 @@
   },
   {
     "url": "https://nytimes.com/2026/05/01/business/surveillance-pricing-groceries-maryland.html",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "0f60f1f4f51540c5"
+    "seenAt": "2026-05-03T08:32:25.367Z",
+    "contentHash": "7fbcbc0cdbf3fc28"
   },
   {
     "url": "https://bbc.com/news/articles/cvgzk91leweo",
@@ -2468,8 +2469,8 @@
   },
   {
     "url": "https://blog.haskell.org/a-couple-million-lines-of-haskell",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "718c5f3e89023cde"
+    "seenAt": "2026-05-03T08:32:25.367Z",
+    "contentHash": "e8ec1dce627c4ea6"
   },
   {
     "url": "https://sfist.com/2026/05/01/waymo-drives-off-with-south-bay-mans-luggage-after-trunk-fails-to-open",
@@ -2485,53 +2486,53 @@
   },
   {
     "url": "https://clojuriststogether.org/news/q2-2026-funding-announcement",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "06f4032f61f3181f"
+    "seenAt": "2026-05-03T08:32:25.367Z",
+    "contentHash": "9c1d49eab81a7ec1"
   },
   {
     "url": "https://hnup.date/hn-sota",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "be3dd5cfae22773c"
+    "seenAt": "2026-05-03T08:32:25.367Z",
+    "contentHash": "c35ee46358885e42"
   },
   {
     "url": "https://mendral.com/blog/agent-harness-belongs-outside-sandbox",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "7a1808ec840dd547"
+    "seenAt": "2026-05-03T08:32:25.367Z",
+    "contentHash": "e2f01e01c3434ae7"
   },
   {
     "url": "https://david-smith.org/blog/2026/04/29/maps-on-watchos",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "853bb23c295cd539"
+    "seenAt": "2026-05-03T08:32:25.367Z",
+    "contentHash": "495bd35116b69094"
   },
   {
     "url": "https://ladybird.org/newsletter/2026-04-30",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "c090b225a419d574"
+    "seenAt": "2026-05-03T08:32:25.367Z",
+    "contentHash": "4e446e90f1920a37"
   },
   {
     "url": "https://universiteitleiden.nl/en/news/2025/07/neanderthals-ran-fat-factories-125000-years-ago",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "523691c96bb426a1"
+    "seenAt": "2026-05-03T08:32:25.367Z",
+    "contentHash": "5c6219aa9530c33f"
   },
   {
     "url": "https://github.com/microsoft/vscode/pull/310226",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "7d67124353632a91"
+    "seenAt": "2026-05-03T08:32:25.367Z",
+    "contentHash": "41e3f6cd8df2b7bf"
   },
   {
     "url": "https://donottrack.sh/",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "7feb8bc6dd29fea6"
+    "seenAt": "2026-05-03T08:32:25.367Z",
+    "contentHash": "75035d248f40d420"
   },
   {
     "url": "https://acai.sh/blog/specsmaxxing",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "6c721943adacd0f5"
+    "seenAt": "2026-05-03T08:32:25.367Z",
+    "contentHash": "ef980a3030f2655a"
   },
   {
     "url": "https://thinkpol.ca/2026/04/30/an-open-weights-chinese-model-just-beat-claude-gpt-5-5-and-gemini-in-a-programming-challenge",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "060ddbd2a635f21a"
+    "seenAt": "2026-05-03T08:32:25.367Z",
+    "contentHash": "05be820ae3174d50"
   },
   {
     "url": "https://retrocoding.net/windows-api-is-successful-cross-platform-api",
@@ -2540,13 +2541,13 @@
   },
   {
     "url": "https://blog.feld.me/posts/2026/04/open-source-does-not-imply-open-community",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "4b87a2ab3d80a5b7"
+    "seenAt": "2026-05-03T08:32:25.367Z",
+    "contentHash": "2e18bed1ef0d8749"
   },
   {
     "url": "https://newsonjapan.com/article/149075.php",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "8b90bfbedce0730a"
+    "seenAt": "2026-05-03T08:32:25.367Z",
+    "contentHash": "1b6d7fd9c8553fc9"
   },
   {
     "url": "https://agis.io/post/dabbling-in-erlang-a-minimal-introduction",
@@ -2557,5 +2558,15 @@
     "url": "https://thehackernews.com/2026/05/cisa-adds-actively-exploited-linux-root.html",
     "seenAt": "2026-05-03T07:57:08.336Z",
     "contentHash": "69328ea2eb163575"
+  },
+  {
+    "url": "https://fshot.org/techzone/the-algorithm-knows.php",
+    "seenAt": "2026-05-03T08:32:25.367Z",
+    "contentHash": "a354ba19dc14847f"
+  },
+  {
+    "url": "https://easel.games/blog/2026-rollback-physics",
+    "seenAt": "2026-05-03T08:32:25.367Z",
+    "contentHash": "7eb772640dcd9ee3"
   }
 ]
