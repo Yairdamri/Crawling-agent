@@ -2,20 +2,19 @@ import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
+import { BedrockRuntimeClient, InvokeModelCommand } from '@aws-sdk/client-bedrock-runtime';
 
 const here = dirname(fileURLToPath(import.meta.url));
 const root = join(here, '..');
 const NEWS_PATH = join(root, 'data', 'news.json');
 const OUT_DIR = join(root, 'data', 'images-test');
 
-const MODEL = process.env.GEMINI_IMAGE_MODEL || 'gemini-2.5-flash-image';
+const REGION = process.env.AWS_REGION || 'us-east-1';
+const MODEL = process.env.BEDROCK_IMAGE_MODEL || 'amazon.titan-image-generator-v2:0';
 const PER_CATEGORY = Number(process.env.SAMPLES_PER_CATEGORY) || 2;
-const API_KEY = process.env.GEMINI_API_KEY;
+const NEGATIVE_PROMPT = 'text, letters, words, logos, UI elements, readable symbols, labels, signage, typography, watermark';
 
-if (!API_KEY) {
-  console.error('GEMINI_API_KEY missing. Add it to .env then run: npm run test:images');
-  process.exit(1);
-}
+const bedrock = new BedrockRuntimeClient({ region: REGION });
 
 const CATEGORY_VISUALS = {
   AI: 'a glowing silicon chip with intricate neural network traces, pulses of light flowing through circuit pathways',
@@ -64,7 +63,7 @@ function buildPrompt({ url, category, tags }) {
   const lighting = LIGHTINGS[hashIndex(url + ':L', LIGHTINGS.length)];
   const flavor = cleanTags(tags);
   const flavorLine = flavor.length
-    ? `Subtle compositional motifs (interpret visually only, never render as text): ${flavor.join(', ')}.`
+    ? `Subtle motifs (visual only): ${flavor.join(', ')}.`
     : '';
   return [
     `Editorial tech illustration.`,
@@ -73,8 +72,7 @@ function buildPrompt({ url, category, tags }) {
     `Lighting: ${lighting}.`,
     flavorLine,
     `Style: cinematic, abstract-realistic, moody atmospheric, depth of field, professional editorial quality.`,
-    `STRICT NEGATIVE: absolutely no text, no letters, no words, no logos, no UI elements, no readable symbols, no labels, no signage, no typography of any kind. The image must contain zero textual elements.`,
-  ].filter(Boolean).join('\n');
+  ].filter(Boolean).join(' ');
 }
 
 function hashUrl(url) {
@@ -95,39 +93,32 @@ function pickSample(articles, perCategory) {
 }
 
 async function generateImage(prompt) {
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent?key=${API_KEY}`;
   const body = {
-    contents: [{ parts: [{ text: prompt }] }],
-    generationConfig: {
-      responseModalities: ['IMAGE'],
-      imageConfig: { aspectRatio: '16:9' },
+    taskType: 'TEXT_IMAGE',
+    textToImageParams: {
+      text: prompt,
+      negativeText: NEGATIVE_PROMPT,
+    },
+    imageGenerationConfig: {
+      numberOfImages: 1,
+      quality: 'standard',
+      width: 1024,
+      height: 1024,
+      cfgScale: 8.0,
     },
   };
-  const res = await fetch(url, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
+  const res = await bedrock.send(new InvokeModelCommand({
+    modelId: MODEL,
+    contentType: 'application/json',
+    accept: 'application/json',
     body: JSON.stringify(body),
-  });
-  if (!res.ok) {
-    const text = await res.text();
-    throw new Error(`HTTP ${res.status}: ${text.slice(0, 500)}`);
+  }));
+  const parsed = JSON.parse(new TextDecoder().decode(res.body));
+  const b64 = parsed.images?.[0];
+  if (!b64) {
+    throw new Error(`no image in response: ${JSON.stringify(parsed).slice(0, 500)}`);
   }
-  const json = await res.json();
-  const parts = json.candidates?.[0]?.content?.parts || [];
-  const imagePart = parts.find((p) => p.inlineData?.data);
-  if (!imagePart) {
-    throw new Error(`no image in response: ${JSON.stringify(json).slice(0, 500)}`);
-  }
-  return {
-    bytes: Buffer.from(imagePart.inlineData.data, 'base64'),
-    mimeType: imagePart.inlineData.mimeType || 'image/png',
-  };
-}
-
-function extFromMime(m) {
-  if (m.includes('jpeg')) return 'jpg';
-  if (m.includes('webp')) return 'webp';
-  return 'png';
+  return { bytes: Buffer.from(b64, 'base64'), mimeType: 'image/png' };
 }
 
 async function main() {
@@ -142,11 +133,10 @@ async function main() {
     console.log(`---\n[${article.category}] ${article.title}`);
     console.log(`prompt: ${prompt.replace(/\n/g, ' ')}`);
     try {
-      const { bytes, mimeType } = await generateImage(prompt);
-      const ext = extFromMime(mimeType);
-      const path = join(OUT_DIR, `${hashUrl(article.url)}.${ext}`);
+      const { bytes } = await generateImage(prompt);
+      const path = join(OUT_DIR, `${hashUrl(article.url)}.png`);
       await writeFile(path, bytes);
-      console.log(`wrote ${path} (${(bytes.length / 1024).toFixed(0)} KB, ${mimeType})`);
+      console.log(`wrote ${path} (${(bytes.length / 1024).toFixed(0)} KB)`);
     } catch (err) {
       console.error(`gen failed: ${err.message}`);
     }
