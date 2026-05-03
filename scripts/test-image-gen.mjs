@@ -38,9 +38,9 @@ const COMPOSITIONS = [
 ];
 
 const LIGHTINGS = [
-  'warm orange key light from above with cool teal rim',
-  'cold teal ambient with bright orange accent points',
-  'split lighting, half teal and half orange',
+  'warm key light from above with cool rim',
+  'cold ambient with bright accent points',
+  'split lighting, contrasting tones',
   'volumetric god rays cutting through darkness',
   'electric pulses illuminating from within',
   'soft fog with a bright focal glow',
@@ -72,7 +72,7 @@ function buildPrompt({ url, category, tags }) {
     `Composition: ${composition}.`,
     `Lighting: ${lighting}.`,
     flavorLine,
-    `Style: cinematic dark teal and orange palette, abstract-realistic, moody atmospheric, depth of field, professional editorial quality.`,
+    `Style: cinematic, abstract-realistic, moody atmospheric, depth of field, professional editorial quality.`,
     `STRICT NEGATIVE: absolutely no text, no letters, no words, no logos, no UI elements, no readable symbols, no labels, no signage, no typography of any kind. The image must contain zero textual elements.`,
   ].filter(Boolean).join('\n');
 }
