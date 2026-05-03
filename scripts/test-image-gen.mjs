@@ -17,11 +17,11 @@ if (!API_KEY) {
   process.exit(1);
 }
 
-function buildPrompt({ title, category, tags }) {
+function buildPrompt({ category, tags }) {
   return [
-    `A cinematic dark teal and orange tech illustration representing: ${title}.`,
-    `Subject hints: ${(tags || []).join(', ')}. Category: ${category}.`,
-    `Style: editorial, abstract-realistic, server-room/circuit/data-flow aesthetic, 16:9, no text, no logos.`,
+    `Editorial tech illustration. Theme: ${category} - ${(tags || []).join(', ')}.`,
+    `Style: cinematic dark teal and orange, abstract-realistic, server-room/circuit/data-flow aesthetic, atmospheric, moody, depth of field.`,
+    `Strict: no text, no letters, no words, no logos, no UI elements, no readable symbols anywhere. Pure abstract atmosphere only.`,
   ].join('\n');
 }
 
@@ -48,7 +48,13 @@ function pickSample(articles, n) {
 
 async function generateImage(prompt) {
   const url = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent?key=${API_KEY}`;
-  const body = { contents: [{ parts: [{ text: prompt }] }] };
+  const body = {
+    contents: [{ parts: [{ text: prompt }] }],
+    generationConfig: {
+      responseModalities: ['IMAGE'],
+      imageConfig: { aspectRatio: '16:9' },
+    },
+  };
   const res = await fetch(url, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
