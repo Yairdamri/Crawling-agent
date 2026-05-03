@@ -39,13 +39,14 @@ jobs:
       - name: Run pipeline
         env:
           AWS_REGION: us-east-1
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: node scripts/fetch.mjs
 
       - name: Commit updated data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/news.json data/seen_urls.json
+          git add data/news.json data/seen_urls.json data/images
           if git diff --cached --quiet; then
             echo "No data changes to commit."
           else

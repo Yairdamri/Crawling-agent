@@ -5,6 +5,7 @@ import { dirname, join } from 'node:path';
 import { fetchAllFeeds } from './feeds.mjs';
 import { loadSeenUrls, filterUnseen } from './dedupe.mjs';
 import { processArticles } from './bedrock.mjs';
+import { generateImages } from './images.mjs';
 import { mergeAndWrite } from './store.mjs';
 
 const here = dirname(fileURLToPath(import.meta.url));
@@ -12,6 +13,7 @@ const root = join(here, '..');
 const FEEDS_PATH = join(root, 'config', 'feeds.json');
 const NEWS_PATH = join(root, 'data', 'news.json');
 const SEEN_PATH = join(root, 'data', 'seen_urls.json');
+const IMAGES_DIR = join(root, 'data', 'images');
 
 async function loadFeeds() {
   const raw = await readFile(FEEDS_PATH, 'utf8');
@@ -47,9 +49,14 @@ async function main() {
   }
 
   const processed = await processArticles(fresh);
-  console.log(`[pipeline] ${processed.length} articles returned by OpenAI`);
+  console.log(`[pipeline] ${processed.length} articles returned by Bedrock`);
 
   const hashByUrl = new Map(fresh.map((f) => [f.url, f.contentHash]));
+
+  // Only generate images for articles that will actually land in news.json (score >= 5).
+  // Same threshold applied in store.mjs MIN_SCORE — keep them in sync.
+  const keepers = processed.filter((a) => Number.isInteger(a.score) && a.score >= 5);
+  await generateImages(keepers, hashByUrl, IMAGES_DIR);
 
   const stats = await mergeAndWrite({
     newsPath: NEWS_PATH,

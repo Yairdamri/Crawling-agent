@@ -2,7 +2,7 @@
 /**
  * Plugin Name: AI News Feed
  * Description: Renders an automated AI/DevOps/cloud news feed from a JSON URL produced by a GitHub Actions pipeline. Use the [ai_news_feed] shortcode on any page.
- * Version:     0.2.0
+ * Version:     0.3.0
  * Author:      AI News Feed
  * License:     MIT
  */
@@ -66,15 +66,28 @@ function ainf_fetch_data($force = false) {
     return $parsed;
 }
 
-function ainf_render_card($article) {
-    $title       = isset($article['title']) ? (string) $article['title'] : '';
-    $summary     = isset($article['summary']) ? (string) $article['summary'] : '';
-    $url         = isset($article['url']) ? (string) $article['url'] : '';
-    $source      = isset($article['source']) ? (string) $article['source'] : '';
-    $score       = isset($article['score']) ? (int) $article['score'] : 0;
-    $category    = isset($article['category']) ? (string) $article['category'] : 'Other';
-    $tags        = isset($article['tags']) && is_array($article['tags']) ? $article['tags'] : array();
-    $publishedAt = isset($article['publishedAt']) ? (string) $article['publishedAt'] : '';
+function ainf_image_base_url() {
+    $settings = ainf_get_settings();
+    $json_url = trim($settings['json_url']);
+    if ($json_url === '') return '';
+    return preg_replace('#/news\.json$#', '/images/', $json_url);
+}
+
+function ainf_render_card($article, $image_base = '') {
+    $title         = isset($article['title']) ? (string) $article['title'] : '';
+    $summary       = isset($article['summary']) ? (string) $article['summary'] : '';
+    $url           = isset($article['url']) ? (string) $article['url'] : '';
+    $source        = isset($article['source']) ? (string) $article['source'] : '';
+    $score         = isset($article['score']) ? (int) $article['score'] : 0;
+    $category      = isset($article['category']) ? (string) $article['category'] : 'Other';
+    $tags          = isset($article['tags']) && is_array($article['tags']) ? $article['tags'] : array();
+    $publishedAt   = isset($article['publishedAt']) ? (string) $article['publishedAt'] : '';
+    $imageFilename = isset($article['imageFilename']) ? (string) $article['imageFilename'] : '';
+
+    $image_url = '';
+    if ($imageFilename !== '' && $image_base !== '' && preg_match('/^[a-zA-Z0-9._-]+$/', $imageFilename)) {
+        $image_url = $image_base . $imageFilename;
+    }
 
     $date_display = '';
     if ($publishedAt !== '') {
@@ -87,27 +100,34 @@ function ainf_render_card($article) {
     ob_start();
     ?>
     <article class="ainf-card" data-category="<?php echo esc_attr($category); ?>">
-        <header class="ainf-card-header">
-            <span class="ainf-category"><?php echo esc_html($category); ?></span>
-            <span class="ainf-score" title="Editorial score 1-10"><?php echo esc_html($score); ?>/10</span>
-        </header>
-        <h3 class="ainf-title">
-            <a href="<?php echo esc_url($url); ?>" rel="nofollow noopener" target="_blank"><?php echo esc_html($title); ?></a>
-        </h3>
-        <p class="ainf-summary"><?php echo esc_html($summary); ?></p>
-        <footer class="ainf-card-footer">
-            <span class="ainf-source"><?php echo esc_html($source); ?></span>
-            <?php if ($date_display !== '') : ?>
-                <time class="ainf-date" datetime="<?php echo esc_attr($publishedAt); ?>"><?php echo esc_html($date_display); ?></time>
-            <?php endif; ?>
-            <?php if (!empty($tags)) : ?>
-                <ul class="ainf-tags">
-                    <?php foreach ($tags as $tag) : ?>
-                        <li><?php echo esc_html((string) $tag); ?></li>
-                    <?php endforeach; ?>
-                </ul>
-            <?php endif; ?>
-        </footer>
+        <?php if ($image_url !== '') : ?>
+            <a href="<?php echo esc_url($url); ?>" rel="nofollow noopener" target="_blank" class="ainf-image-link" aria-hidden="true" tabindex="-1">
+                <img class="ainf-image" src="<?php echo esc_url($image_url); ?>" alt="" loading="lazy" decoding="async" width="1280" height="720">
+            </a>
+        <?php endif; ?>
+        <div class="ainf-card-body">
+            <header class="ainf-card-header">
+                <span class="ainf-category"><?php echo esc_html($category); ?></span>
+                <span class="ainf-score" title="Editorial score 1-10"><?php echo esc_html($score); ?>/10</span>
+            </header>
+            <h3 class="ainf-title">
+                <a href="<?php echo esc_url($url); ?>" rel="nofollow noopener" target="_blank"><?php echo esc_html($title); ?></a>
+            </h3>
+            <p class="ainf-summary"><?php echo esc_html($summary); ?></p>
+            <footer class="ainf-card-footer">
+                <span class="ainf-source"><?php echo esc_html($source); ?></span>
+                <?php if ($date_display !== '') : ?>
+                    <time class="ainf-date" datetime="<?php echo esc_attr($publishedAt); ?>"><?php echo esc_html($date_display); ?></time>
+                <?php endif; ?>
+                <?php if (!empty($tags)) : ?>
+                    <ul class="ainf-tags">
+                        <?php foreach ($tags as $tag) : ?>
+                            <li><?php echo esc_html((string) $tag); ?></li>
+                        <?php endforeach; ?>
+                    </ul>
+                <?php endif; ?>
+            </footer>
+        </div>
     </article>
     <?php
     return ob_get_clean();
@@ -132,7 +152,7 @@ function ainf_shortcode($atts) {
     }
     $articles = array_slice($articles, 0, $limit);
 
-    wp_enqueue_style('ainf-style', plugin_dir_url(__FILE__) . 'style.css', array(), '0.2.0');
+    wp_enqueue_style('ainf-style', plugin_dir_url(__FILE__) . 'style.css', array(), '0.3.0');
 
     if (empty($articles)) {
         $msg = isset($data['error']) && $data['error']
@@ -141,9 +161,10 @@ function ainf_shortcode($atts) {
         return '<div class="ainf-empty">' . $msg . '</div>';
     }
 
+    $image_base = ainf_image_base_url();
     $out = '<div class="ainf-grid">';
     foreach ($articles as $article) {
-        $out .= ainf_render_card($article);
+        $out .= ainf_render_card($article, $image_base);
     }
     $out .= '</div>';
     return $out;
