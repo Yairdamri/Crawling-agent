@@ -1,0 +1,35 @@
+name: Test Image Generation
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test-images:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci || npm install
+
+      - name: Run image generation PoC
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: npm run test:images
+
+      - name: Upload generated images
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: images-test
+          path: data/images-test/
+          if-no-files-found: warn
+          retention-days: 7
