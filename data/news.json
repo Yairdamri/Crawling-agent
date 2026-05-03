@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-02T18:54:32.143Z",
+  "generatedAt": "2026-05-03T02:35:39.909Z",
   "articles": [
     {
       "url": "https://thehackernews.com/2026/04/pytorch-lightning-compromised-in-pypi.html",
@@ -170,6 +170,21 @@
       "score": 9,
       "category": "AI",
       "publishedAt": "2026-04-23T11:00:00.000Z"
+    },
+    {
+      "url": "https://github.com/microsoft/vscode/pull/310226",
+      "title": "VS Code inserting 'Co-Authored-by Copilot' into commits regardless of usage",
+      "summary": "GitHub issue documenting VS Code automatically injecting Copilot co-authorship metadata into commits even when Copilot was not used. Raises concerns about attribution accuracy and user control over commit metadata.",
+      "source": "HN Front Page",
+      "tags": [
+        "VS Code",
+        "Copilot",
+        "tooling",
+        "AI"
+      ],
+      "score": 8,
+      "category": "AI",
+      "publishedAt": "2026-05-02T19:57:26.000Z"
     },
     {
       "url": "https://arxiv.org/abs/2509.00462",
@@ -1229,6 +1244,34 @@
       "score": 8,
       "category": "AI",
       "publishedAt": "2026-04-06T16:51:00.000Z"
+    },
+    {
+      "url": "https://blog.haskell.org/a-couple-million-lines-of-haskell/",
+      "title": "A Couple Million Lines of Haskell: Production Engineering at Mercury",
+      "summary": "Mercury's engineering blog post detailing production experience maintaining millions of lines of Haskell code, covering architecture decisions, tooling, and lessons learned at scale. Offers practical insights into functional programming in large codebases.",
+      "source": "HN Front Page",
+      "tags": [
+        "Haskell",
+        "functional-programming",
+        "production-engineering"
+      ],
+      "score": 7,
+      "category": "Engineering",
+      "publishedAt": "2026-05-03T00:01:14.000Z"
+    },
+    {
+      "url": "https://www.mendral.com/blog/agent-harness-belongs-outside-sandbox",
+      "title": "The agent harness belongs outside the sandbox",
+      "summary": "Argues for architectural separation between agent control logic and sandboxed execution environments. The post likely discusses design patterns for deploying agentic systems with proper isolation and resource management.",
+      "source": "HN Front Page",
+      "tags": [
+        "agents",
+        "architecture",
+        "tool-use"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-05-02T21:21:27.000Z"
     },
     {
       "url": "https://thenewstack.io/opensearch-ai-data-layer/",
@@ -3119,6 +3162,36 @@
       "publishedAt": "2026-04-03T08:00:00.000Z"
     },
     {
+      "url": "https://www.nytimes.com/2026/05/01/business/surveillance-pricing-groceries-maryland.html",
+      "title": "Maryland Is First to Ban A.I.-Driven Price Increases in Grocery Stores",
+      "summary": "Maryland has enacted legislation prohibiting AI-driven dynamic pricing in grocery retail, targeting algorithmic price discrimination. The move reflects regulatory concern over surveillance-based pricing mechanisms affecting consumer costs.",
+      "source": "HN Front Page",
+      "tags": [
+        "AI",
+        "pricing",
+        "regulation",
+        "surveillance"
+      ],
+      "score": 6,
+      "category": "Other",
+      "publishedAt": "2026-05-03T01:24:09.000Z"
+    },
+    {
+      "url": "https://hnup.date/hn-sota",
+      "title": "Show HN: State of the Art of Coding Models, According to Hacker News Commenters",
+      "summary": "A tool that scrapes and analyzes Hacker News discussions to extract sentiment and popularity rankings of coding models and AI assistants. The project aggregates community commentary into a searchable overview with plans to expand to harness comparisons and self-hosting setups.",
+      "source": "HN Front Page",
+      "tags": [
+        "LLM",
+        "coding models",
+        "agents",
+        "analysis"
+      ],
+      "score": 6,
+      "category": "AI",
+      "publishedAt": "2026-05-02T21:25:05.000Z"
+    },
+    {
       "url": "https://iesna.eu/?wasm=skyglow_demo",
       "title": "Show HN: Browser-based light pollution simulator using real photometric data",
       "summary": "A browser-based photometric design tool written in Rust and deployed to WASM via Bevy, parsing standard luminaire files (LDT/EULUMDAT, IES LM-63) and rendering real urban scenes with physically-driven streetlight behavior. The Skyglow Analysis demo shows live sky-glow grading (A-F scale per EN 13201/ANSI IES RP-8) as you adjust fixture uplight percentage, with all computation running client-side.",
@@ -4189,6 +4262,62 @@
       "score": 6,
       "category": "DevOps",
       "publishedAt": "2026-04-08T18:23:51.000Z"
+    },
+    {
+      "url": "https://github.com/mahimairaja/voiceai",
+      "title": "Voice-AI-for-Beginners – A curated learning path for developers",
+      "summary": "A GitHub repository offering structured tutorials and code examples for building voice AI applications, targeting developers new to speech recognition and synthesis. Covers foundational concepts and practical implementation patterns.",
+      "source": "HN Front Page",
+      "tags": [
+        "voice-AI",
+        "speech-recognition",
+        "tutorial"
+      ],
+      "score": 5,
+      "category": "AI",
+      "publishedAt": "2026-05-02T22:03:15.000Z"
+    },
+    {
+      "url": "https://www.david-smith.org/blog/2026/04/29/maps-on-watchos/",
+      "title": "Six Years Perfecting Maps on WatchOS",
+      "summary": "A retrospective on building and iterating Maps functionality for watchOS over six years. Covers platform constraints, user experience refinements, and engineering decisions specific to wearable devices.",
+      "source": "HN Front Page",
+      "tags": [
+        "watchOS",
+        "mobile",
+        "UX"
+      ],
+      "score": 5,
+      "category": "Engineering",
+      "publishedAt": "2026-05-02T21:14:29.000Z"
+    },
+    {
+      "url": "https://ladybird.org/newsletter/2026-04-30/",
+      "title": "This Month in Ladybird - April 2026",
+      "summary": "Monthly progress report for the Ladybird web browser project. Covers recent development updates, bug fixes, and feature work on the independent browser engine.",
+      "source": "HN Front Page",
+      "tags": [
+        "browser",
+        "web engine",
+        "open-source"
+      ],
+      "score": 5,
+      "category": "Engineering",
+      "publishedAt": "2026-05-02T20:46:30.000Z"
+    },
+    {
+      "url": "https://donottrack.sh/",
+      "title": "Do_not_track",
+      "summary": "A tool or resource addressing the Do Not Track HTTP header and privacy mechanisms. Likely covers implementation, effectiveness, and browser support for tracking prevention.",
+      "source": "HN Front Page",
+      "tags": [
+        "privacy",
+        "security",
+        "web"
+      ],
+      "score": 5,
+      "category": "Security",
+      "publishedAt": "2026-05-02T17:40:55.000Z"
     },
     {
       "url": "https://flueframework.com/",
