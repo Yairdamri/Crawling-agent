@@ -17,12 +17,64 @@ if (!API_KEY) {
   process.exit(1);
 }
 
-function buildPrompt({ category, tags }) {
+const CATEGORY_VISUALS = {
+  AI: 'a glowing silicon chip with intricate neural network traces, pulses of light flowing through circuit pathways',
+  Security: 'an abstract luminous padlock dissolving into circuit traces, layered translucent shields with streaks of light',
+  DevOps: 'stacked translucent containers and glowing modular cubes in orchestrated formation',
+  Cloud: 'a vast distributed mesh of server racks connected by streams of light, abstract cloud topology with luminous nodes',
+  Engineering: 'an architectural blueprint of glowing code structures, wireframe of modular software components',
+  Other: 'an abstract atmospheric tech landscape with light streams and circuit pathways',
+};
+
+const COMPOSITIONS = [
+  'top-down macro view, symmetrical layout',
+  'low-angle cinematic shot, dramatic depth of field',
+  'isometric perspective, geometric clarity',
+  'wide establishing shot, atmospheric haze',
+  'close-up macro detail, shallow focus, glowing particles',
+  'high-angle overview, connective light threads',
+  'centered hero composition, radial light burst',
+  'asymmetric off-center framing, dynamic flow',
+];
+
+const LIGHTINGS = [
+  'warm orange key light from above with cool teal rim',
+  'cold teal ambient with bright orange accent points',
+  'split lighting, half teal and half orange',
+  'volumetric god rays cutting through darkness',
+  'electric pulses illuminating from within',
+  'soft fog with a bright focal glow',
+];
+
+function cleanTags(tags) {
+  return (tags || [])
+    .map((t) => String(t).toLowerCase().trim())
+    .filter((t) => t.length >= 4)
+    .filter((t) => !/^\d/.test(t))
+    .filter((t) => !/^v\d/.test(t));
+}
+
+function hashIndex(seed, modulo) {
+  return createHash('sha256').update(seed).digest().readUInt32BE(0) % modulo;
+}
+
+function buildPrompt({ url, category, tags }) {
+  const primary = CATEGORY_VISUALS[category] || CATEGORY_VISUALS.Other;
+  const composition = COMPOSITIONS[hashIndex(url, COMPOSITIONS.length)];
+  const lighting = LIGHTINGS[hashIndex(url + ':L', LIGHTINGS.length)];
+  const flavor = cleanTags(tags);
+  const flavorLine = flavor.length
+    ? `Subtle compositional motifs (interpret visually only, never render as text): ${flavor.join(', ')}.`
+    : '';
   return [
-    `Editorial tech illustration. Theme: ${category} - ${(tags || []).join(', ')}.`,
-    `Style: cinematic dark teal and orange, abstract-realistic, server-room/circuit/data-flow aesthetic, atmospheric, moody, depth of field.`,
-    `Strict: no text, no letters, no words, no logos, no UI elements, no readable symbols anywhere. Pure abstract atmosphere only.`,
-  ].join('\n');
+    `Editorial tech illustration.`,
+    `Primary subject: ${primary}.`,
+    `Composition: ${composition}.`,
+    `Lighting: ${lighting}.`,
+    flavorLine,
+    `Style: cinematic dark teal and orange palette, abstract-realistic, moody atmospheric, depth of field, professional editorial quality.`,
+    `STRICT NEGATIVE: absolutely no text, no letters, no words, no logos, no UI elements, no readable symbols, no labels, no signage, no typography of any kind. The image must contain zero textual elements.`,
+  ].filter(Boolean).join('\n');
 }
 
 function hashUrl(url) {
