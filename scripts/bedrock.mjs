@@ -42,6 +42,17 @@ Scoring rubric (1-10):
 
 Tags: 1-5 short technical tags (e.g. "LLM", "agents", "RAG", "evals", "Kubernetes", "Terraform", "observability", "security", "CVE"). Lowercase except proper nouns. Tags should help a reader filter by topic, not describe sentiment.
 
+why_it_matters: exactly 3 items, each {lead, detail}, telling a working engineer in 2 seconds why this article is worth opening.
+- lead: the punchline. 1-4 words. Concrete: CVE id, severity, version, breaking-change keyword, key impact. This is rendered bold.
+- detail: the context that earns the lead. 4-10 words. Concrete and specific. Do not repeat the lead's words.
+- Both fields obey the voice rules above (no banned words, no restating the title).
+Example for "Google Fixes CVSS 10 RCE in Gemini CLI":
+  [
+    {"lead": "CVSS 10", "detail": "easy remote root via crafted config injection"},
+    {"lead": "Hits CI runners", "detail": "using @google/gemini-cli or run-gemini-cli action"},
+    {"lead": "Update before next pipeline run", "detail": "npm patch already shipped"}
+  ]
+
 You MUST call the record_articles tool exactly once with one entry per input article. Echo url, source, and publishedAt back exactly as provided.`;
 
 const TOOL_SCHEMA = {
@@ -52,7 +63,7 @@ const TOOL_SCHEMA = {
       type: 'array',
       items: {
         type: 'object',
-        required: ['url', 'title', 'summary', 'source', 'tags', 'score', 'category', 'publishedAt'],
+        required: ['url', 'title', 'summary', 'source', 'tags', 'score', 'category', 'publishedAt', 'why_it_matters'],
         properties: {
           url: { type: 'string' },
           title: { type: 'string' },
@@ -65,6 +76,19 @@ const TOOL_SCHEMA = {
             enum: ['AI', 'DevOps', 'Cloud', 'Engineering', 'Security', 'Other'],
           },
           publishedAt: { type: 'string' },
+          why_it_matters: {
+            type: 'array',
+            items: {
+              type: 'object',
+              required: ['lead', 'detail'],
+              properties: {
+                lead: { type: 'string' },
+                detail: { type: 'string' },
+              },
+            },
+            minItems: 3,
+            maxItems: 3,
+          },
         },
       },
     },
@@ -97,7 +121,7 @@ function buildUserMessage(batch) {
     ].join('\n');
   });
   return [
-    'Analyze the following articles. For each, return: title, summary (2-3 sentences, practical), url (echo back exactly), source (echo back), tags, score (1-10), category, publishedAt (echo back).',
+    'Analyze the following articles. For each, return: title, summary (2-3 sentences, practical), url (echo back exactly), source (echo back), tags, score (1-10), category, publishedAt (echo back), why_it_matters (exactly 3 items, each {lead, detail}: 1-4 word punchline plus 4-10 word context).',
     'Echo url, source, and publishedAt back exactly as provided. Do not invent fields.',
     '',
     formatted.join('\n\n'),
