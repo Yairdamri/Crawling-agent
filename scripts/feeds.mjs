@@ -5,6 +5,15 @@ const parser = new Parser({ timeout: 15000 });
 
 const MAX_ITEMS_PER_FEED = 20;
 const MAX_TEXT_LENGTH = 1500;
+const MAX_AGE_DAYS = 30;
+const DAY_MS = 24 * 60 * 60 * 1000;
+
+function isWithinDays(isoDate, days) {
+  if (!isoDate) return false;
+  const t = new Date(isoDate).getTime();
+  if (isNaN(t)) return false;
+  return Date.now() - t <= days * DAY_MS;
+}
 
 const TRACKING_PARAM_PREFIXES = ['utm_'];
 const TRACKING_PARAM_NAMES = new Set([
@@ -100,13 +109,15 @@ function normalizeItem(item, feedName) {
 async function fetchOne(feed) {
   try {
     const parsed = await parser.parseURL(feed.url);
-    const items = (parsed.items || [])
+    const normalized = (parsed.items || [])
       .slice(0, MAX_ITEMS_PER_FEED)
       .map((item) => normalizeItem(item, feed.name))
       .filter(Boolean);
-    return { ok: true, name: feed.name, items };
+    const items = normalized.filter((item) => isWithinDays(item.publishedAt, MAX_AGE_DAYS));
+    const droppedAge = normalized.length - items.length;
+    return { ok: true, name: feed.name, items, droppedAge };
   } catch (err) {
-    return { ok: false, name: feed.name, error: err?.message || String(err), items: [] };
+    return { ok: false, name: feed.name, error: err?.message || String(err), items: [], droppedAge: 0 };
   }
 }
 
@@ -115,16 +126,21 @@ export async function fetchAllFeeds(feeds) {
   const items = [];
   let okCount = 0;
   let failCount = 0;
+  let droppedAge = 0;
   for (const r of results) {
     if (r.status === 'fulfilled' && r.value.ok) {
       okCount++;
       items.push(...r.value.items);
+      droppedAge += r.value.droppedAge || 0;
     } else {
       failCount++;
       const detail = r.status === 'fulfilled' ? r.value : { name: '?', error: r.reason?.message };
       console.warn(`[feeds] failed: ${detail.name} - ${detail.error}`);
     }
   }
-  console.log(`[feeds] ${okCount} ok, ${failCount} failed, ${items.length} items collected`);
+  console.log(
+    `[feeds] ${okCount} ok, ${failCount} failed, ${items.length} items collected ` +
+      `(dropped ${droppedAge} older than ${MAX_AGE_DAYS} days)`
+  );
   return items;
 }

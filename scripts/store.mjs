@@ -7,6 +7,13 @@ const SCHEMA_VERSION = 1;
 
 const DAY_MS = 24 * 60 * 60 * 1000;
 
+function isWithinDays(isoDate, days) {
+  if (!isoDate) return false;
+  const t = new Date(isoDate).getTime();
+  if (isNaN(t)) return false;
+  return Date.now() - t <= days * DAY_MS;
+}
+
 async function readJson(path, fallback) {
   try {
     return JSON.parse(await readFile(path, 'utf8'));
@@ -15,13 +22,6 @@ async function readJson(path, fallback) {
     console.warn(`[store] could not read ${path}: ${err.message}. Using fallback.`);
     return fallback;
   }
-}
-
-function isWithinDays(isoDate, days) {
-  if (!isoDate) return false;
-  const t = new Date(isoDate).getTime();
-  if (isNaN(t)) return false;
-  return Date.now() - t <= days * DAY_MS;
 }
 
 export async function mergeAndWrite({ newsPath, seenPath, processed, seenMap, hashByUrl }) {
