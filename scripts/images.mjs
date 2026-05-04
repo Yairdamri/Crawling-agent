@@ -45,7 +45,70 @@ function hashIndex(seed, modulo) {
   return createHash('sha256').update(seed).digest().readUInt32BE(0) % modulo;
 }
 
-export function buildImagePrompt({ url, category, tags }) {
+// Per-source / per-category color hints — pulled from
+// .claude/skills/develeap-news-imagery/references/brand-colors.md.
+// Injected into the prompt so different articles get distinct palettes
+// instead of all defaulting to the same cinematic blue+red.
+const BRAND_COLOR_HINTS = {
+  aws:         'warm amber and burnt-orange accents',
+  kubernetes:  'deep cobalt blue accents with luminous cyan highlights',
+  openai:      'cool teal-green accents with soft mint highlights',
+  anthropic:   'warm terracotta and copper accents',
+  github:      'soft slate-gray accents with off-white highlights',
+  hashicorp:   'deep violet-purple accents with magenta highlights',
+  docker:      'bright sky-blue accents',
+  nvidia:      'vivid neon-green accents',
+  huggingface: 'bright golden-yellow accents',
+  microsoft:   'bright cyan-blue accents',
+  google:      'bold royal-blue accents with subtle red and yellow highlights',
+  databricks:  'bright red-orange accents',
+  cisa:        'deep federal-navy with pale-gold accents',
+  security:    'alert crimson-red with warning amber accents',
+  stripe:      'deep indigo-violet accents',
+  cloudflare:  'vivid orange accents with warm gold highlights',
+  meta:        'cobalt-blue accents with bright white highlights',
+};
+
+const CATEGORY_COLOR_HINTS = {
+  AI:          'warm amber and golden accents',
+  DevOps:      'deep cobalt-blue accents with steel-gray highlights',
+  Cloud:       'cool teal and silver accents',
+  Engineering: 'rich navy with warm copper accents',
+  Security:    'alert crimson-red and warning amber accents',
+  Other:       'muted sand and slate-gray accents',
+};
+
+function detectBrandSlug({ source = '', tags = [] }) {
+  const src = String(source).toLowerCase();
+  const tagsLower = (tags || []).map((t) => String(t).toLowerCase());
+  const haystack = `${src} ${tagsLower.join(' ')}`;
+
+  if (haystack.includes('cisa')) return 'cisa';
+  if (haystack.includes('krebs') || haystack.includes('project zero') ||
+      haystack.includes('hacker news') || haystack.includes('snyk')) return 'security';
+  if (/\baws\b/.test(haystack) || haystack.includes('amazon bedrock') ||
+      haystack.includes('amazon ml')) return 'aws';
+  if (haystack.includes('kubernetes') || haystack.includes('cncf') ||
+      /\bk8s\b/.test(haystack)) return 'kubernetes';
+  if (haystack.includes('openai')) return 'openai';
+  if (haystack.includes('anthropic') || haystack.includes('claude')) return 'anthropic';
+  if (haystack.includes('github')) return 'github';
+  if (haystack.includes('hashicorp') || haystack.includes('terraform')) return 'hashicorp';
+  if (haystack.includes('docker')) return 'docker';
+  if (haystack.includes('nvidia')) return 'nvidia';
+  if (haystack.includes('hugging face') || haystack.includes('huggingface')) return 'huggingface';
+  if (haystack.includes('microsoft') || haystack.includes('azure')) return 'microsoft';
+  if (haystack.includes('deepmind')) return 'google';
+  if (/\bgoogle\b/.test(haystack)) return 'google';
+  if (haystack.includes('databricks')) return 'databricks';
+  if (haystack.includes('stripe')) return 'stripe';
+  if (haystack.includes('cloudflare')) return 'cloudflare';
+  if (/\bmeta\b/.test(haystack) || haystack.includes('llama')) return 'meta';
+  return null;
+}
+
+export function buildImagePrompt(article) {
+  const { url, category, tags, source } = article;
   const primary = CATEGORY_VISUALS[category] || CATEGORY_VISUALS.Other;
   const composition = COMPOSITIONS[hashIndex(url, COMPOSITIONS.length)];
   const lighting = LIGHTINGS[hashIndex(url + ':L', LIGHTINGS.length)];
@@ -53,12 +116,17 @@ export function buildImagePrompt({ url, category, tags }) {
   const flavorLine = flavor.length
     ? `Subtle motifs (visual only): ${flavor.join(', ')}.`
     : '';
+  const brandSlug = detectBrandSlug({ source, tags });
+  const colorHint = brandSlug
+    ? BRAND_COLOR_HINTS[brandSlug]
+    : (CATEGORY_COLOR_HINTS[category] || CATEGORY_COLOR_HINTS.Other);
   return [
     'Editorial tech illustration.',
     `Primary subject: ${primary}.`,
     `Composition: ${composition}.`,
     `Lighting: ${lighting}.`,
     flavorLine,
+    `Color palette: ${colorHint} on a deep moody base.`,
     'Style: cinematic, abstract-realistic, moody atmospheric, depth of field, professional editorial quality.',
     'STRICT NEGATIVE: absolutely no text, no letters, no words, no logos, no UI elements, no readable symbols, no labels, no signage, no typography of any kind. The image must contain zero textual elements.',
   ].filter(Boolean).join(' ');

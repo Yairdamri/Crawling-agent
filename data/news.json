@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-04T03:25:03.531Z",
+  "generatedAt": "2026-05-04T07:59:36.734Z",
   "articles": [
     {
       "url": "https://xogium.me/the-text-mode-lie-why-modern-tuis-are-a-nightmare-for-accessibility",
@@ -2266,7 +2266,8 @@
       ],
       "score": 8,
       "category": "AI",
-      "publishedAt": "2026-04-29T16:45:09.000Z"
+      "publishedAt": "2026-04-29T16:45:09.000Z",
+      "imageFilename": "1dd70afaf5743e9d.png"
     },
     {
       "url": "https://databricks.com/blog/rethinking-sql-etl-modern-data-platforms",
@@ -2295,7 +2296,8 @@
       ],
       "score": 8,
       "category": "AI",
-      "publishedAt": "2026-04-29T16:43:08.000Z"
+      "publishedAt": "2026-04-29T16:43:08.000Z",
+      "imageFilename": "ba3abdd3ef5ee9b6.png"
     },
     {
       "url": "https://developer.nvidia.com/blog/powering-ai-factories-with-nvidia-enterprise-reference-architectures",
@@ -2325,7 +2327,8 @@
       ],
       "score": 8,
       "category": "Security",
-      "publishedAt": "2026-04-29T16:26:00.000Z"
+      "publishedAt": "2026-04-29T16:26:00.000Z",
+      "imageFilename": "828b37bb09e75022.png"
     },
     {
       "url": "https://atproto.com/",
@@ -2458,7 +2461,8 @@
       ],
       "score": 8,
       "category": "AI",
-      "publishedAt": "2026-04-29T15:00:00.000Z"
+      "publishedAt": "2026-04-29T15:00:00.000Z",
+      "imageFilename": "f198d3bcf5a255db.png"
     },
     {
       "url": "https://databricks.com/blog/agents-are-ready-your-architecture-probably-isnt",
@@ -2562,7 +2566,8 @@
       ],
       "score": 8,
       "category": "AI",
-      "publishedAt": "2026-04-29T13:57:41.000Z"
+      "publishedAt": "2026-04-29T13:57:41.000Z",
+      "imageFilename": "8e83f515e23f6d4d.png"
     },
     {
       "url": "https://databricks.com/blog/interoperability-between-unity-catalog-and-google-bigquery-catalog-federation",
@@ -2713,7 +2718,8 @@
       ],
       "score": 8,
       "category": "AI",
-      "publishedAt": "2026-04-29T11:52:16.000Z"
+      "publishedAt": "2026-04-29T11:52:16.000Z",
+      "imageFilename": "0c6b59c1ced742e0.png"
     },
     {
       "url": "https://theregister.com/2026/04/29/mitchell_hashimoto_ghostty_quitting_github",
@@ -2774,7 +2780,8 @@
       ],
       "score": 8,
       "category": "Security",
-      "publishedAt": "2026-04-29T09:37:00.000Z"
+      "publishedAt": "2026-04-29T09:37:00.000Z",
+      "imageFilename": "433fb870fc0a1282.png"
     },
     {
       "url": "https://nldigitalgovernment.nl/news/soft-launch-for-government-open-source-code-platform",
@@ -2896,7 +2903,8 @@
       ],
       "score": 8,
       "category": "Security",
-      "publishedAt": "2026-04-29T00:00:00.000Z"
+      "publishedAt": "2026-04-29T00:00:00.000Z",
+      "imageFilename": "dbede9695eeb7710.png"
     },
     {
       "url": "https://snyk.io/blog/thymeleaf-injection",
@@ -3073,7 +3081,8 @@
       ],
       "score": 8,
       "category": "AI",
-      "publishedAt": "2026-04-28T19:00:00.000Z"
+      "publishedAt": "2026-04-28T19:00:00.000Z",
+      "imageFilename": "878f48753a24df29.png"
     },
     {
       "url": "https://kubernetes.io/blog/2026/04/28/kubernetes-v1-36-staleness-mitigation-for-controllers",
@@ -3229,7 +3238,8 @@
       ],
       "score": 8,
       "category": "AI",
-      "publishedAt": "2026-04-28T16:40:34.000Z"
+      "publishedAt": "2026-04-28T16:40:34.000Z",
+      "imageFilename": "c5505762a2b8b350.png"
     },
     {
       "url": "https://wiz.io/blog/github-rce-vulnerability-cve-2026-3854",
@@ -3260,7 +3270,8 @@
       ],
       "score": 8,
       "category": "AI",
-      "publishedAt": "2026-04-28T16:01:12.000Z"
+      "publishedAt": "2026-04-28T16:01:12.000Z",
+      "imageFilename": "9c793bc4209b7d30.png"
     },
     {
       "url": "https://thenewstack.io/sentrys-seer-agent-debug",
@@ -3593,7 +3604,8 @@
       ],
       "score": 8,
       "category": "Security",
-      "publishedAt": "2026-04-27T23:00:00.000Z"
+      "publishedAt": "2026-04-27T23:00:00.000Z",
+      "imageFilename": "3383107b74e808f4.png"
     },
     {
       "url": "https://thenewstack.io/openai-microsoft-partnership-restructured",
@@ -3746,7 +3758,8 @@
       ],
       "score": 8,
       "category": "AI",
-      "publishedAt": "2026-04-27T15:58:22.000Z"
+      "publishedAt": "2026-04-27T15:58:22.000Z",
+      "imageFilename": "0579b08dc8fa531e.png"
     },
     {
       "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-anthropic-meta-partnership-aws-lambda-s3-files-amazon-bedrock-agentcore-cli-and-more-april-27-2026",
@@ -3762,7 +3775,8 @@
       ],
       "score": 8,
       "category": "AI",
-      "publishedAt": "2026-04-27T15:01:28.000Z"
+      "publishedAt": "2026-04-27T15:01:28.000Z",
+      "imageFilename": "09393027ee8722ad.png"
     },
     {
       "url": "https://thenewstack.io/open-source-digital-autonomy",
@@ -3987,7 +4001,8 @@
       ],
       "score": 8,
       "category": "AI",
-      "publishedAt": "2026-04-27T00:00:00.000Z"
+      "publishedAt": "2026-04-27T00:00:00.000Z",
+      "imageFilename": "52a1dcf612249037.png"
     },
     {
       "url": "https://snyk.io/blog/qinglong-task-scheduler-rce-vulnerabilities",
@@ -4136,7 +4151,8 @@
       ],
       "score": 8,
       "category": "DevOps",
-      "publishedAt": "2026-04-24T18:35:00.000Z"
+      "publishedAt": "2026-04-24T18:35:00.000Z",
+      "imageFilename": "ac69544c3cc1b061.png"
     },
     {
       "url": "https://aws.amazon.com/blogs/machine-learning/building-workforce-ai-agents-with-visier-and-amazon-quick",
@@ -4180,7 +4196,8 @@
       ],
       "score": 8,
       "category": "AI",
-      "publishedAt": "2026-04-24T00:00:00.000Z"
+      "publishedAt": "2026-04-24T00:00:00.000Z",
+      "imageFilename": "c586ff3767787db5.png"
     },
     {
       "url": "https://developer.nvidia.com/blog/winning-a-kaggle-competition-with-generative-ai-assisted-coding",
