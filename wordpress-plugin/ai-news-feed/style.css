@@ -785,3 +785,77 @@
 .ainfp-top-item[data-source="cloudflare"]  .ainfp-top-thumb { background: linear-gradient(135deg, #2A1A05 0%, #F38020 100%); }
 .ainfp-top-item[data-source="meta"]        .ainfp-top-thumb { background: linear-gradient(135deg, #051528 0%, #0866FF 100%); }
 .ainfp-top-item[data-source="snyk"]        .ainfp-top-thumb { background: linear-gradient(135deg, #1A0F2D 0%, #4C4A73 100%); }
+
+/* =================================================================
+   "Why it matters" callout — goldenrod-tinted box, star header,
+   red bullet markers, bold lead + middle-dot separator + detail.
+   Shared shape across [ai_news_feed] and [ai_news_feed_page] via
+   the .ainf-why and .ainfp-grid-why class prefixes.
+   ================================================================= */
+.ainf-why,
+.ainfp-grid-why {
+    margin: 0.85rem 0 0;
+    padding: 0.85rem 1rem 0.9rem;
+    background: #FFF8E1;
+    border: 1px solid #F1D78A;
+    border-radius: 12px;
+}
+.ainf-why-header,
+.ainfp-grid-why-header {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    margin-bottom: 0.45rem;
+}
+.ainf-why-star,
+.ainfp-grid-why-star {
+    color: #B8860B;
+    font-size: 0.95rem;
+    line-height: 1;
+}
+.ainf-why-label,
+.ainfp-grid-why-label {
+    color: #8C6A0A;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+.ainf-why-list,
+.ainfp-grid-why-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.ainf-why-list li,
+.ainfp-grid-why-list li {
+    position: relative;
+    padding-left: 1rem;
+    margin: 0.3rem 0;
+    color: #2A2A2A;
+    font-size: 0.88rem;
+    line-height: 1.45;
+}
+.ainf-why-list li::before,
+.ainfp-grid-why-list li::before {
+    content: "\2022";
+    position: absolute;
+    left: 0.15rem;
+    top: 0;
+    color: #E85B4B;
+    font-weight: 700;
+}
+.ainf-why-lead,
+.ainfp-grid-why-lead {
+    font-weight: 700;
+    color: #111;
+}
+.ainf-why-sep,
+.ainfp-grid-why-sep {
+    color: #9CA3AF;
+    margin: 0 0.25rem;
+}
+.ainf-why-detail,
+.ainfp-grid-why-detail {
+    color: #374151;
+}

@@ -73,6 +73,43 @@ function ainf_image_base_url() {
     return preg_replace('#/news\.json$#', '/images/', $json_url);
 }
 
+function ainf_render_why_it_matters($why_it_matters, $class_prefix) {
+    $items = array();
+    foreach ((array) $why_it_matters as $entry) {
+        if (!is_array($entry)) continue;
+        $lead   = isset($entry['lead']) ? trim((string) $entry['lead']) : '';
+        $detail = isset($entry['detail']) ? trim((string) $entry['detail']) : '';
+        if ($lead === '' && $detail === '') continue;
+        $items[] = array('lead' => $lead, 'detail' => $detail);
+    }
+    if (empty($items)) return '';
+    ob_start();
+    ?>
+    <section class="<?php echo esc_attr($class_prefix); ?>-why" aria-label="Why it matters">
+        <header class="<?php echo esc_attr($class_prefix); ?>-why-header">
+            <span class="<?php echo esc_attr($class_prefix); ?>-why-star" aria-hidden="true">★</span>
+            <span class="<?php echo esc_attr($class_prefix); ?>-why-label">Why it matters</span>
+        </header>
+        <ul class="<?php echo esc_attr($class_prefix); ?>-why-list">
+            <?php foreach ($items as $entry) : ?>
+                <li>
+                    <?php if ($entry['lead'] !== '') : ?>
+                        <strong class="<?php echo esc_attr($class_prefix); ?>-why-lead"><?php echo esc_html($entry['lead']); ?></strong>
+                    <?php endif; ?>
+                    <?php if ($entry['lead'] !== '' && $entry['detail'] !== '') : ?>
+                        <span class="<?php echo esc_attr($class_prefix); ?>-why-sep" aria-hidden="true">·</span>
+                    <?php endif; ?>
+                    <?php if ($entry['detail'] !== '') : ?>
+                        <span class="<?php echo esc_attr($class_prefix); ?>-why-detail"><?php echo esc_html($entry['detail']); ?></span>
+                    <?php endif; ?>
+                </li>
+            <?php endforeach; ?>
+        </ul>
+    </section>
+    <?php
+    return ob_get_clean();
+}
+
 function ainf_render_card($article, $image_base = '') {
     $title         = isset($article['title']) ? (string) $article['title'] : '';
     $summary       = isset($article['summary']) ? (string) $article['summary'] : '';
@@ -83,6 +120,7 @@ function ainf_render_card($article, $image_base = '') {
     $tags          = isset($article['tags']) && is_array($article['tags']) ? $article['tags'] : array();
     $publishedAt   = isset($article['publishedAt']) ? (string) $article['publishedAt'] : '';
     $imageFilename = isset($article['imageFilename']) ? (string) $article['imageFilename'] : '';
+    $why_it_matters = isset($article['why_it_matters']) && is_array($article['why_it_matters']) ? $article['why_it_matters'] : array();
 
     $image_url = '';
     if ($imageFilename !== '' && $image_base !== '' && preg_match('/^[a-zA-Z0-9._-]+$/', $imageFilename)) {
@@ -114,6 +152,7 @@ function ainf_render_card($article, $image_base = '') {
                 <a href="<?php echo esc_url($url); ?>" rel="nofollow noopener" target="_blank"><?php echo esc_html($title); ?></a>
             </h3>
             <p class="ainf-summary"><?php echo esc_html($summary); ?></p>
+            <?php echo ainf_render_why_it_matters($why_it_matters, 'ainf'); ?>
             <footer class="ainf-card-footer">
                 <span class="ainf-source"><?php echo esc_html($source); ?></span>
                 <?php if ($date_display !== '') : ?>
@@ -335,6 +374,7 @@ function ainfp_render_grid_card($article, $image_base) {
     $category      = isset($article['category']) ? (string) $article['category'] : 'Other';
     $tags          = isset($article['tags']) && is_array($article['tags']) ? $article['tags'] : array();
     $publishedAt   = isset($article['publishedAt']) ? (string) $article['publishedAt'] : '';
+    $why_it_matters = isset($article['why_it_matters']) && is_array($article['why_it_matters']) ? $article['why_it_matters'] : array();
     $image_url     = ainfp_image_url_for($article, $image_base);
     $score_class   = ainfp_score_class($score);
 
@@ -374,6 +414,7 @@ function ainfp_render_grid_card($article, $image_base) {
             <?php if ($summary !== '') : ?>
                 <p class="ainfp-grid-summary"><?php echo esc_html($summary); ?></p>
             <?php endif; ?>
+            <?php echo ainf_render_why_it_matters($why_it_matters, 'ainfp-grid'); ?>
             <?php if (!empty($tags)) : ?>
                 <ul class="ainfp-grid-tags">
                     <?php foreach ($tags as $tag) : ?>
