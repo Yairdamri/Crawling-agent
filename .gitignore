@@ -6,3 +6,6 @@ npm-debug.log*
 *.zip
 data/images-test/
 .claude/worktrees/
+blog-agent-key.json
+venv/
+__pycache__/
