@@ -1,21 +1,53 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-04T10:07:38.604Z",
+  "generatedAt": "2026-05-04T11:50:23.465Z",
   "articles": [
+    {
+      "url": "https://cncf.io/blog/2026/05/04/securing-github-actions-ci-dependencies-recipe-card",
+      "title": "Securing GitHub Actions CI dependencies: Recipe card",
+      "summary": "CNCF guide on hardening GitHub Actions workflows through dependency pinning, permission scoping, and automated updates. Covers tools like zizmor, Dependabot, Renovate, and scorecard for auditing and managing action SHAs and runner images.",
+      "source": "CNCF Blog",
+      "tags": [
+        "GitHub Actions",
+        "CI/CD",
+        "supply-chain security",
+        "DevOps"
+      ],
+      "score": 7,
+      "category": "DevOps",
+      "publishedAt": "2026-05-04T11:00:00.000Z",
+      "imageFilename": "5992fa3db81289b2.png"
+    },
+    {
+      "url": "https://thehackernews.com/2026/05/critical-cpanel-vulnerability.html",
+      "title": "Critical cPanel Vulnerability Weaponized to Target Government and MSP Networks",
+      "summary": "A previously unknown threat actor is exploiting a recently disclosed cPanel vulnerability to target government and military entities in Southeast Asia, plus MSPs and hosting providers across the Philippines, Laos, Canada, South Africa, and the U.S. Active exploitation detected May 2, 2026.",
+      "source": "The Hacker News",
+      "tags": [
+        "CVE",
+        "cPanel",
+        "threat intelligence",
+        "supply-chain"
+      ],
+      "score": 8,
+      "category": "Security",
+      "publishedAt": "2026-05-04T09:27:00.000Z",
+      "imageFilename": "4816136057d2bec7.png"
+    },
     {
       "url": "https://blog.jim-nielsen.com/2026/small-html-pages",
       "title": "Stitch together lots of little HTML pages with navigations for interactions",
-      "summary": "A discussion of building web applications by composing small HTML pages with navigation-driven interactions, likely advocating for simpler, more modular approaches to web development. Without the full excerpt, the specific technical argument or novel approach is unclear.",
+      "summary": "Essay on web architecture patterns using small, composable HTML pages with navigation-driven interactions. Explores an alternative to heavy client-side frameworks for building interactive experiences.",
       "source": "HN Front Page",
       "tags": [
-        "HTML",
         "web",
+        "HTML",
         "architecture"
       ],
       "score": 5,
       "category": "Engineering",
       "publishedAt": "2026-05-04T04:43:36.000Z",
-      "imageFilename": "a57492ba66dd3fa0.png"
+      "imageFilename": "4e89b08e0beadb9c.png"
     },
     {
       "url": "https://xogium.me/the-text-mode-lie-why-modern-tuis-are-a-nightmare-for-accessibility",
@@ -35,17 +67,17 @@
     {
       "url": "https://jdgr.net/the-hidden-costs-of-great-abstractions",
       "title": "The 'Hidden' Costs of Great Abstractions",
-      "summary": "An essay on the performance and complexity tradeoffs introduced by well-designed abstractions in software engineering. Likely explores how abstraction layers can obscure resource costs and make optimization harder.",
+      "summary": "Examines the performance and maintenance tradeoffs of well-designed abstractions in software systems. Explores how layers of abstraction can obscure resource consumption and complicate debugging despite improving code clarity.",
       "source": "HN Front Page",
       "tags": [
-        "abstractions",
+        "abstraction",
         "performance",
-        "architecture"
+        "software-architecture"
       ],
       "score": 6,
       "category": "Engineering",
       "publishedAt": "2026-05-03T23:12:02.000Z",
-      "imageFilename": "5f34d68cd6246d72.png"
+      "imageFilename": "95a443a3f556edbe.png"
     },
     {
       "url": "https://larsfaye.com/articles/agentic-coding-is-a-trap",
@@ -65,7 +97,7 @@
     {
       "url": "https://github.com/aattaran/deepclaude",
       "title": "DeepClaude – Claude Code agent loop with DeepSeek V4 Pro",
-      "summary": "An open-source project implementing an agentic code-generation loop that chains Claude with DeepSeek V4 Pro, likely for iterative code refinement or multi-model reasoning. Combines two LLMs in a tool-use workflow for software development.",
+      "summary": "Open-source agent framework combining Claude's code generation with DeepSeek V4 Pro reasoning in a loop for iterative code development. Demonstrates multi-model agent orchestration for complex coding tasks.",
       "source": "HN Front Page",
       "tags": [
         "agents",
@@ -73,10 +105,10 @@
         "code-generation",
         "tool-use"
       ],
-      "score": 7,
+      "score": 8,
       "category": "AI",
       "publishedAt": "2026-05-03T22:13:20.000Z",
-      "imageFilename": "68bc56217d1641d4.png"
+      "imageFilename": "ce3754244f9c1819.png"
     },
     {
       "url": "https://wiki.alcidesfonseca.com/blog/why-tuis-are-back",
@@ -96,17 +128,18 @@
     {
       "url": "https://partyon.xyz/@nullagent/116499715071759135",
       "title": "BYOMesh – New LoRa mesh radio offers 100x the bandwidth",
-      "summary": "BYOMesh is a LoRa mesh radio system claiming 100x bandwidth improvement over existing LoRa implementations. Hardware-focused networking project for distributed mesh communication.",
+      "summary": "Announcement of BYOMesh, a LoRa-based mesh radio system claiming 100x bandwidth improvement over standard LoRa. Hardware-focused networking project.",
       "source": "HN Front Page",
       "tags": [
+        "hardware",
+        "networking",
         "LoRa",
-        "mesh-networking",
-        "hardware"
+        "mesh"
       ],
       "score": 5,
       "category": "Other",
       "publishedAt": "2026-05-03T18:03:14.000Z",
-      "imageFilename": "6b969676f4f16418.png"
+      "imageFilename": "203e9670432160a9.png"
     },
     {
       "url": "https://lelanthran.com/chap15/content.html",
@@ -157,7 +190,7 @@
     {
       "url": "https://citizenlab.ca/research/uncovering-global-telecom-exploitation-by-covert-surveillance-actors",
       "title": "Bad Connection: Global telecom exploitation by covert surveillance actors",
-      "summary": "Citizen Lab research documenting widespread exploitation of global telecom infrastructure by state-level surveillance actors. Security research on infrastructure-level compromise and threat intelligence.",
+      "summary": "Citizen Lab research documenting widespread exploitation of telecommunications infrastructure by state-sponsored surveillance actors. Details tactics for intercepting and monitoring global telecom networks.",
       "source": "HN Front Page",
       "tags": [
         "security",
@@ -168,7 +201,7 @@
       "score": 8,
       "category": "Security",
       "publishedAt": "2026-05-03T16:15:49.000Z",
-      "imageFilename": "cc734e6cd36e77a3.png"
+      "imageFilename": "fbec3414f03ab62c.png"
     },
     {
       "url": "https://thenewstack.io/sas-innovate-agentic-ai-governance",
@@ -360,17 +393,17 @@
     {
       "url": "https://theguardian.com/technology/2026/apr/30/ai-outperforms-doctors-in-harvard-trial-of-emergency-triage-diagnoses",
       "title": "OpenAI's o1 correctly diagnosed 67% of ER patients vs. 50-55% by triage doctors",
-      "summary": "A Harvard trial found OpenAI's o1 model achieved 67% diagnostic accuracy on emergency room triage cases, outperforming human triage doctors at 50-55%. The result demonstrates LLM capability on real-world medical decision-making under time pressure.",
+      "summary": "OpenAI's o1 model achieved 67% diagnostic accuracy on emergency room triage cases in a Harvard trial, outperforming human triage doctors at 50-55%. The benchmark demonstrates LLM capability on real-world medical reasoning tasks, though clinical deployment requires further validation.",
       "source": "HN Front Page",
       "tags": [
         "LLM",
-        "evals",
-        "medical AI"
+        "o1",
+        "medical AI",
+        "evals"
       ],
-      "score": 8,
+      "score": 7,
       "category": "AI",
-      "publishedAt": "2026-05-03T00:30:50.000Z",
-      "imageFilename": "4127950eac7dd2ee.png"
+      "publishedAt": "2026-05-03T00:30:50.000Z"
     },
     {
       "url": "https://blog.haskell.org/a-couple-million-lines-of-haskell",
