@@ -1,7 +1,191 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-03T15:02:26.799Z",
+  "generatedAt": "2026-05-04T03:25:03.531Z",
   "articles": [
+    {
+      "url": "https://xogium.me/the-text-mode-lie-why-modern-tuis-are-a-nightmare-for-accessibility",
+      "title": "The text mode lie: why modern TUIs are a nightmare for accessibility",
+      "summary": "Modern terminal user interfaces, despite their text-mode appearance, create accessibility barriers for users relying on screen readers and other assistive technologies. The article examines why TUIs marketed as accessible often fail to meet accessibility standards in practice.",
+      "source": "HN Front Page",
+      "tags": [
+        "accessibility",
+        "TUI",
+        "tooling"
+      ],
+      "score": 6,
+      "category": "Engineering",
+      "publishedAt": "2026-05-03T23:59:02.000Z"
+    },
+    {
+      "url": "https://jdgr.net/the-hidden-costs-of-great-abstractions",
+      "title": "The 'Hidden' Costs of Great Abstractions",
+      "summary": "The article examines performance and maintenance tradeoffs in software abstractions, exploring how well-designed abstractions can obscure runtime costs and complexity that developers need to understand for effective system design.",
+      "source": "HN Front Page",
+      "tags": [
+        "software architecture",
+        "performance",
+        "abstractions"
+      ],
+      "score": 6,
+      "category": "Engineering",
+      "publishedAt": "2026-05-03T23:12:02.000Z",
+      "imageFilename": "dc46e284edd6f350.png"
+    },
+    {
+      "url": "https://larsfaye.com/articles/agentic-coding-is-a-trap",
+      "title": "Agentic Coding Is a Trap",
+      "summary": "The article critiques agentic coding systems as a problematic approach to developer productivity, arguing that autonomous code generation creates hidden technical debt and reduces developer understanding of system behavior.",
+      "source": "HN Front Page",
+      "tags": [
+        "agentic coding",
+        "LLM",
+        "developer tools"
+      ],
+      "score": 6,
+      "category": "AI",
+      "publishedAt": "2026-05-03T22:52:07.000Z",
+      "imageFilename": "66d7a68e9aed2464.png"
+    },
+    {
+      "url": "https://github.com/aattaran/deepclaude",
+      "title": "DeepClaude – Claude Code agent loop with DeepSeek V4 Pro, 17x cheaper",
+      "summary": "DeepClaude implements a code agent loop using Claude's API paired with DeepSeek V4 Pro for inference, achieving 17x cost reduction compared to Claude-only approaches. The project demonstrates practical cost optimization for agentic workflows by substituting expensive model calls with cheaper alternatives while maintaining agent functionality.",
+      "source": "HN Front Page",
+      "tags": [
+        "agents",
+        "LLM",
+        "cost-optimization",
+        "tool-use"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-05-03T22:13:20.000Z",
+      "imageFilename": "27dabd2210ac3d85.png"
+    },
+    {
+      "url": "https://wiki.alcidesfonseca.com/blog/why-tuis-are-back",
+      "title": "Why TUIs are back",
+      "summary": "Analysis of the resurgence of terminal user interfaces (TUIs) in modern development. Covers practical reasons developers are choosing TUIs over GUIs for tooling and infrastructure work.",
+      "source": "HN Front Page",
+      "tags": [
+        "TUI",
+        "developer-tools",
+        "UX"
+      ],
+      "score": 6,
+      "category": "Engineering",
+      "publishedAt": "2026-05-03T18:42:28.000Z",
+      "imageFilename": "2833b06f47f3b402.png"
+    },
+    {
+      "url": "https://lelanthran.com/chap15/content.html",
+      "title": "LLMs Are Not a Higher Level of Abstraction",
+      "summary": "Essay arguing that LLMs do not constitute a higher level of abstraction in programming, likely discussing limitations of LLM-based code generation and reasoning compared to traditional abstractions. Relevant to understanding LLM capabilities and limitations in software engineering.",
+      "source": "HN Front Page",
+      "tags": [
+        "LLM",
+        "abstraction",
+        "programming"
+      ],
+      "score": 6,
+      "category": "AI",
+      "publishedAt": "2026-05-03T17:51:58.000Z",
+      "imageFilename": "a84feb3589e2e138.png"
+    },
+    {
+      "url": "https://youtube.com/watch?v=8jNQDcpHc68",
+      "title": "I recreated the Apple Lisa computer inside an FPGA [video]",
+      "summary": "Video documenting the recreation of an Apple Lisa computer using FPGA. Demonstrates hardware emulation and retro computing engineering.",
+      "source": "HN Front Page",
+      "tags": [
+        "FPGA",
+        "hardware",
+        "emulation",
+        "retro"
+      ],
+      "score": 5,
+      "category": "Other",
+      "publishedAt": "2026-05-03T17:45:47.000Z",
+      "imageFilename": "4a707abdaf9d0492.png"
+    },
+    {
+      "url": "https://thegamer.com/mgs2-hd-edition-source-code-massive-leak",
+      "title": "Metal Gear Solid 2's source code has been leaked on 4chan",
+      "summary": "Source code for Metal Gear Solid 2 HD Edition leaked on 4chan. This is a security incident involving unauthorized disclosure of proprietary game source code.",
+      "source": "HN Front Page",
+      "tags": [
+        "security",
+        "breach",
+        "source-code"
+      ],
+      "score": 6,
+      "category": "Security",
+      "publishedAt": "2026-05-03T16:48:11.000Z",
+      "imageFilename": "ba271fba59bf8eb9.png"
+    },
+    {
+      "url": "https://citizenlab.ca/research/uncovering-global-telecom-exploitation-by-covert-surveillance-actors",
+      "title": "Bad Connection: Global telecom exploitation by covert surveillance actors",
+      "summary": "Citizen Lab research documenting covert surveillance actors exploiting global telecom infrastructure. Threat intelligence report on systematic telecom network compromise.",
+      "source": "HN Front Page",
+      "tags": [
+        "security",
+        "threat-intelligence",
+        "telecom"
+      ],
+      "score": 7,
+      "category": "Security",
+      "publishedAt": "2026-05-03T16:15:49.000Z",
+      "imageFilename": "0a5a543dc592461b.png"
+    },
+    {
+      "url": "https://thenewstack.io/sas-innovate-agentic-ai-governance",
+      "title": "To us, it's just a tool: How SAS is selling AI to the Fortune 500",
+      "summary": "SAS showcased agentic workflows and digital twins at SAS Innovate 2026, positioning AI as one feature among many existing optimization, ML, and forecasting tools rather than a standalone breakthrough. The company's philosophy treats AI as a practical utility that solves specific problems for enterprise customers, not as a transformative technology in itself.",
+      "source": "The New Stack",
+      "tags": [
+        "agents",
+        "agentic workflows",
+        "enterprise AI",
+        "digital twins"
+      ],
+      "score": 6,
+      "category": "AI",
+      "publishedAt": "2026-05-03T16:00:00.000Z",
+      "imageFilename": "eedfe3e803fec55e.png"
+    },
+    {
+      "url": "https://thenewstack.io/open-mainframe-enterprise-modernization",
+      "title": "Mainframe modernization is no longer optional for the AI-driven enterprise",
+      "summary": "Enterprise mainframe modernization has become critical as organizations pursue AI initiatives, since much of the most accurate and trusted data resides on mainframes but is difficult to access in real time without modernization. Cultural shifts driven by younger mainframe professionals are enabling the platform updates necessary to unlock this data for AI-driven business value.",
+      "source": "The New Stack",
+      "tags": [
+        "mainframe",
+        "data access",
+        "enterprise AI",
+        "modernization"
+      ],
+      "score": 6,
+      "category": "AI",
+      "publishedAt": "2026-05-03T15:00:00.000Z",
+      "imageFilename": "4383e903511b958d.png"
+    },
+    {
+      "url": "https://thenewstack.io/ibm-bob-agentic-coding",
+      "title": "Most AI coding is 'like taking your Ferrari to buy milk': IBM's Neel Sundaresan",
+      "summary": "IBM Bob, an agentic coding assistant already deployed to 80,000 internal users, evolved from Neel Sundaresan's 20+ year focus on developer productivity, starting with API-call recommender systems that addressed a core friction point (30% of developer code is API calls). The tool represents a pragmatic approach to AI-assisted development rather than a general-purpose code generation system.",
+      "source": "The New Stack",
+      "tags": [
+        "agentic coding",
+        "developer tools",
+        "IBM Bob",
+        "LLM"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-05-03T14:12:00.000Z",
+      "imageFilename": "5369e41e3f11dee2.png"
+    },
     {
       "url": "https://github.com/Matheus-git/systemd-manager-tui",
       "title": "Systemd-manager-TUI: A TUI application for managing systemd services",
@@ -20,19 +204,20 @@
     },
     {
       "url": "https://github.com/bring-shrubbery/ml-sharp-web",
-      "title": "Show HN: Apple's Sharp Running in the Browser via ONNX Runtime Web",
-      "summary": "Demonstration of Apple's Sharp model executing in-browser using ONNX Runtime Web, enabling client-side ML inference without server calls. Showcases practical deployment of vision models to web environments with ONNX serialization.",
+      "title": "Show HN: Apple's SHARP running in the browser via ONNX runtime web",
+      "summary": "Browser-based implementation of Apple's SHARP 3D Gaussian splatting model using ONNX Runtime Web and WebGPU. Exports PyTorch model to ONNX, runs inference client-side (~2.4 GB model, few seconds on recent Mac), outputs .ply files without server round-trip.",
       "source": "HN Front Page",
       "tags": [
+        "3D-Gaussian-splatting",
         "ONNX",
+        "WebGPU",
         "inference",
-        "browser",
-        "vision"
+        "browser"
       ],
-      "score": 7,
+      "score": 8,
       "category": "AI",
       "publishedAt": "2026-05-03T09:14:56.000Z",
-      "imageFilename": "9a93ee7189ca09d1.png"
+      "imageFilename": "22793bcc0a7a9803.png"
     },
     {
       "url": "https://acai.sh/blog/specsmaxxing",
@@ -321,21 +506,6 @@
       "score": 8,
       "category": "AI",
       "publishedAt": "2026-05-02T13:15:23.000Z"
-    },
-    {
-      "url": "https://thenewstack.io/ibm-bob-agentic-coding",
-      "title": "\"Like taking your Ferrari to buy milk\": IBM's Neel Sundaresan on the case for Bob",
-      "summary": "IBM Bob, an agentic coding assistant already deployed to 80,000 IBM users, represents the evolution of developer productivity tooling from API recommender systems to autonomous multi-step coding agents. Neel Sundaresan, founding engineer of GitHub Copilot, frames the tool as addressing friction points in developer workflows that have persisted since 2000.",
-      "source": "The New Stack",
-      "tags": [
-        "agents",
-        "coding-assistants",
-        "developer-productivity",
-        "LLM"
-      ],
-      "score": 7,
-      "category": "AI",
-      "publishedAt": "2026-05-02T12:25:35.000Z"
     },
     {
       "url": "https://piruet.app/",
@@ -5473,22 +5643,6 @@
       "score": 7,
       "category": "Security",
       "publishedAt": "2026-04-06T02:07:17.000Z"
-    },
-    {
-      "url": "https://aws.amazon.com/blogs/aws/amazon-bedrock-guardrails-supports-cross-account-safeguards-with-centralized-control-and-management",
-      "title": "Amazon Bedrock Guardrails supports cross-account safeguards with centralized control and management",
-      "summary": "Amazon Bedrock Guardrails GA adds cross-account enforcement via organization-level policies, automatically applying safety controls across all member accounts and OUs. Enables centralized management of model invocation safeguards with flexibility for account-level and application-specific overrides.",
-      "source": "AWS News",
-      "tags": [
-        "Bedrock",
-        "guardrails",
-        "safety",
-        "LLM",
-        "governance"
-      ],
-      "score": 7,
-      "category": "AI",
-      "publishedAt": "2026-04-03T20:36:40.000Z"
     }
   ]
 }
