@@ -42,6 +42,14 @@ Scoring rubric (1-10):
 
 Tags: 1-5 short technical tags (e.g. "LLM", "agents", "RAG", "evals", "Kubernetes", "Terraform", "observability", "security", "CVE"). Lowercase except proper nouns. Tags should help a reader filter by topic, not describe sentiment.
 
+relevant_for: 4-6 concrete tools, products, or stack components a working engineer would recognize as theirs. This is distinct from tags. Tags name a topic ("CVE", "supply-chain", "evals"); relevant_for names a thing that lives in someone's stack ("Gemini CLI", "GitHub Actions", "Lambda", "Postgres", "kubectl"). A reader scans this row to decide "is this my stack?" in seconds.
+- Use the exact product/tool spelling readers see in their dashboards or docs (e.g. "GitHub Actions" not "github-actions"; "@google/gemini-cli" not "gemini cli npm package").
+- Vocabulary must not overlap with tags. If "npm" is a tag, do not also list it in relevant_for unless it is the literal package ecosystem the article targets.
+- No verbs, no abstract nouns, no marketing labels. "Observability platforms" is not a tool; "Grafana" or "Datadog" is.
+- If the article is purely conceptual with no specific tool surface (rare), emit the closest 4 generic stack components that the topic actually touches (e.g. an article on agent eval methodology -> ["LLM agents", "evaluation harnesses", "production traces", "LLM-as-Judge"]).
+Example for "Google Fixes CVSS 10 RCE in Gemini CLI":
+  ["Gemini CLI", "Cursor", "GitHub Actions", "CI runners", "npm", "@google/gemini-cli"]
+
 why_it_matters: exactly 3 items, each {lead, detail}, telling a working engineer in 2 seconds why this article is worth opening.
 - lead: the punchline. 1-4 words. Concrete: CVE id, severity, version, breaking-change keyword, key impact. This is rendered bold.
 - detail: the context that earns the lead. 4-10 words. Concrete and specific. Do not repeat the lead's words.
@@ -63,7 +71,7 @@ const TOOL_SCHEMA = {
       type: 'array',
       items: {
         type: 'object',
-        required: ['url', 'title', 'summary', 'source', 'tags', 'score', 'category', 'publishedAt', 'why_it_matters'],
+        required: ['url', 'title', 'summary', 'source', 'tags', 'score', 'category', 'publishedAt', 'why_it_matters', 'relevant_for'],
         properties: {
           url: { type: 'string' },
           title: { type: 'string' },
@@ -88,6 +96,12 @@ const TOOL_SCHEMA = {
             },
             minItems: 3,
             maxItems: 3,
+          },
+          relevant_for: {
+            type: 'array',
+            items: { type: 'string' },
+            minItems: 4,
+            maxItems: 6,
           },
         },
       },
@@ -121,7 +135,7 @@ function buildUserMessage(batch) {
     ].join('\n');
   });
   return [
-    'Analyze the following articles. For each, return: title, summary (2-3 sentences, practical), url (echo back exactly), source (echo back), tags, score (1-10), category, publishedAt (echo back), why_it_matters (exactly 3 items, each {lead, detail}: 1-4 word punchline plus 4-10 word context).',
+    'Analyze the following articles. For each, return: title, summary (2-3 sentences, practical), url (echo back exactly), source (echo back), tags, score (1-10), category, publishedAt (echo back), why_it_matters (exactly 3 items, each {lead, detail}: 1-4 word punchline plus 4-10 word context), relevant_for (4-6 specific tool/product/stack names a reader would recognize as theirs, distinct vocabulary from tags).',
     'Echo url, source, and publishedAt back exactly as provided. Do not invent fields.',
     '',
     formatted.join('\n\n'),
