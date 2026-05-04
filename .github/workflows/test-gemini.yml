@@ -1,9 +1,7 @@
 name: Test Gemini Connection
 
 on:
-  push:
-    branches: [ main ]
-  workflow_dispatch: 
+workflow_dispatch: 
 
 jobs:
   verify-ai-connection:
