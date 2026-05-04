@@ -1,35 +1,51 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-04T07:59:36.734Z",
+  "generatedAt": "2026-05-04T10:07:38.604Z",
   "articles": [
+    {
+      "url": "https://blog.jim-nielsen.com/2026/small-html-pages",
+      "title": "Stitch together lots of little HTML pages with navigations for interactions",
+      "summary": "A discussion of building web applications by composing small HTML pages with navigation-driven interactions, likely advocating for simpler, more modular approaches to web development. Without the full excerpt, the specific technical argument or novel approach is unclear.",
+      "source": "HN Front Page",
+      "tags": [
+        "HTML",
+        "web",
+        "architecture"
+      ],
+      "score": 5,
+      "category": "Engineering",
+      "publishedAt": "2026-05-04T04:43:36.000Z",
+      "imageFilename": "a57492ba66dd3fa0.png"
+    },
     {
       "url": "https://xogium.me/the-text-mode-lie-why-modern-tuis-are-a-nightmare-for-accessibility",
       "title": "The text mode lie: why modern TUIs are a nightmare for accessibility",
-      "summary": "Modern terminal user interfaces, despite their text-mode appearance, create accessibility barriers for users relying on screen readers and other assistive technologies. The article examines why TUIs marketed as accessible often fail to meet accessibility standards in practice.",
+      "summary": "An analysis of accessibility failures in modern terminal user interfaces, arguing that text-mode presentation does not guarantee accessibility for screen readers and assistive technologies. Addresses a real gap between TUI design assumptions and actual usability for disabled users.",
       "source": "HN Front Page",
       "tags": [
         "accessibility",
         "TUI",
-        "tooling"
+        "usability"
       ],
-      "score": 6,
+      "score": 7,
       "category": "Engineering",
-      "publishedAt": "2026-05-03T23:59:02.000Z"
+      "publishedAt": "2026-05-03T23:59:02.000Z",
+      "imageFilename": "ef0e298c5ab510c8.png"
     },
     {
       "url": "https://jdgr.net/the-hidden-costs-of-great-abstractions",
       "title": "The 'Hidden' Costs of Great Abstractions",
-      "summary": "The article examines performance and maintenance tradeoffs in software abstractions, exploring how well-designed abstractions can obscure runtime costs and complexity that developers need to understand for effective system design.",
+      "summary": "An essay on the performance and complexity tradeoffs introduced by well-designed abstractions in software engineering. Likely explores how abstraction layers can obscure resource costs and make optimization harder.",
       "source": "HN Front Page",
       "tags": [
-        "software architecture",
+        "abstractions",
         "performance",
-        "abstractions"
+        "architecture"
       ],
       "score": 6,
       "category": "Engineering",
       "publishedAt": "2026-05-03T23:12:02.000Z",
-      "imageFilename": "dc46e284edd6f350.png"
+      "imageFilename": "5f34d68cd6246d72.png"
     },
     {
       "url": "https://larsfaye.com/articles/agentic-coding-is-a-trap",
@@ -48,34 +64,49 @@
     },
     {
       "url": "https://github.com/aattaran/deepclaude",
-      "title": "DeepClaude – Claude Code agent loop with DeepSeek V4 Pro, 17x cheaper",
-      "summary": "DeepClaude implements a code agent loop using Claude's API paired with DeepSeek V4 Pro for inference, achieving 17x cost reduction compared to Claude-only approaches. The project demonstrates practical cost optimization for agentic workflows by substituting expensive model calls with cheaper alternatives while maintaining agent functionality.",
+      "title": "DeepClaude – Claude Code agent loop with DeepSeek V4 Pro",
+      "summary": "An open-source project implementing an agentic code-generation loop that chains Claude with DeepSeek V4 Pro, likely for iterative code refinement or multi-model reasoning. Combines two LLMs in a tool-use workflow for software development.",
       "source": "HN Front Page",
       "tags": [
         "agents",
         "LLM",
-        "cost-optimization",
+        "code-generation",
         "tool-use"
       ],
       "score": 7,
       "category": "AI",
       "publishedAt": "2026-05-03T22:13:20.000Z",
-      "imageFilename": "27dabd2210ac3d85.png"
+      "imageFilename": "68bc56217d1641d4.png"
     },
     {
       "url": "https://wiki.alcidesfonseca.com/blog/why-tuis-are-back",
       "title": "Why TUIs are back",
-      "summary": "Analysis of the resurgence of terminal user interfaces (TUIs) in modern development. Covers practical reasons developers are choosing TUIs over GUIs for tooling and infrastructure work.",
+      "summary": "Analysis of the resurgence of terminal user interfaces in modern development workflows. Explores practical advantages of TUIs over GUIs for certain use cases and developer preferences.",
       "source": "HN Front Page",
       "tags": [
         "TUI",
-        "developer-tools",
-        "UX"
+        "CLI",
+        "developer-tools"
       ],
       "score": 6,
       "category": "Engineering",
       "publishedAt": "2026-05-03T18:42:28.000Z",
-      "imageFilename": "2833b06f47f3b402.png"
+      "imageFilename": "1c1438a3c2910436.png"
+    },
+    {
+      "url": "https://partyon.xyz/@nullagent/116499715071759135",
+      "title": "BYOMesh – New LoRa mesh radio offers 100x the bandwidth",
+      "summary": "BYOMesh is a LoRa mesh radio system claiming 100x bandwidth improvement over existing LoRa implementations. Hardware-focused networking project for distributed mesh communication.",
+      "source": "HN Front Page",
+      "tags": [
+        "LoRa",
+        "mesh-networking",
+        "hardware"
+      ],
+      "score": 5,
+      "category": "Other",
+      "publishedAt": "2026-05-03T18:03:14.000Z",
+      "imageFilename": "6b969676f4f16418.png"
     },
     {
       "url": "https://lelanthran.com/chap15/content.html",
@@ -126,17 +157,18 @@
     {
       "url": "https://citizenlab.ca/research/uncovering-global-telecom-exploitation-by-covert-surveillance-actors",
       "title": "Bad Connection: Global telecom exploitation by covert surveillance actors",
-      "summary": "Citizen Lab research documenting covert surveillance actors exploiting global telecom infrastructure. Threat intelligence report on systematic telecom network compromise.",
+      "summary": "Citizen Lab research documenting widespread exploitation of global telecom infrastructure by state-level surveillance actors. Security research on infrastructure-level compromise and threat intelligence.",
       "source": "HN Front Page",
       "tags": [
         "security",
-        "threat-intelligence",
-        "telecom"
+        "surveillance",
+        "telecom",
+        "threat-intelligence"
       ],
-      "score": 7,
+      "score": 8,
       "category": "Security",
       "publishedAt": "2026-05-03T16:15:49.000Z",
-      "imageFilename": "0a5a543dc592461b.png"
+      "imageFilename": "cc734e6cd36e77a3.png"
     },
     {
       "url": "https://thenewstack.io/sas-innovate-agentic-ai-governance",
@@ -169,6 +201,21 @@
       "category": "AI",
       "publishedAt": "2026-05-03T15:00:00.000Z",
       "imageFilename": "4383e903511b958d.png"
+    },
+    {
+      "url": "https://mobeigi.com/blog/security/security-through-obscurity-is-not-bad",
+      "title": "Security through obscurity is not bad",
+      "summary": "Argument that security through obscurity, when layered with other defenses, provides practical value and is not inherently flawed. Security philosophy and defense-in-depth discussion.",
+      "source": "HN Front Page",
+      "tags": [
+        "security",
+        "defense-in-depth",
+        "philosophy"
+      ],
+      "score": 5,
+      "category": "Security",
+      "publishedAt": "2026-05-03T14:49:56.000Z",
+      "imageFilename": "6f09b0c39685587e.png"
     },
     {
       "url": "https://thenewstack.io/ibm-bob-agentic-coding",
@@ -309,6 +356,21 @@
       "category": "AI",
       "publishedAt": "2026-05-03T01:24:09.000Z",
       "imageFilename": "10c905c628dbafca.png"
+    },
+    {
+      "url": "https://theguardian.com/technology/2026/apr/30/ai-outperforms-doctors-in-harvard-trial-of-emergency-triage-diagnoses",
+      "title": "OpenAI's o1 correctly diagnosed 67% of ER patients vs. 50-55% by triage doctors",
+      "summary": "A Harvard trial found OpenAI's o1 model achieved 67% diagnostic accuracy on emergency room triage cases, outperforming human triage doctors at 50-55%. The result demonstrates LLM capability on real-world medical decision-making under time pressure.",
+      "source": "HN Front Page",
+      "tags": [
+        "LLM",
+        "evals",
+        "medical AI"
+      ],
+      "score": 8,
+      "category": "AI",
+      "publishedAt": "2026-05-03T00:30:50.000Z",
+      "imageFilename": "4127950eac7dd2ee.png"
     },
     {
       "url": "https://blog.haskell.org/a-couple-million-lines-of-haskell",
