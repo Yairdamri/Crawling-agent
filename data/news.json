@@ -1,7 +1,57 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-04T14:19:23.817911Z",
+  "generatedAt": "2026-05-04T14:23:59.107Z",
   "articles": [
+    {
+      "url": "https://thenewstack.io/agent-code-validation-bottleneck",
+      "title": "The agent code explosion is here. We need to rethink our pipelines, fast.",
+      "summary": "GitHub's CTO revealed the platform must scale 30x from current capacity, abandoning a 10x plan already underway. The inflection point coincides with coding agents becoming default tools in engineering orgs, creating unprecedented code volume that existing SDLC pipelines cannot absorb. The shift from agent prototypes to production use is forcing a rethink of code validation, testing, and deployment infrastructure.",
+      "source": "The New Stack",
+      "tags": [
+        "agents",
+        "code-generation",
+        "infrastructure",
+        "DevOps",
+        "scaling"
+      ],
+      "score": 9,
+      "category": "AI",
+      "publishedAt": "2026-05-04T14:00:00.000Z",
+      "imageFilename": "5e85b236e5ef51c7.png"
+    },
+    {
+      "url": "https://thehackernews.com/2026/05/2026-year-of-ai-assisted-attacks.html",
+      "title": "2026: The Year of AI-Assisted Attacks",
+      "summary": "The article opens with a conventional breach story: a 17-year-old arrested in Osaka for extracting 7 million user records from Japan's largest internet cafe chain using malware, motivated by wanting to buy Pokémon cards. The framing suggests this represents a broader trend of AI-assisted attack capabilities becoming accessible to lower-skill threat actors.",
+      "source": "The Hacker News",
+      "tags": [
+        "security",
+        "AI-assisted-attacks",
+        "threat-intelligence",
+        "breach"
+      ],
+      "score": 6,
+      "category": "Security",
+      "publishedAt": "2026-05-04T11:58:00.000Z",
+      "imageFilename": "e2c881f669b0a462.png"
+    },
+    {
+      "url": "https://thehackernews.com/2026/05/silver-fox-deploys-abcdoor-malware-via.html",
+      "title": "Silver Fox Deploys ABCDoor Malware via Tax-Themed Phishing in India and Russia",
+      "summary": "The China-based cybercrime group Silver Fox launched a phishing campaign using tax-themed emails impersonating India's Income Tax Department in December 2025, followed by similar attacks on Russian entities. The campaign deployed a new malware variant called ABCDoor targeting organizations across both regions.",
+      "source": "The Hacker News",
+      "tags": [
+        "security",
+        "malware",
+        "phishing",
+        "threat-intelligence",
+        "ABCDoor"
+      ],
+      "score": 5,
+      "category": "Security",
+      "publishedAt": "2026-05-04T11:57:00.000Z",
+      "imageFilename": "95809e6f73cd4871.png"
+    },
     {
       "url": "https://cncf.io/blog/2026/05/04/securing-github-actions-ci-dependencies-recipe-card",
       "title": "Securing GitHub Actions CI dependencies: Recipe card",
@@ -96,7 +146,7 @@
     },
     {
       "url": "https://github.com/aattaran/deepclaude",
-      "title": "DeepClaude \u2013 Claude Code agent loop with DeepSeek V4 Pro",
+      "title": "DeepClaude – Claude Code agent loop with DeepSeek V4 Pro",
       "summary": "Open-source agent framework combining Claude's code generation with DeepSeek V4 Pro reasoning in a loop for iterative code development. Demonstrates multi-model agent orchestration for complex coding tasks.",
       "source": "HN Front Page",
       "tags": [
@@ -127,7 +177,7 @@
     },
     {
       "url": "https://partyon.xyz/@nullagent/116499715071759135",
-      "title": "BYOMesh \u2013 New LoRa mesh radio offers 100x the bandwidth",
+      "title": "BYOMesh – New LoRa mesh radio offers 100x the bandwidth",
       "summary": "Announcement of BYOMesh, a LoRa-based mesh radio system claiming 100x bandwidth improvement over standard LoRa. Hardware-focused networking project.",
       "source": "HN Front Page",
       "tags": [
@@ -301,7 +351,7 @@
     },
     {
       "url": "https://acai.sh/blog/specsmaxxing",
-      "title": "Specsmaxxing \u2013 On overcoming AI psychosis, and why I write specs in YAML",
+      "title": "Specsmaxxing – On overcoming AI psychosis, and why I write specs in YAML",
       "summary": "Essay on specification-driven development practices for AI systems, advocating YAML-based specs as a discipline to prevent over-engineering and hallucination in AI project planning. Addresses practical workflow for managing AI project scope and requirements.",
       "source": "HN Front Page",
       "tags": [
@@ -440,7 +490,7 @@
     },
     {
       "url": "https://ladybird.org/newsletter/2026-04-30",
-      "title": "This Month in Ladybird \u2013 April 2026",
+      "title": "This Month in Ladybird – April 2026",
       "summary": "Monthly progress update on the Ladybird browser project, covering engine improvements, rendering fixes, and development milestones.",
       "source": "HN Front Page",
       "tags": [
@@ -981,7 +1031,7 @@
     },
     {
       "url": "https://thehackernews.com/2026/04/critical-cpanel-authentication.html",
-      "title": "Critical cPanel Authentication Vulnerability Identified \u2014 Update Your Server Immediately",
+      "title": "Critical cPanel Authentication Vulnerability Identified — Update Your Server Immediately",
       "summary": "cPanel released security updates to fix a critical authentication vulnerability affecting all currently supported versions of cPanel and WebHost Manager (WHM) that could allow attackers to gain control panel access. The flaw impacts multiple authentication paths and has no official CVE identifier yet.",
       "source": "The Hacker News",
       "tags": [

@@ -2758,5 +2758,20 @@
     "url": "https://thehackernews.com/2026/05/critical-cpanel-vulnerability.html",
     "seenAt": "2026-05-04T11:50:23.472Z",
     "contentHash": "4816136057d2bec7"
+  },
+  {
+    "url": "https://thenewstack.io/agent-code-validation-bottleneck",
+    "seenAt": "2026-05-04T14:23:59.108Z",
+    "contentHash": "5e85b236e5ef51c7"
+  },
+  {
+    "url": "https://thehackernews.com/2026/05/2026-year-of-ai-assisted-attacks.html",
+    "seenAt": "2026-05-04T14:23:59.108Z",
+    "contentHash": "e2c881f669b0a462"
+  },
+  {
+    "url": "https://thehackernews.com/2026/05/silver-fox-deploys-abcdoor-malware-via.html",
+    "seenAt": "2026-05-04T14:23:59.108Z",
+    "contentHash": "95809e6f73cd4871"
   }
 ]
