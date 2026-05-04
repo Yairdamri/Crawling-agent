@@ -787,13 +787,265 @@
 .ainfp-top-item[data-source="snyk"]        .ainfp-top-thumb { background: linear-gradient(135deg, #1A0F2D 0%, #4C4A73 100%); }
 
 /* =================================================================
+   Grid card as modal trigger — clickable affordance, no inner link
+   ================================================================= */
+.ainfp-grid-card[role="button"] {
+    cursor: pointer;
+}
+.ainfp-grid-card[role="button"]:focus-visible {
+    outline: 2px solid var(--ainfp-yellow, #F5B100);
+    outline-offset: 3px;
+}
+.ainfp-grid-card[role="button"] .ainfp-grid-title {
+    color: inherit;
+}
+.ainfp-grid-card[role="button"]:hover .ainfp-grid-title,
+.ainfp-grid-card[role="button"]:focus-visible .ainfp-grid-title {
+    color: var(--ainfp-yellow, #F5B100);
+}
+
+/* =================================================================
+   Article detail modal — opened on grid-card click. Backdrop +
+   centered scrollable panel matching the designer mockup.
+   ================================================================= */
+body.ainfp-no-scroll { overflow: hidden; }
+
+.ainfp-modal[hidden] { display: none; }
+.ainfp-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2.5rem 1rem;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+.ainfp-modal-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 17, 26, 0.55);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+}
+.ainfp-modal-panel {
+    position: relative;
+    width: min(820px, 100%);
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+    overflow: hidden;
+    margin: auto;
+    animation: ainfp-modal-in 0.18s ease-out;
+}
+@keyframes ainfp-modal-in {
+    from { opacity: 0; transform: translateY(8px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.ainfp-modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.85rem 1.15rem;
+    background: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+.ainfp-modal-crumbs {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: var(--ainfp-muted, #6B7280);
+    font-size: 0.86rem;
+}
+.ainfp-modal-crumb-sep { color: rgba(0, 0, 0, 0.3); }
+.ainfp-modal-close {
+    appearance: none;
+    background: rgba(0, 0, 0, 0.04);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    color: #1F2937;
+    border-radius: 8px;
+    padding: 0.35rem 0.7rem;
+    font-size: 0.82rem;
+    cursor: pointer;
+    line-height: 1;
+}
+.ainfp-modal-close:hover { background: rgba(0, 0, 0, 0.08); }
+
+.ainfp-modal-image {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    background: linear-gradient(135deg, #1F2937 0%, #374151 100%);
+    overflow: hidden;
+}
+.ainfp-modal-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.ainfp-modal-category {
+    position: absolute;
+    top: 0.85rem;
+    left: 0.85rem;
+    background: #B0473A;
+    color: #fff;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    padding: 0.3rem 0.65rem;
+    border-radius: 6px;
+}
+.ainfp-modal-score {
+    position: absolute;
+    top: 0.9rem;
+    right: 0.9rem;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: #2F7F46;
+    color: #fff;
+    border: 3px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.05rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+.ainfp-modal-score.ainfp-score--mid { background: #C58B1F; }
+
+.ainfp-modal-content {
+    padding: 1.25rem 1.5rem 1.5rem;
+}
+.ainfp-modal-source-row {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    margin-top: 0.25rem;
+}
+.ainfp-modal-source-logo {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background: #1F2937;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.78rem;
+    flex-shrink: 0;
+}
+.ainfp-modal-source-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    line-height: 1.2;
+}
+.ainfp-modal-source-name {
+    font-weight: 600;
+    color: #111;
+    font-size: 0.95rem;
+}
+.ainfp-modal-source-sub {
+    color: var(--ainfp-muted, #6B7280);
+    font-size: 0.82rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    align-items: center;
+}
+.ainfp-modal-dot { color: rgba(0, 0, 0, 0.3); }
+
+.ainfp-modal-title {
+    font-size: 1.55rem;
+    font-weight: 700;
+    line-height: 1.25;
+    margin: 0.9rem 0 0.5rem;
+    color: #0B0F19;
+    letter-spacing: -0.01em;
+}
+.ainfp-modal-tags {
+    list-style: none;
+    margin: 0 0 0.4rem;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 0.8rem;
+}
+.ainfp-modal-tags li {
+    color: #2563EB;
+    font-size: 0.86rem;
+}
+.ainfp-modal-section {
+    margin-top: 1.1rem;
+}
+.ainfp-modal-section-label {
+    margin: 0 0 0.35rem;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: var(--ainfp-muted, #6B7280);
+    text-transform: uppercase;
+}
+.ainfp-modal-summary {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.55;
+    color: #1F2937;
+}
+.ainfp-modal-chips {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+}
+.ainfp-modal-chips li {
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    background: #fff;
+    color: #1F2937;
+    padding: 0.32rem 0.75rem;
+    border-radius: 999px;
+    font-size: 0.84rem;
+}
+
+.ainfp-modal-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 1.25rem;
+    background: var(--ainfp-yellow, #F5B100);
+    color: #0B0F19;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.7rem 1.1rem;
+    border-radius: 999px;
+    transition: filter 0.15s ease, transform 0.15s ease;
+}
+.ainfp-modal-cta:hover {
+    filter: brightness(1.05);
+    transform: translateY(-1px);
+}
+
+@media (max-width: 640px) {
+    .ainfp-modal { padding: 0; }
+    .ainfp-modal-panel { border-radius: 0; min-height: 100vh; }
+    .ainfp-modal-title { font-size: 1.3rem; }
+}
+
+/* =================================================================
    "Why it matters" callout — goldenrod-tinted box, star header,
    red bullet markers, bold lead + middle-dot separator + detail.
    Shared shape across [ai_news_feed] and [ai_news_feed_page] via
    the .ainf-why and .ainfp-grid-why class prefixes.
    ================================================================= */
 .ainf-why,
-.ainfp-grid-why {
+.ainfp-grid-why,
+.ainfp-modal-why {
     margin: 0.85rem 0 0;
     padding: 0.85rem 1rem 0.9rem;
     background: #FFF8E1;
@@ -801,20 +1053,23 @@
     border-radius: 12px;
 }
 .ainf-why-header,
-.ainfp-grid-why-header {
+.ainfp-grid-why-header,
+.ainfp-modal-why-header {
     display: flex;
     align-items: center;
     gap: 0.45rem;
     margin-bottom: 0.45rem;
 }
 .ainf-why-star,
-.ainfp-grid-why-star {
+.ainfp-grid-why-star,
+.ainfp-modal-why-star {
     color: #B8860B;
     font-size: 0.95rem;
     line-height: 1;
 }
 .ainf-why-label,
-.ainfp-grid-why-label {
+.ainfp-grid-why-label,
+.ainfp-modal-why-label {
     color: #8C6A0A;
     font-size: 0.72rem;
     font-weight: 700;
@@ -822,13 +1077,15 @@
     text-transform: uppercase;
 }
 .ainf-why-list,
-.ainfp-grid-why-list {
+.ainfp-grid-why-list,
+.ainfp-modal-why-list {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 .ainf-why-list li,
-.ainfp-grid-why-list li {
+.ainfp-grid-why-list li,
+.ainfp-modal-why-list li {
     position: relative;
     padding-left: 1rem;
     margin: 0.3rem 0;
@@ -837,7 +1094,8 @@
     line-height: 1.45;
 }
 .ainf-why-list li::before,
-.ainfp-grid-why-list li::before {
+.ainfp-grid-why-list li::before,
+.ainfp-modal-why-list li::before {
     content: "\2022";
     position: absolute;
     left: 0.15rem;
@@ -846,16 +1104,19 @@
     font-weight: 700;
 }
 .ainf-why-lead,
-.ainfp-grid-why-lead {
+.ainfp-grid-why-lead,
+.ainfp-modal-why-lead {
     font-weight: 700;
     color: #111;
 }
 .ainf-why-sep,
-.ainfp-grid-why-sep {
+.ainfp-grid-why-sep,
+.ainfp-modal-why-sep {
     color: #9CA3AF;
     margin: 0 0.25rem;
 }
 .ainf-why-detail,
-.ainfp-grid-why-detail {
+.ainfp-grid-why-detail,
+.ainfp-modal-why-detail {
     color: #374151;
 }

@@ -2,7 +2,7 @@
 /**
  * Plugin Name: AI News Feed
  * Description: Renders an automated AI/DevOps/cloud news feed from a JSON URL produced by a GitHub Actions pipeline. Shortcodes: [ai_news_feed] (simple grid) and [ai_news_feed_page] (full magazine layout).
- * Version:     0.4.0
+ * Version:     0.5.0
  * Author:      AI News Feed
  * License:     MIT
  */
@@ -120,7 +120,6 @@ function ainf_render_card($article, $image_base = '') {
     $tags          = isset($article['tags']) && is_array($article['tags']) ? $article['tags'] : array();
     $publishedAt   = isset($article['publishedAt']) ? (string) $article['publishedAt'] : '';
     $imageFilename = isset($article['imageFilename']) ? (string) $article['imageFilename'] : '';
-    $why_it_matters = isset($article['why_it_matters']) && is_array($article['why_it_matters']) ? $article['why_it_matters'] : array();
 
     $image_url = '';
     if ($imageFilename !== '' && $image_base !== '' && preg_match('/^[a-zA-Z0-9._-]+$/', $imageFilename)) {
@@ -152,7 +151,6 @@ function ainf_render_card($article, $image_base = '') {
                 <a href="<?php echo esc_url($url); ?>" rel="nofollow noopener" target="_blank"><?php echo esc_html($title); ?></a>
             </h3>
             <p class="ainf-summary"><?php echo esc_html($summary); ?></p>
-            <?php echo ainf_render_why_it_matters($why_it_matters, 'ainf'); ?>
             <footer class="ainf-card-footer">
                 <span class="ainf-source"><?php echo esc_html($source); ?></span>
                 <?php if ($date_display !== '') : ?>
@@ -191,7 +189,7 @@ function ainf_shortcode($atts) {
     }
     $articles = array_slice($articles, 0, $limit);
 
-    wp_enqueue_style('ainf-style', plugin_dir_url(__FILE__) . 'style.css', array(), '0.4.0');
+    wp_enqueue_style('ainf-style', plugin_dir_url(__FILE__) . 'style.css', array(), '0.5.0');
 
     if (empty($articles)) {
         $msg = isset($data['error']) && $data['error']
@@ -365,18 +363,17 @@ function ainfp_render_top_story_item($article, $image_base) {
     return ob_get_clean();
 }
 
-function ainfp_render_grid_card($article, $image_base) {
+function ainfp_render_grid_card($article, $image_base, $idx = 0) {
     $title         = isset($article['title']) ? (string) $article['title'] : '';
     $summary       = isset($article['summary']) ? (string) $article['summary'] : '';
-    $url           = isset($article['url']) ? (string) $article['url'] : '';
     $source        = isset($article['source']) ? (string) $article['source'] : '';
     $score         = isset($article['score']) ? (int) $article['score'] : 0;
     $category      = isset($article['category']) ? (string) $article['category'] : 'Other';
     $tags          = isset($article['tags']) && is_array($article['tags']) ? $article['tags'] : array();
     $publishedAt   = isset($article['publishedAt']) ? (string) $article['publishedAt'] : '';
-    $why_it_matters = isset($article['why_it_matters']) && is_array($article['why_it_matters']) ? $article['why_it_matters'] : array();
     $image_url     = ainfp_image_url_for($article, $image_base);
     $score_class   = ainfp_score_class($score);
+    $modal_id      = 'ainfp-modal-' . (int) $idx;
 
     $date_display = '';
     $ts = $publishedAt ? strtotime($publishedAt) : 0;
@@ -391,8 +388,13 @@ function ainfp_render_grid_card($article, $image_base) {
              data-source="<?php echo esc_attr(ainfp_source_slug($source)); ?>"
              data-score="<?php echo esc_attr((string) $score); ?>"
              data-date="<?php echo esc_attr($publishedAt); ?>"
-             data-search="<?php echo esc_attr($search_blob); ?>">
-        <a class="ainfp-grid-image" href="<?php echo esc_url($url); ?>" rel="nofollow noopener" target="_blank" aria-hidden="true" tabindex="-1">
+             data-search="<?php echo esc_attr($search_blob); ?>"
+             data-modal-id="<?php echo esc_attr($modal_id); ?>"
+             role="button"
+             tabindex="0"
+             aria-haspopup="dialog"
+             aria-controls="<?php echo esc_attr($modal_id); ?>">
+        <div class="ainfp-grid-image">
             <?php if ($image_url !== '') : ?>
                 <img src="<?php echo esc_url($image_url); ?>" alt="" loading="lazy" decoding="async" width="1280" height="720">
             <?php endif; ?>
@@ -400,7 +402,7 @@ function ainfp_render_grid_card($article, $image_base) {
                 <span class="ainfp-grid-badge-num"><?php echo esc_html(ainfp_score_display($score)); ?></span>
                 <span class="ainfp-grid-badge-label">IMPACT</span>
             </span>
-        </a>
+        </div>
         <div class="ainfp-grid-body">
             <div class="ainfp-grid-meta">
                 <span class="ainfp-grid-source"><?php echo esc_html($source); ?></span>
@@ -408,13 +410,10 @@ function ainfp_render_grid_card($article, $image_base) {
                     <time class="ainfp-grid-date" datetime="<?php echo esc_attr($publishedAt); ?>"><?php echo esc_html($date_display); ?></time>
                 <?php endif; ?>
             </div>
-            <h3 class="ainfp-grid-title">
-                <a href="<?php echo esc_url($url); ?>" rel="nofollow noopener" target="_blank"><?php echo esc_html($title); ?></a>
-            </h3>
+            <h3 class="ainfp-grid-title"><?php echo esc_html($title); ?></h3>
             <?php if ($summary !== '') : ?>
                 <p class="ainfp-grid-summary"><?php echo esc_html($summary); ?></p>
             <?php endif; ?>
-            <?php echo ainf_render_why_it_matters($why_it_matters, 'ainfp-grid'); ?>
             <?php if (!empty($tags)) : ?>
                 <ul class="ainfp-grid-tags">
                     <?php foreach ($tags as $tag) : ?>
@@ -424,6 +423,129 @@ function ainfp_render_grid_card($article, $image_base) {
             <?php endif; ?>
         </div>
     </article>
+    <?php
+    return ob_get_clean();
+}
+
+function ainfp_render_article_modal($article, $image_base, $idx = 0) {
+    $title          = isset($article['title']) ? (string) $article['title'] : '';
+    $summary        = isset($article['summary']) ? (string) $article['summary'] : '';
+    $url            = isset($article['url']) ? (string) $article['url'] : '';
+    $source         = isset($article['source']) ? (string) $article['source'] : '';
+    $score          = isset($article['score']) ? (int) $article['score'] : 0;
+    $category       = isset($article['category']) ? (string) $article['category'] : 'Other';
+    $tags           = isset($article['tags']) && is_array($article['tags']) ? $article['tags'] : array();
+    $publishedAt    = isset($article['publishedAt']) ? (string) $article['publishedAt'] : '';
+    $why_it_matters = isset($article['why_it_matters']) && is_array($article['why_it_matters']) ? $article['why_it_matters'] : array();
+    $relevant_for   = isset($article['relevant_for']) && is_array($article['relevant_for']) ? $article['relevant_for'] : array();
+    $image_url      = ainfp_image_url_for($article, $image_base);
+    $score_class    = ainfp_score_class($score);
+    $modal_id       = 'ainfp-modal-' . (int) $idx;
+    $title_id       = $modal_id . '-title';
+    $source_slug    = ainfp_source_slug($source);
+
+    $source_host = '';
+    if ($url !== '') {
+        $parts = wp_parse_url($url);
+        if (is_array($parts) && !empty($parts['host'])) {
+            $source_host = preg_replace('/^www\./', '', strtolower($parts['host']));
+        }
+    }
+
+    $date_display = '';
+    $ts = $publishedAt ? strtotime($publishedAt) : 0;
+    if ($ts) $date_display = date_i18n('M j, Y', $ts);
+    $rel_time = ainfp_relative_time($publishedAt);
+
+    $logo_letter = $source !== '' ? strtoupper(mb_substr($source, 0, 1)) : '?';
+
+    ob_start();
+    ?>
+    <div class="ainfp-modal" id="<?php echo esc_attr($modal_id); ?>" role="dialog" aria-modal="true" aria-labelledby="<?php echo esc_attr($title_id); ?>" hidden>
+        <div class="ainfp-modal-backdrop" data-modal-close="1"></div>
+        <div class="ainfp-modal-panel" role="document">
+            <header class="ainfp-modal-header">
+                <nav class="ainfp-modal-crumbs" aria-label="Breadcrumb">
+                    <span>News feed</span>
+                    <span class="ainfp-modal-crumb-sep" aria-hidden="true">›</span>
+                    <span><?php echo esc_html($category); ?></span>
+                    <span class="ainfp-modal-crumb-sep" aria-hidden="true">›</span>
+                    <span>Article</span>
+                </nav>
+                <button type="button" class="ainfp-modal-close" data-modal-close="1" aria-label="Close (Esc)">
+                    <span aria-hidden="true">×</span> Close (Esc)
+                </button>
+            </header>
+
+            <div class="ainfp-modal-body">
+                <div class="ainfp-modal-image" data-source="<?php echo esc_attr($source_slug); ?>">
+                    <?php if ($image_url !== '') : ?>
+                        <img src="<?php echo esc_url($image_url); ?>" alt="" loading="lazy" decoding="async">
+                    <?php endif; ?>
+                    <span class="ainfp-modal-category"><?php echo esc_html(strtoupper($category)); ?></span>
+                    <span class="ainfp-modal-score <?php echo esc_attr($score_class); ?>"><?php echo esc_html(ainfp_score_display($score)); ?></span>
+                </div>
+
+                <div class="ainfp-modal-content">
+                    <div class="ainfp-modal-source-row">
+                        <span class="ainfp-modal-source-logo" data-source="<?php echo esc_attr($source_slug); ?>" aria-hidden="true"><?php echo esc_html($logo_letter); ?></span>
+                        <div class="ainfp-modal-source-meta">
+                            <span class="ainfp-modal-source-name"><?php echo esc_html($source); ?></span>
+                            <span class="ainfp-modal-source-sub">
+                                <?php if ($source_host !== '') : ?>
+                                    <span class="ainfp-modal-source-host"><?php echo esc_html($source_host); ?></span>
+                                <?php endif; ?>
+                                <?php if ($date_display !== '') : ?>
+                                    <span class="ainfp-modal-dot" aria-hidden="true">·</span>
+                                    <time datetime="<?php echo esc_attr($publishedAt); ?>"><?php echo esc_html($date_display); ?></time>
+                                <?php endif; ?>
+                                <?php if ($rel_time !== '') : ?>
+                                    <span class="ainfp-modal-dot" aria-hidden="true">·</span>
+                                    <span><?php echo esc_html($rel_time); ?></span>
+                                <?php endif; ?>
+                            </span>
+                        </div>
+                    </div>
+
+                    <h2 id="<?php echo esc_attr($title_id); ?>" class="ainfp-modal-title"><?php echo esc_html($title); ?></h2>
+
+                    <?php if (!empty($tags)) : ?>
+                        <ul class="ainfp-modal-tags">
+                            <?php foreach ($tags as $tag) : ?>
+                                <li>#<?php echo esc_html(strtolower((string) $tag)); ?></li>
+                            <?php endforeach; ?>
+                        </ul>
+                    <?php endif; ?>
+
+                    <?php if ($summary !== '') : ?>
+                        <section class="ainfp-modal-section">
+                            <h3 class="ainfp-modal-section-label">Summary</h3>
+                            <p class="ainfp-modal-summary"><?php echo esc_html($summary); ?></p>
+                        </section>
+                    <?php endif; ?>
+
+                    <?php if (!empty($relevant_for)) : ?>
+                        <section class="ainfp-modal-section">
+                            <h3 class="ainfp-modal-section-label">Relevant for</h3>
+                            <ul class="ainfp-modal-chips">
+                                <?php foreach ($relevant_for as $chip) : ?>
+                                    <li><?php echo esc_html((string) $chip); ?></li>
+                                <?php endforeach; ?>
+                            </ul>
+                        </section>
+                    <?php endif; ?>
+
+                    <?php echo ainf_render_why_it_matters($why_it_matters, 'ainfp-modal'); ?>
+
+                    <?php if ($url !== '') : ?>
+                        <a class="ainfp-modal-cta" href="<?php echo esc_url($url); ?>" rel="nofollow noopener" target="_blank">
+                            Read on <?php echo esc_html($source !== '' ? $source : 'source'); ?> <span aria-hidden="true">↗</span>
+                        </a>
+                    <?php endif; ?>
+                </div>
+            </div>
+        </div>
+    </div>
     <?php
     return ob_get_clean();
 }
@@ -442,8 +564,8 @@ function ainfp_page_shortcode($atts) {
     $data = ainf_fetch_data();
     $articles = isset($data['articles']) ? $data['articles'] : array();
 
-    wp_enqueue_style('ainf-style', plugin_dir_url(__FILE__) . 'style.css', array(), '0.4.0');
-    wp_enqueue_script('ainfp-script', plugin_dir_url(__FILE__) . 'script.js', array(), '0.4.0', true);
+    wp_enqueue_style('ainf-style', plugin_dir_url(__FILE__) . 'style.css', array(), '0.5.0');
+    wp_enqueue_script('ainfp-script', plugin_dir_url(__FILE__) . 'script.js', array(), '0.5.0', true);
 
     if (empty($articles)) {
         $msg = isset($data['error']) && $data['error']
@@ -527,8 +649,11 @@ function ainfp_page_shortcode($atts) {
         </div>
 
         <div id="ainfp-grid" class="ainfp-grid">
-            <?php foreach ($grid_articles as $a) echo ainfp_render_grid_card($a, $image_base); ?>
+            <?php foreach ($grid_articles as $i => $a) echo ainfp_render_grid_card($a, $image_base, $i); ?>
         </div>
+        </div>
+        <div class="ainfp-modals">
+            <?php foreach ($grid_articles as $i => $a) echo ainfp_render_article_modal($a, $image_base, $i); ?>
         </div>
     </div>
     <?php
