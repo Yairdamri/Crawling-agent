@@ -22,7 +22,7 @@ WordPress (managed host)
         -> renders article cards (with images, brand-tinted placeholders, IMPACT badges)
 ```
 
-Auth from Actions to AWS uses **GitHub OIDC** — no static AWS keys stored anywhere. Gemini auth uses an API key in repo secrets.
+Auth from Actions to AWS uses **GitHub OIDC** — no static AWS keys stored anywhere. Auth to Google Cloud (Vertex AI for Gemini) uses a **GCP service account key** in repo secrets, loaded via `google-github-actions/auth@v2`.
 
 ## Repository layout
 
@@ -57,12 +57,14 @@ CLAUDE.md                          Codebase docs for Claude Code
 
 ```bash
 npm install
-aws sso login --profile <your-profile>             # any session that can call bedrock:InvokeModel
-cp .env.example .env && edit .env                  # set GEMINI_API_KEY for image generation
-AWS_REGION=us-east-1 node --env-file=.env scripts/fetch.mjs
+aws sso login --profile <your-profile>                    # any session that can call bedrock:InvokeModel
+gcloud auth application-default login                     # OR: export GOOGLE_APPLICATION_CREDENTIALS=/path/to/sa-key.json
+AWS_REGION=us-east-1 GCP_PROJECT=crawling-agent GCP_LOCATION=us-central1 node scripts/fetch.mjs
 ```
 
 Inspect `data/news.json` and `data/images/` afterwards. A second run is near-instant — `seen_urls.json` (now keyed by URL + content hash) shortcuts already-processed URLs.
+
+If image generation fails locally with `permission denied`, check that your account has `roles/aiplatform.user` on the GCP project. The pipeline still completes without images — they're optional, the WP plugin falls back to brand-tinted placeholders.
 
 ## Deployment
 
@@ -70,22 +72,32 @@ Inspect `data/news.json` and `data/images/` afterwards. A second run is near-ins
    - Create OIDC identity provider for `https://token.actions.githubusercontent.com` (audience `sts.amazonaws.com`).
    - Create IAM role with trust policy scoped to `repo:<owner>/<repo>:ref:refs/heads/main`.
    - Attach inline policy allowing `bedrock:InvokeModel` on the Haiku 4.5 inference profile + underlying foundation models.
-2. **GitHub one-time setup:**
+2. **GCP one-time setup (for Vertex AI image generation):**
+   - Create a GCP project (or reuse one).
+   - Enable the **Vertex AI API** in that project.
+   - Create a service account with role `roles/aiplatform.user`.
+   - Generate a JSON key for the service account; **do not commit it**.
+3. **GitHub one-time setup:**
    - Push this repo (public, so the raw JSON URL is reachable).
-   - In repo **Settings → Secrets and variables → Actions → Variables**, set `AWS_ROLE_ARN` to your role ARN.
-   - In **Secrets**, set `GEMINI_API_KEY` for image generation.
-3. **Run the workflow:** Actions tab → Fetch News → Run workflow. First run seeds `data/news.json`.
-4. **WordPress:** Zip `wordpress-plugin/ai-news-feed/` and upload via wp-admin → Plugins → Add New → Upload Plugin → Activate.
-5. In WP, **Settings → AI News Feed**, paste your raw JSON URL:
+   - **Settings → Secrets and variables → Actions → Variables:** set
+     - `AWS_ROLE_ARN` → your IAM role ARN
+     - `AWS_REGION` → e.g. `us-east-1`
+     - `GCP_PROJECT` → your GCP project ID
+     - `GCP_LOCATION` → e.g. `us-central1`
+   - **Settings → Secrets and variables → Actions → Secrets:** set
+     - `GCP_SA_KEY` → the entire JSON contents of the service account key file
+4. **Run the workflow:** Actions tab → Fetch News → Run workflow. First run seeds `data/news.json`.
+5. **WordPress:** Zip `wordpress-plugin/ai-news-feed/` and upload via wp-admin → Plugins → Add New → Upload Plugin → Activate.
+6. In WP, **Settings → AI News Feed**, paste your raw JSON URL:
    `https://raw.githubusercontent.com/<owner>/<repo>/main/data/news.json`
-6. Create a WP page with the shortcode `[ai_news_feed]`.
+7. Create a WP page with the shortcode `[ai_news_feed]`.
 
 ## Configuration
 
 - [config/feeds.json](config/feeds.json) — list of RSS sources. Edit freely, no code changes needed.
-- [scripts/bedrock.mjs](scripts/bedrock.mjs) — system prompt, model ID, batch size. Tweak the prompt to change editorial voice / categories / tags.
-- [scripts/images.mjs](scripts/images.mjs) — Gemini image model, per-category visual style, composition variants.
-- [.github/workflows/fetch-news.yml](.github/workflows/fetch-news.yml) — cron schedule (currently `0 0 * * *`, daily at 00:00 UTC), region.
+- [scripts/bedrock.mjs](scripts/bedrock.mjs) — system prompt, model ID, batch size, concurrency cap, retry delays. Tweak the prompt to change editorial voice / categories / tags.
+- [scripts/images.mjs](scripts/images.mjs) — Gemini image model, per-category visual style, composition variants. Auths via Vertex AI by default; project + location are env-driven (`GCP_PROJECT`, `GCP_LOCATION`).
+- [.github/workflows/fetch-news.yml](.github/workflows/fetch-news.yml) — cron schedule (currently `0 0 * * *`, daily at 00:00 UTC). Region/project/location all sourced from GitHub Actions Variables (`vars.AWS_REGION`, `vars.GCP_PROJECT`, `vars.GCP_LOCATION`).
 
 ### Article ordering
 
@@ -155,10 +167,17 @@ Total steady state: **~$40/month** if image generation is enabled for every arti
 
 ## Roadmap
 
-Post-MVP roadmap and architecture migration plan live at `~/.claude/plans/ok-great-lets-continue-graceful-penguin.md` (outside the repo). Read it before designing changes that touch dedupe, categorization, or storage — captures decisions from prior conversations. Highlights of what's still on the list:
+Post-MVP roadmap and architecture migration plan live at `~/.claude/plans/ok-great-lets-continue-graceful-penguin.md` (outside the repo). Read it before designing changes that touch dedupe, categorization, or storage — captures decisions from prior conversations. Live tickets are tracked in [Backman](https://backman.develeap.com).
 
-- Deterministic categorization (move "Kubernetes → DevOps" rules out of the prompt into code)
-- Parallel Bedrock batches with retry + backoff
-- Per-feed metrics (`data/metrics.json`)
+**Done:**
+- Content-hash dedupe (re-process publisher edits)
+- URL normalization (strip `utm_*`, trailing slashes, etc.)
+- Image generation pipeline (Gemini via Vertex AI)
+- Parallel Bedrock batches with retry + backoff (~75% latency drop)
+
+**Still on the list:**
+- Handle Gemini image generation failures (retry + classify + don't re-pay for permanent refusals)
 - Cross-source duplicate detection (HN → TheNewStack → AWS triplets become one)
+- Per-feed metrics (`data/metrics.json`)
+- Deterministic categorization (move "Kubernetes → DevOps" rules out of the prompt into code)
 - Phased AWS migration (S3 + DynamoDB + Lambda fanout) for post-MVP scaling
