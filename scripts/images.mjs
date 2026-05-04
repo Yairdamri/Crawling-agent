@@ -1,8 +1,23 @@
 import { writeFile, mkdir, access } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import { join } from 'node:path';
+import { GoogleGenAI } from '@google/genai';
 
 const MODEL = process.env.GEMINI_IMAGE_MODEL || 'gemini-2.5-flash-image';
+const PROJECT = process.env.GCP_PROJECT || 'crawling-agent';
+const LOCATION = process.env.GCP_LOCATION || 'us-central1';
+
+let _client;
+function getClient() {
+  if (!_client) {
+    _client = new GoogleGenAI({
+      vertexai: true,
+      project: PROJECT,
+      location: LOCATION,
+    });
+  }
+  return _client;
+}
 
 const CATEGORY_VISUALS = {
   AI: 'a glowing silicon chip with intricate neural network traces, pulses of light flowing through circuit pathways',
@@ -133,29 +148,20 @@ export function buildImagePrompt(article) {
 }
 
 export async function generateImage(prompt) {
-  const apiKey = process.env.GEMINI_API_KEY;
-  if (!apiKey) throw new Error('GEMINI_API_KEY not set');
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent?key=${apiKey}`;
-  const body = {
-    contents: [{ parts: [{ text: prompt }] }],
-    generationConfig: {
+  const client = getClient();
+  const response = await client.models.generateContent({
+    model: MODEL,
+    contents: prompt,
+    config: {
       responseModalities: ['IMAGE'],
       imageConfig: { aspectRatio: '16:9' },
     },
-  };
-  const res = await fetch(url, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(body),
   });
-  if (!res.ok) {
-    const text = await res.text();
-    throw new Error(`HTTP ${res.status}: ${text.slice(0, 500)}`);
-  }
-  const json = await res.json();
-  const parts = json.candidates?.[0]?.content?.parts || [];
+  const parts = response.candidates?.[0]?.content?.parts || [];
   const imagePart = parts.find((p) => p.inlineData?.data);
-  if (!imagePart) throw new Error(`no image in response: ${JSON.stringify(json).slice(0, 400)}`);
+  if (!imagePart) {
+    throw new Error(`no image in response: ${JSON.stringify(response).slice(0, 400)}`);
+  }
   return Buffer.from(imagePart.inlineData.data, 'base64');
 }
 
@@ -165,8 +171,8 @@ async function fileExists(path) {
 
 export async function generateImages(articles, hashByUrl, outDir) {
   if (!articles.length) return articles;
-  if (!process.env.GEMINI_API_KEY) {
-    console.warn('[images] GEMINI_API_KEY not set, skipping image generation');
+  if (!process.env.GOOGLE_APPLICATION_CREDENTIALS && !process.env.GOOGLE_CLOUD_PROJECT) {
+    console.warn('[images] no Google Cloud credentials detected (GOOGLE_APPLICATION_CREDENTIALS or ADC); skipping image generation');
     return articles;
   }
   await mkdir(outDir, { recursive: true });
