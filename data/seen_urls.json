@@ -2773,5 +2773,120 @@
     "url": "https://thehackernews.com/2026/05/silver-fox-deploys-abcdoor-malware-via.html",
     "seenAt": "2026-05-04T14:23:59.108Z",
     "contentHash": "95809e6f73cd4871"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-whats-next-with-aws-2026-amazon-quick-openai-partnership-and-more-may-4-2026",
+    "seenAt": "2026-05-04T19:24:52.041Z",
+    "contentHash": "9e4671578b6416d1"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/beyond-bi-how-the-dataset-qa-feature-of-amazon-quick-powers-the-next-generation-of-data-decisions",
+    "seenAt": "2026-05-04T19:24:52.041Z",
+    "contentHash": "a7df33be276873a2"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/introducing-the-agent-performance-loop-agentcore-optimization-now-in-preview",
+    "seenAt": "2026-05-04T19:24:52.041Z",
+    "contentHash": "539b9014004307c9"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/agent-guided-workflows-to-accelerate-model-customization-in-amazon-sagemaker-ai",
+    "seenAt": "2026-05-04T19:24:52.041Z",
+    "contentHash": "464091362d8aa8c5"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/generate-dashboards-from-natural-language-prompts-in-amazon-quick",
+    "seenAt": "2026-05-04T19:24:52.041Z",
+    "contentHash": "6bf73474f2a0a4f9"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/from-data-lake-to-ai-ready-analytics-introducing-direct-query-with-s3-tables-in-amazon-quick",
+    "seenAt": "2026-05-04T19:24:52.041Z",
+    "contentHash": "1a67261ced0b1b89"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/introducing-dataset-qa-expanding-natural-language-querying-for-structured-datasets-in-amazon-quick",
+    "seenAt": "2026-05-04T19:24:52.041Z",
+    "contentHash": "b6a669861519f4ca"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/capacity-aware-inference-automatic-instance-fallback-for-sagemaker-ai-endpoints",
+    "seenAt": "2026-05-04T19:24:52.041Z",
+    "contentHash": "4b17e812bff4ec82"
+  },
+  {
+    "url": "https://openai.com/index/delivering-low-latency-voice-ai-at-scale",
+    "seenAt": "2026-05-04T19:24:52.041Z",
+    "contentHash": "5165b7c8619af87a"
+  },
+  {
+    "url": "https://databricks.com/blog/foundation-ai-scalability-one-team-one-platform-one-operating-model",
+    "seenAt": "2026-05-04T19:24:52.041Z",
+    "contentHash": "7aa8fc4d984dad2b"
+  },
+  {
+    "url": "https://databricks.com/blog/driving-budapest-forward-how-bkk-uses-databricks-transform-city-mobility",
+    "seenAt": "2026-05-04T19:24:52.041Z",
+    "contentHash": "883fefcc9ab6ba06"
+  },
+  {
+    "url": "https://databricks.com/blog/llm-vs-ai",
+    "seenAt": "2026-05-04T19:24:52.041Z",
+    "contentHash": "2fffe01b2d565790"
+  },
+  {
+    "url": "https://databricks.com/blog/data-science-vs-data-engineering",
+    "seenAt": "2026-05-04T19:24:52.041Z",
+    "contentHash": "5599e8dabe64882e"
+  },
+  {
+    "url": "https://databricks.com/blog/ai-applications",
+    "seenAt": "2026-05-04T19:24:52.041Z",
+    "contentHash": "62e5a8bfab45c425"
+  },
+  {
+    "url": "https://databricks.com/blog/mlops-vs-devops",
+    "seenAt": "2026-05-04T19:24:52.041Z",
+    "contentHash": "0e7c90734b355b54"
+  },
+  {
+    "url": "https://databricks.com/blog/agentic-ai-vs-generative-ai",
+    "seenAt": "2026-05-04T19:24:52.041Z",
+    "contentHash": "6ae8508a4ad17def"
+  },
+  {
+    "url": "https://github.blog/open-source/register-now-for-openclaw-after-hours-github",
+    "seenAt": "2026-05-04T19:24:52.041Z",
+    "contentHash": "01c1010ed98e4d70"
+  },
+  {
+    "url": "https://thenewstack.io/openai-ory-identity-scale",
+    "seenAt": "2026-05-04T19:24:52.041Z",
+    "contentHash": "fbb2b6d4abb4c2b4"
+  },
+  {
+    "url": "https://thenewstack.io/ai-agent-telemetry-standardization",
+    "seenAt": "2026-05-04T19:24:52.041Z",
+    "contentHash": "6af519acf7271c23"
+  },
+  {
+    "url": "https://thenewstack.io/palo-alto-portkey-ai-gateway",
+    "seenAt": "2026-05-04T19:24:52.041Z",
+    "contentHash": "7d396571b826fc12"
+  },
+  {
+    "url": "https://thehackernews.com/2026/05/phishing-campaign-hits-80-orgs-using.html",
+    "seenAt": "2026-05-04T19:24:52.041Z",
+    "contentHash": "a39606c5fcd8a9ea"
+  },
+  {
+    "url": "https://thehackernews.com/2026/05/progress-patches-critical-moveit.html",
+    "seenAt": "2026-05-04T19:24:52.041Z",
+    "contentHash": "1668b56bbcc50e56"
+  },
+  {
+    "url": "https://thehackernews.com/2026/05/weekly-recap-ai-powered-phishing.html",
+    "seenAt": "2026-05-04T19:24:52.041Z",
+    "contentHash": "532c37f82af5aa79"
   }
 ]
