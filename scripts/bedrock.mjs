@@ -110,6 +110,61 @@ function chunk(arr, size) {
   return out;
 }
 
+const CONCURRENCY = 5;
+const RETRY_DELAYS_MS = [1000, 4000, 16000];
+
+function sleep(ms) {
+  return new Promise((r) => setTimeout(r, ms));
+}
+
+function isTransient(err) {
+  const code = err?.$metadata?.httpStatusCode;
+  if (code >= 500 && code < 600) return true;
+  if (code === 429) return true;
+  const name = err?.name || '';
+  if (name === 'ThrottlingException' || name === 'TooManyRequestsException') return true;
+  if (name === 'ServiceUnavailableException' || name === 'InternalServerException') return true;
+  if (name === 'ModelTimeoutException') return true;
+  const msg = err?.message || '';
+  return /timeout|ECONN|ENETUNREACH|EAI_AGAIN|socket hang up/i.test(msg);
+}
+
+async function withRetry(fn, label) {
+  let lastErr;
+  for (let attempt = 0; attempt <= RETRY_DELAYS_MS.length; attempt++) {
+    try {
+      return await fn();
+    } catch (err) {
+      lastErr = err;
+      const transient = isTransient(err);
+      const isLast = attempt === RETRY_DELAYS_MS.length;
+      if (!transient || isLast) throw err;
+      const wait = RETRY_DELAYS_MS[attempt];
+      console.warn(`[bedrock] ${label} attempt ${attempt + 1} failed (${err.message}). Retrying in ${wait}ms.`);
+      await sleep(wait);
+    }
+  }
+  throw lastErr;
+}
+
+async function runWithConcurrency(tasks, limit) {
+  const results = new Array(tasks.length);
+  let next = 0;
+  const worker = async () => {
+    while (true) {
+      const i = next++;
+      if (i >= tasks.length) return;
+      try {
+        results[i] = { ok: true, value: await tasks[i]() };
+      } catch (err) {
+        results[i] = { ok: false, error: err };
+      }
+    }
+  };
+  await Promise.all(Array.from({ length: Math.min(limit, tasks.length) }, worker));
+  return results;
+}
+
 function extractToolUse(response) {
   const content = response.output?.message?.content || [];
   for (const block of content) {
@@ -150,16 +205,33 @@ export async function processArticles(items) {
   const client = new BedrockRuntimeClient({ region: REGION });
 
   const batches = chunk(items, BATCH_SIZE);
+  console.log(
+    `[bedrock] ${batches.length} batches, concurrency=${CONCURRENCY}, retries=${RETRY_DELAYS_MS.length}`
+  );
+
+  const tasks = batches.map((batch, i) => async () => {
+    const label = `batch ${i + 1}/${batches.length} (${batch.length} articles)`;
+    console.log(`[bedrock] ${label} starting`);
+    const out = await withRetry(() => processBatch(client, batch), label);
+    console.log(`[bedrock] ${label} done (${out.length} articles)`);
+    return out;
+  });
+
+  const results = await runWithConcurrency(tasks, CONCURRENCY);
+
   const processed = [];
-  for (let i = 0; i < batches.length; i++) {
-    const batch = batches[i];
-    console.log(`[bedrock] batch ${i + 1}/${batches.length} (${batch.length} articles)`);
-    try {
-      const out = await processBatch(client, batch);
-      processed.push(...out);
-    } catch (err) {
-      console.warn(`[bedrock] batch ${i + 1} failed: ${err.message}. Skipping batch.`);
+  let failedCount = 0;
+  for (let i = 0; i < results.length; i++) {
+    const r = results[i];
+    if (r.ok) {
+      processed.push(...r.value);
+    } else {
+      failedCount++;
+      console.warn(`[bedrock] batch ${i + 1} failed after retries: ${r.error?.message}`);
     }
+  }
+  if (failedCount > 0) {
+    console.warn(`[bedrock] ${failedCount}/${batches.length} batches failed after retries`);
   }
   return processed;
 }
