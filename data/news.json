@@ -1,7 +1,421 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-04T14:23:59.107Z",
+  "generatedAt": "2026-05-04T19:24:52.035Z",
   "articles": [
+    {
+      "url": "https://thehackernews.com/2026/05/phishing-campaign-hits-80-orgs-using.html",
+      "title": "Phishing Campaign Hits 80+ Orgs Using SimpleHelp and ScreenConnect RMM Tools",
+      "summary": "A phishing campaign codenamed VENOMOUS#HELPER has targeted over 80 organizations since April 2025, leveraging legitimate Remote Monitoring and Management software (SimpleHelp and ScreenConnect) to establish persistent remote access on compromised hosts.",
+      "source": "The Hacker News",
+      "tags": [
+        "phishing",
+        "RMM",
+        "threat intelligence",
+        "security"
+      ],
+      "score": 7,
+      "category": "Security",
+      "publishedAt": "2026-05-04T18:06:00.000Z",
+      "why_it_matters": [
+        {
+          "lead": "80+ organizations hit",
+          "detail": "VENOMOUS#HELPER phishing campaign since April 2025, mostly U.S. targets"
+        },
+        {
+          "lead": "RMM abuse vector",
+          "detail": "SimpleHelp and ScreenConnect tools weaponized for persistent access"
+        },
+        {
+          "lead": "Active campaign",
+          "detail": "ongoing threat using legitimate software as cover for compromise"
+        }
+      ],
+      "imageFilename": "a39606c5fcd8a9ea.png"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/beyond-bi-how-the-dataset-qa-feature-of-amazon-quick-powers-the-next-generation-of-data-decisions",
+      "title": "Beyond BI: How the Dataset Q&A feature of Amazon Quick powers the next generation of data decisions",
+      "summary": "Amazon Quick's Dataset Q&A feature lets business users ask natural language questions against existing datasets and get answers in seconds without waiting for BI teams to build new dashboards. AWS Technical Field Communities use it internally to answer complex operational questions about customer demand, team expertise, and engagement resolution.",
+      "source": "AWS ML Blog",
+      "tags": [
+        "Amazon Quick",
+        "natural language",
+        "analytics"
+      ],
+      "score": 6,
+      "category": "AI",
+      "publishedAt": "2026-05-04T17:46:32.000Z",
+      "why_it_matters": [
+        {
+          "lead": "Natural language to SQL",
+          "detail": "queries run in seconds against full datasets without sampling"
+        },
+        {
+          "lead": "Removes BI bottleneck",
+          "detail": "eliminates hours-long wait for analysts to build custom reports"
+        },
+        {
+          "lead": "Governance enforced",
+          "detail": "security and permissions remain intact for enterprise deployments"
+        }
+      ],
+      "imageFilename": "a7df33be276873a2.png"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-the-agent-performance-loop-agentcore-optimization-now-in-preview",
+      "title": "Introducing the agent performance loop: AgentCore Optimization now in preview",
+      "summary": "Amazon Bedrock AgentCore now includes automatic performance optimization that generates recommendations from production traces, validates them with batch evaluation and A/B testing, and ships fixes systematically. This replaces manual debugging cycles where developers read traces and rewrite prompts based on intuition.",
+      "source": "AWS ML Blog",
+      "tags": [
+        "agents",
+        "evals",
+        "AgentCore",
+        "production"
+      ],
+      "score": 8,
+      "category": "AI",
+      "publishedAt": "2026-05-04T17:13:42.000Z",
+      "why_it_matters": [
+        {
+          "lead": "Automated agent optimization",
+          "detail": "production traces feed systematic evaluation and A/B testing loops"
+        },
+        {
+          "lead": "Replaces manual debugging",
+          "detail": "data-backed recommendations instead of developer intuition and hypothesis"
+        },
+        {
+          "lead": "Continuous improvement",
+          "detail": "catches quality drift daily rather than weekly or monthly cycles"
+        }
+      ],
+      "imageFilename": "539b9014004307c9.png"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/agent-guided-workflows-to-accelerate-model-customization-in-amazon-sagemaker-ai",
+      "title": "Agent-guided workflows to accelerate model customization in Amazon SageMaker AI",
+      "summary": "SageMaker AI now includes an agentic interface where developers describe their fine-tuning use case in natural language, and an AI coding agent handles data preparation, technique selection (SFT, DPO, RLVR), evaluation, and deployment. Pre-built agent skills encode AWS and data science expertise for model customization workflows.",
+      "source": "AWS ML Blog",
+      "tags": [
+        "agents",
+        "fine-tuning",
+        "SageMaker",
+        "model customization"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-05-04T17:10:46.000Z",
+      "why_it_matters": [
+        {
+          "lead": "Natural language to fine-tuning",
+          "detail": "agents handle SFT, DPO, RLVR technique selection and data formatting"
+        },
+        {
+          "lead": "Pre-built agent skills",
+          "detail": "specialized instruction sets for evaluation, deployment, and LLM-as-Judge"
+        },
+        {
+          "lead": "Reduces token usage",
+          "detail": "generated code is editable and integrates into existing workflows"
+        }
+      ],
+      "imageFilename": "464091362d8aa8c5.png"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-whats-next-with-aws-2026-amazon-quick-openai-partnership-and-more-may-4-2026",
+      "title": "AWS Weekly Roundup: What's Next with AWS 2026, Amazon Quick, OpenAI partnership, and more (May 4, 2026)",
+      "summary": "AWS announced expanded Amazon Quick with desktop app and new pricing, deeper OpenAI partnership for agents, and updates to Amazon Connect. The roundup covers multiple agent-focused announcements from an event featuring AWS CEO Matt Garman and OpenAI leadership.",
+      "source": "AWS News",
+      "tags": [
+        "agents",
+        "Amazon Quick",
+        "OpenAI"
+      ],
+      "score": 5,
+      "category": "AI",
+      "publishedAt": "2026-05-04T17:05:41.000Z",
+      "why_it_matters": [
+        {
+          "lead": "Amazon Quick desktop app",
+          "detail": "expands agentic AI assistant beyond web to desktop workflows"
+        },
+        {
+          "lead": "OpenAI partnership deepens",
+          "detail": "AWS and OpenAI jointly showcasing agents for business operations"
+        },
+        {
+          "lead": "Pricing changes",
+          "detail": "new plans announced but details truncated in excerpt"
+        }
+      ],
+      "imageFilename": "9e4671578b6416d1.png"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/generate-dashboards-from-natural-language-prompts-in-amazon-quick",
+      "title": "Generate dashboards from natural language prompts in Amazon Quick",
+      "summary": "Amazon Quick now generates complete multi-sheet dashboards from natural language prompts, producing production-ready analyses with visuals, filter controls, and calculated fields like year-over-year growth in minutes. Users review an interactive plan before generation and can edit the output before publishing.",
+      "source": "AWS ML Blog",
+      "tags": [
+        "Amazon Quick",
+        "natural language",
+        "dashboards"
+      ],
+      "score": 6,
+      "category": "AI",
+      "publishedAt": "2026-05-04T16:51:37.000Z",
+      "why_it_matters": [
+        {
+          "lead": "Minutes instead of hours",
+          "detail": "multi-sheet dashboards with visuals and calculated fields auto-generated"
+        },
+        {
+          "lead": "Interactive plan review",
+          "detail": "users control final output before publishing to stakeholders"
+        },
+        {
+          "lead": "Calculated fields included",
+          "detail": "year-over-year growth and month-over-month comparisons built in"
+        }
+      ],
+      "imageFilename": "6bf73474f2a0a4f9.png"
+    },
+    {
+      "url": "https://thehackernews.com/2026/05/progress-patches-critical-moveit.html",
+      "title": "Progress Patches Critical MOVEit Automation Bug Enabling Authentication Bypass",
+      "summary": "Progress Software released patches for two security flaws in MOVEit Automation, including a critical authentication bypass vulnerability. MOVEit Automation is a server-based managed file transfer solution used to automate enterprise file movement workflows.",
+      "source": "The Hacker News",
+      "tags": [
+        "CVE",
+        "authentication",
+        "MFT",
+        "security"
+      ],
+      "score": 8,
+      "category": "Security",
+      "publishedAt": "2026-05-04T16:34:00.000Z",
+      "why_it_matters": [
+        {
+          "lead": "Critical auth bypass",
+          "detail": "MOVEit Automation vulnerability allows unauthenticated access"
+        },
+        {
+          "lead": "Enterprise MFT impact",
+          "detail": "affects file transfer workflows across enterprise environments"
+        },
+        {
+          "lead": "Patches available",
+          "detail": "Progress released updates, apply immediately to production systems"
+        }
+      ],
+      "imageFilename": "1668b56bbcc50e56.png"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/from-data-lake-to-ai-ready-analytics-introducing-direct-query-with-s3-tables-in-amazon-quick",
+      "title": "From data lake to AI-ready analytics: Introducing new data source with S3 Tables in Amazon Quick",
+      "summary": "Amazon Quick now supports direct querying of Apache Iceberg tables in S3 Table buckets without intermediate data warehouses, enabling real-time analytics on large-scale data lakes. This reduces latency, cost, and operational complexity while maintaining governance and security.",
+      "source": "AWS ML Blog",
+      "tags": [
+        "Amazon Quick",
+        "S3 Tables",
+        "Apache Iceberg",
+        "analytics"
+      ],
+      "score": 6,
+      "category": "Cloud",
+      "publishedAt": "2026-05-04T16:12:37.000Z",
+      "why_it_matters": [
+        {
+          "lead": "Direct S3 Table queries",
+          "detail": "Apache Iceberg tables queried without moving to data warehouse"
+        },
+        {
+          "lead": "Reduces latency and cost",
+          "detail": "eliminates intermediate data layers and ETL overhead"
+        },
+        {
+          "lead": "Governance preserved",
+          "detail": "security and permissions enforced on data lake queries"
+        }
+      ],
+      "imageFilename": "1a67261ced0b1b89.png"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-dataset-qa-expanding-natural-language-querying-for-structured-datasets-in-amazon-quick",
+      "title": "Introducing Dataset Q&A: Expanding natural language querying for structured datasets in Amazon Quick",
+      "summary": "Amazon Quick adds Dataset Q&A, a natural language query mode that translates questions to SQL and returns results in seconds against full datasets without row sampling or pre-configured fields. It complements existing Dashboard Q&A and Topic Q&A modes while enforcing enterprise security and governance.",
+      "source": "AWS ML Blog",
+      "tags": [
+        "Amazon Quick",
+        "natural language",
+        "text-to-SQL"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-05-04T16:08:12.000Z",
+      "why_it_matters": [
+        {
+          "lead": "Removes BI backlog",
+          "detail": "ad-hoc queries answered in seconds instead of hours or days"
+        },
+        {
+          "lead": "Full dataset access",
+          "detail": "no row sampling or pre-configured fields required for exploration"
+        },
+        {
+          "lead": "Enterprise security intact",
+          "detail": "permissions and governance enforced on all queries"
+        }
+      ],
+      "imageFilename": "b6a669861519f4ca.png"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/capacity-aware-inference-automatic-instance-fallback-for-sagemaker-ai-endpoints",
+      "title": "Capacity-aware inference: Automatic instance fallback for SageMaker AI endpoints",
+      "summary": "SageMaker AI now supports capacity-aware instance pools for inference endpoints, automatically falling back through a prioritized list of instance types when capacity is constrained. This eliminates manual retries when provisioning fails and works for Single Model, Inference Component-based, and Asynchronous Inference endpoints.",
+      "source": "AWS ML Blog",
+      "tags": [
+        "SageMaker",
+        "inference",
+        "capacity management"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-05-04T16:05:02.000Z",
+      "why_it_matters": [
+        {
+          "lead": "Automatic instance fallback",
+          "detail": "prioritized list of GPU types provisioned without manual intervention"
+        },
+        {
+          "lead": "Eliminates provisioning failures",
+          "detail": "endpoints reach running state even when primary instance type unavailable"
+        },
+        {
+          "lead": "Works across endpoint types",
+          "detail": "Single Model, Inference Component, and Asynchronous Inference supported"
+        }
+      ],
+      "imageFilename": "4b17e812bff4ec82.png"
+    },
+    {
+      "url": "https://thenewstack.io/openai-ory-identity-scale",
+      "title": "How OpenAI scaled to 900 million weekly users with Ory",
+      "summary": "OpenAI built a custom identity and access management layer using Ory to handle 900 million weekly active users, avoiding traditional monolithic IAM solutions. The architecture solves database bottlenecks and latency challenges inherent in global multi-region identity distribution at scale.",
+      "source": "The New Stack",
+      "tags": [
+        "infrastructure",
+        "IAM",
+        "scale",
+        "observability"
+      ],
+      "score": 7,
+      "category": "Cloud",
+      "publishedAt": "2026-05-04T16:00:00.000Z",
+      "why_it_matters": [
+        {
+          "lead": "900M weekly users",
+          "detail": "OpenAI's scale requires custom identity layer, not off-shelf IAM"
+        },
+        {
+          "lead": "Ory-based architecture",
+          "detail": "horizontal scaling without database bottlenecks or latency penalties"
+        },
+        {
+          "lead": "Multi-region deployment",
+          "detail": "global accessibility with security and flexibility across regions"
+        }
+      ]
+    },
+    {
+      "url": "https://thenewstack.io/ai-agent-telemetry-standardization",
+      "title": "Arize AI and Google Cloud lay down standardized telemetry mandate to keep enterprise agents in check",
+      "summary": "Arize AI and Google Cloud are pushing OpenTelemetry and OpenInference standards for agent telemetry to provide visibility into multi-tool, multi-model agentic systems without losing architectural flexibility. Standardized traces enable consistent observability as enterprise agent stacks evolve across cloud deployments.",
+      "source": "The New Stack",
+      "tags": [
+        "agents",
+        "observability",
+        "OpenTelemetry",
+        "OpenInference",
+        "telemetry"
+      ],
+      "score": 8,
+      "category": "AI",
+      "publishedAt": "2026-05-04T15:00:00.000Z",
+      "why_it_matters": [
+        {
+          "lead": "OpenTelemetry + OpenInference",
+          "detail": "standardized trace format for agentic systems across multi-cloud stacks"
+        },
+        {
+          "lead": "Agent visibility mandate",
+          "detail": "track tool calls, model responses, memory reads, MCP interactions"
+        },
+        {
+          "lead": "Composable architecture",
+          "detail": "maintain optionality while keeping observability consistent as stack changes"
+        }
+      ]
+    },
+    {
+      "url": "https://thenewstack.io/palo-alto-portkey-ai-gateway",
+      "title": "Palo Alto Networks makes a $700M-class AI bet on Portkey gateway",
+      "summary": "Palo Alto Networks announced intent to acquire Portkey and integrate it into Prisma AIRS as a unified control plane for securing AI transactions. The AI gateway layer, which sees every prompt, model response, tool call, and MCP interaction, shifts from developer plumbing to enterprise security checkpoint.",
+      "source": "The New Stack",
+      "tags": [
+        "AI gateway",
+        "security",
+        "agents",
+        "LLM"
+      ],
+      "score": 8,
+      "category": "AI",
+      "publishedAt": "2026-05-04T14:49:24.000Z",
+      "why_it_matters": [
+        {
+          "lead": "Palo Alto acquires Portkey",
+          "detail": "700M-class deal integrates AI gateway into Prisma AIRS control plane"
+        },
+        {
+          "lead": "Gateway as checkpoint",
+          "detail": "processes trillions of tokens monthly, sees all agent-model interactions"
+        },
+        {
+          "lead": "Security layer shift",
+          "detail": "AI gateway moves from developer tool to enterprise security mandate"
+        }
+      ]
+    },
+    {
+      "url": "https://thehackernews.com/2026/05/weekly-recap-ai-powered-phishing.html",
+      "title": "Weekly Recap: AI-Powered Phishing, Android Spying Tool, Linux Exploit, GitHub RCE & More",
+      "summary": "Weekly security recap covering AI-powered phishing, Android spying tools, Linux kernel exploits, and GitHub RCE vulnerabilities. The summary emphasizes attackers shifting from breach to occupation, establishing persistence in SaaS sessions and pushing code via trusted commits.",
+      "source": "The Hacker News",
+      "tags": [
+        "threat intelligence",
+        "AI-powered attacks",
+        "RCE",
+        "Linux",
+        "Android"
+      ],
+      "score": 6,
+      "category": "Security",
+      "publishedAt": "2026-05-04T14:23:00.000Z",
+      "why_it_matters": [
+        {
+          "lead": "Multiple threat vectors",
+          "detail": "phishing, spying tools, kernel exploits, GitHub RCE in one week"
+        },
+        {
+          "lead": "Persistence focus",
+          "detail": "attackers occupying SaaS sessions and pushing trusted commits"
+        },
+        {
+          "lead": "Patch lag risk",
+          "detail": "attacks outpacing triage cycles, exploitation happening mid-alert response"
+        }
+      ],
+      "imageFilename": "532c37f82af5aa79.png"
+    },
     {
       "url": "https://thenewstack.io/agent-code-validation-bottleneck",
       "title": "The agent code explosion is here. We need to rethink our pipelines, fast.",
@@ -98,6 +512,37 @@
       "category": "Engineering",
       "publishedAt": "2026-05-04T04:43:36.000Z",
       "imageFilename": "4e89b08e0beadb9c.png"
+    },
+    {
+      "url": "https://openai.com/index/delivering-low-latency-voice-ai-at-scale",
+      "title": "How OpenAI delivers low-latency voice AI at scale",
+      "summary": "OpenAI rebuilt its WebRTC stack to power real-time voice AI with sub-500ms latency and seamless conversational turn-taking across global regions. The post covers infrastructure choices for handling concurrent voice sessions, buffer management, and jitter handling to maintain natural dialogue flow.",
+      "source": "OpenAI Blog",
+      "tags": [
+        "voice AI",
+        "real-time",
+        "WebRTC",
+        "infrastructure",
+        "latency"
+      ],
+      "score": 8,
+      "category": "AI",
+      "publishedAt": "2026-05-04T00:00:00.000Z",
+      "why_it_matters": [
+        {
+          "lead": "Sub-500ms latency",
+          "detail": "WebRTC stack rebuilt for natural conversational turn-taking in voice AI"
+        },
+        {
+          "lead": "Global scale architecture",
+          "detail": "Handles concurrent sessions across regions with jitter and buffer management"
+        },
+        {
+          "lead": "Production voice systems",
+          "detail": "Practical infrastructure patterns for real-time AI applications at scale"
+        }
+      ],
+      "imageFilename": "5165b7c8619af87a.png"
     },
     {
       "url": "https://xogium.me/the-text-mode-lie-why-modern-tuis-are-a-nightmare-for-accessibility",
