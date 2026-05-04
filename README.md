@@ -1,27 +1,28 @@
 # AI News Pipeline
 
-Automated AI / DevOps / cloud / security news feed. GitHub Actions runs every 6 hours, fetches RSS, has **Claude Haiku 4.5 on AWS Bedrock** summarize / tag / score each article, commits the result to `data/news.json`. A small WordPress plugin renders the JSON on a WP site via a `[ai_news_feed]` shortcode.
+Automated AI / DevOps / cloud / security news feed. GitHub Actions runs daily, fetches RSS, has **Claude Haiku 4.5 on AWS Bedrock** summarize / tag / score each article, generates a cover image per article via **Gemini 2.5 Flash Image**, commits everything to `data/news.json` + `data/images/`. A WordPress plugin renders the JSON on a WP site via `[ai_news_feed]` (simple grid) or `[ai_news_feed_page]` (full magazine layout).
 
 ## Architecture
 
 Visual: [docs/architecture.excalidraw](docs/architecture.excalidraw) — open in [Excalidraw](https://excalidraw.com/) (drag-and-drop), or in VS Code via the [Excalidraw editor extension](https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor).
 
 ```
-GitHub Actions (cron 6h)
+GitHub Actions (cron daily, 00:00 UTC)
     -> scripts/fetch.mjs
         -> rss-parser (config/feeds.json)
-        -> dedupe via data/seen_urls.json
+        -> dedupe via data/seen_urls.json (URL + content hash)
         -> Bedrock Claude Haiku 4.5 (Converse API, batched, tool-use structured output)
-        -> data/news.json (committed back to repo)
+        -> Gemini 2.5 Flash Image (cover image per article, brand-tinted style)
+        -> data/news.json + data/images/<hash>.png (committed back to repo)
 
 WordPress (managed host)
     -> ai-news-feed plugin
-        -> shortcode [ai_news_feed]
+        -> shortcode [ai_news_feed] or [ai_news_feed_page]
         -> wp_remote_get(<raw GitHub URL>) with 1h transient cache
-        -> renders article cards
+        -> renders article cards (with images, brand-tinted placeholders, IMPACT badges)
 ```
 
-Auth from Actions to AWS uses **GitHub OIDC** — no static AWS keys stored anywhere.
+Auth from Actions to AWS uses **GitHub OIDC** — no static AWS keys stored anywhere. Gemini auth uses an API key in repo secrets.
 
 ## Repository layout
 
@@ -30,26 +31,38 @@ Auth from Actions to AWS uses **GitHub OIDC** — no static AWS keys stored anyw
 config/feeds.json                  RSS sources (currently 20)
 scripts/
   fetch.mjs                        Pipeline entrypoint
-  feeds.mjs                        RSS fetch + normalize, isolated per feed
-  dedupe.mjs                       Filter against seen_urls
+  feeds.mjs                        RSS fetch + normalize + URL normalization + content hash
+  dedupe.mjs                       Filter against seen_urls (URL + content hash)
   bedrock.mjs                      Bedrock Converse + tool-use schema
+  images.mjs                       Gemini cover image generation (in-pipeline)
   store.mjs                        Merge, retention, write
+  backfill-images.mjs              Batch-generate images for older articles
+  import-gemini-images.mjs         Import manually-generated Gemini Pro images
+  list-missing-prompts.mjs         Audit which articles still need images
+  sync-image-filenames.mjs         Reconcile filename hashes
+  test-image-gen.mjs               Iterate on image prompts locally
 data/
   news.json                        Public output (read by WP)
-  seen_urls.json                   Dedup cache
-wordpress-plugin/ai-news-feed/     PHP plugin (shortcode + admin settings)
+  seen_urls.json                   Dedup cache (URL -> {seenAt, contentHash})
+  images/<hash>.png                Generated cover images (tracked in git)
+wordpress-plugin/ai-news-feed/     PHP plugin: 2 shortcodes, image rendering, brand tints
 docs/architecture.excalidraw       Architecture diagram
+.claude/skills/
+  develeap-news-imagery/           Image style + brand-color reference
+  backman/                         Develeap product backlog tool integration
+CLAUDE.md                          Codebase docs for Claude Code
 ```
 
 ## Local development
 
 ```bash
 npm install
-aws sso login --profile <your-profile>      # any session that can call bedrock:InvokeModel
-AWS_REGION=us-east-1 node scripts/fetch.mjs
+aws sso login --profile <your-profile>             # any session that can call bedrock:InvokeModel
+cp .env.example .env && edit .env                  # set GEMINI_API_KEY for image generation
+AWS_REGION=us-east-1 node --env-file=.env scripts/fetch.mjs
 ```
 
-Inspect `data/news.json` afterwards. A second run should be near-instant — `seen_urls.json` shortcuts already-processed URLs.
+Inspect `data/news.json` and `data/images/` afterwards. A second run is near-instant — `seen_urls.json` (now keyed by URL + content hash) shortcuts already-processed URLs.
 
 ## Deployment
 
@@ -60,6 +73,7 @@ Inspect `data/news.json` afterwards. A second run should be near-instant — `se
 2. **GitHub one-time setup:**
    - Push this repo (public, so the raw JSON URL is reachable).
    - In repo **Settings → Secrets and variables → Actions → Variables**, set `AWS_ROLE_ARN` to your role ARN.
+   - In **Secrets**, set `GEMINI_API_KEY` for image generation.
 3. **Run the workflow:** Actions tab → Fetch News → Run workflow. First run seeds `data/news.json`.
 4. **WordPress:** Zip `wordpress-plugin/ai-news-feed/` and upload via wp-admin → Plugins → Add New → Upload Plugin → Activate.
 5. In WP, **Settings → AI News Feed**, paste your raw JSON URL:
@@ -70,7 +84,12 @@ Inspect `data/news.json` afterwards. A second run should be near-instant — `se
 
 - [config/feeds.json](config/feeds.json) — list of RSS sources. Edit freely, no code changes needed.
 - [scripts/bedrock.mjs](scripts/bedrock.mjs) — system prompt, model ID, batch size. Tweak the prompt to change editorial voice / categories / tags.
-- [.github/workflows/fetch-news.yml](.github/workflows/fetch-news.yml) — cron schedule, region.
+- [scripts/images.mjs](scripts/images.mjs) — Gemini image model, per-category visual style, composition variants.
+- [.github/workflows/fetch-news.yml](.github/workflows/fetch-news.yml) — cron schedule (currently `0 0 * * *`, daily at 00:00 UTC), region.
+
+### Article ordering
+
+Articles in [data/news.json](data/news.json) are sorted by `publishedAt` descending — newest first. Score is used only as a tie-breaker. (The original MVP sorted by score; flipped after readers wanted "what's new today" up top.)
 
 ## Shortcode options
 
@@ -109,16 +128,37 @@ Source-brand tints (used for image placeholders before / when the AI-generated t
 
 ## Costs
 
-Bedrock Haiku 4.5 at the current load (20 feeds, 6h cron, dedup cache warm):
+At current load (20 feeds, daily cron, dedup cache warm, ~12 articles/day going live):
 
-- First run after a feed-list expansion: ~$0.70 (one-time, processes all backlog)
-- Steady state: ~$0.08 per run × 4/day = **~$10/month**
-- GitHub Actions minutes: free tier covers this (~6 min × 4/day = under 1k min/month).
+- **Bedrock Haiku 4.5:** ~$0.10–0.15 per run × 1/day ≈ **$3–4/month** (was $10 estimate when running every 6h)
+- **Gemini 2.5 Flash Image:** ~$0.04 per image × ~30 new articles/day = **~$1.20/day, ~$36/month** at full image generation. Lower in practice because the dedup cache means most cron runs touch fewer than 30 new articles.
+- **GitHub Actions minutes:** free tier covers this comfortably (~10 min × 1/day = ~300 min/month, well under the 2,000 free).
+- **One-time backlog spikes** (feed list expansion, prompt rewrite forcing reprocess): ~$1 each, infrequent.
+
+Total steady state: **~$40/month** if image generation is enabled for every article. Halve that by only generating images for top-scoring items.
 
 ## Operations
 
-**Force re-categorization** (e.g., after editing the system prompt and you want existing entries re-processed under new rules): reset `data/seen_urls.json` to `[]`, push, trigger workflow. Pipeline re-fetches everything and merge-by-URL overwrites old entries. ~$0.70 one-time.
+**Force re-categorization** (e.g., after editing the system prompt and you want existing entries re-processed under new rules): reset `data/seen_urls.json` to `[]`, push, trigger workflow. Pipeline re-fetches everything and merge-by-URL overwrites old entries. ~$1 one-time including image regeneration.
+
+**Edit a publisher article** (publisher updates the original post): the content-hash dedupe in [scripts/dedupe.mjs](scripts/dedupe.mjs) detects the change automatically — same URL with different `contentHash` triggers reprocessing on the next run. No manual action required.
 
 **Add or remove a feed:** edit `config/feeds.json`, push. No code changes.
 
-**Change the model** (e.g., Haiku → Sonnet for better summaries): update `MODEL_ID` in [scripts/bedrock.mjs](scripts/bedrock.mjs) and add the new model ARN to the IAM role's inline policy. Two lines.
+**Change the LLM** (e.g., Haiku → Sonnet for better summaries): update `MODEL_ID` in [scripts/bedrock.mjs](scripts/bedrock.mjs) and add the new model ARN to the IAM role's inline policy. Two lines.
+
+**Change the image model**: update `GEMINI_IMAGE_MODEL` env var in the workflow. Default is `gemini-2.5-flash-image`.
+
+**Manually backfill an image** (fix a bad auto-generated one): generate via `gemini.google.com`, save into `data/images-test/` (gitignored), then run `node scripts/import-gemini-images.mjs <article-url> <local-image-path>` to copy it into `data/images/<hash>.png` and update `news.json`.
+
+**Audit missing images:** `node scripts/list-missing-prompts.mjs` lists articles without an `imageFilename`.
+
+## Roadmap
+
+Post-MVP roadmap and architecture migration plan live at `~/.claude/plans/ok-great-lets-continue-graceful-penguin.md` (outside the repo). Read it before designing changes that touch dedupe, categorization, or storage — captures decisions from prior conversations. Highlights of what's still on the list:
+
+- Deterministic categorization (move "Kubernetes → DevOps" rules out of the prompt into code)
+- Parallel Bedrock batches with retry + backoff
+- Per-feed metrics (`data/metrics.json`)
+- Cross-source duplicate detection (HN → TheNewStack → AWS triplets become one)
+- Phased AWS migration (S3 + DynamoDB + Lambda fanout) for post-MVP scaling
