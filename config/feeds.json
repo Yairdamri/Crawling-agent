@@ -11,7 +11,6 @@
   { "name": "Databricks Blog",        "url": "https://www.databricks.com/blog/feed.xml" },
   { "name": "GitHub Blog",            "url": "https://github.blog/feed/" },
   { "name": "The New Stack",          "url": "https://thenewstack.io/feed/" },
-  { "name": "HN Front Page",          "url": "https://hnrss.org/frontpage" },
   { "name": "CNCF Blog",              "url": "https://www.cncf.io/feed/" },
   { "name": "HashiCorp Blog",         "url": "https://www.hashicorp.com/blog/feed.xml" },
   { "name": "Docker Blog",            "url": "https://www.docker.com/blog/feed/" },
