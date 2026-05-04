@@ -10,8 +10,12 @@ const NEWS_PATH = join(root, 'data', 'news.json');
 const OUT_DIR = join(root, 'data', 'images-test');
 const PER_CATEGORY = Number(process.env.SAMPLES_PER_CATEGORY) || 2;
 
-if (!process.env.GEMINI_API_KEY) {
-  console.error('GEMINI_API_KEY missing.');
+if (!process.env.GOOGLE_APPLICATION_CREDENTIALS && !process.env.GOOGLE_CLOUD_PROJECT) {
+  console.error(
+    'No Google Cloud credentials detected. Either:\n' +
+      '  - export GOOGLE_APPLICATION_CREDENTIALS=/path/to/sa-key.json\n' +
+      '  - or run: gcloud auth application-default login'
+  );
   process.exit(1);
 }
 
