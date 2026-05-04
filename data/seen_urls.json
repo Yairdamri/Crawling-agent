@@ -2888,5 +2888,15 @@
     "url": "https://thehackernews.com/2026/05/weekly-recap-ai-powered-phishing.html",
     "seenAt": "2026-05-04T19:24:52.041Z",
     "contentHash": "532c37f82af5aa79"
+  },
+  {
+    "url": "https://databricks.com/blog/generative-ai-for-business",
+    "seenAt": "2026-05-04T19:53:34.964Z",
+    "contentHash": "f3db8fa1659b2bcd"
+  },
+  {
+    "url": "https://databricks.com/blog/data-warehouse-tools",
+    "seenAt": "2026-05-04T19:53:34.964Z",
+    "contentHash": "499a1752234277a8"
   }
 ]
