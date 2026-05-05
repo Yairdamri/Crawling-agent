@@ -61,7 +61,7 @@ Example for "Google Fixes CVSS 10 RCE in Gemini CLI":
     {"lead": "Update before next pipeline run", "detail": "npm patch already shipped"}
   ]
 
-You MUST call the record_articles tool exactly once with one entry per input article. Echo url, source, and publishedAt back exactly as provided.`;
+You MUST call the record_articles tool exactly once with one entry per input article. Echo url, source, sourceDomain, and publishedAt back exactly as provided.`;
 
 const TOOL_SCHEMA = {
   type: 'object',
@@ -71,12 +71,13 @@ const TOOL_SCHEMA = {
       type: 'array',
       items: {
         type: 'object',
-        required: ['url', 'title', 'summary', 'source', 'tags', 'score', 'category', 'publishedAt', 'why_it_matters', 'relevant_for'],
+        required: ['url', 'title', 'summary', 'source', 'sourceDomain', 'tags', 'score', 'category', 'publishedAt', 'why_it_matters', 'relevant_for'],
         properties: {
           url: { type: 'string' },
           title: { type: 'string' },
           summary: { type: 'string' },
           source: { type: 'string' },
+          sourceDomain: { type: 'string' },
           tags: { type: 'array', items: { type: 'string' } },
           score: { type: 'integer', minimum: 1, maximum: 10 },
           category: {
@@ -129,14 +130,15 @@ function buildUserMessage(batch) {
       `URL: ${item.url}`,
       `Title: ${item.title}`,
       `Source: ${item.source}`,
+      `SourceDomain: ${item.sourceDomain || ''}`,
       `Published: ${item.publishedAt}`,
       `Excerpt:`,
       item.rawText || '(no excerpt available)',
     ].join('\n');
   });
   return [
-    'Analyze the following articles. For each, return: title, summary (2-3 sentences, practical), url (echo back exactly), source (echo back), tags, score (1-10), category, publishedAt (echo back), why_it_matters (exactly 3 items, each {lead, detail}: 1-4 word punchline plus 4-10 word context), relevant_for (4-6 specific tool/product/stack names a reader would recognize as theirs, distinct vocabulary from tags).',
-    'Echo url, source, and publishedAt back exactly as provided. Do not invent fields.',
+    'Analyze the following articles. For each, return: title, summary (2-3 sentences, practical), url (echo back exactly), source (echo back), sourceDomain (echo back), tags, score (1-10), category, publishedAt (echo back), why_it_matters (exactly 3 items, each {lead, detail}: 1-4 word punchline plus 4-10 word context), relevant_for (4-6 specific tool/product/stack names a reader would recognize as theirs, distinct vocabulary from tags).',
+    'Echo url, source, sourceDomain, and publishedAt back exactly as provided. Do not invent fields.',
     '',
     formatted.join('\n\n'),
   ].join('\n');
