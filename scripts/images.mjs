@@ -61,10 +61,9 @@ function hashIndex(seed, modulo) {
   return createHash('sha256').update(seed).digest().readUInt32BE(0) % modulo;
 }
 
-// Per-source / per-category color hints — pulled from
-// .claude/skills/develeap-news-imagery/references/brand-colors.md.
-// Injected into the prompt so different articles get distinct palettes
-// instead of all defaulting to the same cinematic blue+red.
+// Per-source / per-category color hints. Injected into the prompt so
+// different articles get distinct palettes instead of all defaulting to
+// the same cinematic blue+red.
 const BRAND_COLOR_HINTS = {
   aws:         'warm amber and burnt-orange accents',
   kubernetes:  'deep cobalt blue accents with luminous cyan highlights',

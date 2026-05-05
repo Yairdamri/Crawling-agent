@@ -48,8 +48,7 @@ data/
 wordpress-plugin/ai-news-feed/     PHP plugin: 2 shortcodes, image rendering, brand tints
 docs/architecture.excalidraw       Architecture diagram
 .claude/skills/
-  develeap-news-imagery/           Image style + brand-color reference
-  backman/                         Develeap product backlog tool integration
+  backman/                         Product-backlog tool integration
 CLAUDE.md                          Codebase docs for Claude Code
 ```
 
@@ -120,7 +119,7 @@ The original layout: a single responsive grid of cards. Use this when you want t
 
 ### `[ai_news_feed_page]` — full magazine layout
 
-The Develeap-styled news page: site header (logo + nav + "Get Your Expert" CTA), hero, 2×2 featured grid, "Top Stories" rail, search + sort + category-filter pills, and the main 3-column card grid with image thumbnails, IMPACT score badges, source-brand-tinted placeholders, and `#tag` chips. Includes a small client-side script for filter / search / sort with no page reloads.
+The full magazine-layout news page: site header (logo + nav + "Get Your Expert" CTA), hero, 2×2 featured grid, "Top Stories" rail, search + sort + category-filter pills, and the main 3-column card grid with image thumbnails, IMPACT score badges, source-brand-tinted placeholders, and `#tag` chips. Includes a small client-side script for filter / search / sort with no page reloads.
 
 ```
 [ai_news_feed_page]                         everything: header + hero + featured + top + grid
@@ -136,7 +135,7 @@ Attributes:
 
 Categories: `AI`, `DevOps`, `Cloud`, `Engineering`, `Security`, `Other`.
 
-Source-brand tints (used for image placeholders before / when the AI-generated thumbnail isn't present): AWS, Kubernetes/CNCF, OpenAI, Anthropic, GitHub, HashiCorp, Docker, NVIDIA, Hugging Face, Microsoft/Azure, Google/DeepMind, Databricks, Snyk, CISA, Stripe, Cloudflare, Meta, plus a `security` fallback for Krebs / Hacker News / Project Zero. Defined in [wordpress-plugin/ai-news-feed/style.css](wordpress-plugin/ai-news-feed/style.css), keyed off the source name via `ainfp_source_slug()` in [ai-news-feed.php](wordpress-plugin/ai-news-feed/ai-news-feed.php). Colors come from the [develeap-news-imagery skill](.claude/skills/develeap-news-imagery/references/brand-colors.md).
+Source-brand tints (used for image placeholders before / when the AI-generated thumbnail isn't present): AWS, Kubernetes/CNCF, OpenAI, Anthropic, GitHub, HashiCorp, Docker, NVIDIA, Hugging Face, Microsoft/Azure, Google/DeepMind, Databricks, Snyk, CISA, Stripe, Cloudflare, Meta, plus a `security` fallback for Krebs / Hacker News / Project Zero. Defined in [wordpress-plugin/ai-news-feed/style.css](wordpress-plugin/ai-news-feed/style.css), keyed off the source name via `ainfp_source_slug()` in [ai-news-feed.php](wordpress-plugin/ai-news-feed/ai-news-feed.php).
 
 ## Costs
 
@@ -167,7 +166,7 @@ Total steady state: **~$40/month** if image generation is enabled for every arti
 
 ## Roadmap
 
-Post-MVP roadmap and architecture migration plan live at `~/.claude/plans/ok-great-lets-continue-graceful-penguin.md` (outside the repo). Read it before designing changes that touch dedupe, categorization, or storage — captures decisions from prior conversations. Live tickets are tracked in [Backman](https://$BACKMAN_BASE_URL).
+Post-MVP roadmap and architecture migration plan live at `~/.claude/plans/ok-great-lets-continue-graceful-penguin.md` (outside the repo). Read it before designing changes that touch dedupe, categorization, or storage — captures decisions from prior conversations. Live tickets are tracked in Backman (URL in `.env` as `BACKMAN_BASE_URL`).
 
 **Done:**
 - Content-hash dedupe (re-process publisher edits)

@@ -1,21 +1,22 @@
 ---
 name: backman
-description: Use for any task involving Backman, Develeap's internal product backlog tool ($BACKMAN_BASE_URL). Trigger on mentions of "backman", "the backlog", "next version" / "scheduled features", "feature suggestions", "refused features", or product-version tags in a Develeap context. Provides the REST surface (products → features, versions), status flow (suggestion → backlog → scheduled → done; or refused), auth, and ready-to-run curl recipes.
+description: Use for any task involving Backman, an internal product-backlog tool. Trigger on mentions of "backman", "the backlog", "next version" / "scheduled features", "feature suggestions", "refused features", or product-version tags. Provides the REST surface (products → features, versions), status flow (suggestion → backlog → scheduled → done; or refused), auth, and ready-to-run curl recipes.
 version: 1.0.0
 disable-model-invocation: false
 ---
 
-# Backman — Develeap product backlog API
+# Backman — product backlog API
 
-Backman is Develeap's internal tool for organizing product work: feature suggestions land in **suggestion**, get promoted to **backlog**, scheduled into a **version**, and finally marked **done**. Items that won't be built get **refused** with a reason.
+Backman is an internal tool for organizing product work: feature suggestions land in **suggestion**, get promoted to **backlog**, scheduled into a **version**, and finally marked **done**. Items that won't be built get **refused** with a reason.
 
-This skill is for programmatic access via the public REST API at `https://$BACKMAN_BASE_URL/api/v1`. The web UI lives at the same host.
+This skill is for programmatic access via the REST API at `$BACKMAN_BASE_URL/api/v1`. The web UI lives at the same host.
 
 ## Auth
 
 - Bearer token, generated from the **API Tokens** menu inside a product's board.
 - One token = scoped to its product. To work across products you need separate tokens.
-- The skill expects two env vars:
+- The skill expects three env vars:
+  - `BACKMAN_BASE_URL` — base URL of the Backman instance (no trailing slash)
   - `BACKMAN_API_TOKEN` — the bearer token
   - `BACKMAN_PRODUCT_ID` — the product UUID for the current working context
 - These live in the project's `.env` (already gitignored alongside other secrets like `GEMINI_API_KEY`). Load them into the shell before running curl recipes:
@@ -49,7 +50,7 @@ Status transitions worth knowing:
 
 ## Endpoints (full surface)
 
-Base: `https://$BACKMAN_BASE_URL/api/v1`. Replace `$P` with product id, `$F` with feature id, `$V` with version id.
+Base: `$BACKMAN_BASE_URL/api/v1`. Replace `$P` with product id, `$F` with feature id, `$V` with version id.
 
 ### Features
 | Verb | Path | Body | Notes |
@@ -73,12 +74,12 @@ Base: `https://$BACKMAN_BASE_URL/api/v1`. Replace `$P` with product id, `$F` wit
 
 ## Recipes
 
-All examples assume `$BACKMAN_API_TOKEN` and `$BACKMAN_PRODUCT_ID` are set in the environment.
+All examples assume `$BACKMAN_BASE_URL`, `$BACKMAN_API_TOKEN`, and `$BACKMAN_PRODUCT_ID` are set in the environment.
 
 ```bash
 # Convenience header
 H="Authorization: Bearer $BACKMAN_API_TOKEN"
-B="https://$BACKMAN_BASE_URL/api/v1/products/$BACKMAN_PRODUCT_ID"
+B="$BACKMAN_BASE_URL/api/v1/products/$BACKMAN_PRODUCT_ID"
 
 # What's in the backlog right now?
 curl -sH "$H" "$B/features?status=backlog" | jq '.[] | {id, title, priority}'
