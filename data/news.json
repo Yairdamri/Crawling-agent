@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-05T09:49:44.365Z",
+  "generatedAt": "2026-05-05T09:53:50.382Z",
   "articles": [
     {
       "url": "https://hashicorp.com/blog/mitigate-credential-exposure-in-windows-environments-with-boundary-and-vault",
@@ -40,6 +40,46 @@
         "credential rotation"
       ],
       "imageFilename": "90bf0961cddc9e39.png"
+    },
+    {
+      "url": "https://thehackernews.com/2026/05/scarcruft-hacks-gaming-platform-to.html",
+      "title": "ScarCruft Hacks Gaming Platform to Deploy BirdCall Malware on Android and Windows",
+      "summary": "North Korea-aligned ScarCruft compromised a gaming platform in a supply-chain attack, distributing the BirdCall backdoor across Android and Windows to target ethnic Koreans in China. This marks the first cross-platform deployment of BirdCall, which previously focused on Windows only.",
+      "tags": [
+        "supply-chain",
+        "malware",
+        "Android",
+        "Windows",
+        "state-sponsored"
+      ],
+      "score": 7,
+      "category": "Security",
+      "why_it_matters": [
+        {
+          "lead": "Supply-chain trojanization",
+          "detail": "gaming platform compromised to distribute backdoor at scale"
+        },
+        {
+          "lead": "Cross-platform BirdCall",
+          "detail": "first Android variant of previously Windows-only backdoor"
+        },
+        {
+          "lead": "State-sponsored targeting",
+          "detail": "North Korea-aligned group focuses on diaspora communities"
+        }
+      ],
+      "relevant_for": [
+        "Android",
+        "Windows",
+        "supply-chain security",
+        "threat intelligence",
+        "malware analysis",
+        "app distribution platforms"
+      ],
+      "source": "The Hacker News",
+      "sourceDomain": "thehackernews.com",
+      "publishedAt": "2026-05-05T09:07:00.000Z",
+      "imageFilename": "6f00e082b53f4059.png"
     },
     {
       "url": "https://docker.com/blog/precision-container-security-with-docker-and-black-duck",
