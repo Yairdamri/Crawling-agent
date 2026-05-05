@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-05T02:52:46.531Z",
+  "generatedAt": "2026-05-05T08:59:46.530Z",
   "articles": [
     {
       "url": "https://hashicorp.com/blog/mitigate-credential-exposure-in-windows-environments-with-boundary-and-vault",
@@ -42,6 +42,126 @@
       "imageFilename": "90bf0961cddc9e39.png"
     },
     {
+      "url": "https://docker.com/blog/precision-container-security-with-docker-and-black-duck",
+      "title": "Precision Container Security with Docker and Black Duck",
+      "summary": "Docker and Black Duck integration uses VEX (Vulnerability Exploitability eXchange) statements and Docker Hardened Images to automatically triage container vulnerabilities, filtering base-layer noise from application-layer risk. The integration auto-detects DHI base images, enriches SBOMs with exploitability status, and reduces false-positive triage overhead.",
+      "tags": [
+        "container security",
+        "VEX",
+        "SBOM",
+        "vulnerability triage",
+        "DevOps"
+      ],
+      "score": 7,
+      "category": "DevOps",
+      "why_it_matters": [
+        {
+          "lead": "VEX integration",
+          "detail": "Automatically filters not-affected vulnerabilities from base images"
+        },
+        {
+          "lead": "Zero-config detection",
+          "detail": "Black Duck recognizes Docker Hardened Images without manual tagging"
+        },
+        {
+          "lead": "SBOM enrichment",
+          "detail": "Exports high-fidelity SBOMs with exploitability data for compliance"
+        }
+      ],
+      "relevant_for": [
+        "Docker",
+        "Black Duck",
+        "Docker Hardened Images",
+        "SBOM tools",
+        "container registries",
+        "vulnerability scanners"
+      ],
+      "source": "Docker Blog",
+      "sourceDomain": "docker.com",
+      "publishedAt": "2026-05-05T08:00:00.000Z",
+      "imageFilename": "c32d640498ded665.png"
+    },
+    {
+      "url": "https://thehackernews.com/2026/05/weaver-e-cology-rce-flaw-cve-2026-22679.html",
+      "title": "Weaver E-cology RCE Flaw CVE-2026-22679 Actively Exploited via Debug API",
+      "summary": "CVE-2026-22679 (CVSS 9.8) is an unauthenticated remote code execution vulnerability in Weaver E-cology 10.0 prior to version 20260312, exposed via an unprotected debug API endpoint at /papi/esearch/data/devops/. The flaw is under active exploitation in the wild.",
+      "tags": [
+        "CVE",
+        "RCE",
+        "unauthenticated",
+        "critical",
+        "Weaver E-cology"
+      ],
+      "score": 9,
+      "category": "Security",
+      "why_it_matters": [
+        {
+          "lead": "CVSS 9.8 RCE",
+          "detail": "Unauthenticated remote code execution via debug API endpoint"
+        },
+        {
+          "lead": "Active exploitation",
+          "detail": "Vulnerability is being weaponized in the wild now"
+        },
+        {
+          "lead": "Patch available",
+          "detail": "Update to Weaver E-cology 20260312 or later required immediately"
+        }
+      ],
+      "relevant_for": [
+        "Weaver E-cology",
+        "enterprise OA platforms",
+        "API security",
+        "vulnerability management",
+        "incident response",
+        "patch management"
+      ],
+      "source": "The Hacker News",
+      "sourceDomain": "thehackernews.com",
+      "publishedAt": "2026-05-05T07:37:00.000Z",
+      "imageFilename": "86ed162bfd02f725.png"
+    },
+    {
+      "url": "https://thehackernews.com/2026/05/microsoft-details-phishing-campaign.html",
+      "title": "Microsoft Details Phishing Campaign Targeting 35,000 Users Across 26 Countries",
+      "summary": "Microsoft disclosed a large-scale credential theft campaign spanning April 14-16, 2026, targeting over 35,000 users across 13,000+ organizations in 26 countries. The attack used code-of-conduct-themed lures and legitimate email services to redirect victims to attacker-controlled domains and steal authentication tokens.",
+      "tags": [
+        "phishing",
+        "credential theft",
+        "threat intelligence",
+        "multi-stage attack",
+        "authentication"
+      ],
+      "score": 7,
+      "category": "Security",
+      "why_it_matters": [
+        {
+          "lead": "35,000 users targeted",
+          "detail": "Large-scale campaign across 13,000+ organizations globally"
+        },
+        {
+          "lead": "Token theft focus",
+          "detail": "Attackers harvesting authentication credentials for account takeover"
+        },
+        {
+          "lead": "Legitimate email services",
+          "detail": "Campaign abused trusted email providers to bypass reputation filters"
+        }
+      ],
+      "relevant_for": [
+        "Microsoft 365",
+        "email security",
+        "identity providers",
+        "MFA/2FA systems",
+        "threat intelligence platforms",
+        "SIEM"
+      ],
+      "source": "The Hacker News",
+      "sourceDomain": "thehackernews.com",
+      "publishedAt": "2026-05-05T06:35:00.000Z",
+      "imageFilename": "b682a1a11046a7a4.png"
+    },
+    {
       "url": "https://thenewstack.io/feedback-driven-ai-adoption",
       "title": "AI won't speed up software delivery — nothing has",
       "summary": "The New Stack argues that organizations adopting AI with a myopic focus on speed miss the actual goal: getting feedback earlier to kill bad ideas quickly and reduce waste. The article critiques how the Agile movement similarly withered by focusing on velocity metrics rather than feedback loops and learning cycles.",
@@ -78,6 +198,46 @@
         "product development"
       ],
       "imageFilename": "e0a0800dc9e069a5.png"
+    },
+    {
+      "url": "https://openai.com/index/openai-pwc-finance-collaboration",
+      "title": "OpenAI and PwC collaborate to reimagine the office of the CFO",
+      "summary": "OpenAI and PwC are partnering to deploy AI agents for enterprise finance automation, targeting workflow optimization, forecasting accuracy, and control strengthening in the CFO function. The collaboration aims to modernize finance operations through agent-based automation of routine and complex financial tasks.",
+      "tags": [
+        "agents",
+        "enterprise",
+        "finance",
+        "automation",
+        "LLM"
+      ],
+      "score": 5,
+      "category": "AI",
+      "why_it_matters": [
+        {
+          "lead": "Enterprise agent deployment",
+          "detail": "Real-world use case for multi-step financial workflows and forecasting"
+        },
+        {
+          "lead": "PwC distribution channel",
+          "detail": "Signals OpenAI's push into professional services and large org adoption"
+        },
+        {
+          "lead": "Finance-specific agents",
+          "detail": "Agents handling compliance, controls, and forecasting beyond simple automation"
+        }
+      ],
+      "relevant_for": [
+        "OpenAI API",
+        "GPT-4",
+        "agent frameworks",
+        "enterprise finance platforms",
+        "workflow automation tools",
+        "PwC consulting stack"
+      ],
+      "source": "OpenAI Blog",
+      "sourceDomain": "openai.com",
+      "publishedAt": "2026-05-04T21:00:00.000Z",
+      "imageFilename": "cdcfbe5ff7de81aa.png"
     },
     {
       "url": "https://developer.nvidia.com/blog/optimize-supply-chain-decision-systems-using-nvidia-cuopt-agent-skills",
@@ -160,32 +320,42 @@
     {
       "url": "https://thehackernews.com/2026/05/phishing-campaign-hits-80-orgs-using.html",
       "title": "Phishing Campaign Hits 80+ Orgs Using SimpleHelp and ScreenConnect RMM Tools",
-      "summary": "A phishing campaign codenamed VENOMOUS#HELPER has targeted over 80 organizations since April 2025, leveraging legitimate Remote Monitoring and Management software (SimpleHelp and ScreenConnect) to establish persistent remote access on compromised hosts.",
-      "source": "The Hacker News",
+      "summary": "VENOMOUS#HELPER campaign has targeted 80+ organizations since April 2025, using legitimate RMM tools (SimpleHelp and ScreenConnect) as delivery vectors for persistent remote access. Most victims are in the U.S., and the campaign exploits trust in legitimate remote management software.",
       "tags": [
         "phishing",
-        "RMM",
-        "threat intelligence",
-        "security"
+        "RMM abuse",
+        "supply-chain",
+        "persistent access",
+        "threat intelligence"
       ],
       "score": 7,
       "category": "Security",
-      "publishedAt": "2026-05-04T18:06:00.000Z",
       "why_it_matters": [
         {
           "lead": "80+ organizations hit",
-          "detail": "VENOMOUS#HELPER phishing campaign since April 2025, mostly U.S. targets"
+          "detail": "Ongoing campaign since April 2025 using legitimate RMM tools"
         },
         {
-          "lead": "RMM abuse vector",
-          "detail": "SimpleHelp and ScreenConnect tools weaponized for persistent access"
+          "lead": "RMM as delivery vector",
+          "detail": "SimpleHelp and ScreenConnect abused to establish persistent remote access"
         },
         {
-          "lead": "Active campaign",
-          "detail": "ongoing threat using legitimate software as cover for compromise"
+          "lead": "Supply-chain trust abuse",
+          "detail": "Attackers leverage legitimate software to bypass endpoint defenses"
         }
       ],
-      "imageFilename": "a39606c5fcd8a9ea.png"
+      "relevant_for": [
+        "SimpleHelp",
+        "ScreenConnect",
+        "RMM platforms",
+        "endpoint detection",
+        "network access controls",
+        "threat hunting"
+      ],
+      "source": "The Hacker News",
+      "sourceDomain": "thehackernews.com",
+      "publishedAt": "2026-05-04T18:06:00.000Z",
+      "imageFilename": "b2321dddae0a870f.png"
     },
     {
       "url": "https://aws.amazon.com/blogs/machine-learning/beyond-bi-how-the-dataset-qa-feature-of-amazon-quick-powers-the-next-generation-of-data-decisions",
@@ -646,19 +816,42 @@
     {
       "url": "https://thehackernews.com/2026/05/silver-fox-deploys-abcdoor-malware-via.html",
       "title": "Silver Fox Deploys ABCDoor Malware via Tax-Themed Phishing in India and Russia",
-      "summary": "The China-based cybercrime group Silver Fox launched a phishing campaign using tax-themed emails impersonating India's Income Tax Department in December 2025, followed by similar attacks on Russian entities. The campaign deployed a new malware variant called ABCDoor targeting organizations across both regions.",
-      "source": "The Hacker News",
+      "summary": "China-based cybercrime group Silver Fox deployed new malware ABCDoor via phishing campaigns targeting Russia and India. December 2025 wave used Income Tax Department of India-themed emails targeting Indian organizations, followed by January 2026 campaign against Russian entities.",
       "tags": [
-        "security",
         "malware",
         "phishing",
-        "threat-intelligence",
-        "ABCDoor"
+        "ABCDoor",
+        "threat actor",
+        "supply-chain"
       ],
-      "score": 5,
+      "score": 6,
       "category": "Security",
+      "why_it_matters": [
+        {
+          "lead": "New malware family",
+          "detail": "ABCDoor deployed by Silver Fox in coordinated multi-region campaign"
+        },
+        {
+          "lead": "Tax authority impersonation",
+          "detail": "Phishing lures mimicked Income Tax Department of India correspondence"
+        },
+        {
+          "lead": "Dual-region targeting",
+          "detail": "Coordinated waves against India and Russia in Dec 2025 and Jan 2026"
+        }
+      ],
+      "relevant_for": [
+        "threat intelligence feeds",
+        "malware analysis platforms",
+        "email security",
+        "incident response",
+        "endpoint detection",
+        "YARA rules"
+      ],
+      "source": "The Hacker News",
+      "sourceDomain": "thehackernews.com",
       "publishedAt": "2026-05-04T11:57:00.000Z",
-      "imageFilename": "95809e6f73cd4871.png"
+      "imageFilename": "e523f4aff93a8000.png"
     },
     {
       "url": "https://cncf.io/blog/2026/05/04/securing-github-actions-ci-dependencies-recipe-card",
