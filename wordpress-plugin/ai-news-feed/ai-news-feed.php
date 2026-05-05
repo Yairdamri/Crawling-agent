@@ -2,7 +2,7 @@
 /**
  * Plugin Name: AI News Feed
  * Description: Renders an automated AI/DevOps/cloud news feed from a JSON URL produced by a GitHub Actions pipeline. Shortcodes: [ai_news_feed] (simple grid) and [ai_news_feed_page] (full magazine layout).
- * Version:     0.6.0
+ * Version:     0.7.0
  * Author:      AI News Feed
  * License:     MIT
  */
@@ -11,12 +11,20 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-const AINF_OPTION_KEY     = 'ainf_settings';
-const AINF_TRANSIENT_KEY  = 'ainf_data';
-const AINF_DEFAULT_TTL    = 3600;
-const AINF_DEFAULT_LIMIT  = 50;
-const AINF_HTTP_TIMEOUT   = 10;
-const AINF_SCHEMA_VERSION = 1;
+const AINF_OPTION_KEY        = 'ainf_settings';
+const AINF_TRANSIENT_KEY     = 'ainf_data';
+const AINF_DEFAULT_TTL       = 3600;
+const AINF_DEFAULT_LIMIT     = 50;
+const AINF_HTTP_TIMEOUT      = 10;
+// Pretty per-article URLs are mounted at /<AINF_NEWS_PAGE_SLUG>/<article-slug>/.
+// The host page (the one containing [ai_news_feed_page]) must have this slug.
+const AINF_NEWS_PAGE_SLUG    = 'news';
+const AINF_PLUGIN_VERSION    = '0.7.0';
+
+function ainf_is_supported_schema($v) {
+    $v = (int) $v;
+    return $v === 1 || $v === 2;
+}
 
 function ainf_get_settings() {
     $defaults = array(
@@ -57,7 +65,7 @@ function ainf_fetch_data($force = false) {
     if (!is_array($parsed) || !isset($parsed['articles']) || !is_array($parsed['articles'])) {
         return array('articles' => array(), 'error' => 'Malformed JSON.');
     }
-    if (isset($parsed['schemaVersion']) && (int) $parsed['schemaVersion'] !== AINF_SCHEMA_VERSION) {
+    if (isset($parsed['schemaVersion']) && !ainf_is_supported_schema($parsed['schemaVersion'])) {
         return array('articles' => array(), 'error' => 'Unsupported schemaVersion.');
     }
 
@@ -189,7 +197,7 @@ function ainf_shortcode($atts) {
     }
     $articles = array_slice($articles, 0, $limit);
 
-    wp_enqueue_style('ainf-style', plugin_dir_url(__FILE__) . 'style.css', array(), '0.6.0');
+    wp_enqueue_style('ainf-style', plugin_dir_url(__FILE__) . 'style.css', array(), AINF_PLUGIN_VERSION);
 
     if (empty($articles)) {
         $msg = isset($data['error']) && $data['error']
@@ -302,6 +310,28 @@ function ainfp_article_hash($article) {
     return preg_match('/^[a-f0-9]{8,64}$/i', $hash) ? strtolower($hash) : '';
 }
 
+// Pull the trailing 8-char hex hash off a pretty slug.
+// Pipeline shape is "<title-slug>-<shorthash8>"; resolution uses ONLY the
+// suffix, so a typo in the title-slug part still resolves correctly.
+// Backward-compat: a bare hash works too (covers any old links).
+function ainf_extract_hash_from_slug($slug) {
+    $slug = is_string($slug) ? trim($slug, "/ \t\n\r\0\x0B") : '';
+    if ($slug === '') return '';
+    if (preg_match('/-([a-f0-9]{8})$/i', $slug, $m)) return strtolower($m[1]);
+    if (preg_match('/^([a-f0-9]{8,64})$/i', $slug, $m)) return strtolower(substr($m[1], 0, 8));
+    return '';
+}
+
+function ainf_find_article_by_slug($articles, $slug) {
+    $hash = ainf_extract_hash_from_slug($slug);
+    if ($hash === '') return null;
+    foreach ($articles as $a) {
+        $ah = ainfp_article_hash($a);
+        if ($ah !== '' && strpos($ah, $hash) === 0) return $a;
+    }
+    return null;
+}
+
 function ainfp_favicon_url($domain, $size = 64) {
     $domain = strtolower(trim((string) $domain));
     if ($domain === '' || !preg_match('/^[a-z0-9.-]+\.[a-z]{2,}$/i', $domain)) return '';
@@ -392,6 +422,7 @@ function ainfp_render_grid_card($article, $image_base, $idx = 0) {
     $image_url     = ainfp_image_url_for($article, $image_base);
     $score_class   = ainfp_score_class($score);
     $hash          = ainfp_article_hash($article);
+    $slug          = isset($article['slug']) ? (string) $article['slug'] : '';
     $modal_id      = $hash !== '' ? 'ainfp-modal-' . $hash : 'ainfp-modal-' . (int) $idx;
 
     $date_display = '';
@@ -410,6 +441,7 @@ function ainfp_render_grid_card($article, $image_base, $idx = 0) {
              data-search="<?php echo esc_attr($search_blob); ?>"
              data-modal-id="<?php echo esc_attr($modal_id); ?>"
              data-content-hash="<?php echo esc_attr($hash); ?>"
+             data-slug="<?php echo esc_attr($slug); ?>"
              role="button"
              tabindex="0"
              aria-haspopup="dialog"
@@ -484,7 +516,7 @@ function ainfp_render_article_modal($article, $image_base, $idx = 0) {
 
     ob_start();
     ?>
-    <div class="ainfp-modal" id="<?php echo esc_attr($modal_id); ?>" data-content-hash="<?php echo esc_attr($hash); ?>" role="dialog" aria-modal="true" aria-labelledby="<?php echo esc_attr($title_id); ?>" hidden>
+    <div class="ainfp-modal" id="<?php echo esc_attr($modal_id); ?>" data-content-hash="<?php echo esc_attr($hash); ?>" data-slug="<?php echo esc_attr(isset($article['slug']) ? (string) $article['slug'] : ''); ?>" role="dialog" aria-modal="true" aria-labelledby="<?php echo esc_attr($title_id); ?>" hidden>
         <div class="ainfp-modal-backdrop" data-modal-close="1"></div>
         <div class="ainfp-modal-panel" role="document">
             <header class="ainfp-modal-header">
@@ -593,8 +625,8 @@ function ainfp_page_shortcode($atts) {
     $data = ainf_fetch_data();
     $articles = isset($data['articles']) ? $data['articles'] : array();
 
-    wp_enqueue_style('ainf-style', plugin_dir_url(__FILE__) . 'style.css', array(), '0.6.0');
-    wp_enqueue_script('ainfp-script', plugin_dir_url(__FILE__) . 'script.js', array(), '0.6.0', true);
+    wp_enqueue_style('ainf-style', plugin_dir_url(__FILE__) . 'style.css', array(), AINF_PLUGIN_VERSION);
+    wp_enqueue_script('ainfp-script', plugin_dir_url(__FILE__) . 'script.js', array(), AINF_PLUGIN_VERSION, true);
 
     if (empty($articles)) {
         $msg = isset($data['error']) && $data['error']
@@ -629,11 +661,16 @@ function ainfp_page_shortcode($atts) {
         if ($c !== '' && !in_array($c, $cats_seen, true)) $cats_seen[] = $c;
     }
 
+    $news_base_url = home_url('/' . AINF_NEWS_PAGE_SLUG . '/');
+    $initial_slug  = (string) get_query_var('ainf_slug');
+
     ob_start();
     ?>
     <div class="ainfp-site">
         <?php echo ainfp_render_site_header(); ?>
-        <div class="ainfp-page">
+        <div class="ainfp-page"
+             data-news-base-url="<?php echo esc_attr($news_base_url); ?>"
+             data-initial-article-slug="<?php echo esc_attr($initial_slug); ?>">
         <header class="ainfp-hero">
             <h1 class="ainfp-hero-title">The develeap news feed</h1>
             <p class="ainfp-hero-tagline">A curated, ranked stream of the news that actually moves our craft.</p>
@@ -797,3 +834,89 @@ function ainf_render_settings_page() {
     </div>
     <?php
 }
+
+/* -----------------------------------------------------------------
+ * Pretty per-article URLs: /<news-page-slug>/<article-slug>/
+ *
+ * Rewrite maps the path to the WP page hosting [ai_news_feed_page]
+ * plus an `ainf_slug` query var. The shortcode reads that query var
+ * to render per-article OG meta (so link unfurlers and crawlers see
+ * the article-specific title/image) and pass it to script.js, which
+ * opens the matching modal on load.
+ *
+ * The legacy ?article=<hash> param still works (handled in script.js)
+ * so any links shared before this change keep resolving.
+ * ----------------------------------------------------------------- */
+
+function ainf_register_rewrite() {
+    $page = AINF_NEWS_PAGE_SLUG;
+    add_rewrite_rule(
+        '^' . preg_quote($page, '#') . '/([^/]+)/?$',
+        'index.php?pagename=' . $page . '&ainf_slug=$matches[1]',
+        'top'
+    );
+}
+add_action('init', 'ainf_register_rewrite');
+
+function ainf_register_query_vars($vars) {
+    $vars[] = 'ainf_slug';
+    return $vars;
+}
+add_filter('query_vars', 'ainf_register_query_vars');
+
+function ainf_activate() {
+    ainf_register_rewrite();
+    flush_rewrite_rules();
+}
+register_activation_hook(__FILE__, 'ainf_activate');
+
+function ainf_deactivate() {
+    flush_rewrite_rules();
+}
+register_deactivation_hook(__FILE__, 'ainf_deactivate');
+
+function ainf_inject_article_meta() {
+    $slug = (string) get_query_var('ainf_slug');
+    if ($slug === '') return;
+    $data = ainf_fetch_data();
+    $articles = isset($data['articles']) ? $data['articles'] : array();
+    $article = ainf_find_article_by_slug($articles, $slug);
+    if (!$article) return;
+
+    $title   = isset($article['title']) ? (string) $article['title'] : '';
+    $summary = isset($article['summary']) ? (string) $article['summary'] : '';
+    $image_url = ainfp_image_url_for($article, ainf_image_base_url());
+    $canonical = home_url('/' . AINF_NEWS_PAGE_SLUG . '/' . (isset($article['slug']) ? (string) $article['slug'] : '') . '/');
+
+    echo "\n<!-- AI News Feed: per-article meta -->\n";
+    if ($title !== '') {
+        echo '<meta property="og:title" content="' . esc_attr($title) . '">' . "\n";
+        echo '<meta name="twitter:title" content="' . esc_attr($title) . '">' . "\n";
+    }
+    if ($summary !== '') {
+        echo '<meta property="og:description" content="' . esc_attr($summary) . '">' . "\n";
+        echo '<meta name="description" content="' . esc_attr($summary) . '">' . "\n";
+        echo '<meta name="twitter:description" content="' . esc_attr($summary) . '">' . "\n";
+    }
+    if ($image_url !== '') {
+        echo '<meta property="og:image" content="' . esc_url($image_url) . '">' . "\n";
+        echo '<meta name="twitter:image" content="' . esc_url($image_url) . '">' . "\n";
+        echo '<meta name="twitter:card" content="summary_large_image">' . "\n";
+    }
+    echo '<meta property="og:type" content="article">' . "\n";
+    echo '<meta property="og:url" content="' . esc_url($canonical) . '">' . "\n";
+    echo '<link rel="canonical" href="' . esc_url($canonical) . '">' . "\n";
+}
+add_action('wp_head', 'ainf_inject_article_meta', 5);
+
+function ainf_filter_document_title($title_parts) {
+    $slug = (string) get_query_var('ainf_slug');
+    if ($slug === '') return $title_parts;
+    $data = ainf_fetch_data();
+    $articles = isset($data['articles']) ? $data['articles'] : array();
+    $article = ainf_find_article_by_slug($articles, $slug);
+    if (!$article || empty($article['title'])) return $title_parts;
+    $title_parts['title'] = (string) $article['title'];
+    return $title_parts;
+}
+add_filter('document_title_parts', 'ainf_filter_document_title');

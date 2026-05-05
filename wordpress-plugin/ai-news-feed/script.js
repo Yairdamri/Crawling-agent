@@ -81,10 +81,25 @@
         var root = page.parentNode || page;
         var openModal = null;
         var lastTrigger = null;
+        var newsBaseUrl = page.getAttribute('data-news-base-url') || '';
+        var newsBasePath = '';
+        if (newsBaseUrl) {
+            try { newsBasePath = new URL(newsBaseUrl, window.location.origin).pathname; }
+            catch (e) { newsBasePath = newsBaseUrl; }
+            if (newsBasePath && newsBasePath.charAt(newsBasePath.length - 1) !== '/') newsBasePath += '/';
+        }
+        // The original (pre-modal) URL we should restore to on close. Captured
+        // once at init so it's stable even after pushState.
+        var landingUrl = window.location.pathname + window.location.search + window.location.hash;
 
         function findModalByHash(hash) {
             if (!hash) return null;
             return root.querySelector('.ainfp-modal[data-content-hash="' + cssEscape(hash) + '"]');
+        }
+
+        function findCardBySlug(slug) {
+            if (!slug) return null;
+            return root.querySelector('.ainfp-grid-card[data-slug="' + cssEscape(slug) + '"]');
         }
 
         function findCardByHash(hash) {
@@ -92,27 +107,27 @@
             return root.querySelector('.ainfp-grid-card[data-content-hash="' + cssEscape(hash) + '"]');
         }
 
-        function urlHasArticleParam() {
-            return new URLSearchParams(window.location.search).has('article');
+        function slugFromCurrentPath() {
+            if (!newsBasePath) return '';
+            var p = window.location.pathname;
+            if (p.indexOf(newsBasePath) !== 0) return '';
+            var rest = p.slice(newsBasePath.length).replace(/\/+$/, '');
+            // Only treat as a slug if it's a single segment.
+            return rest.indexOf('/') === -1 ? rest : '';
         }
 
-        function pushArticleUrl(hash) {
-            var params = new URLSearchParams(window.location.search);
-            params.set('article', hash);
-            var url = window.location.pathname + '?' + params.toString() + window.location.hash;
-            window.history.pushState({ article: hash }, '', url);
+        function pushArticleUrl(slug) {
+            if (!newsBaseUrl || !slug) return;
+            var url = newsBaseUrl + slug + '/' + window.location.hash;
+            window.history.pushState({ articleSlug: slug }, '', url);
         }
 
-        function clearArticleUrl(replace) {
-            var params = new URLSearchParams(window.location.search);
-            params.delete('article');
-            var qs = params.toString();
-            var url = window.location.pathname + (qs ? '?' + qs : '') + window.location.hash;
-            if (replace) {
-                window.history.replaceState({}, '', url);
-            } else {
-                window.history.pushState({}, '', url);
-            }
+        // Restore the URL the visitor actually arrived on (strips slug or
+        // legacy ?article= param). Used when closing a modal opened during
+        // this visit but NOT from a deep-link landing.
+        function restoreLandingUrl(replace) {
+            if (replace) window.history.replaceState({}, '', landingUrl);
+            else window.history.pushState({}, '', landingUrl);
         }
 
         function open(hash, trigger, opts) {
@@ -125,7 +140,10 @@
             document.body.classList.add('ainfp-no-scroll');
             openModal = modal;
             lastTrigger = trigger || null;
-            if (!opts.skipHistory) pushArticleUrl(hash);
+            if (!opts.skipHistory) {
+                var slug = modal.getAttribute('data-slug');
+                if (slug) pushArticleUrl(slug);
+            }
             var closeBtn = modal.querySelector('.ainfp-modal-close');
             if (closeBtn) closeBtn.focus();
             return true;
@@ -145,14 +163,14 @@
 
         function close() {
             if (!openModal) return;
-            // Only walk back if we ourselves pushed the ?article= state — i.e.
-            // the user opened the modal by clicking a card during this visit.
-            // If they landed directly on a shared URL, history.back() would
-            // exit the site, so instead clean the URL via replaceState.
-            if (window.history.state && window.history.state.article) {
+            // Walk back if we ourselves pushed history during this visit. If
+            // the user landed on a deep link, history.back() would exit the
+            // site — so we replaceState to the landing URL instead.
+            var st = window.history.state;
+            if (st && (st.articleSlug || st.article)) {
                 window.history.back();
             } else {
-                if (urlHasArticleParam()) clearArticleUrl(true);
+                restoreLandingUrl(true);
                 closeVisual();
             }
         }
@@ -187,27 +205,52 @@
         });
 
         // Sync modal state with URL on back/forward navigation.
-        // The browser handles the URL change; we just open or close visually.
         window.addEventListener('popstate', function () {
-            var hash = new URLSearchParams(window.location.search).get('article');
-            if (hash) {
-                var card = findCardByHash(hash);
-                open(hash, card, { skipHistory: true });
+            var slug = slugFromCurrentPath();
+            if (slug) {
+                var card = findCardBySlug(slug);
+                if (card) {
+                    var hash = card.getAttribute('data-content-hash');
+                    open(hash, card, { skipHistory: true });
+                    return;
+                }
+            }
+            // Legacy fallback: ?article=<hash> may still appear in history.
+            var legacyHash = new URLSearchParams(window.location.search).get('article');
+            if (legacyHash) {
+                var card2 = findCardByHash(legacyHash);
+                open(legacyHash, card2, { skipHistory: true });
             } else {
                 closeVisual();
             }
         });
 
-        // Direct landing: if URL already has ?article=<hash>, open it without
-        // pushing a new history entry (the URL is already there).
-        var initialHash = new URLSearchParams(window.location.search).get('article');
-        if (initialHash) {
-            var card = findCardByHash(initialHash);
-            var opened = open(initialHash, card, { skipHistory: true });
-            if (!opened) {
-                // Aged-out / unknown article — silently clear the param so the
-                // URL doesn't linger past this navigation.
-                clearArticleUrl(true);
+        // Direct landing — server passes the slug via data-initial-article-slug
+        // (rendered from the rewrite's ainf_slug query var). Falls back to the
+        // legacy ?article=<hash> param so links shared before this change still
+        // resolve.
+        var initialSlug = page.getAttribute('data-initial-article-slug') || '';
+        if (initialSlug) {
+            var card = findCardBySlug(initialSlug);
+            if (card) {
+                var hash = card.getAttribute('data-content-hash');
+                open(hash, card, { skipHistory: true });
+            }
+            // If unknown/aged-out, leave the URL alone — server already
+            // returned the page; only the modal silently fails to open.
+        } else {
+            var legacyInitialHash = new URLSearchParams(window.location.search).get('article');
+            if (legacyInitialHash) {
+                var legacyCard = findCardByHash(legacyInitialHash);
+                var opened = open(legacyInitialHash, legacyCard, { skipHistory: true });
+                if (!opened) {
+                    // Aged-out — strip the dangling param.
+                    var params = new URLSearchParams(window.location.search);
+                    params.delete('article');
+                    var qs = params.toString();
+                    var url = window.location.pathname + (qs ? '?' + qs : '') + window.location.hash;
+                    window.history.replaceState({}, '', url);
+                }
             }
         }
     }

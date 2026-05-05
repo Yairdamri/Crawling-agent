@@ -3,9 +3,28 @@ import { readFile, writeFile } from 'node:fs/promises';
 const RETENTION_DAYS = 30;
 const SEEN_RETENTION_DAYS = 60;
 const MIN_SCORE = 5;
-const SCHEMA_VERSION = 1;
+const SCHEMA_VERSION = 2;
 
 const DAY_MS = 24 * 60 * 60 * 1000;
+
+const DIACRITIC_RE = new RegExp('[\\u0300-\\u036f]', 'g');
+
+function slugify(title) {
+  return String(title || '')
+    .toLowerCase()
+    .normalize('NFKD')
+    .replace(DIACRITIC_RE, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '')
+    .slice(0, 60)
+    .replace(/-+$/, '');
+}
+
+function articleSlug(article) {
+  const base = slugify(article?.title) || 'article';
+  const suffix = String(article?.contentHash || '').slice(0, 8);
+  return suffix ? `${base}-${suffix}` : base;
+}
 
 function isWithinDays(isoDate, days) {
   if (!isoDate) return false;
@@ -28,12 +47,16 @@ export async function mergeAndWrite({ newsPath, seenPath, processed, seenMap, ha
   const existing = await readJson(newsPath, { schemaVersion: SCHEMA_VERSION, articles: [] });
   const existingArticles = Array.isArray(existing.articles) ? existing.articles : [];
 
-  const filtered = processed.filter((a) =>
-    Number.isInteger(a.score) && a.score >= MIN_SCORE && typeof a.imageFilename === 'string' && a.imageFilename !== ''
-  );
+  const filtered = processed
+    .filter((a) =>
+      Number.isInteger(a.score) && a.score >= MIN_SCORE && typeof a.imageFilename === 'string' && a.imageFilename !== ''
+    )
+    .map((a) => (a.slug ? a : { ...a, slug: articleSlug(a) }));
 
   const byUrl = new Map();
-  for (const a of existingArticles) byUrl.set(a.url, a);
+  for (const a of existingArticles) {
+    byUrl.set(a.url, a.slug ? a : { ...a, slug: articleSlug(a) });
+  }
   for (const a of filtered) byUrl.set(a.url, a);
 
   const merged = Array.from(byUrl.values())
