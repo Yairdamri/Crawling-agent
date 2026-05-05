@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-05T08:59:46.530Z",
+  "generatedAt": "2026-05-05T09:49:44.365Z",
   "articles": [
     {
       "url": "https://hashicorp.com/blog/mitigate-credential-exposure-in-windows-environments-with-boundary-and-vault",
@@ -660,94 +660,6 @@
         }
       ],
       "imageFilename": "4b17e812bff4ec82.png"
-    },
-    {
-      "url": "https://thenewstack.io/openai-ory-identity-scale",
-      "title": "How OpenAI scaled to 900 million weekly users with Ory",
-      "summary": "OpenAI built a custom identity and access management layer using Ory to handle 900 million weekly active users, avoiding traditional monolithic IAM solutions. The architecture solves database bottlenecks and latency challenges inherent in global multi-region identity distribution at scale.",
-      "source": "The New Stack",
-      "tags": [
-        "infrastructure",
-        "IAM",
-        "scale",
-        "observability"
-      ],
-      "score": 7,
-      "category": "Cloud",
-      "publishedAt": "2026-05-04T16:00:00.000Z",
-      "why_it_matters": [
-        {
-          "lead": "900M weekly users",
-          "detail": "OpenAI's scale requires custom identity layer, not off-shelf IAM"
-        },
-        {
-          "lead": "Ory-based architecture",
-          "detail": "horizontal scaling without database bottlenecks or latency penalties"
-        },
-        {
-          "lead": "Multi-region deployment",
-          "detail": "global accessibility with security and flexibility across regions"
-        }
-      ]
-    },
-    {
-      "url": "https://thenewstack.io/ai-agent-telemetry-standardization",
-      "title": "Arize AI and Google Cloud lay down standardized telemetry mandate to keep enterprise agents in check",
-      "summary": "Arize AI and Google Cloud are pushing OpenTelemetry and OpenInference standards for agent telemetry to provide visibility into multi-tool, multi-model agentic systems without losing architectural flexibility. Standardized traces enable consistent observability as enterprise agent stacks evolve across cloud deployments.",
-      "source": "The New Stack",
-      "tags": [
-        "agents",
-        "observability",
-        "OpenTelemetry",
-        "OpenInference",
-        "telemetry"
-      ],
-      "score": 8,
-      "category": "AI",
-      "publishedAt": "2026-05-04T15:00:00.000Z",
-      "why_it_matters": [
-        {
-          "lead": "OpenTelemetry + OpenInference",
-          "detail": "standardized trace format for agentic systems across multi-cloud stacks"
-        },
-        {
-          "lead": "Agent visibility mandate",
-          "detail": "track tool calls, model responses, memory reads, MCP interactions"
-        },
-        {
-          "lead": "Composable architecture",
-          "detail": "maintain optionality while keeping observability consistent as stack changes"
-        }
-      ]
-    },
-    {
-      "url": "https://thenewstack.io/palo-alto-portkey-ai-gateway",
-      "title": "Palo Alto Networks makes a $700M-class AI bet on Portkey gateway",
-      "summary": "Palo Alto Networks announced intent to acquire Portkey and integrate it into Prisma AIRS as a unified control plane for securing AI transactions. The AI gateway layer, which sees every prompt, model response, tool call, and MCP interaction, shifts from developer plumbing to enterprise security checkpoint.",
-      "source": "The New Stack",
-      "tags": [
-        "AI gateway",
-        "security",
-        "agents",
-        "LLM"
-      ],
-      "score": 8,
-      "category": "AI",
-      "publishedAt": "2026-05-04T14:49:24.000Z",
-      "why_it_matters": [
-        {
-          "lead": "Palo Alto acquires Portkey",
-          "detail": "700M-class deal integrates AI gateway into Prisma AIRS control plane"
-        },
-        {
-          "lead": "Gateway as checkpoint",
-          "detail": "processes trillions of tokens monthly, sees all agent-model interactions"
-        },
-        {
-          "lead": "Security layer shift",
-          "detail": "AI gateway moves from developer tool to enterprise security mandate"
-        }
-      ]
     },
     {
       "url": "https://thehackernews.com/2026/05/weekly-recap-ai-powered-phishing.html",

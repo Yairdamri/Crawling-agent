@@ -1,4 +1,5 @@
 import { BedrockRuntimeClient, ConverseCommand } from '@aws-sdk/client-bedrock-runtime';
+import { withRetry, RETRY_DELAYS_MS } from './retry.mjs';
 
 const REGION = process.env.AWS_REGION || 'us-east-1';
 const MODEL_ID = 'us.anthropic.claude-haiku-4-5-20251001-v1:0';
@@ -145,41 +146,6 @@ function chunk(arr, size) {
 }
 
 const CONCURRENCY = 5;
-const RETRY_DELAYS_MS = [1000, 4000, 16000];
-
-function sleep(ms) {
-  return new Promise((r) => setTimeout(r, ms));
-}
-
-function isTransient(err) {
-  const code = err?.$metadata?.httpStatusCode;
-  if (code >= 500 && code < 600) return true;
-  if (code === 429) return true;
-  const name = err?.name || '';
-  if (name === 'ThrottlingException' || name === 'TooManyRequestsException') return true;
-  if (name === 'ServiceUnavailableException' || name === 'InternalServerException') return true;
-  if (name === 'ModelTimeoutException') return true;
-  const msg = err?.message || '';
-  return /timeout|ECONN|ENETUNREACH|EAI_AGAIN|socket hang up/i.test(msg);
-}
-
-async function withRetry(fn, label) {
-  let lastErr;
-  for (let attempt = 0; attempt <= RETRY_DELAYS_MS.length; attempt++) {
-    try {
-      return await fn();
-    } catch (err) {
-      lastErr = err;
-      const transient = isTransient(err);
-      const isLast = attempt === RETRY_DELAYS_MS.length;
-      if (!transient || isLast) throw err;
-      const wait = RETRY_DELAYS_MS[attempt];
-      console.warn(`[bedrock] ${label} attempt ${attempt + 1} failed (${err.message}). Retrying in ${wait}ms.`);
-      await sleep(wait);
-    }
-  }
-  throw lastErr;
-}
 
 async function runWithConcurrency(tasks, limit) {
   const results = new Array(tasks.length);
@@ -265,7 +231,7 @@ export async function processArticles(items) {
   const tasks = batches.map((batch, i) => async () => {
     const label = `batch ${i + 1}/${batches.length} (${batch.length} articles)`;
     console.log(`[bedrock] ${label} starting`);
-    const out = await withRetry(() => processBatch(client, batch), label);
+    const out = await withRetry(() => processBatch(client, batch), `[bedrock] ${label}`);
     console.log(`[bedrock] ${label} done (${out.length} articles)`);
     return out;
   });
