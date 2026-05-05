@@ -2,6 +2,7 @@ import { writeFile, mkdir, access } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import { join } from 'node:path';
 import { GoogleGenAI } from '@google/genai';
+import { withRetry } from './retry.mjs';
 
 const MODEL = process.env.GEMINI_IMAGE_MODEL || 'gemini-2.5-flash-image';
 const PROJECT = process.env.GCP_PROJECT || 'crawling-agent';
@@ -169,6 +170,12 @@ async function fileExists(path) {
   try { await access(path); return true; } catch { return false; }
 }
 
+// Mutates each article in place by setting article.imageFilename on success.
+// fetch.mjs passes a `keepers` subarray whose elements share refs with the
+// `processed` array sent to mergeAndWrite, so the mutation threads through
+// to store.mjs's imageFilename filter. Refactoring this to return new
+// objects without updating the caller would silently empty news.json —
+// every article would fail the imageFilename filter. Load-bearing contract.
 export async function generateImages(articles, hashByUrl, outDir) {
   if (!articles.length) return articles;
   if (!process.env.GOOGLE_APPLICATION_CREDENTIALS && !process.env.GOOGLE_CLOUD_PROJECT) {
@@ -191,17 +198,23 @@ export async function generateImages(articles, hashByUrl, outDir) {
       cached++;
       continue;
     }
+
     try {
       const prompt = buildImagePrompt(article);
-      const bytes = await generateImage(prompt);
+      const bytes = await withRetry(
+        () => generateImage(prompt),
+        `[images] ${article.url}`,
+        { shouldRetry: () => true }
+      );
       await writeFile(path, bytes);
       article.imageFilename = filename;
       generated++;
     } catch (err) {
-      console.warn(`[images] gen failed for ${article.url}: ${err.message}`);
       failed++;
+      console.warn(`[images] gen failed for ${article.url}: ${err.message}`);
     }
   }
+
   console.log(`[images] generated: ${generated}, cached: ${cached}, failed: ${failed}`);
   return articles;
 }
