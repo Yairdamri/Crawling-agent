@@ -2771,8 +2771,8 @@
   },
   {
     "url": "https://thehackernews.com/2026/05/silver-fox-deploys-abcdoor-malware-via.html",
-    "seenAt": "2026-05-04T14:23:59.108Z",
-    "contentHash": "95809e6f73cd4871"
+    "seenAt": "2026-05-05T08:59:46.536Z",
+    "contentHash": "e523f4aff93a8000"
   },
   {
     "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-whats-next-with-aws-2026-amazon-quick-openai-partnership-and-more-may-4-2026",
@@ -2876,8 +2876,8 @@
   },
   {
     "url": "https://thehackernews.com/2026/05/phishing-campaign-hits-80-orgs-using.html",
-    "seenAt": "2026-05-04T19:24:52.041Z",
-    "contentHash": "a39606c5fcd8a9ea"
+    "seenAt": "2026-05-05T08:59:46.536Z",
+    "contentHash": "b2321dddae0a870f"
   },
   {
     "url": "https://thehackernews.com/2026/05/progress-patches-critical-moveit.html",
@@ -2928,5 +2928,30 @@
     "url": "https://hashicorp.com/blog/how-vault-secrets-operator-vso-automates-secret-management-for-enterprises-on-kub",
     "seenAt": "2026-05-05T02:52:46.536Z",
     "contentHash": "bed45ab8daa9fca8"
+  },
+  {
+    "url": "https://openai.com/index/openai-pwc-finance-collaboration",
+    "seenAt": "2026-05-05T08:59:46.536Z",
+    "contentHash": "cdcfbe5ff7de81aa"
+  },
+  {
+    "url": "https://databricks.com/blog/peril-predicts-precision-payouts-volatile-world",
+    "seenAt": "2026-05-05T08:59:46.536Z",
+    "contentHash": "5b854ee25006d89d"
+  },
+  {
+    "url": "https://docker.com/blog/precision-container-security-with-docker-and-black-duck",
+    "seenAt": "2026-05-05T08:59:46.536Z",
+    "contentHash": "c32d640498ded665"
+  },
+  {
+    "url": "https://thehackernews.com/2026/05/weaver-e-cology-rce-flaw-cve-2026-22679.html",
+    "seenAt": "2026-05-05T08:59:46.536Z",
+    "contentHash": "86ed162bfd02f725"
+  },
+  {
+    "url": "https://thehackernews.com/2026/05/microsoft-details-phishing-campaign.html",
+    "seenAt": "2026-05-05T08:59:46.536Z",
+    "contentHash": "b682a1a11046a7a4"
   }
 ]
