@@ -1,7 +1,162 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-04T19:53:34.963Z",
+  "generatedAt": "2026-05-05T02:52:46.531Z",
   "articles": [
+    {
+      "url": "https://hashicorp.com/blog/mitigate-credential-exposure-in-windows-environments-with-boundary-and-vault",
+      "title": "Mitigate credential exposure in Windows environments with Boundary and Vault",
+      "summary": "HashiCorp addresses static credential risks in Windows environments by combining Boundary for remote access and Vault for secrets management, eliminating shared local admin accounts, long-lived domain accounts, and manually provisioned credentials. The approach replaces months-long credential validity windows with automated rotation and just-in-time access.",
+      "source": "HashiCorp Blog",
+      "tags": [
+        "secrets management",
+        "Windows security",
+        "credential rotation",
+        "remote access",
+        "Vault"
+      ],
+      "score": 6,
+      "category": "Security",
+      "publishedAt": "2026-05-14T07:09:00.000Z",
+      "why_it_matters": [
+        {
+          "lead": "Static credentials months-old",
+          "detail": "Windows environments rely on shared admin accounts valid for years"
+        },
+        {
+          "lead": "Boundary plus Vault",
+          "detail": "just-in-time access replaces RDP credential sharing and break-glass scenarios"
+        },
+        {
+          "lead": "Automated rotation",
+          "detail": "eliminates manual provisioning burden that enables credential reuse"
+        }
+      ],
+      "relevant_for": [
+        "HashiCorp Vault",
+        "HashiCorp Boundary",
+        "Windows servers",
+        "RDP access",
+        "secrets management",
+        "credential rotation"
+      ],
+      "imageFilename": "90bf0961cddc9e39.png"
+    },
+    {
+      "url": "https://thenewstack.io/feedback-driven-ai-adoption",
+      "title": "AI won't speed up software delivery — nothing has",
+      "summary": "The New Stack argues that organizations adopting AI with a myopic focus on speed miss the actual goal: getting feedback earlier to kill bad ideas quickly and reduce waste. The article critiques how the Agile movement similarly withered by focusing on velocity metrics rather than feedback loops and learning cycles.",
+      "source": "The New Stack",
+      "tags": [
+        "AI adoption",
+        "feedback loops",
+        "software delivery",
+        "organizational change"
+      ],
+      "score": 5,
+      "category": "Other",
+      "publishedAt": "2026-05-04T21:38:28.000Z",
+      "why_it_matters": [
+        {
+          "lead": "Speed is not the goal",
+          "detail": "feedback loops and early failure detection matter more than throughput"
+        },
+        {
+          "lead": "Agile precedent",
+          "detail": "velocity metrics became the goal, gutting the movement's actual value"
+        },
+        {
+          "lead": "AI adoption risk",
+          "detail": "organizations repeating same mistake by chasing speed over learning"
+        }
+      ],
+      "relevant_for": [
+        "AI adoption frameworks",
+        "feedback systems",
+        "software delivery metrics",
+        "organizational learning",
+        "team workflows",
+        "product development"
+      ],
+      "imageFilename": "e0a0800dc9e069a5.png"
+    },
+    {
+      "url": "https://developer.nvidia.com/blog/optimize-supply-chain-decision-systems-using-nvidia-cuopt-agent-skills",
+      "title": "Optimize Supply Chain Decision Systems Using NVIDIA cuOpt Agent Skills",
+      "summary": "NVIDIA cuOpt Agent Skills enables AI agents to solve supply chain optimization problems traditionally requiring weeks of manual operations research modeling. The tool automates translation of business constraints into mathematical models, allowing agents to adapt dynamically to fluctuating demand, volatile costs, and capacity constraints.",
+      "source": "NVIDIA Developer Blog",
+      "tags": [
+        "agents",
+        "optimization",
+        "operations research",
+        "supply chain",
+        "cuOpt"
+      ],
+      "score": 7,
+      "category": "AI",
+      "publishedAt": "2026-05-04T20:55:05.000Z",
+      "why_it_matters": [
+        {
+          "lead": "Weeks to minutes",
+          "detail": "agents automate OR modeling that traditionally required specialized teams"
+        },
+        {
+          "lead": "Dynamic constraint handling",
+          "detail": "adapts to demand, costs, and capacity changes without manual remodeling"
+        },
+        {
+          "lead": "Agent-native optimization",
+          "detail": "cuOpt Agent Skills integrates solver into agent decision loops"
+        }
+      ],
+      "relevant_for": [
+        "NVIDIA cuOpt",
+        "AI agents",
+        "supply chain platforms",
+        "optimization solvers",
+        "decision systems",
+        "operations research"
+      ],
+      "imageFilename": "20947eff981baaec.png"
+    },
+    {
+      "url": "https://hashicorp.com/blog/introducing-hcp-terraform-powered-by-infragraph-in-public-preview",
+      "title": "Introducing HCP Terraform powered by Infragraph - now in public preview",
+      "summary": "HCP Terraform now includes Infragraph, an event-driven knowledge graph providing unified visibility across hybrid and multi-cloud infrastructure. Infragraph replaces siloed infrastructure data with dynamic, real-time updates, enabling platform teams to track ownership, automate security patching, and lay groundwork for AI-driven infrastructure automation.",
+      "source": "HashiCorp Blog",
+      "tags": [
+        "infrastructure",
+        "knowledge graph",
+        "multi-cloud",
+        "Terraform",
+        "platform engineering"
+      ],
+      "score": 7,
+      "category": "DevOps",
+      "publishedAt": "2026-05-04T18:45:00.000Z",
+      "why_it_matters": [
+        {
+          "lead": "Unified infrastructure graph",
+          "detail": "replaces siloed data across hybrid and multi-cloud environments"
+        },
+        {
+          "lead": "Event-driven updates",
+          "detail": "dynamic visibility replaces static snapshots for real-time state"
+        },
+        {
+          "lead": "AI automation foundation",
+          "detail": "knowledge graph enables future AI-driven infrastructure workflows"
+        }
+      ],
+      "relevant_for": [
+        "HCP Terraform",
+        "Infragraph",
+        "multi-cloud platforms",
+        "infrastructure as code",
+        "Terraform",
+        "platform teams"
+      ],
+      "imageFilename": "2538d3bb87aeae4c.png"
+    },
     {
       "url": "https://thehackernews.com/2026/05/phishing-campaign-hits-80-orgs-using.html",
       "title": "Phishing Campaign Hits 80+ Orgs Using SimpleHelp and ScreenConnect RMM Tools",
@@ -90,6 +245,45 @@
         }
       ],
       "imageFilename": "539b9014004307c9.png"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-the-agent-quality-loop-agentcore-optimization-now-in-preview",
+      "title": "Introducing the agent quality loop: AgentCore Optimization now in preview",
+      "summary": "AWS Bedrock AgentCore now includes automated quality feedback loops that generate optimization recommendations from production traces, validate them via batch evaluation and A/B testing, and ship updates without manual hypothesis-and-test cycles. The system detects agent quality degradation as models evolve and user behavior shifts, replacing developer intuition with data-backed evidence for prompt and configuration updates.",
+      "source": "AWS ML Blog",
+      "tags": [
+        "agents",
+        "evals",
+        "production traces",
+        "prompt optimization",
+        "MLOps"
+      ],
+      "score": 8,
+      "category": "AI",
+      "publishedAt": "2026-05-04T17:13:42.000Z",
+      "why_it_matters": [
+        {
+          "lead": "Closes agent drift loop",
+          "detail": "automated feedback from production traces replaces manual developer-driven fixes"
+        },
+        {
+          "lead": "Batch eval plus A/B testing",
+          "detail": "validates recommendations before shipping to production"
+        },
+        {
+          "lead": "Runs daily, not weekly",
+          "detail": "catches quality degradation as models and user behavior evolve"
+        }
+      ],
+      "relevant_for": [
+        "AWS Bedrock AgentCore",
+        "Amazon Bedrock",
+        "production traces",
+        "batch evaluation",
+        "A/B testing frameworks",
+        "prompt management"
+      ],
+      "imageFilename": "fe2cdb2a1346e70d.png"
     },
     {
       "url": "https://aws.amazon.com/blogs/machine-learning/agent-guided-workflows-to-accelerate-model-customization-in-amazon-sagemaker-ai",
@@ -1046,6 +1240,45 @@
       "imageFilename": "b271b0f81a7298c1.png"
     },
     {
+      "url": "https://hashicorp.com/blog/how-vault-secrets-operator-vso-automates-secret-management-for-enterprises-on-kub",
+      "title": "How Vault Secrets Operator (VSO) automates secret management for enterprises on Kubernetes",
+      "summary": "Vault Secrets Operator automates the full lifecycle of secrets on Kubernetes, from generation through injection, rotation, and revocation, without slowing development. VSO bridges the gap between native Kubernetes Secrets (which lack governance) and enterprise requirements for centralized, platform-agnostic secret management across hybrid clouds.",
+      "source": "HashiCorp Blog",
+      "tags": [
+        "Kubernetes",
+        "secrets management",
+        "Vault",
+        "security",
+        "operators"
+      ],
+      "score": 7,
+      "category": "DevOps",
+      "publishedAt": "2026-05-01T16:00:00.000Z",
+      "why_it_matters": [
+        {
+          "lead": "Full secret lifecycle",
+          "detail": "generation, injection, rotation, revocation without manual steps"
+        },
+        {
+          "lead": "Beyond native Secrets",
+          "detail": "Kubernetes Secrets lack governance; VSO adds enterprise controls"
+        },
+        {
+          "lead": "Hybrid-cloud ready",
+          "detail": "centralized Vault backend works across clusters and clouds"
+        }
+      ],
+      "relevant_for": [
+        "Vault Secrets Operator",
+        "Kubernetes",
+        "HashiCorp Vault",
+        "secret rotation",
+        "Kubernetes operators",
+        "enterprise platforms"
+      ],
+      "imageFilename": "bed45ab8daa9fca8.png"
+    },
+    {
       "url": "https://docker.com/blog/a-virtual-agent-team-at-docker-how-the-coding-agent-sandboxes-team-uses-a-fleet-of-agents-to-ship-faster",
       "title": "A Virtual Agent Team at Docker: How the Coding Agent Sandboxes team uses a fleet of agents to ship faster",
       "summary": "Docker's Coding Agent Sandboxes team built a fleet of seven autonomous AI agents using Claude Code skills to test, triage, post release notes, and fix bugs in CI. Each agent operates with a persona and decision-making authority rather than scripted steps, running in isolated microVMs without touching the host system.",
@@ -1163,18 +1396,41 @@
     {
       "url": "https://aws.amazon.com/blogs/machine-learning/sun-finance-automates-id-extraction-and-fraud-detection-with-generative-ai-on-aws",
       "title": "Sun Finance automates ID extraction and fraud detection with generative AI on AWS",
-      "summary": "Sun Finance deployed a generative AI pipeline to replace traditional OCR for identity document extraction and fraud detection, reducing manual review from 60% to a lower rate across 80,000 monthly microloan applications. The AWS Generative AI Innovation Center delivered the solution in 35 business days post-handover, processing 4 million evaluations monthly.",
+      "summary": "Sun Finance replaced traditional OCR with generative AI for identity document extraction and fraud detection, reducing manual review queues from 60% to a lower rate across 80,000 monthly microloan applications. The AWS Generative AI Innovation Center delivered the solution in 32 days of engagement plus 35 business days to production, processing 4 million evaluations monthly.",
       "source": "AWS ML Blog",
       "tags": [
-        "generative AI",
         "document extraction",
         "fraud detection",
-        "production"
+        "generative AI",
+        "production deployment",
+        "fintech"
       ],
-      "score": 8,
+      "score": 7,
       "category": "AI",
       "publishedAt": "2026-04-30T17:00:45.000Z",
-      "imageFilename": "184bd033f8c3a2b7.png"
+      "why_it_matters": [
+        {
+          "lead": "60% manual review eliminated",
+          "detail": "generative AI replaced OCR errors that forced operator intervention"
+        },
+        {
+          "lead": "32-day engagement to production",
+          "detail": "AWS Innovation Center delivered end-to-end in 107 business days total"
+        },
+        {
+          "lead": "4M evaluations monthly",
+          "detail": "processes one loan request every 0.63 seconds at scale"
+        }
+      ],
+      "relevant_for": [
+        "AWS Bedrock",
+        "generative AI",
+        "document processing",
+        "fraud detection models",
+        "AWS Innovation Center",
+        "fintech platforms"
+      ],
+      "imageFilename": "d70985c98f3a50a1.png"
     },
     {
       "url": "https://aws.amazon.com/blogs/machine-learning/configuring-amazon-bedrock-agentcore-gateway-for-secure-access-to-private-resources",

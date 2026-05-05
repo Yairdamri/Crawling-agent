@@ -1792,8 +1792,8 @@
   },
   {
     "url": "https://aws.amazon.com/blogs/machine-learning/sun-finance-automates-id-extraction-and-fraud-detection-with-generative-ai-on-aws",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "184bd033f8c3a2b7"
+    "seenAt": "2026-05-05T02:52:46.536Z",
+    "contentHash": "d70985c98f3a50a1"
   },
   {
     "url": "https://aws.amazon.com/blogs/machine-learning/unleashing-agentic-ai-analytics-on-amazon-sagemaker-with-amazon-athena-and-amazon-quick",
@@ -2047,8 +2047,8 @@
   },
   {
     "url": "https://hashicorp.com/blog/announcing-the-new-partner-premier-tier-for-the-terraform-registry",
-    "seenAt": "2026-05-03T07:57:08.336Z",
-    "contentHash": "4722812fe0427fc9"
+    "seenAt": "2026-05-05T02:52:46.536Z",
+    "contentHash": "137daeeb8c97584b"
   },
   {
     "url": "https://hashicorp.com/blog/securing-the-last-mile-with-local-account-password-rotation",
@@ -2898,5 +2898,35 @@
     "url": "https://databricks.com/blog/data-warehouse-tools",
     "seenAt": "2026-05-04T19:53:34.964Z",
     "contentHash": "499a1752234277a8"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/introducing-the-agent-quality-loop-agentcore-optimization-now-in-preview",
+    "seenAt": "2026-05-05T02:52:46.536Z",
+    "contentHash": "fe2cdb2a1346e70d"
+  },
+  {
+    "url": "https://developer.nvidia.com/blog/optimize-supply-chain-decision-systems-using-nvidia-cuopt-agent-skills",
+    "seenAt": "2026-05-05T02:52:46.536Z",
+    "contentHash": "20947eff981baaec"
+  },
+  {
+    "url": "https://thenewstack.io/feedback-driven-ai-adoption",
+    "seenAt": "2026-05-05T02:52:46.536Z",
+    "contentHash": "e0a0800dc9e069a5"
+  },
+  {
+    "url": "https://hashicorp.com/blog/mitigate-credential-exposure-in-windows-environments-with-boundary-and-vault",
+    "seenAt": "2026-05-05T02:52:46.536Z",
+    "contentHash": "90bf0961cddc9e39"
+  },
+  {
+    "url": "https://hashicorp.com/blog/introducing-hcp-terraform-powered-by-infragraph-in-public-preview",
+    "seenAt": "2026-05-05T02:52:46.536Z",
+    "contentHash": "2538d3bb87aeae4c"
+  },
+  {
+    "url": "https://hashicorp.com/blog/how-vault-secrets-operator-vso-automates-secret-management-for-enterprises-on-kub",
+    "seenAt": "2026-05-05T02:52:46.536Z",
+    "contentHash": "bed45ab8daa9fca8"
   }
 ]
