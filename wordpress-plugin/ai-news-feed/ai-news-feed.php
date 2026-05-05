@@ -629,12 +629,10 @@ function ainfp_page_shortcode($atts) {
     wp_enqueue_script('ainfp-script', plugin_dir_url(__FILE__) . 'script.js', array(), AINF_PLUGIN_VERSION, true);
 
     if (empty($articles)) {
-        // TEMP DEBUG: surface the actual error instead of the generic message.
-        $err = isset($data['error']) ? (string) $data['error'] : '';
-        $cfg = ainf_get_settings();
-        $debug = 'DEBUG — error: ' . ($err !== '' ? $err : '(none)')
-               . ' | json_url: ' . ($cfg['json_url'] !== '' ? $cfg['json_url'] : '(empty)');
-        return '<div class="ainfp-empty"><pre style="white-space:pre-wrap">' . esc_html($debug) . '</pre></div>';
+        $msg = isset($data['error']) && $data['error']
+            ? esc_html__('News feed is currently unavailable.', 'ai-news-feed')
+            : esc_html__('No articles to show yet.', 'ai-news-feed');
+        return '<div class="ainfp-empty">' . $msg . '</div>';
     }
 
     $image_base = ainf_image_base_url();
