@@ -68,7 +68,7 @@ async function main() {
   console.log(
     `[pipeline] done in ${Math.round((Date.now() - startedAt) / 1000)}s ` +
       `- written: ${stats.written}, dropped (score<5): ${stats.droppedLowScore}, ` +
-      `seen cache: ${stats.seenSize}`
+      `dropped (no image): ${stats.droppedNoImage}, seen cache: ${stats.seenSize}`
   );
 }
 

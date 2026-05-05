@@ -28,7 +28,9 @@ export async function mergeAndWrite({ newsPath, seenPath, processed, seenMap, ha
   const existing = await readJson(newsPath, { schemaVersion: SCHEMA_VERSION, articles: [] });
   const existingArticles = Array.isArray(existing.articles) ? existing.articles : [];
 
-  const filtered = processed.filter((a) => Number.isInteger(a.score) && a.score >= MIN_SCORE);
+  const filtered = processed.filter((a) =>
+    Number.isInteger(a.score) && a.score >= MIN_SCORE && typeof a.imageFilename === 'string' && a.imageFilename !== ''
+  );
 
   const byUrl = new Map();
   for (const a of existingArticles) byUrl.set(a.url, a);
@@ -61,7 +63,10 @@ export async function mergeAndWrite({ newsPath, seenPath, processed, seenMap, ha
 
   return {
     written: merged.length,
-    droppedLowScore: processed.length - filtered.length,
+    droppedLowScore: processed.filter((a) => !Number.isInteger(a.score) || a.score < MIN_SCORE).length,
+    droppedNoImage: processed.filter((a) =>
+      Number.isInteger(a.score) && a.score >= MIN_SCORE && (!a.imageFilename || typeof a.imageFilename !== 'string')
+    ).length,
     seenSize: prunedSeen.length,
   };
 }
