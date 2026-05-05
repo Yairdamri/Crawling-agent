@@ -1,6 +1,6 @@
 {
-  "schemaVersion": 1,
-  "generatedAt": "2026-05-05T09:53:50.382Z",
+  "schemaVersion": 2,
+  "generatedAt": "2026-05-05T13:36:59.744Z",
   "articles": [
     {
       "url": "https://hashicorp.com/blog/mitigate-credential-exposure-in-windows-environments-with-boundary-and-vault",
@@ -39,7 +39,280 @@
         "secrets management",
         "credential rotation"
       ],
-      "imageFilename": "90bf0961cddc9e39.png"
+      "imageFilename": "90bf0961cddc9e39.png",
+      "slug": "mitigate-credential-exposure-in-windows-environments-with-bo"
+    },
+    {
+      "url": "https://docker.com/blog/blog-generate-images-locally-dmr-open-webui",
+      "title": "Generate Images Locally with Docker Model Runner and Open WebUI",
+      "summary": "Docker Model Runner now enables local image generation by packaging models and exposing an OpenAI-compatible API that Open WebUI can consume. Users can run image-generation models entirely on-device with GPU acceleration (NVIDIA CUDA, Apple Silicon MPS, or CPU fallback), eliminating cloud dependencies and privacy concerns.",
+      "tags": [
+        "local inference",
+        "image generation",
+        "Docker",
+        "OpenAI API"
+      ],
+      "score": 6,
+      "category": "AI",
+      "why_it_matters": [
+        {
+          "lead": "Local image generation",
+          "detail": "no cloud subscription, no prompt logging, fully private"
+        },
+        {
+          "lead": "OpenAI-compatible API",
+          "detail": "POST /v1/images/generations endpoint integrates with Open WebUI"
+        },
+        {
+          "lead": "GPU acceleration included",
+          "detail": "CUDA, MPS, and CPU fallback support across platforms"
+        }
+      ],
+      "relevant_for": [
+        "Docker Model Runner",
+        "Open WebUI",
+        "image-generation models",
+        "NVIDIA CUDA",
+        "Apple Silicon"
+      ],
+      "source": "Docker Blog",
+      "sourceDomain": "docker.com",
+      "publishedAt": "2026-05-05T13:00:00.000Z",
+      "imageFilename": "25577dbf6af681e0.png",
+      "slug": "generate-images-locally-with-docker-model-runner-and-open-we"
+    },
+    {
+      "url": "https://thehackernews.com/2026/05/the-back-door-attackers-know-about-and.html",
+      "title": "The Back Door Attackers Know About — and Most Security Teams Still Haven't Closed",
+      "summary": "OAuth tokens generated when employees connect AI tools, workflow automation, and productivity apps to Google or Microsoft accounts persist indefinitely with no expiration, automatic cleanup, or visibility to security teams. These tokens bypass perimeter controls and MFA, creating a persistent backdoor for attackers who obtain them.",
+      "tags": [
+        "OAuth",
+        "supply-chain",
+        "credential persistence",
+        "cloud integrations"
+      ],
+      "score": 8,
+      "category": "Security",
+      "why_it_matters": [
+        {
+          "lead": "Persistent OAuth backdoor",
+          "detail": "no expiration, no automatic cleanup, invisible to security teams"
+        },
+        {
+          "lead": "Bypasses MFA and perimeter",
+          "detail": "attacker with token needs no password or additional auth"
+        },
+        {
+          "lead": "Every AI tool integration at risk",
+          "detail": "employees connecting apps to Google/Microsoft leave tokens behind"
+        }
+      ],
+      "relevant_for": [
+        "OAuth",
+        "Google Workspace",
+        "Microsoft 365",
+        "AI tools",
+        "identity management"
+      ],
+      "source": "The Hacker News",
+      "sourceDomain": "thehackernews.com",
+      "publishedAt": "2026-05-05T11:58:00.000Z",
+      "imageFilename": "c2061fb870d6474c.png",
+      "slug": "the-back-door-attackers-know-about-and-most-security-teams-s"
+    },
+    {
+      "url": "https://thehackernews.com/2026/05/metinfo-cms-cve-2026-29014-exploited.html",
+      "title": "MetInfo CMS CVE-2026-29014 Exploited for Remote Code Execution Attacks",
+      "summary": "CVE-2026-29014 (CVSS 9.8) in MetInfo CMS versions 7.9, 8.0, and 8.1 is an unauthenticated PHP code injection flaw allowing arbitrary code execution. Threat actors are actively exploiting this vulnerability in the wild.",
+      "tags": [
+        "CVE",
+        "RCE",
+        "PHP",
+        "unauthenticated"
+      ],
+      "score": 8,
+      "category": "Security",
+      "why_it_matters": [
+        {
+          "lead": "CVSS 9.8 RCE",
+          "detail": "unauthenticated PHP code injection in MetInfo CMS"
+        },
+        {
+          "lead": "Active exploitation",
+          "detail": "threat actors already weaponizing CVE-2026-29014 in the wild"
+        },
+        {
+          "lead": "Affects 7.9, 8.0, 8.1",
+          "detail": "patch or upgrade immediately if running MetInfo"
+        }
+      ],
+      "relevant_for": [
+        "MetInfo CMS",
+        "PHP",
+        "content management systems",
+        "web servers"
+      ],
+      "source": "The Hacker News",
+      "sourceDomain": "thehackernews.com",
+      "publishedAt": "2026-05-05T11:56:00.000Z",
+      "imageFilename": "562fde84f6165dbb.png",
+      "slug": "metinfo-cms-cve-2026-29014-exploited-for-remote-code-executi"
+    },
+    {
+      "url": "https://thenewstack.io/ai-agent-payment-protocols",
+      "title": "AI agents need to spend money — Stripe and iWallet are building the rails",
+      "summary": "Stripe and iWallet have released new payment protocols (Machine Payments Protocol and iWallet's competing standard) designed for autonomous AI agents to execute transactions, route funds, and settle multi-party payments without human intervention. Traditional payment infrastructure built for human-driven commerce cannot handle the speed, autonomy, and complexity of agent-to-service transactions at scale.",
+      "tags": [
+        "agents",
+        "payments",
+        "infrastructure",
+        "autonomy"
+      ],
+      "score": 7,
+      "category": "AI",
+      "why_it_matters": [
+        {
+          "lead": "Agents need autonomous spending",
+          "detail": "not just authorization, but actual settlement and multi-vendor routing"
+        },
+        {
+          "lead": "Two competing standards emerging",
+          "detail": "Stripe's MPP and iWallet protocol both target agent-to-service transactions"
+        },
+        {
+          "lead": "Infrastructure gap is real",
+          "detail": "existing ecommerce rails cannot handle agent autonomy requirements"
+        }
+      ],
+      "relevant_for": [
+        "Stripe",
+        "AI agents",
+        "payment APIs",
+        "autonomous workflows",
+        "fintech platforms"
+      ],
+      "source": "The New Stack",
+      "sourceDomain": "thenewstack.io",
+      "publishedAt": "2026-05-05T11:43:29.000Z",
+      "imageFilename": "7c6c05f888d24a1f.png",
+      "slug": "ai-agents-need-to-spend-money-stripe-and-iwallet-are-buildin"
+    },
+    {
+      "url": "https://thenewstack.io/sprig-postgres-scylladb-migration",
+      "title": "ScyllaDB cut Sprig's read latency 4X after Redis and ClickHouse hit a wall",
+      "summary": "Sprig, an AI-powered product research platform, migrated from Postgres to ScyllaDB after hitting scale limits at 1.3T events and 75B attributes. The platform's real-time user behavior evaluation and AI-driven survey triggering required sub-millisecond latency that Postgres and intermediate caching layers could not sustain, achieving 4X latency reduction with ScyllaDB.",
+      "tags": [
+        "databases",
+        "latency",
+        "scaling",
+        "real-time analytics"
+      ],
+      "score": 7,
+      "category": "Engineering",
+      "why_it_matters": [
+        {
+          "lead": "4X latency improvement",
+          "detail": "Postgres and Redis/ClickHouse stack maxed out at 1.3T events"
+        },
+        {
+          "lead": "Real-time behavior evaluation",
+          "detail": "AI survey triggering requires sub-millisecond decision latency"
+        },
+        {
+          "lead": "Practical migration path",
+          "detail": "small team navigated database transition at production scale"
+        }
+      ],
+      "relevant_for": [
+        "Postgres",
+        "ScyllaDB",
+        "Redis",
+        "ClickHouse",
+        "analytics platforms"
+      ],
+      "source": "The New Stack",
+      "sourceDomain": "thenewstack.io",
+      "publishedAt": "2026-05-05T11:00:00.000Z",
+      "imageFilename": "09f5bc2360a5ec2b.png",
+      "slug": "scylladb-cut-sprig-s-read-latency-4x-after-redis-and-clickho"
+    },
+    {
+      "url": "https://cncf.io/blog/2026/05/05/announcing-kyverno-release-1-18",
+      "title": "Announcing Kyverno release 1.18!",
+      "summary": "Kyverno 1.18 introduces hardened HTTP-based policy execution with blocklist/allowlist enforcement for external service calls, CLI enhancements for testing modern policy types, and continued migration toward CEL-based policies. The release includes no breaking changes and addresses multiple CVEs while improving performance and observability.",
+      "tags": [
+        "Kubernetes",
+        "policy-as-code",
+        "security",
+        "CEL"
+      ],
+      "score": 6,
+      "category": "DevOps",
+      "why_it_matters": [
+        {
+          "lead": "HTTP policy execution hardened",
+          "detail": "blocklist/allowlist enforcement blocks unsafe addresses by default"
+        },
+        {
+          "lead": "CEL-based transition continues",
+          "detail": "foundation for future policy-as-code architecture"
+        },
+        {
+          "lead": "Multiple CVE mitigations",
+          "detail": "security improvements alongside performance and observability gains"
+        }
+      ],
+      "relevant_for": [
+        "Kyverno",
+        "Kubernetes",
+        "ClusterPolicy",
+        "policy-as-code",
+        "CEL"
+      ],
+      "source": "CNCF Blog",
+      "sourceDomain": "cncf.io",
+      "publishedAt": "2026-05-05T11:00:00.000Z",
+      "imageFilename": "ba0214dbfb52b4d7.png",
+      "slug": "announcing-kyverno-release-1-18"
+    },
+    {
+      "url": "https://thehackernews.com/2026/05/we-scanned-1-million-exposed-ai.html",
+      "title": "We Scanned 1 Million Exposed AI Services. Here's How Bad the Security Actually Is",
+      "summary": "A scan of 1 million exposed AI services reveals widespread security gaps in self-hosted LLM infrastructure. Organizations prioritizing speed of AI adoption over security controls are leaving inference endpoints, model repositories, and supporting services inadequately protected.",
+      "tags": [
+        "LLM",
+        "infrastructure",
+        "self-hosted",
+        "exposure"
+      ],
+      "score": 7,
+      "category": "AI",
+      "why_it_matters": [
+        {
+          "lead": "1 million exposed services",
+          "detail": "self-hosted LLM infrastructure lacks basic security controls"
+        },
+        {
+          "lead": "Speed over security",
+          "detail": "pressure to deploy AI fast is eroding security practices"
+        },
+        {
+          "lead": "Inference endpoints at risk",
+          "detail": "models, APIs, and supporting services inadequately protected"
+        }
+      ],
+      "relevant_for": [
+        "LLM inference",
+        "self-hosted models",
+        "API security",
+        "model repositories",
+        "infrastructure hardening"
+      ],
+      "source": "The Hacker News",
+      "sourceDomain": "thehackernews.com",
+      "publishedAt": "2026-05-05T10:30:00.000Z",
+      "imageFilename": "795e2131047b85bf.png",
+      "slug": "we-scanned-1-million-exposed-ai-services-here-s-how-bad-the"
     },
     {
       "url": "https://thehackernews.com/2026/05/scarcruft-hacks-gaming-platform-to.html",
@@ -79,7 +352,8 @@
       "source": "The Hacker News",
       "sourceDomain": "thehackernews.com",
       "publishedAt": "2026-05-05T09:07:00.000Z",
-      "imageFilename": "6f00e082b53f4059.png"
+      "imageFilename": "6f00e082b53f4059.png",
+      "slug": "scarcruft-hacks-gaming-platform-to-deploy-birdcall-malware-o"
     },
     {
       "url": "https://docker.com/blog/precision-container-security-with-docker-and-black-duck",
@@ -119,7 +393,8 @@
       "source": "Docker Blog",
       "sourceDomain": "docker.com",
       "publishedAt": "2026-05-05T08:00:00.000Z",
-      "imageFilename": "c32d640498ded665.png"
+      "imageFilename": "c32d640498ded665.png",
+      "slug": "precision-container-security-with-docker-and-black-duck"
     },
     {
       "url": "https://thehackernews.com/2026/05/weaver-e-cology-rce-flaw-cve-2026-22679.html",
@@ -159,7 +434,8 @@
       "source": "The Hacker News",
       "sourceDomain": "thehackernews.com",
       "publishedAt": "2026-05-05T07:37:00.000Z",
-      "imageFilename": "86ed162bfd02f725.png"
+      "imageFilename": "86ed162bfd02f725.png",
+      "slug": "weaver-e-cology-rce-flaw-cve-2026-22679-actively-exploited-v"
     },
     {
       "url": "https://thehackernews.com/2026/05/microsoft-details-phishing-campaign.html",
@@ -199,7 +475,8 @@
       "source": "The Hacker News",
       "sourceDomain": "thehackernews.com",
       "publishedAt": "2026-05-05T06:35:00.000Z",
-      "imageFilename": "b682a1a11046a7a4.png"
+      "imageFilename": "b682a1a11046a7a4.png",
+      "slug": "microsoft-details-phishing-campaign-targeting-35-000-users-a"
     },
     {
       "url": "https://thenewstack.io/feedback-driven-ai-adoption",
@@ -237,7 +514,8 @@
         "team workflows",
         "product development"
       ],
-      "imageFilename": "e0a0800dc9e069a5.png"
+      "imageFilename": "e0a0800dc9e069a5.png",
+      "slug": "ai-won-t-speed-up-software-delivery-nothing-has"
     },
     {
       "url": "https://openai.com/index/openai-pwc-finance-collaboration",
@@ -277,7 +555,8 @@
       "source": "OpenAI Blog",
       "sourceDomain": "openai.com",
       "publishedAt": "2026-05-04T21:00:00.000Z",
-      "imageFilename": "cdcfbe5ff7de81aa.png"
+      "imageFilename": "cdcfbe5ff7de81aa.png",
+      "slug": "openai-and-pwc-collaborate-to-reimagine-the-office-of-the-cf"
     },
     {
       "url": "https://developer.nvidia.com/blog/optimize-supply-chain-decision-systems-using-nvidia-cuopt-agent-skills",
@@ -316,7 +595,8 @@
         "decision systems",
         "operations research"
       ],
-      "imageFilename": "20947eff981baaec.png"
+      "imageFilename": "20947eff981baaec.png",
+      "slug": "optimize-supply-chain-decision-systems-using-nvidia-cuopt-ag"
     },
     {
       "url": "https://hashicorp.com/blog/introducing-hcp-terraform-powered-by-infragraph-in-public-preview",
@@ -355,7 +635,8 @@
         "Terraform",
         "platform teams"
       ],
-      "imageFilename": "2538d3bb87aeae4c.png"
+      "imageFilename": "2538d3bb87aeae4c.png",
+      "slug": "introducing-hcp-terraform-powered-by-infragraph-now-in-publi"
     },
     {
       "url": "https://thehackernews.com/2026/05/phishing-campaign-hits-80-orgs-using.html",
@@ -395,7 +676,8 @@
       "source": "The Hacker News",
       "sourceDomain": "thehackernews.com",
       "publishedAt": "2026-05-04T18:06:00.000Z",
-      "imageFilename": "b2321dddae0a870f.png"
+      "imageFilename": "b2321dddae0a870f.png",
+      "slug": "phishing-campaign-hits-80-orgs-using-simplehelp-and-screenco"
     },
     {
       "url": "https://aws.amazon.com/blogs/machine-learning/beyond-bi-how-the-dataset-qa-feature-of-amazon-quick-powers-the-next-generation-of-data-decisions",
@@ -424,7 +706,8 @@
           "detail": "security and permissions remain intact for enterprise deployments"
         }
       ],
-      "imageFilename": "a7df33be276873a2.png"
+      "imageFilename": "a7df33be276873a2.png",
+      "slug": "beyond-bi-how-the-dataset-q-a-feature-of-amazon-quick-powers"
     },
     {
       "url": "https://aws.amazon.com/blogs/machine-learning/introducing-the-agent-performance-loop-agentcore-optimization-now-in-preview",
@@ -454,7 +737,8 @@
           "detail": "catches quality drift daily rather than weekly or monthly cycles"
         }
       ],
-      "imageFilename": "539b9014004307c9.png"
+      "imageFilename": "539b9014004307c9.png",
+      "slug": "introducing-the-agent-performance-loop-agentcore-optimizatio"
     },
     {
       "url": "https://aws.amazon.com/blogs/machine-learning/introducing-the-agent-quality-loop-agentcore-optimization-now-in-preview",
@@ -493,7 +777,8 @@
         "A/B testing frameworks",
         "prompt management"
       ],
-      "imageFilename": "fe2cdb2a1346e70d.png"
+      "imageFilename": "fe2cdb2a1346e70d.png",
+      "slug": "introducing-the-agent-quality-loop-agentcore-optimization-no"
     },
     {
       "url": "https://aws.amazon.com/blogs/machine-learning/agent-guided-workflows-to-accelerate-model-customization-in-amazon-sagemaker-ai",
@@ -523,7 +808,8 @@
           "detail": "generated code is editable and integrates into existing workflows"
         }
       ],
-      "imageFilename": "464091362d8aa8c5.png"
+      "imageFilename": "464091362d8aa8c5.png",
+      "slug": "agent-guided-workflows-to-accelerate-model-customization-in"
     },
     {
       "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-whats-next-with-aws-2026-amazon-quick-openai-partnership-and-more-may-4-2026",
@@ -552,7 +838,8 @@
           "detail": "new plans announced but details truncated in excerpt"
         }
       ],
-      "imageFilename": "9e4671578b6416d1.png"
+      "imageFilename": "9e4671578b6416d1.png",
+      "slug": "aws-weekly-roundup-what-s-next-with-aws-2026-amazon-quick-op"
     },
     {
       "url": "https://aws.amazon.com/blogs/machine-learning/generate-dashboards-from-natural-language-prompts-in-amazon-quick",
@@ -581,7 +868,8 @@
           "detail": "year-over-year growth and month-over-month comparisons built in"
         }
       ],
-      "imageFilename": "6bf73474f2a0a4f9.png"
+      "imageFilename": "6bf73474f2a0a4f9.png",
+      "slug": "generate-dashboards-from-natural-language-prompts-in-amazon"
     },
     {
       "url": "https://thehackernews.com/2026/05/progress-patches-critical-moveit.html",
@@ -611,7 +899,8 @@
           "detail": "Progress released updates, apply immediately to production systems"
         }
       ],
-      "imageFilename": "1668b56bbcc50e56.png"
+      "imageFilename": "1668b56bbcc50e56.png",
+      "slug": "progress-patches-critical-moveit-automation-bug-enabling-aut"
     },
     {
       "url": "https://aws.amazon.com/blogs/machine-learning/from-data-lake-to-ai-ready-analytics-introducing-direct-query-with-s3-tables-in-amazon-quick",
@@ -641,7 +930,8 @@
           "detail": "security and permissions enforced on data lake queries"
         }
       ],
-      "imageFilename": "1a67261ced0b1b89.png"
+      "imageFilename": "1a67261ced0b1b89.png",
+      "slug": "from-data-lake-to-ai-ready-analytics-introducing-new-data-so"
     },
     {
       "url": "https://aws.amazon.com/blogs/machine-learning/introducing-dataset-qa-expanding-natural-language-querying-for-structured-datasets-in-amazon-quick",
@@ -670,7 +960,8 @@
           "detail": "permissions and governance enforced on all queries"
         }
       ],
-      "imageFilename": "b6a669861519f4ca.png"
+      "imageFilename": "b6a669861519f4ca.png",
+      "slug": "introducing-dataset-q-a-expanding-natural-language-querying"
     },
     {
       "url": "https://aws.amazon.com/blogs/machine-learning/capacity-aware-inference-automatic-instance-fallback-for-sagemaker-ai-endpoints",
@@ -699,7 +990,8 @@
           "detail": "Single Model, Inference Component, and Asynchronous Inference supported"
         }
       ],
-      "imageFilename": "4b17e812bff4ec82.png"
+      "imageFilename": "4b17e812bff4ec82.png",
+      "slug": "capacity-aware-inference-automatic-instance-fallback-for-sag"
     },
     {
       "url": "https://thehackernews.com/2026/05/weekly-recap-ai-powered-phishing.html",
@@ -730,7 +1022,8 @@
           "detail": "attacks outpacing triage cycles, exploitation happening mid-alert response"
         }
       ],
-      "imageFilename": "532c37f82af5aa79.png"
+      "imageFilename": "532c37f82af5aa79.png",
+      "slug": "weekly-recap-ai-powered-phishing-android-spying-tool-linux-e"
     },
     {
       "url": "https://thenewstack.io/agent-code-validation-bottleneck",
@@ -747,7 +1040,8 @@
       "score": 9,
       "category": "AI",
       "publishedAt": "2026-05-04T14:00:00.000Z",
-      "imageFilename": "5e85b236e5ef51c7.png"
+      "imageFilename": "5e85b236e5ef51c7.png",
+      "slug": "the-agent-code-explosion-is-here-we-need-to-rethink-our-pipe"
     },
     {
       "url": "https://thehackernews.com/2026/05/2026-year-of-ai-assisted-attacks.html",
@@ -763,7 +1057,8 @@
       "score": 6,
       "category": "Security",
       "publishedAt": "2026-05-04T11:58:00.000Z",
-      "imageFilename": "e2c881f669b0a462.png"
+      "imageFilename": "e2c881f669b0a462.png",
+      "slug": "2026-the-year-of-ai-assisted-attacks"
     },
     {
       "url": "https://thehackernews.com/2026/05/silver-fox-deploys-abcdoor-malware-via.html",
@@ -803,7 +1098,8 @@
       "source": "The Hacker News",
       "sourceDomain": "thehackernews.com",
       "publishedAt": "2026-05-04T11:57:00.000Z",
-      "imageFilename": "e523f4aff93a8000.png"
+      "imageFilename": "e523f4aff93a8000.png",
+      "slug": "silver-fox-deploys-abcdoor-malware-via-tax-themed-phishing-i"
     },
     {
       "url": "https://cncf.io/blog/2026/05/04/securing-github-actions-ci-dependencies-recipe-card",
@@ -819,7 +1115,8 @@
       "score": 7,
       "category": "DevOps",
       "publishedAt": "2026-05-04T11:00:00.000Z",
-      "imageFilename": "5992fa3db81289b2.png"
+      "imageFilename": "5992fa3db81289b2.png",
+      "slug": "securing-github-actions-ci-dependencies-recipe-card"
     },
     {
       "url": "https://thehackernews.com/2026/05/critical-cpanel-vulnerability.html",
@@ -835,7 +1132,8 @@
       "score": 8,
       "category": "Security",
       "publishedAt": "2026-05-04T09:27:00.000Z",
-      "imageFilename": "4816136057d2bec7.png"
+      "imageFilename": "4816136057d2bec7.png",
+      "slug": "critical-cpanel-vulnerability-weaponized-to-target-governmen"
     },
     {
       "url": "https://blog.jim-nielsen.com/2026/small-html-pages",
@@ -850,7 +1148,8 @@
       "score": 5,
       "category": "Engineering",
       "publishedAt": "2026-05-04T04:43:36.000Z",
-      "imageFilename": "4e89b08e0beadb9c.png"
+      "imageFilename": "4e89b08e0beadb9c.png",
+      "slug": "stitch-together-lots-of-little-html-pages-with-navigations-f"
     },
     {
       "url": "https://openai.com/index/delivering-low-latency-voice-ai-at-scale",
@@ -881,7 +1180,8 @@
           "detail": "Practical infrastructure patterns for real-time AI applications at scale"
         }
       ],
-      "imageFilename": "5165b7c8619af87a.png"
+      "imageFilename": "5165b7c8619af87a.png",
+      "slug": "how-openai-delivers-low-latency-voice-ai-at-scale"
     },
     {
       "url": "https://xogium.me/the-text-mode-lie-why-modern-tuis-are-a-nightmare-for-accessibility",
@@ -896,7 +1196,8 @@
       "score": 7,
       "category": "Engineering",
       "publishedAt": "2026-05-03T23:59:02.000Z",
-      "imageFilename": "ef0e298c5ab510c8.png"
+      "imageFilename": "ef0e298c5ab510c8.png",
+      "slug": "the-text-mode-lie-why-modern-tuis-are-a-nightmare-for-access"
     },
     {
       "url": "https://jdgr.net/the-hidden-costs-of-great-abstractions",
@@ -911,7 +1212,8 @@
       "score": 6,
       "category": "Engineering",
       "publishedAt": "2026-05-03T23:12:02.000Z",
-      "imageFilename": "95a443a3f556edbe.png"
+      "imageFilename": "95a443a3f556edbe.png",
+      "slug": "the-hidden-costs-of-great-abstractions"
     },
     {
       "url": "https://larsfaye.com/articles/agentic-coding-is-a-trap",
@@ -926,7 +1228,8 @@
       "score": 6,
       "category": "AI",
       "publishedAt": "2026-05-03T22:52:07.000Z",
-      "imageFilename": "66d7a68e9aed2464.png"
+      "imageFilename": "66d7a68e9aed2464.png",
+      "slug": "agentic-coding-is-a-trap"
     },
     {
       "url": "https://github.com/aattaran/deepclaude",
@@ -942,7 +1245,8 @@
       "score": 8,
       "category": "AI",
       "publishedAt": "2026-05-03T22:13:20.000Z",
-      "imageFilename": "ce3754244f9c1819.png"
+      "imageFilename": "ce3754244f9c1819.png",
+      "slug": "deepclaude-claude-code-agent-loop-with-deepseek-v4-pro"
     },
     {
       "url": "https://wiki.alcidesfonseca.com/blog/why-tuis-are-back",
@@ -957,7 +1261,8 @@
       "score": 6,
       "category": "Engineering",
       "publishedAt": "2026-05-03T18:42:28.000Z",
-      "imageFilename": "1c1438a3c2910436.png"
+      "imageFilename": "1c1438a3c2910436.png",
+      "slug": "why-tuis-are-back"
     },
     {
       "url": "https://partyon.xyz/@nullagent/116499715071759135",
@@ -973,7 +1278,8 @@
       "score": 5,
       "category": "Other",
       "publishedAt": "2026-05-03T18:03:14.000Z",
-      "imageFilename": "203e9670432160a9.png"
+      "imageFilename": "203e9670432160a9.png",
+      "slug": "byomesh-new-lora-mesh-radio-offers-100x-the-bandwidth"
     },
     {
       "url": "https://lelanthran.com/chap15/content.html",
@@ -988,7 +1294,8 @@
       "score": 6,
       "category": "AI",
       "publishedAt": "2026-05-03T17:51:58.000Z",
-      "imageFilename": "a84feb3589e2e138.png"
+      "imageFilename": "a84feb3589e2e138.png",
+      "slug": "llms-are-not-a-higher-level-of-abstraction"
     },
     {
       "url": "https://youtube.com/watch?v=8jNQDcpHc68",
@@ -1004,7 +1311,8 @@
       "score": 5,
       "category": "Other",
       "publishedAt": "2026-05-03T17:45:47.000Z",
-      "imageFilename": "4a707abdaf9d0492.png"
+      "imageFilename": "4a707abdaf9d0492.png",
+      "slug": "i-recreated-the-apple-lisa-computer-inside-an-fpga-video"
     },
     {
       "url": "https://thegamer.com/mgs2-hd-edition-source-code-massive-leak",
@@ -1019,7 +1327,8 @@
       "score": 6,
       "category": "Security",
       "publishedAt": "2026-05-03T16:48:11.000Z",
-      "imageFilename": "ba271fba59bf8eb9.png"
+      "imageFilename": "ba271fba59bf8eb9.png",
+      "slug": "metal-gear-solid-2-s-source-code-has-been-leaked-on-4chan"
     },
     {
       "url": "https://citizenlab.ca/research/uncovering-global-telecom-exploitation-by-covert-surveillance-actors",
@@ -1035,7 +1344,8 @@
       "score": 8,
       "category": "Security",
       "publishedAt": "2026-05-03T16:15:49.000Z",
-      "imageFilename": "fbec3414f03ab62c.png"
+      "imageFilename": "fbec3414f03ab62c.png",
+      "slug": "bad-connection-global-telecom-exploitation-by-covert-surveil"
     },
     {
       "url": "https://thenewstack.io/sas-innovate-agentic-ai-governance",
@@ -1051,7 +1361,8 @@
       "score": 6,
       "category": "AI",
       "publishedAt": "2026-05-03T16:00:00.000Z",
-      "imageFilename": "eedfe3e803fec55e.png"
+      "imageFilename": "eedfe3e803fec55e.png",
+      "slug": "to-us-it-s-just-a-tool-how-sas-is-selling-ai-to-the-fortune"
     },
     {
       "url": "https://thenewstack.io/open-mainframe-enterprise-modernization",
@@ -1067,7 +1378,8 @@
       "score": 6,
       "category": "AI",
       "publishedAt": "2026-05-03T15:00:00.000Z",
-      "imageFilename": "4383e903511b958d.png"
+      "imageFilename": "4383e903511b958d.png",
+      "slug": "mainframe-modernization-is-no-longer-optional-for-the-ai-dri"
     },
     {
       "url": "https://mobeigi.com/blog/security/security-through-obscurity-is-not-bad",
@@ -1082,7 +1394,8 @@
       "score": 5,
       "category": "Security",
       "publishedAt": "2026-05-03T14:49:56.000Z",
-      "imageFilename": "6f09b0c39685587e.png"
+      "imageFilename": "6f09b0c39685587e.png",
+      "slug": "security-through-obscurity-is-not-bad"
     },
     {
       "url": "https://thenewstack.io/ibm-bob-agentic-coding",
@@ -1098,7 +1411,8 @@
       "score": 7,
       "category": "AI",
       "publishedAt": "2026-05-03T14:12:00.000Z",
-      "imageFilename": "5369e41e3f11dee2.png"
+      "imageFilename": "5369e41e3f11dee2.png",
+      "slug": "most-ai-coding-is-like-taking-your-ferrari-to-buy-milk-ibm-s"
     },
     {
       "url": "https://github.com/Matheus-git/systemd-manager-tui",
@@ -1114,7 +1428,8 @@
       "score": 5,
       "category": "DevOps",
       "publishedAt": "2026-05-03T10:55:30.000Z",
-      "imageFilename": "67f6ab3d1d0d53ad.png"
+      "imageFilename": "67f6ab3d1d0d53ad.png",
+      "slug": "systemd-manager-tui-a-tui-application-for-managing-systemd-s"
     },
     {
       "url": "https://github.com/bring-shrubbery/ml-sharp-web",
@@ -1131,7 +1446,8 @@
       "score": 8,
       "category": "AI",
       "publishedAt": "2026-05-03T09:14:56.000Z",
-      "imageFilename": "22793bcc0a7a9803.png"
+      "imageFilename": "22793bcc0a7a9803.png",
+      "slug": "show-hn-apple-s-sharp-running-in-the-browser-via-onnx-runtim"
     },
     {
       "url": "https://acai.sh/blog/specsmaxxing",
@@ -1147,7 +1463,8 @@
       "score": 7,
       "category": "AI",
       "publishedAt": "2026-05-03T06:33:38.000Z",
-      "imageFilename": "4b1225ac651eca9e.png"
+      "imageFilename": "4b1225ac651eca9e.png",
+      "slug": "specsmaxxing-on-overcoming-ai-psychosis-and-why-i-write-spec"
     },
     {
       "url": "https://thehackernews.com/2026/05/cisa-adds-actively-exploited-linux-root.html",
@@ -1163,7 +1480,8 @@
       "score": 8,
       "category": "Security",
       "publishedAt": "2026-05-03T06:26:00.000Z",
-      "imageFilename": "69328ea2eb163575.png"
+      "imageFilename": "69328ea2eb163575.png",
+      "slug": "cisa-adds-actively-exploited-linux-root-access-bug-cve-2026"
     },
     {
       "url": "https://thinkpol.ca/2026/04/30/an-open-weights-chinese-model-just-beat-claude-gpt-5-5-and-gemini-in-a-programming-challenge",
@@ -1179,7 +1497,8 @@
       "score": 8,
       "category": "AI",
       "publishedAt": "2026-05-03T04:05:28.000Z",
-      "imageFilename": "05be820ae3174d50.png"
+      "imageFilename": "05be820ae3174d50.png",
+      "slug": "kimi-k2-6-just-beat-claude-gpt-5-5-and-gemini-in-a-coding-ch"
     },
     {
       "url": "https://fshot.org/techzone/the-algorithm-knows.php",
@@ -1194,7 +1513,8 @@
       "score": 6,
       "category": "AI",
       "publishedAt": "2026-05-03T02:42:43.000Z",
-      "imageFilename": "a9aa55d5ef77d1e3.png"
+      "imageFilename": "a9aa55d5ef77d1e3.png",
+      "slug": "ai-intimacy-and-the-data-you-never-meant-to-share"
     },
     {
       "url": "https://nytimes.com/2026/05/01/business/surveillance-pricing-groceries-maryland.html",
@@ -1209,7 +1529,8 @@
       "score": 6,
       "category": "AI",
       "publishedAt": "2026-05-03T01:24:09.000Z",
-      "imageFilename": "10c905c628dbafca.png"
+      "imageFilename": "10c905c628dbafca.png",
+      "slug": "maryland-to-ban-a-i-driven-price-increases-in-grocery-stores"
     },
     {
       "url": "https://blog.haskell.org/a-couple-million-lines-of-haskell",
@@ -1224,7 +1545,8 @@
       "score": 6,
       "category": "Engineering",
       "publishedAt": "2026-05-03T00:01:14.000Z",
-      "imageFilename": "c1d8be684c8083e5.png"
+      "imageFilename": "c1d8be684c8083e5.png",
+      "slug": "a-couple-million-lines-of-haskell-production-engineering-at"
     },
     {
       "url": "https://hnup.date/hn-sota",
@@ -1240,7 +1562,8 @@
       "score": 7,
       "category": "AI",
       "publishedAt": "2026-05-02T21:25:05.000Z",
-      "imageFilename": "1d69e886f2b3c706.png"
+      "imageFilename": "1d69e886f2b3c706.png",
+      "slug": "show-hn-state-of-the-art-of-coding-models-according-to-hacke"
     },
     {
       "url": "https://mendral.com/blog/agent-harness-belongs-outside-sandbox",
@@ -1255,7 +1578,8 @@
       "score": 7,
       "category": "AI",
       "publishedAt": "2026-05-02T21:21:27.000Z",
-      "imageFilename": "d658bb8a5350119a.png"
+      "imageFilename": "d658bb8a5350119a.png",
+      "slug": "the-agent-harness-belongs-outside-the-sandbox"
     },
     {
       "url": "https://david-smith.org/blog/2026/04/29/maps-on-watchos",
@@ -1270,7 +1594,8 @@
       "score": 6,
       "category": "Engineering",
       "publishedAt": "2026-05-02T21:14:29.000Z",
-      "imageFilename": "91524acd6c0b3603.png"
+      "imageFilename": "91524acd6c0b3603.png",
+      "slug": "six-years-perfecting-maps-on-watchos"
     },
     {
       "url": "https://ladybird.org/newsletter/2026-04-30",
@@ -1285,7 +1610,8 @@
       "score": 6,
       "category": "Engineering",
       "publishedAt": "2026-05-02T20:46:30.000Z",
-      "imageFilename": "0872cdad6f7ea6ae.png"
+      "imageFilename": "0872cdad6f7ea6ae.png",
+      "slug": "this-month-in-ladybird-april-2026"
     },
     {
       "url": "https://github.com/microsoft/vscode/pull/310226",
@@ -1301,7 +1627,8 @@
       "score": 8,
       "category": "Security",
       "publishedAt": "2026-05-02T19:57:26.000Z",
-      "imageFilename": "f46790e871a4aa1e.png"
+      "imageFilename": "f46790e871a4aa1e.png",
+      "slug": "vs-code-inserting-co-authored-by-copilot-into-commits-regard"
     },
     {
       "url": "https://code.videolan.org/videolan/dav2d",
@@ -1317,7 +1644,8 @@
       "score": 6,
       "category": "Engineering",
       "publishedAt": "2026-05-02T17:32:29.000Z",
-      "imageFilename": "c13a015249048dd4.png"
+      "imageFilename": "c13a015249048dd4.png",
+      "slug": "dav2d"
     },
     {
       "url": "https://thenewstack.io/opensearch-ai-data-layer",
@@ -1334,7 +1662,8 @@
       "score": 8,
       "category": "AI",
       "publishedAt": "2026-05-02T16:00:00.000Z",
-      "imageFilename": "1754017011349d88.png"
+      "imageFilename": "1754017011349d88.png",
+      "slug": "inside-opensearch-s-bid-to-become-the-default-ai-data-layer"
     },
     {
       "url": "https://eclecticlight.co/2026/05/02/how-fast-is-a-macos-vm-and-how-small-could-it-be",
@@ -1350,7 +1679,8 @@
       "score": 5,
       "category": "Engineering",
       "publishedAt": "2026-05-02T09:30:49.000Z",
-      "imageFilename": "f77ae312815beecb.png"
+      "imageFilename": "f77ae312815beecb.png",
+      "slug": "how-fast-is-a-macos-vm-and-how-small-could-it-be"
     },
     {
       "url": "https://thenewstack.io/incredibuild-ai-agents-sandbox-coding",
@@ -1366,7 +1696,8 @@
       "score": 8,
       "category": "AI",
       "publishedAt": "2026-05-01T20:21:31.000Z",
-      "imageFilename": "abc4e055138da367.png"
+      "imageFilename": "abc4e055138da367.png",
+      "slug": "ai-agents-are-running-wild-on-developer-machines-incredibuil"
     },
     {
       "url": "https://kubernetes.io/blog/2026/05/01/kubernetes-v1-36-feature-pod-level-resource-managers-alpha",
@@ -1382,7 +1713,8 @@
       "score": 8,
       "category": "DevOps",
       "publishedAt": "2026-05-01T18:35:00.000Z",
-      "imageFilename": "b271b0f81a7298c1.png"
+      "imageFilename": "b271b0f81a7298c1.png",
+      "slug": "kubernetes-v1-36-pod-level-resource-managers-alpha"
     },
     {
       "url": "https://hashicorp.com/blog/how-vault-secrets-operator-vso-automates-secret-management-for-enterprises-on-kub",
@@ -1421,7 +1753,8 @@
         "Kubernetes operators",
         "enterprise platforms"
       ],
-      "imageFilename": "bed45ab8daa9fca8.png"
+      "imageFilename": "bed45ab8daa9fca8.png",
+      "slug": "how-vault-secrets-operator-vso-automates-secret-management-f"
     },
     {
       "url": "https://docker.com/blog/a-virtual-agent-team-at-docker-how-the-coding-agent-sandboxes-team-uses-a-fleet-of-agents-to-ship-faster",
@@ -1437,7 +1770,8 @@
       "score": 8,
       "category": "AI",
       "publishedAt": "2026-05-01T13:00:00.000Z",
-      "imageFilename": "136b2911a1a4eeda.png"
+      "imageFilename": "136b2911a1a4eeda.png",
+      "slug": "a-virtual-agent-team-at-docker-how-the-coding-agent-sandboxe"
     },
     {
       "url": "https://thenewstack.io/cursor-sdk-harness",
@@ -1453,7 +1787,8 @@
       "score": 8,
       "category": "AI",
       "publishedAt": "2026-05-01T12:00:00.000Z",
-      "imageFilename": "e3cd8e5495d4eb28.png"
+      "imageFilename": "e3cd8e5495d4eb28.png",
+      "slug": "cursor-s-60-billion-bet-is-on-the-harness-not-the-model"
     },
     {
       "url": "https://thehackernews.com/2026/05/poisoned-ruby-gems-and-go-modules.html",
@@ -1469,7 +1804,8 @@
       "score": 8,
       "category": "Security",
       "publishedAt": "2026-05-01T09:43:00.000Z",
-      "imageFilename": "2f47072d0ab985bd.png"
+      "imageFilename": "2f47072d0ab985bd.png",
+      "slug": "poisoned-ruby-gems-and-go-modules-exploit-ci-pipelines-for-c"
     },
     {
       "url": "https://aws.amazon.com/blogs/machine-learning/reinforcement-fine-tuning-with-llm-as-a-judge",
@@ -1486,7 +1822,8 @@
       "score": 8,
       "category": "AI",
       "publishedAt": "2026-04-30T20:07:25.000Z",
-      "imageFilename": "9bbeaf1ed692ef8c.png"
+      "imageFilename": "9bbeaf1ed692ef8c.png",
+      "slug": "reinforcement-fine-tuning-with-llm-as-a-judge"
     },
     {
       "url": "https://cncf.io/blog/2026/04/30/ai-sandboxing-is-having-its-kubernetes-moment",
@@ -1503,7 +1840,8 @@
       "score": 8,
       "category": "AI",
       "publishedAt": "2026-04-30T19:37:27.000Z",
-      "imageFilename": "fb4eb994058ffcbd.png"
+      "imageFilename": "fb4eb994058ffcbd.png",
+      "slug": "ai-sandboxing-is-having-its-kubernetes-moment"
     },
     {
       "url": "https://thenewstack.io/production-ready-ai-platforms",
@@ -1520,7 +1858,8 @@
       "score": 8,
       "category": "AI",
       "publishedAt": "2026-04-30T18:00:00.000Z",
-      "imageFilename": "8817d0fa69480525.png"
+      "imageFilename": "8817d0fa69480525.png",
+      "slug": "a-nine-point-checklist-for-shipping-production-ready-ai"
     },
     {
       "url": "https://thenewstack.io/openai-aws-bedrock-integration",
@@ -1536,7 +1875,8 @@
       "score": 8,
       "category": "Cloud",
       "publishedAt": "2026-04-30T17:17:41.000Z",
-      "imageFilename": "a5c1cfaa6e558832.png"
+      "imageFilename": "a5c1cfaa6e558832.png",
+      "slug": "the-openai-microsoft-reset-decoded-why-aws-may-come-out-ahea"
     },
     {
       "url": "https://aws.amazon.com/blogs/machine-learning/sun-finance-automates-id-extraction-and-fraud-detection-with-generative-ai-on-aws",
@@ -1575,7 +1915,8 @@
         "AWS Innovation Center",
         "fintech platforms"
       ],
-      "imageFilename": "d70985c98f3a50a1.png"
+      "imageFilename": "d70985c98f3a50a1.png",
+      "slug": "sun-finance-automates-id-extraction-and-fraud-detection-with"
     },
     {
       "url": "https://aws.amazon.com/blogs/machine-learning/configuring-amazon-bedrock-agentcore-gateway-for-secure-access-to-private-resources",
@@ -1592,7 +1933,8 @@
       "score": 8,
       "category": "AI",
       "publishedAt": "2026-04-30T16:32:43.000Z",
-      "imageFilename": "26c336ef4eaf5824.png"
+      "imageFilename": "26c336ef4eaf5824.png",
+      "slug": "configuring-amazon-bedrock-agentcore-gateway-for-secure-acce"
     },
     {
       "url": "https://thehackernews.com/2026/04/pytorch-lightning-compromised-in-pypi.html",
@@ -1608,7 +1950,8 @@
       "score": 8,
       "category": "Security",
       "publishedAt": "2026-04-30T16:31:00.000Z",
-      "imageFilename": "04be5dcff5ca45f4.png"
+      "imageFilename": "04be5dcff5ca45f4.png",
+      "slug": "pytorch-lightning-and-intercom-client-hit-in-supply-chain-at"
     },
     {
       "url": "https://developer.nvidia.com/blog/automating-gpu-kernel-translation-with-ai-agents-cutile-python-to-cutile-jl",
@@ -1625,7 +1968,8 @@
       "score": 8,
       "category": "AI",
       "publishedAt": "2026-04-30T15:54:38.000Z",
-      "imageFilename": "2f93b61c42b66a20.png"
+      "imageFilename": "2f93b61c42b66a20.png",
+      "slug": "automating-gpu-kernel-translation-with-ai-agents-cutile-pyth"
     },
     {
       "url": "https://thehackernews.com/2026/04/etherrat-distribution-spoofing.html",
@@ -1642,7 +1986,8 @@
       "score": 8,
       "category": "Security",
       "publishedAt": "2026-04-30T11:30:00.000Z",
-      "imageFilename": "7c3f6d796068c374.png"
+      "imageFilename": "7c3f6d796068c374.png",
+      "slug": "etherrat-distribution-spoofing-administrative-tools-via-gith"
     },
     {
       "url": "https://thehackernews.com/2026/04/new-linux-copy-fail-vulnerability.html",
@@ -1658,7 +2003,8 @@
       "score": 8,
       "category": "Security",
       "publishedAt": "2026-04-30T09:24:00.000Z",
-      "imageFilename": "2835c771f8b27107.png"
+      "imageFilename": "2835c771f8b27107.png",
+      "slug": "new-linux-copy-fail-vulnerability-enables-root-access-on-maj"
     },
     {
       "url": "https://thehackernews.com/2026/04/google-fixes-cvss-10-gemini-cli-ci-rce.html",
@@ -1675,7 +2021,8 @@
       "score": 9,
       "category": "Security",
       "publishedAt": "2026-04-30T07:07:00.000Z",
-      "imageFilename": "3f331b8fad016b67.png"
+      "imageFilename": "3f331b8fad016b67.png",
+      "slug": "google-fixes-cvss-10-gemini-cli-ci-rce-and-cursor-flaws-enab"
     },
     {
       "url": "https://openai.com/index/where-the-goblins-came-from",
@@ -1691,7 +2038,8 @@
       "score": 9,
       "category": "AI",
       "publishedAt": "2026-04-30T03:21:04.000Z",
-      "imageFilename": "2aeb9ffdcbecfe14.png"
+      "imageFilename": "2aeb9ffdcbecfe14.png",
+      "slug": "where-the-goblins-came-from"
     },
     {
       "url": "https://snyk.io/blog/lightning-pypi-compromise-bun-based-credential-stealer",
@@ -1707,7 +2055,8 @@
       "score": 8,
       "category": "Security",
       "publishedAt": "2026-04-30T00:00:00.000Z",
-      "imageFilename": "98a25918e1a18fa5.png"
+      "imageFilename": "98a25918e1a18fa5.png",
+      "slug": "lightning-pypi-compromise-a-bun-based-credential-stealer-in"
     },
     {
       "url": "https://thenewstack.io/strands-agents-tool-design",
@@ -1723,7 +2072,8 @@
       "score": 8,
       "category": "AI",
       "publishedAt": "2026-04-29T18:52:32.000Z",
-      "imageFilename": "ff8785fb831d3d0a.png"
+      "imageFilename": "ff8785fb831d3d0a.png",
+      "slug": "cut-ai-token-usage-by-96-here-s-how-aws-strands-agents-does"
     },
     {
       "url": "https://kubernetes.io/blog/2026/04/29/kubernetes-v1-36-memory-qos-tiered-protection",
@@ -1740,7 +2090,8 @@
       "score": 8,
       "category": "DevOps",
       "publishedAt": "2026-04-29T18:35:00.000Z",
-      "imageFilename": "dff5c549e838b3c2.png"
+      "imageFilename": "dff5c549e838b3c2.png",
+      "slug": "kubernetes-v1-36-tiered-memory-protection-with-memory-qos"
     },
     {
       "url": "https://huggingface.co/blog/evaleval/eval-costs-bottleneck",
@@ -1756,7 +2107,8 @@
       "score": 8,
       "category": "AI",
       "publishedAt": "2026-04-29T16:45:09.000Z",
-      "imageFilename": "1dd70afaf5743e9d.png"
+      "imageFilename": "1dd70afaf5743e9d.png",
+      "slug": "ai-evals-are-becoming-the-new-compute-bottleneck"
     },
     {
       "url": "https://thenewstack.io/anaconda-ai-outerbounds-python-metaflow",
@@ -1772,7 +2124,8 @@
       "score": 8,
       "category": "AI",
       "publishedAt": "2026-04-29T16:43:08.000Z",
-      "imageFilename": "ba3abdd3ef5ee9b6.png"
+      "imageFilename": "ba3abdd3ef5ee9b6.png",
+      "slug": "anaconda-acquires-outerbounds-to-rein-in-the-buggy-code-ai-a"
     },
     {
       "url": "https://thehackernews.com/2026/04/sap-npm-packages-compromised-by-mini.html",
@@ -1789,7 +2142,8 @@
       "score": 8,
       "category": "Security",
       "publishedAt": "2026-04-29T16:26:00.000Z",
-      "imageFilename": "828b37bb09e75022.png"
+      "imageFilename": "828b37bb09e75022.png",
+      "slug": "sap-related-npm-packages-compromised-in-credential-stealing"
     },
     {
       "url": "https://thenewstack.io/anthropic-agents-managed-aws-claude",
@@ -1805,7 +2159,8 @@
       "score": 8,
       "category": "AI",
       "publishedAt": "2026-04-29T15:00:00.000Z",
-      "imageFilename": "f198d3bcf5a255db.png"
+      "imageFilename": "f198d3bcf5a255db.png",
+      "slug": "anthropic-wants-to-be-the-aws-of-agentic-ai"
     },
     {
       "url": "https://thenewstack.io/openai-bedrock-trainium-silicon",
@@ -1822,7 +2177,8 @@
       "score": 9,
       "category": "Cloud",
       "publishedAt": "2026-04-29T14:54:40.000Z",
-      "imageFilename": "61ecc66df1d73227.png"
+      "imageFilename": "61ecc66df1d73227.png",
+      "slug": "aws-lands-openai-on-bedrock-but-trainium-is-the-real-story"
     },
     {
       "url": "https://thehackernews.com/2026/04/new-wave-of-dprk-attacks-uses-ai.html",
@@ -1839,7 +2195,8 @@
       "score": 9,
       "category": "Security",
       "publishedAt": "2026-04-29T14:43:00.000Z",
-      "imageFilename": "a1018bf293cb7d0b.png"
+      "imageFilename": "a1018bf293cb7d0b.png",
+      "slug": "new-wave-of-dprk-attacks-uses-ai-inserted-npm-malware-fake-f"
     },
     {
       "url": "https://thenewstack.io/warp-open-source-client",
@@ -1856,7 +2213,8 @@
       "score": 8,
       "category": "AI",
       "publishedAt": "2026-04-29T13:57:41.000Z",
-      "imageFilename": "8e83f515e23f6d4d.png"
+      "imageFilename": "8e83f515e23f6d4d.png",
+      "slug": "warp-s-gamble-going-open-source-to-take-on-closed-source-riv"
     },
     {
       "url": "https://aws.amazon.com/blogs/machine-learning/run-custom-mcp-proxies-serverless-on-amazon-bedrock-agentcore-runtime",
@@ -1873,7 +2231,8 @@
       "score": 8,
       "category": "AI",
       "publishedAt": "2026-04-29T11:52:16.000Z",
-      "imageFilename": "0c6b59c1ced742e0.png"
+      "imageFilename": "0c6b59c1ced742e0.png",
+      "slug": "run-custom-mcp-proxies-serverless-on-amazon-bedrock-agentcor"
     },
     {
       "url": "https://thehackernews.com/2026/04/critical-cpanel-authentication.html",
@@ -1889,7 +2248,8 @@
       "score": 8,
       "category": "Security",
       "publishedAt": "2026-04-29T09:37:00.000Z",
-      "imageFilename": "433fb870fc0a1282.png"
+      "imageFilename": "433fb870fc0a1282.png",
+      "slug": "critical-cpanel-authentication-vulnerability-identified-upda"
     },
     {
       "url": "https://thehackernews.com/2026/04/cisa-adds-actively-exploited.html",
@@ -1906,7 +2266,8 @@
       "score": 9,
       "category": "Security",
       "publishedAt": "2026-04-29T08:46:00.000Z",
-      "imageFilename": "9fa30c8a550ee03f.png"
+      "imageFilename": "9fa30c8a550ee03f.png",
+      "slug": "cisa-adds-actively-exploited-connectwise-and-windows-flaws-t"
     },
     {
       "url": "https://snyk.io/blog/bun-based-stealer-hits-sap-cap-js-mbt-npm-packages",
@@ -1922,7 +2283,8 @@
       "score": 8,
       "category": "Security",
       "publishedAt": "2026-04-29T00:00:00.000Z",
-      "imageFilename": "dbede9695eeb7710.png"
+      "imageFilename": "dbede9695eeb7710.png",
+      "slug": "a-mini-shai-hulud-has-appeared-bun-based-stealer-hits-sap-ca"
     },
     {
       "url": "https://developer.nvidia.com/blog/scaling-biomolecular-modeling-using-context-parallelism-in-nvidia-bionemo",
@@ -1938,7 +2300,8 @@
       "score": 8,
       "category": "AI",
       "publishedAt": "2026-04-28T19:00:00.000Z",
-      "imageFilename": "878f48753a24df29.png"
+      "imageFilename": "878f48753a24df29.png",
+      "slug": "scaling-biomolecular-modeling-using-context-parallelism-in-n"
     },
     {
       "url": "https://aws.amazon.com/blogs/machine-learning/nvidia-nemotron-3-nano-omni-model-now-available-on-amazon-sagemaker-jumpstart",
@@ -1955,7 +2318,8 @@
       "score": 8,
       "category": "AI",
       "publishedAt": "2026-04-28T16:40:34.000Z",
-      "imageFilename": "c5505762a2b8b350.png"
+      "imageFilename": "c5505762a2b8b350.png",
+      "slug": "nvidia-nemotron-3-nano-omni-model-now-available-on-amazon-sa"
     },
     {
       "url": "https://developer.nvidia.com/blog/nvidia-nemotron-3-nano-omni-powers-multimodal-agent-reasoning-in-a-single-efficient-open-model",
@@ -1971,7 +2335,8 @@
       "score": 8,
       "category": "AI",
       "publishedAt": "2026-04-28T16:01:12.000Z",
-      "imageFilename": "9c793bc4209b7d30.png"
+      "imageFilename": "9c793bc4209b7d30.png",
+      "slug": "nvidia-nemotron-3-nano-omni-powers-multimodal-agent-reasonin"
     },
     {
       "url": "https://github.blog/security/securing-the-git-push-pipeline-responding-to-a-critical-remote-code-execution-vulnerability",
@@ -1988,7 +2353,8 @@
       "score": 9,
       "category": "Security",
       "publishedAt": "2026-04-28T15:30:00.000Z",
-      "imageFilename": "d0cb987e64c9effc.png"
+      "imageFilename": "d0cb987e64c9effc.png",
+      "slug": "securing-the-git-push-pipeline-responding-to-a-critical-remo"
     },
     {
       "url": "https://snyk.io/blog/malicious-release-of-elementary-data-pypi-package-steals-cloud-credentials-from-data-engineers",
@@ -2004,7 +2370,8 @@
       "score": 8,
       "category": "Security",
       "publishedAt": "2026-04-27T23:00:00.000Z",
-      "imageFilename": "3383107b74e808f4.png"
+      "imageFilename": "3383107b74e808f4.png",
+      "slug": "malicious-release-of-elementary-data-pypi-package-steals-clo"
     },
     {
       "url": "https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing",
@@ -2021,7 +2388,8 @@
       "score": 8,
       "category": "AI",
       "publishedAt": "2026-04-27T15:58:22.000Z",
-      "imageFilename": "0579b08dc8fa531e.png"
+      "imageFilename": "0579b08dc8fa531e.png",
+      "slug": "github-copilot-is-moving-to-usage-based-billing"
     },
     {
       "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-anthropic-meta-partnership-aws-lambda-s3-files-amazon-bedrock-agentcore-cli-and-more-april-27-2026",
@@ -2038,7 +2406,8 @@
       "score": 8,
       "category": "AI",
       "publishedAt": "2026-04-27T15:01:28.000Z",
-      "imageFilename": "09393027ee8722ad.png"
+      "imageFilename": "09393027ee8722ad.png",
+      "slug": "aws-weekly-roundup-anthropic-meta-partnership-aws-lambda-s3"
     },
     {
       "url": "https://openai.com/index/open-source-codex-orchestration-symphony",
@@ -2054,7 +2423,8 @@
       "score": 8,
       "category": "AI",
       "publishedAt": "2026-04-27T00:00:00.000Z",
-      "imageFilename": "52a1dcf612249037.png"
+      "imageFilename": "52a1dcf612249037.png",
+      "slug": "an-open-source-spec-for-orchestration-symphony"
     },
     {
       "url": "https://kubernetes.io/blog/2026/04/24/kubernetes-v1-36-fine-grained-kubelet-authorization-ga",
@@ -2071,7 +2441,8 @@
       "score": 8,
       "category": "DevOps",
       "publishedAt": "2026-04-24T18:35:00.000Z",
-      "imageFilename": "ac69544c3cc1b061.png"
+      "imageFilename": "ac69544c3cc1b061.png",
+      "slug": "kubernetes-v1-36-fine-grained-kubelet-api-authorization-grad"
     },
     {
       "url": "https://huggingface.co/blog/deepseekv4",
@@ -2086,7 +2457,8 @@
       "score": 8,
       "category": "AI",
       "publishedAt": "2026-04-24T00:00:00.000Z",
-      "imageFilename": "c586ff3767787db5.png"
+      "imageFilename": "c586ff3767787db5.png",
+      "slug": "deepseek-v4-a-million-token-context-that-agents-can-actually"
     },
     {
       "url": "https://kubernetes.io/blog/2026/04/23/kubernetes-v1-36-userns-ga",
@@ -2103,7 +2475,8 @@
       "score": 9,
       "category": "DevOps",
       "publishedAt": "2026-04-23T18:35:00.000Z",
-      "imageFilename": "2ffdcaa57dee2ac9.png"
+      "imageFilename": "2ffdcaa57dee2ac9.png",
+      "slug": "kubernetes-v1-36-user-namespaces-in-kubernetes-are-finally-g"
     },
     {
       "url": "https://docker.com/blog/trivy-kics-and-the-shape-of-supply-chain-attacks-so-far-in-2026",
@@ -2119,7 +2492,8 @@
       "score": 9,
       "category": "Security",
       "publishedAt": "2026-04-23T15:32:00.000Z",
-      "imageFilename": "45b7c45851d74baa.png"
+      "imageFilename": "45b7c45851d74baa.png",
+      "slug": "trivy-kics-and-the-shape-of-supply-chain-attacks-so-far-in-2"
     },
     {
       "url": "https://krebsonsecurity.com/2026/04/russia-hacked-routers-to-steal-microsoft-office-tokens",
@@ -2136,7 +2510,8 @@
       "score": 9,
       "category": "Security",
       "publishedAt": "2026-04-07T17:02:44.000Z",
-      "imageFilename": "0c26aad79391bb72.png"
+      "imageFilename": "0c26aad79391bb72.png",
+      "slug": "russia-hacked-routers-to-steal-microsoft-office-tokens"
     }
   ]
 }

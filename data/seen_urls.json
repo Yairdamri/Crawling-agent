@@ -2958,5 +2958,40 @@
     "url": "https://thehackernews.com/2026/05/scarcruft-hacks-gaming-platform-to.html",
     "seenAt": "2026-05-05T09:53:50.382Z",
     "contentHash": "6f00e082b53f4059"
+  },
+  {
+    "url": "https://thenewstack.io/ai-agent-payment-protocols",
+    "seenAt": "2026-05-05T13:36:59.745Z",
+    "contentHash": "7c6c05f888d24a1f"
+  },
+  {
+    "url": "https://thenewstack.io/sprig-postgres-scylladb-migration",
+    "seenAt": "2026-05-05T13:36:59.745Z",
+    "contentHash": "09f5bc2360a5ec2b"
+  },
+  {
+    "url": "https://cncf.io/blog/2026/05/05/announcing-kyverno-release-1-18",
+    "seenAt": "2026-05-05T13:36:59.745Z",
+    "contentHash": "ba0214dbfb52b4d7"
+  },
+  {
+    "url": "https://docker.com/blog/blog-generate-images-locally-dmr-open-webui",
+    "seenAt": "2026-05-05T13:36:59.745Z",
+    "contentHash": "25577dbf6af681e0"
+  },
+  {
+    "url": "https://thehackernews.com/2026/05/the-back-door-attackers-know-about-and.html",
+    "seenAt": "2026-05-05T13:36:59.745Z",
+    "contentHash": "c2061fb870d6474c"
+  },
+  {
+    "url": "https://thehackernews.com/2026/05/metinfo-cms-cve-2026-29014-exploited.html",
+    "seenAt": "2026-05-05T13:36:59.745Z",
+    "contentHash": "562fde84f6165dbb"
+  },
+  {
+    "url": "https://thehackernews.com/2026/05/we-scanned-1-million-exposed-ai.html",
+    "seenAt": "2026-05-05T13:36:59.745Z",
+    "contentHash": "795e2131047b85bf"
   }
 ]
