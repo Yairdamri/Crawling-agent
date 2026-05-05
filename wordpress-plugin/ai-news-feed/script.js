@@ -82,20 +82,56 @@
         var openModal = null;
         var lastTrigger = null;
 
-        function open(modalId, trigger) {
-            var modal = root.querySelector('#' + cssEscape(modalId));
-            if (!modal) return;
-            close();
+        function findModalByHash(hash) {
+            if (!hash) return null;
+            return root.querySelector('.ainfp-modal[data-content-hash="' + cssEscape(hash) + '"]');
+        }
+
+        function findCardByHash(hash) {
+            if (!hash) return null;
+            return root.querySelector('.ainfp-grid-card[data-content-hash="' + cssEscape(hash) + '"]');
+        }
+
+        function urlHasArticleParam() {
+            return new URLSearchParams(window.location.search).has('article');
+        }
+
+        function pushArticleUrl(hash) {
+            var params = new URLSearchParams(window.location.search);
+            params.set('article', hash);
+            var url = window.location.pathname + '?' + params.toString() + window.location.hash;
+            window.history.pushState({ article: hash }, '', url);
+        }
+
+        function clearArticleUrl(replace) {
+            var params = new URLSearchParams(window.location.search);
+            params.delete('article');
+            var qs = params.toString();
+            var url = window.location.pathname + (qs ? '?' + qs : '') + window.location.hash;
+            if (replace) {
+                window.history.replaceState({}, '', url);
+            } else {
+                window.history.pushState({}, '', url);
+            }
+        }
+
+        function open(hash, trigger, opts) {
+            opts = opts || {};
+            var modal = findModalByHash(hash);
+            if (!modal) return false;
+            closeVisual();
             modal.removeAttribute('hidden');
             modal.classList.add('is-open');
             document.body.classList.add('ainfp-no-scroll');
             openModal = modal;
             lastTrigger = trigger || null;
+            if (!opts.skipHistory) pushArticleUrl(hash);
             var closeBtn = modal.querySelector('.ainfp-modal-close');
             if (closeBtn) closeBtn.focus();
+            return true;
         }
 
-        function close() {
+        function closeVisual() {
             if (!openModal) return;
             openModal.setAttribute('hidden', '');
             openModal.classList.remove('is-open');
@@ -107,17 +143,31 @@
             lastTrigger = null;
         }
 
+        function close() {
+            if (!openModal) return;
+            // Only walk back if we ourselves pushed the ?article= state — i.e.
+            // the user opened the modal by clicking a card during this visit.
+            // If they landed directly on a shared URL, history.back() would
+            // exit the site, so instead clean the URL via replaceState.
+            if (window.history.state && window.history.state.article) {
+                window.history.back();
+            } else {
+                if (urlHasArticleParam()) clearArticleUrl(true);
+                closeVisual();
+            }
+        }
+
         cards.forEach(function (card) {
-            var modalId = card.getAttribute('data-modal-id');
-            if (!modalId) return;
+            var hash = card.getAttribute('data-content-hash');
+            if (!hash) return;
             card.addEventListener('click', function (e) {
                 if (e.target.closest('a, button')) return;
-                open(modalId, card);
+                open(hash, card);
             });
             card.addEventListener('keydown', function (e) {
                 if (e.key === 'Enter' || e.key === ' ' || e.key === 'Spacebar') {
                     e.preventDefault();
-                    open(modalId, card);
+                    open(hash, card);
                 }
             });
         });
@@ -135,6 +185,31 @@
                 }
             });
         });
+
+        // Sync modal state with URL on back/forward navigation.
+        // The browser handles the URL change; we just open or close visually.
+        window.addEventListener('popstate', function () {
+            var hash = new URLSearchParams(window.location.search).get('article');
+            if (hash) {
+                var card = findCardByHash(hash);
+                open(hash, card, { skipHistory: true });
+            } else {
+                closeVisual();
+            }
+        });
+
+        // Direct landing: if URL already has ?article=<hash>, open it without
+        // pushing a new history entry (the URL is already there).
+        var initialHash = new URLSearchParams(window.location.search).get('article');
+        if (initialHash) {
+            var card = findCardByHash(initialHash);
+            var opened = open(initialHash, card, { skipHistory: true });
+            if (!opened) {
+                // Aged-out / unknown article — silently clear the param so the
+                // URL doesn't linger past this navigation.
+                clearArticleUrl(true);
+            }
+        }
     }
 
     function cssEscape(id) {
