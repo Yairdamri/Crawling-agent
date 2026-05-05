@@ -2,7 +2,7 @@
 /**
  * Plugin Name: AI News Feed
  * Description: Renders an automated AI/DevOps/cloud news feed from a JSON URL produced by a GitHub Actions pipeline. Shortcodes: [ai_news_feed] (simple grid) and [ai_news_feed_page] (full magazine layout).
- * Version:     0.5.1
+ * Version:     0.6.0
  * Author:      AI News Feed
  * License:     MIT
  */
@@ -189,7 +189,7 @@ function ainf_shortcode($atts) {
     }
     $articles = array_slice($articles, 0, $limit);
 
-    wp_enqueue_style('ainf-style', plugin_dir_url(__FILE__) . 'style.css', array(), '0.5.1');
+    wp_enqueue_style('ainf-style', plugin_dir_url(__FILE__) . 'style.css', array(), '0.6.0');
 
     if (empty($articles)) {
         $msg = isset($data['error']) && $data['error']
@@ -290,6 +290,18 @@ function ainfp_source_slug($source) {
     return '';
 }
 
+// Stable per-article id derived from imageFilename ("<hash>.png" -> "<hash>").
+// Used as the modal DOM id and in shareable URL params (?article=<hash>).
+// imageFilename is guaranteed present on every article in news.json (the
+// store.mjs filter drops articles without it), and contentHash is unique
+// per (URL, content) pair — so this is collision-free at our scale.
+function ainfp_article_hash($article) {
+    $f = isset($article['imageFilename']) ? (string) $article['imageFilename'] : '';
+    if ($f === '') return '';
+    $hash = preg_replace('/\.png$/i', '', $f);
+    return preg_match('/^[a-f0-9]{8,64}$/i', $hash) ? strtolower($hash) : '';
+}
+
 function ainfp_favicon_url($domain, $size = 64) {
     $domain = strtolower(trim((string) $domain));
     if ($domain === '' || !preg_match('/^[a-z0-9.-]+\.[a-z]{2,}$/i', $domain)) return '';
@@ -379,7 +391,8 @@ function ainfp_render_grid_card($article, $image_base, $idx = 0) {
     $publishedAt   = isset($article['publishedAt']) ? (string) $article['publishedAt'] : '';
     $image_url     = ainfp_image_url_for($article, $image_base);
     $score_class   = ainfp_score_class($score);
-    $modal_id      = 'ainfp-modal-' . (int) $idx;
+    $hash          = ainfp_article_hash($article);
+    $modal_id      = $hash !== '' ? 'ainfp-modal-' . $hash : 'ainfp-modal-' . (int) $idx;
 
     $date_display = '';
     $ts = $publishedAt ? strtotime($publishedAt) : 0;
@@ -396,6 +409,7 @@ function ainfp_render_grid_card($article, $image_base, $idx = 0) {
              data-date="<?php echo esc_attr($publishedAt); ?>"
              data-search="<?php echo esc_attr($search_blob); ?>"
              data-modal-id="<?php echo esc_attr($modal_id); ?>"
+             data-content-hash="<?php echo esc_attr($hash); ?>"
              role="button"
              tabindex="0"
              aria-haspopup="dialog"
@@ -446,7 +460,8 @@ function ainfp_render_article_modal($article, $image_base, $idx = 0) {
     $relevant_for   = isset($article['relevant_for']) && is_array($article['relevant_for']) ? $article['relevant_for'] : array();
     $image_url      = ainfp_image_url_for($article, $image_base);
     $score_class    = ainfp_score_class($score);
-    $modal_id       = 'ainfp-modal-' . (int) $idx;
+    $hash           = ainfp_article_hash($article);
+    $modal_id       = $hash !== '' ? 'ainfp-modal-' . $hash : 'ainfp-modal-' . (int) $idx;
     $title_id       = $modal_id . '-title';
     $source_slug    = ainfp_source_slug($source);
 
@@ -469,7 +484,7 @@ function ainfp_render_article_modal($article, $image_base, $idx = 0) {
 
     ob_start();
     ?>
-    <div class="ainfp-modal" id="<?php echo esc_attr($modal_id); ?>" role="dialog" aria-modal="true" aria-labelledby="<?php echo esc_attr($title_id); ?>" hidden>
+    <div class="ainfp-modal" id="<?php echo esc_attr($modal_id); ?>" data-content-hash="<?php echo esc_attr($hash); ?>" role="dialog" aria-modal="true" aria-labelledby="<?php echo esc_attr($title_id); ?>" hidden>
         <div class="ainfp-modal-backdrop" data-modal-close="1"></div>
         <div class="ainfp-modal-panel" role="document">
             <header class="ainfp-modal-header">
@@ -578,8 +593,8 @@ function ainfp_page_shortcode($atts) {
     $data = ainf_fetch_data();
     $articles = isset($data['articles']) ? $data['articles'] : array();
 
-    wp_enqueue_style('ainf-style', plugin_dir_url(__FILE__) . 'style.css', array(), '0.5.1');
-    wp_enqueue_script('ainfp-script', plugin_dir_url(__FILE__) . 'script.js', array(), '0.5.1', true);
+    wp_enqueue_style('ainf-style', plugin_dir_url(__FILE__) . 'style.css', array(), '0.6.0');
+    wp_enqueue_script('ainfp-script', plugin_dir_url(__FILE__) . 'script.js', array(), '0.6.0', true);
 
     if (empty($articles)) {
         $msg = isset($data['error']) && $data['error']
