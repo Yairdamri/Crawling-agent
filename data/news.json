@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-05-05T13:36:59.744Z",
+  "generatedAt": "2026-05-05T14:15:47.489Z",
   "articles": [
     {
       "url": "https://hashicorp.com/blog/mitigate-credential-exposure-in-windows-environments-with-boundary-and-vault",
