@@ -2,7 +2,7 @@
 /**
  * Plugin Name: AI News Feed
  * Description: Renders an automated AI/DevOps/cloud news feed from a JSON URL produced by a GitHub Actions pipeline. Shortcodes: [ai_news_feed] (simple grid) and [ai_news_feed_page] (full magazine layout).
- * Version:     0.5.0
+ * Version:     0.5.1
  * Author:      AI News Feed
  * License:     MIT
  */
@@ -189,7 +189,7 @@ function ainf_shortcode($atts) {
     }
     $articles = array_slice($articles, 0, $limit);
 
-    wp_enqueue_style('ainf-style', plugin_dir_url(__FILE__) . 'style.css', array(), '0.5.0');
+    wp_enqueue_style('ainf-style', plugin_dir_url(__FILE__) . 'style.css', array(), '0.5.1');
 
     if (empty($articles)) {
         $msg = isset($data['error']) && $data['error']
@@ -288,6 +288,12 @@ function ainfp_source_slug($source) {
     if (strpos($s, 'krebs') !== false || strpos($s, 'hacker news') !== false ||
         strpos($s, 'project zero') !== false)                                                   return 'security';
     return '';
+}
+
+function ainfp_favicon_url($domain, $size = 64) {
+    $domain = strtolower(trim((string) $domain));
+    if ($domain === '' || !preg_match('/^[a-z0-9.-]+\.[a-z]{2,}$/i', $domain)) return '';
+    return 'https://www.google.com/s2/favicons?domain=' . rawurlencode($domain) . '&sz=' . (int) $size;
 }
 
 function ainfp_image_url_for($article, $image_base) {
@@ -444,13 +450,15 @@ function ainfp_render_article_modal($article, $image_base, $idx = 0) {
     $title_id       = $modal_id . '-title';
     $source_slug    = ainfp_source_slug($source);
 
-    $source_host = '';
-    if ($url !== '') {
+    $source_domain = isset($article['sourceDomain']) ? trim((string) $article['sourceDomain']) : '';
+    $source_host = $source_domain;
+    if ($source_host === '' && $url !== '') {
         $parts = wp_parse_url($url);
         if (is_array($parts) && !empty($parts['host'])) {
             $source_host = preg_replace('/^www\./', '', strtolower($parts['host']));
         }
     }
+    $favicon_url = ainfp_favicon_url($source_domain !== '' ? $source_domain : $source_host, 128);
 
     $date_display = '';
     $ts = $publishedAt ? strtotime($publishedAt) : 0;
@@ -488,7 +496,13 @@ function ainfp_render_article_modal($article, $image_base, $idx = 0) {
 
                 <div class="ainfp-modal-content">
                     <div class="ainfp-modal-source-row">
-                        <span class="ainfp-modal-source-logo" data-source="<?php echo esc_attr($source_slug); ?>" aria-hidden="true"><?php echo esc_html($logo_letter); ?></span>
+                        <span class="ainfp-modal-source-logo" data-source="<?php echo esc_attr($source_slug); ?>" aria-hidden="true">
+                            <?php if ($favicon_url !== '') : ?>
+                                <img src="<?php echo esc_url($favicon_url); ?>" alt="" width="36" height="36" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+                            <?php else : ?>
+                                <?php echo esc_html($logo_letter); ?>
+                            <?php endif; ?>
+                        </span>
                         <div class="ainfp-modal-source-meta">
                             <span class="ainfp-modal-source-name"><?php echo esc_html($source); ?></span>
                             <span class="ainfp-modal-source-sub">
@@ -564,8 +578,8 @@ function ainfp_page_shortcode($atts) {
     $data = ainf_fetch_data();
     $articles = isset($data['articles']) ? $data['articles'] : array();
 
-    wp_enqueue_style('ainf-style', plugin_dir_url(__FILE__) . 'style.css', array(), '0.5.0');
-    wp_enqueue_script('ainfp-script', plugin_dir_url(__FILE__) . 'script.js', array(), '0.5.0', true);
+    wp_enqueue_style('ainf-style', plugin_dir_url(__FILE__) . 'style.css', array(), '0.5.1');
+    wp_enqueue_script('ainfp-script', plugin_dir_url(__FILE__) . 'script.js', array(), '0.5.1', true);
 
     if (empty($articles)) {
         $msg = isset($data['error']) && $data['error']
