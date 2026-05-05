@@ -85,7 +85,7 @@ function pickPublishedAt(item) {
   return d.toISOString();
 }
 
-function normalizeItem(item, feedName) {
+function normalizeItem(item, feed) {
   const rawUrl = item.link || item.guid;
   if (!rawUrl) return null;
   const url = normalizeUrl(rawUrl);
@@ -99,7 +99,8 @@ function normalizeItem(item, feedName) {
     title,
     url,
     originalUrl: rawUrl !== url ? rawUrl : undefined,
-    source: feedName,
+    source: feed.name,
+    sourceDomain: feed.domain || '',
     publishedAt: pickPublishedAt(item),
     rawText,
     contentHash: hashContent(title, rawText),
@@ -111,7 +112,7 @@ async function fetchOne(feed) {
     const parsed = await parser.parseURL(feed.url);
     const normalized = (parsed.items || [])
       .slice(0, MAX_ITEMS_PER_FEED)
-      .map((item) => normalizeItem(item, feed.name))
+      .map((item) => normalizeItem(item, feed))
       .filter(Boolean);
     const items = normalized.filter((item) => isWithinDays(item.publishedAt, MAX_AGE_DAYS));
     const droppedAge = normalized.length - items.length;
