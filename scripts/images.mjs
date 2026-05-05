@@ -20,77 +20,107 @@ function getClient() {
   return _client;
 }
 
-const CATEGORY_VISUALS = {
-  AI: 'a glowing silicon chip with intricate neural network traces, pulses of light flowing through circuit pathways',
-  Security: 'an abstract luminous padlock dissolving into circuit traces, layered translucent shields with streaks of light',
-  DevOps: 'stacked translucent containers and glowing modular cubes in orchestrated formation',
-  Cloud: 'a vast distributed mesh of server racks connected by streams of light, abstract cloud topology with luminous nodes',
-  Engineering: 'an architectural blueprint of glowing code structures, wireframe of modular software components',
-  Other: 'an abstract atmospheric tech landscape with light streams and circuit pathways',
+// Bounded vocabulary per category. Gemini picks ONE option from the list,
+// choosing whichever best fits the article's title. Each special-case option
+// has a literal-keyword condition; defaults are unconditional fallbacks.
+// The bounded list kills two failure modes the previous prompt had:
+// "free invention" (weird funnel objects) and "letters as the subject"
+// (rendering OAM/AWS/etc. as the literal letterforms).
+const CATEGORY_OPTIONS = {
+  AI: [
+    'a 3D isometric microchip / processor with metallic pin legs and subtle circuit traces on top (DEFAULT — use this unless the title explicitly contains a keyword for one of the special-case options below)',
+    'a 3D isometric microchip with a small heatsink stacked on top (DEFAULT alternative)',
+    'a 3D isometric floating microchip with a few small data-point spheres orbiting around it (DEFAULT alternative)',
+    'a 3D isometric circuit board with smooth surface-mounted components (DEFAULT alternative)',
+    'a 3D isometric magnifying glass (use ONLY IF the title literally contains one of: "search", "indexing", "retrieval", "research", "RAG")',
+    'a 3D isometric balance scales (use ONLY IF the title literally contains one of: "evaluation", "evaluat", "judge", "judging", "ranking", "eval")',
+    'a 3D isometric gauge / dial (use ONLY IF the title literally contains one of: "benchmark", "performance score", "leaderboard")',
+    'a 3D isometric robotic arm (use ONLY IF the title literally contains one of: "agent", "agentic", "automation", "robotic", "robot")',
+  ],
+  DevOps: [
+    'a 3D isometric pair of stacked shipping containers with corrugated metal sides (DEFAULT — use this unless the title explicitly contains a keyword for one of the special-case options below)',
+    'a 3D isometric single shipping container with the door slightly open showing smooth modular blocks inside (DEFAULT alternative)',
+    'a 3D isometric crane arm gently lifting one shipping container (DEFAULT alternative)',
+    'a 3D isometric cluster of small rounded pod shapes (use ONLY IF the title literally contains one of: "pod", "Kubernetes", "K8s", "workload")',
+    'a 3D isometric large gear/cog with a smaller wrench resting on top (use ONLY IF the title literally contains one of: "CI", "CD", "pipeline", "IaC", "Terraform", "Pulumi", "GitOps", "Argo", "platform engineering")',
+    'a 3D isometric small screen with a smooth pulse/heartbeat line (use ONLY IF the title literally contains one of: "observability", "Datadog", "Honeycomb", "Grafana", "OpenTelemetry", "OTel", "eBPF", "trace", "tracing", "monitor")',
+  ],
+  Cloud: [
+    'a 3D isometric single fluffy cloud (DEFAULT — use this unless the title explicitly contains a keyword for one of the special-case options below)',
+    'a 3D isometric small server rack with cloud shapes floating above it (DEFAULT alternative)',
+    'a 3D isometric stack of two clouds, one solid and one slightly translucent (DEFAULT alternative)',
+    'a 3D isometric storage bucket (use ONLY IF the title literally contains one of: "S3", "bucket", "storage", "data lake", "object store", "blob")',
+    'a 3D isometric storage bucket with a small fluffy cloud rising above it (use ONLY IF the title literally contains one of: "S3", "bucket", "storage", "data lake")',
+    'a 3D isometric cylindrical database stack (use ONLY IF the title literally contains one of: "database", "DynamoDB", "RDS", "Postgres", "warehouse", "OLAP", "BigQuery", "Snowflake")',
+  ],
+  Engineering: [
+    'a 3D isometric crossed wrench and gear/cog (DEFAULT — use this unless the title explicitly contains a keyword for one of the special-case options below)',
+    'a 3D isometric open toolbox with a few tools (wrench, screwdriver, hammer) visibly spilling out (DEFAULT alternative)',
+    'a 3D isometric large gear/cog with a smaller wrench resting on top (DEFAULT alternative)',
+    'a 3D isometric hammer and screwdriver crossed on a small workbench surface (DEFAULT alternative)',
+    'a 3D isometric scroll of blueprint paper (use ONLY IF the title literally contains one of: "architecture", "design", "system design", "blueprint")',
+    'a 3D isometric smooth typewriter (use ONLY IF the title literally contains one of: "CLI", "TUI", "terminal", "REPL", "shell", "command-line")',
+  ],
+  Security: [
+    'a 3D isometric padlock with one small warning indicator (triangle, exclamation, or dot) hovering nearby (DEFAULT — use this unless the title explicitly contains a keyword for one of the special-case options below)',
+    'a 3D isometric shield with one small warning indicator (DEFAULT alternative)',
+    'a 3D isometric padlock and a smooth metallic key together (DEFAULT alternative)',
+    'a 3D isometric vault door, slightly ajar, with a smooth handle (DEFAULT alternative)',
+    'a 3D isometric small safe / strongbox (DEFAULT alternative)',
+    'a 3D isometric magnifying glass (use ONLY IF the title literally contains one of: "forensic", "threat hunting", "investigat", "research", "analysis", "hunt")',
+  ],
+  Other: [
+    'a 3D isometric smooth orb floating above the platform with three small geometric satellite shapes around it (DEFAULT — use this unless the title explicitly contains a keyword for one of the special-case options below)',
+    'a 3D isometric satellite dish (use ONLY IF the title literally contains one of: "antenna", "radio", "signal", "broadcast", "5G", "LoRa", "satellite", "wireless")',
+    'a 3D isometric radar dish (use ONLY IF the title literally contains one of: "radar", "scan", "detection", "sensor"; AVOID overlap with networking — pick satellite dish for those)',
+    'a 3D isometric smooth typewriter (use ONLY IF the title literally contains one of: "CLI", "TUI", "terminal", "REPL", "shell")',
+    'a 3D isometric cylindrical database stack (use ONLY IF the title literally contains one of: "database", "warehouse", "RDBMS")',
+    'a 3D isometric medal or trophy (use ONLY IF the title literally contains one of: "certification", "certified", "credential", "exam", "award", "kubestronaut")',
+  ],
 };
 
+// Composition / framing variants. Picked independently of subject by a
+// different hash seed, so subject pick and framing pick combine for variety.
 const COMPOSITIONS = [
-  'top-down macro view, symmetrical layout',
-  'low-angle cinematic shot, dramatic depth of field',
-  'isometric perspective, geometric clarity',
-  'wide establishing shot, atmospheric haze',
-  'close-up macro detail, shallow focus, glowing particles',
-  'high-angle overview, connective light threads',
-  'centered hero composition, radial light burst',
-  'asymmetric off-center framing, dynamic flow',
+  'centered hero composition, slight 3/4 isometric tilt',
+  'asymmetric off-center placement, balanced negative space, 3/4 isometric',
+  'low-angle isometric view, looking slightly up at the subject',
+  'top-down with subtle isometric perspective, clean layout',
 ];
-
-const LIGHTINGS = [
-  'warm key light from above with cool rim',
-  'cold ambient with bright accent points',
-  'split lighting, contrasting tones',
-  'volumetric god rays cutting through darkness',
-  'electric pulses illuminating from within',
-  'soft fog with a bright focal glow',
-];
-
-function cleanTags(tags) {
-  return (tags || [])
-    .map((t) => String(t).toLowerCase().trim())
-    .filter((t) => t.length >= 4)
-    .filter((t) => !/^\d/.test(t))
-    .filter((t) => !/^v\d/.test(t));
-}
 
 function hashIndex(seed, modulo) {
   return createHash('sha256').update(seed).digest().readUInt32BE(0) % modulo;
 }
 
-// Per-source / per-category color hints. Injected into the prompt so
-// different articles get distinct palettes instead of all defaulting to
-// the same cinematic blue+red.
-const BRAND_COLOR_HINTS = {
-  aws:         'warm amber and burnt-orange accents',
-  kubernetes:  'deep cobalt blue accents with luminous cyan highlights',
-  openai:      'cool teal-green accents with soft mint highlights',
-  anthropic:   'warm terracotta and copper accents',
-  github:      'soft slate-gray accents with off-white highlights',
-  hashicorp:   'deep violet-purple accents with magenta highlights',
-  docker:      'bright sky-blue accents',
-  nvidia:      'vivid neon-green accents',
-  huggingface: 'bright golden-yellow accents',
-  microsoft:   'bright cyan-blue accents',
-  google:      'bold royal-blue accents with subtle red and yellow highlights',
-  databricks:  'bright red-orange accents',
-  cisa:        'deep federal-navy with pale-gold accents',
-  security:    'alert crimson-red with warning amber accents',
-  stripe:      'deep indigo-violet accents',
-  cloudflare:  'vivid orange accents with warm gold highlights',
-  meta:        'cobalt-blue accents with bright white highlights',
+// Single solid background color per brand / fallback per category.
+// These are the *full background*, not accents — designer's mockup has
+// large flat color fields, not gradients.
+const BRAND_BACKGROUND = {
+  aws:         'warm amber-orange',
+  kubernetes:  'sky blue',
+  openai:      'soft mint teal',
+  anthropic:   'warm terracotta',
+  github:      'soft slate gray',
+  hashicorp:   'violet purple',
+  docker:      'bright sky blue',
+  nvidia:      'fresh mint green',
+  huggingface: 'golden yellow',
+  microsoft:   'cyan blue',
+  google:      'soft royal blue',
+  databricks:  'coral red-orange',
+  cisa:        'navy blue',
+  security:    'soft alert crimson',
+  stripe:      'indigo violet',
+  cloudflare:  'warm orange',
+  meta:        'cobalt blue',
 };
-
-const CATEGORY_COLOR_HINTS = {
-  AI:          'warm amber and golden accents',
-  DevOps:      'deep cobalt-blue accents with steel-gray highlights',
-  Cloud:       'cool teal and silver accents',
-  Engineering: 'rich navy with warm copper accents',
-  Security:    'alert crimson-red and warning amber accents',
-  Other:       'muted sand and slate-gray accents',
+const CATEGORY_BACKGROUND = {
+  AI:          'soft mint teal',
+  DevOps:      'sky blue',
+  Cloud:       'pastel teal',
+  Engineering: 'soft sand or pale lavender',
+  Security:    'soft alert crimson',
+  Other:       'pale cream',
 };
 
 function detectBrandSlug({ source = '', tags = [] }) {
@@ -122,29 +152,49 @@ function detectBrandSlug({ source = '', tags = [] }) {
   return null;
 }
 
+// Subjects that benefit from situational cartoon cloud accents (designer's
+// mockup uses these on cloud / observability / weather concepts).
+function shouldHaveCloudAccents(article) {
+  const haystack = `${article.title} ${(article.tags || []).join(' ')}`.toLowerCase();
+  if (article.category === 'Cloud') return true;
+  if (/observabilit|monitor|tracing|metric|telemetr|log|ebpf/.test(haystack)) return true;
+  if (/cloud|cdn|edge|s3|bucket/.test(haystack)) return true;
+  return false;
+}
+
 export function buildImagePrompt(article) {
-  const { url, category, tags, source } = article;
-  const primary = CATEGORY_VISUALS[category] || CATEGORY_VISUALS.Other;
-  const composition = COMPOSITIONS[hashIndex(url, COMPOSITIONS.length)];
-  const lighting = LIGHTINGS[hashIndex(url + ':L', LIGHTINGS.length)];
-  const flavor = cleanTags(tags);
-  const flavorLine = flavor.length
-    ? `Subtle motifs (visual only): ${flavor.join(', ')}.`
-    : '';
+  const { title, category, url, source, tags } = article;
+  const options = CATEGORY_OPTIONS[category] || CATEGORY_OPTIONS.Other;
+  const optionsList = options.map((opt, i) => `  ${i + 1}. ${opt}`).join('\n');
+  const composition = COMPOSITIONS[hashIndex(url + ':composition', COMPOSITIONS.length)];
   const brandSlug = detectBrandSlug({ source, tags });
-  const colorHint = brandSlug
-    ? BRAND_COLOR_HINTS[brandSlug]
-    : (CATEGORY_COLOR_HINTS[category] || CATEGORY_COLOR_HINTS.Other);
+  const background = brandSlug
+    ? BRAND_BACKGROUND[brandSlug]
+    : (CATEGORY_BACKGROUND[category] || CATEGORY_BACKGROUND.Other);
+  const cloudAccents = shouldHaveCloudAccents(article)
+    ? 'A few small soft cartoon cloud accents float around the subject (only as situational decoration, not the main subject).'
+    : '';
   return [
-    'Editorial tech illustration.',
-    `Primary subject: ${primary}.`,
+    'CRITICAL CONSTRAINT: this image must contain ZERO text. No letters, no words, no numbers, no symbols, no labels, no signs, no logos, no UI elements, no typography, no hieroglyphs or writing-like marks of any kind. The SUBJECT itself must NEVER be a letter, alphabetical character, word, acronym, or shape resembling typography. Even if the article title contains acronyms, brand names, or initials (like AWS, OpenAI, OAM), render the actual concept they refer to (a chip, a cloud, a container) — never the letters themselves. All visible surfaces must be smooth, matte, and completely unmarked.',
+    '',
+    `The article being illustrated is titled: "${title}".`,
+    '',
+    '3D isometric editorial illustration.',
+    'Subject selection — follow these rules in order:',
+    '  STEP 1: scan the article title for the literal keywords listed in any "use ONLY IF" option below.',
+    '  STEP 2: if a keyword matches, use that option.',
+    '  STEP 3: if no "use ONLY IF" keyword matches, you MUST use one of the DEFAULT options.',
+    '  STEP 4: never combine options. Never invent objects. Pick exactly one option from the list.',
+    'Available options:',
+    optionsList,
+    'Place the chosen subject centered on a small circular platform. All surfaces of the subject must be smooth, matte, and unmarked — no engraved logos, no labels, no embossed text.',
     `Composition: ${composition}.`,
-    `Lighting: ${lighting}.`,
-    flavorLine,
-    `Color palette: ${colorHint} on a deep moody base.`,
-    'Style: cinematic, abstract-realistic, moody atmospheric, depth of field, professional editorial quality.',
-    'STRICT NEGATIVE: absolutely no text, no letters, no words, no logos, no UI elements, no readable symbols, no labels, no signage, no typography of any kind. The image must contain zero textual elements.',
-  ].filter(Boolean).join(' ');
+    '',
+    `Background: solid vibrant ${background}, completely flat, no gradient, no atmospheric scene, no depth of field, no haze.`,
+    cloudAccents,
+    'Style: 3D rendered like Spline 3D / Stripe illustrations / Material Design 3D / claymation. Friendly, clean, minimal, even soft lighting from above. Single soft drop shadow under the platform. No glow effects. No god rays. No moody atmosphere. No dramatic lighting. No cinematic depth of field. Bright and inviting.',
+    'FINAL REMINDER: subject is exactly ONE option from the numbered list above. Zero text anywhere. No letters as subjects.',
+  ].filter(Boolean).join('\n');
 }
 
 export async function generateImage(prompt) {
